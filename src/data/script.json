@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "startSec": 0,
+    "endSec": 3,
+    "text": "Your AI just lied to you, and it had no idea.",
+    "onScreenText": "AI LIED TO YOU",
+    "visual": "warning"
+  },
+  {
+    "id": 2,
+    "startSec": 3,
+    "endSec": 6,
+    "text": "It's called a hallucination.",
+    "onScreenText": "HALLUCINATION",
+    "visual": "glitch"
+  },
+  {
+    "id": 3,
+    "startSec": 6,
+    "endSec": 12,
+    "text": "AI doesn't look up facts. It predicts the next most likely word.",
+    "onScreenText": "Predicts words, not facts",
+    "visual": "chat"
+  },
+  {
+    "id": 4,
+    "startSec": 12,
+    "endSec": 19,
+    "text": "So when it doesn't know, it still gives you something that sounds right.",
+    "onScreenText": "Sounds right is not the same as is right",
+    "visual": "diagram"
+  },
+  {
+    "id": 5,
+    "startSec": 19,
+    "endSec": 25,
+    "text": "Ask for a function that doesn't exist, and it will happily write the code.",
+    "onScreenText": "Fake function, real-looking code",
+    "visual": "code"
+  },
+  {
+    "id": 6,
+    "startSec": 25,
+    "endSec": 29,
+    "text": "The fix: ask for sources, run the code, and never trust blindly.",
+    "onScreenText": "Verify. Always.",
+    "visual": "checklist"
+  },
+  {
+    "id": 7,
+    "startSec": 29,
+    "endSec": 30,
+    "text": "Your AI just lied to you.",
+    "onScreenText": "@YOURHANDLE",
+    "visual": "warning"
+  }
+]

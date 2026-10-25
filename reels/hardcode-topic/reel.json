@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "topic": "System Load Management",
+    "audience": "beginner to intermediate tech people",
+    "lengthSec": 44,
+    "language": "Hindi",
+    "handle": "@gopal.codes",
+    "slug": "hardcode-topic",
+    "voiceFile": "reels/hardcode-topic/voice.mp3",
+    "loop": true,
+    "captions": true,
+    "wordsFile": "reels/hardcode-topic/words.json"
+  },
+  "scenes": [
+    {
+      "id": "scene-1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 5.5,
+      "voice": "Sudden traffic se app crash ho raha hai? Jaaniye massive systems kaise survive karte hain.",
+      "headline": "APP *CRASHING* FROM TRAFFIC?",
+      "subtitle": "System scaling explained"
+    },
+    {
+      "id": "scene-2-load-balancer",
+      "type": "steps",
+      "startSec": 5.5,
+      "endSec": 14,
+      "voice": "Sabse pehle, Load Balancer ek traffic cop ki tarah aakar, incoming users ko multiple servers par evenly distribute karta hai.",
+      "headline": "THE *LOAD* BALANCER",
+      "steps": [
+        "Receives traffic",
+        "Checks server health",
+        "Routes requests"
+      ]
+    },
+    {
+      "id": "scene-3-scaling",
+      "type": "compare",
+      "startSec": 14,
+      "endSec": 22.5,
+      "voice": "Ek bada supercomputer kharidne ke bajay, woh kai chhote servers add karte hain. Ise Horizontal Scaling kehte hain.",
+      "headline": "SCALE *OUT* NOT UP",
+      "leftLabel": "Vertical (Bigger Server)",
+      "rightLabel": "Horizontal (More Servers)"
+    },
+    {
+      "id": "scene-4-caching",
+      "type": "pills",
+      "startSec": 22.5,
+      "endSec": 32,
+      "voice": "Next hai caching. Woh frequent requests ko instant access ke liye memory databases mein store karte hain, taaki main database par load na pade.",
+      "headline": "CACHE FOR *SPEED*",
+      "pills": [
+        "Redis",
+        "Memcached",
+        "CDN"
+      ]
+    },
+    {
+      "id": "scene-5-queues",
+      "type": "orbit",
+      "startSec": 32,
+      "endSec": 38.8,
+      "voice": "Heavy background jobs hain? Unhe message queue mein bhej dein taaki app slow hue bina baad mein process ho sakein.",
+      "headline": "USE *MESSAGE* QUEUES",
+      "center": "Backend",
+      "orbiting": [
+        "RabbitMQ",
+        "Kafka",
+        "SQS"
+      ]
+    },
+    {
+      "id": "scene-6-cta",
+      "type": "cta",
+      "startSec": 38.8,
+      "endSec": 44,
+      "voice": "System design ke basics master karein aur sudden traffic se app crash hona rokein!",
+      "headline": "APP *CRASHING* FROM TRAFFIC?",
+      "callToAction": "Follow for more engineering tips"
+    }
+  ]
+}

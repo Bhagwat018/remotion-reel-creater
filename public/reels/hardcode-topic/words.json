@@ -1,0 +1,557 @@
+[
+  {
+    "word": "Sudden",
+    "startSec": 0,
+    "endSec": 0.37
+  },
+  {
+    "word": "traffic",
+    "startSec": 0.37,
+    "endSec": 0.74
+  },
+  {
+    "word": "se",
+    "startSec": 0.73,
+    "endSec": 1.1
+  },
+  {
+    "word": "app",
+    "startSec": 1.1,
+    "endSec": 1.47
+  },
+  {
+    "word": "crash",
+    "startSec": 1.47,
+    "endSec": 1.84
+  },
+  {
+    "word": "ho",
+    "startSec": 1.83,
+    "endSec": 2.2
+  },
+  {
+    "word": "raha",
+    "startSec": 2.2,
+    "endSec": 2.57
+  },
+  {
+    "word": "hai?",
+    "startSec": 2.57,
+    "endSec": 2.94
+  },
+  {
+    "word": "Jaaniye",
+    "startSec": 2.93,
+    "endSec": 3.3
+  },
+  {
+    "word": "massive",
+    "startSec": 3.3,
+    "endSec": 3.67
+  },
+  {
+    "word": "systems",
+    "startSec": 3.67,
+    "endSec": 4.04
+  },
+  {
+    "word": "kaise",
+    "startSec": 4.03,
+    "endSec": 4.4
+  },
+  {
+    "word": "survive",
+    "startSec": 4.4,
+    "endSec": 4.77
+  },
+  {
+    "word": "karte",
+    "startSec": 4.77,
+    "endSec": 5.14
+  },
+  {
+    "word": "hain.",
+    "startSec": 5.13,
+    "endSec": 5.5
+  },
+  {
+    "word": "Sabse",
+    "startSec": 5.5,
+    "endSec": 5.92
+  },
+  {
+    "word": "pehle,",
+    "startSec": 5.92,
+    "endSec": 6.34
+  },
+  {
+    "word": "Load",
+    "startSec": 6.35,
+    "endSec": 6.77
+  },
+  {
+    "word": "Balancer",
+    "startSec": 6.78,
+    "endSec": 7.21
+  },
+  {
+    "word": "ek",
+    "startSec": 7.2,
+    "endSec": 7.63
+  },
+  {
+    "word": "traffic",
+    "startSec": 7.63,
+    "endSec": 8.05
+  },
+  {
+    "word": "cop",
+    "startSec": 8.05,
+    "endSec": 8.48
+  },
+  {
+    "word": "ki",
+    "startSec": 8.47,
+    "endSec": 8.9
+  },
+  {
+    "word": "tarah",
+    "startSec": 8.9,
+    "endSec": 9.33
+  },
+  {
+    "word": "aakar,",
+    "startSec": 9.32,
+    "endSec": 9.75
+  },
+  {
+    "word": "incoming",
+    "startSec": 9.75,
+    "endSec": 10.18
+  },
+  {
+    "word": "users",
+    "startSec": 10.18,
+    "endSec": 10.61
+  },
+  {
+    "word": "ko",
+    "startSec": 10.6,
+    "endSec": 11.03
+  },
+  {
+    "word": "multiple",
+    "startSec": 11.02,
+    "endSec": 11.45
+  },
+  {
+    "word": "servers",
+    "startSec": 11.45,
+    "endSec": 11.88
+  },
+  {
+    "word": "par",
+    "startSec": 11.88,
+    "endSec": 12.31
+  },
+  {
+    "word": "evenly",
+    "startSec": 12.3,
+    "endSec": 12.73
+  },
+  {
+    "word": "distribute",
+    "startSec": 12.72,
+    "endSec": 13.15
+  },
+  {
+    "word": "karta",
+    "startSec": 13.15,
+    "endSec": 13.58
+  },
+  {
+    "word": "hai.",
+    "startSec": 13.57,
+    "endSec": 14
+  },
+  {
+    "word": "Ek",
+    "startSec": 14,
+    "endSec": 14.47
+  },
+  {
+    "word": "bada",
+    "startSec": 14.47,
+    "endSec": 14.94
+  },
+  {
+    "word": "supercomputer",
+    "startSec": 14.94,
+    "endSec": 15.41
+  },
+  {
+    "word": "kharidne",
+    "startSec": 15.42,
+    "endSec": 15.89
+  },
+  {
+    "word": "ke",
+    "startSec": 15.89,
+    "endSec": 16.36
+  },
+  {
+    "word": "bajay,",
+    "startSec": 16.36,
+    "endSec": 16.83
+  },
+  {
+    "word": "woh",
+    "startSec": 16.83,
+    "endSec": 17.3
+  },
+  {
+    "word": "kai",
+    "startSec": 17.31,
+    "endSec": 17.78
+  },
+  {
+    "word": "chhote",
+    "startSec": 17.78,
+    "endSec": 18.25
+  },
+  {
+    "word": "servers",
+    "startSec": 18.25,
+    "endSec": 18.72
+  },
+  {
+    "word": "add",
+    "startSec": 18.72,
+    "endSec": 19.19
+  },
+  {
+    "word": "karte",
+    "startSec": 19.19,
+    "endSec": 19.66
+  },
+  {
+    "word": "hain.",
+    "startSec": 19.67,
+    "endSec": 20.14
+  },
+  {
+    "word": "Ise",
+    "startSec": 20.14,
+    "endSec": 20.61
+  },
+  {
+    "word": "Horizontal",
+    "startSec": 20.61,
+    "endSec": 21.08
+  },
+  {
+    "word": "Scaling",
+    "startSec": 21.08,
+    "endSec": 21.55
+  },
+  {
+    "word": "kehte",
+    "startSec": 21.56,
+    "endSec": 22.03
+  },
+  {
+    "word": "hain.",
+    "startSec": 22.03,
+    "endSec": 22.5
+  },
+  {
+    "word": "Next",
+    "startSec": 22.5,
+    "endSec": 22.9
+  },
+  {
+    "word": "hai",
+    "startSec": 22.9,
+    "endSec": 23.3
+  },
+  {
+    "word": "caching.",
+    "startSec": 23.29,
+    "endSec": 23.69
+  },
+  {
+    "word": "Woh",
+    "startSec": 23.69,
+    "endSec": 24.09
+  },
+  {
+    "word": "frequent",
+    "startSec": 24.08,
+    "endSec": 24.48
+  },
+  {
+    "word": "requests",
+    "startSec": 24.48,
+    "endSec": 24.88
+  },
+  {
+    "word": "ko",
+    "startSec": 24.88,
+    "endSec": 25.28
+  },
+  {
+    "word": "instant",
+    "startSec": 25.27,
+    "endSec": 25.67
+  },
+  {
+    "word": "access",
+    "startSec": 25.67,
+    "endSec": 26.07
+  },
+  {
+    "word": "ke",
+    "startSec": 26.06,
+    "endSec": 26.46
+  },
+  {
+    "word": "liye",
+    "startSec": 26.46,
+    "endSec": 26.86
+  },
+  {
+    "word": "memory",
+    "startSec": 26.85,
+    "endSec": 27.25
+  },
+  {
+    "word": "databases",
+    "startSec": 27.25,
+    "endSec": 27.65
+  },
+  {
+    "word": "mein",
+    "startSec": 27.65,
+    "endSec": 28.05
+  },
+  {
+    "word": "store",
+    "startSec": 28.04,
+    "endSec": 28.44
+  },
+  {
+    "word": "karte",
+    "startSec": 28.44,
+    "endSec": 28.84
+  },
+  {
+    "word": "hain,",
+    "startSec": 28.83,
+    "endSec": 29.23
+  },
+  {
+    "word": "taaki",
+    "startSec": 29.23,
+    "endSec": 29.63
+  },
+  {
+    "word": "main",
+    "startSec": 29.63,
+    "endSec": 30.03
+  },
+  {
+    "word": "database",
+    "startSec": 30.02,
+    "endSec": 30.42
+  },
+  {
+    "word": "par",
+    "startSec": 30.42,
+    "endSec": 30.82
+  },
+  {
+    "word": "load",
+    "startSec": 30.81,
+    "endSec": 31.21
+  },
+  {
+    "word": "na",
+    "startSec": 31.21,
+    "endSec": 31.61
+  },
+  {
+    "word": "pade.",
+    "startSec": 31.6,
+    "endSec": 32
+  },
+  {
+    "word": "Heavy",
+    "startSec": 32,
+    "endSec": 32.34
+  },
+  {
+    "word": "background",
+    "startSec": 32.34,
+    "endSec": 32.68
+  },
+  {
+    "word": "jobs",
+    "startSec": 32.68,
+    "endSec": 33.02
+  },
+  {
+    "word": "hain?",
+    "startSec": 33.02,
+    "endSec": 33.36
+  },
+  {
+    "word": "Unhe",
+    "startSec": 33.36,
+    "endSec": 33.7
+  },
+  {
+    "word": "message",
+    "startSec": 33.7,
+    "endSec": 34.04
+  },
+  {
+    "word": "queue",
+    "startSec": 34.04,
+    "endSec": 34.38
+  },
+  {
+    "word": "mein",
+    "startSec": 34.38,
+    "endSec": 34.72
+  },
+  {
+    "word": "bhej",
+    "startSec": 34.72,
+    "endSec": 35.06
+  },
+  {
+    "word": "dein",
+    "startSec": 35.06,
+    "endSec": 35.4
+  },
+  {
+    "word": "taaki",
+    "startSec": 35.4,
+    "endSec": 35.74
+  },
+  {
+    "word": "app",
+    "startSec": 35.74,
+    "endSec": 36.08
+  },
+  {
+    "word": "slow",
+    "startSec": 36.08,
+    "endSec": 36.42
+  },
+  {
+    "word": "hue",
+    "startSec": 36.42,
+    "endSec": 36.76
+  },
+  {
+    "word": "bina",
+    "startSec": 36.76,
+    "endSec": 37.1
+  },
+  {
+    "word": "baad",
+    "startSec": 37.1,
+    "endSec": 37.44
+  },
+  {
+    "word": "mein",
+    "startSec": 37.44,
+    "endSec": 37.78
+  },
+  {
+    "word": "process",
+    "startSec": 37.78,
+    "endSec": 38.12
+  },
+  {
+    "word": "ho",
+    "startSec": 38.12,
+    "endSec": 38.46
+  },
+  {
+    "word": "sakein.",
+    "startSec": 38.46,
+    "endSec": 38.8
+  },
+  {
+    "word": "System",
+    "startSec": 38.8,
+    "endSec": 39.17
+  },
+  {
+    "word": "design",
+    "startSec": 39.17,
+    "endSec": 39.54
+  },
+  {
+    "word": "ke",
+    "startSec": 39.54,
+    "endSec": 39.91
+  },
+  {
+    "word": "basics",
+    "startSec": 39.91,
+    "endSec": 40.28
+  },
+  {
+    "word": "master",
+    "startSec": 40.29,
+    "endSec": 40.66
+  },
+  {
+    "word": "karein",
+    "startSec": 40.66,
+    "endSec": 41.03
+  },
+  {
+    "word": "aur",
+    "startSec": 41.03,
+    "endSec": 41.4
+  },
+  {
+    "word": "sudden",
+    "startSec": 41.4,
+    "endSec": 41.77
+  },
+  {
+    "word": "traffic",
+    "startSec": 41.77,
+    "endSec": 42.14
+  },
+  {
+    "word": "se",
+    "startSec": 42.14,
+    "endSec": 42.51
+  },
+  {
+    "word": "app",
+    "startSec": 42.51,
+    "endSec": 42.88
+  },
+  {
+    "word": "crash",
+    "startSec": 42.89,
+    "endSec": 43.26
+  },
+  {
+    "word": "hona",
+    "startSec": 43.26,
+    "endSec": 43.63
+  },
+  {
+    "word": "rokein!",
+    "startSec": 43.63,
+    "endSec": 44
+  }
+]

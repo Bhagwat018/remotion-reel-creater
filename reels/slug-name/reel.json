@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "topic": "System Load Management",
+    "audience": "beginner to intermediate tech people",
+    "lengthSec": 37,
+    "language": "English",
+    "handle": "@gopal.codes",
+    "slug": "slug-name",
+    "voiceFile": "reels/slug-name/voice.mp3",
+    "loop": true,
+    "captions": true,
+    "wordsFile": "reels/slug-name/words.json"
+  },
+  "scenes": [
+    {
+      "id": "scene-1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 4.5,
+      "voice": "App crashing from sudden traffic? Here's how massive systems survive.",
+      "headline": "APP *CRASHING* FROM TRAFFIC?",
+      "subtitle": "System scaling explained"
+    },
+    {
+      "id": "scene-2-load-balancer",
+      "type": "steps",
+      "startSec": 4.5,
+      "endSec": 12,
+      "voice": "First, a Load Balancer steps in as a traffic cop, evenly distributing incoming users across multiple servers.",
+      "headline": "THE *LOAD* BALANCER",
+      "steps": [
+        "Receives traffic",
+        "Checks server health",
+        "Routes requests"
+      ]
+    },
+    {
+      "id": "scene-3-scaling",
+      "type": "compare",
+      "startSec": 12,
+      "endSec": 19.5,
+      "voice": "Instead of buying one giant supercomputer, they add many smaller servers. That's Horizontal Scaling.",
+      "headline": "SCALE *OUT* NOT UP",
+      "leftLabel": "Vertical (Bigger Server)",
+      "rightLabel": "Horizontal (More Servers)"
+    },
+    {
+      "id": "scene-4-caching",
+      "type": "pills",
+      "startSec": 19.5,
+      "endSec": 27.5,
+      "voice": "Next, caching. They use memory databases to store frequent requests for instant access, skipping the main database.",
+      "headline": "CACHE FOR *SPEED*",
+      "pills": [
+        "Redis",
+        "Memcached",
+        "CDN"
+      ]
+    },
+    {
+      "id": "scene-5-queues",
+      "type": "orbit",
+      "startSec": 27.5,
+      "endSec": 33,
+      "voice": "Heavy background jobs? Send them to a message queue to process later without slowing down.",
+      "headline": "USE *MESSAGE* QUEUES",
+      "center": "Backend",
+      "orbiting": [
+        "RabbitMQ",
+        "Kafka",
+        "SQS"
+      ]
+    },
+    {
+      "id": "scene-6-cta",
+      "type": "cta",
+      "startSec": 33,
+      "endSec": 37.5,
+      "voice": "Master system design basics and stop your app crashing from traffic!",
+      "headline": "APP *CRASHING* FROM TRAFFIC?",
+      "callToAction": "Follow for more engineering tips"
+    }
+  ]
+}

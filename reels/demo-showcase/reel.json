@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "slug": "demo-showcase",
+    "title": "Universal Reel Engine Showcase",
+    "handle": "@yourhandle",
+    "voiceFile": "reels/demo-showcase/voice.mp3",
+    "wordsFile": null,
+    "loop": true,
+    "accentOverride": "#00E5A0",
+    "captions": true
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "orbit",
+      "startSec": 0,
+      "endSec": 6.0,
+      "voice": "Build modern tech reels without touching a single component ever again.",
+      "leadIn": "automated flow,",
+      "headline": "THE *ZERO-CODE* ENGINE",
+      "nodes": [
+        "Write JSON",
+        "Record Voice",
+        "Validate",
+        "Deterministic Render"
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "compare",
+      "startSec": 6.0,
+      "endSec": 12.0,
+      "voice": "Stop fighting manual timelines. The new system automates rendering deterministically.",
+      "leadIn": "the comparison,",
+      "headline": "OLD WAY VS *NEW WAY*",
+      "left": {
+        "label": "Old Workflow",
+        "items": [
+          "Hardcoded timings",
+          "Random CSS glitches",
+          "Manual repetitive edits"
+        ]
+      },
+      "right": {
+        "label": "Universal Engine",
+        "items": [
+          "Pure JSON schema",
+          "Deterministic 30fps",
+          "Single theme tokens"
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "type": "stat",
+      "startSec": 12.0,
+      "endSec": 17.5,
+      "voice": "Produce viral tech content ten times faster with clean reproducible visuals.",
+      "leadIn": "proven speed,",
+      "headline": "UNMATCHED *EFFICIENCY*",
+      "value": "10x",
+      "label": "Faster Production Time For Every New Tech Reel"
+    },
+    {
+      "id": "s4",
+      "type": "steps",
+      "startSec": 17.5,
+      "endSec": 23.5,
+      "voice": "Just scaffold your slug, paste your audio track, and render the final MP4.",
+      "leadIn": "how it works,",
+      "headline": "THREE *SIMPLE* STEPS",
+      "items": [
+        "npm run new-reel -- my-slug",
+        "Drop voice.mp3 into public/reels/my-slug/",
+        "npm run render:reel -- my-slug"
+      ]
+    },
+    {
+      "id": "s5",
+      "type": "cta",
+      "startSec": 23.5,
+      "endSec": 30.0,
+      "voice": "Get started today. The entire pipeline is ready in your terminal.",
+      "leadIn": "take action,",
+      "headline": "THE *ZERO-CODE* ENGINE",
+      "buttonText": "START CREATING"
+    }
+  ]
+}

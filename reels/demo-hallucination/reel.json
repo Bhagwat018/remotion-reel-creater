@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "slug": "demo-hallucination",
+    "title": "Why AI lies with confidence",
+    "handle": "@yourhandle",
+    "voiceFile": "reels/demo-hallucination/voice.mp3",
+    "wordsFile": "reels/demo-hallucination/words.json",
+    "loop": true,
+    "accentOverride": null,
+    "captions": true
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 4,
+      "voice": "Your AI just lied to you, and it had no idea.",
+      "leadIn": "heads up,",
+      "headline": "YOUR AI *LIED* TO YOU"
+    },
+    {
+      "id": "s2",
+      "type": "title",
+      "startSec": 4,
+      "endSec": 7.5,
+      "voice": "It's called a hallucination.",
+      "leadIn": "the truth,",
+      "headline": "IT'S CALLED A *HALLUCINATION*"
+    },
+    {
+      "id": "s3",
+      "type": "card",
+      "startSec": 7.5,
+      "endSec": 12,
+      "voice": "AI doesn't look up facts. It predicts the next most likely word.",
+      "leadIn": "how it works,",
+      "headline": "NEXT WORD *PREDICTION*",
+      "cardText": "AI never searches a database of truths. It generates tokens probabilistically.",
+      "chip": "Token Probability: 99.2%"
+    },
+    {
+      "id": "s4",
+      "type": "card",
+      "startSec": 12,
+      "endSec": 17,
+      "voice": "So when it doesn't know, it still gives you something that sounds right.",
+      "leadIn": "the trap,",
+      "headline": "SOUNDS *RIGHT* BUT IS WRONG",
+      "cardText": "Confidence has zero correlation with accuracy in large language models.",
+      "chip": "False Confidence"
+    },
+    {
+      "id": "s5",
+      "type": "code",
+      "startSec": 17,
+      "endSec": 22,
+      "voice": "Ask for a function that doesn't exist, and it will happily write the code.",
+      "leadIn": "watch this,",
+      "headline": "FABRICATING *CODE*",
+      "filename": "hallucination.ts",
+      "lines": [
+        "import { authenticateUser } from 'ai-core';",
+        "const user = await authenticateUser(req);",
+        "// Error: authenticateUser is not exported!"
+      ],
+      "highlightLines": [
+        3
+      ]
+    },
+    {
+      "id": "s6",
+      "type": "stamp",
+      "startSec": 22,
+      "endSec": 26.5,
+      "voice": "The fix: ask for sources, run the code, and never trust blindly.",
+      "leadIn": "the rule,",
+      "headline": "NEVER TRUST *BLINDLY*",
+      "stampText": "VERIFY EVERYTHING"
+    },
+    {
+      "id": "s7",
+      "type": "title",
+      "startSec": 26.5,
+      "endSec": 30,
+      "voice": "Your AI just lied to you.",
+      "leadIn": "remember,",
+      "headline": "YOUR AI *LIED* TO YOU"
+    }
+  ]
+}
