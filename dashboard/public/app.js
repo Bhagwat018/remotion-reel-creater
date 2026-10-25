@@ -1,19 +1,33 @@
-// Remotion Reel Studio Pro Frontend Logic
+// Remotion Reel Studio - Professional Dashboard Engine
 document.addEventListener("DOMContentLoaded", () => {
-  // DOM Elements
+  // DOM References
   const templateSelect = document.getElementById("templateSelect");
   const reelSlugInput = document.getElementById("reelSlug");
   const jsonEditor = document.getElementById("jsonEditor");
   const lineNumbers = document.getElementById("lineNumbers");
   const jsonStatusBadge = document.getElementById("jsonStatusBadge");
+  const jsonStatusText = document.getElementById("jsonStatusText");
   const formatJsonBtn = document.getElementById("formatJsonBtn");
+  const copyJsonBtn = document.getElementById("copyJsonBtn");
   const jsonFileInput = document.getElementById("jsonFileInput");
-  
+
+  // Tabs & Views
+  const tabCodeBtn = document.getElementById("tabCodeBtn");
+  const tabScenesBtn = document.getElementById("tabScenesBtn");
+  const tabSceneCount = document.getElementById("tabSceneCount");
+  const codeViewContainer = document.getElementById("codeViewContainer");
+  const scenesViewContainer = document.getElementById("scenesViewContainer");
+  const scenesCardList = document.getElementById("scenesCardList");
+  const editorErrorDrawer = document.getElementById("editorErrorDrawer");
+  const editorErrorMessage = document.getElementById("editorErrorMessage");
+
+  // Summaries
   const summarySceneCount = document.getElementById("summarySceneCount");
   const summaryDuration = document.getElementById("summaryDuration");
   const summaryCaptions = document.getElementById("summaryCaptions");
   const summaryLoop = document.getElementById("summaryLoop");
 
+  // Audio Controls
   const audioDropzone = document.getElementById("audioDropzone");
   const audioFileInput = document.getElementById("audioFileInput");
   const audioPreview = document.getElementById("audioPreview");
@@ -22,10 +36,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const audioPlayer = document.getElementById("audioPlayer");
   const audioSourceTag = document.getElementById("audioSourceTag");
 
+  // Render Action
   const createReelBtn = document.getElementById("createReelBtn");
   const createBtnText = document.getElementById("createBtnText");
+  const btnSpinner = document.getElementById("btnSpinner");
+  const btnIcon = document.getElementById("btnIcon");
 
-  // Phone Screen Elements
+  // Device & Preview Elements
   const phoneIdleState = document.getElementById("phoneIdleState");
   const phoneRenderOverlay = document.getElementById("phoneRenderOverlay");
   const videoContainer = document.getElementById("videoContainer");
@@ -33,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const idleTitle = document.getElementById("idleTitle");
   const idleSub = document.getElementById("idleSub");
 
-  // Render HUD Elements
+  // HUD Elements
   const renderPercentDisplay = document.getElementById("renderPercentDisplay");
   const renderProgressBar = document.getElementById("renderProgressBar");
   const renderFramesDisplay = document.getElementById("renderFramesDisplay");
@@ -41,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const renderEtaDisplay = document.getElementById("renderEtaDisplay");
   const renderSlugLabel = document.getElementById("renderSlugLabel");
 
-  // Video Controls Elements
+  // Video Controls
   const playPauseBtn = document.getElementById("playPauseBtn");
   const playIcon = document.getElementById("playIcon");
   const pauseIcon = document.getElementById("pauseIcon");
@@ -76,19 +93,20 @@ document.addEventListener("DOMContentLoaded", () => {
   let isRendering = false;
   let playbackSpeeds = [1.0, 1.25, 1.5, 2.0, 0.75];
   let speedIndex = 0;
-  let currentLoadedVideoUrl = null;
 
-  // Initialize
+  // Initialize App
   initApp();
 
   async function initApp() {
     setupEditorSync();
+    setupTabs();
     setupAudioHandlers();
     setupVideoPlayerControls();
+    setupKeyboardShortcuts();
     await loadTemplates();
     await loadReelsGallery();
 
-    // Default select first available template
+    // Default select template
     if (templatesData["hardcode-topic"]) {
       templateSelect.value = "hardcode-topic";
       applyTemplate("hardcode-topic");
@@ -98,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // 1. Templates Loading
+  // 1. Template Presets
   async function loadTemplates() {
     try {
       const res = await fetch("/api/templates");
@@ -129,26 +147,28 @@ document.addEventListener("DOMContentLoaded", () => {
     if (tmpl.hasVoice && tmpl.voiceSampleUrl) {
       audioPlayer.src = tmpl.voiceSampleUrl;
       audioFileNameDisplay.textContent = `Preset: ${slug}/voice.mp3`;
-      audioFileSizeDisplay.textContent = "Attached";
-      audioSourceTag.textContent = "Preset Audio Attached";
+      audioFileSizeDisplay.textContent = "Preset Attached";
+      audioSourceTag.textContent = "Preset Voice Loaded";
     }
 
     idleTitle.textContent = tmpl.title || slug;
     idleSub.textContent = `Template loaded: ${tmpl.sceneCount} scenes. Click "Create & Render Reel" to render.`;
   }
 
-  // 2. Code Editor Sync & Line Numbers
+  // 2. Editor Setup & Precision Gutter Line Numbers
   function setupEditorSync() {
+    // Input event
     jsonEditor.addEventListener("input", () => {
       updateLineNumbers();
       validateJsonEditor();
     });
 
+    // Synchronize scrolling between textarea and line numbers gutter
     jsonEditor.addEventListener("scroll", () => {
       lineNumbers.scrollTop = jsonEditor.scrollTop;
     });
 
-    // Tab key support
+    // Tab key indent
     jsonEditor.addEventListener("keydown", (e) => {
       if (e.key === "Tab") {
         e.preventDefault();
@@ -161,6 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+    // Format JSON
     formatJsonBtn.addEventListener("click", () => {
       try {
         const parsed = JSON.parse(jsonEditor.value);
@@ -173,6 +194,14 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+    // Copy JSON
+    copyJsonBtn.addEventListener("click", () => {
+      navigator.clipboard.writeText(jsonEditor.value).then(() => {
+        showToast("JSON copied to clipboard", "success");
+      });
+    });
+
+    // Upload JSON File
     jsonFileInput.addEventListener("change", (e) => {
       const file = e.target.files[0];
       if (!file) return;
@@ -186,14 +215,15 @@ document.addEventListener("DOMContentLoaded", () => {
           }
           updateLineNumbers();
           validateJsonEditor();
-          showToast(`Loaded ${file.name}`, "success");
+          showToast(`Loaded "${file.name}"`, "success");
         } catch (err) {
-          showToast("Failed to parse JSON file: " + err.message, "error");
+          showToast("Invalid JSON file: " + err.message, "error");
         }
       };
       reader.readAsText(file);
     });
 
+    // Slug sync
     reelSlugInput.addEventListener("input", () => {
       const clean = reelSlugInput.value.toLowerCase().replace(/[^a-z0-9_-]/g, "-");
       reelSlugInput.value = clean;
@@ -206,23 +236,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Update line numbers strictly with \n
   function updateLineNumbers() {
-    const lines = jsonEditor.value.split("\n").length;
+    const text = jsonEditor.value;
+    const lineCount = text.split("\n").length;
     let numbers = "";
-    for (let i = 1; i <= lines; i++) {
+    for (let i = 1; i <= lineCount; i++) {
       numbers += i + "\n";
     }
     lineNumbers.textContent = numbers;
   }
 
+  // Validate JSON schema & update UI
   function validateJsonEditor() {
     try {
       const parsed = JSON.parse(jsonEditor.value);
-      jsonStatusBadge.className = "status-badge badge-valid";
-      jsonStatusBadge.innerHTML = `<span class="badge-dot"></span><span class="badge-label">Valid JSON</span>`;
+      jsonStatusBadge.className = "schema-badge schema-valid";
+      jsonStatusText.textContent = "Valid JSON";
+      editorErrorDrawer.style.display = "none";
 
       const scenes = Array.isArray(parsed.scenes) ? parsed.scenes : [];
       summarySceneCount.textContent = scenes.length;
+      tabSceneCount.textContent = scenes.length;
 
       let estDur = 0;
       if (scenes.length > 0 && scenes[scenes.length - 1].endSec) {
@@ -230,17 +265,64 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       summaryDuration.textContent = estDur > 0 ? `${estDur}s` : "Auto";
       summaryCaptions.textContent = parsed.meta?.captions !== false ? "Enabled" : "Disabled";
-      summaryLoop.textContent = parsed.meta?.loop !== false ? "Yes" : "No";
+      summaryLoop.textContent = parsed.meta?.loop !== false ? "Active" : "Off";
+
+      // Render Scene Explorer cards
+      renderSceneCards(scenes);
 
       return { valid: true, data: parsed };
     } catch (err) {
-      jsonStatusBadge.className = "status-badge badge-error";
-      jsonStatusBadge.innerHTML = `<span class="badge-dot"></span><span class="badge-label">Syntax Error</span>`;
+      jsonStatusBadge.className = "schema-badge schema-error";
+      jsonStatusText.textContent = "Syntax Error";
+      editorErrorDrawer.style.display = "flex";
+      editorErrorMessage.textContent = err.message;
       return { valid: false, error: err.message };
     }
   }
 
-  // 3. Audio Handlers & Dropzone
+  // 3. Tab Toggling: Code vs Scene Explorer
+  function setupTabs() {
+    tabCodeBtn.addEventListener("click", () => {
+      tabCodeBtn.classList.add("active");
+      tabScenesBtn.classList.remove("active");
+      codeViewContainer.style.display = "flex";
+      scenesViewContainer.style.display = "none";
+    });
+
+    tabScenesBtn.addEventListener("click", () => {
+      tabScenesBtn.classList.add("active");
+      tabCodeBtn.classList.remove("active");
+      codeViewContainer.style.display = "none";
+      scenesViewContainer.style.display = "block";
+    });
+  }
+
+  function renderSceneCards(scenes) {
+    if (!scenes || scenes.length === 0) {
+      scenesCardList.innerHTML = `<div style="color:var(--text-muted);font-size:0.8rem;text-align:center;padding:24px;">No scenes detected in JSON.</div>`;
+      return;
+    }
+
+    scenesCardList.innerHTML = scenes
+      .map(
+        (scene, idx) => `
+      <div class="scene-card-item">
+        <div class="scene-card-header">
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span class="scene-id-badge">#${idx + 1} ${escapeHtml(scene.id || "scene")}</span>
+            <span class="scene-type-tag">[${escapeHtml(scene.type || "unknown")}]</span>
+          </div>
+          <span class="scene-time-pill">${scene.startSec ?? 0}s – ${scene.endSec ?? "?"}s</span>
+        </div>
+        ${scene.headline ? `<div class="scene-headline">${escapeHtml(scene.headline)}</div>` : ""}
+        ${scene.voice ? `<div class="scene-voice">"${escapeHtml(scene.voice)}"</div>` : ""}
+      </div>
+    `
+      )
+      .join("");
+  }
+
+  // 4. Audio Handlers
   function setupAudioHandlers() {
     audioDropzone.addEventListener("click", () => audioFileInput.click());
 
@@ -268,15 +350,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Sample voice chips
-    document.querySelectorAll(".btn-chip[data-sample]").forEach((btn) => {
+    document.querySelectorAll(".btn-sample-chip[data-sample]").forEach((btn) => {
       btn.addEventListener("click", () => {
         const targetSample = btn.getAttribute("data-sample");
         sampleVoiceSlug = targetSample;
         currentAudioBase64 = null;
         audioPlayer.src = `/public/reels/${targetSample}/voice.mp3`;
-        audioFileNameDisplay.textContent = `Sample: ${targetSample}/voice.mp3`;
-        audioFileSizeDisplay.textContent = "Preset";
-        audioSourceTag.textContent = `Using sample: ${targetSample}`;
+        audioFileNameDisplay.textContent = `Preset: ${targetSample}/voice.mp3`;
+        audioFileSizeDisplay.textContent = "Attached";
+        audioSourceTag.textContent = `Preset: ${targetSample}`;
         showToast(`Voice set to sample "${targetSample}"`, "success");
       });
     });
@@ -284,7 +366,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function handleAudioFile(file) {
     if (!file.type.includes("audio") && !file.name.match(/\.(mp3|wav|m4a|aac)$/i)) {
-      showToast("Please select an audio file (.mp3, .wav, .m4a)", "error");
+      showToast("Please upload an audio file (.mp3, .wav, .m4a)", "error");
       return;
     }
 
@@ -298,18 +380,28 @@ document.addEventListener("DOMContentLoaded", () => {
       audioFileNameDisplay.textContent = file.name;
       audioFileSizeDisplay.textContent = `${Math.round(file.size / 1024)} KB`;
       audioSourceTag.textContent = "Custom File Loaded";
-      showToast(`Attached audio file "${file.name}"`, "success");
+      showToast(`Attached audio "${file.name}"`, "success");
     };
     reader.readAsDataURL(file);
   }
 
-  // 4. Create & Render Reel Execution
+  // 5. Keyboard Shortcuts (Cmd+Enter to render)
+  function setupKeyboardShortcuts() {
+    window.addEventListener("keydown", (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "Enter") {
+        e.preventDefault();
+        createReelBtn.click();
+      }
+    });
+  }
+
+  // 6. Create & Render Execution
   createReelBtn.addEventListener("click", async () => {
     if (isRendering) return;
 
     const validation = validateJsonEditor();
     if (!validation.valid) {
-      showToast("Please fix JSON errors before rendering: " + validation.error, "error");
+      showToast("Please fix JSON errors: " + validation.error, "error");
       return;
     }
 
@@ -319,9 +411,8 @@ document.addEventListener("DOMContentLoaded", () => {
       reelSlugInput.value = slug;
     }
 
-    // Start UI rendering mode
     setRenderingState(true, slug);
-    logToTerminal(`🚀 Preparing render job for slug "${slug}"...`, "info");
+    logToTerminal(`🚀 Starting render pipeline for slug "${slug}"...`, "info");
 
     try {
       const payload = {
@@ -339,19 +430,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const data = await res.json();
       if (!res.ok || !data.success) {
-        throw new Error(data.error || "Failed to initialize render process");
+        throw new Error(data.error || "Failed to start render");
       }
 
-      logToTerminal(`⚡ Job ID: ${data.jobId} - Connected to render stream.`, "info");
+      logToTerminal(`⚡ Job initialized: ${data.jobId}`, "info");
       connectToRenderStream(data.jobId, slug);
     } catch (err) {
-      logToTerminal(`❌ Error: ${err.message}`, "error");
+      logToTerminal(`❌ Render error: ${err.message}`, "error");
       showToast(err.message, "error");
       setRenderingState(false);
     }
   });
 
-  // 5. Server-Sent Events (SSE) Stream
+  // 7. Server-Sent Events (SSE) Stream
   function connectToRenderStream(jobId, slug) {
     if (activeEventSource) {
       activeEventSource.close();
@@ -377,11 +468,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     activeEventSource.addEventListener("error", (e) => {
-      logToTerminal(`💥 Render process encountered an error.`, "error");
+      logToTerminal(`💥 Render failed. Check logs above.`, "error");
       activeEventSource.close();
       activeEventSource = null;
       setRenderingState(false);
-      showToast("Render failed. Check terminal logs for details.", "error");
+      showToast("Render failed. Check terminal logs.", "error");
     });
   }
 
@@ -402,12 +493,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function onRenderComplete(slug, videoUrl) {
-    logToTerminal(`🎉 RENDER COMPLETE! Output ready at: ${videoUrl}`, "success");
+    logToTerminal(`🎉 RENDER FINISHED! Video output: ${videoUrl}`, "success");
     showToast(`Reel "${slug}" rendered successfully!`, "success");
     setRenderingState(false);
 
-    // Load video into phone screen
-    currentLoadedVideoUrl = videoUrl;
+    // Load video player
     reelVideoPlayer.src = videoUrl;
     phoneIdleState.style.display = "none";
     phoneRenderOverlay.style.display = "none";
@@ -417,10 +507,7 @@ document.addEventListener("DOMContentLoaded", () => {
     downloadVideoBtn.href = videoUrl;
     downloadVideoBtn.setAttribute("download", `${slug}.mp4`);
 
-    reelVideoPlayer.play().catch(() => {
-      // autoplay might require interaction on some browsers
-    });
-
+    reelVideoPlayer.play().catch(() => {});
     loadReelsGallery();
   }
 
@@ -429,7 +516,10 @@ document.addEventListener("DOMContentLoaded", () => {
     createReelBtn.disabled = rendering;
 
     if (rendering) {
-      createBtnText.textContent = "RENDERING IN PROGRESS...";
+      createBtnText.textContent = "Rendering Reel Video...";
+      btnSpinner.style.display = "inline-block";
+      btnIcon.style.display = "none";
+
       phoneIdleState.style.display = "none";
       videoContainer.style.display = "none";
       phoneRenderOverlay.style.display = "flex";
@@ -438,14 +528,16 @@ document.addEventListener("DOMContentLoaded", () => {
       renderProgressBar.style.width = "0%";
       renderFramesDisplay.textContent = "0 / 0";
       renderFpsDisplay.textContent = "-- fps";
-      renderEtaDisplay.textContent = "initializing...";
+      renderEtaDisplay.textContent = "calculating...";
     } else {
-      createBtnText.textContent = "CREATE & RENDER REEL";
+      createBtnText.textContent = "Create & Render Reel (MP4)";
+      btnSpinner.style.display = "none";
+      btnIcon.style.display = "inline-block";
       phoneRenderOverlay.style.display = "none";
     }
   }
 
-  // 6. Custom Video Player Controls
+  // 8. Custom Video Player Controls
   function setupVideoPlayerControls() {
     playPauseBtn.addEventListener("click", () => {
       if (reelVideoPlayer.paused) {
@@ -511,7 +603,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const slug = reelSlugInput.value.trim();
       const relPath = `out/${slug}.mp4`;
       navigator.clipboard.writeText(relPath).then(() => {
-        showToast(`Copied "${relPath}" to clipboard`, "success");
+        showToast(`Copied "${relPath}"`, "success");
       });
     });
 
@@ -526,20 +618,20 @@ document.addEventListener("DOMContentLoaded", () => {
     return `${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
   }
 
-  // 7. Reels Library & Gallery
+  // 9. Reels Gallery & Library
   refreshReelsBtn.addEventListener("click", () => {
     loadReelsGallery();
   });
 
   async function loadReelsGallery() {
     try {
-      reelsGalleryGrid.innerHTML = `<div class="gallery-loading">Scanning workspace reels...</div>`;
+      reelsGalleryGrid.innerHTML = `<div class="library-empty">Loading reels...</div>`;
       const res = await fetch("/api/reels");
       if (!res.ok) throw new Error("Failed to load reels");
       const reels = await res.json();
 
       if (reels.length === 0) {
-        reelsGalleryGrid.innerHTML = `<div class="gallery-loading">No reels found. Create your first reel above!</div>`;
+        reelsGalleryGrid.innerHTML = `<div class="library-empty">No reels found in project.</div>`;
         return;
       }
 
@@ -578,7 +670,7 @@ document.addEventListener("DOMContentLoaded", () => {
         reelsGalleryGrid.appendChild(card);
       }
 
-      // Attach gallery actions
+      // Card action listeners
       document.querySelectorAll("[data-play]").forEach((btn) => {
         btn.addEventListener("click", () => {
           const videoUrl = btn.getAttribute("data-url");
@@ -596,7 +688,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       });
     } catch (err) {
-      reelsGalleryGrid.innerHTML = `<div class="gallery-loading">Failed to load reels: ${err.message}</div>`;
+      reelsGalleryGrid.innerHTML = `<div class="library-empty">Error loading reels: ${err.message}</div>`;
     }
   }
 
@@ -623,16 +715,16 @@ document.addEventListener("DOMContentLoaded", () => {
         onRenderComplete(data.slug, data.videoUrl);
       }
 
-      showToast(`Loaded reel "${slug}"`, "success");
+      showToast(`Loaded "${slug}"`, "success");
     } catch (err) {
       showToast(err.message, "error");
     }
   }
 
-  // 8. Terminal Helpers
+  // 10. Terminal Helpers
   function logToTerminal(text, type = "default") {
     const line = document.createElement("div");
-    line.className = `term-line ${type}-line`;
+    line.className = `log-row ${type}-row`;
     line.textContent = `> ${text}`;
     terminalOutput.appendChild(line);
     terminalOutput.scrollTop = terminalOutput.scrollHeight;
@@ -643,13 +735,13 @@ document.addEventListener("DOMContentLoaded", () => {
     logToTerminal("Terminal output cleared.", "info");
   });
 
-  // 9. Toast Notification Helper
+  // 11. Toast Notifications
   function showToast(message, type = "info") {
     toastNotification.textContent = message;
-    toastNotification.className = `toast show ${type}`;
+    toastNotification.className = `app-toast show ${type}`;
     setTimeout(() => {
-      toastNotification.className = "toast";
-    }, 3800);
+      toastNotification.className = "app-toast";
+    }, 3500);
   }
 
   function escapeHtml(text) {
