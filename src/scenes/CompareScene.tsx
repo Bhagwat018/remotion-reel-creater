@@ -4,6 +4,7 @@ import { CompareSceneProps } from "../schema";
 import { SceneLayout } from "../components/SceneLayout";
 import { resolveFontFamily, useTheme } from "../theme/theme";
 import { entranceSpring } from "../lib/motion";
+import { TechLogo, findBrandInText } from "../components/TechLogo";
 
 export const CompareScene: React.FC<
   CompareSceneProps & {
@@ -88,41 +89,53 @@ export const CompareScene: React.FC<
             transform: `scale(${leftScale})`,
           }}
         >
-          <div
-            style={{
-              display: "inline-block",
-              backgroundColor: "rgba(255, 75, 75, 0.15)",
-              color: "#FF5252",
-              fontFamily: theme.typography.mono,
-              fontSize: 20,
-              fontWeight: 700,
-              padding: "6px 16px",
-              borderRadius: theme.layout.pillRadius,
-              textTransform: "uppercase",
-              letterSpacing: "0.06em",
-              marginBottom: 24,
-            }}
-          >
-            {leftSide.label}
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-            {leftSide.items.map((item, i) => (
+          {(() => {
+            const brand = findBrandInText(leftSide.label);
+            return (
               <div
-                key={i}
                 style={{
-                  display: "flex",
-                  alignItems: "flex-start",
-                  gap: 12,
-                  fontFamily: leftFont,
-                  fontSize: 24,
-                  color: theme.colors.cardText,
-                  lineHeight: 1.3,
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 8,
+                  backgroundColor: "rgba(255, 75, 75, 0.15)",
+                  color: "#FF5252",
+                  fontFamily: theme.typography.mono,
+                  fontSize: 20,
+                  fontWeight: 700,
+                  padding: "6px 16px",
+                  borderRadius: theme.layout.pillRadius,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.06em",
+                  marginBottom: 24,
                 }}
               >
-                <span style={{ color: "#FF5252", fontWeight: 700 }}>✕</span>
-                <span>{item}</span>
+                {brand && <TechLogo name={brand.key} size={20} />}
+                <span>{leftSide.label}</span>
               </div>
-            ))}
+            );
+          })()}
+          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+            {leftSide.items.map((item, i) => {
+              const brand = findBrandInText(item);
+              return (
+                <div
+                  key={i}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 12,
+                    fontFamily: leftFont,
+                    fontSize: 24,
+                    color: theme.colors.cardText,
+                    lineHeight: 1.3,
+                  }}
+                >
+                  <span style={{ color: "#FF5252", fontWeight: 700 }}>✕</span>
+                  {brand && <TechLogo name={brand.key} size={20} />}
+                  <span>{item}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
 
@@ -139,41 +152,53 @@ export const CompareScene: React.FC<
             transform: `scale(${rightScale})`,
           }}
         >
-          <div
-            style={{
-              display: "inline-block",
-              backgroundColor: theme.colors.accent,
-              color: theme.colors.accentText,
-              fontFamily: theme.typography.mono,
-              fontSize: 20,
-              fontWeight: 700,
-              padding: "6px 16px",
-              borderRadius: theme.layout.pillRadius,
-              textTransform: "uppercase",
-              letterSpacing: "0.06em",
-              marginBottom: 24,
-            }}
-          >
-            {rightSide.label}
-          </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-            {rightSide.items.map((item, i) => (
+          {(() => {
+            const brand = findBrandInText(rightSide.label);
+            return (
               <div
-                key={i}
                 style={{
-                  display: "flex",
-                  alignItems: "flex-start",
-                  gap: 12,
-                  fontFamily: rightFont,
-                  fontSize: 24,
-                  color: theme.colors.cardText,
-                  lineHeight: 1.3,
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 8,
+                  backgroundColor: theme.colors.accent,
+                  color: theme.colors.accentText,
+                  fontFamily: theme.typography.mono,
+                  fontSize: 20,
+                  fontWeight: 700,
+                  padding: "6px 16px",
+                  borderRadius: theme.layout.pillRadius,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.06em",
+                  marginBottom: 24,
                 }}
               >
-                <span style={{ color: theme.colors.accent, fontWeight: 700 }}>✓</span>
-                <span>{item}</span>
+                {brand && <TechLogo name={brand.key} size={20} />}
+                <span>{rightSide.label}</span>
               </div>
-            ))}
+            );
+          })()}
+          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+            {rightSide.items.map((item, i) => {
+              const brand = findBrandInText(item);
+              return (
+                <div
+                  key={i}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 12,
+                    fontFamily: rightFont,
+                    fontSize: 24,
+                    color: theme.colors.cardText,
+                    lineHeight: 1.3,
+                  }}
+                >
+                  <span style={{ color: theme.colors.accent, fontWeight: 700 }}>✓</span>
+                  {brand && <TechLogo name={brand.key} size={20} />}
+                  <span>{item}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

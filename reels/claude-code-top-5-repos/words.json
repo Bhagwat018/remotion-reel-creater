@@ -1,0 +1,462 @@
+[
+  {
+    "word": "Dosto,",
+    "startSec": 0,
+    "endSec": 0.21
+  },
+  {
+    "word": "kya",
+    "startSec": 0.21,
+    "endSec": 0.42
+  },
+  {
+    "word": "aap",
+    "startSec": 0.42,
+    "endSec": 0.63
+  },
+  {
+    "word": "bhi",
+    "startSec": 0.63,
+    "endSec": 0.84
+  },
+  {
+    "word": "Claude",
+    "startSec": 0.84,
+    "endSec": 1.05
+  },
+  {
+    "word": "Code",
+    "startSec": 1.05,
+    "endSec": 1.26
+  },
+  {
+    "word": "use",
+    "startSec": 1.26,
+    "endSec": 1.47
+  },
+  {
+    "word": "kar",
+    "startSec": 1.47,
+    "endSec": 1.68
+  },
+  {
+    "word": "rahe",
+    "startSec": 1.68,
+    "endSec": 1.89
+  },
+  {
+    "word": "ho?",
+    "startSec": 1.89,
+    "endSec": 2.1
+  },
+  {
+    "word": "Toh",
+    "startSec": 2.11,
+    "endSec": 2.32
+  },
+  {
+    "word": "ye",
+    "startSec": 2.32,
+    "endSec": 2.53
+  },
+  {
+    "word": "top",
+    "startSec": 2.53,
+    "endSec": 2.74
+  },
+  {
+    "word": "5",
+    "startSec": 2.74,
+    "endSec": 2.95
+  },
+  {
+    "word": "GitHub",
+    "startSec": 2.95,
+    "endSec": 3.16
+  },
+  {
+    "word": "repos",
+    "startSec": 3.16,
+    "endSec": 3.37
+  },
+  {
+    "word": "zarur",
+    "startSec": 3.37,
+    "endSec": 3.58
+  },
+  {
+    "word": "try",
+    "startSec": 3.58,
+    "endSec": 3.79
+  },
+  {
+    "word": "karna!",
+    "startSec": 3.79,
+    "endSec": 4
+  },
+  {
+    "word": "Pehli",
+    "startSec": 4,
+    "endSec": 4.41
+  },
+  {
+    "word": "hai",
+    "startSec": 4.41,
+    "endSec": 4.82
+  },
+  {
+    "word": "MCP",
+    "startSec": 4.82,
+    "endSec": 5.23
+  },
+  {
+    "word": "Servers",
+    "startSec": 5.24,
+    "endSec": 5.65
+  },
+  {
+    "word": "repo,",
+    "startSec": 5.65,
+    "endSec": 6.06
+  },
+  {
+    "word": "jo",
+    "startSec": 6.06,
+    "endSec": 6.47
+  },
+  {
+    "word": "Claude",
+    "startSec": 6.47,
+    "endSec": 6.88
+  },
+  {
+    "word": "ko",
+    "startSec": 6.88,
+    "endSec": 7.29
+  },
+  {
+    "word": "seedha",
+    "startSec": 7.29,
+    "endSec": 7.7
+  },
+  {
+    "word": "aapke",
+    "startSec": 7.71,
+    "endSec": 8.12
+  },
+  {
+    "word": "local",
+    "startSec": 8.12,
+    "endSec": 8.53
+  },
+  {
+    "word": "database",
+    "startSec": 8.53,
+    "endSec": 8.94
+  },
+  {
+    "word": "aur",
+    "startSec": 8.94,
+    "endSec": 9.35
+  },
+  {
+    "word": "APIs",
+    "startSec": 9.35,
+    "endSec": 9.76
+  },
+  {
+    "word": "se",
+    "startSec": 9.76,
+    "endSec": 10.17
+  },
+  {
+    "word": "jodti",
+    "startSec": 10.18,
+    "endSec": 10.59
+  },
+  {
+    "word": "hai.",
+    "startSec": 10.59,
+    "endSec": 11
+  },
+  {
+    "word": "Dusri",
+    "startSec": 11,
+    "endSec": 11.4
+  },
+  {
+    "word": "hai",
+    "startSec": 11.4,
+    "endSec": 11.8
+  },
+  {
+    "word": "Claude-engineer,",
+    "startSec": 11.8,
+    "endSec": 12.2
+  },
+  {
+    "word": "jo",
+    "startSec": 12.2,
+    "endSec": 12.6
+  },
+  {
+    "word": "terminal",
+    "startSec": 12.6,
+    "endSec": 13
+  },
+  {
+    "word": "se",
+    "startSec": 13,
+    "endSec": 13.4
+  },
+  {
+    "word": "hi",
+    "startSec": 13.4,
+    "endSec": 13.8
+  },
+  {
+    "word": "aapka",
+    "startSec": 13.8,
+    "endSec": 14.2
+  },
+  {
+    "word": "poora",
+    "startSec": 14.2,
+    "endSec": 14.6
+  },
+  {
+    "word": "app",
+    "startSec": 14.6,
+    "endSec": 15
+  },
+  {
+    "word": "khud",
+    "startSec": 15,
+    "endSec": 15.4
+  },
+  {
+    "word": "code",
+    "startSec": 15.4,
+    "endSec": 15.8
+  },
+  {
+    "word": "kar",
+    "startSec": 15.8,
+    "endSec": 16.2
+  },
+  {
+    "word": "deti",
+    "startSec": 16.2,
+    "endSec": 16.6
+  },
+  {
+    "word": "hai.",
+    "startSec": 16.6,
+    "endSec": 17
+  },
+  {
+    "word": "Teesri",
+    "startSec": 17,
+    "endSec": 17.38
+  },
+  {
+    "word": "aur",
+    "startSec": 17.38,
+    "endSec": 17.75
+  },
+  {
+    "word": "chauthi",
+    "startSec": 17.75,
+    "endSec": 18.13
+  },
+  {
+    "word": "hain",
+    "startSec": 18.13,
+    "endSec": 18.5
+  },
+  {
+    "word": "Magic",
+    "startSec": 18.5,
+    "endSec": 18.88
+  },
+  {
+    "word": "U",
+    "startSec": 18.88,
+    "endSec": 19.25
+  },
+  {
+    "word": "I",
+    "startSec": 19.25,
+    "endSec": 19.63
+  },
+  {
+    "word": "aur",
+    "startSec": 19.63,
+    "endSec": 20
+  },
+  {
+    "word": "Shadcn,",
+    "startSec": 20,
+    "endSec": 20.38
+  },
+  {
+    "word": "instant",
+    "startSec": 20.38,
+    "endSec": 20.75
+  },
+  {
+    "word": "beautiful",
+    "startSec": 20.75,
+    "endSec": 21.13
+  },
+  {
+    "word": "frontend",
+    "startSec": 21.13,
+    "endSec": 21.5
+  },
+  {
+    "word": "components",
+    "startSec": 21.5,
+    "endSec": 21.88
+  },
+  {
+    "word": "banane",
+    "startSec": 21.88,
+    "endSec": 22.25
+  },
+  {
+    "word": "ke",
+    "startSec": 22.25,
+    "endSec": 22.63
+  },
+  {
+    "word": "liye.",
+    "startSec": 22.63,
+    "endSec": 23
+  },
+  {
+    "word": "Paanchvi",
+    "startSec": 23,
+    "endSec": 23.31
+  },
+  {
+    "word": "repo",
+    "startSec": 23.31,
+    "endSec": 23.62
+  },
+  {
+    "word": "aur",
+    "startSec": 23.62,
+    "endSec": 23.93
+  },
+  {
+    "word": "saare",
+    "startSec": 23.92,
+    "endSec": 24.23
+  },
+  {
+    "word": "exact",
+    "startSec": 24.23,
+    "endSec": 24.54
+  },
+  {
+    "word": "links",
+    "startSec": 24.54,
+    "endSec": 24.85
+  },
+  {
+    "word": "maine",
+    "startSec": 24.85,
+    "endSec": 25.16
+  },
+  {
+    "word": "caption",
+    "startSec": 25.15,
+    "endSec": 25.46
+  },
+  {
+    "word": "mein",
+    "startSec": 25.46,
+    "endSec": 25.77
+  },
+  {
+    "word": "daal",
+    "startSec": 25.77,
+    "endSec": 26.08
+  },
+  {
+    "word": "diye",
+    "startSec": 26.08,
+    "endSec": 26.39
+  },
+  {
+    "word": "hain",
+    "startSec": 26.38,
+    "endSec": 26.69
+  },
+  {
+    "word": "dosto.",
+    "startSec": 26.69,
+    "endSec": 27
+  },
+  {
+    "word": "Jao",
+    "startSec": 27,
+    "endSec": 27.25
+  },
+  {
+    "word": "check",
+    "startSec": 27.25,
+    "endSec": 27.5
+  },
+  {
+    "word": "karo",
+    "startSec": 27.5,
+    "endSec": 27.75
+  },
+  {
+    "word": "aur",
+    "startSec": 27.75,
+    "endSec": 28
+  },
+  {
+    "word": "tech",
+    "startSec": 28,
+    "endSec": 28.25
+  },
+  {
+    "word": "tips",
+    "startSec": 28.25,
+    "endSec": 28.5
+  },
+  {
+    "word": "ke",
+    "startSec": 28.5,
+    "endSec": 28.75
+  },
+  {
+    "word": "liye",
+    "startSec": 28.75,
+    "endSec": 29
+  },
+  {
+    "word": "mujhe",
+    "startSec": 29,
+    "endSec": 29.25
+  },
+  {
+    "word": "follow",
+    "startSec": 29.25,
+    "endSec": 29.5
+  },
+  {
+    "word": "kar",
+    "startSec": 29.5,
+    "endSec": 29.75
+  },
+  {
+    "word": "lo!",
+    "startSec": 29.75,
+    "endSec": 30
+  }
+]

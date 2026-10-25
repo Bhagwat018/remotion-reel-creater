@@ -4,6 +4,7 @@ import { StepsSceneProps } from "../schema";
 import { SceneLayout } from "../components/SceneLayout";
 import { resolveFontFamily, useTheme } from "../theme/theme";
 import { entranceSpring } from "../lib/motion";
+import { TechLogo, findBrandInText } from "../components/TechLogo";
 
 export const StepsScene: React.FC<
   StepsSceneProps & { steps?: string[]; durationInFrames: number }
@@ -36,6 +37,7 @@ export const StepsScene: React.FC<
           const opacity = interpolate(springVal, [0, 1], [0, 1]);
           const translateY = interpolate(springVal, [0, 1], [16, 0]);
           const stepFont = resolveFontFamily(stepText, theme.typography.ui);
+          const brand = findBrandInText(stepText);
 
           return (
             <div
@@ -43,7 +45,7 @@ export const StepsScene: React.FC<
               style={{
                 display: "flex",
                 alignItems: "center",
-                gap: 24,
+                gap: 20,
                 backgroundColor: theme.colors.card,
                 borderRadius: theme.layout.cardRadius,
                 padding: "24px 32px",
@@ -71,6 +73,18 @@ export const StepsScene: React.FC<
               >
                 {String(idx + 1).padStart(2, "0")}
               </div>
+              {brand && (
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexShrink: 0,
+                  }}
+                >
+                  <TechLogo name={brand.key} size={32} />
+                </div>
+              )}
               <div
                 style={{
                   fontFamily: stepFont,

@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "topic": "Top 5 Repos for Claude Code",
+    "audience": "beginner to intermediate tech people",
+    "lengthSec": 30,
+    "language": "Hinglish",
+    "handle": "@techwith.GenZ",
+    "slug": "claude-code-top-5-repos",
+    "voiceFile": "reels/claude-code-top-5-repos/voice.mp3"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 4,
+      "voice": "Dosto, kya aap bhi Claude Code use kar rahe ho? Toh ye top 5 GitHub repos zarur try karna!",
+      "headline": "TOP 5 *CLAUDE* REPOS"
+    },
+    {
+      "id": "s2-mcp",
+      "type": "orbit",
+      "startSec": 4,
+      "endSec": 11,
+      "voice": "Pehli hai MCP Servers repo, jo Claude ko seedha aapke local database aur APIs se jodti hai.",
+      "headline": "CONNECT *LOCAL* DB",
+      "center": "Claude",
+      "orbiting": [
+        "Postgres",
+        "Redis",
+        "Python",
+        "Local APIs"
+      ]
+    },
+    {
+      "id": "s3-engineer",
+      "type": "terminal",
+      "startSec": 11,
+      "endSec": 17,
+      "voice": "Dusri hai Claude-engineer, jo terminal se hi aapka poora app khud code kar deti hai.",
+      "headline": "AUTO *GENERATE* APPS",
+      "command": "python main.py --agent claude",
+      "path": "~/claude-engineer",
+      "branch": "main",
+      "output": [
+        "✓ Claude Engineer initialized",
+        "➜ Generating full-stack app...",
+        "⚡ React + Node.js code compiled (0.6s)"
+      ]
+    },
+    {
+      "id": "s4-ui",
+      "type": "pills",
+      "startSec": 17,
+      "endSec": 23,
+      "voice": "Teesri aur chauthi hain Magic U I aur Shadcn, instant beautiful frontend components banane ke liye.",
+      "headline": "INSTANT *UI* COMPONENTS",
+      "items": [
+        "React",
+        "Tailwind",
+        "TypeScript",
+        "Nextjs"
+      ]
+    },
+    {
+      "id": "s5-list",
+      "type": "chart",
+      "startSec": 23,
+      "endSec": 27,
+      "voice": "Paanchvi repo aur saare exact links maine caption mein daal diye hain dosto.",
+      "headline": "CODING *BENCHMARK*",
+      "subheadline": "SWE-bench Verified Coding Accuracy",
+      "chartType": "bar",
+      "items": [
+        { "label": "Claude 3.5 Sonnet", "value": 92, "displayValue": "92.4%", "icon": "claude", "color": "#d97706", "badge": "TOP 1" },
+        { "label": "GPT-4o (OpenAI)", "value": 78, "displayValue": "78.2%", "icon": "openai", "color": "#10b981" },
+        { "label": "Llama 3 70B", "value": 65, "displayValue": "65.1%", "icon": "python", "color": "#387eb8" }
+      ]
+    },
+    {
+      "id": "s6-cta",
+      "type": "cta",
+      "startSec": 27,
+      "endSec": 30,
+      "voice": "Jao check karo aur tech tips ke liye mujhe follow kar lo!",
+      "headline": "TOP 5 *CLAUDE* REPOS",
+      "buttonText": "FOLLOW FOR CODING TIPS"
+    }
+  ]
+}

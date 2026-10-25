@@ -11,3 +11,4 @@ out
 *.props.resolved.json
 .props.resolved.json
 public/reels/
+scratch/

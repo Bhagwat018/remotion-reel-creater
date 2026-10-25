@@ -2,6 +2,7 @@ import React from "react";
 import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { resolveFontFamily, useTheme } from "../theme/theme";
 import { entranceSpring } from "../lib/motion";
+import { TechLogo, getBrandMeta } from "./TechLogo";
 
 interface OrbitLoopProps {
   nodes: string[];
@@ -99,9 +100,13 @@ export const OrbitLoop: React.FC<OrbitLoopProps> = ({
               fontWeight: 600,
               whiteSpace: "nowrap",
               zIndex: 10,
+              display: "flex",
+              alignItems: "center",
+              gap: 12,
             }}
           >
-            {nodeText}
+            {getBrandMeta(nodeText) && <TechLogo name={nodeText} size={28} />}
+            <span>{nodeText}</span>
           </div>
         );
       })}

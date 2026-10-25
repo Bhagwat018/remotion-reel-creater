@@ -80,12 +80,18 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
         {/* Audio voice track */}
         {voiceSrc && <Audio src={voiceSrc} />}
 
-        {/* Scene sequences */}
-        {resolvedScenes.map((scene) => {
+        {/* Scene sequences with dynamic SFX */}
+        {resolvedScenes.map((scene, sceneIndex) => {
           const SceneComponent = getSceneComponent(scene.data.type);
           // Add crossfade frames to duration so scenes blend smoothly
           const crossfadeFrames = activeTheme.motion.sceneCrossfadeFrames;
           const sequenceDuration = scene.durationInFrames + crossfadeFrames;
+
+          // Subtle transition sound effect (whoosh for scene changes, ding for charts/stats)
+          const sfxFile =
+            scene.data.type === "chart" || scene.data.type === "stat"
+              ? "sfx/ding.mp3"
+              : "sfx/whoosh.mp3";
 
           return (
             <Sequence
@@ -94,6 +100,10 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
               durationInFrames={sequenceDuration}
               name={`[${scene.data.type}] ${scene.data.id}`}
             >
+              {/* Subtle Scene Transition SFX */}
+              {sceneIndex > 0 && (
+                <Audio src={staticFile(sfxFile)} volume={0.2} />
+              )}
               <SceneComponent
                 {...scene.data}
                 durationInFrames={sequenceDuration}

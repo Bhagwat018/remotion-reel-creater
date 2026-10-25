@@ -1,0 +1,447 @@
+[
+  {
+    "word": "Kya",
+    "startSec": 0,
+    "endSec": 0.3
+  },
+  {
+    "word": "aapka",
+    "startSec": 0.3,
+    "endSec": 0.6
+  },
+  {
+    "word": "code",
+    "startSec": 0.6,
+    "endSec": 0.9
+  },
+  {
+    "word": "production",
+    "startSec": 0.9,
+    "endSec": 1.2
+  },
+  {
+    "word": "mein",
+    "startSec": 1.2,
+    "endSec": 1.5
+  },
+  {
+    "word": "jaate",
+    "startSec": 1.5,
+    "endSec": 1.8
+  },
+  {
+    "word": "hi",
+    "startSec": 1.8,
+    "endSec": 2.1
+  },
+  {
+    "word": "fat",
+    "startSec": 2.1,
+    "endSec": 2.4
+  },
+  {
+    "word": "jata",
+    "startSec": 2.4,
+    "endSec": 2.7
+  },
+  {
+    "word": "hai?",
+    "startSec": 2.7,
+    "endSec": 3
+  },
+  {
+    "word": "Miliye",
+    "startSec": 3,
+    "endSec": 3.38
+  },
+  {
+    "word": "SonarQube",
+    "startSec": 3.38,
+    "endSec": 3.76
+  },
+  {
+    "word": "se.",
+    "startSec": 3.77,
+    "endSec": 4.15
+  },
+  {
+    "word": "Yeh",
+    "startSec": 4.15,
+    "endSec": 4.53
+  },
+  {
+    "word": "aapke",
+    "startSec": 4.54,
+    "endSec": 4.92
+  },
+  {
+    "word": "programming",
+    "startSec": 4.92,
+    "endSec": 5.3
+  },
+  {
+    "word": "code",
+    "startSec": 5.31,
+    "endSec": 5.69
+  },
+  {
+    "word": "ke",
+    "startSec": 5.69,
+    "endSec": 6.07
+  },
+  {
+    "word": "liye",
+    "startSec": 6.08,
+    "endSec": 6.46
+  },
+  {
+    "word": "ek",
+    "startSec": 6.46,
+    "endSec": 6.84
+  },
+  {
+    "word": "smart",
+    "startSec": 6.85,
+    "endSec": 7.23
+  },
+  {
+    "word": "spell-checker",
+    "startSec": 7.23,
+    "endSec": 7.61
+  },
+  {
+    "word": "hai.",
+    "startSec": 7.62,
+    "endSec": 8
+  },
+  {
+    "word": "Yeh",
+    "startSec": 8,
+    "endSec": 8.38
+  },
+  {
+    "word": "continuously",
+    "startSec": 8.38,
+    "endSec": 8.76
+  },
+  {
+    "word": "tees",
+    "startSec": 8.75,
+    "endSec": 9.13
+  },
+  {
+    "word": "se",
+    "startSec": 9.13,
+    "endSec": 9.51
+  },
+  {
+    "word": "zyada",
+    "startSec": 9.5,
+    "endSec": 9.88
+  },
+  {
+    "word": "programming",
+    "startSec": 9.88,
+    "endSec": 10.26
+  },
+  {
+    "word": "languages",
+    "startSec": 10.25,
+    "endSec": 10.63
+  },
+  {
+    "word": "ko",
+    "startSec": 10.63,
+    "endSec": 11.01
+  },
+  {
+    "word": "scan",
+    "startSec": 11,
+    "endSec": 11.38
+  },
+  {
+    "word": "karta",
+    "startSec": 11.38,
+    "endSec": 11.76
+  },
+  {
+    "word": "hai,",
+    "startSec": 11.75,
+    "endSec": 12.13
+  },
+  {
+    "word": "hidden",
+    "startSec": 12.13,
+    "endSec": 12.51
+  },
+  {
+    "word": "errors",
+    "startSec": 12.5,
+    "endSec": 12.88
+  },
+  {
+    "word": "dhundhne",
+    "startSec": 12.88,
+    "endSec": 13.26
+  },
+  {
+    "word": "ke",
+    "startSec": 13.25,
+    "endSec": 13.63
+  },
+  {
+    "word": "liye.",
+    "startSec": 13.63,
+    "endSec": 14.01
+  },
+  {
+    "word": "Kharab",
+    "startSec": 14,
+    "endSec": 14.35
+  },
+  {
+    "word": "code,",
+    "startSec": 14.35,
+    "endSec": 14.7
+  },
+  {
+    "word": "security",
+    "startSec": 14.71,
+    "endSec": 15.06
+  },
+  {
+    "word": "flaws",
+    "startSec": 15.06,
+    "endSec": 15.41
+  },
+  {
+    "word": "aur",
+    "startSec": 15.41,
+    "endSec": 15.76
+  },
+  {
+    "word": "code",
+    "startSec": 15.76,
+    "endSec": 16.11
+  },
+  {
+    "word": "smells",
+    "startSec": 16.12,
+    "endSec": 16.47
+  },
+  {
+    "word": "ko",
+    "startSec": 16.47,
+    "endSec": 16.82
+  },
+  {
+    "word": "ye",
+    "startSec": 16.82,
+    "endSec": 17.17
+  },
+  {
+    "word": "production",
+    "startSec": 17.18,
+    "endSec": 17.53
+  },
+  {
+    "word": "se",
+    "startSec": 17.53,
+    "endSec": 17.88
+  },
+  {
+    "word": "pehle",
+    "startSec": 17.88,
+    "endSec": 18.23
+  },
+  {
+    "word": "hi",
+    "startSec": 18.24,
+    "endSec": 18.59
+  },
+  {
+    "word": "detect",
+    "startSec": 18.59,
+    "endSec": 18.94
+  },
+  {
+    "word": "kar",
+    "startSec": 18.94,
+    "endSec": 19.29
+  },
+  {
+    "word": "leta",
+    "startSec": 19.29,
+    "endSec": 19.64
+  },
+  {
+    "word": "hai.",
+    "startSec": 19.65,
+    "endSec": 20
+  },
+  {
+    "word": "Aur",
+    "startSec": 20,
+    "endSec": 20.32
+  },
+  {
+    "word": "sabse",
+    "startSec": 20.32,
+    "endSec": 20.64
+  },
+  {
+    "word": "best",
+    "startSec": 20.63,
+    "endSec": 20.95
+  },
+  {
+    "word": "part?",
+    "startSec": 20.95,
+    "endSec": 21.27
+  },
+  {
+    "word": "Yeh",
+    "startSec": 21.26,
+    "endSec": 21.58
+  },
+  {
+    "word": "har",
+    "startSec": 21.58,
+    "endSec": 21.9
+  },
+  {
+    "word": "code",
+    "startSec": 21.89,
+    "endSec": 22.21
+  },
+  {
+    "word": "change",
+    "startSec": 22.21,
+    "endSec": 22.53
+  },
+  {
+    "word": "par",
+    "startSec": 22.53,
+    "endSec": 22.85
+  },
+  {
+    "word": "GitHub",
+    "startSec": 22.84,
+    "endSec": 23.16
+  },
+  {
+    "word": "ya",
+    "startSec": 23.16,
+    "endSec": 23.48
+  },
+  {
+    "word": "Jenkins",
+    "startSec": 23.47,
+    "endSec": 23.79
+  },
+  {
+    "word": "pipeline",
+    "startSec": 23.79,
+    "endSec": 24.11
+  },
+  {
+    "word": "ke",
+    "startSec": 24.11,
+    "endSec": 24.43
+  },
+  {
+    "word": "sath",
+    "startSec": 24.42,
+    "endSec": 24.74
+  },
+  {
+    "word": "automatically",
+    "startSec": 24.74,
+    "endSec": 25.06
+  },
+  {
+    "word": "run",
+    "startSec": 25.05,
+    "endSec": 25.37
+  },
+  {
+    "word": "hota",
+    "startSec": 25.37,
+    "endSec": 25.69
+  },
+  {
+    "word": "hai.",
+    "startSec": 25.68,
+    "endSec": 26
+  },
+  {
+    "word": "Hackers",
+    "startSec": 26,
+    "endSec": 26.29
+  },
+  {
+    "word": "ko",
+    "startSec": 26.29,
+    "endSec": 26.58
+  },
+  {
+    "word": "rokein",
+    "startSec": 26.57,
+    "endSec": 26.86
+  },
+  {
+    "word": "aur",
+    "startSec": 26.86,
+    "endSec": 27.15
+  },
+  {
+    "word": "clean",
+    "startSec": 27.14,
+    "endSec": 27.43
+  },
+  {
+    "word": "code",
+    "startSec": 27.43,
+    "endSec": 27.72
+  },
+  {
+    "word": "likhein!",
+    "startSec": 27.71,
+    "endSec": 28
+  },
+  {
+    "word": "Daily",
+    "startSec": 28,
+    "endSec": 28.29
+  },
+  {
+    "word": "tech",
+    "startSec": 28.29,
+    "endSec": 28.58
+  },
+  {
+    "word": "tips",
+    "startSec": 28.57,
+    "endSec": 28.86
+  },
+  {
+    "word": "ke",
+    "startSec": 28.86,
+    "endSec": 29.15
+  },
+  {
+    "word": "liye",
+    "startSec": 29.14,
+    "endSec": 29.43
+  },
+  {
+    "word": "follow",
+    "startSec": 29.43,
+    "endSec": 29.72
+  },
+  {
+    "word": "karein.",
+    "startSec": 29.71,
+    "endSec": 30
+  }
+]

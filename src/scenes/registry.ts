@@ -13,6 +13,8 @@ import { StepsScene } from "./StepsScene";
 import { QuoteScene } from "./QuoteScene";
 import { CtaScene } from "./CtaScene";
 import { DiagramScene } from "./DiagramScene";
+import { TerminalScene } from "./TerminalScene";
+import { ChartScene } from "./ChartScene";
 
 type SceneComponent = React.FC<SceneData & { durationInFrames: number }>;
 
@@ -30,6 +32,8 @@ export const sceneRegistry: Record<SceneType, SceneComponent> = {
   quote: QuoteScene as unknown as SceneComponent,
   cta: CtaScene as unknown as SceneComponent,
   diagram: DiagramScene as unknown as SceneComponent,
+  terminal: TerminalScene as unknown as SceneComponent,
+  chart: ChartScene as unknown as SceneComponent,
 };
 
 export const getSceneComponent = (type: string): SceneComponent => {

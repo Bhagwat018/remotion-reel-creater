@@ -72,6 +72,8 @@ export const VALID_SCENE_TYPES = [
   "quote",
   "cta",
   "diagram",
+  "terminal",
+  "chart",
 ];
 
 const baseSceneSchema = z.object({
@@ -177,6 +179,27 @@ const sceneTypeMap = {
     middleLabel: z.string().optional(),
     targetLabels: z.array(z.string()).optional(),
     steps: z.array(z.string()).optional(),
+  }),
+  terminal: baseSceneSchema.extend({
+    type: z.literal("terminal"),
+    headline: z.string().optional(),
+    subheadline: z.string().optional(),
+    command: z.string().optional(),
+    path: z.string().optional(),
+    branch: z.string().optional(),
+    output: z.array(z.any()).optional(),
+  }),
+  chart: baseSceneSchema.extend({
+    type: z.literal("chart"),
+    headline: z.string().optional(),
+    subheadline: z.string().optional(),
+    chartType: z.enum(["bar", "metric"]).optional(),
+    maxValue: z.number().optional(),
+    items: z.array(z.any()).optional(),
+    metricValue: z.string().optional(),
+    metricLabel: z.string().optional(),
+    metricComparison: z.string().optional(),
+    metricIcon: z.string().optional(),
   }),
 };
 

@@ -5,6 +5,7 @@ import { SceneLayout } from "../components/SceneLayout";
 import { Headline } from "../components/Headline";
 import { LeadIn } from "../components/LeadIn";
 import { useTheme } from "../theme/theme";
+import { TechLogo, findBrandInText } from "../components/TechLogo";
 
 export const DiagramScene: React.FC<DiagramSceneProps & { durationInFrames: number }> = ({
   headline,
@@ -165,11 +166,19 @@ export const DiagramScene: React.FC<DiagramSceneProps & { durationInFrames: numb
               boxShadow: "0 4px 20px rgba(56, 189, 248, 0.2)",
             }}
           >
-            {/* Phone/User Icon */}
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" strokeWidth="2">
-              <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
-              <line x1="12" y1="18" x2="12.01" y2="18" />
-            </svg>
+            {/* Phone/User Icon or TechLogo */}
+            {(() => {
+              const brand = findBrandInText(sourceLabel);
+              if (brand) {
+                return <TechLogo name={brand.key} size={26} />;
+              }
+              return (
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" strokeWidth="2">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                  <line x1="12" y1="18" x2="12.01" y2="18" />
+                </svg>
+              );
+            })()}
             <div>
               <div style={{ fontSize: 20, fontWeight: 700, color: "#ffffff" }}>{sourceLabel}</div>
               <div style={{ fontSize: 13, color: "#94a3b8", fontFamily: theme.typography.mono }}>
@@ -202,11 +211,19 @@ export const DiagramScene: React.FC<DiagramSceneProps & { durationInFrames: numb
               boxShadow: "0 8px 30px rgba(129, 140, 248, 0.35)",
             }}
           >
-            {/* Router / Balancer Icon */}
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#818cf8" strokeWidth="2">
-              <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
-              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-            </svg>
+            {/* Router / Balancer Icon or TechLogo */}
+            {(() => {
+              const brand = findBrandInText(middleLabel);
+              if (brand) {
+                return <TechLogo name={brand.key} size={30} />;
+              }
+              return (
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#818cf8" strokeWidth="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
+              );
+            })()}
             <div>
               <div style={{ fontSize: 22, fontWeight: 800, color: "#ffffff", letterSpacing: "0.02em" }}>
                 {middleLabel}
@@ -233,6 +250,7 @@ export const DiagramScene: React.FC<DiagramSceneProps & { durationInFrames: numb
               fps,
               config: { damping: 12, stiffness: 100 },
             });
+            const brand = findBrandInText(serverName);
 
             return (
               <div
@@ -249,13 +267,17 @@ export const DiagramScene: React.FC<DiagramSceneProps & { durationInFrames: numb
                   transform: `scale(${Math.min(1, serverSpring)})`,
                 }}
               >
-                {/* Server Stack Icon */}
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" strokeWidth="2">
-                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
-                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
-                  <line x1="6" y1="6" x2="6.01" y2="6" />
-                  <line x1="6" y1="18" x2="6.01" y2="18" />
-                </svg>
+                {/* Server Stack Icon or Brand Logo */}
+                {brand ? (
+                  <TechLogo name={brand.key} size={28} />
+                ) : (
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" strokeWidth="2">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                    <line x1="6" y1="6" x2="6.01" y2="6" />
+                    <line x1="6" y1="18" x2="6.01" y2="18" />
+                  </svg>
+                )}
                 <div style={{ fontSize: 17, fontWeight: 700, color: "#ffffff", textAlign: "center" }}>
                   {serverName}
                 </div>

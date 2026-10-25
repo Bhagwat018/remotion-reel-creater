@@ -2,6 +2,7 @@ import React from "react";
 import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { resolveFontFamily, useTheme } from "../theme/theme";
 import { entranceSpring } from "../lib/motion";
+import { TechLogo, getBrandMeta } from "./TechLogo";
 
 interface PillProps {
   text: string;
@@ -26,8 +27,8 @@ export const Pill: React.FC<PillProps> = ({
   const translateY = interpolate(springProgress, [0, 1], [16, 0]);
 
   const fontFamily = resolveFontFamily(text, theme.typography.ui);
-
   const numStr = String(index + 1).padStart(2, "0");
+  const brandMeta = getBrandMeta(text);
 
   return (
     <div
@@ -69,19 +70,22 @@ export const Pill: React.FC<PillProps> = ({
           {numStr}
         </div>
 
-        {/* Main Text */}
-        <span
-          style={{
-            fontFamily,
-            fontSize: 36,
-            fontWeight: 700,
-            lineHeight: 1.25,
-            letterSpacing: "-0.01em",
-            color: "#ffffff",
-          }}
-        >
-          {text}
-        </span>
+        {/* Main Text & Tech Logo */}
+        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+          {brandMeta && <TechLogo name={text} size={32} />}
+          <span
+            style={{
+              fontFamily,
+              fontSize: 36,
+              fontWeight: 700,
+              lineHeight: 1.25,
+              letterSpacing: "-0.01em",
+              color: "#ffffff",
+            }}
+          >
+            {text}
+          </span>
+        </div>
       </div>
 
       {/* Right Sparkle / Verified Tag */}

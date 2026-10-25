@@ -14,6 +14,8 @@ export const VALID_SCENE_TYPES = [
   "quote",
   "cta",
   "diagram",
+  "terminal",
+  "chart",
 ] as const;
 
 export type SceneType = (typeof VALID_SCENE_TYPES)[number];
@@ -227,6 +229,50 @@ export const diagramSceneSchema = baseSceneSchema
     leadIn: data.leadIn || data.subtitle,
   }));
 
+export const terminalSceneSchema = baseSceneSchema
+  .extend({
+    type: z.literal("terminal"),
+    headline: z.string().optional(),
+    subheadline: z.string().optional(),
+    command: z.string().optional().default("claude run --agent"),
+    path: z.string().optional().default("~/dev/project"),
+    branch: z.string().optional().default("main"),
+    output: z.array(z.union([z.string(), z.object({ text: z.string(), type: z.string().optional() })])).optional(),
+  })
+  .transform((data) => ({
+    ...data,
+    leadIn: data.leadIn || data.subtitle,
+  }));
+
+export const chartSceneSchema = baseSceneSchema
+  .extend({
+    type: z.literal("chart"),
+    headline: z.string().optional(),
+    subheadline: z.string().optional(),
+    chartType: z.enum(["bar", "metric"]).optional().default("bar"),
+    maxValue: z.number().optional().default(100),
+    items: z
+      .array(
+        z.object({
+          label: z.string(),
+          value: z.number(),
+          displayValue: z.string().optional(),
+          color: z.string().optional(),
+          icon: z.string().optional(),
+          badge: z.string().optional(),
+        })
+      )
+      .optional(),
+    metricValue: z.string().optional(),
+    metricLabel: z.string().optional(),
+    metricComparison: z.string().optional(),
+    metricIcon: z.string().optional(),
+  })
+  .transform((data) => ({
+    ...data,
+    leadIn: data.leadIn || data.subtitle,
+  }));
+
 export const sceneSchema = z.discriminatedUnion("type", [
   titleSceneSchema,
   pillsSceneSchema,
@@ -241,6 +287,8 @@ export const sceneSchema = z.discriminatedUnion("type", [
   quoteSceneSchema,
   ctaSceneSchema,
   diagramSceneSchema,
+  terminalSceneSchema,
+  chartSceneSchema,
 ]);
 
 export type TitleSceneProps = z.infer<typeof titleSceneSchema>;
@@ -256,6 +304,8 @@ export type StepsSceneProps = z.infer<typeof stepsSceneSchema>;
 export type QuoteSceneProps = z.infer<typeof quoteSceneSchema>;
 export type CtaSceneProps = z.infer<typeof ctaSceneSchema>;
 export type DiagramSceneProps = z.infer<typeof diagramSceneSchema>;
+export type TerminalSceneProps = z.infer<typeof terminalSceneSchema>;
+export type ChartSceneProps = z.infer<typeof chartSceneSchema>;
 
 export type SceneData =
   | TitleSceneProps
@@ -270,7 +320,9 @@ export type SceneData =
   | StepsSceneProps
   | QuoteSceneProps
   | CtaSceneProps
-  | DiagramSceneProps;
+  | DiagramSceneProps
+  | TerminalSceneProps
+  | ChartSceneProps;
 
 export const avatarSchema = z.object({
   enabled: z.boolean().default(true),

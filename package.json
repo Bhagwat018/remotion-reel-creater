@@ -13,6 +13,7 @@
     "@remotion/google-fonts": "^4.0.538",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "react-icons": "^5.7.0",
     "remotion": "4.0.538",
     "zod": "4.5.4"
   },
