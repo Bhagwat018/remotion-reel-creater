@@ -161,12 +161,31 @@ try {
     fs.copyFileSync(outputPath, publicVideo);
   } catch {}
 
+  // 5b. Auto-render High-CTR Cover Thumbnail (Instagram & YouTube Shorts)
+  console.log(`\n=======================================================`);
+  console.log(`🖼️  Generating High-CTR Cover Thumbnail: out/${slug}-cover.jpg`);
+  console.log(`=======================================================`);
+  const coverPath = path.join(outDir, `${slug}-cover.jpg`);
+  const stillCommand = `npx remotion still Cover "${coverPath}" --props="${resolvedPropsPath}" --image-format=jpeg`;
+  try {
+    execSync(stillCommand, {
+      stdio: "inherit",
+      cwd: rootDir,
+    });
+    const publicCover = path.join(publicDir, "cover.jpg");
+    fs.copyFileSync(coverPath, publicCover);
+  } catch (stillErr) {
+    console.warn(`⚠️ Cover thumbnail generation warning:`, stillErr.message);
+  }
+
   console.log(`\n=======================================================`);
   console.log(`🎉 3/3 Render Complete!`);
   console.log(`📁 Video file: out/${slug}.mp4`);
+  console.log(`🖼️ Cover image: out/${slug}-cover.jpg`);
   console.log(`🌐 Dashboard preview: public/reels/${slug}/video.mp4`);
   console.log(`=======================================================\n`);
 } catch (renderError) {
   console.error(`\n❌ Remotion render failed:`, renderError.message);
   process.exit(1);
 }
+

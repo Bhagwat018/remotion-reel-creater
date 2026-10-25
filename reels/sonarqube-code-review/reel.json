@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "topic": "SonarQube Explained",
+    "audience": "beginner to intermediate tech people",
+    "lengthSec": 30,
+    "language": "Hinglish",
+    "handle": "@techwith.GenZ",
+    "slug": "sonarqube-code-review",
+    "voiceFile": "reels/sonarqube-code-review/voice.mp3"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 3,
+      "voice": "Kya aapka code production mein jaate hi fat jata hai?",
+      "headline": "CODE *BREAKING* IN PRODUCTION?"
+    },
+    {
+      "id": "s2-intro",
+      "type": "card",
+      "startSec": 3,
+      "endSec": 8,
+      "voice": "Miliye SonarQube se. Yeh aapke programming code ke liye ek smart spell-checker hai.",
+      "headline": "SPELL-CHECK FOR *CODE*",
+      "cardText": "Automatic code review tool for your projects.",
+      "chip": "Clean Code"
+    },
+    {
+      "id": "s3-stat",
+      "type": "stat",
+      "startSec": 8,
+      "endSec": 14,
+      "voice": "Yeh continuously tees se zyada programming languages ko scan karta hai, hidden errors dhundhne ke liye.",
+      "headline": "SCANS *30+* LANGUAGES",
+      "value": "30+",
+      "label": "Supported Languages"
+    },
+    {
+      "id": "s4-pills",
+      "type": "pills",
+      "startSec": 14,
+      "endSec": 20,
+      "voice": "Kharab code, security flaws aur code smells ko ye production se pehle hi detect kar leta hai.",
+      "headline": "CATCHES *HIDDEN* ERRORS",
+      "items": [
+        "Bugs",
+        "Vulnerabilities",
+        "Code Smells"
+      ]
+    },
+    {
+      "id": "s5-orbit",
+      "type": "orbit",
+      "startSec": 20,
+      "endSec": 26,
+      "voice": "Aur sabse best part? Yeh har code change par GitHub ya Jenkins pipeline ke sath automatically run hota hai.",
+      "headline": "PIPELINE *INTEGRATION*",
+      "center": "SonarQube",
+      "orbiting": [
+        "GitHub",
+        "GitLab",
+        "Jenkins"
+      ]
+    },
+    {
+      "id": "s6-cta",
+      "type": "cta",
+      "startSec": 26,
+      "endSec": 30,
+      "voice": "Hackers ko rokein aur clean code likhein! Daily tech tips ke liye follow karein.",
+      "headline": "CODE *BREAKING* IN PRODUCTION?",
+      "buttonText": "FOLLOW FOR TECH TIPS"
+    }
+  ]
+}

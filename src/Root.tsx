@@ -1,6 +1,7 @@
 import React from "react";
-import { CalculateMetadataFunction, Composition } from "remotion";
+import { CalculateMetadataFunction, Composition, Still } from "remotion";
 import { Reel, ReelProps } from "./Reel";
+import { CoverThumbnail } from "./components/CoverThumbnail";
 import { theme } from "./theme/theme";
 import { computeReelDurationInFrames, resolveSceneTimings } from "./lib/timing";
 
@@ -15,6 +16,11 @@ const defaultFallbackProps: RootReelProps = {
     loop: true,
     captions: true,
     avatar: { enabled: true, position: "left" },
+    bgm: true,
+    bgmVolume: 0.18,
+    captionStyle: "bubble",
+    showSafeZone: false,
+    coverIntro: false,
   },
   scenes: [
     {
@@ -69,6 +75,14 @@ export const RemotionRoot: React.FC = () => {
         width={theme.layout.width}
         height={theme.layout.height}
       />
+      <Still
+        id="Cover"
+        component={CoverThumbnail as unknown as React.FC<RootReelProps>}
+        defaultProps={defaultFallbackProps}
+        width={theme.layout.width}
+        height={theme.layout.height}
+      />
     </>
   );
 };
+

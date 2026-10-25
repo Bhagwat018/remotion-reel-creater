@@ -8,6 +8,9 @@ import { Stars } from "./components/Stars";
 import { HandlePill } from "./components/HandlePill";
 import { Captions } from "./components/Captions";
 import { SpeakingAvatar } from "./components/SpeakingAvatar";
+import { KineticCaptions } from "./components/KineticCaptions";
+import { SafeZoneOverlay } from "./components/SafeZoneOverlay";
+import { CoverThumbnail } from "./components/CoverThumbnail";
 import { getSceneComponent } from "./scenes/registry";
 import { framesToSec, getSceneWords, resolveSceneTimings } from "./lib/timing";
 
@@ -56,9 +59,17 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
     return staticFile(meta.voiceFile);
   }, [meta.voiceFile]);
 
+  // Background music with intelligent ducking
+  const bgmSrc = useMemo(() => {
+    if (!meta.bgm) return null;
+    if (typeof meta.bgm === "string") return staticFile(meta.bgm);
+    return staticFile("bgm/cyber-groove.mp3");
+  }, [meta.bgm]);
+
   // Avatar config
   const avatarEnabled = meta.avatar?.enabled !== false;
   const avatarPosition = meta.avatar?.position || "left";
+  const captionStyle = meta.captionStyle || (avatarEnabled ? "bubble" : "kinetic");
 
   return (
     <ThemeProvider theme={activeTheme}>
@@ -79,6 +90,25 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
 
         {/* Audio voice track */}
         {voiceSrc && <Audio src={voiceSrc} />}
+
+        {/* Background Music with Intelligent Auto-Ducking */}
+        {bgmSrc && (
+          <Audio
+            src={bgmSrc}
+            volume={(f) => {
+              const tSec = f / fps;
+              const talking =
+                words && words.length > 0
+                  ? words.some(
+                      (w) =>
+                        tSec >= w.startSec - 0.12 && tSec <= w.endSec + 0.12
+                    )
+                  : true;
+              return talking ? 0.06 : (meta.bgmVolume || 0.22);
+            }}
+            loop
+          />
+        )}
 
         {/* Scene sequences with dynamic SFX */}
         {resolvedScenes.map((scene, sceneIndex) => {
@@ -112,20 +142,37 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
           );
         })}
 
-        {/* Animated Speaking Character Avatar with Comic Speech Bubble Captions */}
-        {avatarEnabled ? (
-          <SpeakingAvatar
-            words={activeWords}
-            enabled={true}
-            position={avatarPosition}
-          />
-        ) : (
-          <Captions words={activeWords} enabled={meta.captions ?? true} />
+        {/* Subtitles: Avatar Bubble and/or Viral Kinetic Pop Captions */}
+        {(captionStyle === "bubble" || captionStyle === "both") && (
+          avatarEnabled ? (
+            <SpeakingAvatar
+              words={activeWords}
+              enabled={true}
+              position={avatarPosition}
+            />
+          ) : (
+            <Captions words={activeWords} enabled={meta.captions ?? true} />
+          )
+        )}
+
+        {(captionStyle === "kinetic" || captionStyle === "both") && (
+          <KineticCaptions words={activeWords} enabled={meta.captions ?? true} />
         )}
 
         {/* Fixed bottom handle pill */}
         <HandlePill handle={meta.handle} />
+
+        {/* Social Safe Zone Overlay (Instagram & YouTube Shorts UI Guides) */}
+        <SafeZoneOverlay visible={Boolean(meta.showSafeZone)} />
+
+        {/* Frame 0 Poster Injection (guarantees platform thumbnail is cover image) */}
+        {frame === 0 && meta.coverIntro && (
+          <Sequence from={0} durationInFrames={1}>
+            <CoverThumbnail meta={meta} scenes={scenes} />
+          </Sequence>
+        )}
       </div>
     </ThemeProvider>
   );
 };
+

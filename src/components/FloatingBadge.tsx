@@ -4,10 +4,12 @@ import { TechLogo, getBrandMeta } from "./TechLogo";
 
 export interface FloatingBadgeProps {
   icon?: string;
-  title: string;
+  title?: string;
   subtitle?: string;
   chip?: string;
+  size?: number;
   delayFrames?: number;
+  forceEntrance?: boolean;
   style?: React.CSSProperties;
 }
 
@@ -16,42 +18,47 @@ export const FloatingBadge: React.FC<FloatingBadgeProps> = ({
   title,
   subtitle,
   chip,
+  size,
   delayFrames = 0,
+  forceEntrance = false,
   style = {},
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Entrance spring with delay
-  const entrance = spring({
+  // Entrance spring with delay (or force 1 if static cover)
+  const springVal = spring({
     frame: Math.max(0, frame - delayFrames),
     fps,
     config: { damping: 12, stiffness: 140 },
   });
+  const entrance = forceEntrance ? 1 : springVal;
 
   // Levitation float physics
-  const floatY = Math.sin((frame + delayFrames * 3) / 14) * 8;
-  const floatRotate = Math.sin((frame + delayFrames * 3) / 20) * 1.5;
+  const floatY = forceEntrance ? 0 : Math.sin((frame + delayFrames * 3) / 14) * 8;
+  const floatRotate = forceEntrance ? 0 : Math.sin((frame + delayFrames * 3) / 20) * 1.5;
 
   const brandMeta = icon ? getBrandMeta(icon) : null;
   const accentColor = brandMeta ? brandMeta.defaultColor : "#3b82f6";
+  const isIconOnly = !title;
 
   return (
     <div
       style={{
         transform: `perspective(1000px) scale(${entrance}) translateY(${floatY}px) rotateZ(${floatRotate}deg)`,
         transformOrigin: "center center",
-        background: "rgba(15, 23, 42, 0.85)",
+        background: "rgba(15, 23, 42, 0.88)",
         backdropFilter: "blur(20px)",
-        border: `1.5px solid ${accentColor}55`,
-        borderRadius: 24,
-        padding: "24px 32px",
-        boxShadow: `0 20px 50px -10px rgba(0, 0, 0, 0.7), 0 0 40px -10px ${accentColor}30`,
+        border: `2px solid ${accentColor}77`,
+        borderRadius: isIconOnly ? 28 : 24,
+        padding: isIconOnly ? "20px" : "24px 32px",
+        boxShadow: `0 20px 50px -10px rgba(0, 0, 0, 0.7), 0 0 40px -10px ${accentColor}40`,
         display: "inline-flex",
         alignItems: "center",
-        gap: 24,
-        minWidth: 380,
-        maxWidth: 620,
+        justifyContent: "center",
+        gap: isIconOnly ? 0 : 24,
+        minWidth: isIconOnly ? undefined : 380,
+        maxWidth: isIconOnly ? undefined : 620,
         position: "relative",
         overflow: "hidden",
         ...style,

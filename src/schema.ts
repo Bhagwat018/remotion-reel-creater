@@ -346,6 +346,11 @@ export const metaSchema = z
     audience: z.string().optional(),
     lengthSec: z.number().optional(),
     language: z.string().optional(),
+    bgm: z.union([z.boolean(), z.string()]).optional().default(true),
+    bgmVolume: z.number().min(0).max(1).optional().default(0.18),
+    captionStyle: z.enum(["bubble", "kinetic", "both", "none"]).optional().default("bubble"),
+    showSafeZone: z.boolean().optional().default(false),
+    coverIntro: z.boolean().optional().default(false),
   })
   .transform((meta) => {
     const slug = meta.slug;
@@ -357,6 +362,11 @@ export const metaSchema = z
       loop: meta.loop ?? true,
       captions: meta.captions ?? true,
       avatar: meta.avatar ?? { enabled: true, position: "left" },
+      bgm: meta.bgm ?? true,
+      bgmVolume: meta.bgmVolume ?? 0.18,
+      captionStyle: meta.captionStyle ?? "bubble",
+      showSafeZone: meta.showSafeZone ?? false,
+      coverIntro: meta.coverIntro ?? false,
     };
   });
 
