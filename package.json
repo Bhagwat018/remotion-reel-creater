@@ -26,6 +26,7 @@
   },
   "scripts": {
     "dev": "remotion studio",
+    "dashboard": "node dashboard/server.mjs",
     "new-reel": "node scripts/new-reel.mjs",
     "validate": "node scripts/validate-reel.mjs",
     "render:reel": "node scripts/render-reel.mjs",

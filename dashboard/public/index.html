@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remotion Reel Creator • Universal Video Automation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-cyan"></div>
+  <div class="ambient-glow glow-purple"></div>
+
+  <!-- Header -->
+  <header class="studio-header">
+    <div class="header-brand">
+      <div class="brand-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+      </div>
+      <div>
+        <div class="brand-title">
+          <span>Remotion Reel</span> Studio
+          <span class="badge-v1">UNIVERSAL V1.0</span>
+        </div>
+        <div class="brand-sub">Data-driven automated Instagram tech reels generator</div>
+      </div>
+    </div>
+
+    <div class="header-controls">
+      <div class="system-status">
+        <span class="pulse-dot"></span>
+        <span class="status-text">Server: <strong>localhost:3030</strong></span>
+      </div>
+      <a href="http://localhost:3000" target="_blank" class="btn-ghost" title="Open Remotion Studio GUI on Port 3000">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+        Studio GUI (3000)
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="studio-main">
+    <!-- Left Column: Inputs & Controls -->
+    <section class="panel-left">
+      <!-- Preset Bar & Slug -->
+      <div class="card preset-card">
+        <div class="card-header">
+          <div class="header-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+            Reel Preset & Slug
+          </div>
+          <span class="info-tag">1-Click Load</span>
+        </div>
+
+        <div class="preset-controls">
+          <div class="form-group flex-2">
+            <label for="templateSelect">Load Preset Template</label>
+            <div class="select-wrapper">
+              <select id="templateSelect">
+                <option value="" disabled selected>-- Select a template --</option>
+                <option value="hardcode-topic">⚡ System Load Hindi (44.5s • 7 Scenes • Hindi Voice)</option>
+                <option value="demo-hallucination">🤖 AI Lies / Hallucination (30s • 7 Scenes • English Voice)</option>
+                <option value="demo-showcase">🚀 12-Scene Universal Showcase (30.5s • All Scene Types)</option>
+                <option value="slug-name">🔥 Quick Tech Hook (38s • 6 Scenes)</option>
+                <option value="_template">✨ Clean Blank Template</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group flex-1">
+            <label for="reelSlug">Reel Slug (ID)</label>
+            <input type="text" id="reelSlug" placeholder="e.g. high-traffic-hindi" spellcheck="false" autocomplete="off">
+          </div>
+        </div>
+      </div>
+
+      <!-- JSON Editor Section -->
+      <div class="card json-card">
+        <div class="card-header">
+          <div class="header-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            Reel Data (<span class="mono">reel.json</span>)
+          </div>
+          <div class="json-actions">
+            <div id="jsonStatusBadge" class="status-badge badge-valid">
+              <span class="badge-dot"></span>
+              <span class="badge-label">Valid JSON</span>
+            </div>
+            <button id="formatJsonBtn" class="btn-sm" title="Format & Prettify JSON">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line></svg>
+              Format
+            </button>
+            <label class="btn-sm file-label" title="Upload a reel.json file from your computer">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+              Upload JSON
+              <input type="file" id="jsonFileInput" accept=".json" style="display:none;">
+            </label>
+          </div>
+        </div>
+
+        <div class="editor-container" id="editorContainer">
+          <div class="line-numbers" id="lineNumbers">1</div>
+          <textarea id="jsonEditor" spellcheck="false" placeholder="Paste your reel.json structure here..."></textarea>
+        </div>
+        <div id="jsonMetaSummary" class="json-meta-summary">
+          <span>Scenes: <strong id="summarySceneCount">0</strong></span>
+          <span>•</span>
+          <span>Estimated Duration: <strong id="summaryDuration">0s</strong></span>
+          <span>•</span>
+          <span>Captions: <strong id="summaryCaptions">Enabled</strong></span>
+          <span>•</span>
+          <span>Loop: <strong id="summaryLoop">Yes</strong></span>
+        </div>
+      </div>
+
+      <!-- MP3 Voice Upload & Audio Player -->
+      <div class="card audio-card">
+        <div class="card-header">
+          <div class="header-label">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+            Voice Audio (<span class="mono">voice.mp3</span>)
+          </div>
+          <span class="info-tag" id="audioSourceTag">Preset Audio Attached</span>
+        </div>
+
+        <div class="dropzone" id="audioDropzone">
+          <input type="file" id="audioFileInput" accept="audio/mp3,audio/mpeg,audio/wav,audio/m4a" style="display:none;">
+          <div class="dropzone-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+              <line x1="12" y1="19" x2="12" y2="22"></line>
+            </svg>
+          </div>
+          <div class="dropzone-text">
+            <strong>Drop your MP3 voice file here</strong>, or <span class="browse-link">browse files</span>
+          </div>
+          <div class="dropzone-hint">Supports MP3, WAV, M4A voiceovers</div>
+        </div>
+
+        <!-- Audio Player preview inside card -->
+        <div class="audio-preview" id="audioPreview">
+          <div class="audio-info">
+            <div class="audio-filename-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+              <span id="audioFileNameDisplay">demo-voice.mp3</span>
+            </div>
+            <span class="audio-size-badge" id="audioFileSizeDisplay">120 KB</span>
+          </div>
+
+          <div class="audio-controls-row">
+            <audio id="audioPlayer" controls preload="metadata"></audio>
+          </div>
+
+          <div class="audio-sample-shortcuts">
+            <span class="shortcut-label">Or use sample voice:</span>
+            <button class="btn-chip" data-sample="hardcode-topic">Hindi Load Voice</button>
+            <button class="btn-chip" data-sample="demo-hallucination">English AI Voice</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit / Render Action Button -->
+      <div class="action-card">
+        <button id="createReelBtn" class="btn-create-reel">
+          <span class="btn-glow-layer"></span>
+          <span class="btn-content">
+            <svg class="bolt-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            <span id="createBtnText">CREATE & RENDER REEL</span>
+          </span>
+        </button>
+        <div class="action-caption">
+          Auto-saves files to <code class="mono">reels/</code>, validates schema, and renders 1080×1920 MP4 via Remotion engine.
+        </div>
+      </div>
+    </section>
+
+    <!-- Right Column: Video Controller & Live Terminal -->
+    <section class="panel-right">
+      <div class="player-wrapper">
+        <div class="phone-frame">
+          <!-- Smartphone Outer Hardware Shell -->
+          <div class="phone-bezel">
+            <div class="phone-camera-island">
+              <div class="camera-lens"></div>
+              <div class="speaker-pill"></div>
+            </div>
+
+            <!-- Screen Area -->
+            <div class="phone-screen" id="phoneScreen">
+              <!-- Idle State Display -->
+              <div class="phone-idle-state" id="phoneIdleState">
+                <div class="idle-brand-orb">
+                  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </div>
+                <div class="idle-title" id="idleTitle">Ready to Create</div>
+                <div class="idle-sub" id="idleSub">Put your JSON and MP3 on the left, then click <strong>Create & Render Reel</strong>.</div>
+                <div class="spec-pills">
+                  <span>9:16 Vertical</span>
+                  <span>1080 × 1920</span>
+                  <span>60 FPS</span>
+                </div>
+              </div>
+
+              <!-- Rendering HUD Overlay -->
+              <div class="phone-render-overlay" id="phoneRenderOverlay" style="display:none;">
+                <div class="render-hud-box">
+                  <div class="spinner-ring"></div>
+                  <div class="render-phase-badge">ENCODING REEL</div>
+                  <div class="render-percent" id="renderPercentDisplay">0%</div>
+                  
+                  <div class="progress-bar-track">
+                    <div class="progress-bar-fill" id="renderProgressBar"></div>
+                  </div>
+
+                  <div class="render-metrics">
+                    <div class="metric-item">
+                      <span class="m-label">Frames</span>
+                      <strong class="m-val mono" id="renderFramesDisplay">0 / 0</strong>
+                    </div>
+                    <div class="metric-item">
+                      <span class="m-label">Speed</span>
+                      <strong class="m-val mono" id="renderFpsDisplay">-- fps</strong>
+                    </div>
+                    <div class="metric-item">
+                      <span class="m-label">Time Left</span>
+                      <strong class="m-val mono" id="renderEtaDisplay">calculating...</strong>
+                    </div>
+                  </div>
+
+                  <div class="render-slug-indicator">
+                    Target: <code id="renderSlugLabel" class="mono">reel</code>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Video Controller Container -->
+              <div class="video-container" id="videoContainer" style="display:none;">
+                <video id="reelVideoPlayer" playsinline loop preload="auto"></video>
+                
+                <!-- Video Hover Controls Overlay -->
+                <div class="video-overlay-controls" id="videoControls">
+                  <div class="time-scrubber-container">
+                    <input type="range" id="videoScrubber" min="0" max="100" value="0" step="0.1">
+                    <div class="scrubber-progress-track" id="scrubberTrack"></div>
+                  </div>
+
+                  <div class="controls-row">
+                    <div class="controls-left">
+                      <button id="playPauseBtn" class="ctrl-btn" title="Play/Pause">
+                        <svg id="playIcon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        <svg id="pauseIcon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                      </button>
+                      <button id="muteBtn" class="ctrl-btn" title="Mute/Unmute">
+                        <svg id="volumeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                        <svg id="muteIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                      </button>
+                      <span class="video-time-display mono" id="videoTimeDisplay">00:00 / 00:00</span>
+                    </div>
+
+                    <div class="controls-right">
+                      <button id="speedBtn" class="ctrl-pill" title="Playback Speed">1.0x</button>
+                      <button id="fullscreenBtn" class="ctrl-btn" title="Fullscreen">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Home indicator bar -->
+            <div class="phone-home-indicator"></div>
+          </div>
+        </div>
+
+        <!-- Video Player Quick Actions -->
+        <div class="player-actions-panel" id="playerActionsPanel" style="display:none;">
+          <a id="downloadVideoBtn" class="btn-action-primary" download>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download Reel MP4
+          </a>
+          <button id="copyVideoPathBtn" class="btn-action-secondary">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copy Path
+          </button>
+          <button id="reRenderBtn" class="btn-action-secondary" title="Re-render this reel">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"></path><path d="M1 20v-6h6"></path><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+            Re-Render
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Terminal Output Console -->
+      <div class="card terminal-card">
+        <div class="card-header">
+          <div class="header-label">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+            Render Process Stream
+          </div>
+          <div class="terminal-actions">
+            <button id="clearLogsBtn" class="btn-xs">Clear</button>
+          </div>
+        </div>
+        <div class="terminal-body mono" id="terminalOutput">
+          <div class="term-line info-line">> Remotion Reel Creator CLI ready.</div>
+          <div class="term-line info-line">> Select a template or upload your reel JSON & voice MP3 to start.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom Section: Reel Library & History -->
+  <section class="gallery-section">
+    <div class="gallery-header">
+      <div class="gallery-title">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+        Reels Library & Rendered Outputs
+      </div>
+      <button id="refreshReelsBtn" class="btn-sm">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"></path><path d="M1 20v-6h6"></path><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+        Refresh Library
+      </button>
+    </div>
+    
+    <div class="gallery-grid" id="reelsGalleryGrid">
+      <!-- Populated dynamically via JS -->
+      <div class="gallery-loading">Scanning workspace reels...</div>
+    </div>
+  </section>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="toast"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
