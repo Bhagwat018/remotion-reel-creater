@@ -7,6 +7,23 @@ All design, typography, safe margins, transitions, captions, handle badges, and 
 
 ---
 
+## 🚀 Web Dashboard (GUI)
+
+Run the interactive web dashboard on localhost:
+```bash
+npm run dashboard
+```
+Then open **[http://localhost:3030](http://localhost:3030)** in your browser!
+
+### Dashboard Features:
+1. **Drop & Paste**: Paste or upload your `reel.json` and drag-and-drop your `voice.mp3` file.
+2. **Audio Player**: Preview and listen to the voiceover before rendering.
+3. **1-Click Preset Templates**: Load high-traffic systems (Hindi), AI hallucination, or 12-scene showcase presets in one click.
+4. **Live Render HUD**: Real-time progress bar, frames counter, encoding speed, and streaming terminal logs.
+5. **Interactive Video Controller**: Once rendered, the reel immediately loads into a 9:16 smartphone player with play/pause, seek scrubber, speed adjustment, and direct MP4 download!
+
+---
+
 ## ⚡ The 5-Step Workflow
 
 ### Step 1: Scaffold a New Reel
