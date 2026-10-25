@@ -25,7 +25,7 @@ export const HandlePill: React.FC<HandlePillProps> = ({ handle }) => {
         position: "absolute",
         left: 0,
         right: 0,
-        bottom: theme.layout.handleBottom,
+        bottom: 80,
         display: "flex",
         justifyContent: "center",
         pointerEvents: "none",
@@ -36,19 +36,19 @@ export const HandlePill: React.FC<HandlePillProps> = ({ handle }) => {
         style={{
           display: "flex",
           alignItems: "center",
-          gap: 12,
+          gap: 10,
           backgroundColor: theme.colors.accent,
           color: theme.colors.accentText,
           borderRadius: theme.layout.pillRadius,
-          padding: "12px 28px",
+          padding: "10px 24px",
           boxShadow: `0 8px 24px ${theme.colors.accent}44`,
           opacity,
           transform: `translateY(${translateY}px)`,
         }}
       >
         <svg
-          width="20"
-          height="20"
+          width="18"
+          height="18"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -65,11 +65,10 @@ export const HandlePill: React.FC<HandlePillProps> = ({ handle }) => {
             fontFamily,
             fontSize: 22,
             fontWeight: 700,
-            letterSpacing: "0.04em",
-            textTransform: "uppercase",
+            letterSpacing: "0.02em",
           }}
         >
-          {handle}
+          {handle || "@techwith.GenZ"}
         </span>
       </div>
     </div>

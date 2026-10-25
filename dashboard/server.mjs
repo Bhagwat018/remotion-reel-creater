@@ -71,7 +71,9 @@ function serveFile(req, res, filePath, contentType = "application/octet-stream")
       "Content-Length": fileSize,
       "Content-Type": contentType,
       "Accept-Ranges": "bytes",
-      "Cache-Control": "public, max-age=3600",
+      "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0",
+      "Pragma": "no-cache",
+      "Expires": "0",
     });
     fs.createReadStream(filePath).pipe(res);
   }
@@ -254,37 +256,10 @@ const server = http.createServer(async (req, res) => {
   }
 
   // 4. API Endpoints
-  // GET /api/templates
+  // GET /api/templates - pure runtime engine (no static demo presets)
   if (pathname === "/api/templates" && method === "GET") {
-    try {
-      const templates = {};
-      const templateSlugs = ["demo-hallucination", "hardcode-topic", "demo-showcase", "slug-name", "_template"];
-
-      for (const tSlug of templateSlugs) {
-        const jsonPath = path.join(reelsDir, tSlug, "reel.json");
-        if (fs.existsSync(jsonPath)) {
-          const raw = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
-          const hasVoice =
-            fs.existsSync(path.join(publicReelsDir, tSlug, "voice.mp3")) ||
-            fs.existsSync(path.join(reelsDir, tSlug, "voice.mp3"));
-
-          templates[tSlug] = {
-            slug: tSlug,
-            title: raw.meta?.title || raw.meta?.topic || tSlug,
-            sceneCount: raw.scenes?.length || 0,
-            hasVoice,
-            voiceSampleUrl: hasVoice ? `/public/reels/${tSlug}/voice.mp3` : null,
-            data: raw,
-          };
-        }
-      }
-
-      res.writeHead(200, { "Content-Type": "application/json" });
-      res.end(JSON.stringify(templates));
-    } catch (err) {
-      res.writeHead(500, { "Content-Type": "application/json" });
-      res.end(JSON.stringify({ error: err.message }));
-    }
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.end(JSON.stringify({}));
     return;
   }
 
@@ -431,7 +406,7 @@ const server = http.createServer(async (req, res) => {
   if (pathname === "/api/create-and-render" && method === "POST") {
     try {
       const body = await parseJsonBody(req);
-      let { slug, reelJson, audioBase64, sampleVoiceSlug } = body;
+      let { slug, reelJson, audioBase64 } = body;
 
       // Extract slug from JSON if not provided
       let jsonObject = null;
@@ -483,23 +458,6 @@ const server = http.createServer(async (req, res) => {
         const audioBuffer = Buffer.from(base64Data, "base64");
         fs.writeFileSync(targetPubVoice, audioBuffer);
         fs.writeFileSync(targetReelVoice, audioBuffer);
-      } else if (sampleVoiceSlug) {
-        // Copy existing voice from sample
-        const sampleVoicePath = path.join(publicReelsDir, sampleVoiceSlug, "voice.mp3");
-        if (fs.existsSync(sampleVoicePath)) {
-          fs.copyFileSync(sampleVoicePath, targetPubVoice);
-          fs.copyFileSync(sampleVoicePath, targetReelVoice);
-        }
-      }
-
-      // 3. Verify audio exists
-      if (!fs.existsSync(targetPubVoice) && !fs.existsSync(targetReelVoice)) {
-        // Check if demo voice exists fallback
-        const demoVoice = path.join(publicReelsDir, "demo-hallucination", "voice.mp3");
-        if (fs.existsSync(demoVoice)) {
-          fs.copyFileSync(demoVoice, targetPubVoice);
-          fs.copyFileSync(demoVoice, targetReelVoice);
-        }
       }
 
       // 4. Start Render Job

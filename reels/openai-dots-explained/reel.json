@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "topic": "OpenAI Dots (AI Agents)",
+    "audience": "beginner to intermediate tech people",
+    "lengthSec": 30,
+    "language": "Hinglish",
+    "handle": "@gopal.codes",
+    "slug": "openai-dots-explained",
+    "voiceFile": "reels/openai-dots-explained/voice.mp3"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 4,
+      "voice": "Kya ChatGPT ke naye 'Dots' aapki job replace kar denge?",
+      "headline": "DOTS WILL *STEAL* JOBS?"
+    },
+    {
+      "id": "s2-intro",
+      "type": "card",
+      "startSec": 4,
+      "endSec": 10,
+      "voice": "OpenAI ne launch kiye hain 'Dots'—ye persistent AI agents hain jo naye GPT-6 Astra model par chalte hain.",
+      "headline": "MEET *OPENAI* DOTS",
+      "cardText": "Persistent, always-on AI agents powered by GPT-6 Astra.",
+      "chip": "New Tech"
+    },
+    {
+      "id": "s3-compare",
+      "type": "compare",
+      "startSec": 10,
+      "endSec": 16,
+      "voice": "Normal chatbots ki tarah ye aapke prompt ka wait nahi karte. Ye apne cloud computer par 24/7 khud kaam karte hain.",
+      "headline": "CHATBOT VS *AGENT*",
+      "leftLabel": "Waits for prompt",
+      "rightLabel": "Works 24/7 alone"
+    },
+    {
+      "id": "s4-stat",
+      "type": "stat",
+      "startSec": 16,
+      "endSec": 21,
+      "voice": "Ye agents chaar hazaar se zyada apps se directly connect ho sakte hain.",
+      "headline": "CONNECTS *4000+* APPS",
+      "value": "4,000",
+      "label": "App Integrations"
+    },
+    {
+      "id": "s5-orbit",
+      "type": "orbit",
+      "startSec": 21,
+      "endSec": 26,
+      "voice": "Background mein ye khud invoices banate hain, website update karte hain, aur Slack par messages ka reply bhi karte hain.",
+      "headline": "AUTOMATES *YOUR* WORK",
+      "center": "OpenAI Dot",
+      "orbiting": [
+        "Slack",
+        "Teams",
+        "Websites"
+      ]
+    },
+    {
+      "id": "s6-cta",
+      "type": "cta",
+      "startSec": 26,
+      "endSec": 30,
+      "voice": "Ye ChatGPT Pro plans par available hain. AI ke naye updates ke liye follow karein!",
+      "headline": "DOTS WILL *STEAL* JOBS?",
+      "buttonText": "FOLLOW FOR AI UPDATES"
+    }
+  ]
+}

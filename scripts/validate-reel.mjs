@@ -71,6 +71,7 @@ export const VALID_SCENE_TYPES = [
   "steps",
   "quote",
   "cta",
+  "diagram",
 ];
 
 const baseSceneSchema = z.object({
@@ -168,6 +169,15 @@ const sceneTypeMap = {
   }).refine((d) => Boolean(d.buttonText || d.callToAction), {
     message: "buttonText or callToAction is required for cta scene",
   }),
+  diagram: baseSceneSchema.extend({
+    type: z.literal("diagram"),
+    headline: z.string().min(1, "Headline is required for diagram scene"),
+    flow: z.string().optional(),
+    sourceLabel: z.string().optional(),
+    middleLabel: z.string().optional(),
+    targetLabels: z.array(z.string()).optional(),
+    steps: z.array(z.string()).optional(),
+  }),
 };
 
 const metaSchema = z.object({
@@ -180,6 +190,12 @@ const metaSchema = z.object({
   loop: z.boolean().default(true),
   accentOverride: z.string().nullable().optional(),
   captions: z.boolean().default(true),
+  avatar: z
+    .object({
+      enabled: z.boolean().optional(),
+      position: z.enum(["left", "right"]).optional(),
+    })
+    .optional(),
   audience: z.string().optional(),
   lengthSec: z.number().optional(),
   language: z.string().optional(),

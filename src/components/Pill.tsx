@@ -27,48 +27,100 @@ export const Pill: React.FC<PillProps> = ({
 
   const fontFamily = resolveFontFamily(text, theme.typography.ui);
 
+  const numStr = String(index + 1).padStart(2, "0");
+
   return (
     <div
       style={{
         display: "flex",
         alignItems: "center",
-        gap: 16,
-        backgroundColor: theme.colors.card,
-        color: theme.colors.cardText,
-        borderRadius: theme.layout.pillRadius,
-        padding: "20px 36px",
-        boxShadow: "0 12px 30px rgba(0, 0, 0, 0.25)",
+        justifyContent: "space-between",
+        gap: 20,
+        backgroundColor: "rgba(13, 17, 28, 0.94)",
+        color: "#f8fafc",
+        borderRadius: 22,
+        padding: "22px 32px",
+        border: "2px solid rgba(56, 189, 248, 0.3)",
+        boxShadow: "0 16px 40px rgba(0, 0, 0, 0.45), 0 0 25px rgba(56, 189, 248, 0.12)",
         opacity,
         transform: `translateY(${translateY}px) scale(${scale})`,
         transformOrigin: "center center",
       }}
     >
-      {showSparkle && (
-        <svg
-          width="26"
-          height="26"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke={theme.colors.accent}
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          style={{ flexShrink: 0 }}
+      <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
+        {/* Glowing Number Badge */}
+        <div
+          style={{
+            width: 44,
+            height: 44,
+            borderRadius: 12,
+            backgroundColor: "rgba(56, 189, 248, 0.15)",
+            border: "1.5px solid #38bdf8",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontFamily: theme.typography.mono,
+            fontSize: 20,
+            fontWeight: 800,
+            color: "#38bdf8",
+            boxShadow: "0 0 12px rgba(56, 189, 248, 0.3)",
+          }}
         >
-          <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z" />
-        </svg>
+          {numStr}
+        </div>
+
+        {/* Main Text */}
+        <span
+          style={{
+            fontFamily,
+            fontSize: 36,
+            fontWeight: 700,
+            lineHeight: 1.25,
+            letterSpacing: "-0.01em",
+            color: "#ffffff",
+          }}
+        >
+          {text}
+        </span>
+      </div>
+
+      {/* Right Sparkle / Verified Tag */}
+      {showSparkle && (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 8,
+            backgroundColor: "rgba(56, 189, 248, 0.12)",
+            borderRadius: 999,
+            padding: "6px 14px",
+          }}
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#38bdf8"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z" />
+          </svg>
+          <span
+            style={{
+              fontFamily: theme.typography.mono,
+              fontSize: 14,
+              fontWeight: 700,
+              color: "#38bdf8",
+              letterSpacing: "0.08em",
+            }}
+          >
+            TOOL
+          </span>
+        </div>
       )}
-      <span
-        style={{
-          fontFamily,
-          fontSize: 32,
-          fontWeight: 500,
-          lineHeight: 1.25,
-          letterSpacing: "-0.01em",
-        }}
-      >
-        {text}
-      </span>
     </div>
   );
 };

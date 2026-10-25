@@ -43,7 +43,7 @@ if (!fs.existsSync(reelJsonPath)) {
 
 // 1. Run Validation First
 console.log(`\n=======================================================`);
-console.log(`🎬 1/2 Validating Reel: "${slug}"`);
+console.log(`🎬 1/3 Validating Reel: "${slug}"`);
 console.log(`=======================================================`);
 
 const validateScript = path.join(rootDir, "scripts", "validate-reel.mjs");
@@ -57,7 +57,84 @@ if (valRes.status !== 0) {
   process.exit(1);
 }
 
-// 2. Ensure out directory exists
+// 2. Audio & Timings (Keep it 100% simple - user provides MP3 on dashboard)
+const publicDir = path.join(rootDir, "public", "reels", slug);
+const reelsDir = path.join(rootDir, "reels", slug);
+const pubVoiceFile = path.join(publicDir, "voice.mp3");
+const reelVoiceFile = path.join(reelsDir, "voice.mp3");
+const pubWordsFile = path.join(publicDir, "words.json");
+const reelWordsFile = path.join(reelsDir, "words.json");
+
+// Sync audio if present
+if (fs.existsSync(pubVoiceFile) && !fs.existsSync(reelVoiceFile)) {
+  fs.mkdirSync(reelsDir, { recursive: true });
+  fs.copyFileSync(pubVoiceFile, reelVoiceFile);
+} else if (!fs.existsSync(pubVoiceFile) && fs.existsSync(reelVoiceFile)) {
+  fs.mkdirSync(publicDir, { recursive: true });
+  fs.copyFileSync(reelVoiceFile, pubVoiceFile);
+}
+
+// Auto-align word timestamps for subtitles if words.json not yet created
+if (!fs.existsSync(pubWordsFile) && !fs.existsSync(reelWordsFile)) {
+  const activeVoice = fs.existsSync(pubVoiceFile) ? pubVoiceFile : reelVoiceFile;
+  let audioDur = 30;
+  if (fs.existsSync(activeVoice)) {
+    try {
+      const probeOut = execSync(
+        `ffprobe -i "${activeVoice}" -show_entries format=duration -v quiet -of csv="p=0"`
+      ).toString().trim();
+      audioDur = parseFloat(probeOut) || 30;
+    } catch {}
+  }
+
+  const reelDataForWords = JSON.parse(fs.readFileSync(reelJsonPath, "utf-8"));
+  const scenes = reelDataForWords.scenes || [];
+  const generatedWords = [];
+
+  scenes.forEach((scene, sIdx) => {
+    const sStart = scene.startSec ?? (sIdx * (audioDur / scenes.length));
+    const sEnd = scene.endSec ?? ((sIdx + 1) * (audioDur / scenes.length));
+    const dur = Math.max(0.5, sEnd - sStart);
+    const cleanWords = (scene.voice || "")
+      .replace(/[*_#`]/g, "")
+      .trim()
+      .split(/\s+/)
+      .filter(Boolean);
+    const perWord = cleanWords.length > 0 ? dur / cleanWords.length : 0.3;
+
+    cleanWords.forEach((word, wIdx) => {
+      const wStart = parseFloat((sStart + wIdx * perWord).toFixed(2));
+      const wEnd = parseFloat((wStart + perWord).toFixed(2));
+      generatedWords.push({ word, startSec: wStart, endSec: wEnd });
+    });
+  });
+
+  fs.writeFileSync(pubWordsFile, JSON.stringify(generatedWords, null, 2), "utf-8");
+  fs.writeFileSync(reelWordsFile, JSON.stringify(generatedWords, null, 2), "utf-8");
+}
+
+// 3. Prepare resolved props with word timestamps
+const reelData = JSON.parse(fs.readFileSync(reelJsonPath, "utf-8"));
+let wordsData = null;
+if (fs.existsSync(pubWordsFile)) {
+  try {
+    wordsData = JSON.parse(fs.readFileSync(pubWordsFile, "utf-8"));
+  } catch {}
+} else if (fs.existsSync(reelWordsFile)) {
+  try {
+    wordsData = JSON.parse(fs.readFileSync(reelWordsFile, "utf-8"));
+  } catch {}
+}
+
+const resolvedProps = {
+  ...reelData,
+  words: wordsData,
+};
+
+const resolvedPropsPath = path.join(reelsDir, ".props.resolved.json");
+fs.writeFileSync(resolvedPropsPath, JSON.stringify(resolvedProps, null, 2), "utf-8");
+
+// 4. Ensure out directory exists
 const outDir = path.join(rootDir, "out");
 if (!fs.existsSync(outDir)) {
   fs.mkdirSync(outDir, { recursive: true });
@@ -65,12 +142,12 @@ if (!fs.existsSync(outDir)) {
 
 const outputPath = path.join(outDir, `${slug}.mp4`);
 
-// 3. Render via Remotion CLI
+// 5. Render via Remotion CLI (let Remotion choose any free port)
 console.log(`\n=======================================================`);
-console.log(`🎥 2/2 Rendering Reel to: out/${slug}.mp4`);
+console.log(`🎥 2/3 Rendering Reel to: out/${slug}.mp4`);
 console.log(`=======================================================`);
 
-const renderCommand = `npx remotion render Reel "${outputPath}" --props="${reelJsonPath}" --port=3001`;
+const renderCommand = `npx remotion render Reel "${outputPath}" --props="${resolvedPropsPath}"`;
 
 try {
   execSync(renderCommand, {
@@ -78,9 +155,16 @@ try {
     cwd: rootDir,
   });
 
+  // Also copy to public/reels/<slug>/video.mp4 for immediate dashboard player preview
+  const publicVideo = path.join(publicDir, "video.mp4");
+  try {
+    fs.copyFileSync(outputPath, publicVideo);
+  } catch {}
+
   console.log(`\n=======================================================`);
-  console.log(`🎉 Render Complete!`);
-  console.log(`📁 Output file: out/${slug}.mp4`);
+  console.log(`🎉 3/3 Render Complete!`);
+  console.log(`📁 Video file: out/${slug}.mp4`);
+  console.log(`🌐 Dashboard preview: public/reels/${slug}/video.mp4`);
   console.log(`=======================================================\n`);
 } catch (renderError) {
   console.error(`\n❌ Remotion render failed:`, renderError.message);

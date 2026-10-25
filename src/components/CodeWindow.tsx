@@ -10,6 +10,33 @@ interface CodeWindowProps {
   delayFrames?: number;
 }
 
+// Simple regex-based syntax highlighter for tech reels
+const highlightSyntax = (line: string) => {
+  const tokens = line.split(/(\s+|[().,;{}[\]]|"[^"]*"|'[^']*')/g);
+  return tokens.map((token, i) => {
+    if (!token) return null;
+    if (/^(const|let|var|await|async|if|return|function|import|export|from|else)$/.test(token)) {
+      return <span key={i} style={{ color: "#c084fc", fontWeight: 700 }}>{token}</span>;
+    }
+    if (/^("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')$/.test(token)) {
+      return <span key={i} style={{ color: "#4ade80" }}>{token}</span>;
+    }
+    if (/^(redis|db|JSON|console|Math|Promise)$/.test(token)) {
+      return <span key={i} style={{ color: "#fbbf24", fontWeight: 600 }}>{token}</span>;
+    }
+    if (/^(get|set|query|parse|stringify|log|then|catch)$/.test(token)) {
+      return <span key={i} style={{ color: "#38bdf8" }}>{token}</span>;
+    }
+    if (/^\d+$/.test(token)) {
+      return <span key={i} style={{ color: "#fb923c" }}>{token}</span>;
+    }
+    if (/^[=<>!+*&|?-]+$/.test(token)) {
+      return <span key={i} style={{ color: "#f472b6" }}>{token}</span>;
+    }
+    return <span key={i} style={{ color: "#f8fafc" }}>{token}</span>;
+  });
+};
+
 export const CodeWindow: React.FC<CodeWindowProps> = ({
   filename,
   lines,
@@ -28,12 +55,12 @@ export const CodeWindow: React.FC<CodeWindowProps> = ({
     <div
       style={{
         width: "100%",
-        maxWidth: 880,
-        backgroundColor: theme.colors.card,
-        borderRadius: theme.layout.cardRadius,
+        maxWidth: 920,
+        backgroundColor: "#0d1117",
+        borderRadius: 24,
         overflow: "hidden",
-        boxShadow: "0 24px 50px rgba(0, 0, 0, 0.4)",
-        border: "1px solid rgba(255, 255, 255, 0.08)",
+        boxShadow: "0 28px 60px rgba(0, 0, 0, 0.55), 0 0 30px rgba(56, 189, 248, 0.1)",
+        border: "1.5px solid rgba(56, 189, 248, 0.3)",
         opacity,
         transform: `scale(${scale})`,
       }}
@@ -44,38 +71,45 @@ export const CodeWindow: React.FC<CodeWindowProps> = ({
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          padding: "18px 24px",
-          backgroundColor: "#161616",
-          borderBottom: "1px solid rgba(255, 255, 255, 0.06)",
+          padding: "20px 28px",
+          backgroundColor: "#161b22",
+          borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
         }}
       >
         <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#FF5F56" }} />
-          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#FFBD2E" }} />
-          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#27C93F" }} />
+          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#ff5f56" }} />
+          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#ffbd2e" }} />
+          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#27c93f" }} />
         </div>
         <div
           style={{
             fontFamily: theme.typography.mono,
-            fontSize: 20,
-            color: theme.colors.muted,
+            fontSize: 22,
+            fontWeight: 600,
+            color: "#e6edf3",
+            display: "flex",
+            alignItems: "center",
+            gap: 8,
           }}
         >
-          {filename}
+          <span style={{ color: "#38bdf8" }}>⚡</span>
+          <span>{filename}</span>
         </div>
-        <div style={{ width: 50 }} />
+        <div style={{ width: 50, textAlign: "right", color: "#64748b", fontSize: 14, fontFamily: theme.typography.mono }}>
+          TS
+        </div>
       </div>
 
       {/* Code body with line-by-line reveal */}
       <div
         style={{
-          padding: "28px 24px",
+          padding: "32px 28px",
           display: "flex",
           flexDirection: "column",
-          gap: 12,
+          gap: 16,
           fontFamily: theme.typography.mono,
-          fontSize: 26,
-          lineHeight: 1.5,
+          fontSize: 30,
+          lineHeight: 1.6,
         }}
       >
         {lines.map((line, idx) => {
@@ -93,21 +127,23 @@ export const CodeWindow: React.FC<CodeWindowProps> = ({
               style={{
                 display: "flex",
                 alignItems: "center",
-                gap: 20,
-                padding: "4px 12px",
-                borderRadius: 8,
-                backgroundColor: isHighlighted ? `${theme.colors.accent}22` : "transparent",
-                borderLeft: isHighlighted ? `4px solid ${theme.colors.accent}` : "4px solid transparent",
+                gap: 24,
+                padding: "8px 16px",
+                borderRadius: 10,
+                backgroundColor: isHighlighted ? "rgba(56, 189, 248, 0.12)" : "transparent",
+                borderLeft: isHighlighted ? "4px solid #38bdf8" : "4px solid transparent",
+                boxShadow: isHighlighted ? "inset 0 0 20px rgba(56, 189, 248, 0.08)" : "none",
                 opacity: lineReveal,
                 transform: `translateX(${(1 - lineReveal) * 12}px)`,
               }}
             >
               <span
                 style={{
-                  width: 32,
+                  width: 36,
                   textAlign: "right",
-                  color: isHighlighted ? theme.colors.accent : theme.colors.muted,
-                  fontSize: 22,
+                  color: isHighlighted ? "#38bdf8" : "#475569",
+                  fontSize: 24,
+                  fontWeight: 700,
                   userSelect: "none",
                 }}
               >
@@ -115,12 +151,11 @@ export const CodeWindow: React.FC<CodeWindowProps> = ({
               </span>
               <span
                 style={{
-                  color: isHighlighted ? theme.colors.accentText : theme.colors.cardText,
-                  fontWeight: isHighlighted ? 600 : 400,
                   whiteSpace: "pre-wrap",
+                  lineHeight: 1.5,
                 }}
               >
-                {line}
+                {highlightSyntax(line)}
               </span>
             </div>
           );

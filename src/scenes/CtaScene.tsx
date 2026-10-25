@@ -38,11 +38,50 @@ export const CtaScene: React.FC<
         style={{
           position: "relative",
           display: "flex",
+          flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          marginTop: 20,
+          gap: 20,
+          marginTop: 10,
         }}
       >
+        {/* Channel Spotlight Pill */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 12,
+            backgroundColor: "rgba(15, 23, 42, 0.9)",
+            border: "2px solid #38bdf8",
+            borderRadius: 999,
+            padding: "12px 28px",
+            boxShadow: "0 8px 30px rgba(56, 189, 248, 0.25)",
+            opacity,
+            transform: `scale(${scale})`,
+          }}
+        >
+          <span
+            style={{
+              width: 10,
+              height: 10,
+              borderRadius: "50%",
+              backgroundColor: "#22c55e",
+              boxShadow: "0 0 10px #22c55e",
+            }}
+          />
+          <span
+            style={{
+              fontFamily: theme.typography.mono,
+              fontSize: 22,
+              fontWeight: 800,
+              color: "#ffffff",
+              letterSpacing: "0.04em",
+            }}
+          >
+            @techwith.GenZ
+          </span>
+        </div>
+
         <div
           style={{
             backgroundColor: theme.colors.accent,

@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "slug": "redis",
+    "title": "Why You Need Redis Caching",
+    "handle": "@yourhandle",
+    "loop": true,
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "voiceFile": "reels/redis/voice.mp3"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 4,
+      "voice": "Kya aapka database har request par slow ho raha hai?",
+      "headline": "DATABASE *TOO SLOW*?"
+    },
+    {
+      "id": "s2-diagram",
+      "type": "diagram",
+      "startSec": 4,
+      "endSec": 10,
+      "voice": "Iska simple solution hai Caching. Frequent data memory mein store hota hai.",
+      "headline": "HOW *CACHING* WORKS",
+      "sourceLabel": "User Traffic",
+      "middleLabel": "Redis Cache",
+      "targetLabels": [
+        "Main DB",
+        "Backup DB",
+        "Analytics"
+      ]
+    },
+    {
+      "id": "s3-stat",
+      "type": "stat",
+      "startSec": 10,
+      "endSec": 15,
+      "voice": "Redis use karne se aapki API response speed 10 guna fast ho jaati hai.",
+      "headline": "BLAZING *FAST* SPEED",
+      "value": "10x",
+      "label": "Faster Response Times"
+    },
+    {
+      "id": "s4-code",
+      "type": "code",
+      "startSec": 15,
+      "endSec": 22,
+      "voice": "Code mein bas check karein ki data cache mein hai ya nahi.",
+      "headline": "JUST *TWO* LINES",
+      "filename": "cache.ts",
+      "lines": [
+        "const cached = await redis.get(key);",
+        "if (cached) return JSON.parse(cached);",
+        "const data = await db.query(sql);"
+      ],
+      "highlightLines": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "s5-pills",
+      "type": "pills",
+      "startSec": 22,
+      "endSec": 27,
+      "voice": "Top tech companies Redis aur Memcached jaisi in-memory tools use karti hain.",
+      "headline": "POPULAR *CACHE* TOOLS",
+      "items": [
+        "Redis",
+        "Memcached",
+        "Cloudflare CDN",
+        "Varnish"
+      ]
+    },
+    {
+      "id": "s6-cta",
+      "type": "cta",
+      "startSec": 27,
+      "endSec": 30,
+      "voice": "Apne backend ko scale karein aur database crash hona rokein!",
+      "headline": "DATABASE *TOO SLOW*?",
+      "buttonText": "FOLLOW FOR TECH TIPS"
+    }
+  ]
+}

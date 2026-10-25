@@ -13,6 +13,7 @@ export const VALID_SCENE_TYPES = [
   "steps",
   "quote",
   "cta",
+  "diagram",
 ] as const;
 
 export type SceneType = (typeof VALID_SCENE_TYPES)[number];
@@ -211,6 +212,21 @@ export const ctaSceneSchema = baseSceneSchema
     buttonText: data.buttonText || data.callToAction || "FOLLOW FOR MORE",
   }));
 
+export const diagramSceneSchema = baseSceneSchema
+  .extend({
+    type: z.literal("diagram"),
+    headline: z.string().min(1, "Headline is required for diagram scene"),
+    flow: z.string().optional().default("load-balancer"),
+    sourceLabel: z.string().optional().default("Clients / Users"),
+    middleLabel: z.string().optional().default("Load Balancer"),
+    targetLabels: z.array(z.string()).optional().default(["Server A", "Server B", "Server C"]),
+    steps: z.array(z.string()).optional(),
+  })
+  .transform((data) => ({
+    ...data,
+    leadIn: data.leadIn || data.subtitle,
+  }));
+
 export const sceneSchema = z.discriminatedUnion("type", [
   titleSceneSchema,
   pillsSceneSchema,
@@ -224,6 +240,7 @@ export const sceneSchema = z.discriminatedUnion("type", [
   stepsSceneSchema,
   quoteSceneSchema,
   ctaSceneSchema,
+  diagramSceneSchema,
 ]);
 
 export type TitleSceneProps = z.infer<typeof titleSceneSchema>;
@@ -238,6 +255,7 @@ export type StatSceneProps = z.infer<typeof statSceneSchema>;
 export type StepsSceneProps = z.infer<typeof stepsSceneSchema>;
 export type QuoteSceneProps = z.infer<typeof quoteSceneSchema>;
 export type CtaSceneProps = z.infer<typeof ctaSceneSchema>;
+export type DiagramSceneProps = z.infer<typeof diagramSceneSchema>;
 
 export type SceneData =
   | TitleSceneProps
@@ -251,19 +269,28 @@ export type SceneData =
   | StatSceneProps
   | StepsSceneProps
   | QuoteSceneProps
-  | CtaSceneProps;
+  | CtaSceneProps
+  | DiagramSceneProps;
+
+export const avatarSchema = z.object({
+  enabled: z.boolean().default(true),
+  position: z.enum(["left", "right"]).default("left"),
+});
+
+export type AvatarConfig = z.infer<typeof avatarSchema>;
 
 export const metaSchema = z
   .object({
     slug: z.string().min(1, "Slug is required"),
     title: z.string().optional(),
     topic: z.string().optional(),
-    handle: z.string().min(1, "Handle is required"),
+    handle: z.string().min(1, "Handle is required").default("@techwith.GenZ"),
     voiceFile: z.string().optional(),
     wordsFile: z.string().nullable().optional(),
     loop: z.boolean().default(true),
     accentOverride: z.string().nullable().optional(),
     captions: z.boolean().default(true),
+    avatar: avatarSchema.optional().default({ enabled: true, position: "left" }),
     audience: z.string().optional(),
     lengthSec: z.number().optional(),
     language: z.string().optional(),
@@ -273,9 +300,11 @@ export const metaSchema = z
     return {
       ...meta,
       title: meta.title || meta.topic || slug,
+      handle: (!meta.handle || meta.handle === "@yourhandle") ? "@techwith.GenZ" : meta.handle,
       voiceFile: meta.voiceFile || `reels/${slug}/voice.mp3`,
       loop: meta.loop ?? true,
       captions: meta.captions ?? true,
+      avatar: meta.avatar ?? { enabled: true, position: "left" },
     };
   });
 

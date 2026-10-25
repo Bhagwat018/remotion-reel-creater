@@ -1,35 +1,39 @@
 import React from "react";
 import { CalculateMetadataFunction, Composition } from "remotion";
 import { Reel, ReelProps } from "./Reel";
-import { ReelData } from "./schema";
 import { theme } from "./theme/theme";
 import { computeReelDurationInFrames, resolveSceneTimings } from "./lib/timing";
 
-import demoHallucination from "../reels/demo-hallucination/reel.json";
-import demoShowcase from "../reels/demo-showcase/reel.json";
-import templateReel from "../reels/_template/reel.json";
+export type RootReelProps = ReelProps;
 
-export const AVAILABLE_REELS: Record<string, ReelData> = {
-  "demo-hallucination": demoHallucination as unknown as ReelData,
-  "demo-showcase": demoShowcase as unknown as ReelData,
-  "_template": templateReel as unknown as ReelData,
+const defaultFallbackProps: RootReelProps = {
+  meta: {
+    slug: "runtime-reel",
+    title: "Tech with GenZ",
+    handle: "@techwith.GenZ",
+    voiceFile: "voice.mp3",
+    loop: true,
+    captions: true,
+    avatar: { enabled: true, position: "left" },
+  },
+  scenes: [
+    {
+      id: "s1-hook",
+      type: "title",
+      startSec: 0,
+      endSec: 4,
+      voice: "Welcome to Tech with Gen Z",
+      headline: "RUNTIME *VIDEO* ENGINE",
+      leadIn: undefined,
+    },
+  ],
 };
-
-export interface RootReelProps extends ReelProps {
-  presetSlug?: "demo-hallucination" | "demo-showcase" | "_template";
-}
 
 const resolveEffectiveProps = (props: RootReelProps): RootReelProps => {
   if (props.scenes && Array.isArray(props.scenes) && props.scenes.length > 0) {
     return props;
   }
-  if (props.presetSlug && AVAILABLE_REELS[props.presetSlug]) {
-    return {
-      ...(AVAILABLE_REELS[props.presetSlug] as ReelProps),
-      presetSlug: props.presetSlug,
-    };
-  }
-  return demoHallucination as unknown as RootReelProps;
+  return defaultFallbackProps;
 };
 
 export const calculateReelMetadata: CalculateMetadataFunction<RootReelProps> = async ({
@@ -60,7 +64,7 @@ export const RemotionRoot: React.FC = () => {
         id="Reel"
         component={Reel as unknown as React.FC<RootReelProps>}
         calculateMetadata={calculateReelMetadata}
-        defaultProps={demoHallucination as unknown as RootReelProps}
+        defaultProps={defaultFallbackProps}
         fps={theme.motion.fps}
         width={theme.layout.width}
         height={theme.layout.height}

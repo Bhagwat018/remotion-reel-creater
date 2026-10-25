@@ -1,7 +1,18 @@
-// Remotion Reel Studio - Professional Dashboard Engine
+// Remotion Reel Studio - Pure Runtime Reel Engine
+// Clear any browser CacheStorage or ServiceWorkers if present
+if (typeof window !== "undefined" && "caches" in window) {
+  caches.keys().then((names) => {
+    names.forEach((name) => caches.delete(name));
+  });
+}
+if (typeof navigator !== "undefined" && "serviceWorker" in navigator) {
+  navigator.serviceWorker.getRegistrations().then((registrations) => {
+    for (const r of registrations) r.unregister();
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   // DOM References
-  const templateSelect = document.getElementById("templateSelect");
   const reelSlugInput = document.getElementById("reelSlug");
   const jsonEditor = document.getElementById("jsonEditor");
   const lineNumbers = document.getElementById("lineNumbers");
@@ -85,10 +96,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const toastNotification = document.getElementById("toastNotification");
 
   // State
-  let templatesData = {};
   let currentAudioBase64 = null;
   let currentAudioFileName = null;
-  let sampleVoiceSlug = "demo-hallucination";
   let activeEventSource = null;
   let isRendering = false;
   let playbackSpeeds = [1.0, 1.25, 1.5, 2.0, 0.75];
@@ -103,56 +112,40 @@ document.addEventListener("DOMContentLoaded", () => {
     setupAudioHandlers();
     setupVideoPlayerControls();
     setupKeyboardShortcuts();
-    await loadTemplates();
     await loadReelsGallery();
 
-    // Default select template
-    if (templatesData["hardcode-topic"]) {
-      templateSelect.value = "hardcode-topic";
-      applyTemplate("hardcode-topic");
-    } else if (templatesData["demo-hallucination"]) {
-      templateSelect.value = "demo-hallucination";
-      applyTemplate("demo-hallucination");
-    }
-  }
+    // Default runtime starter
+    const starterJson = {
+      meta: {
+        slug: "my-tech-reel",
+        title: "My Tech Reel",
+        handle: "@techwith.GenZ",
+        loop: true,
+        captions: true,
+        avatar: {
+          enabled: true,
+          position: "left"
+        }
+      },
+      scenes: [
+        {
+          id: "s1-hook",
+          type: "title",
+          startSec: 0,
+          endSec: 4,
+          voice: "Welcome to Tech with Gen Z!",
+          headline: "YOUR *HEADLINE* HERE"
+        }
+      ]
+    };
 
-  // 1. Template Presets
-  async function loadTemplates() {
-    try {
-      const res = await fetch("/api/templates");
-      if (!res.ok) throw new Error("Failed to load templates");
-      templatesData = await res.json();
-    } catch (err) {
-      console.warn("Could not fetch templates:", err);
-    }
-  }
-
-  templateSelect.addEventListener("change", (e) => {
-    applyTemplate(e.target.value);
-  });
-
-  function applyTemplate(slug) {
-    const tmpl = templatesData[slug];
-    if (!tmpl) return;
-
-    reelSlugInput.value = slug;
-    jsonEditor.value = JSON.stringify(tmpl.data, null, 2);
+    jsonEditor.value = JSON.stringify(starterJson, null, 2);
+    reelSlugInput.value = "my-tech-reel";
     updateLineNumbers();
     validateJsonEditor();
 
-    sampleVoiceSlug = slug;
-    currentAudioBase64 = null;
-    currentAudioFileName = `${slug}-voice.mp3`;
-
-    if (tmpl.hasVoice && tmpl.voiceSampleUrl) {
-      audioPlayer.src = tmpl.voiceSampleUrl;
-      audioFileNameDisplay.textContent = `Preset: ${slug}/voice.mp3`;
-      audioFileSizeDisplay.textContent = "Preset Attached";
-      audioSourceTag.textContent = "Preset Voice Loaded";
-    }
-
-    idleTitle.textContent = tmpl.title || slug;
-    idleSub.textContent = `Template loaded: ${tmpl.sceneCount} scenes. Click "Create & Render Reel" to render.`;
+    idleTitle.textContent = "Runtime Reel Creator";
+    idleSub.textContent = "Paste your JSON script and upload MP3 to render instantly.";
   }
 
   // 2. Editor Setup & Precision Gutter Line Numbers
@@ -160,7 +153,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Input event
     jsonEditor.addEventListener("input", () => {
       updateLineNumbers();
-      validateJsonEditor();
+      const val = validateJsonEditor();
+      if (val && val.valid && val.data && val.data.meta && val.data.meta.slug) {
+        reelSlugInput.value = val.data.meta.slug;
+      }
     });
 
     // Synchronize scrolling between textarea and line numbers gutter
@@ -348,20 +344,6 @@ document.addEventListener("DOMContentLoaded", () => {
         handleAudioFile(e.target.files[0]);
       }
     });
-
-    // Sample voice chips
-    document.querySelectorAll(".btn-sample-chip[data-sample]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const targetSample = btn.getAttribute("data-sample");
-        sampleVoiceSlug = targetSample;
-        currentAudioBase64 = null;
-        audioPlayer.src = `/public/reels/${targetSample}/voice.mp3`;
-        audioFileNameDisplay.textContent = `Preset: ${targetSample}/voice.mp3`;
-        audioFileSizeDisplay.textContent = "Attached";
-        audioSourceTag.textContent = `Preset: ${targetSample}`;
-        showToast(`Voice set to sample "${targetSample}"`, "success");
-      });
-    });
   }
 
   function handleAudioFile(file) {
@@ -374,7 +356,6 @@ document.addEventListener("DOMContentLoaded", () => {
     reader.onload = (e) => {
       currentAudioBase64 = e.target.result;
       currentAudioFileName = file.name;
-      sampleVoiceSlug = null;
 
       audioPlayer.src = URL.createObjectURL(file);
       audioFileNameDisplay.textContent = file.name;
@@ -419,7 +400,6 @@ document.addEventListener("DOMContentLoaded", () => {
         slug,
         reelJson: validation.data,
         audioBase64: currentAudioBase64,
-        sampleVoiceSlug: sampleVoiceSlug,
       };
 
       const res = await fetch("/api/create-and-render", {
@@ -708,7 +688,6 @@ document.addEventListener("DOMContentLoaded", () => {
         audioFileNameDisplay.textContent = `reels/${data.slug}/voice.mp3`;
         audioFileSizeDisplay.textContent = "Attached";
         audioSourceTag.textContent = "Reel Voice Attached";
-        sampleVoiceSlug = data.slug;
       }
 
       if (data.isRendered && data.videoUrl) {

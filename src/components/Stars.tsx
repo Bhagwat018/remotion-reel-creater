@@ -1,92 +1,157 @@
 import React from "react";
-import { random, useCurrentFrame } from "remotion";
+import { useCurrentFrame } from "remotion";
 import { useTheme } from "../theme/theme";
 
 interface StarsProps {
   sceneId?: string;
 }
 
-const createSpikyStarPoints = (
-  cx: number,
-  cy: number,
-  numPoints: number,
-  outerRadius: number,
-  innerRadius: number
-): string => {
-  const points: string[] = [];
-  const step = Math.PI / numPoints;
-
-  for (let i = 0; i < 2 * numPoints; i++) {
-    const r = i % 2 === 0 ? outerRadius : innerRadius;
-    const angle = i * step;
-    const x = cx + r * Math.sin(angle);
-    const y = cy - r * Math.cos(angle);
-    points.push(`${x.toFixed(2)},${y.toFixed(2)}`);
-  }
-
-  return points.join(" ");
-};
-
-export const Stars: React.FC<StarsProps> = ({ sceneId = "default" }) => {
+export const Stars: React.FC<StarsProps> = () => {
   const frame = useCurrentFrame();
   const theme = useTheme();
 
-  const corners = [
-    { key: "tl", x: 20, y: 20, dir: 1 },
-    { key: "tr", x: theme.layout.width - 20, y: 20, dir: -1 },
-    { key: "bl", x: 20, y: theme.layout.height - 20, dir: -1 },
-    { key: "br", x: theme.layout.width - 20, y: theme.layout.height - 20, dir: 1 },
-  ];
+  // Subtle recording pulse
+  const recBlink = (frame % 30) < 18;
 
   return (
     <div
       style={{
         position: "absolute",
-        top: 0,
-        left: 0,
-        width: theme.layout.width,
-        height: theme.layout.height,
+        inset: 0,
         pointerEvents: "none",
+        zIndex: 10,
         overflow: "hidden",
-        zIndex: 1,
       }}
     >
-      {corners.map((corner, index) => {
-        const seedBase = `${sceneId}-star-${corner.key}`;
-        const numPoints = Math.round(8 + random(`${seedBase}-pts`) * 4); // 8 to 12 sharp points
-        const outerRadius = 180 + random(`${seedBase}-rad`) * 90; // large spiky size
-        const innerRadius = outerRadius * (0.35 + random(`${seedBase}-inner`) * 0.15); // sharp ratio
+      {/* Top Left: Tech Status Overlay */}
+      <div
+        style={{
+          position: "absolute",
+          top: 70,
+          left: 60,
+          display: "flex",
+          alignItems: "center",
+          gap: 10,
+          fontFamily: theme.typography.mono,
+          fontSize: 16,
+          fontWeight: 600,
+          color: "rgba(0, 0, 0, 0.45)",
+          letterSpacing: "0.08em",
+        }}
+      >
+        <span
+          style={{
+            width: 10,
+            height: 10,
+            borderRadius: "50%",
+            backgroundColor: recBlink ? "#ef4444" : "rgba(239, 68, 68, 0.2)",
+            boxShadow: recBlink ? "0 0 10px #ef4444" : "none",
+          }}
+        />
+        <span>TECH.SYS // 60 FPS</span>
+      </div>
 
-        // Deterministic slow drift
-        const driftAngle = random(`${seedBase}-drift`) * Math.PI * 2;
-        const driftDistance = 12 * Math.sin(frame * 0.05 + index);
-        const curX = corner.x + Math.cos(driftAngle) * driftDistance;
-        const curY = corner.y + Math.sin(driftAngle) * driftDistance;
+      {/* Top Right: Format Badge */}
+      <div
+        style={{
+          position: "absolute",
+          top: 70,
+          right: 60,
+          fontFamily: theme.typography.mono,
+          fontSize: 16,
+          fontWeight: 600,
+          color: "rgba(0, 0, 0, 0.45)",
+          letterSpacing: "0.08em",
+        }}
+      >
+        <span>9:16 [1080×1920]</span>
+      </div>
 
-        // Slow rotation
-        const rotSpeed = theme.motion.stars.rotationSpeed * (0.8 + index * 0.15);
-        const rotationDeg = frame * rotSpeed * corner.dir;
+      {/* Modern Corner Viewfinder Brackets */}
+      {/* Top-Left Bracket */}
+      <svg
+        style={{ position: "absolute", top: 60, left: 40 }}
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="rgba(0, 0, 0, 0.3)"
+        strokeWidth="3"
+        strokeLinecap="round"
+      >
+        <path d="M4 10V4h6" />
+      </svg>
 
-        const points = createSpikyStarPoints(0, 0, numPoints, outerRadius, innerRadius);
+      {/* Top-Right Bracket */}
+      <svg
+        style={{ position: "absolute", top: 60, right: 40 }}
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="rgba(0, 0, 0, 0.3)"
+        strokeWidth="3"
+        strokeLinecap="round"
+      >
+        <path d="M20 10V4h-6" />
+      </svg>
 
-        return (
-          <svg
-            key={corner.key}
-            style={{
-              position: "absolute",
-              left: curX - outerRadius,
-              top: curY - outerRadius,
-              width: outerRadius * 2,
-              height: outerRadius * 2,
-              transform: `rotate(${rotationDeg}deg)`,
-              transformOrigin: "center center",
-            }}
-            viewBox={`${-outerRadius} ${-outerRadius} ${outerRadius * 2} ${outerRadius * 2}`}
-          >
-            <polygon points={points} fill={theme.colors.ink} opacity={0.95} />
-          </svg>
-        );
-      })}
+      {/* Modern Corner Crosshairs (+) */}
+      {/* Top-Left Crosshair */}
+      <svg
+        style={{ position: "absolute", top: 120, left: 60 }}
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="rgba(0, 0, 0, 0.2)"
+        strokeWidth="2"
+      >
+        <line x1="12" y1="4" x2="12" y2="20" />
+        <line x1="4" y1="12" x2="20" y2="12" />
+      </svg>
+
+      {/* Top-Right Crosshair */}
+      <svg
+        style={{ position: "absolute", top: 120, right: 60 }}
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="rgba(0, 0, 0, 0.2)"
+        strokeWidth="2"
+      >
+        <line x1="12" y1="4" x2="12" y2="20" />
+        <line x1="4" y1="12" x2="20" y2="12" />
+      </svg>
+
+      {/* Bottom-Left Tech Bracket */}
+      <svg
+        style={{ position: "absolute", bottom: 70, left: 60 }}
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="rgba(0, 0, 0, 0.3)"
+        strokeWidth="3"
+        strokeLinecap="round"
+      >
+        <path d="M4 14v6h6" />
+      </svg>
+
+      {/* Bottom-Right Tech Bracket */}
+      <svg
+        style={{ position: "absolute", bottom: 70, right: 60 }}
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="rgba(0, 0, 0, 0.3)"
+        strokeWidth="3"
+        strokeLinecap="round"
+      >
+        <path d="M20 14v6h-6" />
+      </svg>
     </div>
   );
 };

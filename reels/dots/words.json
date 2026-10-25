@@ -1,0 +1,487 @@
+[
+  {
+    "word": "Kya",
+    "startSec": 0,
+    "endSec": 0.4
+  },
+  {
+    "word": "ChatGPT",
+    "startSec": 0.4,
+    "endSec": 0.8
+  },
+  {
+    "word": "ke",
+    "startSec": 0.8,
+    "endSec": 1.2
+  },
+  {
+    "word": "naye",
+    "startSec": 1.2,
+    "endSec": 1.59
+  },
+  {
+    "word": "'Dots'",
+    "startSec": 1.59,
+    "endSec": 1.99
+  },
+  {
+    "word": "aapki",
+    "startSec": 1.99,
+    "endSec": 2.39
+  },
+  {
+    "word": "job",
+    "startSec": 2.39,
+    "endSec": 2.79
+  },
+  {
+    "word": "replace",
+    "startSec": 2.79,
+    "endSec": 3.19
+  },
+  {
+    "word": "kar",
+    "startSec": 3.19,
+    "endSec": 3.59
+  },
+  {
+    "word": "denge?",
+    "startSec": 3.59,
+    "endSec": 3.98
+  },
+  {
+    "word": "OpenAI",
+    "startSec": 4,
+    "endSec": 4.43
+  },
+  {
+    "word": "ne",
+    "startSec": 4.43,
+    "endSec": 4.85
+  },
+  {
+    "word": "launch",
+    "startSec": 4.85,
+    "endSec": 5.28
+  },
+  {
+    "word": "kiye",
+    "startSec": 5.28,
+    "endSec": 5.7
+  },
+  {
+    "word": "hain",
+    "startSec": 5.7,
+    "endSec": 6.13
+  },
+  {
+    "word": "'Dots'—ye",
+    "startSec": 6.13,
+    "endSec": 6.55
+  },
+  {
+    "word": "persistent",
+    "startSec": 6.55,
+    "endSec": 6.98
+  },
+  {
+    "word": "AI",
+    "startSec": 6.98,
+    "endSec": 7.4
+  },
+  {
+    "word": "agents",
+    "startSec": 7.4,
+    "endSec": 7.83
+  },
+  {
+    "word": "hain",
+    "startSec": 7.83,
+    "endSec": 8.25
+  },
+  {
+    "word": "jo",
+    "startSec": 8.25,
+    "endSec": 8.68
+  },
+  {
+    "word": "naye",
+    "startSec": 8.68,
+    "endSec": 9.1
+  },
+  {
+    "word": "GPT-6",
+    "startSec": 9.1,
+    "endSec": 9.53
+  },
+  {
+    "word": "Astra",
+    "startSec": 9.53,
+    "endSec": 9.95
+  },
+  {
+    "word": "model",
+    "startSec": 9.95,
+    "endSec": 10.38
+  },
+  {
+    "word": "par",
+    "startSec": 10.38,
+    "endSec": 10.8
+  },
+  {
+    "word": "chalte",
+    "startSec": 10.8,
+    "endSec": 11.23
+  },
+  {
+    "word": "hain.",
+    "startSec": 11.23,
+    "endSec": 11.65
+  },
+  {
+    "word": "Normal",
+    "startSec": 10,
+    "endSec": 10.42
+  },
+  {
+    "word": "chatbots",
+    "startSec": 10.42,
+    "endSec": 10.85
+  },
+  {
+    "word": "ki",
+    "startSec": 10.85,
+    "endSec": 11.27
+  },
+  {
+    "word": "tarah",
+    "startSec": 11.27,
+    "endSec": 11.7
+  },
+  {
+    "word": "ye",
+    "startSec": 11.7,
+    "endSec": 12.12
+  },
+  {
+    "word": "aapke",
+    "startSec": 12.12,
+    "endSec": 12.54
+  },
+  {
+    "word": "prompt",
+    "startSec": 12.54,
+    "endSec": 12.97
+  },
+  {
+    "word": "ka",
+    "startSec": 12.97,
+    "endSec": 13.39
+  },
+  {
+    "word": "wait",
+    "startSec": 13.39,
+    "endSec": 13.82
+  },
+  {
+    "word": "nahi",
+    "startSec": 13.82,
+    "endSec": 14.24
+  },
+  {
+    "word": "karte.",
+    "startSec": 14.24,
+    "endSec": 14.66
+  },
+  {
+    "word": "Ye",
+    "startSec": 14.66,
+    "endSec": 15.09
+  },
+  {
+    "word": "apne",
+    "startSec": 15.09,
+    "endSec": 15.51
+  },
+  {
+    "word": "cloud",
+    "startSec": 15.51,
+    "endSec": 15.93
+  },
+  {
+    "word": "computer",
+    "startSec": 15.93,
+    "endSec": 16.36
+  },
+  {
+    "word": "par",
+    "startSec": 16.36,
+    "endSec": 16.78
+  },
+  {
+    "word": "24/7",
+    "startSec": 16.78,
+    "endSec": 17.21
+  },
+  {
+    "word": "khud",
+    "startSec": 17.21,
+    "endSec": 17.63
+  },
+  {
+    "word": "kaam",
+    "startSec": 17.63,
+    "endSec": 18.05
+  },
+  {
+    "word": "karte",
+    "startSec": 18.05,
+    "endSec": 18.48
+  },
+  {
+    "word": "hain.",
+    "startSec": 18.48,
+    "endSec": 18.9
+  },
+  {
+    "word": "Ye",
+    "startSec": 16,
+    "endSec": 16.38
+  },
+  {
+    "word": "agents",
+    "startSec": 16.38,
+    "endSec": 16.76
+  },
+  {
+    "word": "chaar",
+    "startSec": 16.76,
+    "endSec": 17.13
+  },
+  {
+    "word": "hazaar",
+    "startSec": 17.13,
+    "endSec": 17.51
+  },
+  {
+    "word": "se",
+    "startSec": 17.51,
+    "endSec": 17.89
+  },
+  {
+    "word": "zyada",
+    "startSec": 17.89,
+    "endSec": 18.27
+  },
+  {
+    "word": "apps",
+    "startSec": 18.27,
+    "endSec": 18.64
+  },
+  {
+    "word": "se",
+    "startSec": 18.64,
+    "endSec": 19.02
+  },
+  {
+    "word": "directly",
+    "startSec": 19.02,
+    "endSec": 19.4
+  },
+  {
+    "word": "connect",
+    "startSec": 19.4,
+    "endSec": 19.78
+  },
+  {
+    "word": "ho",
+    "startSec": 19.78,
+    "endSec": 20.16
+  },
+  {
+    "word": "sakte",
+    "startSec": 20.16,
+    "endSec": 20.53
+  },
+  {
+    "word": "hain.",
+    "startSec": 20.53,
+    "endSec": 20.91
+  },
+  {
+    "word": "Background",
+    "startSec": 21,
+    "endSec": 21.43
+  },
+  {
+    "word": "mein",
+    "startSec": 21.43,
+    "endSec": 21.85
+  },
+  {
+    "word": "ye",
+    "startSec": 21.85,
+    "endSec": 22.28
+  },
+  {
+    "word": "khud",
+    "startSec": 22.28,
+    "endSec": 22.71
+  },
+  {
+    "word": "invoices",
+    "startSec": 22.71,
+    "endSec": 23.13
+  },
+  {
+    "word": "banate",
+    "startSec": 23.13,
+    "endSec": 23.56
+  },
+  {
+    "word": "hain,",
+    "startSec": 23.56,
+    "endSec": 23.99
+  },
+  {
+    "word": "website",
+    "startSec": 23.99,
+    "endSec": 24.41
+  },
+  {
+    "word": "update",
+    "startSec": 24.41,
+    "endSec": 24.84
+  },
+  {
+    "word": "karte",
+    "startSec": 24.84,
+    "endSec": 25.27
+  },
+  {
+    "word": "hain,",
+    "startSec": 25.27,
+    "endSec": 25.69
+  },
+  {
+    "word": "aur",
+    "startSec": 25.69,
+    "endSec": 26.12
+  },
+  {
+    "word": "Slack",
+    "startSec": 26.12,
+    "endSec": 26.54
+  },
+  {
+    "word": "par",
+    "startSec": 26.54,
+    "endSec": 26.97
+  },
+  {
+    "word": "messages",
+    "startSec": 26.97,
+    "endSec": 27.4
+  },
+  {
+    "word": "ka",
+    "startSec": 27.4,
+    "endSec": 27.82
+  },
+  {
+    "word": "reply",
+    "startSec": 27.82,
+    "endSec": 28.25
+  },
+  {
+    "word": "bhi",
+    "startSec": 28.25,
+    "endSec": 28.68
+  },
+  {
+    "word": "karte",
+    "startSec": 28.68,
+    "endSec": 29.1
+  },
+  {
+    "word": "hain.",
+    "startSec": 29.1,
+    "endSec": 29.53
+  },
+  {
+    "word": "Ye",
+    "startSec": 26,
+    "endSec": 26.39
+  },
+  {
+    "word": "ChatGPT",
+    "startSec": 26.39,
+    "endSec": 26.78
+  },
+  {
+    "word": "Pro",
+    "startSec": 26.78,
+    "endSec": 27.17
+  },
+  {
+    "word": "plans",
+    "startSec": 27.17,
+    "endSec": 27.56
+  },
+  {
+    "word": "par",
+    "startSec": 27.56,
+    "endSec": 27.95
+  },
+  {
+    "word": "available",
+    "startSec": 27.95,
+    "endSec": 28.34
+  },
+  {
+    "word": "hain.",
+    "startSec": 28.34,
+    "endSec": 28.73
+  },
+  {
+    "word": "AI",
+    "startSec": 28.73,
+    "endSec": 29.11
+  },
+  {
+    "word": "ke",
+    "startSec": 29.11,
+    "endSec": 29.5
+  },
+  {
+    "word": "naye",
+    "startSec": 29.5,
+    "endSec": 29.89
+  },
+  {
+    "word": "updates",
+    "startSec": 29.89,
+    "endSec": 30.28
+  },
+  {
+    "word": "ke",
+    "startSec": 30.28,
+    "endSec": 30.67
+  },
+  {
+    "word": "liye",
+    "startSec": 30.67,
+    "endSec": 31.06
+  },
+  {
+    "word": "follow",
+    "startSec": 31.06,
+    "endSec": 31.45
+  },
+  {
+    "word": "karein!",
+    "startSec": 31.45,
+    "endSec": 31.84
+  }
+]

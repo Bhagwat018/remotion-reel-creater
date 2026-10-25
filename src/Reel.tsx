@@ -7,6 +7,7 @@ import { Background } from "./components/Background";
 import { Stars } from "./components/Stars";
 import { HandlePill } from "./components/HandlePill";
 import { Captions } from "./components/Captions";
+import { SpeakingAvatar } from "./components/SpeakingAvatar";
 import { getSceneComponent } from "./scenes/registry";
 import { framesToSec, getSceneWords, resolveSceneTimings } from "./lib/timing";
 
@@ -55,6 +56,10 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
     return staticFile(meta.voiceFile);
   }, [meta.voiceFile]);
 
+  // Avatar config
+  const avatarEnabled = meta.avatar?.enabled !== false;
+  const avatarPosition = meta.avatar?.position || "left";
+
   return (
     <ThemeProvider theme={activeTheme}>
       <div
@@ -97,8 +102,16 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
           );
         })}
 
-        {/* Burned-in captions in lower third */}
-        <Captions words={activeWords} enabled={meta.captions ?? true} />
+        {/* Animated Speaking Character Avatar with Comic Speech Bubble Captions */}
+        {avatarEnabled ? (
+          <SpeakingAvatar
+            words={activeWords}
+            enabled={true}
+            position={avatarPosition}
+          />
+        ) : (
+          <Captions words={activeWords} enabled={meta.captions ?? true} />
+        )}
 
         {/* Fixed bottom handle pill */}
         <HandlePill handle={meta.handle} />
