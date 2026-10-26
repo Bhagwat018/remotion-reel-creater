@@ -1,6 +1,7 @@
 import React from "react";
 import { spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { TechLogo, getBrandMeta } from "./TechLogo";
+import { ShimmerSweep } from "./ShimmerSweep";
 
 export interface FloatingBadgeProps {
   icon?: string;
@@ -50,15 +51,15 @@ export const FloatingBadge: React.FC<FloatingBadgeProps> = ({
         background: "rgba(15, 23, 42, 0.88)",
         backdropFilter: "blur(20px)",
         border: `2px solid ${accentColor}77`,
-        borderRadius: isIconOnly ? 28 : 24,
-        padding: isIconOnly ? "20px" : "24px 32px",
-        boxShadow: `0 20px 50px -10px rgba(0, 0, 0, 0.7), 0 0 40px -10px ${accentColor}40`,
+        borderRadius: isIconOnly ? 28 : 26,
+        padding: isIconOnly ? "22px" : "26px 36px",
+        boxShadow: `0 24px 60px -10px rgba(0, 0, 0, 0.75), 0 0 45px -5px ${accentColor}45`,
         display: "inline-flex",
         alignItems: "center",
         justifyContent: "center",
-        gap: isIconOnly ? 0 : 24,
-        minWidth: isIconOnly ? undefined : 380,
-        maxWidth: isIconOnly ? undefined : 620,
+        gap: isIconOnly ? 0 : 26,
+        minWidth: isIconOnly ? undefined : 520,
+        maxWidth: isIconOnly ? undefined : 780,
         position: "relative",
         overflow: "hidden",
         ...style,
@@ -76,6 +77,9 @@ export const FloatingBadge: React.FC<FloatingBadgeProps> = ({
           pointerEvents: "none",
         }}
       />
+
+      {/* Shimmer sweep effect */}
+      <ShimmerSweep delayFrames={delayFrames + 6} periodFrames={75} />
 
       {/* Brand Icon or Avatar */}
       {icon && (

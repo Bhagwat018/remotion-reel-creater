@@ -13,8 +13,10 @@ export const CardScene: React.FC<CardSceneProps & { durationInFrames: number; ic
   featuredBadge,
   durationInFrames,
 }) => {
-  // If featuredBadge or icon is provided, render 3D floating badge
   const hasBadge = !!(icon || featuredBadge);
+  const badgeTitle = featuredBadge?.title || (icon ? icon.toUpperCase() : cardText);
+  const badgeSubtitle = featuredBadge?.subtitle;
+  const showDetailCard = Boolean(cardText && cardText !== badgeTitle);
 
   return (
     <SceneLayout
@@ -23,14 +25,17 @@ export const CardScene: React.FC<CardSceneProps & { durationInFrames: number; ic
       durationInFrames={durationInFrames}
     >
       {hasBadge ? (
-        <div style={{ display: "flex", justifyContent: "center", width: "100%", marginTop: 20 }}>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 24, width: "100%", marginTop: 10 }}>
           <FloatingBadge
             icon={featuredBadge?.icon || icon}
-            title={featuredBadge?.title || cardText}
-            subtitle={featuredBadge?.subtitle || (cardText !== featuredBadge?.title ? cardText : undefined)}
+            title={badgeTitle}
+            subtitle={badgeSubtitle}
             chip={featuredBadge?.chip || chip}
             delayFrames={4}
           />
+          {showDetailCard && (
+            <DarkCard cardText={cardText} chip={chip} delayFrames={10} />
+          )}
         </div>
       ) : (
         <DarkCard cardText={cardText} chip={chip} delayFrames={6} />

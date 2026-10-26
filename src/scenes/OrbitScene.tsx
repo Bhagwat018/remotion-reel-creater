@@ -4,8 +4,8 @@ import { SceneLayout } from "../components/SceneLayout";
 import { OrbitLoop } from "../components/OrbitLoop";
 
 export const OrbitScene: React.FC<
-  OrbitSceneProps & { orbiting?: string[]; durationInFrames: number }
-> = ({ leadIn, headline, nodes, orbiting, durationInFrames }) => {
+  OrbitSceneProps & { orbiting?: string[]; center?: string; durationInFrames: number }
+> = ({ leadIn, headline, nodes, orbiting, center, durationInFrames }) => {
   const nodeList = nodes && nodes.length > 0 ? nodes : orbiting || [];
 
   return (
@@ -14,7 +14,7 @@ export const OrbitScene: React.FC<
       headline={headline}
       durationInFrames={durationInFrames}
     >
-      <OrbitLoop nodes={nodeList} delayFrames={6} />
+      <OrbitLoop nodes={nodeList} center={center} delayFrames={6} />
     </SceneLayout>
   );
 };

@@ -3,6 +3,7 @@ import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { StatSceneProps } from "../schema";
 import { SceneLayout } from "../components/SceneLayout";
 import { resolveFontFamily, useTheme } from "../theme/theme";
+import { ShimmerSweep } from "../components/ShimmerSweep";
 
 export const StatScene: React.FC<StatSceneProps & { durationInFrames: number }> = ({
   leadIn,
@@ -14,6 +15,9 @@ export const StatScene: React.FC<StatSceneProps & { durationInFrames: number }> 
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const theme = useTheme();
+
+  // Floating physics
+  const floatY = frame > 12 ? Math.sin((frame - 12) / 12) * 6 : 0;
 
   // Parse numeric part and suffix (e.g. "10x" -> 10, "x")
   const strVal = String(value);
@@ -73,11 +77,13 @@ export const StatScene: React.FC<StatSceneProps & { durationInFrames: number }> 
             alignItems: "center",
             gap: 24,
             boxShadow: "0 25px 70px rgba(0, 0, 0, 0.5), 0 0 35px rgba(56, 189, 248, 0.15)",
-            transform: `scale(${Math.min(1, cardSpring)})`,
+            transform: `translateY(${floatY}px) scale(${Math.min(1, cardSpring)})`,
             position: "relative",
             overflow: "hidden",
           }}
         >
+          {/* Light gleam sweep */}
+          <ShimmerSweep delayFrames={10} periodFrames={85} />
           {/* Subtle tech background grid lines */}
           <div
             style={{

@@ -24,8 +24,15 @@
       "endSec": 8,
       "voice": "Miliye SonarQube se. Yeh aapke programming code ke liye ek smart spell-checker hai.",
       "headline": "SPELL-CHECK FOR *CODE*",
-      "cardText": "Automatic code review tool for your projects.",
-      "chip": "Clean Code"
+      "cardText": "Automatic code review & security analysis tool.",
+      "chip": "Clean Code",
+      "icon": "sonarqube",
+      "featuredBadge": {
+        "icon": "sonarqube",
+        "title": "SonarQube",
+        "subtitle": "Automated Code Review & Static Analysis",
+        "chip": "Clean Code"
+      }
     },
     {
       "id": "s3-stat",

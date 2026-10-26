@@ -29,6 +29,8 @@ import {
   SiNodedotjs,
   SiApachekafka,
   SiCloudflare,
+  SiGitlab,
+  SiJenkins,
 } from "react-icons/si";
 import { TbBrandOpenai } from "react-icons/tb";
 import { FaAws } from "react-icons/fa6";
@@ -91,6 +93,8 @@ const BRAND_MAP: Record<string, BrandConfig> = {
   nodejs: { component: SiNodedotjs, defaultColor: "#5FA04E", label: "Node.js" },
   kafka: { component: SiApachekafka, defaultColor: "#FFFFFF", label: "Apache Kafka" },
   cloudflare: { component: SiCloudflare, defaultColor: "#F38020", label: "Cloudflare" },
+  gitlab: { component: SiGitlab, defaultColor: "#FC6D26", label: "GitLab" },
+  jenkins: { component: SiJenkins, defaultColor: "#D24939", label: "Jenkins" },
 };
 
 export const getBrandMeta = (name: string) => {

@@ -4,6 +4,7 @@ import { useTheme } from "../theme/theme";
 import { getSceneMotionStyle } from "../lib/motion";
 import { LeadIn } from "./LeadIn";
 import { Headline } from "./Headline";
+import { CyberParticles } from "./CyberParticles";
 
 interface SceneLayoutProps {
   leadIn?: string;
@@ -42,6 +43,9 @@ export const SceneLayout: React.FC<SceneLayoutProps> = ({
         zIndex: 10,
       }}
     >
+      {/* Ambient Cyber Particles (Remotion Scenes) */}
+      <CyberParticles count={16} seed={headline || leadIn || 42} />
+
       {/* Top Header Zone */}
       <div
         style={{
