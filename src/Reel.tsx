@@ -136,6 +136,8 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
               )}
               <SceneComponent
                 {...scene.data}
+                sceneIndex={sceneIndex}
+                slug={meta.slug}
                 durationInFrames={sequenceDuration}
               />
             </Sequence>

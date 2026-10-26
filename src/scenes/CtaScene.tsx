@@ -7,8 +7,8 @@ import { entranceSpring } from "../lib/motion";
 import { Cursor } from "../components/Cursor";
 
 export const CtaScene: React.FC<
-  CtaSceneProps & { callToAction?: string; durationInFrames: number }
-> = ({ leadIn, headline, buttonText, callToAction, durationInFrames }) => {
+  CtaSceneProps & { callToAction?: string; durationInFrames: number; direction?: any; id?: string }
+> = ({ id, direction, leadIn, headline, buttonText, callToAction, durationInFrames }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const theme = useTheme();
@@ -30,6 +30,8 @@ export const CtaScene: React.FC<
 
   return (
     <SceneLayout
+      id={id}
+      direction={direction}
       leadIn={leadIn}
       headline={headline}
       durationInFrames={durationInFrames}

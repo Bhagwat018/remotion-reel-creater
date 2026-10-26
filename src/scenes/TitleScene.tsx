@@ -5,8 +5,8 @@ import { SceneLayout } from "../components/SceneLayout";
 import { useTheme } from "../theme/theme";
 
 export const TitleScene: React.FC<
-  TitleSceneProps & { subtitle?: string; durationInFrames: number }
-> = ({ leadIn, subtitle, headline, durationInFrames }) => {
+  TitleSceneProps & { subtitle?: string; durationInFrames: number; direction?: any; id?: string }
+> = ({ id, direction, leadIn, subtitle, headline, durationInFrames }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const theme = useTheme();
@@ -25,6 +25,8 @@ export const TitleScene: React.FC<
 
   return (
     <SceneLayout
+      id={id}
+      direction={direction}
       leadIn={leadIn || subtitle}
       headline={headline}
       durationInFrames={durationInFrames}

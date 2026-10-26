@@ -4,7 +4,9 @@ import { SceneLayout } from "../components/SceneLayout";
 import { DarkCard } from "../components/DarkCard";
 import { FloatingBadge } from "../components/FloatingBadge";
 
-export const CardScene: React.FC<CardSceneProps & { durationInFrames: number; icon?: string; featuredBadge?: any }> = ({
+export const CardScene: React.FC<CardSceneProps & { durationInFrames: number; icon?: string; featuredBadge?: any; direction?: any; id?: string }> = ({
+  id,
+  direction,
   leadIn,
   headline,
   cardText,
@@ -20,6 +22,8 @@ export const CardScene: React.FC<CardSceneProps & { durationInFrames: number; ic
 
   return (
     <SceneLayout
+      id={id}
+      direction={direction}
       leadIn={leadIn}
       headline={headline}
       durationInFrames={durationInFrames}

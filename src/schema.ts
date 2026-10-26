@@ -27,6 +27,9 @@ const baseSceneSchema = z.object({
   voice: z.string().min(1, "Scene voice line is required"),
   leadIn: z.string().optional(),
   subtitle: z.string().optional(),
+  direction: z
+    .enum(["from-left", "from-right", "from-top", "from-bottom", "pop-3d"])
+    .optional(),
 });
 
 export const titleSceneSchema = baseSceneSchema

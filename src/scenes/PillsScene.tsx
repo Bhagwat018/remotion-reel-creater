@@ -4,12 +4,14 @@ import { SceneLayout } from "../components/SceneLayout";
 import { Pill } from "../components/Pill";
 
 export const PillsScene: React.FC<
-  PillsSceneProps & { pills?: string[]; durationInFrames: number }
-> = ({ leadIn, headline, items, pills, durationInFrames }) => {
+  PillsSceneProps & { pills?: string[]; durationInFrames: number; direction?: any; id?: string }
+> = ({ id, direction, leadIn, headline, items, pills, durationInFrames }) => {
   const pillList = items && items.length > 0 ? items : pills || [];
 
   return (
     <SceneLayout
+      id={id}
+      direction={direction}
       leadIn={leadIn}
       headline={headline}
       durationInFrames={durationInFrames}

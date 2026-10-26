@@ -3,6 +3,8 @@ import { SceneLayout } from "../components/SceneLayout";
 import { TerminalWindow, TerminalOutputLine } from "../components/TerminalWindow";
 
 export interface TerminalSceneProps {
+  id?: string;
+  direction?: any;
   leadIn?: string;
   headline?: string;
   subheadline?: string;
@@ -14,6 +16,8 @@ export interface TerminalSceneProps {
 }
 
 export const TerminalScene: React.FC<TerminalSceneProps> = ({
+  id,
+  direction,
   leadIn,
   headline = "RUN *CLAUDE* AGENT",
   command = "claude run --agent",
@@ -28,6 +32,8 @@ export const TerminalScene: React.FC<TerminalSceneProps> = ({
 }) => {
   return (
     <SceneLayout
+      id={id}
+      direction={direction}
       leadIn={leadIn}
       headline={headline}
       durationInFrames={durationInFrames}

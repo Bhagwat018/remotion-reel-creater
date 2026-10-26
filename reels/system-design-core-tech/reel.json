@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "topic": "System Design & Core Tech 2026",
+    "audience": "Developers and Tech Enthusiasts",
+    "lengthSec": 35,
+    "language": "Hinglish",
+    "handle": "techwith.GenZ",
+    "slug": "system-design-core-tech",
+    "voiceFile": "reels/system-design-core-tech/voice.mp3"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 6,
+      "voice": "2026 aa gaya aur tum abhi bhi Password123 use kar rahe ho? Say goodbye to passwords forever!",
+      "headline": "NO MORE PASSWORDS"
+    },
+    {
+      "id": "s2-passkeys",
+      "type": "pills",
+      "startSec": 6,
+      "endSec": 11,
+      "voice": "WebAuthn aur biometric passkeys device-level cryptography use karke phishing ko mathematically impossible bana rahe hain.",
+      "headline": "ENTER WEBAUTHN",
+      "items": [
+        "Biometrics",
+        "Device Crypto",
+        "Zero Phishing"
+      ]
+    },
+    {
+      "id": "s3-edge",
+      "type": "stat",
+      "startSec": 11,
+      "endSec": 18,
+      "voice": "Aur cloud? Wo old ho gaya. Ab 5G Edge architecture data tumhare ghar ke paas process karta hai, giving zero millisecond latency.",
+      "headline": "0ms LATENCY",
+      "value": "0ms",
+      "label": "Edge Computing"
+    },
+    {
+      "id": "s4-cyber",
+      "type": "code",
+      "startSec": 18,
+      "endSec": 25,
+      "voice": "Ransomware ka darr? AI cybersecurity ab real-time anomalies detect karti hai aur attack hone se pehle network kill kar deti hai.",
+      "headline": "AI DEFENSE",
+      "filename": "security.ts",
+      "lines": [
+        "if (anomalyDetected) {",
+        "  network.killConnection();",
+        "  alert('Ransomware Blocked');",
+        "}"
+      ],
+      "highlightLines": [
+        2
+      ]
+    },
+    {
+      "id": "s5-protip",
+      "type": "orbit",
+      "startSec": 25,
+      "endSec": 31,
+      "voice": "Pro tip: Edge nodes par AI models run karna is the ultimate zero-trust architecture right now.",
+      "headline": "EDGE AI",
+      "center": "Edge Node",
+      "orbiting": [
+        "AI Model",
+        "Zero Trust",
+        "Local Data"
+      ]
+    },
+    {
+      "id": "s6-cta",
+      "type": "cta",
+      "startSec": 31,
+      "endSec": 35,
+      "voice": "Aise hi viral system design concepts seekhne ke liye techwith.GenZ ko follow kar lo!",
+      "headline": "MASTER SYSTEM DESIGN",
+      "buttonText": "FOLLOW @techwith.GenZ"
+    }
+  ]
+}

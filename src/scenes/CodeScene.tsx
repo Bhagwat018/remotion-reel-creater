@@ -3,7 +3,9 @@ import { CodeSceneProps } from "../schema";
 import { SceneLayout } from "../components/SceneLayout";
 import { CodeWindow } from "../components/CodeWindow";
 
-export const CodeScene: React.FC<CodeSceneProps & { durationInFrames: number }> = ({
+export const CodeScene: React.FC<CodeSceneProps & { durationInFrames: number; direction?: any; id?: string }> = ({
+  id,
+  direction,
   leadIn,
   headline,
   filename,
@@ -13,6 +15,8 @@ export const CodeScene: React.FC<CodeSceneProps & { durationInFrames: number }> 
 }) => {
   return (
     <SceneLayout
+      id={id}
+      direction={direction}
       leadIn={leadIn}
       headline={headline}
       durationInFrames={durationInFrames}

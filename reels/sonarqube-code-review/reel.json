@@ -2,7 +2,7 @@
   "meta": {
     "topic": "SonarQube Explained",
     "audience": "beginner to intermediate tech people",
-    "lengthSec": 30,
+    "lengthSec": 30.5,
     "language": "Hinglish",
     "handle": "@techwith.GenZ",
     "slug": "sonarqube-code-review",
@@ -12,19 +12,37 @@
     {
       "id": "s1-hook",
       "type": "title",
+      "direction": "from-top",
       "startSec": 0,
-      "endSec": 3,
+      "endSec": 3.5,
       "voice": "Kya aapka code production mein jaate hi fat jata hai?",
       "headline": "CODE *BREAKING* IN PRODUCTION?"
     },
     {
-      "id": "s2-intro",
-      "type": "card",
-      "startSec": 3,
-      "endSec": 8,
+      "id": "s2-code",
+      "type": "code",
+      "direction": "from-left",
+      "startSec": 3.5,
+      "endSec": 7.0,
       "voice": "Miliye SonarQube se. Yeh aapke programming code ke liye ek smart spell-checker hai.",
+      "headline": "UNHANDLED *RUNTIME* CRASH",
+      "filename": "authController.ts",
+      "lines": [
+        "const token = req.headers['authorization'];",
+        "const user = verifyToken(token); // 💥 Crashes on null!",
+        "return res.json(user.profile);"
+      ],
+      "highlightLines": [2]
+    },
+    {
+      "id": "s3-badge",
+      "type": "card",
+      "direction": "pop-3d",
+      "startSec": 7.0,
+      "endSec": 11.0,
+      "voice": "Yeh programming code ke har bug aur hidden error ko pehle hi pakad leta hai.",
       "headline": "SPELL-CHECK FOR *CODE*",
-      "cardText": "Automatic code review & security analysis tool.",
+      "cardText": "Automatic code review & static analysis engine for modern software.",
       "chip": "Clean Code",
       "icon": "sonarqube",
       "featuredBadge": {
@@ -35,20 +53,39 @@
       }
     },
     {
-      "id": "s3-stat",
+      "id": "s4-terminal",
+      "type": "terminal",
+      "direction": "from-bottom",
+      "startSec": 11.0,
+      "endSec": 15.0,
+      "voice": "Yeh continuously tees se zyada programming languages ko scan karta hai.",
+      "headline": "CONTINUOUS *INSPECTION*",
+      "command": "sonar-scanner -Dsonar.projectKey=api",
+      "path": "~/projects/backend",
+      "branch": "main",
+      "output": [
+        { "text": "✓ 14 files indexed & parsed", "type": "info" },
+        { "text": "⚡ NullPointer critical bug caught at L:2", "type": "error" },
+        { "text": "✓ Quality Gate Passed with clean fix", "type": "success" }
+      ]
+    },
+    {
+      "id": "s5-stat",
       "type": "stat",
-      "startSec": 8,
-      "endSec": 14,
-      "voice": "Yeh continuously tees se zyada programming languages ko scan karta hai, hidden errors dhundhne ke liye.",
+      "direction": "from-right",
+      "startSec": 15.0,
+      "endSec": 19.0,
+      "voice": "Java, Python, TypeScript, Go... sabhi major languages supported hain.",
       "headline": "SCANS *30+* LANGUAGES",
       "value": "30+",
       "label": "Supported Languages"
     },
     {
-      "id": "s4-pills",
+      "id": "s6-pills",
       "type": "pills",
-      "startSec": 14,
-      "endSec": 20,
+      "direction": "from-left",
+      "startSec": 19.0,
+      "endSec": 23.0,
       "voice": "Kharab code, security flaws aur code smells ko ye production se pehle hi detect kar leta hai.",
       "headline": "CATCHES *HIDDEN* ERRORS",
       "items": [
@@ -58,10 +95,11 @@
       ]
     },
     {
-      "id": "s5-orbit",
+      "id": "s7-orbit",
       "type": "orbit",
-      "startSec": 20,
-      "endSec": 26,
+      "direction": "from-bottom",
+      "startSec": 23.0,
+      "endSec": 27.0,
       "voice": "Aur sabse best part? Yeh har code change par GitHub ya Jenkins pipeline ke sath automatically run hota hai.",
       "headline": "PIPELINE *INTEGRATION*",
       "center": "SonarQube",
@@ -72,12 +110,13 @@
       ]
     },
     {
-      "id": "s6-cta",
+      "id": "s8-cta",
       "type": "cta",
-      "startSec": 26,
-      "endSec": 30,
+      "direction": "from-top",
+      "startSec": 27.0,
+      "endSec": 30.5,
       "voice": "Hackers ko rokein aur clean code likhein! Daily tech tips ke liye follow karein.",
-      "headline": "CODE *BREAKING* IN PRODUCTION?",
+      "headline": "SHIP *CLEAN* CODE",
       "buttonText": "FOLLOW FOR TECH TIPS"
     }
   ]

@@ -114,14 +114,19 @@ document.addEventListener("DOMContentLoaded", () => {
     setupKeyboardShortcuts();
     await loadReelsGallery();
 
-    // Default runtime starter
+    // Default runtime starter (Fast-paced 8-scene dynamic motion template)
     const starterJson = {
       meta: {
+        topic: "Production Tech Architecture",
         slug: "my-tech-reel",
-        title: "My Tech Reel",
         handle: "@techwith.GenZ",
-        loop: true,
-        captions: true,
+        language: "Hinglish",
+        lengthSec: 32,
+        voiceFile: "reels/my-tech-reel/voice.mp3",
+        bgm: "bgm/cyber-groove.mp3",
+        bgmVolume: 0.22,
+        captionStyle: "bubble",
+        coverIntro: true,
         avatar: {
           enabled: true,
           position: "left"
@@ -131,10 +136,112 @@ document.addEventListener("DOMContentLoaded", () => {
         {
           id: "s1-hook",
           type: "title",
+          direction: "from-top",
           startSec: 0,
-          endSec: 4,
-          voice: "Welcome to Tech with Gen Z!",
-          headline: "YOUR *HEADLINE* HERE"
+          endSec: 4.0,
+          voice: "Kya aapka code production me load aate hi crash ho jata hai?",
+          headline: "SERVER *CRASHING* UNDER LOAD?"
+        },
+        {
+          id: "s2-code",
+          type: "code",
+          direction: "from-left",
+          startSec: 4.0,
+          endSec: 8.0,
+          voice: "Yahan par null pointer runtime crash ho raha hai.",
+          headline: "UNHANDLED *RUNTIME* CRASH",
+          filename: "server.ts",
+          lines: [
+            "const token = req.headers['auth'];",
+            "const user = verifyToken(token); // 💥 Crash!",
+            "return res.json(user.profile);"
+          ],
+          highlightLines: [2]
+        },
+        {
+          id: "s3-badge",
+          type: "card",
+          direction: "pop-3d",
+          startSec: 8.0,
+          endSec: 12.0,
+          voice: "Miliye Docker aur Kubernetes se. Ye production ko self-healing banate hain.",
+          headline: "CONTAINERIZE *ANYTHING*",
+          cardText: "Automated container orchestration with zero downtime deployments.",
+          chip: "Zero Downtime",
+          icon: "docker",
+          featuredBadge: {
+            icon: "docker",
+            title: "Docker",
+            subtitle: "Containerization & Microservices Engine",
+            chip: "Industry Standard"
+          }
+        },
+        {
+          id: "s4-terminal",
+          type: "terminal",
+          direction: "from-bottom",
+          startSec: 12.0,
+          endSec: 16.0,
+          voice: "Bas ek command se pore cluster me autoscaling pods deploy ho jate hain.",
+          headline: "AUTONOMOUS *DEPLOYMENT*",
+          command: "kubectl apply -f deployment.yaml",
+          path: "~/k8s-cluster",
+          branch: "main",
+          output: [
+            { text: "✓ Created deployment.apps/web-api", type: "success" },
+            { text: "⚡ 5 pods active across cluster", type: "info" },
+            { text: "✓ LoadBalancer active on port 443", type: "success" }
+          ]
+        },
+        {
+          id: "s5-stat",
+          type: "stat",
+          direction: "from-right",
+          startSec: 16.0,
+          endSec: 20.0,
+          voice: "Throughput speed 10x badh jati hai aur latency bilkul zero.",
+          headline: "10X *FASTER* SCALING",
+          value: "10x",
+          label: "Deployment Speed Multiplier"
+        },
+        {
+          id: "s6-pills",
+          type: "pills",
+          direction: "from-left",
+          startSec: 20.0,
+          endSec: 24.0,
+          voice: "Server crashes, memory leaks aur vulnerabilities ko auto-heal karein.",
+          headline: "SELF-HEALING *CLUSTER*",
+          items: [
+            "Server Crashes",
+            "Security Vulnerabilities",
+            "Code Smells"
+          ]
+        },
+        {
+          id: "s7-orbit",
+          type: "orbit",
+          direction: "from-bottom",
+          startSec: 24.0,
+          endSec: 28.0,
+          voice: "Aapka code GitHub se direct Jenkins aur Kubernetes cluster me deploy hota hai.",
+          headline: "SEAMLESS *CI/CD* FLOW",
+          center: "kubernetes",
+          orbiting: [
+            "GitHub",
+            "GitLab",
+            "Jenkins"
+          ]
+        },
+        {
+          id: "s8-cta",
+          type: "cta",
+          direction: "from-top",
+          startSec: 28.0,
+          endSec: 32.0,
+          voice: "Backend engineering seekhne ke liye abhi follow karein @techwith.GenZ ko!",
+          headline: "LEVEL UP YOUR *CODE*",
+          buttonText: "FOLLOW FOR TECH TIPS"
         }
       ]
     };

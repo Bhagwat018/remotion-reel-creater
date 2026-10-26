@@ -5,7 +5,9 @@ import { SceneLayout } from "../components/SceneLayout";
 import { resolveFontFamily, useTheme } from "../theme/theme";
 import { ShimmerSweep } from "../components/ShimmerSweep";
 
-export const StatScene: React.FC<StatSceneProps & { durationInFrames: number }> = ({
+export const StatScene: React.FC<StatSceneProps & { durationInFrames: number; direction?: any; id?: string }> = ({
+  id,
+  direction,
   leadIn,
   headline,
   value,
@@ -50,6 +52,8 @@ export const StatScene: React.FC<StatSceneProps & { durationInFrames: number }> 
 
   return (
     <SceneLayout
+      id={id}
+      direction={direction}
       leadIn={leadIn}
       headline={headline}
       durationInFrames={durationInFrames}

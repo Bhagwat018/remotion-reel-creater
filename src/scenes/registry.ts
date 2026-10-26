@@ -16,7 +16,9 @@ import { DiagramScene } from "./DiagramScene";
 import { TerminalScene } from "./TerminalScene";
 import { ChartScene } from "./ChartScene";
 
-type SceneComponent = React.FC<SceneData & { durationInFrames: number }>;
+type SceneComponent = React.FC<
+  SceneData & { durationInFrames: number; sceneIndex?: number; slug?: string }
+>;
 
 export const sceneRegistry: Record<SceneType, SceneComponent> = {
   title: TitleScene as unknown as SceneComponent,

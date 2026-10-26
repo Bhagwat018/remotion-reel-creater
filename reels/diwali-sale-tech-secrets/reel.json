@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "topic": "Diwali Special Tech Topics",
+    "audience": "Developers, coders, tech enthusiasts",
+    "lengthSec": 36,
+    "language": "Hinglish",
+    "handle": "techwith.GenZ",
+    "slug": "diwali-sale-tech-secrets",
+    "voiceFile": "reels/diwali-sale-tech-secrets/voice.mp3"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 5,
+      "voice": "Diwali sale me ek second me lakho log phone kharidte hain, par Amazon Flipkart crash kyu nahi hote?",
+      "headline": "WHY E-COM NEVER CRASHES"
+    },
+    {
+      "id": "s2-k8s",
+      "type": "orbit",
+      "startSec": 5,
+      "endSec": 12,
+      "voice": "Secret hai Kubernetes autoscaling aur Load Balancers. Traffic badhte hi naye server instances fraction of seconds me deploy ho jate hain.",
+      "headline": "KUBERNETES AUTOSCALING",
+      "center": "Load Balancer",
+      "orbiting": [
+        "Node 1",
+        "Node 2",
+        "CDN"
+      ]
+    },
+    {
+      "id": "s3-ai",
+      "type": "pills",
+      "startSec": 12,
+      "endSec": 19,
+      "voice": "Aur tumhe lagta hai discount sabke liye same hai? Nahi, Agentic AI tumhari search history track karke dynamic pricing aur personalized FOMO create karta hai.",
+      "headline": "AI DYNAMIC PRICING",
+      "items": [
+        "Search History",
+        "Agentic AI",
+        "Personalized FOMO"
+      ]
+    },
+    {
+      "id": "s4-fake-sale",
+      "type": "stat",
+      "startSec": 19,
+      "endSec": 24,
+      "voice": "Sale me 50 percent off dikh raha hai? Actually tumhe bewakoof banaya ja raha hai! Sellers sale se pehle base price bada dete hain.",
+      "headline": "FAKE 50% OFF",
+      "value": "50%",
+      "label": "Manipulated Base Price"
+    },
+    {
+      "id": "s5-code",
+      "type": "code",
+      "startSec": 24,
+      "endSec": 32,
+      "voice": "Pro tip: Python scripts aur browser APIs like Keepa use karke historical pricing scrape karo aur real discount check karo.",
+      "headline": "SCRAPE HISTORICAL DATA",
+      "filename": "price_tracker.py",
+      "lines": [
+        "import requests",
+        "data = requests.get('api/keepa/history')",
+        "if data.current_price > data.base_price:",
+        "    print('Fake Sale Alert!')"
+      ],
+      "highlightLines": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "s6-cta",
+      "type": "cta",
+      "startSec": 32,
+      "endSec": 36,
+      "voice": "Tech ke is chakravyuh ko samajhne ke liye, techwith.GenZ ko abhi follow kar lo!",
+      "headline": "DECODE DIWALI TECH",
+      "buttonText": "FOLLOW @techwith.GenZ"
+    }
+  ]
+}
