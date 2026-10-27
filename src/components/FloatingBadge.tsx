@@ -19,7 +19,6 @@ export const FloatingBadge: React.FC<FloatingBadgeProps> = ({
   title,
   subtitle,
   chip,
-  size,
   delayFrames = 0,
   forceEntrance = false,
   style = {},

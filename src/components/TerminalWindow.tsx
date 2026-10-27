@@ -74,12 +74,12 @@ export const TerminalWindow: React.FC<TerminalWindowProps> = ({
       style={{
         width: "100%",
         maxWidth: 960,
-        backgroundColor: "#090d16",
-        borderRadius: 24,
+        backgroundColor: "#0d1117",
+        borderRadius: 22,
         overflow: "hidden",
-        border: "1.5px solid rgba(59, 130, 246, 0.3)",
-        boxShadow: "0 30px 70px -10px rgba(0, 0, 0, 0.8), 0 0 40px rgba(59, 130, 246, 0.15)",
-        transform: `perspective(1000px) scale(${entrance})`,
+        border: "3.5px solid #000000",
+        boxShadow: "7px 7px 0px #000000",
+        transform: `scale(${entrance})`,
         transformOrigin: "center center",
         ...style,
       }}
@@ -91,15 +91,15 @@ export const TerminalWindow: React.FC<TerminalWindowProps> = ({
           alignItems: "center",
           justifyContent: "space-between",
           padding: "16px 24px",
-          backgroundColor: "#0d1322",
-          borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
+          backgroundColor: "#161b22",
+          borderBottom: "3px solid #000000",
         }}
       >
         {/* macOS Window Controls */}
-        <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#ff5f56", boxShadow: "0 0 8px rgba(255,95,86,0.6)" }} />
-          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#ffbd2e", boxShadow: "0 0 8px rgba(255,189,46,0.6)" }} />
-          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#27c93f", boxShadow: "0 0 8px rgba(39,201,63,0.6)" }} />
+        <div style={{ display: "flex", gap: 9, alignItems: "center" }}>
+          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#ff5f56", border: "1.5px solid #000000" }} />
+          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#ffbd2e", border: "1.5px solid #000000" }} />
+          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#27c93f", border: "1.5px solid #000000" }} />
         </div>
 
         {/* Title */}

@@ -41,7 +41,33 @@ if (!fs.existsSync(reelJsonPath)) {
   process.exit(1);
 }
 
-// 1. Run Validation First
+// 1. Audio & Timings (Auto-generate voice and words if missing)
+const publicDir = path.join(rootDir, "public", "reels", slug);
+const reelsDir = path.join(rootDir, "reels", slug);
+const pubVoiceFile = path.join(publicDir, "voice.mp3");
+const reelVoiceFile = path.join(reelsDir, "voice.mp3");
+const pubWordsFile = path.join(publicDir, "words.json");
+const reelWordsFile = path.join(reelsDir, "words.json");
+
+// Auto-generate voice and words if voice.mp3 is missing
+if (!fs.existsSync(pubVoiceFile) && !fs.existsSync(reelVoiceFile)) {
+  console.log(`🎙️ No voice.mp3 found. Auto-generating voice-first audio for "${slug}"...`);
+  spawnSync("node", [path.join(rootDir, "scripts", "generate-voice.mjs"), slug], {
+    stdio: "inherit",
+    cwd: rootDir,
+  });
+}
+
+// Sync audio if present
+if (fs.existsSync(pubVoiceFile) && !fs.existsSync(reelVoiceFile)) {
+  fs.mkdirSync(reelsDir, { recursive: true });
+  fs.copyFileSync(pubVoiceFile, reelVoiceFile);
+} else if (!fs.existsSync(pubVoiceFile) && fs.existsSync(reelVoiceFile)) {
+  fs.mkdirSync(publicDir, { recursive: true });
+  fs.copyFileSync(reelVoiceFile, pubVoiceFile);
+}
+
+// 2. Run Validation
 console.log(`\n=======================================================`);
 console.log(`🎬 1/3 Validating Reel: "${slug}"`);
 console.log(`=======================================================`);
@@ -55,23 +81,6 @@ const valRes = spawnSync("node", [validateScript, slug], {
 if (valRes.status !== 0) {
   console.error(`\n❌ Render aborted: Validation failed for "${slug}".`);
   process.exit(1);
-}
-
-// 2. Audio & Timings (Keep it 100% simple - user provides MP3 on dashboard)
-const publicDir = path.join(rootDir, "public", "reels", slug);
-const reelsDir = path.join(rootDir, "reels", slug);
-const pubVoiceFile = path.join(publicDir, "voice.mp3");
-const reelVoiceFile = path.join(reelsDir, "voice.mp3");
-const pubWordsFile = path.join(publicDir, "words.json");
-const reelWordsFile = path.join(reelsDir, "words.json");
-
-// Sync audio if present
-if (fs.existsSync(pubVoiceFile) && !fs.existsSync(reelVoiceFile)) {
-  fs.mkdirSync(reelsDir, { recursive: true });
-  fs.copyFileSync(pubVoiceFile, reelVoiceFile);
-} else if (!fs.existsSync(pubVoiceFile) && fs.existsSync(reelVoiceFile)) {
-  fs.mkdirSync(publicDir, { recursive: true });
-  fs.copyFileSync(reelVoiceFile, pubVoiceFile);
 }
 
 // Auto-align word timestamps for subtitles if words.json not yet created
@@ -113,8 +122,39 @@ if (!fs.existsSync(pubWordsFile) && !fs.existsSync(reelWordsFile)) {
   fs.writeFileSync(reelWordsFile, JSON.stringify(generatedWords, null, 2), "utf-8");
 }
 
-// 3. Prepare resolved props with word timestamps
+// 3. Prepare resolved props with word timestamps & auto-heal BGM
 const reelData = JSON.parse(fs.readFileSync(reelJsonPath, "utf-8"));
+
+// Sanitize & Auto-heal BGM to guarantee no 404 MediaError crashes render
+if (reelData.meta) {
+  if (typeof reelData.meta.bgm === "string") {
+    let cleanBgm = reelData.meta.bgm.replace(/^\/?public\//, "").replace(/^\//, "");
+    const directPath = path.join(rootDir, "public", cleanBgm);
+    const inBgmSubdir = path.join(rootDir, "public", "bgm", path.basename(cleanBgm));
+    const fallbackPath = path.join(rootDir, "public", "bgm", "cyber-groove.mp3");
+
+    if (fs.existsSync(directPath)) {
+      reelData.meta.bgm = cleanBgm;
+    } else if (fs.existsSync(inBgmSubdir)) {
+      reelData.meta.bgm = `bgm/${path.basename(cleanBgm)}`;
+    } else if (fs.existsSync(fallbackPath)) {
+      console.log(`⚠️ BGM "${reelData.meta.bgm}" not found on disk. Auto-falling back to "bgm/cyber-groove.mp3"`);
+      reelData.meta.bgm = "bgm/cyber-groove.mp3";
+    } else {
+      console.log(`⚠️ BGM "${reelData.meta.bgm}" not found on disk. Disabling BGM.`);
+      reelData.meta.bgm = false;
+    }
+
+    // Persist healed BGM to reel.json
+    fs.writeFileSync(reelJsonPath, JSON.stringify(reelData, null, 2), "utf-8");
+    if (fs.existsSync(publicReelJson)) {
+      fs.writeFileSync(publicReelJson, JSON.stringify(reelData, null, 2), "utf-8");
+    }
+  } else if (reelData.meta.bgm === true) {
+    reelData.meta.bgm = "bgm/cyber-groove.mp3";
+  }
+}
+
 let wordsData = null;
 if (fs.existsSync(pubWordsFile)) {
   try {

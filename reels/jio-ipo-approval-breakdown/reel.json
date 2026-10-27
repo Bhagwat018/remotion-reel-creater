@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "slug": "jio-ipo-approval-breakdown",
+    "title": "Jio IPO Approval Breakdown",
+    "topic": "Jio IPO Approval Breakdown",
+    "handle": "@techwith.GenZ",
+    "voiceFile": "reels/jio-ipo-approval-breakdown/voice.mp3",
+    "loop": true,
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.18
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 4.5,
+      "direction": "from-top",
+      "voice": "Jio IPO ko finally green signal mil gaya hai! Kya ye India ka sabse bada tech listing banne wala hai?",
+      "headline": "JIO IPO APPROVED!",
+      "subheading": "India's Biggest Tech Listing Incoming",
+      "badge": "MARKET ALERT",
+      "themeColor": "#fb923c",
+      "leadIn": "MARKET ALERT"
+    },
+    {
+      "id": "scene-2",
+      "type": "stat",
+      "startSec": 4.5,
+      "endSec": 9,
+      "direction": "from-bottom",
+      "voice": "Market valuation estimate hai over $112 Billion! Numbers dekh kar hosh udd jayenge.",
+      "value": "$112B+",
+      "label": "Estimated Enterprise Valuation",
+      "context": "Poised to beat major global telecom & tech market caps",
+      "themeColor": "#c084fc",
+      "headline": "Key Feature"
+    },
+    {
+      "id": "scene-3",
+      "type": "pills",
+      "startSec": 9,
+      "endSec": 14,
+      "direction": "from-left",
+      "voice": "Inka core growth driver telecom nahi, inka tech stack hai: 5G SA Network, Cloud Platform, aur JioBrain AI.",
+      "title": "3 Tech Growth Engines",
+      "pills": [
+        "5G Standalone Network",
+        "Jio Cloud Infrastructure",
+        "JioBrain Enterprise AI",
+        "Edge Computing Hubs"
+      ],
+      "themeColor": "#60a5fa",
+      "headline": "3 Tech Growth Engines",
+      "items": [
+        "5G Standalone Network",
+        "Jio Cloud Infrastructure",
+        "JioBrain Enterprise AI",
+        "Edge Computing Hubs"
+      ]
+    },
+    {
+      "id": "scene-4",
+      "type": "card",
+      "startSec": 14,
+      "endSec": 18.5,
+      "direction": "from-right",
+      "voice": "Bas telco nahi, Jio pure Hyperscale Data Centers aur SaaS platforms pe heavy aggressively shift ho raha hai.",
+      "cardTitle": "Tech Pivot Strategy",
+      "description": "Transitioning from Telco to Full-Stack Tech & Cloud Infra Provider",
+      "metrics": [
+        {
+          "label": "Data Centers",
+          "value": "1.5 GW Capacity"
+        },
+        {
+          "label": "Enterprise SaaS",
+          "value": "300k+ Business Clients"
+        }
+      ],
+      "themeColor": "#f472b6",
+      "headline": "Tech Pivot Strategy",
+      "subtitle": "Transitioning from Telco to Full-Stack Tech & Cloud Infra Provider",
+      "chip": "HIGHLIGHT",
+      "cardText": "Detailed explanation goes here."
+    },
+    {
+      "id": "scene-5",
+      "type": "stacked",
+      "startSec": 18.5,
+      "endSec": 23.5,
+      "direction": "pop-3d",
+      "voice": "470 Million se zyada active users ke saath, per-user revenue continuous grow ho raha hai.",
+      "title": "Scale & Monetization",
+      "items": [
+        {
+          "label": "Subscriber Base",
+          "value": "470M+ Users"
+        },
+        {
+          "label": "5G Adoption",
+          "value": "100M+ Devices"
+        },
+        {
+          "label": "EBITDA Margin",
+          "value": "50%+ Healthy Scale"
+        }
+      ],
+      "themeColor": "#4ade80",
+      "headline": "Scale & Monetization"
+    },
+    {
+      "id": "scene-6",
+      "type": "knobs",
+      "startSec": 23.5,
+      "endSec": 28,
+      "direction": "from-bottom",
+      "voice": "Retail investors ke liye huge upside potential hai, but high valuation multiples par eye rakhna zaroori hai.",
+      "title": "Investor Radar",
+      "knobs": [
+        {
+          "label": "Valuation Multiple",
+          "value": "88%"
+        },
+        {
+          "label": "Monetization Speed",
+          "value": "92%"
+        },
+        {
+          "label": "Risk Factor",
+          "value": "35%"
+        }
+      ],
+      "themeColor": "#fb923c",
+      "headline": "Investor Radar"
+    },
+    {
+      "id": "scene-7",
+      "type": "cta",
+      "startSec": 28,
+      "endSec": 32,
+      "direction": "from-top",
+      "voice": "Aise hi trending tech breakdowns ke liye follow karo @techwith.GenZ aur apne dev friends ko share karo!",
+      "headline": "Stay Ahead in Tech & Markets",
+      "subtext": "Follow for daily high-converting dev insights",
+      "actionText": "Follow @techwith.GenZ",
+      "themeColor": "#c084fc",
+      "buttonText": "FOLLOW @techwith.GenZ"
+    }
+  ]
+}

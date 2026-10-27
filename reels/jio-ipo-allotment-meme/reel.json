@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "slug": "jio-ipo-allotment-meme",
+    "title": "Jio IPO Allotment Reality Check",
+    "topic": "Jio IPO Allotment Meme",
+    "handle": "@techwith.GenZ",
+    "voiceFile": "reels/jio-ipo-allotment-meme/voice.mp3",
+    "loop": true,
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.18
+  },
+  "scenes": [
+    {
+      "type": "title",
+      "startSec": 0,
+      "endSec": 5,
+      "direction": "from-bottom",
+      "voice": "Bhai, Jio IPO allotment status check kiya kya? Lag raha tha iss baar toh guaranteed 100 percent allotment milega!",
+      "heading": "Jio IPO Allotment Status",
+      "subheading": "Expectation vs 0 Lot Reality 😭",
+      "accentColor": "#fb923c",
+      "id": "scene-1",
+      "headline": "Jio IPO Allotment Status"
+    },
+    {
+      "type": "stat",
+      "startSec": 5,
+      "endSec": 11,
+      "direction": "from-right",
+      "voice": "Mummy, papa aur dosto ke PAN card se 10 lots apply kiye the. Result dekhoge? Direct Zero Allotment!",
+      "value": "0 / 10",
+      "label": "Total Lots Allotted Across Accounts",
+      "trend": "-100% Luck",
+      "accentColor": "#f472b6",
+      "id": "scene-2",
+      "headline": "Key Feature"
+    },
+    {
+      "type": "card",
+      "startSec": 11,
+      "endSec": 17,
+      "direction": "from-left",
+      "voice": "Retail quota 120 times oversubscribe ho gaya. IPO algorithm ne hum sabhi retail investors ko straight ghost kar diya!",
+      "title": "Retail Quota Status",
+      "description": "Subscribed: 120x | PAN Status: Completely Ignored by Registrar Server",
+      "accentColor": "#c084fc",
+      "id": "scene-3",
+      "headline": "Retail Quota Status",
+      "subtitle": "Subscribed: 120x | PAN Status: Completely Ignored by Registrar Server",
+      "chip": "HIGHLIGHT",
+      "cardText": "Detailed explanation goes here."
+    },
+    {
+      "type": "terminal",
+      "startSec": 17,
+      "endSec": 23,
+      "direction": "pop-3d",
+      "voice": "Ek simple Python script chala ke status check kiya, console pe seedha error aaya: Better Luck Next Time!",
+      "title": "check_allotment.py",
+      "command": "python3 check_jio_status.py --pan ABCDE1234F",
+      "output": [
+        "[+] Querying Registrar Database...",
+        "[!] Status: NOT ALLOTTED",
+        "[!] Bank Unblock Requested (3-5 Days)"
+      ],
+      "accentColor": "#60a5fa",
+      "id": "scene-4",
+      "headline": "check_allotment.py"
+    },
+    {
+      "type": "pills",
+      "startSec": 23,
+      "endSec": 29,
+      "direction": "from-top",
+      "voice": "Ab bas bank account me refund aane ka wait chal raha hai, taaki agle oversubscribed IPO me firse dukh seh sakein!",
+      "title": "Post-IPO Coping Protocol",
+      "items": [
+        "Wait for Mandate Refund",
+        "Check Zerodha Balance",
+        "Blame Registrar Server",
+        "Apply Next Tech IPO"
+      ],
+      "accentColor": "#4ade80",
+      "id": "scene-5",
+      "headline": "Post-IPO Coping Protocol"
+    },
+    {
+      "type": "compare",
+      "startSec": 29,
+      "endSec": 36,
+      "direction": "from-bottom",
+      "voice": "Expectation thi listing gain se M3 MacBook Pro lene ki! Reality: Bank balance unlocked and eating ghar ka paratha!",
+      "leftTitle": "Expectation 🚀",
+      "leftItems": [
+        "Listing Gain +60%",
+        "Buy M3 Max MacBook",
+        "Flex on LinkedIn"
+      ],
+      "rightTitle": "Reality 💀",
+      "rightItems": [
+        "0 Shares Allotted",
+        "Funds Blocked for Days",
+        "Crying in VS Code"
+      ],
+      "accentColor": "#fb923c",
+      "id": "scene-6",
+      "headline": "Key Feature"
+    },
+    {
+      "type": "cta",
+      "startSec": 36,
+      "endSec": 42,
+      "direction": "from-right",
+      "voice": "Aapko kitne lot mile? Comment karke apna dukh share karo aur subscribe karo @techwith.GenZ for tech and dev memes!",
+      "title": "Tag That Unlucky Friend!",
+      "subheading": "Follow @techwith.GenZ for daily dev memes & tech updates",
+      "buttonText": "Subscribe @techwith.GenZ",
+      "accentColor": "#c084fc",
+      "id": "scene-7",
+      "headline": "Tag That Unlucky Friend!"
+    }
+  ]
+}

@@ -7,7 +7,7 @@
   {
     "word": "aapka",
     "startSec": 0.34,
-    "endSec": 0.67
+    "endSec": 0.68
   },
   {
     "word": "database",
@@ -17,7 +17,7 @@
   {
     "word": "har",
     "startSec": 1.01,
-    "endSec": 1.34
+    "endSec": 1.35
   },
   {
     "word": "request",
@@ -27,7 +27,7 @@
   {
     "word": "par",
     "startSec": 1.68,
-    "endSec": 2.01
+    "endSec": 2.02
   },
   {
     "word": "slow",
@@ -42,7 +42,7 @@
   {
     "word": "raha",
     "startSec": 2.69,
-    "endSec": 3.02
+    "endSec": 3.03
   },
   {
     "word": "hai?",
@@ -51,302 +51,302 @@
   },
   {
     "word": "Iska",
-    "startSec": 4,
-    "endSec": 4.43
+    "startSec": 3.71,
+    "endSec": 4.14
   },
   {
     "word": "simple",
-    "startSec": 4.43,
-    "endSec": 4.85
+    "startSec": 4.14,
+    "endSec": 4.57
   },
   {
     "word": "solution",
-    "startSec": 4.85,
-    "endSec": 5.28
+    "startSec": 4.56,
+    "endSec": 4.99
   },
   {
     "word": "hai",
-    "startSec": 5.28,
-    "endSec": 5.71
+    "startSec": 4.99,
+    "endSec": 5.42
   },
   {
     "word": "Caching.",
-    "startSec": 5.71,
-    "endSec": 6.13
+    "startSec": 5.42,
+    "endSec": 5.85
   },
   {
     "word": "Frequent",
-    "startSec": 6.13,
-    "endSec": 6.56
+    "startSec": 5.84,
+    "endSec": 6.27
   },
   {
     "word": "data",
-    "startSec": 6.56,
-    "endSec": 6.99
+    "startSec": 6.27,
+    "endSec": 6.7
   },
   {
     "word": "memory",
-    "startSec": 6.99,
-    "endSec": 7.41
+    "startSec": 6.7,
+    "endSec": 7.13
   },
   {
     "word": "mein",
-    "startSec": 7.41,
-    "endSec": 7.84
+    "startSec": 7.12,
+    "endSec": 7.55
   },
   {
     "word": "store",
-    "startSec": 7.84,
-    "endSec": 8.27
+    "startSec": 7.55,
+    "endSec": 7.98
   },
   {
     "word": "hota",
-    "startSec": 8.27,
-    "endSec": 8.7
+    "startSec": 7.98,
+    "endSec": 8.41
   },
   {
     "word": "hai.",
-    "startSec": 8.7,
-    "endSec": 9.12
+    "startSec": 8.41,
+    "endSec": 8.84
   },
   {
     "word": "Redis",
-    "startSec": 10,
-    "endSec": 10.38
+    "startSec": 9.18,
+    "endSec": 9.56
   },
   {
     "word": "use",
-    "startSec": 10.38,
-    "endSec": 10.76
+    "startSec": 9.56,
+    "endSec": 9.94
   },
   {
     "word": "karne",
-    "startSec": 10.76,
-    "endSec": 11.14
+    "startSec": 9.94,
+    "endSec": 10.32
   },
   {
     "word": "se",
-    "startSec": 11.14,
-    "endSec": 11.52
+    "startSec": 10.32,
+    "endSec": 10.7
   },
   {
     "word": "aapki",
-    "startSec": 11.52,
-    "endSec": 11.9
+    "startSec": 10.7,
+    "endSec": 11.08
   },
   {
     "word": "API",
-    "startSec": 11.9,
-    "endSec": 12.28
+    "startSec": 11.08,
+    "endSec": 11.46
   },
   {
     "word": "response",
-    "startSec": 12.28,
-    "endSec": 12.66
+    "startSec": 11.46,
+    "endSec": 11.84
   },
   {
     "word": "speed",
-    "startSec": 12.66,
-    "endSec": 13.04
+    "startSec": 11.84,
+    "endSec": 12.22
   },
   {
     "word": "10",
-    "startSec": 13.04,
-    "endSec": 13.42
+    "startSec": 12.22,
+    "endSec": 12.6
   },
   {
     "word": "guna",
-    "startSec": 13.42,
-    "endSec": 13.8
+    "startSec": 12.6,
+    "endSec": 12.98
   },
   {
     "word": "fast",
-    "startSec": 13.8,
-    "endSec": 14.18
+    "startSec": 12.98,
+    "endSec": 13.36
   },
   {
     "word": "ho",
-    "startSec": 14.18,
-    "endSec": 14.57
+    "startSec": 13.36,
+    "endSec": 13.74
   },
   {
     "word": "jaati",
-    "startSec": 14.57,
-    "endSec": 14.95
+    "startSec": 13.75,
+    "endSec": 14.13
   },
   {
     "word": "hai.",
-    "startSec": 14.95,
-    "endSec": 15.33
+    "startSec": 14.13,
+    "endSec": 14.51
   },
   {
     "word": "Code",
-    "startSec": 15,
-    "endSec": 15.29
+    "startSec": 14.86,
+    "endSec": 15.15
   },
   {
     "word": "mein",
-    "startSec": 15.29,
-    "endSec": 15.57
+    "startSec": 15.15,
+    "endSec": 15.44
   },
   {
     "word": "bas",
-    "startSec": 15.57,
-    "endSec": 15.86
+    "startSec": 15.43,
+    "endSec": 15.72
   },
   {
     "word": "check",
-    "startSec": 15.86,
-    "endSec": 16.14
+    "startSec": 15.72,
+    "endSec": 16.01
   },
   {
     "word": "karein",
-    "startSec": 16.14,
-    "endSec": 16.43
+    "startSec": 16,
+    "endSec": 16.29
   },
   {
     "word": "ki",
-    "startSec": 16.43,
-    "endSec": 16.71
+    "startSec": 16.29,
+    "endSec": 16.58
   },
   {
     "word": "data",
-    "startSec": 16.71,
-    "endSec": 17
+    "startSec": 16.57,
+    "endSec": 16.86
   },
   {
     "word": "cache",
-    "startSec": 17,
-    "endSec": 17.28
+    "startSec": 16.86,
+    "endSec": 17.15
   },
   {
     "word": "mein",
-    "startSec": 17.28,
-    "endSec": 17.57
+    "startSec": 17.14,
+    "endSec": 17.43
   },
   {
     "word": "hai",
-    "startSec": 17.57,
-    "endSec": 17.85
+    "startSec": 17.43,
+    "endSec": 17.72
   },
   {
     "word": "ya",
-    "startSec": 17.85,
-    "endSec": 18.14
+    "startSec": 17.71,
+    "endSec": 18
   },
   {
     "word": "nahi.",
-    "startSec": 18.14,
-    "endSec": 18.42
+    "startSec": 18,
+    "endSec": 18.29
   },
   {
     "word": "Top",
-    "startSec": 22,
-    "endSec": 22.43
+    "startSec": 18.63,
+    "endSec": 19.06
   },
   {
     "word": "tech",
-    "startSec": 22.43,
-    "endSec": 22.86
+    "startSec": 19.06,
+    "endSec": 19.49
   },
   {
     "word": "companies",
-    "startSec": 22.86,
-    "endSec": 23.28
+    "startSec": 19.49,
+    "endSec": 19.92
   },
   {
     "word": "Redis",
-    "startSec": 23.28,
-    "endSec": 23.71
+    "startSec": 19.91,
+    "endSec": 20.34
   },
   {
     "word": "aur",
-    "startSec": 23.71,
-    "endSec": 24.14
+    "startSec": 20.34,
+    "endSec": 20.77
   },
   {
     "word": "Memcached",
-    "startSec": 24.14,
-    "endSec": 24.57
+    "startSec": 20.77,
+    "endSec": 21.2
   },
   {
     "word": "jaisi",
-    "startSec": 24.57,
-    "endSec": 25
+    "startSec": 21.2,
+    "endSec": 21.63
   },
   {
     "word": "in-memory",
-    "startSec": 25,
-    "endSec": 25.42
+    "startSec": 21.63,
+    "endSec": 22.06
   },
   {
     "word": "tools",
-    "startSec": 25.42,
-    "endSec": 25.85
+    "startSec": 22.05,
+    "endSec": 22.48
   },
   {
     "word": "use",
-    "startSec": 25.85,
-    "endSec": 26.28
+    "startSec": 22.48,
+    "endSec": 22.91
   },
   {
     "word": "karti",
-    "startSec": 26.28,
-    "endSec": 26.71
+    "startSec": 22.91,
+    "endSec": 23.34
   },
   {
     "word": "hain.",
-    "startSec": 26.71,
-    "endSec": 27.14
+    "startSec": 23.34,
+    "endSec": 23.77
   },
   {
     "word": "Apne",
-    "startSec": 27,
-    "endSec": 27.4
+    "startSec": 24.12,
+    "endSec": 24.52
   },
   {
     "word": "backend",
-    "startSec": 27.4,
-    "endSec": 27.79
+    "startSec": 24.52,
+    "endSec": 24.92
   },
   {
     "word": "ko",
-    "startSec": 27.79,
-    "endSec": 28.19
+    "startSec": 24.91,
+    "endSec": 25.31
   },
   {
     "word": "scale",
-    "startSec": 28.19,
-    "endSec": 28.58
+    "startSec": 25.31,
+    "endSec": 25.71
   },
   {
     "word": "karein",
-    "startSec": 28.58,
-    "endSec": 28.98
+    "startSec": 25.7,
+    "endSec": 26.1
   },
   {
     "word": "aur",
-    "startSec": 28.98,
-    "endSec": 29.37
+    "startSec": 26.1,
+    "endSec": 26.5
   },
   {
     "word": "database",
-    "startSec": 29.37,
-    "endSec": 29.77
+    "startSec": 26.49,
+    "endSec": 26.89
   },
   {
     "word": "crash",
-    "startSec": 29.77,
-    "endSec": 30.17
+    "startSec": 26.89,
+    "endSec": 27.29
   },
   {
     "word": "hona",
-    "startSec": 30.17,
-    "endSec": 30.56
+    "startSec": 27.29,
+    "endSec": 27.69
   },
   {
     "word": "rokein!",
-    "startSec": 30.56,
-    "endSec": 30.96
+    "startSec": 27.68,
+    "endSec": 28.08
   }
 ]

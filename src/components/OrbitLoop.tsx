@@ -3,7 +3,6 @@ import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { resolveFontFamily, useTheme } from "../theme/theme";
 import { entranceSpring } from "../lib/motion";
 import { TechLogo, getBrandMeta } from "./TechLogo";
-import { ShimmerSweep } from "./ShimmerSweep";
 
 export interface OrbitLoopProps {
   nodes: string[];
@@ -144,7 +143,7 @@ export const OrbitLoop: React.FC<OrbitLoopProps> = ({
         })}
       </svg>
 
-      {/* Center Glass Hub (e.g. SonarQube / Core Service) */}
+      {/* Center Hub */}
       {center && (
         <div
           style={{
@@ -155,10 +154,9 @@ export const OrbitLoop: React.FC<OrbitLoopProps> = ({
             width: 140,
             height: 140,
             borderRadius: "50%",
-            backgroundColor: "rgba(10, 15, 29, 0.94)",
-            backdropFilter: "blur(20px)",
-            border: `3px solid ${centerColor}`,
-            boxShadow: `0 0 50px ${centerColor}50, inset 0 0 25px ${centerColor}30`,
+            backgroundColor: "#ffffff",
+            border: "3.5px solid #000000",
+            boxShadow: "5px 5px 0px #000000",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -167,15 +165,14 @@ export const OrbitLoop: React.FC<OrbitLoopProps> = ({
             zIndex: 20,
           }}
         >
-          <ShimmerSweep delayFrames={delayFrames + 4} periodFrames={60} />
           <TechLogo name={center} size={52} />
           <span
             style={{
               fontFamily: theme.typography.mono,
-              fontSize: 13,
-              fontWeight: 800,
-              color: centerColor,
-              letterSpacing: "0.08em",
+              fontSize: 14,
+              fontWeight: 900,
+              color: "#000000",
+              letterSpacing: "0.04em",
               textTransform: "uppercase",
             }}
           >
@@ -184,7 +181,7 @@ export const OrbitLoop: React.FC<OrbitLoopProps> = ({
         </div>
       )}
 
-      {/* Orbiting nodes (Pills) with Official Logos and Glow */}
+      {/* Orbiting nodes (Pills) with Official Logos and Neo-Brutalism Borders */}
       {nodes.map((nodeText, idx) => {
         const nodeAngle = ((idx * (360 / count) - 90) * Math.PI) / 180;
         const nx = cx + radius * Math.cos(nodeAngle);
@@ -199,7 +196,6 @@ export const OrbitLoop: React.FC<OrbitLoopProps> = ({
 
         const fontFamily = resolveFontFamily(nodeText, theme.typography.ui);
         const brandMeta = getBrandMeta(nodeText);
-        const brandColor = brandMeta ? brandMeta.defaultColor : "#38bdf8";
 
         return (
           <div
@@ -210,26 +206,23 @@ export const OrbitLoop: React.FC<OrbitLoopProps> = ({
               top: ny,
               transform: `translate(-50%, calc(-50% + ${nodeFloat}px)) scale(${nodeScale})`,
               opacity: nodeOpacity,
-              backgroundColor: "rgba(13, 17, 28, 0.94)",
-              backdropFilter: "blur(16px)",
-              color: "#f8fafc",
-              borderRadius: 22,
-              padding: "16px 26px",
-              boxShadow: `0 14px 35px rgba(0, 0, 0, 0.55), 0 0 25px ${brandColor}25`,
-              border: `1.5px solid ${brandColor}60`,
+              backgroundColor: "#ffffff",
+              color: "#000000",
+              borderRadius: 20,
+              padding: "14px 24px",
+              boxShadow: "4px 4px 0px #000000",
+              border: "2.5px solid #000000",
               fontFamily,
-              fontSize: 26,
-              fontWeight: 700,
+              fontSize: 24,
+              fontWeight: 800,
               whiteSpace: "nowrap",
               zIndex: 10,
               display: "flex",
               alignItems: "center",
-              gap: 14,
-              overflow: "hidden",
+              gap: 12,
             }}
           >
-            <ShimmerSweep delayFrames={delayFrames + 8 + idx * 6} periodFrames={80} />
-            {brandMeta && <TechLogo name={nodeText} size={30} />}
+            {brandMeta && <TechLogo name={nodeText} size={28} />}
             <span>{nodeText}</span>
           </div>
         );

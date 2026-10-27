@@ -15,6 +15,9 @@ import { CtaScene } from "./CtaScene";
 import { DiagramScene } from "./DiagramScene";
 import { TerminalScene } from "./TerminalScene";
 import { ChartScene } from "./ChartScene";
+import { BotScene } from "./BotScene";
+import { KnobsScene } from "./KnobsScene";
+import { StackedScene } from "./StackedScene";
 
 type SceneComponent = React.FC<
   SceneData & { durationInFrames: number; sceneIndex?: number; slug?: string }
@@ -36,6 +39,9 @@ export const sceneRegistry: Record<SceneType, SceneComponent> = {
   diagram: DiagramScene as unknown as SceneComponent,
   terminal: TerminalScene as unknown as SceneComponent,
   chart: ChartScene as unknown as SceneComponent,
+  bot: BotScene as unknown as SceneComponent,
+  knobs: KnobsScene as unknown as SceneComponent,
+  stacked: StackedScene as unknown as SceneComponent,
 };
 
 export const getSceneComponent = (type: string): SceneComponent => {

@@ -6,9 +6,8 @@ export const Background: React.FC = () => {
   const frame = useCurrentFrame();
   const theme = useTheme();
 
-  // Slow continuous grid shift so background is never static
-  const cellSize = 40;
-  const offset = (frame * 0.5) % cellSize;
+  const dotSpacing = 44;
+  const offset = (frame * 0.2) % dotSpacing;
 
   return (
     <div
@@ -18,12 +17,9 @@ export const Background: React.FC = () => {
         left: 0,
         width: theme.layout.width,
         height: theme.layout.height,
-        backgroundColor: theme.colors.bg,
-        backgroundImage: `
-          linear-gradient(to right, ${theme.colors.grid} 1px, transparent 1px),
-          linear-gradient(to bottom, ${theme.colors.grid} 1px, transparent 1px)
-        `,
-        backgroundSize: `${cellSize}px ${cellSize}px`,
+        backgroundColor: "#f4f5f8",
+        backgroundImage: "radial-gradient(circle, rgba(0, 0, 0, 0.16) 2.5px, transparent 2.5px)",
+        backgroundSize: `${dotSpacing}px ${dotSpacing}px`,
         backgroundPosition: `${offset}px ${offset}px`,
         pointerEvents: "none",
         zIndex: 0,

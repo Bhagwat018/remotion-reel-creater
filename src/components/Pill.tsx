@@ -39,33 +39,23 @@ export const Pill: React.FC<PillProps> = ({
   // Contextual icon detection for tech concepts
   const lower = text.toLowerCase();
   let contextualIcon: React.ReactNode = null;
-  let pillBorderColor = "rgba(56, 189, 248, 0.35)";
-  let pillGlowColor = "rgba(56, 189, 248, 0.15)";
   let badgeLabel = "DETECT";
   let badgeColor = "#38bdf8";
 
   if (brandMeta) {
     contextualIcon = <TechLogo name={text} size={32} />;
-    pillBorderColor = `${brandMeta.defaultColor}55`;
-    pillGlowColor = `${brandMeta.defaultColor}20`;
     badgeLabel = "TECH";
     badgeColor = brandMeta.defaultColor;
   } else if (lower.includes("bug") || lower.includes("error") || lower.includes("defect") || lower.includes("crash")) {
     contextualIcon = <FaBug size={28} color="#ef4444" style={{ filter: "drop-shadow(0 0 10px rgba(239,68,68,0.5))" }} />;
-    pillBorderColor = "rgba(239, 68, 68, 0.45)";
-    pillGlowColor = "rgba(239, 68, 68, 0.2)";
     badgeLabel = "CRITICAL";
     badgeColor = "#ef4444";
   } else if (lower.includes("vulnerab") || lower.includes("secur") || lower.includes("threat") || lower.includes("cve")) {
     contextualIcon = <FaShieldHalved size={28} color="#f59e0b" style={{ filter: "drop-shadow(0 0 10px rgba(245,158,11,0.5))" }} />;
-    pillBorderColor = "rgba(245, 158, 11, 0.45)";
-    pillGlowColor = "rgba(245, 158, 11, 0.2)";
     badgeLabel = "SECURITY";
     badgeColor = "#f59e0b";
   } else if (lower.includes("smell") || lower.includes("debt") || lower.includes("clean") || lower.includes("maintain")) {
     contextualIcon = <FaBiohazard size={28} color="#a855f7" style={{ filter: "drop-shadow(0 0 10px rgba(168,85,247,0.5))" }} />;
-    pillBorderColor = "rgba(168, 85, 247, 0.45)";
-    pillGlowColor = "rgba(168, 85, 247, 0.2)";
     badgeLabel = "CODE DEBT";
     badgeColor = "#a855f7";
   } else {
@@ -80,13 +70,12 @@ export const Pill: React.FC<PillProps> = ({
         alignItems: "center",
         justifyContent: "space-between",
         gap: 20,
-        backgroundColor: "rgba(13, 17, 28, 0.94)",
-        backdropFilter: "blur(20px)",
-        color: "#f8fafc",
-        borderRadius: 24,
-        padding: "24px 34px",
-        border: `2px solid ${pillBorderColor}`,
-        boxShadow: `0 18px 45px rgba(0, 0, 0, 0.5), 0 0 30px ${pillGlowColor}`,
+        backgroundColor: "#ffffff",
+        color: "#000000",
+        borderRadius: 20,
+        padding: "22px 30px",
+        border: "3px solid #000000",
+        boxShadow: "5px 5px 0px #000000",
         opacity,
         transform: `translateY(${translateY + floatOffset}px) scale(${scale})`,
         transformOrigin: "center center",
@@ -100,19 +89,19 @@ export const Pill: React.FC<PillProps> = ({
         {/* Number Badge */}
         <div
           style={{
-            width: 48,
-            height: 48,
-            borderRadius: 14,
-            backgroundColor: `${badgeColor}18`,
-            border: `1.5px solid ${badgeColor}`,
+            width: 46,
+            height: 46,
+            borderRadius: 12,
+            backgroundColor: badgeColor || "#fb923c",
+            border: "2px solid #000000",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             fontFamily: theme.typography.mono,
             fontSize: 20,
-            fontWeight: 800,
-            color: badgeColor,
-            boxShadow: `0 0 14px ${badgeColor}35`,
+            fontWeight: 900,
+            color: "#000000",
+            boxShadow: "2px 2px 0px #000000",
           }}
         >
           {numStr}
@@ -124,11 +113,11 @@ export const Pill: React.FC<PillProps> = ({
           <span
             style={{
               fontFamily,
-              fontSize: 36,
-              fontWeight: 700,
+              fontSize: 34,
+              fontWeight: 800,
               lineHeight: 1.25,
               letterSpacing: "-0.01em",
-              color: "#ffffff",
+              color: "#000000",
             }}
           >
             {text}
@@ -143,10 +132,11 @@ export const Pill: React.FC<PillProps> = ({
             display: "flex",
             alignItems: "center",
             gap: 8,
-            backgroundColor: `${badgeColor}15`,
-            border: `1px solid ${badgeColor}40`,
+            backgroundColor: "#f1f5f9",
+            border: "2px solid #000000",
             borderRadius: 999,
-            padding: "8px 18px",
+            padding: "6px 16px",
+            boxShadow: "2px 2px 0px #000000",
           }}
         >
           <span
@@ -154,17 +144,16 @@ export const Pill: React.FC<PillProps> = ({
               width: 8,
               height: 8,
               borderRadius: "50%",
-              backgroundColor: badgeColor,
-              boxShadow: `0 0 8px ${badgeColor}`,
+              backgroundColor: badgeColor || "#22c55e",
             }}
           />
           <span
             style={{
               fontFamily: theme.typography.mono,
               fontSize: 14,
-              fontWeight: 800,
-              color: badgeColor,
-              letterSpacing: "0.08em",
+              fontWeight: 900,
+              color: "#000000",
+              letterSpacing: "0.06em",
             }}
           >
             {badgeLabel}

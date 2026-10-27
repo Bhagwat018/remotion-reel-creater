@@ -56,14 +56,16 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
   // Voice audio source
   const voiceSrc = useMemo(() => {
     if (!meta.voiceFile) return null;
-    return staticFile(meta.voiceFile);
+    const clean = meta.voiceFile.replace(/^\/?public\//, "").replace(/^\//, "");
+    return staticFile(clean);
   }, [meta.voiceFile]);
 
   // Background music with intelligent ducking
   const bgmSrc = useMemo(() => {
     if (!meta.bgm) return null;
-    if (typeof meta.bgm === "string") return staticFile(meta.bgm);
-    return staticFile("bgm/cyber-groove.mp3");
+    let path = typeof meta.bgm === "string" ? meta.bgm : "bgm/cyber-groove.mp3";
+    path = path.replace(/^\/?public\//, "").replace(/^\//, "");
+    return staticFile(path);
   }, [meta.bgm]);
 
   // Avatar config
@@ -161,15 +163,15 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
           <KineticCaptions words={activeWords} enabled={meta.captions ?? true} />
         )}
 
-        {/* Fixed bottom handle pill */}
-        <HandlePill handle={meta.handle} />
+        {/* Fixed bottom handle pill (only when explicitly requested) */}
+        {meta.showHandle && <HandlePill handle={meta.handle} />}
 
         {/* Social Safe Zone Overlay (Instagram & YouTube Shorts UI Guides) */}
         <SafeZoneOverlay visible={Boolean(meta.showSafeZone)} />
 
         {/* Frame 0 Poster Injection (guarantees platform thumbnail is cover image) */}
         {frame === 0 && meta.coverIntro && (
-          <Sequence from={0} durationInFrames={1}>
+          <Sequence durationInFrames={1}>
             <CoverThumbnail meta={meta} scenes={scenes} />
           </Sequence>
         )}

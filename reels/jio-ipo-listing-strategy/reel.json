@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "slug": "jio-ipo-listing-strategy",
+    "title": "Jio IPO Listing Day Strategy",
+    "topic": "Jio IPO Listing Day Strategy (Hold or Sell)",
+    "handle": "@techwith.GenZ",
+    "voiceFile": "reels/jio-ipo-listing-strategy/voice.mp3",
+    "loop": true,
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.18
+  },
+  "scenes": [
+    {
+      "type": "title",
+      "startSec": 0,
+      "endSec": 4,
+      "direction": "pop-3d",
+      "title": "Jio IPO: Hold Or Sell?",
+      "subtitle": "Listing Day Strategy Unlocked 🚀",
+      "voice": "Jio IPO list hone wala hai! Par listing day pe exact strategy kya honi chahiye? Hold karein ya Sell?",
+      "id": "scene-1",
+      "headline": "Jio IPO: Hold Or Sell?"
+    },
+    {
+      "type": "stat",
+      "startSec": 4,
+      "endSec": 8.5,
+      "direction": "from-right",
+      "stat": "+35%",
+      "label": "Expected GMP / Listing Pop",
+      "subtext": "Based on grey market trends",
+      "voice": "Grey market trends suggest an expected 30 to 40 percent listing gain on day one!",
+      "id": "scene-2",
+      "headline": "Key Feature",
+      "value": "+35%"
+    },
+    {
+      "type": "pills",
+      "startSec": 8.5,
+      "endSec": 13,
+      "direction": "from-bottom",
+      "title": "Growth Drivers",
+      "items": [
+        "470M+ Active Users",
+        "ARPU Hikes Ahead",
+        "AI & Cloud Ecosystem"
+      ],
+      "voice": "470 million plus subscribers, consistent ARPU hikes, aur solid AI cloud engine ecosystem setup!",
+      "id": "scene-3",
+      "headline": "Growth Drivers"
+    },
+    {
+      "type": "card",
+      "startSec": 13,
+      "endSec": 17.5,
+      "direction": "from-left",
+      "title": "Trader Strategy",
+      "body": "Book 50% listing profits on Day 1.\nSet strict trailing Stop-Loss for remaining.",
+      "accentColor": "#fb923c",
+      "voice": "Agar aap short-term gains ke liye aaye ho, toh listing day pe 50 percent profit book karo aur baaki par strict stop loss lagao.",
+      "id": "scene-4",
+      "headline": "Trader Strategy",
+      "chip": "HIGHLIGHT",
+      "cardText": "Book 50% listing profits on Day 1.\nSet strict trailing Stop-Loss for remaining."
+    },
+    {
+      "type": "compare",
+      "startSec": 17.5,
+      "endSec": 22.5,
+      "direction": "from-top",
+      "title": "Strategy Comparison",
+      "left": {
+        "label": "Listing Trader",
+        "value": "Book 50% & Trail SL"
+      },
+      "right": {
+        "label": "Long-Term Investor",
+        "value": "Hold 3-5 Yrs Compound"
+      },
+      "voice": "Long term investors ke liye simple strategy hai: Hold for 3 to 5 years, India ki digital expansion story abhi shuru huyi hai.",
+      "id": "scene-5",
+      "headline": "Strategy Comparison"
+    },
+    {
+      "type": "stacked",
+      "startSec": 22.5,
+      "endSec": 27,
+      "direction": "pop-3d",
+      "title": "Key Risk Factors",
+      "items": [
+        "Heavy 5G Capex Spend",
+        "Monetization Speed",
+        "Regulatory Changes"
+      ],
+      "voice": "Par watch out! Heavy 5G capex aur delayed monetization risks ko hamesha dhyan me rakhein.",
+      "id": "scene-6",
+      "headline": "Key Risk Factors"
+    },
+    {
+      "type": "cta",
+      "startSec": 27,
+      "endSec": 32,
+      "direction": "from-right",
+      "title": "Want Full IPO Analysis?",
+      "action": "Comment 'JIO' for PDF",
+      "buttonText": "Follow @techwith.GenZ",
+      "voice": "Aapka kya plan hai, Hold or Sell? Comment karo 'JIO' for full valuation report and follow @techwith.GenZ!",
+      "id": "scene-7",
+      "headline": "Want Full IPO Analysis?"
+    }
+  ]
+}

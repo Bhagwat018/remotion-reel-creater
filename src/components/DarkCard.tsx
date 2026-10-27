@@ -2,7 +2,6 @@ import React from "react";
 import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { resolveFontFamily, useTheme } from "../theme/theme";
 import { entranceSpring } from "../lib/motion";
-import { ShimmerSweep } from "./ShimmerSweep";
 import { TechLogo, findBrandInText } from "./TechLogo";
 
 interface DarkCardProps {
@@ -23,9 +22,6 @@ export const DarkCard: React.FC<DarkCardProps> = ({
   const springVal = entranceSpring(frame, fps, delayFrames);
   const scale = interpolate(springVal, [0, 1], [0.92, 1]);
   const opacity = interpolate(springVal, [0, 1], [0, 1]);
-
-  // Levitation physics (subtle sine-wave float)
-  const floatY = frame > delayFrames + 10 ? Math.sin((frame - delayFrames) / 12) * 6 : 0;
 
   // Typing effect: reveal text smoothly over 25 frames after entrance
   const typingStart = delayFrames + 4;
@@ -50,93 +46,63 @@ export const DarkCard: React.FC<DarkCardProps> = ({
         position: "relative",
         width: "100%",
         maxWidth: 880,
-        backgroundColor: "rgba(13, 17, 28, 0.94)",
-        backdropFilter: "blur(20px)",
-        borderRadius: 28,
-        padding: "44px 48px",
-        boxShadow: "0 28px 65px rgba(0, 0, 0, 0.55), 0 0 30px rgba(56, 189, 248, 0.15)",
+        backgroundColor: "#ffffff",
+        border: "3.5px solid #000000",
+        borderRadius: 24,
+        padding: "36px 40px",
+        boxShadow: "7px 7px 0px #000000",
         opacity,
-        transform: `translateY(${floatY}px) scale(${scale})`,
+        transform: `scale(${scale}) rotate(-0.5deg)`,
         display: "flex",
         flexDirection: "column",
-        gap: 28,
-        border: "1.5px solid rgba(56, 189, 248, 0.35)",
+        gap: 22,
         overflow: "hidden",
       }}
     >
-      {/* Remocn-style light sweep across card */}
-      <ShimmerSweep delayFrames={delayFrames + 12} periodFrames={85} />
-
-      {/* Cyber Corner Accents */}
-      <div
-        style={{
-          position: "absolute",
-          top: 14,
-          left: 18,
-          fontFamily: theme.typography.mono,
-          fontSize: 12,
-          color: "rgba(56, 189, 248, 0.5)",
-          letterSpacing: "0.1em",
-        }}
-      >
-        [ SYS.01 ]
-      </div>
-      <div
-        style={{
-          position: "absolute",
-          top: 14,
-          right: 18,
-          width: 8,
-          height: 8,
-          borderRadius: "50%",
-          backgroundColor: "#22c55e",
-          boxShadow: "0 0 8px #22c55e",
-        }}
-      />
-
       {/* Header icon / badge */}
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 4 }}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           {brandMatch ? (
-            <TechLogo name={brandMatch.key} size={32} />
+            <TechLogo name={brandMatch.key} size={34} />
           ) : (
             <div
               style={{
-                width: 14,
-                height: 14,
+                width: 16,
+                height: 16,
                 borderRadius: "50%",
-                backgroundColor: theme.colors.accent,
-                boxShadow: `0 0 10px ${theme.colors.accent}`,
+                backgroundColor: "#fb923c",
+                border: "2px solid #000000",
               }}
             />
           )}
           <span
             style={{
-              fontFamily: theme.typography.mono,
-              fontSize: 18,
-              color: "#94a3b8",
+              fontFamily: "'Inter', sans-serif",
+              fontSize: 22,
+              color: "#000000",
               textTransform: "uppercase",
-              letterSpacing: "0.08em",
-              fontWeight: 600,
+              letterSpacing: "0.04em",
+              fontWeight: 800,
             }}
           >
-            {brandMatch ? brandMatch.meta.label : "Tech Spotlight"}
+            {brandMatch ? brandMatch.meta.label : "ARCHITECTURE TAKEAWAY"}
           </span>
         </div>
 
         <div
           style={{
-            backgroundColor: "rgba(56, 189, 248, 0.12)",
-            color: "#38bdf8",
-            fontFamily: theme.typography.mono,
+            backgroundColor: "#4ade80",
+            color: "#000000",
+            fontFamily: "'JetBrains Mono', monospace",
             fontSize: 16,
-            fontWeight: 700,
+            fontWeight: 800,
             padding: "4px 14px",
             borderRadius: 999,
-            border: "1px solid rgba(56, 189, 248, 0.3)",
+            border: "2px solid #000000",
+            boxShadow: "2px 2px 0px #000000",
           }}
         >
-          ANALYSIS
+          VERIFIED
         </div>
       </div>
 
@@ -144,11 +110,11 @@ export const DarkCard: React.FC<DarkCardProps> = ({
       <div
         style={{
           fontFamily,
-          fontSize: 38,
-          fontWeight: 600,
+          fontSize: 36,
+          fontWeight: 700,
           lineHeight: 1.45,
-          color: "#f8fafc",
-          minHeight: 120,
+          color: "#000000",
+          minHeight: 110,
           letterSpacing: "-0.01em",
         }}
       >
@@ -157,12 +123,11 @@ export const DarkCard: React.FC<DarkCardProps> = ({
           <span
             style={{
               display: "inline-block",
-              width: 3.5,
-              height: 36,
-              backgroundColor: "#38bdf8",
+              width: 4,
+              height: 34,
+              backgroundColor: "#7c3aed",
               marginLeft: 8,
               verticalAlign: "middle",
-              boxShadow: "0 0 8px #38bdf8",
             }}
           />
         )}
@@ -172,15 +137,15 @@ export const DarkCard: React.FC<DarkCardProps> = ({
       <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center" }}>
         <div
           style={{
-            backgroundColor: "rgba(56, 189, 248, 0.15)",
-            color: "#38bdf8",
-            fontFamily: theme.typography.mono,
+            backgroundColor: "#fb923c",
+            color: "#000000",
+            fontFamily: "'JetBrains Mono', monospace",
             fontSize: 22,
-            fontWeight: 700,
-            padding: "10px 24px",
-            borderRadius: theme.layout.pillRadius,
-            border: "1.5px solid rgba(56, 189, 248, 0.4)",
-            boxShadow: "0 0 15px rgba(56, 189, 248, 0.15)",
+            fontWeight: 800,
+            padding: "8px 24px",
+            borderRadius: 999,
+            border: "2.5px solid #000000",
+            boxShadow: "3px 3px 0px #000000",
           }}
         >
           {chip}

@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "slug": "jio-ipo-listing-day-strategy",
+    "title": "Jio IPO Listing Strategy: Hold or Sell?",
+    "topic": "Jio IPO Listing Day Strategy",
+    "handle": "@techwith.GenZ",
+    "voiceFile": "reels/jio-ipo-listing-day-strategy/voice.mp3",
+    "loop": true,
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.18
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 4.5,
+      "direction": "pop-3d",
+      "voice": "Jio IPO ka listing day aa gaya hai! Ab sabse bada question: Open hote hi sell kar dein ya long term hold karein?",
+      "title": "JIO IPO LISTING DAY",
+      "subtitle": "Hold or Sell Strategy? 🚀",
+      "badge": "FINTECH & TECH",
+      "headline": "JIO IPO LISTING DAY",
+      "leadIn": "FINTECH & TECH"
+    },
+    {
+      "id": "scene-2",
+      "type": "stat",
+      "startSec": 4.5,
+      "endSec": 9,
+      "direction": "from-right",
+      "voice": "Grey Market Premium high float kar raha hai. Strong listing gains expected hain, par volatility intense hone wali hai!",
+      "value": "+25-30%",
+      "label": "Expected Listing Gain (GMP)",
+      "subtext": "Opening bell par heavy volume volatility threshold",
+      "headline": "Key Feature"
+    },
+    {
+      "id": "scene-3",
+      "type": "card",
+      "startSec": 9,
+      "endSec": 14.5,
+      "direction": "from-bottom",
+      "voice": "Listing gain flippers: 20 percent plus profit hit hote hi 50 percent capital exit karke lock-in kar lo.",
+      "heading": "Strategy A: Fast Listing Gain Flip",
+      "items": [
+        "Target: 20%+ Immediate Return",
+        "Book 50% Profit in First 15 Mins",
+        "Set Trailing Stop-Loss for Rest"
+      ],
+      "headline": "Strategy A: Fast Listing Gain Flip",
+      "chip": "HIGHLIGHT",
+      "cardText": "Detailed explanation goes here."
+    },
+    {
+      "id": "scene-4",
+      "type": "pills",
+      "startSec": 14.5,
+      "endSec": 19.5,
+      "direction": "from-left",
+      "voice": "Long term dev-investors: Telecom plus digital ecosystem ka moat insane hai. Long hold Strategy makes total sense.",
+      "title": "Why Long-Term Hold?",
+      "pills": [
+        "5G & ARPU Growth",
+        "Jio Financial Integration",
+        "Cloud & AI Tech Moat",
+        "E-commerce Expansion"
+      ],
+      "headline": "Why Long-Term Hold?",
+      "items": [
+        "5G & ARPU Growth",
+        "Jio Financial Integration",
+        "Cloud & AI Tech Moat",
+        "E-commerce Expansion"
+      ]
+    },
+    {
+      "id": "scene-5",
+      "type": "knobs",
+      "startSec": 19.5,
+      "endSec": 26,
+      "direction": "from-top",
+      "voice": "Execution plan simple hai: Capital protection focus me rakho, gains lock karo, aur remainder ko trail hone do!",
+      "title": "Execution Settings",
+      "knobs": [
+        {
+          "label": "Profit Booking",
+          "value": "50%"
+        },
+        {
+          "label": "Trailing Stop",
+          "value": "Tight"
+        },
+        {
+          "label": "Riding Upside",
+          "value": "50%"
+        }
+      ],
+      "headline": "Execution Settings"
+    },
+    {
+      "id": "scene-6",
+      "type": "cta",
+      "startSec": 26,
+      "endSec": 32,
+      "direction": "pop-3d",
+      "voice": "Aapka Listing Day plan kya hai? Hold or Sell? Niche comments me batao aur Tech With GenZ ko follow karo!",
+      "title": "What's Your Decision?",
+      "subtitle": "Comment 'HOLD' or 'SELL' below!",
+      "buttonText": "Follow @techwith.GenZ",
+      "headline": "What's Your Decision?"
+    }
+  ]
+}

@@ -78,7 +78,7 @@ export const Headline: React.FC<HeadlineProps> = ({
           fontSize,
           lineHeight: 1.05,
           fontWeight: isDevanagariText ? 700 : 900,
-          textTransform: isDevanagariText ? "none" : "uppercase",
+          textTransform: "none",
           letterSpacing: isDevanagariText ? "normal" : "0.01em",
           color: theme.colors.ink,
           margin: 0,

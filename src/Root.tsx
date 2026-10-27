@@ -20,6 +20,7 @@ const defaultFallbackProps: RootReelProps = {
     bgmVolume: 0.18,
     captionStyle: "bubble",
     showSafeZone: false,
+    showHandle: false,
     coverIntro: false,
   },
   scenes: [

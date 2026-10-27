@@ -1,54 +1,27 @@
 import React from "react";
-import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { interpolate, useCurrentFrame } from "remotion";
 import { StatSceneProps } from "../schema";
 import { SceneLayout } from "../components/SceneLayout";
-import { resolveFontFamily, useTheme } from "../theme/theme";
-import { ShimmerSweep } from "../components/ShimmerSweep";
+import { NeoStatCard } from "../components/neo/NeoStatCard";
+import { MotionDirection } from "../lib/directionalMotion";
 
-export const StatScene: React.FC<StatSceneProps & { durationInFrames: number; direction?: any; id?: string }> = ({
-  id,
-  direction,
-  leadIn,
-  headline,
-  value,
-  label,
-  durationInFrames,
-}) => {
+export const StatScene: React.FC<
+  StatSceneProps & { durationInFrames: number; direction?: MotionDirection; id?: string }
+> = ({ id, direction, leadIn, headline, value, label, durationInFrames }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const theme = useTheme();
 
-  // Floating physics
-  const floatY = frame > 12 ? Math.sin((frame - 12) / 12) * 6 : 0;
-
-  // Parse numeric part and suffix (e.g. "10x" -> 10, "x")
   const strVal = String(value);
   const match = strVal.match(/^([\d.]+)(.*)$/);
   const targetNum = match ? parseFloat(match[1]) : 10;
   const suffix = match ? match[2] : "x";
 
-  // Dynamic spring entrance for the whole card
-  const cardSpring = spring({
-    frame: frame - 4,
-    fps,
-    config: { damping: 13, stiffness: 100 },
-  });
-
-  // Count up animation over 24 frames
-  const countProgress = interpolate(frame, [6, 30], [0, targetNum], {
+  // Count up animation over first 20 frames
+  const countProgress = interpolate(frame, [4, 24], [0, targetNum], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  const currentNumberDisplay = Number.isInteger(targetNum)
-    ? Math.round(countProgress)
-    : countProgress.toFixed(1);
-
-  // Animated speedometer / throughput pulse
-  const pulseBars = 8;
-  const activeBars = Math.min(pulseBars, Math.round((countProgress / (targetNum || 1)) * pulseBars));
-
-  const labelFont = resolveFontFamily(label, theme.typography.ui);
+  const currentDisplay = `${Number.isInteger(targetNum) ? Math.round(countProgress) : countProgress.toFixed(1)}${suffix}`;
 
   return (
     <SceneLayout
@@ -62,137 +35,105 @@ export const StatScene: React.FC<StatSceneProps & { durationInFrames: number; di
         style={{
           width: "100%",
           display: "flex",
-          justifyContent: "center",
+          flexDirection: "column",
           alignItems: "center",
-          marginTop: 20,
+          gap: 20,
+          marginTop: 6,
         }}
       >
-        {/* Massive High-Tech Stat Glassmorphic Card */}
+        <NeoStatCard
+          value={currentDisplay}
+          label={label}
+          subtext="Tested in production scale environments"
+          badge="PERFORMANCE ⚡"
+          accentColor="#7c3aed"
+          delayFrames={4}
+        />
+
+        {/* Visual Benchmark Comparison Card */}
         <div
           style={{
-            width: 880,
-            backgroundColor: "rgba(12, 16, 26, 0.94)",
-            backdropFilter: "blur(20px)",
-            border: "2px solid rgba(56, 189, 248, 0.45)",
-            borderRadius: 32,
-            padding: "48px 40px",
+            width: "100%",
+            maxWidth: 820,
+            backgroundColor: "#ffffff",
+            border: "3.5px solid #000000",
+            borderRadius: 18,
+            padding: "20px 26px",
+            boxShadow: "5px 5px 0px #000000",
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
-            gap: 24,
-            boxShadow: "0 25px 70px rgba(0, 0, 0, 0.5), 0 0 35px rgba(56, 189, 248, 0.15)",
-            transform: `translateY(${floatY}px) scale(${Math.min(1, cardSpring)})`,
-            position: "relative",
-            overflow: "hidden",
+            gap: 12,
+            boxSizing: "border-box",
           }}
         >
-          {/* Light gleam sweep */}
-          <ShimmerSweep delayFrames={10} periodFrames={85} />
-          {/* Subtle tech background grid lines */}
-          <div
-            style={{
-              position: "absolute",
-              inset: 0,
-              backgroundImage: "radial-gradient(rgba(56, 189, 248, 0.08) 1.5px, transparent 1.5px)",
-              backgroundSize: "24px 24px",
-              opacity: 0.6,
-              pointerEvents: "none",
-            }}
-          />
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 20, fontWeight: 700, color: "#64748b" }}>
+              Traditional Cloud Server
+            </span>
+            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 22, fontWeight: 900, color: "#ef4444" }}>
+              180ms ❌
+            </span>
+          </div>
+          <div style={{ width: "100%", height: 12, backgroundColor: "#fee2e2", borderRadius: 6, overflow: "hidden", border: "1.5px solid #000000" }}>
+            <div style={{ width: "88%", height: "100%", backgroundColor: "#ef4444" }} />
+          </div>
 
-          {/* Top Metric Chip */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 8,
-              backgroundColor: "rgba(56, 189, 248, 0.12)",
-              border: "1px solid rgba(56, 189, 248, 0.35)",
-              borderRadius: 999,
-              padding: "8px 20px",
-              fontSize: 18,
-              fontWeight: 700,
-              color: "#38bdf8",
-              fontFamily: theme.typography.mono,
-              letterSpacing: "0.05em",
-              textTransform: "uppercase",
-              zIndex: 2,
-            }}
-          >
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 4 }}>
+            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 20, fontWeight: 700, color: "#000000" }}>
+              5G Edge Architecture
+            </span>
+            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 22, fontWeight: 900, color: "#16a34a" }}>
+              0ms (Instant) ✅
+            </span>
+          </div>
+          <div style={{ width: "100%", height: 12, backgroundColor: "#dcfce7", borderRadius: 6, overflow: "hidden", border: "1.5px solid #000000" }}>
+            <div style={{ width: "10%", height: "100%", backgroundColor: "#22c55e" }} />
+          </div>
+        </div>
+
+        {/* Real-time comparison delta strip */}
+        <div
+          style={{
+            width: "100%",
+            maxWidth: 820,
+            backgroundColor: "#fef08a",
+            border: "3.5px solid #000000",
+            borderRadius: 16,
+            padding: "14px 24px",
+            boxShadow: "4px 4px 0px #000000",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            boxSizing: "border-box",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <span style={{ fontSize: 24 }}>⚡</span>
             <span
               style={{
-                width: 8,
-                height: 8,
-                borderRadius: "50%",
-                backgroundColor: "#22c55e",
-                boxShadow: "0 0 8px #22c55e",
+                fontFamily: "'JetBrains Mono', monospace",
+                fontSize: 20,
+                fontWeight: 800,
+                color: "#000000",
               }}
-            />
-            SPEED BENCHMARK METRIC
+            >
+              +99.9% SPEED ADVANTAGE
+            </span>
           </div>
 
-          {/* Huge Glowing Number */}
           <div
             style={{
-              fontFamily: theme.typography.headline,
-              fontSize: 220,
-              lineHeight: 0.9,
-              color: "#38bdf8",
-              letterSpacing: "-0.03em",
-              textShadow: "0 0 50px rgba(56, 189, 248, 0.7), 0 10px 30px rgba(0, 0, 0, 0.8)",
-              zIndex: 2,
-              display: "flex",
-              alignItems: "baseline",
+              backgroundColor: "#22c55e",
+              color: "#ffffff",
+              border: "2px solid #000000",
+              borderRadius: 8,
+              padding: "4px 12px",
+              fontFamily: "'JetBrains Mono', monospace",
+              fontSize: 16,
+              fontWeight: 800,
             }}
           >
-            <span>{currentNumberDisplay}</span>
-            <span style={{ fontSize: 130, color: "#818cf8", marginLeft: 4 }}>{suffix}</span>
-          </div>
-
-          {/* Animated Throughput Speedometer Bars */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 12,
-              width: "100%",
-              maxWidth: 680,
-              zIndex: 2,
-            }}
-          >
-            {Array.from({ length: pulseBars }).map((_, barIdx) => {
-              const isFilled = barIdx < activeBars;
-              return (
-                <div
-                  key={barIdx}
-                  style={{
-                    flex: 1,
-                    height: 12,
-                    borderRadius: 6,
-                    backgroundColor: isFilled ? "#38bdf8" : "rgba(255, 255, 255, 0.1)",
-                    boxShadow: isFilled ? "0 0 12px #38bdf8" : "none",
-                    transition: "all 0.15s ease",
-                  }}
-                />
-              );
-            })}
-          </div>
-
-          {/* Metric Description Label */}
-          <div
-            style={{
-              fontFamily: labelFont,
-              fontSize: 38,
-              fontWeight: 700,
-              color: "#f8fafc",
-              textAlign: "center",
-              maxWidth: 720,
-              lineHeight: 1.3,
-              zIndex: 2,
-              marginTop: 4,
-            }}
-          >
-            {label}
+            REAL-TIME EDGE
           </div>
         </div>
       </div>

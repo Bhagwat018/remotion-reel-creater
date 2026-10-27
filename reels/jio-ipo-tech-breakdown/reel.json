@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "topic": "Jio IPO Approval Breakdown",
+    "slug": "jio-ipo-tech-breakdown",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "lengthSec": 32,
+    "voiceFile": "reels/jio-ipo-tech-breakdown/voice.mp3",
+    "bgm": "bgm/corporate-tech-pulse.mp3",
+    "bgmVolume": 0.25,
+    "captionStyle": "bubble",
+    "coverIntro": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    }
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 5,
+      "voice": "India ka sabse bada tech IPO aakhirkaar approve ho gaya! Jio is coming for the stock market.",
+      "headline": "JIO IPO *APPROVED*!",
+      "subtitle": "THE MARKET TSUNAMI IS HERE"
+    },
+    {
+      "id": "s2-stat",
+      "type": "stat",
+      "startSec": 5,
+      "endSec": 9,
+      "voice": "Ye koi normal telecom company nahi, balki ek massive tech ecosystem hai.",
+      "headline": "MASSIVE *ECOSYSTEM*",
+      "value": "$100B+",
+      "label": "Estimated Tech Valuation"
+    },
+    {
+      "id": "s3-orbit",
+      "type": "orbit",
+      "startSec": 9,
+      "endSec": 15,
+      "voice": "Jio ka 5G architecture, AI data centers aur edge computing isse ek true tech giant banate hain.",
+      "headline": "MORE THAN *TELECOM*",
+      "center": "Jio",
+      "orbiting": [
+        "5G Core",
+        "AI Datacenters",
+        "Edge Computing"
+      ]
+    },
+    {
+      "id": "s4-protip",
+      "type": "card",
+      "startSec": 15,
+      "endSec": 22,
+      "voice": "Pro tip: Unka in-house 'JioBrain' AI platform unke pure network ko autonomously optimize karta hai.",
+      "headline": "THE *JIOBRAIN* AI",
+      "cardText": "Autonomous network optimization & seamless machine learning integration.",
+      "chip": "In-House AI",
+      "icon": "cpu",
+      "featuredBadge": {
+        "icon": "zap",
+        "title": "JioBrain",
+        "subtitle": "Automating 5G at Scale",
+        "chip": "Industry Secret"
+      }
+    },
+    {
+      "id": "s5-pills",
+      "type": "pills",
+      "startSec": 22,
+      "endSec": 27,
+      "voice": "Is IPO se Indian tech sector aur data infrastructure me ek massive boom aane wala hai.",
+      "headline": "MARKET *IMPACT*",
+      "items": [
+        "Data Infrastructure",
+        "5G Expansion",
+        "AI Innovations"
+      ]
+    },
+    {
+      "id": "s6-cta",
+      "type": "cta",
+      "startSec": 27,
+      "endSec": 32,
+      "voice": "Kya tum Jio ke shares kharidoge? Tech updates ke liye @techwith.GenZ ko follow karo!",
+      "headline": "BUYING THE *DIP?*",
+      "buttonText": "FOLLOW FOR TECH UPDATES"
+    }
+  ]
+}

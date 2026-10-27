@@ -1272,6 +1272,185 @@ audio {
   border-color: var(--accent-danger);
 }
 
+/* ========================================================
+   AI Video Director Studio
+   ======================================================== */
+.ai-director-panel {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+.ai-director-panel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ec4899, #8b5cf6, #3b82f6);
+}
+.ai-director-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.ai-title-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ai-sparkle-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, #ec4899, #8b5cf6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.9rem;
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.4);
+}
+.ai-title-text h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ai-tag-pill {
+  font-size: 0.65rem;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(139, 92, 246, 0.25);
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  color: #c4b5fd;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.ai-title-text p {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+.ai-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ai-status-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+.ai-status-badge.active {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.3);
+  color: #6ee7b7;
+}
+.ai-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-warning);
+}
+.ai-status-badge.active .ai-status-dot {
+  background: var(--accent-success);
+}
+.btn-ai-settings {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.15s ease;
+}
+.btn-ai-settings:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.ai-key-drawer {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.ai-key-input-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+.ai-chips-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+.ai-chip {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  padding: 3px 9px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.ai-chip:hover {
+  background: rgba(139, 92, 246, 0.2);
+  border-color: rgba(139, 92, 246, 0.5);
+  color: #fff;
+}
+.ai-options-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.btn-generate-ai {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35);
+  transition: all 0.2s ease;
+}
+.btn-generate-ai:hover {
+  background: linear-gradient(135deg, #6d28d9 0%, #4338ca 100%);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+  transform: translateY(-1px);
+}
+.btn-generate-ai:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
 </style>
 </head>
 <body>
@@ -1313,6 +1492,94 @@ audio {
   <main class="app-layout">
     <!-- Left Column: Reel Setup & Editor -->
     <section class="config-column">
+
+      <!-- AI Director Studio Panel -->
+      <div class="panel ai-director-panel">
+        <div class="ai-director-header">
+          <div class="ai-title-group">
+            <div class="ai-sparkle-icon">✨</div>
+            <div class="ai-title-text">
+              <h3>AI Video Director <span class="ai-tag-pill">Gemini 2.5</span></h3>
+              <p>Autonomous Script-to-Scenes Engine • Real Code, Logos & 8 Dynamic Vectors</p>
+            </div>
+          </div>
+          <div class="ai-header-actions">
+            <div id="aiStatusBadge" class="ai-status-badge">
+              <span class="ai-status-dot"></span>
+              <span id="aiStatusText">Checking Key...</span>
+            </div>
+            <button type="button" id="toggleAiKeyBtn" class="btn-ai-settings" title="Configure Gemini API Key">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              <span>API Key</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Optional collapsible API Key box -->
+        <div id="aiKeyDrawer" class="ai-key-drawer" style="display:none;">
+          <label class="field-label" for="customApiKeyInput">
+            Gemini API Key (Google AI Studio)
+          </label>
+          <div class="ai-key-input-row">
+            <input type="password" id="customApiKeyInput" placeholder="Paste AIzaSy... key or keep empty to use .env file" autocomplete="off" spellcheck="false" style="font-family:var(--font-mono); font-size:0.8rem;">
+            <button type="button" id="saveApiKeyBtn" class="btn-action" style="padding:6px 14px; background:var(--accent-primary); color:#fff; border:none; border-radius:var(--radius-sm); font-weight:600;">Save</button>
+          </div>
+          <p style="font-size:0.7rem; color:var(--text-muted); margin-top:6px;">
+            🔒 <strong>100% Private & Secure:</strong> Stored strictly in your browser or local <code>.env</code> file. Never committed to git, never shared.
+          </p>
+        </div>
+
+        <!-- Topic Prompt Input -->
+        <div class="input-field-group" style="margin-bottom:8px;">
+          <label class="field-label" for="aiTopicInput">Video Topic or Concept</label>
+          <input type="text" id="aiTopicInput" placeholder="e.g. Docker vs Podman in 2026: Why developers are switching" autocomplete="off" spellcheck="false">
+        </div>
+
+        <!-- Quick suggestion chips -->
+        <div class="ai-chips-list">
+          <button type="button" class="ai-chip" data-topic="Docker vs Podman: Why Developers are Switching in 2026">🐳 Docker vs Podman</button>
+          <button type="button" class="ai-chip" data-topic="Why Go is 10x Faster than Python: Goroutines Explained">⚡ Go vs Python</button>
+          <button type="button" class="ai-chip" data-topic="Redis Caching Architecture: 0ms Latency Deep Dive">🚀 Redis Caching</button>
+          <button type="button" class="ai-chip" data-topic="Git Merge vs Rebase: Stop Ruining Your Git History">🔀 Git Merge vs Rebase</button>
+          <button type="button" class="ai-chip" data-topic="Kubernetes Pods CrashCourse: What Actually Happens Inside">☸️ Kubernetes Pods</button>
+        </div>
+
+        <!-- Optional Script / Transcript Input -->
+        <div class="input-field-group" style="margin-bottom:10px;">
+          <label class="field-label" for="aiScriptInput">
+            Custom Script / Raw Notes (Optional)
+            <span style="font-weight:normal; text-transform:none; color:var(--text-muted); margin-left:4px;">- paste transcript or leave blank for full auto-writing</span>
+          </label>
+          <textarea id="aiScriptInput" rows="2" placeholder="e.g. Point 1: Podman has no daemon so rootless security is default. Point 2: Docker alias works out of the box..."></textarea>
+        </div>
+
+        <!-- Language & Duration selector -->
+        <div class="ai-options-row">
+          <div class="input-field-group">
+            <label class="field-label" for="aiLanguageSelect">Voiceover Style</label>
+            <select id="aiLanguageSelect" style="width:100%; padding:7px 10px; background:var(--bg-input); border:1px solid var(--border-subtle); color:var(--text-primary); border-radius:var(--radius-sm); font-size:0.8rem;">
+              <option value="hinglish" selected>Hinglish (Dev Viral Mix)</option>
+              <option value="english">English (Global Dev)</option>
+              <option value="hindi">Hindi (Conversational Tech)</option>
+            </select>
+          </div>
+          <div class="input-field-group">
+            <label class="field-label" for="aiDurationSelect">Target Duration</label>
+            <select id="aiDurationSelect" style="width:100%; padding:7px 10px; background:var(--bg-input); border:1px solid var(--border-subtle); color:var(--text-primary); border-radius:var(--radius-sm); font-size:0.8rem;">
+              <option value="42" selected>42 seconds (Standard 8 Scenes)</option>
+              <option value="32">32 seconds (Fast Hook 7 Scenes)</option>
+              <option value="52">52 seconds (Deep Dive 8 Scenes)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Generate Button -->
+        <button type="button" id="generateAiReelBtn" class="btn-generate-ai">
+          <span class="btn-spinner" id="aiBtnSpinner" style="display:none;"></span>
+          <svg id="aiBtnIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"></path></svg>
+          <span id="aiBtnText">Generate 8-Scene Reel with AI</span>
+        </button>
+      </div>
 
       <!-- Reel Identifier / Slug Bar -->
       <div class="panel slug-panel">

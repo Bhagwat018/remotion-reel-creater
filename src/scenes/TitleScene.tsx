@@ -1,33 +1,29 @@
 import React from "react";
-import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { TitleSceneProps } from "../schema";
 import { SceneLayout } from "../components/SceneLayout";
-import { useTheme } from "../theme/theme";
+import { NeoSticker } from "../components/neo/NeoSticker";
+import { MotionDirection } from "../lib/directionalMotion";
 
 export const TitleScene: React.FC<
-  TitleSceneProps & { subtitle?: string; durationInFrames: number; direction?: any; id?: string }
+  TitleSceneProps & { subtitle?: string; durationInFrames: number; direction?: MotionDirection; id?: string }
 > = ({ id, direction, leadIn, subtitle, headline, durationInFrames }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const theme = useTheme();
 
   const entrance = spring({
     frame: frame - 4,
     fps,
-    config: { damping: 14, stiffness: 100 },
+    config: { damping: 14, stiffness: 120 },
   });
 
-  const rotateOuter = (frame * 1.2) % 360;
-  const rotateInner = (-frame * 1.8) % 360;
-  const pulseScale = 1 + Math.sin(frame / 6) * 0.04;
-  const rippleRadius = interpolate(frame % 40, [0, 40], [70, 160]);
-  const rippleOpacity = interpolate(frame % 40, [0, 20, 40], [0.8, 0.4, 0]);
+  const pulse = Math.sin(frame / 6) * 0.02 + 1;
 
   return (
     <SceneLayout
       id={id}
       direction={direction}
-      leadIn={leadIn || subtitle}
+      leadIn={leadIn || subtitle || "SYSTEM ARCHITECTURE"}
       headline={headline}
       durationInFrames={durationInFrames}
     >
@@ -38,148 +34,91 @@ export const TitleScene: React.FC<
           alignItems: "center",
           justifyContent: "center",
           width: "100%",
-          transform: `scale(${Math.min(1, entrance)})`,
+          transform: `scale(${entrance * pulse})`,
+          opacity: entrance,
+          gap: 20,
           marginTop: 10,
         }}
       >
-        {/* Holographic Glowing Cyber Core */}
+        {/* Playful tilted NeoSticker */}
+        <div style={{ display: "flex", gap: 14, alignItems: "center" }}>
+          <NeoSticker text="⚡ 100% AUTOMATED" rotate={-4} bg="#fb923c" color="#000000" fontSize={28} />
+          <NeoSticker text="🚀 PRODUCTION READY" rotate={3} bg="#38bdf8" color="#000000" fontSize={28} />
+        </div>
+
+        {/* Hero Mac Window Card Preview */}
         <div
           style={{
-            position: "relative",
-            width: 380,
-            height: 380,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
+            width: "100%",
+            maxWidth: 920,
+            backgroundColor: "#ffffff",
+            border: "3.5px solid #000000",
+            borderRadius: 22,
+            boxShadow: "7px 7px 0px #000000",
+            overflow: "hidden",
+            marginTop: 6,
           }}
         >
-          {/* Animated Expanding Ripple Wave */}
+          {/* Mac Header */}
           <div
             style={{
-              position: "absolute",
-              width: rippleRadius * 2,
-              height: rippleRadius * 2,
-              borderRadius: "50%",
-              border: "2px solid #38bdf8",
-              opacity: rippleOpacity,
-              boxShadow: "0 0 20px #38bdf8",
-              pointerEvents: "none",
-            }}
-          />
-
-          {/* SVG Rotating Dotted Rings */}
-          <svg
-            width="360"
-            height="360"
-            viewBox="0 0 360 360"
-            style={{ position: "absolute", inset: 0, pointerEvents: "none" }}
-          >
-            {/* Outer Dotted Orbit Ring */}
-            <circle
-              cx="180"
-              cy="180"
-              r="160"
-              stroke="#2563eb"
-              strokeWidth="2.5"
-              strokeDasharray="12 16"
-              fill="none"
-              style={{
-                transformOrigin: "180px 180px",
-                transform: `rotate(${rotateOuter}deg)`,
-                opacity: 0.6,
-              }}
-            />
-            {/* Inner Fast Orbit Ring */}
-            <circle
-              cx="180"
-              cy="180"
-              r="125"
-              stroke="#38bdf8"
-              strokeWidth="2"
-              strokeDasharray="8 12"
-              fill="none"
-              style={{
-                transformOrigin: "180px 180px",
-                transform: `rotate(${rotateInner}deg)`,
-                opacity: 0.8,
-              }}
-            />
-          </svg>
-
-          {/* Glowing Center Glass Hexagon / Disk */}
-          <div
-            style={{
-              width: 200,
-              height: 200,
-              borderRadius: "50%",
-              backgroundColor: "rgba(10, 15, 29, 0.92)",
-              backdropFilter: "blur(18px)",
-              border: "3px solid #38bdf8",
+              height: 48,
+              backgroundColor: "#f1f5f9",
+              borderBottom: "3px solid #000000",
               display: "flex",
-              flexDirection: "column",
               alignItems: "center",
-              justifyContent: "center",
+              padding: "0 18px",
               gap: 8,
-              boxShadow: "0 0 45px rgba(56, 189, 248, 0.35), inset 0 0 25px rgba(56, 189, 248, 0.2)",
-              transform: `scale(${pulseScale})`,
-              zIndex: 2,
             }}
           >
-            {/* Glowing Tech Stack Icon */}
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
-              <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
-              <line x1="6" y1="6" x2="6.01" y2="6" />
-              <line x1="6" y1="18" x2="6.01" y2="18" />
-            </svg>
+            <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#ef4444", border: "1.5px solid #000000" }} />
+            <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#eab308", border: "1.5px solid #000000" }} />
+            <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#22c55e", border: "1.5px solid #000000" }} />
             <span
               style={{
-                fontSize: 14,
-                fontWeight: 800,
-                color: "#38bdf8",
-                letterSpacing: "0.12em",
-                fontFamily: theme.typography.mono,
+                marginLeft: 14,
+                fontFamily: "'JetBrains Mono', monospace",
+                fontSize: 18,
+                fontWeight: 700,
+                color: "#64748b",
               }}
             >
-              TECH DEEP DIVE
+              pipeline.config.ts
             </span>
+          </div>
+
+          <div
+            style={{
+              padding: "26px 30px",
+              display: "flex",
+              flexDirection: "column",
+              gap: 14,
+              fontFamily: "'JetBrains Mono', monospace",
+              fontSize: 24,
+              fontWeight: 700,
+              color: "#000000",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <span style={{ color: "#7c3aed" }}>&gt;</span>
+              <span>ai_agents.run({`{ topic: "${(headline || "Deep Dive").replace(/[*_#`]/g, "").slice(0, 24)}" }`})</span>
+            </div>
+            <div style={{ color: "#16a34a", fontSize: 21 }}>
+              ✔ Voice synthesized &amp; Whisper word timestamps locked (0.01s)
+            </div>
+            <div style={{ color: "#2563eb", fontSize: 21 }}>
+              ✔ Remotion scenes auto-aligned to speech durations
+            </div>
+            <div style={{ color: "#9333ea", fontSize: 21 }}>
+              ✔ Multi-layer neo-brutalist visuals synced
+            </div>
           </div>
         </div>
 
-        {/* Floating Subtitle / Topic Pill */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 12,
-            backgroundColor: "rgba(15, 23, 42, 0.85)",
-            border: "1.5px solid rgba(56, 189, 248, 0.4)",
-            borderRadius: 999,
-            padding: "10px 24px",
-            marginTop: 24,
-            boxShadow: "0 10px 25px rgba(0, 0, 0, 0.3)",
-          }}
-        >
-          <span
-            style={{
-              width: 8,
-              height: 8,
-              borderRadius: "50%",
-              backgroundColor: "#22c55e",
-              boxShadow: "0 0 8px #22c55e",
-            }}
-          />
-          <span
-            style={{
-              fontFamily: theme.typography.mono,
-              fontSize: 18,
-              fontWeight: 700,
-              color: "#f8fafc",
-              letterSpacing: "0.06em",
-            }}
-          >
-            60-SEC ARCHITECTURE BREAKDOWN
-          </span>
+        {/* Secondary Bottom Feature Badges */}
+        <div style={{ display: "flex", gap: 14, alignItems: "center", marginTop: 4 }}>
+          <NeoSticker text="🔥 60 FPS ULTRA" rotate={2} bg="#fef08a" color="#000000" fontSize={24} />
+          <NeoSticker text="✨ ZERO VOID CANVAS" rotate={-2} bg="#86efac" color="#000000" fontSize={24} />
         </div>
       </div>
     </SceneLayout>

@@ -84,7 +84,8 @@ export const SceneLayout: React.FC<SceneLayoutProps> = ({
           flexDirection: "column",
           alignItems: "center",
           width: "100%",
-          marginBottom: 44,
+          marginBottom: headline ? 28 : 16,
+          gap: 12,
         }}
       >
         {leadIn && <LeadIn text={leadIn} />}
@@ -100,7 +101,8 @@ export const SceneLayout: React.FC<SceneLayoutProps> = ({
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          marginBottom: theme.layout.safeBottom - 100,
+          marginBottom: 490,
+          gap: 20,
           ...directionalStyle,
         }}
       >

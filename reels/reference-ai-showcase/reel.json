@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "topic": "How AI Actually Works - Behind The Scenes",
+    "audience": "Developers & AI Enthusiasts",
+    "lengthSec": 28,
+    "language": "Hinglish",
+    "handle": "techwith.GenZ",
+    "slug": "reference-ai-showcase",
+    "voiceFile": "reels/reference-ai-showcase/voice.mp3",
+    "durationSec": 33,
+    "wordsFile": "reels/reference-ai-showcase/words.json"
+  },
+  "scenes": [
+    {
+      "id": "s1-semantic",
+      "type": "stacked",
+      "startSec": 0,
+      "endSec": 5.56,
+      "voice": "AI language ko kaise samajhta hai? Ek hi word ke do alag matlab hote hain!",
+      "leadIn": "ek word, do matlab 🤔",
+      "headline": "SEMANTIC MEANING",
+      "cards": [
+        {
+          "text": "\"Garmi aayi, chalo aam khaate hain.\"",
+          "highlightWord": "aam",
+          "highlightColor": "#fb923c",
+          "emoji": "🥭"
+        },
+        {
+          "text": "\"Ye koi khaas baat nahi, bilkul aam baat hai.\""
+        }
+      ]
+    },
+    {
+      "id": "s2-knobs",
+      "type": "knobs",
+      "startSec": 5.56,
+      "endSec": 12.71,
+      "voice": "LLMs ke andar hote hain billions of knobs, jinhe training ke waqt gently adjust kiya jaata hai.",
+      "leadIn": "part 8 mein dekha 🔄",
+      "headline": "BILLIONS OF KNOBS",
+      "mode": "knobs",
+      "title": "billions of knobs 🎛️"
+    },
+    {
+      "id": "s3-weights",
+      "type": "knobs",
+      "startSec": 12.71,
+      "endSec": 19.7,
+      "voice": "Har knob ek float number hota hai. Dhyan dena, billions of numbers milkar banta hai AI ka brain!",
+      "leadIn": "part 7 mein... 🔄",
+      "headline": "NEURAL WEIGHTS",
+      "mode": "weights",
+      "title": "dhyaan dena 👀",
+      "pill1": "billions of numbers?!",
+      "pill2": "matlab kya? 🤔"
+    },
+    {
+      "id": "s4-bot",
+      "type": "bot",
+      "startSec": 19.7,
+      "endSec": 26.81,
+      "voice": "Na drawing chahiye, na Photoshop, na animator. Bas ek prompt likho aur cute mascot ready!",
+      "leadIn": "GENERATIVE AI 🤖",
+      "headline": "1 PROMPT. DONE.",
+      "strikes": [
+        "draw",
+        "Photoshop",
+        "animator"
+      ],
+      "confirmText": "1 prompt",
+      "expression": "happy"
+    },
+    {
+      "id": "s5-pipeline",
+      "type": "stacked",
+      "startSec": 26.81,
+      "endSec": 32.76,
+      "voice": "Pre-training se inference tak, har card aur sticker pure React code se banta hai!",
+      "leadIn": "ARCHITECTURE ⚙️",
+      "headline": "ALL IN CODE",
+      "isPipeline": true
+    }
+  ]
+}

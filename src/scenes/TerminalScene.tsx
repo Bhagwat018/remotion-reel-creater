@@ -1,10 +1,11 @@
 import React from "react";
 import { SceneLayout } from "../components/SceneLayout";
 import { TerminalWindow, TerminalOutputLine } from "../components/TerminalWindow";
+import { MotionDirection } from "../lib/directionalMotion";
 
 export interface TerminalSceneProps {
   id?: string;
-  direction?: any;
+  direction?: MotionDirection;
   leadIn?: string;
   headline?: string;
   subheadline?: string;

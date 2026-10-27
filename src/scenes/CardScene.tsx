@@ -3,8 +3,17 @@ import { CardSceneProps } from "../schema";
 import { SceneLayout } from "../components/SceneLayout";
 import { DarkCard } from "../components/DarkCard";
 import { FloatingBadge } from "../components/FloatingBadge";
+import { MotionDirection } from "../lib/directionalMotion";
 
-export const CardScene: React.FC<CardSceneProps & { durationInFrames: number; icon?: string; featuredBadge?: any; direction?: any; id?: string }> = ({
+export const CardScene: React.FC<
+  CardSceneProps & {
+    durationInFrames: number;
+    icon?: string;
+    featuredBadge?: { icon?: string; title?: string; subtitle?: string; chip?: string };
+    direction?: MotionDirection;
+    id?: string;
+  }
+> = ({
   id,
   direction,
   leadIn,

@@ -1,0 +1,397 @@
+[
+  {
+    "word": "AI",
+    "startSec": 0,
+    "endSec": 0.35
+  },
+  {
+    "word": "language",
+    "startSec": 0.35,
+    "endSec": 0.7
+  },
+  {
+    "word": "ko",
+    "startSec": 0.69,
+    "endSec": 1.04
+  },
+  {
+    "word": "kaise",
+    "startSec": 1.04,
+    "endSec": 1.39
+  },
+  {
+    "word": "samajhta",
+    "startSec": 1.39,
+    "endSec": 1.74
+  },
+  {
+    "word": "hai?",
+    "startSec": 1.74,
+    "endSec": 2.09
+  },
+  {
+    "word": "Ek",
+    "startSec": 2.08,
+    "endSec": 2.43
+  },
+  {
+    "word": "hi",
+    "startSec": 2.43,
+    "endSec": 2.78
+  },
+  {
+    "word": "word",
+    "startSec": 2.78,
+    "endSec": 3.13
+  },
+  {
+    "word": "ke",
+    "startSec": 3.13,
+    "endSec": 3.48
+  },
+  {
+    "word": "do",
+    "startSec": 3.47,
+    "endSec": 3.82
+  },
+  {
+    "word": "alag",
+    "startSec": 3.82,
+    "endSec": 4.17
+  },
+  {
+    "word": "matlab",
+    "startSec": 4.17,
+    "endSec": 4.52
+  },
+  {
+    "word": "hote",
+    "startSec": 4.52,
+    "endSec": 4.87
+  },
+  {
+    "word": "hain!",
+    "startSec": 4.86,
+    "endSec": 5.21
+  },
+  {
+    "word": "LLMs",
+    "startSec": 5.56,
+    "endSec": 5.96
+  },
+  {
+    "word": "ke",
+    "startSec": 5.96,
+    "endSec": 6.36
+  },
+  {
+    "word": "andar",
+    "startSec": 6.36,
+    "endSec": 6.76
+  },
+  {
+    "word": "hote",
+    "startSec": 6.76,
+    "endSec": 7.16
+  },
+  {
+    "word": "hain",
+    "startSec": 7.16,
+    "endSec": 7.56
+  },
+  {
+    "word": "billions",
+    "startSec": 7.56,
+    "endSec": 7.96
+  },
+  {
+    "word": "of",
+    "startSec": 7.96,
+    "endSec": 8.36
+  },
+  {
+    "word": "knobs,",
+    "startSec": 8.36,
+    "endSec": 8.76
+  },
+  {
+    "word": "jinhe",
+    "startSec": 8.76,
+    "endSec": 9.16
+  },
+  {
+    "word": "training",
+    "startSec": 9.16,
+    "endSec": 9.56
+  },
+  {
+    "word": "ke",
+    "startSec": 9.56,
+    "endSec": 9.96
+  },
+  {
+    "word": "waqt",
+    "startSec": 9.96,
+    "endSec": 10.36
+  },
+  {
+    "word": "gently",
+    "startSec": 10.36,
+    "endSec": 10.76
+  },
+  {
+    "word": "adjust",
+    "startSec": 10.76,
+    "endSec": 11.16
+  },
+  {
+    "word": "kiya",
+    "startSec": 11.16,
+    "endSec": 11.56
+  },
+  {
+    "word": "jaata",
+    "startSec": 11.56,
+    "endSec": 11.96
+  },
+  {
+    "word": "hai.",
+    "startSec": 11.96,
+    "endSec": 12.36
+  },
+  {
+    "word": "Har",
+    "startSec": 12.71,
+    "endSec": 13.08
+  },
+  {
+    "word": "knob",
+    "startSec": 13.08,
+    "endSec": 13.45
+  },
+  {
+    "word": "ek",
+    "startSec": 13.45,
+    "endSec": 13.82
+  },
+  {
+    "word": "float",
+    "startSec": 13.82,
+    "endSec": 14.19
+  },
+  {
+    "word": "number",
+    "startSec": 14.18,
+    "endSec": 14.55
+  },
+  {
+    "word": "hota",
+    "startSec": 14.55,
+    "endSec": 14.92
+  },
+  {
+    "word": "hai.",
+    "startSec": 14.92,
+    "endSec": 15.29
+  },
+  {
+    "word": "Dhyan",
+    "startSec": 15.29,
+    "endSec": 15.66
+  },
+  {
+    "word": "dena,",
+    "startSec": 15.66,
+    "endSec": 16.03
+  },
+  {
+    "word": "billions",
+    "startSec": 16.03,
+    "endSec": 16.4
+  },
+  {
+    "word": "of",
+    "startSec": 16.4,
+    "endSec": 16.77
+  },
+  {
+    "word": "numbers",
+    "startSec": 16.77,
+    "endSec": 17.14
+  },
+  {
+    "word": "milkar",
+    "startSec": 17.13,
+    "endSec": 17.5
+  },
+  {
+    "word": "banta",
+    "startSec": 17.5,
+    "endSec": 17.87
+  },
+  {
+    "word": "hai",
+    "startSec": 17.87,
+    "endSec": 18.24
+  },
+  {
+    "word": "AI",
+    "startSec": 18.24,
+    "endSec": 18.61
+  },
+  {
+    "word": "ka",
+    "startSec": 18.61,
+    "endSec": 18.98
+  },
+  {
+    "word": "brain!",
+    "startSec": 18.98,
+    "endSec": 19.35
+  },
+  {
+    "word": "Na",
+    "startSec": 19.7,
+    "endSec": 20.15
+  },
+  {
+    "word": "drawing",
+    "startSec": 20.15,
+    "endSec": 20.6
+  },
+  {
+    "word": "chahiye,",
+    "startSec": 20.6,
+    "endSec": 21.05
+  },
+  {
+    "word": "na",
+    "startSec": 21.05,
+    "endSec": 21.5
+  },
+  {
+    "word": "Photoshop,",
+    "startSec": 21.5,
+    "endSec": 21.95
+  },
+  {
+    "word": "na",
+    "startSec": 21.95,
+    "endSec": 22.4
+  },
+  {
+    "word": "animator.",
+    "startSec": 22.4,
+    "endSec": 22.85
+  },
+  {
+    "word": "Bas",
+    "startSec": 22.85,
+    "endSec": 23.3
+  },
+  {
+    "word": "ek",
+    "startSec": 23.3,
+    "endSec": 23.75
+  },
+  {
+    "word": "prompt",
+    "startSec": 23.75,
+    "endSec": 24.2
+  },
+  {
+    "word": "likho",
+    "startSec": 24.2,
+    "endSec": 24.65
+  },
+  {
+    "word": "aur",
+    "startSec": 24.65,
+    "endSec": 25.1
+  },
+  {
+    "word": "cute",
+    "startSec": 25.11,
+    "endSec": 25.56
+  },
+  {
+    "word": "mascot",
+    "startSec": 25.56,
+    "endSec": 26.01
+  },
+  {
+    "word": "ready!",
+    "startSec": 26.01,
+    "endSec": 26.46
+  },
+  {
+    "word": "Pre-training",
+    "startSec": 26.81,
+    "endSec": 27.19
+  },
+  {
+    "word": "se",
+    "startSec": 27.19,
+    "endSec": 27.57
+  },
+  {
+    "word": "inference",
+    "startSec": 27.57,
+    "endSec": 27.95
+  },
+  {
+    "word": "tak,",
+    "startSec": 27.96,
+    "endSec": 28.34
+  },
+  {
+    "word": "har",
+    "startSec": 28.34,
+    "endSec": 28.72
+  },
+  {
+    "word": "card",
+    "startSec": 28.72,
+    "endSec": 29.1
+  },
+  {
+    "word": "aur",
+    "startSec": 29.1,
+    "endSec": 29.48
+  },
+  {
+    "word": "sticker",
+    "startSec": 29.49,
+    "endSec": 29.87
+  },
+  {
+    "word": "pure",
+    "startSec": 29.87,
+    "endSec": 30.25
+  },
+  {
+    "word": "React",
+    "startSec": 30.25,
+    "endSec": 30.63
+  },
+  {
+    "word": "code",
+    "startSec": 30.63,
+    "endSec": 31.01
+  },
+  {
+    "word": "se",
+    "startSec": 31.02,
+    "endSec": 31.4
+  },
+  {
+    "word": "banta",
+    "startSec": 31.4,
+    "endSec": 31.78
+  },
+  {
+    "word": "hai!",
+    "startSec": 31.78,
+    "endSec": 32.16
+  }
+]

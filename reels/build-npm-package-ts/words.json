@@ -1,0 +1,542 @@
+[
+  {
+    "word": "Kab",
+    "startSec": 0,
+    "endSec": 0.33
+  },
+  {
+    "word": "tak",
+    "startSec": 0.33,
+    "endSec": 0.66
+  },
+  {
+    "word": "dusro",
+    "startSec": 0.67,
+    "endSec": 1
+  },
+  {
+    "word": "ki",
+    "startSec": 1,
+    "endSec": 1.33
+  },
+  {
+    "word": "libraries",
+    "startSec": 1.33,
+    "endSec": 1.66
+  },
+  {
+    "word": "use",
+    "startSec": 1.67,
+    "endSec": 2
+  },
+  {
+    "word": "karoge?",
+    "startSec": 2,
+    "endSec": 2.33
+  },
+  {
+    "word": "Aaj",
+    "startSec": 2.33,
+    "endSec": 2.66
+  },
+  {
+    "word": "khud",
+    "startSec": 2.67,
+    "endSec": 3
+  },
+  {
+    "word": "ka",
+    "startSec": 3,
+    "endSec": 3.33
+  },
+  {
+    "word": "NPM",
+    "startSec": 3.33,
+    "endSec": 3.66
+  },
+  {
+    "word": "package",
+    "startSec": 3.67,
+    "endSec": 4
+  },
+  {
+    "word": "publish",
+    "startSec": 4,
+    "endSec": 4.33
+  },
+  {
+    "word": "karte",
+    "startSec": 4.33,
+    "endSec": 4.66
+  },
+  {
+    "word": "hain!",
+    "startSec": 4.67,
+    "endSec": 5
+  },
+  {
+    "word": "Step",
+    "startSec": 5,
+    "endSec": 5.38
+  },
+  {
+    "word": "one:",
+    "startSec": 5.38,
+    "endSec": 5.75
+  },
+  {
+    "word": "npm",
+    "startSec": 5.75,
+    "endSec": 6.13
+  },
+  {
+    "word": "init",
+    "startSec": 6.13,
+    "endSec": 6.5
+  },
+  {
+    "word": "se",
+    "startSec": 6.5,
+    "endSec": 6.88
+  },
+  {
+    "word": "project",
+    "startSec": 6.88,
+    "endSec": 7.25
+  },
+  {
+    "word": "setup",
+    "startSec": 7.25,
+    "endSec": 7.63
+  },
+  {
+    "word": "karo",
+    "startSec": 7.63,
+    "endSec": 8
+  },
+  {
+    "word": "aur",
+    "startSec": 8,
+    "endSec": 8.38
+  },
+  {
+    "word": "TypeScript",
+    "startSec": 8.38,
+    "endSec": 8.76
+  },
+  {
+    "word": "configure",
+    "startSec": 8.75,
+    "endSec": 9.13
+  },
+  {
+    "word": "karo.",
+    "startSec": 9.13,
+    "endSec": 9.51
+  },
+  {
+    "word": "Fir",
+    "startSec": 9.5,
+    "endSec": 9.88
+  },
+  {
+    "word": "apna",
+    "startSec": 9.88,
+    "endSec": 10.26
+  },
+  {
+    "word": "code",
+    "startSec": 10.25,
+    "endSec": 10.63
+  },
+  {
+    "word": "likho...",
+    "startSec": 10.63,
+    "endSec": 11.01
+  },
+  {
+    "word": "...jaise",
+    "startSec": 11,
+    "endSec": 11.29
+  },
+  {
+    "word": "koi",
+    "startSec": 11.29,
+    "endSec": 11.58
+  },
+  {
+    "word": "mast",
+    "startSec": 11.57,
+    "endSec": 11.86
+  },
+  {
+    "word": "sa",
+    "startSec": 11.86,
+    "endSec": 12.15
+  },
+  {
+    "word": "responsive",
+    "startSec": 12.14,
+    "endSec": 12.43
+  },
+  {
+    "word": "layout",
+    "startSec": 12.43,
+    "endSec": 12.72
+  },
+  {
+    "word": "kit",
+    "startSec": 12.71,
+    "endSec": 13
+  },
+  {
+    "word": "ya",
+    "startSec": 13,
+    "endSec": 13.29
+  },
+  {
+    "word": "shimmer",
+    "startSec": 13.29,
+    "endSec": 13.58
+  },
+  {
+    "word": "effect.",
+    "startSec": 13.57,
+    "endSec": 13.86
+  },
+  {
+    "word": "Yaad",
+    "startSec": 13.86,
+    "endSec": 14.15
+  },
+  {
+    "word": "rakhna,",
+    "startSec": 14.14,
+    "endSec": 14.43
+  },
+  {
+    "word": "types",
+    "startSec": 14.43,
+    "endSec": 14.72
+  },
+  {
+    "word": "zaroor",
+    "startSec": 14.71,
+    "endSec": 15
+  },
+  {
+    "word": "export",
+    "startSec": 15,
+    "endSec": 15.29
+  },
+  {
+    "word": "karna,",
+    "startSec": 15.29,
+    "endSec": 15.58
+  },
+  {
+    "word": "kyunki",
+    "startSec": 15.57,
+    "endSec": 15.86
+  },
+  {
+    "word": "Developer",
+    "startSec": 15.86,
+    "endSec": 16.15
+  },
+  {
+    "word": "Experience",
+    "startSec": 16.14,
+    "endSec": 16.43
+  },
+  {
+    "word": "is",
+    "startSec": 16.43,
+    "endSec": 16.72
+  },
+  {
+    "word": "king!",
+    "startSec": 16.71,
+    "endSec": 17
+  },
+  {
+    "word": "Step",
+    "startSec": 17,
+    "endSec": 17.29
+  },
+  {
+    "word": "two:",
+    "startSec": 17.29,
+    "endSec": 17.58
+  },
+  {
+    "word": "package",
+    "startSec": 17.58,
+    "endSec": 17.87
+  },
+  {
+    "word": "dot",
+    "startSec": 17.88,
+    "endSec": 18.17
+  },
+  {
+    "word": "json",
+    "startSec": 18.17,
+    "endSec": 18.46
+  },
+  {
+    "word": "mein",
+    "startSec": 18.46,
+    "endSec": 18.75
+  },
+  {
+    "word": "entry",
+    "startSec": 18.75,
+    "endSec": 19.04
+  },
+  {
+    "word": "points",
+    "startSec": 19.04,
+    "endSec": 19.33
+  },
+  {
+    "word": "set",
+    "startSec": 19.33,
+    "endSec": 19.62
+  },
+  {
+    "word": "karo.",
+    "startSec": 19.63,
+    "endSec": 19.92
+  },
+  {
+    "word": "Step",
+    "startSec": 19.92,
+    "endSec": 20.21
+  },
+  {
+    "word": "three:",
+    "startSec": 20.21,
+    "endSec": 20.5
+  },
+  {
+    "word": "terminal",
+    "startSec": 20.5,
+    "endSec": 20.79
+  },
+  {
+    "word": "mein",
+    "startSec": 20.79,
+    "endSec": 21.08
+  },
+  {
+    "word": "npm",
+    "startSec": 21.08,
+    "endSec": 21.37
+  },
+  {
+    "word": "publish",
+    "startSec": 21.38,
+    "endSec": 21.67
+  },
+  {
+    "word": "maro,",
+    "startSec": 21.67,
+    "endSec": 21.96
+  },
+  {
+    "word": "aur",
+    "startSec": 21.96,
+    "endSec": 22.25
+  },
+  {
+    "word": "boom!",
+    "startSec": 22.25,
+    "endSec": 22.54
+  },
+  {
+    "word": "Package",
+    "startSec": 22.54,
+    "endSec": 22.83
+  },
+  {
+    "word": "duniya",
+    "startSec": 22.83,
+    "endSec": 23.12
+  },
+  {
+    "word": "ke",
+    "startSec": 23.13,
+    "endSec": 23.42
+  },
+  {
+    "word": "liye",
+    "startSec": 23.42,
+    "endSec": 23.71
+  },
+  {
+    "word": "live.",
+    "startSec": 23.71,
+    "endSec": 24
+  },
+  {
+    "word": "Pro",
+    "startSec": 24,
+    "endSec": 24.33
+  },
+  {
+    "word": "tip:",
+    "startSec": 24.33,
+    "endSec": 24.66
+  },
+  {
+    "word": "GitHub",
+    "startSec": 24.67,
+    "endSec": 25
+  },
+  {
+    "word": "Actions",
+    "startSec": 25,
+    "endSec": 25.33
+  },
+  {
+    "word": "se",
+    "startSec": 25.33,
+    "endSec": 25.66
+  },
+  {
+    "word": "CI/CD",
+    "startSec": 25.67,
+    "endSec": 26
+  },
+  {
+    "word": "pipeline",
+    "startSec": 26,
+    "endSec": 26.33
+  },
+  {
+    "word": "set",
+    "startSec": 26.33,
+    "endSec": 26.66
+  },
+  {
+    "word": "kar",
+    "startSec": 26.67,
+    "endSec": 27
+  },
+  {
+    "word": "lo",
+    "startSec": 27,
+    "endSec": 27.33
+  },
+  {
+    "word": "taaki",
+    "startSec": 27.33,
+    "endSec": 27.66
+  },
+  {
+    "word": "har",
+    "startSec": 27.67,
+    "endSec": 28
+  },
+  {
+    "word": "push",
+    "startSec": 28,
+    "endSec": 28.33
+  },
+  {
+    "word": "par",
+    "startSec": 28.33,
+    "endSec": 28.66
+  },
+  {
+    "word": "package",
+    "startSec": 28.67,
+    "endSec": 29
+  },
+  {
+    "word": "npm",
+    "startSec": 29,
+    "endSec": 29.33
+  },
+  {
+    "word": "registry",
+    "startSec": 29.33,
+    "endSec": 29.66
+  },
+  {
+    "word": "par",
+    "startSec": 29.67,
+    "endSec": 30
+  },
+  {
+    "word": "auto-publish",
+    "startSec": 30,
+    "endSec": 30.33
+  },
+  {
+    "word": "ho",
+    "startSec": 30.33,
+    "endSec": 30.66
+  },
+  {
+    "word": "jaye.",
+    "startSec": 30.67,
+    "endSec": 31
+  },
+  {
+    "word": "Apna",
+    "startSec": 31,
+    "endSec": 31.36
+  },
+  {
+    "word": "open-source",
+    "startSec": 31.36,
+    "endSec": 31.72
+  },
+  {
+    "word": "empire",
+    "startSec": 31.73,
+    "endSec": 32.09
+  },
+  {
+    "word": "banane",
+    "startSec": 32.09,
+    "endSec": 32.45
+  },
+  {
+    "word": "ke",
+    "startSec": 32.45,
+    "endSec": 32.81
+  },
+  {
+    "word": "liye",
+    "startSec": 32.82,
+    "endSec": 33.18
+  },
+  {
+    "word": "techwith.GenZ",
+    "startSec": 33.18,
+    "endSec": 33.54
+  },
+  {
+    "word": "ko",
+    "startSec": 33.55,
+    "endSec": 33.91
+  },
+  {
+    "word": "follow",
+    "startSec": 33.91,
+    "endSec": 34.27
+  },
+  {
+    "word": "kar",
+    "startSec": 34.27,
+    "endSec": 34.63
+  },
+  {
+    "word": "lo!",
+    "startSec": 34.64,
+    "endSec": 35
+  }
+]

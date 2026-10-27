@@ -74,6 +74,9 @@ export const VALID_SCENE_TYPES = [
   "diagram",
   "terminal",
   "chart",
+  "bot",
+  "knobs",
+  "stacked",
 ];
 
 const baseSceneSchema = z.object({
@@ -201,6 +204,27 @@ const sceneTypeMap = {
     metricComparison: z.string().optional(),
     metricIcon: z.string().optional(),
   }),
+  bot: baseSceneSchema.extend({
+    type: z.literal("bot"),
+    headline: z.string().optional(),
+    strikes: z.array(z.string()).optional(),
+    confirmText: z.string().optional(),
+    expression: z.enum(["happy", "winking", "curious"]).optional(),
+  }),
+  knobs: baseSceneSchema.extend({
+    type: z.literal("knobs"),
+    headline: z.string().optional(),
+    mode: z.enum(["knobs", "weights"]).optional(),
+    title: z.string().optional(),
+    pill1: z.string().optional(),
+    pill2: z.string().optional(),
+  }),
+  stacked: baseSceneSchema.extend({
+    type: z.literal("stacked"),
+    headline: z.string().optional(),
+    cards: z.array(z.any()).optional(),
+    isPipeline: z.boolean().optional(),
+  }),
 };
 
 const metaSchema = z.object({
@@ -264,6 +288,38 @@ if (!fs.existsSync(voiceFullPath)) {
     hasErrors = true;
     console.error(`❌ Voice file not found at: ${voiceFullPath}`);
     console.error(`   Please place your voice audio at public/${voiceFilePath}`);
+  }
+}
+
+// Check & Auto-Heal BGM File
+if (rawData.meta?.bgm) {
+  if (typeof rawData.meta.bgm === "string") {
+    const cleanBgm = rawData.meta.bgm.replace(/^\/?public\//, "").replace(/^\//, "");
+    const bgmFullPath = path.join(rootDir, "public", cleanBgm);
+    const bgmSubdirPath = path.join(rootDir, "public", "bgm", path.basename(cleanBgm));
+    const fallbackPath = path.join(rootDir, "public", "bgm", "cyber-groove.mp3");
+
+    if (!fs.existsSync(bgmFullPath)) {
+      if (fs.existsSync(bgmSubdirPath)) {
+        rawData.meta.bgm = `bgm/${path.basename(cleanBgm)}`;
+        console.log(`ℹ️ Auto-resolved BGM to: ${rawData.meta.bgm}`);
+      } else if (fs.existsSync(fallbackPath)) {
+        console.log(`⚠️ Warning: BGM file "${cleanBgm}" not found. Auto-healed to "bgm/cyber-groove.mp3"`);
+        rawData.meta.bgm = "bgm/cyber-groove.mp3";
+      } else {
+        warnings.push(`BGM file "${cleanBgm}" not found and no fallback available.`);
+        rawData.meta.bgm = false;
+      }
+
+      // Write healed config back
+      fs.writeFileSync(jsonPath, JSON.stringify(rawData, null, 2), "utf-8");
+      const altReelJson = jsonPath.includes("/public/reels/")
+        ? jsonPath.replace("/public/reels/", "/reels/")
+        : jsonPath.replace("/reels/", "/public/reels/");
+      if (fs.existsSync(path.dirname(altReelJson))) {
+        fs.writeFileSync(altReelJson, JSON.stringify(rawData, null, 2), "utf-8");
+      }
+    }
   }
 }
 

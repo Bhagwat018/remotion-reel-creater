@@ -59,13 +59,13 @@ export interface ThemeTokens {
 
 export const baseTheme: ThemeTokens = {
   colors: {
-    bg: "#E1E1E1",
-    grid: "rgba(0, 0, 0, 0.05)",
-    ink: "#0E0E0E",
-    card: "#202020",
-    cardText: "#F2F2F2",
-    muted: "#8A8A8A",
-    accent: "#2563FF",
+    bg: "#f4f5f8",
+    grid: "rgba(0, 0, 0, 0.16)",
+    ink: "#000000",
+    card: "#ffffff",
+    cardText: "#000000",
+    muted: "#64748b",
+    accent: "#7c3aed",
     accentText: "#FFFFFF",
   },
   typography: {
@@ -78,9 +78,9 @@ export const baseTheme: ThemeTokens = {
   layout: {
     width: 1080,
     height: 1920,
-    safeTop: 260,
-    safeBottom: 380,
-    sideMargin: 80,
+    safeTop: 130,
+    safeBottom: 440,
+    sideMargin: 60,
     handleBottom: 220,
     cardRadius: 24,
     pillRadius: 999,

@@ -1,0 +1,577 @@
+[
+  {
+    "word": "Jio",
+    "startSec": 0,
+    "endSec": 0.2
+  },
+  {
+    "word": "IPO",
+    "startSec": 0.2,
+    "endSec": 0.4
+  },
+  {
+    "word": "ka",
+    "startSec": 0.39,
+    "endSec": 0.59
+  },
+  {
+    "word": "listing",
+    "startSec": 0.59,
+    "endSec": 0.79
+  },
+  {
+    "word": "day",
+    "startSec": 0.78,
+    "endSec": 0.98
+  },
+  {
+    "word": "aa",
+    "startSec": 0.98,
+    "endSec": 1.18
+  },
+  {
+    "word": "gaya",
+    "startSec": 1.17,
+    "endSec": 1.37
+  },
+  {
+    "word": "hai!",
+    "startSec": 1.37,
+    "endSec": 1.57
+  },
+  {
+    "word": "Ab",
+    "startSec": 1.57,
+    "endSec": 1.77
+  },
+  {
+    "word": "sabse",
+    "startSec": 1.76,
+    "endSec": 1.96
+  },
+  {
+    "word": "bada",
+    "startSec": 1.96,
+    "endSec": 2.16
+  },
+  {
+    "word": "question:",
+    "startSec": 2.15,
+    "endSec": 2.35
+  },
+  {
+    "word": "Open",
+    "startSec": 2.35,
+    "endSec": 2.55
+  },
+  {
+    "word": "hote",
+    "startSec": 2.54,
+    "endSec": 2.74
+  },
+  {
+    "word": "hi",
+    "startSec": 2.74,
+    "endSec": 2.94
+  },
+  {
+    "word": "sell",
+    "startSec": 2.93,
+    "endSec": 3.13
+  },
+  {
+    "word": "kar",
+    "startSec": 3.13,
+    "endSec": 3.33
+  },
+  {
+    "word": "dein",
+    "startSec": 3.33,
+    "endSec": 3.53
+  },
+  {
+    "word": "ya",
+    "startSec": 3.52,
+    "endSec": 3.72
+  },
+  {
+    "word": "long",
+    "startSec": 3.72,
+    "endSec": 3.92
+  },
+  {
+    "word": "term",
+    "startSec": 3.91,
+    "endSec": 4.11
+  },
+  {
+    "word": "hold",
+    "startSec": 4.11,
+    "endSec": 4.31
+  },
+  {
+    "word": "karein?",
+    "startSec": 4.3,
+    "endSec": 4.5
+  },
+  {
+    "word": "Grey",
+    "startSec": 4.5,
+    "endSec": 4.74
+  },
+  {
+    "word": "Market",
+    "startSec": 4.74,
+    "endSec": 4.98
+  },
+  {
+    "word": "Premium",
+    "startSec": 4.97,
+    "endSec": 5.21
+  },
+  {
+    "word": "high",
+    "startSec": 5.21,
+    "endSec": 5.45
+  },
+  {
+    "word": "float",
+    "startSec": 5.45,
+    "endSec": 5.69
+  },
+  {
+    "word": "kar",
+    "startSec": 5.68,
+    "endSec": 5.92
+  },
+  {
+    "word": "raha",
+    "startSec": 5.92,
+    "endSec": 6.16
+  },
+  {
+    "word": "hai.",
+    "startSec": 6.16,
+    "endSec": 6.4
+  },
+  {
+    "word": "Strong",
+    "startSec": 6.39,
+    "endSec": 6.63
+  },
+  {
+    "word": "listing",
+    "startSec": 6.63,
+    "endSec": 6.87
+  },
+  {
+    "word": "gains",
+    "startSec": 6.87,
+    "endSec": 7.11
+  },
+  {
+    "word": "expected",
+    "startSec": 7.11,
+    "endSec": 7.35
+  },
+  {
+    "word": "hain,",
+    "startSec": 7.34,
+    "endSec": 7.58
+  },
+  {
+    "word": "par",
+    "startSec": 7.58,
+    "endSec": 7.82
+  },
+  {
+    "word": "volatility",
+    "startSec": 7.82,
+    "endSec": 8.06
+  },
+  {
+    "word": "intense",
+    "startSec": 8.05,
+    "endSec": 8.29
+  },
+  {
+    "word": "hone",
+    "startSec": 8.29,
+    "endSec": 8.53
+  },
+  {
+    "word": "wali",
+    "startSec": 8.53,
+    "endSec": 8.77
+  },
+  {
+    "word": "hai!",
+    "startSec": 8.76,
+    "endSec": 9
+  },
+  {
+    "word": "Listing",
+    "startSec": 9,
+    "endSec": 9.31
+  },
+  {
+    "word": "gain",
+    "startSec": 9.31,
+    "endSec": 9.62
+  },
+  {
+    "word": "flippers:",
+    "startSec": 9.61,
+    "endSec": 9.92
+  },
+  {
+    "word": "20",
+    "startSec": 9.92,
+    "endSec": 10.23
+  },
+  {
+    "word": "percent",
+    "startSec": 10.22,
+    "endSec": 10.53
+  },
+  {
+    "word": "plus",
+    "startSec": 10.53,
+    "endSec": 10.84
+  },
+  {
+    "word": "profit",
+    "startSec": 10.83,
+    "endSec": 11.14
+  },
+  {
+    "word": "hit",
+    "startSec": 11.14,
+    "endSec": 11.45
+  },
+  {
+    "word": "hote",
+    "startSec": 11.44,
+    "endSec": 11.75
+  },
+  {
+    "word": "hi",
+    "startSec": 11.75,
+    "endSec": 12.06
+  },
+  {
+    "word": "50",
+    "startSec": 12.06,
+    "endSec": 12.37
+  },
+  {
+    "word": "percent",
+    "startSec": 12.36,
+    "endSec": 12.67
+  },
+  {
+    "word": "capital",
+    "startSec": 12.67,
+    "endSec": 12.98
+  },
+  {
+    "word": "exit",
+    "startSec": 12.97,
+    "endSec": 13.28
+  },
+  {
+    "word": "karke",
+    "startSec": 13.28,
+    "endSec": 13.59
+  },
+  {
+    "word": "lock-in",
+    "startSec": 13.58,
+    "endSec": 13.89
+  },
+  {
+    "word": "kar",
+    "startSec": 13.89,
+    "endSec": 14.2
+  },
+  {
+    "word": "lo.",
+    "startSec": 14.19,
+    "endSec": 14.5
+  },
+  {
+    "word": "Long",
+    "startSec": 14.5,
+    "endSec": 14.79
+  },
+  {
+    "word": "term",
+    "startSec": 14.79,
+    "endSec": 15.08
+  },
+  {
+    "word": "dev-investors:",
+    "startSec": 15.09,
+    "endSec": 15.38
+  },
+  {
+    "word": "Telecom",
+    "startSec": 15.38,
+    "endSec": 15.67
+  },
+  {
+    "word": "plus",
+    "startSec": 15.68,
+    "endSec": 15.97
+  },
+  {
+    "word": "digital",
+    "startSec": 15.97,
+    "endSec": 16.26
+  },
+  {
+    "word": "ecosystem",
+    "startSec": 16.26,
+    "endSec": 16.55
+  },
+  {
+    "word": "ka",
+    "startSec": 16.56,
+    "endSec": 16.85
+  },
+  {
+    "word": "moat",
+    "startSec": 16.85,
+    "endSec": 17.14
+  },
+  {
+    "word": "insane",
+    "startSec": 17.15,
+    "endSec": 17.44
+  },
+  {
+    "word": "hai.",
+    "startSec": 17.44,
+    "endSec": 17.73
+  },
+  {
+    "word": "Long",
+    "startSec": 17.74,
+    "endSec": 18.03
+  },
+  {
+    "word": "hold",
+    "startSec": 18.03,
+    "endSec": 18.32
+  },
+  {
+    "word": "Strategy",
+    "startSec": 18.32,
+    "endSec": 18.61
+  },
+  {
+    "word": "makes",
+    "startSec": 18.62,
+    "endSec": 18.91
+  },
+  {
+    "word": "total",
+    "startSec": 18.91,
+    "endSec": 19.2
+  },
+  {
+    "word": "sense.",
+    "startSec": 19.21,
+    "endSec": 19.5
+  },
+  {
+    "word": "Execution",
+    "startSec": 19.5,
+    "endSec": 19.86
+  },
+  {
+    "word": "plan",
+    "startSec": 19.86,
+    "endSec": 20.22
+  },
+  {
+    "word": "simple",
+    "startSec": 20.22,
+    "endSec": 20.58
+  },
+  {
+    "word": "hai:",
+    "startSec": 20.58,
+    "endSec": 20.94
+  },
+  {
+    "word": "Capital",
+    "startSec": 20.94,
+    "endSec": 21.3
+  },
+  {
+    "word": "protection",
+    "startSec": 21.31,
+    "endSec": 21.67
+  },
+  {
+    "word": "focus",
+    "startSec": 21.67,
+    "endSec": 22.03
+  },
+  {
+    "word": "me",
+    "startSec": 22.03,
+    "endSec": 22.39
+  },
+  {
+    "word": "rakho,",
+    "startSec": 22.39,
+    "endSec": 22.75
+  },
+  {
+    "word": "gains",
+    "startSec": 22.75,
+    "endSec": 23.11
+  },
+  {
+    "word": "lock",
+    "startSec": 23.11,
+    "endSec": 23.47
+  },
+  {
+    "word": "karo,",
+    "startSec": 23.47,
+    "endSec": 23.83
+  },
+  {
+    "word": "aur",
+    "startSec": 23.83,
+    "endSec": 24.19
+  },
+  {
+    "word": "remainder",
+    "startSec": 24.19,
+    "endSec": 24.55
+  },
+  {
+    "word": "ko",
+    "startSec": 24.56,
+    "endSec": 24.92
+  },
+  {
+    "word": "trail",
+    "startSec": 24.92,
+    "endSec": 25.28
+  },
+  {
+    "word": "hone",
+    "startSec": 25.28,
+    "endSec": 25.64
+  },
+  {
+    "word": "do!",
+    "startSec": 25.64,
+    "endSec": 26
+  },
+  {
+    "word": "Aapka",
+    "startSec": 26,
+    "endSec": 26.3
+  },
+  {
+    "word": "Listing",
+    "startSec": 26.3,
+    "endSec": 26.6
+  },
+  {
+    "word": "Day",
+    "startSec": 26.6,
+    "endSec": 26.9
+  },
+  {
+    "word": "plan",
+    "startSec": 26.9,
+    "endSec": 27.2
+  },
+  {
+    "word": "kya",
+    "startSec": 27.2,
+    "endSec": 27.5
+  },
+  {
+    "word": "hai?",
+    "startSec": 27.5,
+    "endSec": 27.8
+  },
+  {
+    "word": "Hold",
+    "startSec": 27.8,
+    "endSec": 28.1
+  },
+  {
+    "word": "or",
+    "startSec": 28.1,
+    "endSec": 28.4
+  },
+  {
+    "word": "Sell?",
+    "startSec": 28.4,
+    "endSec": 28.7
+  },
+  {
+    "word": "Niche",
+    "startSec": 28.7,
+    "endSec": 29
+  },
+  {
+    "word": "comments",
+    "startSec": 29,
+    "endSec": 29.3
+  },
+  {
+    "word": "me",
+    "startSec": 29.3,
+    "endSec": 29.6
+  },
+  {
+    "word": "batao",
+    "startSec": 29.6,
+    "endSec": 29.9
+  },
+  {
+    "word": "aur",
+    "startSec": 29.9,
+    "endSec": 30.2
+  },
+  {
+    "word": "Tech",
+    "startSec": 30.2,
+    "endSec": 30.5
+  },
+  {
+    "word": "With",
+    "startSec": 30.5,
+    "endSec": 30.8
+  },
+  {
+    "word": "GenZ",
+    "startSec": 30.8,
+    "endSec": 31.1
+  },
+  {
+    "word": "ko",
+    "startSec": 31.1,
+    "endSec": 31.4
+  },
+  {
+    "word": "follow",
+    "startSec": 31.4,
+    "endSec": 31.7
+  },
+  {
+    "word": "karo!",
+    "startSec": 31.7,
+    "endSec": 32
+  }
+]

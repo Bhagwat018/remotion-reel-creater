@@ -22,6 +22,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const copyJsonBtn = document.getElementById("copyJsonBtn");
   const jsonFileInput = document.getElementById("jsonFileInput");
 
+  // AI Director References
+  const aiStatusBadge = document.getElementById("aiStatusBadge");
+  const aiStatusText = document.getElementById("aiStatusText");
+  const toggleAiKeyBtn = document.getElementById("toggleAiKeyBtn");
+  const aiKeyDrawer = document.getElementById("aiKeyDrawer");
+  const customApiKeyInput = document.getElementById("customApiKeyInput");
+  const saveApiKeyBtn = document.getElementById("saveApiKeyBtn");
+  const aiTopicInput = document.getElementById("aiTopicInput");
+  const aiScriptInput = document.getElementById("aiScriptInput");
+  const aiLanguageSelect = document.getElementById("aiLanguageSelect");
+  const aiDurationSelect = document.getElementById("aiDurationSelect");
+  const generateAiReelBtn = document.getElementById("generateAiReelBtn");
+  const aiBtnSpinner = document.getElementById("aiBtnSpinner");
+  const aiBtnIcon = document.getElementById("aiBtnIcon");
+  const aiBtnText = document.getElementById("aiBtnText");
+
   // Tabs & Views
   const tabCodeBtn = document.getElementById("tabCodeBtn");
   const tabScenesBtn = document.getElementById("tabScenesBtn");
@@ -807,7 +823,144 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // 10. Terminal Helpers
+  // 10. AI Video Director Logic
+  async function checkAiStatus() {
+    try {
+      const storedKey = localStorage.getItem("remotion_gemini_api_key") || "";
+      if (storedKey && customApiKeyInput) {
+        customApiKeyInput.value = storedKey;
+      }
+      const res = await fetch("/api/ai/status", {
+        headers: storedKey ? { "x-gemini-api-key": storedKey } : {},
+      });
+      const data = await res.json();
+      if (data.configured) {
+        aiStatusBadge.className = "ai-status-badge active";
+        aiStatusText.textContent = storedKey ? "Custom Key Active" : "Key Active (.env)";
+      } else {
+        aiStatusBadge.className = "ai-status-badge";
+        aiStatusText.textContent = "Key Required";
+      }
+    } catch {
+      aiStatusBadge.className = "ai-status-badge";
+      aiStatusText.textContent = "Offline";
+    }
+  }
+
+  if (toggleAiKeyBtn) {
+    toggleAiKeyBtn.addEventListener("click", () => {
+      const isHidden = aiKeyDrawer.style.display === "none";
+      aiKeyDrawer.style.display = isHidden ? "block" : "none";
+      if (isHidden && customApiKeyInput) customApiKeyInput.focus();
+    });
+  }
+
+  if (saveApiKeyBtn) {
+    saveApiKeyBtn.addEventListener("click", () => {
+      const val = customApiKeyInput.value.trim();
+      if (val) {
+        localStorage.setItem("remotion_gemini_api_key", val);
+        showToast("Gemini API key saved in browser storage!", "success");
+      } else {
+        localStorage.removeItem("remotion_gemini_api_key");
+        showToast("Cleared browser API key (will use .env if present)", "info");
+      }
+      checkAiStatus();
+      aiKeyDrawer.style.display = "none";
+    });
+  }
+
+  // Quick suggestion chips
+  document.querySelectorAll(".ai-chip").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      const topic = chip.getAttribute("data-topic");
+      if (topic && aiTopicInput) {
+        aiTopicInput.value = topic;
+        aiTopicInput.focus();
+      }
+    });
+  });
+
+  // Generate Reel with AI
+  if (generateAiReelBtn) {
+    generateAiReelBtn.addEventListener("click", async () => {
+      const topic = aiTopicInput.value.trim();
+      if (!topic) {
+        showToast("Please enter a video topic or click a suggestion chip above.", "error");
+        aiTopicInput.focus();
+        return;
+      }
+
+      const script = aiScriptInput ? aiScriptInput.value.trim() : "";
+      const language = aiLanguageSelect ? aiLanguageSelect.value : "hinglish";
+      const durationSec = aiDurationSelect ? aiDurationSelect.value : "42";
+      const storedKey = localStorage.getItem("remotion_gemini_api_key") || "";
+
+      // UI Loading state
+      generateAiReelBtn.disabled = true;
+      aiBtnSpinner.style.display = "inline-block";
+      aiBtnIcon.style.display = "none";
+      aiBtnText.textContent = "AI Directing 8 Scenes...";
+
+      logToTerminal(`[AI Director] Contacting Gemini 2.5 Flash for topic: "${topic}"...`, "info");
+
+      try {
+        const res = await fetch("/api/ai/generate-reel", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            ...(storedKey ? { "x-gemini-api-key": storedKey } : {}),
+          },
+          body: JSON.stringify({
+            topic,
+            script,
+            language,
+            durationSec,
+            apiKey: storedKey,
+          }),
+        });
+
+        const data = await res.json();
+        if (!res.ok || !data.success) {
+          throw new Error(data.error || "Failed to generate reel.");
+        }
+
+        const reel = data.reel;
+        const formattedJson = JSON.stringify(reel, null, 2);
+
+        // Update editor and slug
+        jsonEditor.value = formattedJson;
+        reelSlugInput.value = reel.meta?.slug || "ai-reel";
+
+        updateLineNumbers();
+        validateJsonEditor();
+
+        // Switch to scenes explorer tab so user can inspect scenes
+        if (tabScenesBtn) {
+          tabScenesBtn.click();
+        }
+
+        logToTerminal(`[AI Director] Successfully generated 8 scenes for "${reel.meta?.slug}"!`, "success");
+        showToast(`✨ AI generated 8 dynamic scenes for "${reel.meta?.slug}"!`, "success");
+      } catch (err) {
+        logToTerminal(`[AI Director Error] ${err.message}`, "error");
+        showToast(err.message, "error");
+        if (err.message.includes("API key")) {
+          aiKeyDrawer.style.display = "block";
+        }
+      } finally {
+        generateAiReelBtn.disabled = false;
+        aiBtnSpinner.style.display = "none";
+        aiBtnIcon.style.display = "inline-block";
+        aiBtnText.textContent = "Generate 8-Scene Reel with AI";
+      }
+    });
+  }
+
+  // Initial check of AI status
+  checkAiStatus();
+
+  // 11. Terminal Helpers
   function logToTerminal(text, type = "default") {
     const line = document.createElement("div");
     line.className = `log-row ${type}-row`;

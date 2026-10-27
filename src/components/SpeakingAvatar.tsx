@@ -28,8 +28,17 @@ export const SpeakingAvatar: React.FC<SpeakingAvatarProps> = ({
   );
   const isSpeaking = activeWordIndex >= 0;
 
-  // Window of words around current speaking word (e.g. 5-6 words)
-  const targetIndex = activeWordIndex >= 0 ? activeWordIndex : 0;
+  // Window of words around current speaking word (keeps stable window during sentence pauses)
+  let targetIndex = activeWordIndex;
+  if (targetIndex < 0) {
+    for (let i = words.length - 1; i >= 0; i--) {
+      if (currentTimeSec >= words[i].endSec) {
+        targetIndex = i;
+        break;
+      }
+    }
+    if (targetIndex < 0) targetIndex = 0;
+  }
   const windowStart = Math.max(0, targetIndex - 1);
   const windowEnd = Math.min(words.length, windowStart + 5);
   const visibleWords = words.slice(windowStart, windowEnd);
@@ -62,64 +71,65 @@ export const SpeakingAvatar: React.FC<SpeakingAvatarProps> = ({
     <div
       style={{
         position: "absolute",
-        left: isLeft ? 50 : "auto",
-        right: isLeft ? "auto" : 50,
-        bottom: 230,
-        display: "flex",
-        flexDirection: isLeft ? "row" : "row-reverse",
-        alignItems: "flex-end",
-        gap: 20,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        height: 520,
         zIndex: 50,
-        transform: `scale(${entrance}) translateY(${bobbing}px)`,
-        transformOrigin: isLeft ? "bottom left" : "bottom right",
         pointerEvents: "none",
       }}
     >
-      {/* 1. Professional Tech Creator Avatar (Modern Vector SVG) */}
+      {/* 1. Professional Tech Creator Avatar (Anchored cleanly at bottom, taller and wider) */}
       <div
         style={{
-          width: 240,
-          height: 290,
-          position: "relative",
-          flexShrink: 0,
+          position: "absolute",
+          left: isLeft ? 100 : "auto",
+          right: isLeft ? "auto" : 100,
+          bottom: 0,
+          width: 380,
+          height: 480,
+          transform: `scale(${entrance}) translateY(${bobbing}px)`,
+          transformOrigin: isLeft ? "bottom left" : "bottom right",
+          maskImage: "linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 40px)",
+          WebkitMaskImage: "linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 40px)",
         }}
       >
         <svg
           viewBox="0 0 240 290"
-          width="240"
-          height="290"
+          width="380"
+          height="480"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           {/* Subtle drop shadow under avatar */}
           <ellipse cx="120" cy="282" rx="85" ry="9" fill="rgba(0,0,0,0.35)" />
 
-          {/* Sleek Dark Tech Jacket / Torso */}
+          {/* Teal-Green Creator Hoodie / Torso */}
           <path
             d="M36 280 C36 215, 76 182, 120 182 C164 182, 204 215, 204 280 Z"
-            fill="#0f172a"
-            stroke="#020617"
+            fill="#238276"
+            stroke="#000000"
             strokeWidth="4"
           />
 
-          {/* Inner Slate Crewneck / Tech T-shirt */}
+          {/* Hoodie Collar / Neckline */}
           <path
-            d="M90 182 C90 216, 150 216, 150 182 Z"
-            fill="#1e293b"
-            stroke="#020617"
+            d="M86 182 C86 216, 154 216, 154 182 Z"
+            fill="#1b6b61"
+            stroke="#000000"
             strokeWidth="3.5"
           />
 
-          {/* Jacket Minimalist Seams */}
-          <path d="M90 182 L100 240 L106 280" stroke="#334155" strokeWidth="2.5" fill="none" />
-          <path d="M150 182 L140 240 L134 280" stroke="#334155" strokeWidth="2.5" fill="none" />
+          {/* White Hoodie Drawstrings */}
+          <line x1="106" y1="202" x2="106" y2="242" stroke="#ffffff" strokeWidth="4.5" strokeLinecap="round" />
+          <line x1="134" y1="202" x2="134" y2="242" stroke="#ffffff" strokeWidth="4.5" strokeLinecap="round" />
 
-          {/* Modern Creator Tech Pin / Badge on Chest */}
-          <circle cx="168" cy="225" r="12" fill="#3b82f6" stroke="#1d4ed8" strokeWidth="2" />
-          <path d="M164 225 L168 221 L172 225" stroke="#ffffff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+          {/* Creator Orange Pin Badge on Chest */}
+          <circle cx="168" cy="226" r="13" fill="#fb923c" stroke="#000000" strokeWidth="2.5" />
+          <path d="M162 226 Q168 221 174 226" stroke="#000000" strokeWidth="2.5" strokeLinecap="round" fill="none" />
 
           {/* Neck with subtle shadow */}
-          <rect x="105" y="148" width="30" height="38" fill="#d4956a" rx="4" />
+          <rect x="105" y="148" width="30" height="38" fill="#d4956a" stroke="#000000" strokeWidth="3" rx="4" />
           <path d="M105 148 Q120 158 135 148 L135 158 Q120 168 105 158 Z" fill="#be7e54" />
 
           {/* Professional Stylized Head & Jaw */}
@@ -140,28 +150,32 @@ export const SpeakingAvatar: React.FC<SpeakingAvatarProps> = ({
           <ellipse cx="172" cy="120" rx="9" ry="13" fill="#d4956a" stroke="#0f172a" strokeWidth="3" />
           <path d="M174 118 Q171 121 174 124" stroke="#be7e54" strokeWidth="2" fill="none" />
 
-          {/* Modern Styled Textured Hair (Clean tech fade with volume) */}
+          {/* Authentic Curly Afro-Puffs Textured Hair (Matching Reference Video) */}
           <path
-            d="M66 110 C64 88, 72 60, 102 54 C122 50, 150 52, 168 66 C178 75, 178 92, 174 110 C168 98, 158 94, 146 94 C132 94, 126 88, 112 88 C95 88, 86 96, 75 98 C70 102, 68 106, 66 110 Z"
-            fill="#1e2029"
+            d="M60 114
+               C50 106, 48 90, 56 78
+               C50 64, 58 48, 74 44
+               C76 30, 92 22, 108 24
+               C118 16, 134 16, 146 24
+               C160 20, 176 28, 178 42
+               C192 46, 200 62, 194 76
+               C202 88, 198 106, 186 114
+               C180 100, 168 94, 154 94
+               C138 94, 130 88, 114 88
+               C98 88, 88 94, 76 96
+               C68 102, 64 108, 60 114 Z"
+            fill="#18181b"
             stroke="#0f172a"
             strokeWidth="4"
           />
-          {/* Hair Texture & Highlight Sheen */}
-          <path
-            d="M95 62 Q120 57 145 63"
-            stroke="#383d52"
-            strokeWidth="3.5"
-            strokeLinecap="round"
-            fill="none"
-          />
-          <path
-            d="M105 73 Q128 69 152 75"
-            stroke="#383d52"
-            strokeWidth="3"
-            strokeLinecap="round"
-            fill="none"
-          />
+          {/* Rounded textured curl bumps along the crown */}
+          <circle cx="72" cy="58" r="13" fill="#18181b" stroke="#0f172a" strokeWidth="3" />
+          <circle cx="96" cy="38" r="15" fill="#18181b" stroke="#0f172a" strokeWidth="3" />
+          <circle cx="126" cy="32" r="16" fill="#18181b" stroke="#0f172a" strokeWidth="3" />
+          <circle cx="156" cy="38" r="15" fill="#18181b" stroke="#0f172a" strokeWidth="3" />
+          <circle cx="180" cy="58" r="13" fill="#18181b" stroke="#0f172a" strokeWidth="3" />
+          <circle cx="192" cy="84" r="12" fill="#18181b" stroke="#0f172a" strokeWidth="3" />
+          <circle cx="56" cy="84" r="12" fill="#18181b" stroke="#0f172a" strokeWidth="3" />
 
           {/* Confident Expressive Eyebrows */}
           <path d="M84 103 Q98 98 111 102" stroke="#1e2029" strokeWidth="4" strokeLinecap="round" />
@@ -247,18 +261,22 @@ export const SpeakingAvatar: React.FC<SpeakingAvatarProps> = ({
       {/* 2. Comic Speech Bubble with Spoken Subtitles (Matches Screenshot) */}
       <div
         style={{
-          position: "relative",
-          marginBottom: 90,
-          maxWidth: 680,
+          position: "absolute",
+          left: isLeft ? 430 : "auto",
+          right: isLeft ? "auto" : 430,
+          bottom: 330,
+          maxWidth: 620,
           background: "#ffffff",
-          border: "4px solid #111827",
-          borderRadius: 28,
-          padding: "16px 28px",
-          boxShadow: "6px 7px 0px rgba(0, 0, 0, 0.95)",
+          border: "3.5px solid #000000",
+          borderRadius: 24,
+          padding: "16px 26px",
+          boxShadow: "5px 5px 0px #000000",
           display: "flex",
           alignItems: "center",
           gap: 12,
           flexWrap: "wrap",
+          transform: `scale(${entrance})`,
+          transformOrigin: isLeft ? "bottom left" : "bottom right",
         }}
       >
         {/* Comic Bubble Pointer Arrow pointing towards Avatar Mouth */}
@@ -271,7 +289,7 @@ export const SpeakingAvatar: React.FC<SpeakingAvatarProps> = ({
             height: 0,
             borderTop: "14px solid transparent",
             borderBottom: "14px solid transparent",
-            [isLeft ? "borderRight" : "borderLeft"]: "18px solid #111827",
+            [isLeft ? "borderRight" : "borderLeft"]: "18px solid #000000",
           }}
         />
         <div

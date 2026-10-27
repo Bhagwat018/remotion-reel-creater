@@ -16,6 +16,9 @@ export const VALID_SCENE_TYPES = [
   "diagram",
   "terminal",
   "chart",
+  "bot",
+  "knobs",
+  "stacked",
 ] as const;
 
 export type SceneType = (typeof VALID_SCENE_TYPES)[number];
@@ -276,6 +279,54 @@ export const chartSceneSchema = baseSceneSchema
     leadIn: data.leadIn || data.subtitle,
   }));
 
+export const botSceneSchema = baseSceneSchema
+  .extend({
+    type: z.literal("bot"),
+    headline: z.string().optional(),
+    strikes: z.array(z.string()).optional(),
+    confirmText: z.string().optional(),
+    expression: z.enum(["happy", "winking", "curious"]).optional(),
+  })
+  .transform((data) => ({
+    ...data,
+    leadIn: data.leadIn || data.subtitle,
+  }));
+
+export const knobsSceneSchema = baseSceneSchema
+  .extend({
+    type: z.literal("knobs"),
+    headline: z.string().optional(),
+    mode: z.enum(["knobs", "weights"]).optional(),
+    title: z.string().optional(),
+    pill1: z.string().optional(),
+    pill2: z.string().optional(),
+  })
+  .transform((data) => ({
+    ...data,
+    leadIn: data.leadIn || data.subtitle,
+  }));
+
+export const stackedSceneSchema = baseSceneSchema
+  .extend({
+    type: z.literal("stacked"),
+    headline: z.string().optional(),
+    cards: z
+      .array(
+        z.object({
+          text: z.string(),
+          highlightWord: z.string().optional(),
+          highlightColor: z.string().optional(),
+          emoji: z.string().optional(),
+        })
+      )
+      .optional(),
+    isPipeline: z.boolean().optional(),
+  })
+  .transform((data) => ({
+    ...data,
+    leadIn: data.leadIn || data.subtitle,
+  }));
+
 export const sceneSchema = z.discriminatedUnion("type", [
   titleSceneSchema,
   pillsSceneSchema,
@@ -292,6 +343,9 @@ export const sceneSchema = z.discriminatedUnion("type", [
   diagramSceneSchema,
   terminalSceneSchema,
   chartSceneSchema,
+  botSceneSchema,
+  knobsSceneSchema,
+  stackedSceneSchema,
 ]);
 
 export type TitleSceneProps = z.infer<typeof titleSceneSchema>;
@@ -309,6 +363,9 @@ export type CtaSceneProps = z.infer<typeof ctaSceneSchema>;
 export type DiagramSceneProps = z.infer<typeof diagramSceneSchema>;
 export type TerminalSceneProps = z.infer<typeof terminalSceneSchema>;
 export type ChartSceneProps = z.infer<typeof chartSceneSchema>;
+export type BotSceneProps = z.infer<typeof botSceneSchema>;
+export type KnobsSceneProps = z.infer<typeof knobsSceneSchema>;
+export type StackedSceneProps = z.infer<typeof stackedSceneSchema>;
 
 export type SceneData =
   | TitleSceneProps
@@ -325,7 +382,10 @@ export type SceneData =
   | CtaSceneProps
   | DiagramSceneProps
   | TerminalSceneProps
-  | ChartSceneProps;
+  | ChartSceneProps
+  | BotSceneProps
+  | KnobsSceneProps
+  | StackedSceneProps;
 
 export const avatarSchema = z.object({
   enabled: z.boolean().default(true),
@@ -353,6 +413,7 @@ export const metaSchema = z
     bgmVolume: z.number().min(0).max(1).optional().default(0.18),
     captionStyle: z.enum(["bubble", "kinetic", "both", "none"]).optional().default("bubble"),
     showSafeZone: z.boolean().optional().default(false),
+    showHandle: z.boolean().optional().default(false),
     coverIntro: z.boolean().optional().default(false),
   })
   .transform((meta) => {
@@ -369,6 +430,7 @@ export const metaSchema = z
       bgmVolume: meta.bgmVolume ?? 0.18,
       captionStyle: meta.captionStyle ?? "bubble",
       showSafeZone: meta.showSafeZone ?? false,
+      showHandle: meta.showHandle ?? false,
       coverIntro: meta.coverIntro ?? false,
     };
   });

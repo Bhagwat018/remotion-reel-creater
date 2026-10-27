@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "topic": "Build Your Own Open-Source Package",
+    "audience": "Developers, coders, tech enthusiasts",
+    "lengthSec": 35,
+    "language": "Hinglish",
+    "handle": "@techwith.GenZ",
+    "slug": "build-npm-package-ts",
+    "voiceFile": "reels/build-npm-package-ts/voice.mp3"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 5,
+      "voice": "Kab tak dusro ki libraries use karoge? Aaj khud ka NPM package publish karte hain!",
+      "headline": "BUILD YOUR OWN PACKAGE"
+    },
+    {
+      "id": "s2-setup",
+      "type": "terminal",
+      "startSec": 5,
+      "endSec": 11,
+      "voice": "Step one: npm init se project setup karo aur TypeScript configure karo. Fir apna code likho...",
+      "headline": "SETUP TYPESCRIPT",
+      "filename": "terminal.sh",
+      "lines": [
+        "$ npm init -y",
+        "$ npm i -D typescript",
+        "$ npx tsc --init",
+        "> Ready to code..."
+      ],
+      "highlightLines": [
+        3
+      ]
+    },
+    {
+      "id": "s3-dx",
+      "type": "pills",
+      "startSec": 11,
+      "endSec": 17,
+      "voice": "...jaise koi mast sa responsive layout kit ya shimmer effect. Yaad rakhna, types zaroor export karna, kyunki Developer Experience is king!",
+      "headline": "DX IS KING",
+      "items": [
+        "Export Types",
+        "Responsive Layouts",
+        "Shimmer Effects"
+      ]
+    },
+    {
+      "id": "s4-publish",
+      "type": "terminal",
+      "startSec": 17,
+      "endSec": 24,
+      "voice": "Step two: package dot json mein entry points set karo. Step three: terminal mein npm publish maro, aur boom! Package duniya ke liye live.",
+      "headline": "NPM PUBLISH",
+      "filename": "bash",
+      "lines": [
+        "$ npm run build",
+        "$ npm publish --access public",
+        "> 📦 package@1.0.0 published!"
+      ],
+      "highlightLines": [
+        2
+      ]
+    },
+    {
+      "id": "s5-protip",
+      "type": "orbit",
+      "startSec": 24,
+      "endSec": 31,
+      "voice": "Pro tip: GitHub Actions se CI/CD pipeline set kar lo taaki har push par package npm registry par auto-publish ho jaye.",
+      "headline": "AUTO PUBLISH CI/CD",
+      "center": "GitHub Actions",
+      "orbiting": [
+        "NPM Registry",
+        "Auto-Release",
+        "CI/CD"
+      ]
+    },
+    {
+      "id": "s6-cta",
+      "type": "cta",
+      "startSec": 31,
+      "endSec": 35,
+      "voice": "Apna open-source empire banane ke liye techwith.GenZ ko follow kar lo!",
+      "headline": "START YOUR EMPIRE",
+      "buttonText": "FOLLOW @techwith.GenZ"
+    }
+  ]
+}

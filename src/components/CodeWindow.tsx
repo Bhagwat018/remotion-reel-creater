@@ -57,10 +57,10 @@ export const CodeWindow: React.FC<CodeWindowProps> = ({
         width: "100%",
         maxWidth: 920,
         backgroundColor: "#0d1117",
-        borderRadius: 24,
+        borderRadius: 22,
         overflow: "hidden",
-        boxShadow: "0 28px 60px rgba(0, 0, 0, 0.55), 0 0 30px rgba(56, 189, 248, 0.1)",
-        border: "1.5px solid rgba(56, 189, 248, 0.3)",
+        boxShadow: "7px 7px 0px #000000",
+        border: "3.5px solid #000000",
         opacity,
         transform: `scale(${scale})`,
       }}
@@ -71,15 +71,15 @@ export const CodeWindow: React.FC<CodeWindowProps> = ({
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          padding: "20px 28px",
+          padding: "18px 24px",
           backgroundColor: "#161b22",
-          borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
+          borderBottom: "3px solid #000000",
         }}
       >
-        <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#ff5f56" }} />
-          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#ffbd2e" }} />
-          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#27c93f" }} />
+        <div style={{ display: "flex", gap: 9, alignItems: "center" }}>
+          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#ff5f56", border: "1.5px solid #000000" }} />
+          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#ffbd2e", border: "1.5px solid #000000" }} />
+          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#27c93f", border: "1.5px solid #000000" }} />
         </div>
         <div
           style={{

@@ -1,38 +1,25 @@
 import React from "react";
-import { useCurrentFrame } from "remotion";
-import { resolveFontFamily, useTheme } from "../theme/theme";
-import { useBlurIn } from "../lib/motion";
+import { NeoTopPill } from "./neo/NeoTopPill";
 
 interface LeadInProps {
   text?: string;
   delayFrames?: number;
 }
 
+const PILL_COLORS: Array<"orange" | "blue" | "pink" | "purple" | "green"> = [
+  "orange",
+  "blue",
+  "pink",
+  "purple",
+  "green",
+];
+
 export const LeadIn: React.FC<LeadInProps> = ({ text, delayFrames = 0 }) => {
-  const frame = useCurrentFrame();
-  const theme = useTheme();
-
-  const motionStyle = useBlurIn(frame, delayFrames);
-
   if (!text) return null;
 
-  const fontFamily = resolveFontFamily(text, theme.typography.leadIn);
+  // Pick deterministic color based on text
+  const charCodeSum = text.split("").reduce((acc, c) => acc + c.charCodeAt(0), 0);
+  const color = PILL_COLORS[charCodeSum % PILL_COLORS.length];
 
-  return (
-    <div
-      style={{
-        ...motionStyle,
-        fontFamily,
-        fontSize: 34,
-        fontWeight: 400,
-        color: theme.colors.muted,
-        textTransform: "lowercase",
-        letterSpacing: "0.02em",
-        marginBottom: 16,
-        textAlign: "center",
-      }}
-    >
-      {text}
-    </div>
-  );
+  return <NeoTopPill text={text.toUpperCase()} color={color} delayFrames={delayFrames} />;
 };

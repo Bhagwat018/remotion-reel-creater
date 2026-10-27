@@ -3,6 +3,8 @@ import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { useTheme } from "../theme/theme";
 import { TechLogo } from "../components/TechLogo";
 import { SceneLayout } from "../components/SceneLayout";
+import { NeoLineChartCard } from "../components/neo/NeoLineChartCard";
+import { MotionDirection } from "../lib/directionalMotion";
 
 export interface ChartItem {
   label: string;
@@ -14,6 +16,8 @@ export interface ChartItem {
 }
 
 export interface ChartSceneProps {
+  id?: string;
+  direction?: MotionDirection;
   leadIn?: string;
   headline?: string;
   subheadline?: string;
@@ -28,35 +32,29 @@ export interface ChartSceneProps {
 }
 
 export const ChartScene: React.FC<ChartSceneProps> = ({
+  id,
+  direction,
   leadIn,
   headline = "BENCHMARK *PERFORMANCE*",
-  subheadline = "SWE-bench Verified Coding Accuracy",
   chartType = "bar",
   maxValue = 100,
   items = [
-    { label: "Claude 3.5 Sonnet", value: 92, displayValue: "92.4%", icon: "claude", color: "#d97706", badge: "TOP 1" },
-    { label: "GPT-4o (OpenAI)", value: 78, displayValue: "78.2%", icon: "openai", color: "#10b981" },
-    { label: "Llama 3 70B", value: 65, displayValue: "65.1%", icon: "python", color: "#387eb8" },
+    { label: "Claude 3.5 Sonnet", value: 92, displayValue: "92.4%", icon: "claude", color: "#fb923c", badge: "TOP 1" },
+    { label: "GPT-4o (OpenAI)", value: 78, displayValue: "78.2%", icon: "openai", color: "#4ade80" },
+    { label: "Llama 3 70B", value: 65, displayValue: "65.1%", icon: "python", color: "#60a5fa" },
   ],
-  metricValue = "10x",
-  metricLabel = "FASTER INFERENCE",
-  metricComparison = "vs Traditional Cloud LLM",
-  metricIcon = "claude",
+  metricValue = "+106%",
+  metricComparison = "Benchmark tested under 50,000 req/sec load",
   durationInFrames = 150,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const theme = useTheme();
 
-  // Entrance spring for header
-  const headerSpring = spring({
-    frame,
-    fps,
-    config: { damping: 14, stiffness: 140 },
-  });
-
   return (
     <SceneLayout
+      id={id}
+      direction={direction}
       leadIn={leadIn}
       headline={headline}
       durationInFrames={durationInFrames}
@@ -70,25 +68,15 @@ export const ChartScene: React.FC<ChartSceneProps> = ({
           marginTop: 0,
         }}
       >
-        {subheadline && (
-          <p
-            style={{
-              fontFamily: theme.typography.ui,
-              fontSize: 22,
-              fontWeight: 600,
-              color: theme.colors.muted,
-              marginTop: -28,
-              marginBottom: 36,
-              textAlign: "center",
-            }}
-          >
-            {subheadline}
-          </p>
-        )}
-
-        {/* 2. Chart Body */}
-        {chartType === "bar" ? (
-          /* Staggered Animated Bar Chart in High-Contrast Dark Cards */
+        {chartType === "metric" ? (
+          <NeoLineChartCard
+            title={headline.replace(/[*_#`]/g, "")}
+            metric={metricValue}
+            badge="TOP BENCHMARK 🚀"
+            subtext={metricComparison}
+            delayFrames={4}
+          />
+        ) : (
           <div
             style={{
               width: "100%",
@@ -118,16 +106,15 @@ export const ChartScene: React.FC<ChartSceneProps> = ({
                     display: "flex",
                     flexDirection: "column",
                     gap: 10,
-                    backgroundColor: "rgba(15, 23, 42, 0.94)",
-                    border: "1px solid rgba(255, 255, 255, 0.12)",
+                    backgroundColor: "#ffffff",
+                    border: "3px solid #000000",
                     borderRadius: 18,
                     padding: "16px 22px",
-                    boxShadow: "0 10px 25px rgba(0, 0, 0, 0.2)",
+                    boxShadow: "5px 5px 0px #000000",
                     opacity: barSpring,
                     transform: `translateX(${interpolate(barSpring, [0, 1], [-20, 0])}px)`,
                   }}
                 >
-                  {/* Row Header (Icon + Label + Value + Badge) */}
                   <div
                     style={{
                       display: "flex",
@@ -141,8 +128,8 @@ export const ChartScene: React.FC<ChartSceneProps> = ({
                         style={{
                           fontFamily: theme.typography.headline,
                           fontSize: 26,
-                          fontWeight: 700,
-                          color: "#f8fafc",
+                          fontWeight: 800,
+                          color: "#000000",
                         }}
                       >
                         {item.label}
@@ -150,14 +137,13 @@ export const ChartScene: React.FC<ChartSceneProps> = ({
                       {item.badge && (
                         <span
                           style={{
-                            fontSize: 13,
-                            fontWeight: 800,
-                            padding: "3px 8px",
-                            borderRadius: 6,
-                            backgroundColor: `${barColor}30`,
-                            color: barColor,
-                            border: `1px solid ${barColor}60`,
-                            letterSpacing: "0.06em",
+                            fontSize: 16,
+                            fontWeight: 900,
+                            padding: "3px 10px",
+                            borderRadius: 999,
+                            backgroundColor: "#fb923c",
+                            color: "#000000",
+                            border: "2px solid #000000",
                           }}
                         >
                           {item.badge}
@@ -169,118 +155,36 @@ export const ChartScene: React.FC<ChartSceneProps> = ({
                       style={{
                         fontFamily: theme.typography.mono,
                         fontSize: 28,
-                        fontWeight: 800,
-                        color: barColor,
+                        fontWeight: 900,
+                        color: "#000000",
                       }}
                     >
                       {item.displayValue || `${currentValue}%`}
                     </span>
                   </div>
 
-                  {/* Animated Progress Bar Track */}
                   <div
                     style={{
                       width: "100%",
                       height: 18,
-                      backgroundColor: "rgba(255, 255, 255, 0.08)",
+                      backgroundColor: "#f1f5f9",
                       borderRadius: 10,
                       overflow: "hidden",
-                      border: "1px solid rgba(255, 255, 255, 0.08)",
-                      padding: 2,
+                      border: "2px solid #000000",
                     }}
                   >
                     <div
                       style={{
                         width: `${currentWidth}%`,
                         height: "100%",
+                        backgroundColor: barColor,
                         borderRadius: 8,
-                        background: `linear-gradient(90deg, ${barColor}aa 0%, ${barColor} 100%)`,
-                        boxShadow: `0 0 16px ${barColor}60`,
-                        transition: "none",
                       }}
                     />
                   </div>
                 </div>
               );
             })}
-          </div>
-        ) : (
-          /* Hero Metric Card */
-          <div
-            style={{
-              background: "rgba(15, 23, 42, 0.92)",
-              border: "1.5px solid rgba(59, 130, 246, 0.4)",
-              borderRadius: 32,
-              padding: "48px 64px",
-              textAlign: "center",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              gap: 16,
-              boxShadow: "0 30px 60px rgba(0, 0, 0, 0.3), 0 0 50px rgba(59, 130, 246, 0.2)",
-              transform: `scale(${headerSpring})`,
-            }}
-          >
-            {metricIcon && (
-              <div
-                style={{
-                  width: 80,
-                  height: 80,
-                  borderRadius: 24,
-                  background: "rgba(255, 255, 255, 0.05)",
-                  border: "1px solid rgba(255, 255, 255, 0.1)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginBottom: 8,
-                }}
-              >
-                <TechLogo name={metricIcon} size={50} />
-              </div>
-            )}
-
-            <div
-              style={{
-                fontFamily: theme.typography.mono,
-                fontSize: 100,
-                fontWeight: 900,
-                color: "#38bdf8",
-                letterSpacing: "-0.04em",
-                lineHeight: 1,
-                textShadow: "0 0 30px rgba(56, 189, 248, 0.4)",
-              }}
-            >
-              {metricValue}
-            </div>
-
-            <div
-              style={{
-                fontFamily: theme.typography.headline,
-                fontSize: 32,
-                fontWeight: 800,
-                color: "#f8fafc",
-                textTransform: "uppercase",
-                letterSpacing: "0.04em",
-              }}
-            >
-              {metricLabel}
-            </div>
-
-            {metricComparison && (
-              <div
-                style={{
-                  fontSize: 20,
-                  fontWeight: 600,
-                  color: "#94a3b8",
-                  background: "rgba(255, 255, 255, 0.05)",
-                  padding: "8px 20px",
-                  borderRadius: 999,
-                  border: "1px solid rgba(255, 255, 255, 0.1)",
-                }}
-              >
-                {metricComparison}
-              </div>
-            )}
           </div>
         )}
       </div>
