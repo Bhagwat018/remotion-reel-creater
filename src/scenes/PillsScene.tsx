@@ -35,28 +35,28 @@ export const PillsScene: React.FC<
           <div
             style={{
               alignSelf: "center",
-              marginTop: 10,
-              backgroundColor: "#22c55e",
-              border: "3.5px solid #000000",
-              borderRadius: 18,
+              marginTop: 14,
+              backgroundColor: "#fef08a",
+              border: "3px solid #000000",
+              borderRadius: 16,
               padding: "12px 28px",
-              boxShadow: "5px 5px 0px #000000",
+              boxShadow: "4px 4px 0px #000000",
               display: "flex",
               alignItems: "center",
               gap: 12,
             }}
           >
-            <span style={{ color: "#ffffff", fontSize: 24, fontWeight: 900 }}>✓</span>
+            <span style={{ color: "#16a34a", fontSize: 24, fontWeight: 900 }}>⚡</span>
             <span
               style={{
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 22,
+                fontSize: 20,
                 fontWeight: 800,
-                color: "#ffffff",
-                letterSpacing: "-0.01em",
+                color: "#000000",
+                letterSpacing: "0.02em",
               }}
             >
-              100% PHISHING RESISTANT
+              KEY HIGHLIGHTS LOCKED
             </span>
           </div>
         )}

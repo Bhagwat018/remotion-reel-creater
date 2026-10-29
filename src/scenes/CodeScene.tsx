@@ -1,7 +1,7 @@
 import React from "react";
 import { CodeSceneProps } from "../schema";
 import { SceneLayout } from "../components/SceneLayout";
-import { CodeWindow } from "../components/CodeWindow";
+import { CodeSynthesizer } from "../components/CodeSynthesizer";
 import { MotionDirection } from "../lib/directionalMotion";
 
 export const CodeScene: React.FC<
@@ -16,11 +16,22 @@ export const CodeScene: React.FC<
   highlightLines,
   durationInFrames,
 }) => {
+  const fname = filename || "script.ts";
+  const runner = fname.endsWith(".py")
+    ? "python3"
+    : fname.endsWith(".sh") || fname.endsWith(".bash")
+    ? "bash"
+    : fname.endsWith(".go")
+    ? "go run"
+    : fname.endsWith(".rs")
+    ? "cargo run"
+    : "node";
+
   return (
     <SceneLayout
       id={id}
       direction={direction}
-      leadIn={leadIn}
+      leadIn={leadIn || "CODE SYNTHESIZER"}
       headline={headline}
       durationInFrames={durationInFrames}
     >
@@ -34,11 +45,12 @@ export const CodeScene: React.FC<
           marginTop: 6,
         }}
       >
-        <CodeWindow
-          filename={filename}
+        <CodeSynthesizer
+          filename={fname}
           lines={lines}
           highlightLines={highlightLines}
-          delayFrames={6}
+          delayFrames={5}
+          charsPerFrame={1.5}
         />
 
         {/* Live Terminal Output Bar */}
@@ -62,7 +74,7 @@ export const CodeScene: React.FC<
         >
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
             <span style={{ color: "#16a34a" }}>● LIVE</span>
-            <span style={{ color: "#000000" }}>$ tsx {filename || "security.ts"}</span>
+            <span style={{ color: "#000000" }}>$ {runner} {fname}</span>
           </div>
           <div
             style={{
@@ -76,27 +88,12 @@ export const CodeScene: React.FC<
               boxShadow: "2px 2px 0px #000000",
             }}
           >
-            STATUS: 200 OK
+            EXECUTION: OK
           </div>
         </div>
 
-        {/* Security Defense Chips Row */}
+        {/* Dynamic Execution Context Chips */}
         <div style={{ display: "flex", gap: 14, alignItems: "center", flexWrap: "wrap", justifyContent: "center" }}>
-          <div
-            style={{
-              backgroundColor: "#fee2e2",
-              border: "2.5px solid #000000",
-              borderRadius: 12,
-              padding: "8px 18px",
-              fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 18,
-              fontWeight: 800,
-              color: "#dc2626",
-              boxShadow: "3px 3px 0px #000000",
-            }}
-          >
-            🛡️ ZERO-DAY DEFENSE ACTIVE
-          </div>
           <div
             style={{
               backgroundColor: "#fef08a",
@@ -110,7 +107,22 @@ export const CodeScene: React.FC<
               boxShadow: "3px 3px 0px #000000",
             }}
           >
-            ⚡ SUB-MS KILL SWITCH
+            ⚡ SYNTAX HIGHLIGHTED
+          </div>
+          <div
+            style={{
+              backgroundColor: "#e0e7ff",
+              border: "2.5px solid #000000",
+              borderRadius: 12,
+              padding: "8px 18px",
+              fontFamily: "'JetBrains Mono', monospace",
+              fontSize: 18,
+              fontWeight: 800,
+              color: "#3730a3",
+              boxShadow: "3px 3px 0px #000000",
+            }}
+          >
+            ✔ PRODUCTION READY SCRIPT
           </div>
         </div>
       </div>

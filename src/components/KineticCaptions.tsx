@@ -47,7 +47,7 @@ export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
         position: "absolute",
         left: 0,
         right: 0,
-        bottom: 440, // Sits in sweet spot between avatar bubble & center
+        bottom: 260, // Standard lower-third viral captions position
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

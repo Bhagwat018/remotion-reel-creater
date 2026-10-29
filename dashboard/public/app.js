@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const aiTopicInput = document.getElementById("aiTopicInput");
   const aiScriptInput = document.getElementById("aiScriptInput");
   const aiLanguageSelect = document.getElementById("aiLanguageSelect");
+  const aiVoiceSelect = document.getElementById("aiVoiceSelect");
   const aiDurationSelect = document.getElementById("aiDurationSelect");
   const generateAiReelBtn = document.getElementById("generateAiReelBtn");
   const aiBtnSpinner = document.getElementById("aiBtnSpinner");
@@ -893,6 +894,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const script = aiScriptInput ? aiScriptInput.value.trim() : "";
       const language = aiLanguageSelect ? aiLanguageSelect.value : "hinglish";
+      const voice = aiVoiceSelect ? aiVoiceSelect.value : "Rishi";
       const durationSec = aiDurationSelect ? aiDurationSelect.value : "42";
       const storedKey = localStorage.getItem("remotion_gemini_api_key") || "";
 
@@ -902,7 +904,7 @@ document.addEventListener("DOMContentLoaded", () => {
       aiBtnIcon.style.display = "none";
       aiBtnText.textContent = "AI Directing 8 Scenes...";
 
-      logToTerminal(`[AI Director] Contacting Gemini 2.5 Flash for topic: "${topic}"...`, "info");
+      logToTerminal(`[AI Director] Contacting Gemini 3.5 Flash for topic: "${topic}" (Voice: ${voice})...`, "info");
 
       try {
         const res = await fetch("/api/ai/generate-reel", {
@@ -915,6 +917,7 @@ document.addEventListener("DOMContentLoaded", () => {
             topic,
             script,
             language,
+            voice,
             durationSec,
             apiKey: storedKey,
           }),

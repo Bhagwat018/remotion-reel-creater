@@ -19,6 +19,7 @@ export const VALID_SCENE_TYPES = [
   "bot",
   "knobs",
   "stacked",
+  "flow",
 ] as const;
 
 export type SceneType = (typeof VALID_SCENE_TYPES)[number];
@@ -327,6 +328,32 @@ export const stackedSceneSchema = baseSceneSchema
     leadIn: data.leadIn || data.subtitle,
   }));
 
+export const flowSceneSchema = baseSceneSchema
+  .extend({
+    type: z.literal("flow"),
+    headline: z.string().optional(),
+    nodes: z
+      .array(
+        z.object({
+          id: z.string().optional(),
+          title: z.string(),
+          subtitle: z.string().optional(),
+          icon: z.string().optional(),
+          status: z.string().optional(),
+          accentColor: z.string().optional(),
+        })
+      )
+      .optional(),
+    steps: z.array(z.any()).optional(),
+    flow: z.array(z.any()).optional(),
+    brand: z.string().optional(),
+  })
+  .transform((data) => ({
+    ...data,
+    headline: data.headline || "ARCHITECTURE PIPELINE",
+    leadIn: data.leadIn || data.subtitle,
+  }));
+
 export const sceneSchema = z.discriminatedUnion("type", [
   titleSceneSchema,
   pillsSceneSchema,
@@ -346,6 +373,7 @@ export const sceneSchema = z.discriminatedUnion("type", [
   botSceneSchema,
   knobsSceneSchema,
   stackedSceneSchema,
+  flowSceneSchema,
 ]);
 
 export type TitleSceneProps = z.infer<typeof titleSceneSchema>;
@@ -366,6 +394,7 @@ export type ChartSceneProps = z.infer<typeof chartSceneSchema>;
 export type BotSceneProps = z.infer<typeof botSceneSchema>;
 export type KnobsSceneProps = z.infer<typeof knobsSceneSchema>;
 export type StackedSceneProps = z.infer<typeof stackedSceneSchema>;
+export type FlowSceneProps = z.infer<typeof flowSceneSchema>;
 
 export type SceneData =
   | TitleSceneProps
@@ -385,7 +414,8 @@ export type SceneData =
   | ChartSceneProps
   | BotSceneProps
   | KnobsSceneProps
-  | StackedSceneProps;
+  | StackedSceneProps
+  | FlowSceneProps;
 
 export const avatarSchema = z.object({
   enabled: z.boolean().default(true),
@@ -415,6 +445,8 @@ export const metaSchema = z
     showSafeZone: z.boolean().optional().default(false),
     showHandle: z.boolean().optional().default(false),
     coverIntro: z.boolean().optional().default(false),
+    voice: z.string().optional(),
+    voiceSpeed: z.number().optional(),
   })
   .transform((meta) => {
     const slug = meta.slug;

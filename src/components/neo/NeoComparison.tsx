@@ -1,5 +1,6 @@
 import React from "react";
-import { spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { Audio, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { uiSwitch } from "../../lib/sfx";
 
 export interface ComparisonItem {
   title: string;
@@ -120,6 +121,7 @@ export const NeoComparison: React.FC<NeoComparisonProps> = ({
         margin: "0 auto",
       }}
     >
+      {frame === delayFrames + 4 && <Audio src={uiSwitch} volume={0.7} />}
       {renderCard(left, popLeft, -1.5)}
       {renderCard(right, popRight, 1.5)}
     </div>

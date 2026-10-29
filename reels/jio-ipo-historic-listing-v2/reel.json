@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "topic": "Jio IPO Historic Listing & Premium",
+    "audience": "Retail investors, tech enthusiasts",
+    "lengthSec": 32,
+    "language": "Hinglish",
+    "handle": "@techwith.GenZ",
+    "slug": "jio-ipo-historic-listing-v2",
+    "voiceFile": "reels/jio-ipo-historic-listing-v2/voice.mp3",
+    "durationSec": 44,
+    "wordsFile": "reels/jio-ipo-historic-listing-v2/words.json"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 10.74,
+      "voice": "Jio ka IPO list ho gaya aur isne stock market mein aag laga di! 1119 ka share seedha 1359 par khula.",
+      "headline": "JIO CREATES HISTORY"
+    },
+    {
+      "id": "s2-premium",
+      "type": "stat",
+      "startSec": 10.74,
+      "endSec": 19.09,
+      "voice": "Matlab listing par hi solid 21 percent ka premium! Ye India ka sabse bada 30 hazar crore ka IPO tha.",
+      "headline": "HUGE LISTING GAIN",
+      "value": "21%",
+      "label": "Listing Premium"
+    },
+    {
+      "id": "s3-subscription",
+      "type": "orbit",
+      "startSec": 19.09,
+      "endSec": 27.09,
+      "voice": "Retailers ne isko dhai guna bhara, par Institutions yani smart money ne isko massive 70 times subscribe kiya!",
+      "headline": "INSTITUTIONAL DEMAND",
+      "center": "Jio IPO",
+      "orbiting": [
+        "QIB 70.55x",
+        "Retail 2.72x",
+        "Total 22x"
+      ]
+    },
+    {
+      "id": "s4-position",
+      "type": "pills",
+      "startSec": 27.09,
+      "endSec": 38.47,
+      "voice": "Listing ke sath hi Jio officially India ki sabse badi telecom company ban gayi hai. Brokers ka 1350 ka target toh isne day one par hi tod diya.",
+      "headline": "INDIA'S BIGGEST",
+      "items": [
+        "Largest Telecom",
+        "Targets Smashed",
+        "Mega Cap"
+      ]
+    },
+    {
+      "id": "s5-cta",
+      "type": "cta",
+      "startSec": 38.47,
+      "endSec": 43.7,
+      "voice": "Aise hi market aur tech updates ke liye techwith.GenZ ko follow kar lo!",
+      "headline": "STAY UPDATED",
+      "buttonText": "FOLLOW @techwith.GenZ"
+    }
+  ]
+}

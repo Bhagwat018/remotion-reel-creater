@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "topic": "Kubernetes Microservices Architecture",
+    "slug": "kubernetes-microservices-flow",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "lengthSec": 24,
+    "voice": "Rishi",
+    "voiceFile": "reels/kubernetes-microservices-flow/voice.mp3",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.22,
+    "captionStyle": "bubble",
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "durationSec": 18,
+    "wordsFile": "reels/kubernetes-microservices-flow/words.json"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 5.87,
+      "voice": "Kya aapko pata hai ki modern Kubernetes architecture me requests kaise travel karti hain?",
+      "headline": "KUBERNETES *FLOW*",
+      "leadIn": "SYSTEM DESIGN"
+    },
+    {
+      "id": "s2-flow",
+      "type": "flow",
+      "startSec": 5.87,
+      "endSec": 11.88,
+      "voice": "Request sabse pehle Cloudflare se NGINX ingress aur fir pods me route hoti hai.",
+      "headline": "INGRESS TO *PODS*",
+      "leadIn": "LIVE PIPELINE",
+      "brand": "kubernetes",
+      "nodes": [
+        {
+          "id": "1",
+          "title": "Client Traffic",
+          "subtitle": "Cloudflare DNS & DDoS Shield",
+          "icon": "🌐",
+          "status": "200 OK",
+          "accentColor": "#60a5fa"
+        },
+        {
+          "id": "2",
+          "title": "NGINX Ingress",
+          "subtitle": "SSL Termination & Routing",
+          "icon": "🛡️",
+          "status": "ROUTING",
+          "accentColor": "#c084fc"
+        },
+        {
+          "id": "3",
+          "title": "Kubernetes Pod",
+          "subtitle": "Node.js Microservices Cluster",
+          "icon": "☸️",
+          "status": "HEALTHY",
+          "accentColor": "#326ce5"
+        },
+        {
+          "id": "4",
+          "title": "Postgres Replica",
+          "subtitle": "High Availability Cluster",
+          "icon": "🗄️",
+          "status": "SYNCED",
+          "accentColor": "#4ade80"
+        }
+      ]
+    },
+    {
+      "id": "s3-cta",
+      "type": "cta",
+      "startSec": 11.88,
+      "endSec": 17.65,
+      "voice": "System design simple bhasha me seekhne ke liye follow karein @techwith.GenZ ko!",
+      "headline": "MASTER *KUBERNETES*",
+      "buttonText": "FOLLOW FOR SYSTEM DESIGN"
+    }
+  ]
+}

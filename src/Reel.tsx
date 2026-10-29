@@ -11,6 +11,8 @@ import { SpeakingAvatar } from "./components/SpeakingAvatar";
 import { KineticCaptions } from "./components/KineticCaptions";
 import { SafeZoneOverlay } from "./components/SafeZoneOverlay";
 import { CoverThumbnail } from "./components/CoverThumbnail";
+import { CinematicCamera } from "./components/CinematicCamera";
+import { AudioWaveformSpectrogram } from "./components/AudioWaveformSpectrogram";
 import { getSceneComponent } from "./scenes/registry";
 import { framesToSec, getSceneWords, resolveSceneTimings } from "./lib/timing";
 
@@ -68,8 +70,8 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
     return staticFile(path);
   }, [meta.bgm]);
 
-  // Avatar config
-  const avatarEnabled = meta.avatar?.enabled !== false;
+  // Avatar config: Default to false (clean viral style) unless explicitly enabled in meta
+  const avatarEnabled = meta.avatar?.enabled === true;
   const avatarPosition = meta.avatar?.position || "left";
   const captionStyle = meta.captionStyle || (avatarEnabled ? "bubble" : "kinetic");
 
@@ -119,10 +121,12 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
           const crossfadeFrames = activeTheme.motion.sceneCrossfadeFrames;
           const sequenceDuration = scene.durationInFrames + crossfadeFrames;
 
-          // Subtle transition sound effect (whoosh for scene changes, ding for charts/stats)
+          // Smart context-aware sound effect
           const sfxFile =
             scene.data.type === "chart" || scene.data.type === "stat"
               ? "sfx/ding.mp3"
+              : scene.data.type === "code" || scene.data.type === "flow" || scene.data.type === "bot"
+              ? "sfx/pop.mp3"
               : "sfx/whoosh.mp3";
 
           return (
@@ -134,14 +138,16 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
             >
               {/* Subtle Scene Transition SFX */}
               {sceneIndex > 0 && (
-                <Audio src={staticFile(sfxFile)} volume={0.2} />
+                <Audio src={staticFile(sfxFile)} volume={0.22} />
               )}
-              <SceneComponent
-                {...scene.data}
-                sceneIndex={sceneIndex}
-                slug={meta.slug}
-                durationInFrames={sequenceDuration}
-              />
+              <CinematicCamera sceneType={scene.data.type} durationInFrames={sequenceDuration}>
+                <SceneComponent
+                  {...scene.data}
+                  sceneIndex={sceneIndex}
+                  slug={meta.slug}
+                  durationInFrames={sequenceDuration}
+                />
+              </CinematicCamera>
             </Sequence>
           );
         })}
@@ -165,6 +171,20 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
 
         {/* Fixed bottom handle pill (only when explicitly requested) */}
         {meta.showHandle && <HandlePill handle={meta.handle} />}
+
+        {/* Real-time Speech-reactive Audio Waveform Spectrogram */}
+        <AudioWaveformSpectrogram
+          isTalking={
+            words && words.length > 0
+              ? words.some((w) => currentTimeSec >= w.startSec - 0.1 && currentTimeSec <= w.endSec + 0.1)
+              : true
+          }
+          style={{
+            position: "absolute",
+            bottom: 38,
+            right: 48,
+          }}
+        />
 
         {/* Social Safe Zone Overlay (Instagram & YouTube Shorts UI Guides) */}
         <SafeZoneOverlay visible={Boolean(meta.showSafeZone)} />

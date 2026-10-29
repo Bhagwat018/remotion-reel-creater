@@ -1,4 +1,5 @@
 import React from "react";
+import { useCurrentFrame } from "remotion";
 import { CtaSceneProps } from "../schema";
 import { SceneLayout } from "../components/SceneLayout";
 import { Cursor } from "../components/Cursor";
@@ -6,10 +7,15 @@ import { NeoBigButton } from "../components/neo/NeoBigButton";
 import { NeoTopPill } from "../components/neo/NeoTopPill";
 import { MotionDirection } from "../lib/directionalMotion";
 
+import { StarburstBadge } from "../components/StarburstBadge";
+
 export const CtaScene: React.FC<
   CtaSceneProps & { callToAction?: string; durationInFrames: number; direction?: MotionDirection; id?: string }
 > = ({ id, direction, leadIn, headline, buttonText, callToAction, durationInFrames }) => {
+  const frame = useCurrentFrame();
   const effectiveButtonText = buttonText || callToAction || "COMMENT 'CODE' 💬";
+  const clickFrame = 36;
+  const isDepressed = frame >= clickFrame && frame <= clickFrame + 6;
 
   return (
     <SceneLayout
@@ -32,14 +38,31 @@ export const CtaScene: React.FC<
       >
         <NeoTopPill text="@techwith.GenZ" color="orange" delayFrames={2} />
 
-        <NeoBigButton
-          text={effectiveButtonText}
-          subtext="DROP A COMMENT TO GET CODE & ARCHITECTURE 🚀"
-          bg="#ec4899"
-          color="#ffffff"
-          rotate={-2.5}
-          delayFrames={4}
-        />
+        <div
+          style={{
+            position: "relative",
+            transform: isDepressed ? "translateY(5px) scale(0.97)" : "none",
+            transformOrigin: "center center",
+          }}
+        >
+          <NeoBigButton
+            text={effectiveButtonText}
+            subtext="DROP A COMMENT TO GET CODE & ARCHITECTURE 🚀"
+            bg="#ec4899"
+            color="#ffffff"
+            rotate={-2.5}
+            delayFrames={4}
+          />
+          <StarburstBadge
+            text="100% FREE"
+            subtext="DROP 'CODE'"
+            color="#22c55e"
+            textColor="#ffffff"
+            position="none"
+            style={{ position: "absolute", top: -28, right: -28 }}
+            delayFrames={8}
+          />
+        </div>
 
         {/* Vector cursor flying in and clicking the button */}
         <Cursor

@@ -1,0 +1,72 @@
+[
+  {
+    "word": "Scene",
+    "startSec": 0,
+    "endSec": 0.5
+  },
+  {
+    "word": "1",
+    "startSec": 0.5,
+    "endSec": 1
+  },
+  {
+    "word": "Scene",
+    "startSec": 1.36,
+    "endSec": 1.79
+  },
+  {
+    "word": "2",
+    "startSec": 1.79,
+    "endSec": 2.22
+  },
+  {
+    "word": "Scene",
+    "startSec": 2.58,
+    "endSec": 3.03
+  },
+  {
+    "word": "3",
+    "startSec": 3.03,
+    "endSec": 3.48
+  },
+  {
+    "word": "Scene",
+    "startSec": 3.82,
+    "endSec": 4.22
+  },
+  {
+    "word": "4",
+    "startSec": 4.22,
+    "endSec": 4.62
+  },
+  {
+    "word": "Scene",
+    "startSec": 4.97,
+    "endSec": 5.45
+  },
+  {
+    "word": "5",
+    "startSec": 5.45,
+    "endSec": 5.93
+  },
+  {
+    "word": "Scene",
+    "startSec": 6.28,
+    "endSec": 6.77
+  },
+  {
+    "word": "6",
+    "startSec": 6.77,
+    "endSec": 7.26
+  },
+  {
+    "word": "Scene",
+    "startSec": 7.6,
+    "endSec": 8.09
+  },
+  {
+    "word": "7",
+    "startSec": 8.09,
+    "endSec": 8.58
+  }
+]

@@ -1,5 +1,6 @@
 import React from "react";
-import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import { Audio, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import { pageTurn } from "../lib/sfx";
 import { StepsSceneProps } from "../schema";
 import { SceneLayout } from "../components/SceneLayout";
 import { resolveFontFamily, useTheme } from "../theme/theme";
@@ -40,7 +41,11 @@ export const StepsScene: React.FC<
           const brand = findBrandInText(stepText);
 
           return (
-            <div
+            <React.Fragment key={idx}>
+              {frame === delay && idx > 0 && (
+                <Audio src={pageTurn} volume={0.65} />
+              )}
+              <div
               key={idx}
               style={{
                 display: "flex",
@@ -97,7 +102,8 @@ export const StepsScene: React.FC<
                 {stepText}
               </div>
             </div>
-          );
+          </React.Fragment>
+        );
         })}
       </div>
     </SceneLayout>

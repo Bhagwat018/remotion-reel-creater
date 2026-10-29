@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "topic": "Jio IPO Historic Listing & Premium",
+    "title": "Jio IPO Historic Listing: 21% Premium Analysis",
+    "audience": "Retail investors, tech enthusiasts, developers",
+    "durationSec": 49,
+    "language": "Hinglish",
+    "handle": "@techwith.GenZ",
+    "slug": "jio-ipo-historic-listing",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.18,
+    "voice": "Rishi",
+    "voiceSpeed": 1.05,
+    "voiceFile": "reels/jio-ipo-historic-listing/voice.mp3",
+    "wordsFile": "reels/jio-ipo-historic-listing/words.json",
+    "loop": true,
+    "captions": true,
+    "captionStyle": "kinetic",
+    "avatar": {
+      "enabled": false
+    }
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 13.01,
+      "direction": "pop-3d",
+      "headline": "*JIO* CREATES HISTORY",
+      "leadIn": "HISTORIC MARKET DEBUT",
+      "subtitle": "Listing Day: ₹1119 Share Jumped to ₹1359!",
+      "items": [
+        "21% Instant Profit",
+        "₹1359 Day 1 High",
+        "Record Listing"
+      ],
+      "voice": "Jio ka IPO list ho gaya aur isne history create kar di! 1119 ka share seedha 1359 par khula, matlab seedha 21 percent profit!"
+    },
+    {
+      "id": "s2-stats",
+      "type": "stat",
+      "startSec": 13.01,
+      "endSec": 21.86,
+      "direction": "from-right",
+      "headline": "*30,000 CR* IPO",
+      "leadIn": "INSTITUTIONAL TSUNAMI",
+      "value": "70x",
+      "label": "Institutional Subscription",
+      "subtext": "Retail 2.5x vs Institutions 70x Subscription",
+      "badge": "RECORD DEMAND ⚡",
+      "items": [
+        "Retailers: 2.5x",
+        "QIBs: 70x",
+        "₹30,000 Cr Book"
+      ],
+      "voice": "Ye India ka sabse bada 30 hazar crore ka IPO tha. Retailers ne dhai guna bhara, par Institutions ne 70 times!"
+    },
+    {
+      "id": "s3-pills",
+      "type": "pills",
+      "startSec": 21.86,
+      "endSec": 32.83,
+      "direction": "from-left",
+      "headline": "INDIA'S *BIGGEST*",
+      "leadIn": "TELECOM TITAN",
+      "items": [
+        "Largest Telecom Operator",
+        "21% Listing Day Premium",
+        "Broker Targets Smashed"
+      ],
+      "voice": "Listing ke sath hi Jio officially India ki sabse badi telecom company ban chuki hai. Analysts ka 1350 ka target pehle din hi hit ho gaya!"
+    },
+    {
+      "id": "s4-code",
+      "type": "code",
+      "startSec": 32.83,
+      "endSec": 43.19,
+      "direction": "from-bottom",
+      "headline": "TRACK *SMART MONEY*",
+      "leadIn": "PYTHON AUTOMATION",
+      "filename": "qib_tracker.py",
+      "lines": [
+        "import nsepython",
+        "qib_data = nsepython.get_qib('JIO')",
+        "if qib_data.buying > retail.buying:",
+        "    print('Smart Money is accumulating!')"
+      ],
+      "highlightLines": [
+        3
+      ],
+      "voice": "Pro tip: QIB data yani smart money ka flow track karne ke liye NSE ki official API ya Python scrapers use karo, taaki retail FOMO se bach sako."
+    },
+    {
+      "id": "s5-cta",
+      "type": "cta",
+      "startSec": 43.19,
+      "endSec": 48.64,
+      "direction": "pop-3d",
+      "headline": "DATA DRIVEN *INVESTING*",
+      "leadIn": "SMART TRADING",
+      "buttonText": "FOLLOW @techwith.GenZ",
+      "voice": "Aise hi data-driven market hacks ke liye techwith.GenZ ko abhi follow kar lo!"
+    }
+  ]
+}

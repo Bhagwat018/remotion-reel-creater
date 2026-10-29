@@ -8,6 +8,12 @@ export const CompareScene: React.FC<
   CompareSceneProps & {
     leftLabel?: string;
     rightLabel?: string;
+    leftTitle?: string;
+    rightTitle?: string;
+    leftItems?: string[];
+    rightItems?: string[];
+    leftBadge?: string;
+    rightBadge?: string;
     durationInFrames: number;
     direction?: MotionDirection;
     id?: string;
@@ -21,43 +27,41 @@ export const CompareScene: React.FC<
   right,
   leftLabel,
   rightLabel,
+  leftTitle,
+  rightTitle,
+  leftItems,
+  rightItems,
+  leftBadge,
+  rightBadge,
   durationInFrames,
 }) => {
   const parseSide = (
-    obj?: { label: string; items?: string[]; badge?: string },
+    obj?: any,
     labelStr?: string,
-    defaultLabel = "Option"
+    titleProp?: string,
+    itemsProp?: string[],
+    badgeProp?: string,
+    defaultLabel = "Strategy A"
   ) => {
-    if (obj && obj.label) {
-      return {
-        title: obj.label,
-        badge: obj.badge,
-        points: obj.items && obj.items.length > 0 ? obj.items : ["Standard setup"],
-      };
-    }
-    if (!labelStr) return { title: defaultLabel, points: ["Standard setup"] };
+    const title = obj?.label || obj?.title || titleProp || labelStr || defaultLabel;
+    const items = obj?.items || obj?.points || itemsProp || ["Key Highlight", "Performance Metric"];
+    const badge = obj?.badge || badgeProp || undefined;
 
-    const match = labelStr.match(/^(.*?)\s*\((.*?)\)$/);
-    if (match) {
-      return {
-        title: match[1].trim(),
-        points: [match[2].trim()],
-      };
-    }
     return {
-      title: labelStr,
-      points: ["Configured defaults"],
+      title,
+      badge,
+      points: items.length > 0 ? items : ["Key Advantage"],
     };
   };
 
-  const leftItem = parseSide(left, leftLabel, "Traditional Method");
-  const rightItem = parseSide(right, rightLabel, "Modern Architecture");
+  const leftItem = parseSide(left, leftLabel, leftTitle, leftItems, leftBadge, "Standard Approach");
+  const rightItem = parseSide(right, rightLabel, rightTitle, rightItems, rightBadge, "Winning Strategy");
 
   return (
     <SceneLayout
       id={id}
       direction={direction}
-      leadIn={leadIn}
+      leadIn={leadIn || "SIDE-BY-SIDE"}
       headline={headline}
       durationInFrames={durationInFrames}
     >

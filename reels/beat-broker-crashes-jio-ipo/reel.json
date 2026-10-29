@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "slug": "beat-broker-crashes-jio-ipo",
+    "title": "Beat Broker Crashes on Jio IPO Listing Day",
+    "topic": "Beat Broker Crashes on Jio IPO Listing Day",
+    "handle": "@techwith.GenZ",
+    "voiceFile": "reels/beat-broker-crashes-jio-ipo/voice.mp3",
+    "loop": true,
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.18,
+    "voice": "Rishi",
+    "voiceSpeed": 1.05,
+    "durationSec": 65,
+    "wordsFile": "reels/beat-broker-crashes-jio-ipo/words.json"
+  },
+  "scenes": [
+    {
+      "type": "title",
+      "startSec": 0,
+      "endSec": 10.97,
+      "direction": "pop-3d",
+      "leadIn": "CRITICAL INCIDENT ALERT",
+      "headline": "Ye kaise hua? *Jio* IPO listing day par *Broker* crash!",
+      "voice": "Arre dosto, kal Jio ka IPO listing tha aur saare brokers ka system ek saath crash ho gaya! Socho aapka order queue mein atka hai aur market rocket ho raha hai.",
+      "visualFocus": "title",
+      "pillText": "High Traffic",
+      "accentColor": "#fb923c",
+      "id": "scene-1"
+    },
+    {
+      "type": "flow",
+      "startSec": 10.97,
+      "endSec": 21.21,
+      "direction": "from-right",
+      "leadIn": "SYSTEM ARCHITECTURE",
+      "headline": "Request Pipeline *(Overload)*",
+      "voice": "Matlab 10 million concurrent requests ek sath API gateway par hit kiye. Redis cache flush ho gaya aur database connections pool completely exhaust ho gaye.",
+      "visualFocus": "flow",
+      "pillText": "Pipeline Drop",
+      "accentColor": "#c084fc",
+      "steps": [
+        "API Gateway",
+        "Redis Cache",
+        "Auth Service",
+        "Order Engine"
+      ],
+      "id": "scene-2",
+      "nodes": [
+        "API Gateway",
+        "Redis Cache",
+        "Auth Service",
+        "Order Engine"
+      ]
+    },
+    {
+      "type": "code",
+      "startSec": 21.21,
+      "endSec": 30.47,
+      "direction": "from-bottom",
+      "leadIn": "THE BOTTLENECK",
+      "headline": "Blocking _Database_ Query",
+      "voice": "Dekho, problem yahan thi. Yeh sync DB query har user ke portfolio ko fetch karne ki koshish kar rahi thi bina kisi proper indexing ke.",
+      "visualFocus": "code",
+      "pillText": "SQL Lock",
+      "accentColor": "#f472b6",
+      "language": "python",
+      "codeSnippet": "def fetch_portfolio(user_id):\n    # Blocking connection pool leak\n    conn = db.connect()\n    cursor = conn.cursor()\n    cursor.execute('SELECT * FROM orders WHERE uid = %s', (user_id,))\n    return cursor.fetchall()",
+      "id": "scene-3",
+      "filename": "index.ts",
+      "lines": [
+        "echo 'Hello World'"
+      ]
+    },
+    {
+      "type": "stat",
+      "startSec": 30.47,
+      "endSec": 39.99,
+      "direction": "from-left",
+      "leadIn": "IMPACT METRICS",
+      "headline": "500K Orders *(Dropped)*",
+      "voice": "Sirf teen minute ke andar paanch lakh se zyada orders drop ho gaye. Latency spike hokar 4200 milliseconds tak pahunch gayi thi!",
+      "visualFocus": "stat",
+      "pillText": "Latency Spike",
+      "accentColor": "#60a5fa",
+      "statNumber": "4200ms",
+      "statLabel": "Average API Response Time",
+      "id": "scene-4",
+      "value": "10x",
+      "label": "Performance Metric"
+    },
+    {
+      "type": "terminal",
+      "startSec": 39.99,
+      "endSec": 47.74,
+      "direction": "from-top",
+      "leadIn": "SERVER LOGS",
+      "headline": "Out of *Memory* Exception",
+      "voice": "Terminal logs me saaf dikh raha tha ki Kubernetes pods ek ke baad ek OOM killed ho rahe the kyunki auto-scaler slow tha.",
+      "visualFocus": "terminal",
+      "pillText": "OOM Killed",
+      "accentColor": "#4ade80",
+      "command": "kubectl get pods -n trading-prod --watch",
+      "output": [
+        "broker-core-78d9b (0/1 OOMKilled) 3m ago",
+        "broker-api-54fc8 (0/1 CrashLoopBackOff) 1m ago"
+      ],
+      "id": "scene-5"
+    },
+    {
+      "type": "card",
+      "startSec": 47.74,
+      "endSec": 57.11,
+      "direction": "from-right",
+      "leadIn": "SOLUTION",
+      "headline": "Kafka Event *Streaming*",
+      "voice": "Agar inhone synchronous REST calls ki jagah Apache Kafka event streaming use kiya hota, toh queue manage ho sakti thi bina system crash ke.",
+      "visualFocus": "card",
+      "pillText": "Event Driven",
+      "accentColor": "#fb923c",
+      "cardTitle": "Asynchronous Queue Pattern",
+      "cardSubtitle": "Decouple ingestion from execution using topic partitions.",
+      "id": "scene-6",
+      "chip": "HIGHLIGHT",
+      "cardText": "Detailed explanation goes here."
+    },
+    {
+      "type": "cta",
+      "startSec": 57.11,
+      "endSec": 64.63,
+      "direction": "pop-3d",
+      "leadIn": "SUBSCRIBE NOW",
+      "headline": "Aise *System Design* breakdowns ke liye follow karo!",
+      "voice": "Aise hi real-world tech disasters aur system design breakdowns ke liye @techwith.GenZ ko abhi follow karo!",
+      "visualFocus": "cta",
+      "pillText": "Join GenZ Devs",
+      "accentColor": "#c084fc",
+      "ctaText": "Follow @techwith.GenZ",
+      "id": "scene-7",
+      "buttonText": "FOLLOW @techwith.GenZ"
+    }
+  ]
+}

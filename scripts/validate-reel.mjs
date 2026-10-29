@@ -77,6 +77,7 @@ export const VALID_SCENE_TYPES = [
   "bot",
   "knobs",
   "stacked",
+  "flow",
 ];
 
 const baseSceneSchema = z.object({
@@ -103,9 +104,11 @@ const sceneTypeMap = {
   }),
   card: baseSceneSchema.extend({
     type: z.literal("card"),
-    headline: z.string().min(1, "Headline is required for card scene"),
-    cardText: z.string().min(1, "cardText is required for card scene"),
-    chip: z.string().min(1, "chip is required for card scene"),
+    headline: z.string().optional(),
+    cardText: z.string().optional(),
+    body: z.string().optional(),
+    chip: z.string().optional(),
+    badge: z.string().optional(),
   }),
   code: baseSceneSchema.extend({
     type: z.literal("code"),
@@ -225,6 +228,14 @@ const sceneTypeMap = {
     cards: z.array(z.any()).optional(),
     isPipeline: z.boolean().optional(),
   }),
+  flow: baseSceneSchema.extend({
+    type: z.literal("flow"),
+    headline: z.string().optional(),
+    nodes: z.array(z.any()).optional(),
+    steps: z.array(z.any()).optional(),
+    flow: z.array(z.any()).optional(),
+    brand: z.string().optional(),
+  }),
 };
 
 const metaSchema = z.object({
@@ -328,6 +339,38 @@ if (!Array.isArray(rawData.scenes) || rawData.scenes.length === 0) {
   hasErrors = true;
   console.error("❌ Scenes validation failed: 'scenes' must be a non-empty array.");
 } else {
+  let modified = false;
+  rawData.scenes = rawData.scenes.map((scene, idx) => {
+    const s = { ...scene };
+    if (!s.id) { s.id = `scene-${idx + 1}`; modified = true; }
+    if (s.type === "card") {
+      const text = s.cardText || s.body || s.text || s.content || s.desc || s.description || s.headline || "Key Takeaway";
+      const chip = s.chip || s.badge || s.tag || s.leadIn || "KEY HIGHLIGHT";
+      if (s.cardText !== text || s.chip !== chip) {
+        s.cardText = text;
+        s.chip = chip;
+        modified = true;
+      }
+    }
+    if (s.type === "pills") {
+      if (!Array.isArray(s.items) && Array.isArray(s.pills)) { s.items = s.pills; modified = true; }
+    }
+    if (s.type === "cta") {
+      if (!s.buttonText && s.callToAction) { s.buttonText = s.callToAction; modified = true; }
+    }
+    return s;
+  });
+
+  if (modified) {
+    fs.writeFileSync(jsonPath, JSON.stringify(rawData, null, 2), "utf-8");
+    const altReelJson = jsonPath.includes("/public/reels/")
+      ? jsonPath.replace("/public/reels/", "/reels/")
+      : jsonPath.replace("/reels/", "/public/reels/");
+    if (fs.existsSync(path.dirname(altReelJson))) {
+      fs.writeFileSync(altReelJson, JSON.stringify(rawData, null, 2), "utf-8");
+    }
+  }
+
   rawData.scenes.forEach((scene, idx) => {
     const scenePrefix = `Scene #${idx + 1} (${scene.id || "no-id"})`;
     if (!scene.type) {

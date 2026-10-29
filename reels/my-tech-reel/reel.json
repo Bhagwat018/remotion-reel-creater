@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "topic": "BLS Polymers IPO - Last Day Details",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "totalDurationSec": 60,
+    "fullVoiceover": "Rukk jao! BLS Polymers IPO ka last call aaj hai. Price band 142 se 150 rupaye. Lot size 100 shares, matlab minimum 15 hazaar lagane padenge. Issue size 255 crore, aur poora fresh issue. Matlab paisa seedha company ke paas jayega. Demand pagal hai! Day 2 tak 35 guna subscription. NII 78 guna, retail lagbhag 30 guna. Par reality check: retail 30 guna bhara, matlab lagbhag 30 mein se ek ko hi lot milega. Dates note karo: allotment 30 October, refund aur demat credit 2 November, listing 3 November. Pro tip: shaam 5 baje se pehle UPI mandate approve karo, warna bid crash ho jayegi. GMP sirf grey market ka rumor hai, guarantee nahi. Pehle khud research karo. Allotment status KFin Technologies, NSE ya BSE pe PAN daalke check karo. Ye investment advice nahi hai. Aise tech aur market updates ke liye follow karo @techwith.GenZ.",
+    "instagramCaption": "🚨 BLS Polymers IPO aaj band ho raha hai! Apply karne se pehle ye 5 cheezein jaan lo 👇\n\n💰 Price band: ₹142-₹150 | Lot: 100 shares | Min: ₹15,000\n📈 Day 2 tak 35x+ subscribed (Retail ~30x)\n🎟️ Retail allotment = lottery, chance kam hai\n📅 Allotment: 30 Oct | Listing: 3 Nov\n⚠️ GMP sirf grey market ka rumor hai, guarantee nahi\n\nAapne apply kiya ya skip? Comment me batao 👇\nAur ye reel us dost ko bhejo jo IPO ke chakkar me hai 🔥\n\nFollow @techwith.GenZ for more tech aur market updates.\n\n⚠️ Disclaimer: Ye sirf educational information hai, investment advice nahi. Invest karne se pehle apna research karo ya SEBI-registered advisor se salah lo.\n\n#BLSPolymersIPO #IPO #IPOAlert #IPONews #ShareMarket #StockMarketIndia #IPOAllotment #GMP #Investing #FinanceIndia #MarketUpdate #techwithGenZ",
+    "disclaimer": "Educational content only. Not investment advice.",
+    "slug": "my-tech-reel",
+    "voiceFile": "reels/my-tech-reel/voice.mp3"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "type": "title",
+      "startSec": 0,
+      "endSec": 4,
+      "headline": "*LAST CALL* BLS POLYMERS IPO!",
+      "subtitle": "Aaj band ho raha hai",
+      "voice": "Rukk jao! BLS Polymers IPO ka last call aaj hai."
+    },
+    {
+      "id": 2,
+      "type": "card",
+      "startSec": 4,
+      "endSec": 10,
+      "headline": "PRICE BAND *₹142-₹150*",
+      "bullets": [
+        "Lot size: 100 shares",
+        "Min. retail bid: ₹15,000",
+        "Listing: BSE & NSE"
+      ],
+      "voice": "Price band 142 se 150 rupaye. Lot size 100 shares, matlab minimum 15 hazaar lagane padenge.",
+      "cardText": "PRICE BAND *₹142-₹150*",
+      "chip": "KEY HIGHLIGHT"
+    },
+    {
+      "id": 3,
+      "type": "stat",
+      "startSec": 10,
+      "endSec": 16,
+      "headline": "100% *FRESH ISSUE*",
+      "value": "₹255 CR",
+      "label": "No Offer for Sale",
+      "voice": "Issue size 255 crore, aur poora fresh issue. Matlab paisa seedha company ke paas jayega."
+    },
+    {
+      "id": 4,
+      "type": "pills",
+      "startSec": 16,
+      "endSec": 22,
+      "headline": "DEMAND *PAGAL* HAI",
+      "items": [
+        "OVERALL 35.28x (DAY 2)",
+        "NII 78.78x",
+        "RETAIL 29.82x",
+        "QIB 12.2x"
+      ],
+      "voice": "Demand pagal hai! Day 2 tak 35 guna subscription. NII 78 guna, retail lagbhag 30 guna."
+    },
+    {
+      "id": 5,
+      "type": "stat",
+      "startSec": 22,
+      "endSec": 28,
+      "headline": "ALLOTMENT = *LOTTERY*",
+      "value": "~1 IN 30",
+      "label": "Approx. retail odds",
+      "voice": "Par reality check: retail 30 guna bhara, matlab lagbhag 30 mein se ek ko hi lot milega."
+    },
+    {
+      "id": 6,
+      "type": "terminal",
+      "startSec": 28,
+      "endSec": 34,
+      "headline": "NOTE THE *DATES*",
+      "lines": [
+        "$ bls-polymers --timeline",
+        "IPO closes   : 29 Oct 2026",
+        "Allotment    : 30 Oct 2026",
+        "Refund/Demat : 02 Nov 2026",
+        "Listing      : 03 Nov 2026 ✅"
+      ],
+      "voice": "Dates note karo: allotment 30 October, refund aur demat credit 2 November, listing 3 November."
+    },
+    {
+      "id": 7,
+      "type": "card",
+      "startSec": 34,
+      "endSec": 41,
+      "headline": "UPI MANDATE *5 PM* DEADLINE",
+      "bullets": [
+        "Bidding closes today",
+        "Approve UPI mandate on time",
+        "Late approval = bid crash"
+      ],
+      "voice": "Pro tip: shaam 5 baje se pehle UPI mandate approve karo, warna bid crash ho jayegi.",
+      "cardText": "UPI MANDATE *5 PM* DEADLINE",
+      "chip": "KEY HIGHLIGHT"
+    },
+    {
+      "id": 8,
+      "type": "pills",
+      "startSec": 41,
+      "endSec": 47,
+      "headline": "GMP = *RUMOR*",
+      "items": [
+        "GREY MARKET RUMOR",
+        "NO GUARANTEE",
+        "DO YOUR OWN RESEARCH"
+      ],
+      "voice": "GMP sirf grey market ka rumor hai, guarantee nahi. Pehle khud research karo."
+    },
+    {
+      "id": 9,
+      "type": "orbit",
+      "startSec": 47,
+      "endSec": 53,
+      "headline": "CHECK *ALLOTMENT* ONLINE",
+      "center": "YOUR PAN",
+      "nodes": [
+        "KFin Technologies",
+        "NSE",
+        "BSE",
+        "Demat Account"
+      ],
+      "voice": "Allotment status KFin Technologies, NSE ya BSE pe PAN daalke check karo."
+    },
+    {
+      "id": 10,
+      "type": "cta",
+      "startSec": 53,
+      "endSec": 60,
+      "headline": "FOLLOW *@TECHWITH.GENZ*",
+      "subtitle": "Tech + Market updates, daily",
+      "handle": "@techwith.GenZ",
+      "voice": "Ye investment advice nahi hai. Aise tech aur market updates ke liye follow karo @techwith.GenZ."
+    }
+  ]
+}

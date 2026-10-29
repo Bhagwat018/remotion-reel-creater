@@ -18,6 +18,7 @@ import { ChartScene } from "./ChartScene";
 import { BotScene } from "./BotScene";
 import { KnobsScene } from "./KnobsScene";
 import { StackedScene } from "./StackedScene";
+import { FlowScene } from "./FlowScene";
 
 type SceneComponent = React.FC<
   SceneData & { durationInFrames: number; sceneIndex?: number; slug?: string }
@@ -42,6 +43,7 @@ export const sceneRegistry: Record<SceneType, SceneComponent> = {
   bot: BotScene as unknown as SceneComponent,
   knobs: KnobsScene as unknown as SceneComponent,
   stacked: StackedScene as unknown as SceneComponent,
+  flow: FlowScene as unknown as SceneComponent,
 };
 
 export const getSceneComponent = (type: string): SceneComponent => {

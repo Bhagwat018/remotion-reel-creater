@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "slug": "jio-ipo-approved-viral",
+    "title": "Jio IPO Approved: Massive Tech Ecosystem",
+    "topic": "Jio IPO Approved",
+    "handle": "@techwith.genz",
+    "voiceFile": "reels/jio-ipo-approved-viral/voice.mp3",
+    "loop": true,
+    "captions": true,
+    "avatar": {
+      "enabled": false
+    },
+    "captionStyle": "kinetic",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.16,
+    "durationSec": 36,
+    "wordsFile": "reels/jio-ipo-approved-viral/words.json"
+  },
+  "scenes": [
+    {
+      "type": "title",
+      "headline": "*INDIA'S BIGGEST* TECH IPO",
+      "leadIn": "BREAKING MARKET NEWS",
+      "subtitle": "Jio is coming for the Stock Market",
+      "voice": "India ka sabse bada tech IPO aakhirkaar approve ho gaya. Jio is coming for the stock market.",
+      "startSec": 0,
+      "endSec": 6.8,
+      "direction": "from-top",
+      "id": "scene-1"
+    },
+    {
+      "type": "compare",
+      "headline": "NOT JUST TELCO, *TECH ECOSYSTEM*",
+      "leadIn": "BUSINESS MODEL",
+      "left": {
+        "label": "Traditional Telecom",
+        "items": [
+          "Legacy 2G/4G network",
+          "Voice & basic data packs"
+        ]
+      },
+      "right": {
+        "label": "Jio Tech Ecosystem",
+        "items": [
+          "End-to-End 5G architecture",
+          "Cloud & Edge computing"
+        ]
+      },
+      "voice": "Yeh koi normal telecom company nahi, balki ek massive tech ecosystem hai.",
+      "startSec": 6.8,
+      "endSec": 12.8,
+      "direction": "from-right",
+      "id": "scene-2"
+    },
+    {
+      "type": "flow",
+      "headline": "3 CORE *GROWTH ENGINES*",
+      "leadIn": "ENTERPRISE STACK",
+      "steps": [
+        {
+          "label": "5G SA Core",
+          "desc": "Ultra-low latency infrastructure"
+        },
+        {
+          "label": "AI Data Centers",
+          "desc": "Hyperscale compute capacity"
+        },
+        {
+          "label": "Edge Computing",
+          "desc": "Distributed micro-cloud nodes"
+        },
+        {
+          "label": "True Tech Giant",
+          "desc": "Full-stack enterprise moat"
+        }
+      ],
+      "voice": "Jio ka 5G architecture, AI data centers, aur edge computing, isse ek true tech giant banate hain.",
+      "startSec": 12.8,
+      "endSec": 20.8,
+      "direction": "from-left",
+      "id": "scene-3"
+    },
+    {
+      "type": "stat",
+      "headline": "JIOBRAIN *ENTERPRISE AI*",
+      "leadIn": "AUTONOMOUS PLATFORM",
+      "value": "100%",
+      "label": "Autonomous Network Optimization",
+      "pills": [
+        "In-House AI Stack",
+        "Massive Infra Boom"
+      ],
+      "voice": "Pro tip: unka in-house Jio Brain AI platform unke poore network ko autonomously optimize karta hai. Is IPO se Indian tech sector aur data infrastructure mein ek massive boom aane wala hai.",
+      "startSec": 20.8,
+      "endSec": 30.5,
+      "direction": "from-bottom",
+      "id": "scene-4"
+    },
+    {
+      "type": "cta",
+      "headline": "KYA TUM *SHARES* KHAREEDOGE?",
+      "leadIn": "RETAIL INVESTORS",
+      "buttonText": "FOLLOW @techwith.genz",
+      "voice": "Kya tum Jio ke shares khareedoge? Tech updates ke liye @techwith.genz ko follow karo.",
+      "startSec": 30.5,
+      "endSec": 35.97,
+      "direction": "pop-3d",
+      "id": "scene-5"
+    }
+  ]
+}

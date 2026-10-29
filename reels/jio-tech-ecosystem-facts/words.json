@@ -1,0 +1,617 @@
+[
+  {
+    "word": "Jio",
+    "startSec": 0,
+    "endSec": 0.41
+  },
+  {
+    "word": "ko",
+    "startSec": 0.41,
+    "endSec": 0.82
+  },
+  {
+    "word": "bas",
+    "startSec": 0.83,
+    "endSec": 1.24
+  },
+  {
+    "word": "telecom",
+    "startSec": 1.24,
+    "endSec": 1.65
+  },
+  {
+    "word": "SIM",
+    "startSec": 1.66,
+    "endSec": 2.07
+  },
+  {
+    "word": "provider",
+    "startSec": 2.07,
+    "endSec": 2.48
+  },
+  {
+    "word": "samjhte",
+    "startSec": 2.48,
+    "endSec": 2.89
+  },
+  {
+    "word": "ho?",
+    "startSec": 2.9,
+    "endSec": 3.31
+  },
+  {
+    "word": "Reliance",
+    "startSec": 3.31,
+    "endSec": 3.72
+  },
+  {
+    "word": "Jio",
+    "startSec": 3.73,
+    "endSec": 4.14
+  },
+  {
+    "word": "is",
+    "startSec": 4.14,
+    "endSec": 4.55
+  },
+  {
+    "word": "actually",
+    "startSec": 4.55,
+    "endSec": 4.96
+  },
+  {
+    "word": "a",
+    "startSec": 4.97,
+    "endSec": 5.38
+  },
+  {
+    "word": "massive",
+    "startSec": 5.38,
+    "endSec": 5.79
+  },
+  {
+    "word": "software",
+    "startSec": 5.8,
+    "endSec": 6.21
+  },
+  {
+    "word": "tech",
+    "startSec": 6.21,
+    "endSec": 6.62
+  },
+  {
+    "word": "powerhouse!",
+    "startSec": 6.62,
+    "endSec": 7.03
+  },
+  {
+    "word": "India",
+    "startSec": 7.39,
+    "endSec": 7.82
+  },
+  {
+    "word": "ka",
+    "startSec": 7.82,
+    "endSec": 8.25
+  },
+  {
+    "word": "60%",
+    "startSec": 8.26,
+    "endSec": 8.69
+  },
+  {
+    "word": "se",
+    "startSec": 8.69,
+    "endSec": 9.12
+  },
+  {
+    "word": "zyada",
+    "startSec": 9.13,
+    "endSec": 9.56
+  },
+  {
+    "word": "mobile",
+    "startSec": 9.56,
+    "endSec": 9.99
+  },
+  {
+    "word": "data",
+    "startSec": 10,
+    "endSec": 10.43
+  },
+  {
+    "word": "traffic",
+    "startSec": 10.43,
+    "endSec": 10.86
+  },
+  {
+    "word": "Jio",
+    "startSec": 10.87,
+    "endSec": 11.3
+  },
+  {
+    "word": "akela",
+    "startSec": 11.3,
+    "endSec": 11.73
+  },
+  {
+    "word": "process",
+    "startSec": 11.74,
+    "endSec": 12.17
+  },
+  {
+    "word": "karta",
+    "startSec": 12.17,
+    "endSec": 12.6
+  },
+  {
+    "word": "hai!",
+    "startSec": 12.61,
+    "endSec": 13.04
+  },
+  {
+    "word": "That",
+    "startSec": 13.04,
+    "endSec": 13.47
+  },
+  {
+    "word": "is",
+    "startSec": 13.48,
+    "endSec": 13.91
+  },
+  {
+    "word": "over",
+    "startSec": 13.91,
+    "endSec": 14.34
+  },
+  {
+    "word": "500",
+    "startSec": 14.35,
+    "endSec": 14.78
+  },
+  {
+    "word": "Petabytes",
+    "startSec": 14.78,
+    "endSec": 15.21
+  },
+  {
+    "word": "daily.",
+    "startSec": 15.22,
+    "endSec": 15.65
+  },
+  {
+    "word": "Inka",
+    "startSec": 16,
+    "endSec": 16.54
+  },
+  {
+    "word": "homegrown",
+    "startSec": 16.54,
+    "endSec": 17.08
+  },
+  {
+    "word": "ecosystem",
+    "startSec": 17.08,
+    "endSec": 17.62
+  },
+  {
+    "word": "dekho:",
+    "startSec": 17.62,
+    "endSec": 18.16
+  },
+  {
+    "word": "JioCloud,",
+    "startSec": 18.16,
+    "endSec": 18.7
+  },
+  {
+    "word": "JioCinema",
+    "startSec": 18.71,
+    "endSec": 19.25
+  },
+  {
+    "word": "streaming",
+    "startSec": 19.25,
+    "endSec": 19.79
+  },
+  {
+    "word": "infra,",
+    "startSec": 19.79,
+    "endSec": 20.33
+  },
+  {
+    "word": "5G",
+    "startSec": 20.33,
+    "endSec": 20.87
+  },
+  {
+    "word": "SA",
+    "startSec": 20.87,
+    "endSec": 21.41
+  },
+  {
+    "word": "Core,",
+    "startSec": 21.41,
+    "endSec": 21.95
+  },
+  {
+    "word": "aur",
+    "startSec": 21.95,
+    "endSec": 22.49
+  },
+  {
+    "word": "JioBrain",
+    "startSec": 22.49,
+    "endSec": 23.03
+  },
+  {
+    "word": "AI",
+    "startSec": 23.04,
+    "endSec": 23.58
+  },
+  {
+    "word": "engines.",
+    "startSec": 23.58,
+    "endSec": 24.12
+  },
+  {
+    "word": "Inka",
+    "startSec": 24.47,
+    "endSec": 24.93
+  },
+  {
+    "word": "5G",
+    "startSec": 24.93,
+    "endSec": 25.39
+  },
+  {
+    "word": "network",
+    "startSec": 25.4,
+    "endSec": 25.86
+  },
+  {
+    "word": "legacy",
+    "startSec": 25.86,
+    "endSec": 26.32
+  },
+  {
+    "word": "hardware",
+    "startSec": 26.33,
+    "endSec": 26.79
+  },
+  {
+    "word": "pe",
+    "startSec": 26.79,
+    "endSec": 27.25
+  },
+  {
+    "word": "nahi,",
+    "startSec": 27.25,
+    "endSec": 27.71
+  },
+  {
+    "word": "balki",
+    "startSec": 27.72,
+    "endSec": 28.18
+  },
+  {
+    "word": "cloud-native",
+    "startSec": 28.18,
+    "endSec": 28.64
+  },
+  {
+    "word": "software",
+    "startSec": 28.64,
+    "endSec": 29.1
+  },
+  {
+    "word": "defined",
+    "startSec": 29.11,
+    "endSec": 29.57
+  },
+  {
+    "word": "architecture",
+    "startSec": 29.57,
+    "endSec": 30.03
+  },
+  {
+    "word": "pe",
+    "startSec": 30.04,
+    "endSec": 30.5
+  },
+  {
+    "word": "chal",
+    "startSec": 30.5,
+    "endSec": 30.96
+  },
+  {
+    "word": "raha",
+    "startSec": 30.96,
+    "endSec": 31.42
+  },
+  {
+    "word": "hai.",
+    "startSec": 31.43,
+    "endSec": 31.89
+  },
+  {
+    "word": "JioBrain",
+    "startSec": 32.24,
+    "endSec": 32.7
+  },
+  {
+    "word": "AI",
+    "startSec": 32.7,
+    "endSec": 33.16
+  },
+  {
+    "word": "inka",
+    "startSec": 33.16,
+    "endSec": 33.62
+  },
+  {
+    "word": "dynamic",
+    "startSec": 33.62,
+    "endSec": 34.08
+  },
+  {
+    "word": "enterprise",
+    "startSec": 34.08,
+    "endSec": 34.54
+  },
+  {
+    "word": "platform",
+    "startSec": 34.54,
+    "endSec": 35
+  },
+  {
+    "word": "hai",
+    "startSec": 35,
+    "endSec": 35.46
+  },
+  {
+    "word": "jo",
+    "startSec": 35.46,
+    "endSec": 35.92
+  },
+  {
+    "word": "real-time",
+    "startSec": 35.92,
+    "endSec": 36.38
+  },
+  {
+    "word": "analytics",
+    "startSec": 36.39,
+    "endSec": 36.85
+  },
+  {
+    "word": "aur",
+    "startSec": 36.85,
+    "endSec": 37.31
+  },
+  {
+    "word": "LLMs",
+    "startSec": 37.31,
+    "endSec": 37.77
+  },
+  {
+    "word": "ko",
+    "startSec": 37.77,
+    "endSec": 38.23
+  },
+  {
+    "word": "5G",
+    "startSec": 38.23,
+    "endSec": 38.69
+  },
+  {
+    "word": "network",
+    "startSec": 38.69,
+    "endSec": 39.15
+  },
+  {
+    "word": "optimization",
+    "startSec": 39.15,
+    "endSec": 39.61
+  },
+  {
+    "word": "ke",
+    "startSec": 39.61,
+    "endSec": 40.07
+  },
+  {
+    "word": "liye",
+    "startSec": 40.07,
+    "endSec": 40.53
+  },
+  {
+    "word": "use",
+    "startSec": 40.53,
+    "endSec": 40.99
+  },
+  {
+    "word": "karta",
+    "startSec": 40.99,
+    "endSec": 41.45
+  },
+  {
+    "word": "hai.",
+    "startSec": 41.45,
+    "endSec": 41.91
+  },
+  {
+    "word": "Kubernetes,",
+    "startSec": 42.26,
+    "endSec": 42.71
+  },
+  {
+    "word": "OpenRAN,",
+    "startSec": 42.71,
+    "endSec": 43.16
+  },
+  {
+    "word": "aur",
+    "startSec": 43.16,
+    "endSec": 43.61
+  },
+  {
+    "word": "Edge",
+    "startSec": 43.61,
+    "endSec": 44.06
+  },
+  {
+    "word": "Computing",
+    "startSec": 44.07,
+    "endSec": 44.52
+  },
+  {
+    "word": "leverage",
+    "startSec": 44.52,
+    "endSec": 44.97
+  },
+  {
+    "word": "karke",
+    "startSec": 44.97,
+    "endSec": 45.42
+  },
+  {
+    "word": "ye",
+    "startSec": 45.42,
+    "endSec": 45.87
+  },
+  {
+    "word": "telecom",
+    "startSec": 45.87,
+    "endSec": 46.32
+  },
+  {
+    "word": "industry",
+    "startSec": 46.32,
+    "endSec": 46.77
+  },
+  {
+    "word": "ko",
+    "startSec": 46.77,
+    "endSec": 47.22
+  },
+  {
+    "word": "cloud",
+    "startSec": 47.23,
+    "endSec": 47.68
+  },
+  {
+    "word": "software",
+    "startSec": 47.68,
+    "endSec": 48.13
+  },
+  {
+    "word": "domain",
+    "startSec": 48.13,
+    "endSec": 48.58
+  },
+  {
+    "word": "me",
+    "startSec": 48.58,
+    "endSec": 49.03
+  },
+  {
+    "word": "transform",
+    "startSec": 49.03,
+    "endSec": 49.48
+  },
+  {
+    "word": "kar",
+    "startSec": 49.48,
+    "endSec": 49.93
+  },
+  {
+    "word": "chuke",
+    "startSec": 49.93,
+    "endSec": 50.38
+  },
+  {
+    "word": "hain!",
+    "startSec": 50.39,
+    "endSec": 50.84
+  },
+  {
+    "word": "Aise",
+    "startSec": 51.19,
+    "endSec": 51.66
+  },
+  {
+    "word": "hi",
+    "startSec": 51.66,
+    "endSec": 52.13
+  },
+  {
+    "word": "mega",
+    "startSec": 52.13,
+    "endSec": 52.6
+  },
+  {
+    "word": "tech",
+    "startSec": 52.59,
+    "endSec": 53.06
+  },
+  {
+    "word": "ecosystem",
+    "startSec": 53.06,
+    "endSec": 53.53
+  },
+  {
+    "word": "breakdowns",
+    "startSec": 53.53,
+    "endSec": 54
+  },
+  {
+    "word": "aur",
+    "startSec": 54,
+    "endSec": 54.47
+  },
+  {
+    "word": "architectural",
+    "startSec": 54.47,
+    "endSec": 54.94
+  },
+  {
+    "word": "insights",
+    "startSec": 54.93,
+    "endSec": 55.4
+  },
+  {
+    "word": "ke",
+    "startSec": 55.4,
+    "endSec": 55.87
+  },
+  {
+    "word": "liye",
+    "startSec": 55.87,
+    "endSec": 56.34
+  },
+  {
+    "word": "follow",
+    "startSec": 56.34,
+    "endSec": 56.81
+  },
+  {
+    "word": "karke",
+    "startSec": 56.81,
+    "endSec": 57.28
+  },
+  {
+    "word": "rakho",
+    "startSec": 57.27,
+    "endSec": 57.74
+  },
+  {
+    "word": "@techwith.GenZ",
+    "startSec": 57.74,
+    "endSec": 58.21
+  },
+  {
+    "word": "ko!",
+    "startSec": 58.21,
+    "endSec": 58.68
+  }
+]

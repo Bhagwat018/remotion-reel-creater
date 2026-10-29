@@ -1,0 +1,202 @@
+[
+  {
+    "word": "Kya",
+    "startSec": 0,
+    "endSec": 0.39
+  },
+  {
+    "word": "aapko",
+    "startSec": 0.39,
+    "endSec": 0.78
+  },
+  {
+    "word": "pata",
+    "startSec": 0.79,
+    "endSec": 1.18
+  },
+  {
+    "word": "hai",
+    "startSec": 1.18,
+    "endSec": 1.57
+  },
+  {
+    "word": "ki",
+    "startSec": 1.58,
+    "endSec": 1.97
+  },
+  {
+    "word": "modern",
+    "startSec": 1.97,
+    "endSec": 2.36
+  },
+  {
+    "word": "Kubernetes",
+    "startSec": 2.37,
+    "endSec": 2.76
+  },
+  {
+    "word": "architecture",
+    "startSec": 2.76,
+    "endSec": 3.15
+  },
+  {
+    "word": "me",
+    "startSec": 3.15,
+    "endSec": 3.54
+  },
+  {
+    "word": "requests",
+    "startSec": 3.55,
+    "endSec": 3.94
+  },
+  {
+    "word": "kaise",
+    "startSec": 3.94,
+    "endSec": 4.33
+  },
+  {
+    "word": "travel",
+    "startSec": 4.34,
+    "endSec": 4.73
+  },
+  {
+    "word": "karti",
+    "startSec": 4.73,
+    "endSec": 5.12
+  },
+  {
+    "word": "hain?",
+    "startSec": 5.12,
+    "endSec": 5.51
+  },
+  {
+    "word": "Request",
+    "startSec": 5.87,
+    "endSec": 6.27
+  },
+  {
+    "word": "sabse",
+    "startSec": 6.27,
+    "endSec": 6.67
+  },
+  {
+    "word": "pehle",
+    "startSec": 6.68,
+    "endSec": 7.08
+  },
+  {
+    "word": "Cloudflare",
+    "startSec": 7.08,
+    "endSec": 7.48
+  },
+  {
+    "word": "se",
+    "startSec": 7.49,
+    "endSec": 7.89
+  },
+  {
+    "word": "NGINX",
+    "startSec": 7.89,
+    "endSec": 8.29
+  },
+  {
+    "word": "ingress",
+    "startSec": 8.3,
+    "endSec": 8.7
+  },
+  {
+    "word": "aur",
+    "startSec": 8.7,
+    "endSec": 9.1
+  },
+  {
+    "word": "fir",
+    "startSec": 9.11,
+    "endSec": 9.51
+  },
+  {
+    "word": "pods",
+    "startSec": 9.51,
+    "endSec": 9.91
+  },
+  {
+    "word": "me",
+    "startSec": 9.92,
+    "endSec": 10.32
+  },
+  {
+    "word": "route",
+    "startSec": 10.32,
+    "endSec": 10.72
+  },
+  {
+    "word": "hoti",
+    "startSec": 10.72,
+    "endSec": 11.12
+  },
+  {
+    "word": "hai.",
+    "startSec": 11.13,
+    "endSec": 11.53
+  },
+  {
+    "word": "System",
+    "startSec": 11.88,
+    "endSec": 12.31
+  },
+  {
+    "word": "design",
+    "startSec": 12.31,
+    "endSec": 12.74
+  },
+  {
+    "word": "simple",
+    "startSec": 12.74,
+    "endSec": 13.17
+  },
+  {
+    "word": "bhasha",
+    "startSec": 13.17,
+    "endSec": 13.6
+  },
+  {
+    "word": "me",
+    "startSec": 13.6,
+    "endSec": 14.03
+  },
+  {
+    "word": "seekhne",
+    "startSec": 14.04,
+    "endSec": 14.47
+  },
+  {
+    "word": "ke",
+    "startSec": 14.47,
+    "endSec": 14.9
+  },
+  {
+    "word": "liye",
+    "startSec": 14.9,
+    "endSec": 15.33
+  },
+  {
+    "word": "follow",
+    "startSec": 15.33,
+    "endSec": 15.76
+  },
+  {
+    "word": "karein",
+    "startSec": 15.76,
+    "endSec": 16.19
+  },
+  {
+    "word": "@techwith.GenZ",
+    "startSec": 16.19,
+    "endSec": 16.62
+  },
+  {
+    "word": "ko!",
+    "startSec": 16.62,
+    "endSec": 17.05
+  }
+]

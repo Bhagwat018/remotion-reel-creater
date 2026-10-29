@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "slug": "ai-channel-complete-pipeline",
+    "title": "Ye Poora Channel AI Se Banta Hai",
+    "topic": "AI Automated Channel Pipeline",
+    "handle": "@techWith.GenZ",
+    "voiceFile": "reels/ai-channel-complete-pipeline/voice.mp3",
+    "wordsFile": "reels/ai-channel-complete-pipeline/words.json",
+    "durationSec": 55,
+    "loop": true,
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.14
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 4,
+      "headline": "*100% AI* CHANNEL",
+      "leadIn": "ZERO MANUAL WORK",
+      "subtitle": "Main bas decide karta hoon, dikhata hoon kaise.",
+      "voice": "Ye poora channel AI se banta hai. Main bas decide karta hoon. Dikhata hoon kaise.",
+      "direction": "from-top"
+    },
+    {
+      "id": "s2-script",
+      "type": "code",
+      "startSec": 4,
+      "endSec": 11,
+      "headline": "STEP 1: *CLAUDE SCRIPT*",
+      "leadIn": "AI RESEARCH AGENT",
+      "filename": "claude_agent.sh",
+      "lines": [
+        "$ claude 'Research viral topic & verify sources'",
+        "-> Checking Reddit, GitHub & Arxiv...",
+        "-> Viral script generated: 100% facts",
+        "-> Status: SCRIPT APPROVED [OK]"
+      ],
+      "highlightLines": [
+        1,
+        4
+      ],
+      "voice": "Step 1: script. Main Claude Code ko topic deta hoon. Wo research karta hai, sources check karta hai, aur script likhta hai. Main approve karta hoon.",
+      "direction": "from-right"
+    },
+    {
+      "id": "s3-voice",
+      "type": "stat",
+      "startSec": 11,
+      "endSec": 19.8,
+      "headline": "STEP 2: *OPENAI VOICE*",
+      "leadIn": "MULTI-TAKE SYNTHESIS",
+      "value": "100%",
+      "label": "AI Transcription Verified",
+      "pills": [
+        "OpenAI Voice Model",
+        "3-5 Takes Per Reel",
+        "Zero Mispronunciation"
+      ],
+      "voice": "Step 2: awaaz. Ye awaaz OpenAI ke voice model ki hai. Har reel ke teen se paanch takes bante hain, aur AI transcription se check hota hai ki koi word galat toh nahi.",
+      "direction": "from-left"
+    },
+    {
+      "id": "s4-captions",
+      "type": "card",
+      "startSec": 19.8,
+      "endSec": 25.1,
+      "headline": "STEP 3: *WHISPER CAPTIONS*",
+      "leadIn": "WORD-LEVEL SYNC",
+      "cardText": "Whisper har ek word ka exact millisecond time nikaalta hai, isliye bubble ke words bilkul awaaz ke saath chalte hain.",
+      "chip": "WHISPER AI SYNC",
+      "voice": "Step 3: captions. Whisper har word ka time nikaalta hai. Isliye bubble ke words bilkul awaaz ke saath chalte hain.",
+      "direction": "from-bottom"
+    },
+    {
+      "id": "s5-avatar",
+      "type": "compare",
+      "startSec": 25.1,
+      "endSec": 30.3,
+      "headline": "STEP 4: *AVATAR IS CODE*",
+      "leadIn": "NOT A DRAWING",
+      "left": {
+        "label": "Drawing / Photoshop ❌",
+        "items": [
+          "Manual artist drawing",
+          "Frame-by-frame rigging"
+        ]
+      },
+      "right": {
+        "label": "Pure React Code ✅",
+        "items": [
+          "<Avatar loudness={rms} />",
+          "Mouth flaps with voice loudness"
+        ]
+      },
+      "voice": "Step 4: avatar. Ye avatar, ye drawing nahi, code hai. Aur mera muh awaaz ki loudness se hilta hai.",
+      "direction": "pop-3d"
+    },
+    {
+      "id": "s6-animation",
+      "type": "code",
+      "startSec": 30.3,
+      "endSec": 36.2,
+      "headline": "STEP 5: *REMOTION ENGINE*",
+      "leadIn": "CODE TO VIDEO",
+      "filename": "Reel.tsx",
+      "lines": [
+        "import { Composition, spring } from 'remotion';",
+        "<Composition id='ViralReel' fps={30} width={1080} />",
+        "// Har card, har sticker, code hai!",
+        "const pop = spring({ frame, config: { damping: 14 } });"
+      ],
+      "highlightLines": [
+        2,
+        4
+      ],
+      "voice": "Step 5: animation. Remotion naam ka tool React code se video banata hai. Har card, har sticker, code hai.",
+      "direction": "from-right"
+    },
+    {
+      "id": "s7-agents",
+      "type": "flow",
+      "startSec": 36.2,
+      "endSec": 44.3,
+      "headline": "PARALLEL *AI AGENTS*",
+      "leadIn": "15 MIN WORKFLOW",
+      "steps": [
+        {
+          "label": "Claude Agent",
+          "desc": "Topic research & scriptwriting"
+        },
+        {
+          "label": "Audio Agent",
+          "desc": "OpenAI voice & Whisper"
+        },
+        {
+          "label": "Remotion Builder",
+          "desc": "React scenes & SVG avatar"
+        },
+        {
+          "label": "GPU Render",
+          "desc": "Ready in 15 minutes flat!"
+        }
+      ],
+      "voice": "Aur sabse mazedaar: Claude Code alag AI agents bhejta hai, jo parallel mein kaam karte hain. Script approve hone ke baad reel lagbhag 15 minute mein ready.",
+      "direction": "from-left"
+    },
+    {
+      "id": "s8-comment",
+      "type": "card",
+      "startSec": 44.3,
+      "endSec": 48.4,
+      "headline": "WANT THIS *PIPELINE*?",
+      "leadIn": "COMMENT 'PIPELINE'",
+      "cardText": "Comment 'pipeline' to get the full source code, prompts, and architecture breakdown in upcoming reels!",
+      "chip": "COMMENT 'PIPELINE'",
+      "voice": "Ye pipeline chahiye? Comment karo “pipeline”. Poora breakdown agle reels mein.",
+      "direction": "from-bottom"
+    },
+    {
+      "id": "s9-cta",
+      "type": "cta",
+      "startSec": 48.4,
+      "endSec": 55.1,
+      "headline": "SHARE WITH *A FRIEND*",
+      "leadIn": "NO MORE EXCUSES",
+      "buttonText": "FOLLOW @techWith.GenZ",
+      "voice": "Ye reel us dost ko bhejo jo sochta hai reels banana bahut mehnat ka kaam hai.",
+      "direction": "pop-3d"
+    }
+  ]
+}

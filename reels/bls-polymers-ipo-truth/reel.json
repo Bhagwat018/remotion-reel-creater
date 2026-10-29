@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "topic": "BLS Polymers IPO Deep Truth",
+    "audience": "Retail investors, stock market beginners",
+    "lengthSec": 35,
+    "language": "Hinglish",
+    "handle": "@techwith.GenZ",
+    "slug": "bls-polymers-ipo-truth",
+    "voiceFile": "reels/bls-polymers-ipo-truth/voice.mp3"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 6,
+      "voice": "Agar tum bhi BLS Polymers IPO mein apne 15 hazar lagane ki soch rahe ho, toh pehle in numbers ki asliyat sun lo.",
+      "headline": "THE DARK SIDE OF BLS IPO"
+    },
+    {
+      "id": "s2-revenue",
+      "type": "stat",
+      "startSec": 6,
+      "endSec": 13,
+      "voice": "Sab bol rahe hain profit 27 crore ho gaya, par sach ye hai ki inki revenue growth gir kar sirf 6 percent reh gayi hai. Ye thoda ajeeb nahi lagta?",
+      "headline": "REVENUE SLOWDOWN",
+      "value": "6.39%",
+      "label": "Growth Drop"
+    },
+    {
+      "id": "s3-valuation",
+      "type": "pills",
+      "startSec": 13,
+      "endSec": 19,
+      "voice": "Valuation dekhein toh 34 ke P/E ratio par ye apne competitors se kaafi mehanga IPO de rahe hain. Aur crude oil ka risk alag se hai.",
+      "headline": "EXPENSIVE VALUATION",
+      "items": [
+        "34.45x P/E",
+        "Higher Than Peers",
+        "Crude Oil Risk"
+      ]
+    },
+    {
+      "id": "s4-risk",
+      "type": "card",
+      "startSec": 19,
+      "endSec": 28,
+      "voice": "Sabse bada risk batau? Inka 66 percent dhanda sirf top 10 clients se aata hai, aur poori manufacturing sirf ek Goa ki factory par dependent hai.",
+      "headline": "SINGLE POINT OF FAILURE",
+      "body": "Over-dependent on Top 10 clients and a single Goa manufacturing plant.",
+      "cardText": "Over-dependent on Top 10 clients and a single Goa manufacturing plant.",
+      "chip": "KEY HIGHLIGHT"
+    },
+    {
+      "id": "s5-cta",
+      "type": "cta",
+      "startSec": 28,
+      "endSec": 35,
+      "voice": "Brokerages naye expansion ke dum par isko long-term hold bata rahi hain. Tumhara kya plan hai? Asli market reality ke liye techwith.GenZ ko follow karo.",
+      "headline": "WHAT'S YOUR PLAN?",
+      "buttonText": "FOLLOW @techwith.GenZ"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "meta": {
     "slug": "jio-ipo-listing-strategy",
-    "title": "Jio IPO Listing Day Strategy",
-    "topic": "Jio IPO Listing Day Strategy (Hold or Sell)",
+    "title": "Jio IPO: Hold or Sell?",
+    "topic": "Jio IPO Listing Day Strategy",
     "handle": "@techwith.GenZ",
     "voiceFile": "reels/jio-ipo-listing-strategy/voice.mp3",
     "loop": true,
@@ -13,106 +13,111 @@
     },
     "captionStyle": "bubble",
     "bgm": "bgm/cyber-groove.mp3",
-    "bgmVolume": 0.18
+    "bgmVolume": 0.18,
+    "voice": "Rishi",
+    "voiceSpeed": 1.05,
+    "durationSec": 68,
+    "wordsFile": "reels/jio-ipo-listing-strategy/words.json"
   },
   "scenes": [
     {
       "type": "title",
       "startSec": 0,
-      "endSec": 4,
+      "endSec": 7.49,
       "direction": "pop-3d",
-      "title": "Jio IPO: Hold Or Sell?",
-      "subtitle": "Listing Day Strategy Unlocked 🚀",
-      "voice": "Jio IPO list hone wala hai! Par listing day pe exact strategy kya honi chahiye? Hold karein ya Sell?",
-      "id": "scene-1",
-      "headline": "Jio IPO: Hold Or Sell?"
+      "headline": "Jio IPO: *Listing Day* Strategy!",
+      "leadIn": "Market me hype full hai!",
+      "voice": "Jio IPO listing day fast approach kar raha hai! But main question: Listing day pe Hold karein ya instant Sell?",
+      "id": "scene-1"
     },
     {
       "type": "stat",
-      "startSec": 4,
-      "endSec": 8.5,
+      "startSec": 7.49,
+      "endSec": 16.82,
       "direction": "from-right",
-      "stat": "+35%",
-      "label": "Expected GMP / Listing Pop",
-      "subtext": "Based on grey market trends",
-      "voice": "Grey market trends suggest an expected 30 to 40 percent listing gain on day one!",
+      "headline": "Valuation & *(GMP)* Metrics",
+      "voice": "Valuation touch kar rahi hai over 100 Billion Dollars! Grey market premium spike ho raha hai, but retail allocations dynamic honge.",
+      "statValue": "$100B+",
+      "statLabel": "Expected Enterprise Valuation",
       "id": "scene-2",
-      "headline": "Key Feature",
-      "value": "+35%"
+      "value": "10x",
+      "label": "Performance Metric"
     },
     {
-      "type": "pills",
-      "startSec": 8.5,
-      "endSec": 13,
-      "direction": "from-bottom",
-      "title": "Growth Drivers",
-      "items": [
-        "470M+ Active Users",
-        "ARPU Hikes Ahead",
-        "AI & Cloud Ecosystem"
-      ],
-      "voice": "470 million plus subscribers, consistent ARPU hikes, aur solid AI cloud engine ecosystem setup!",
-      "id": "scene-3",
-      "headline": "Growth Drivers"
-    },
-    {
-      "type": "card",
-      "startSec": 13,
-      "endSec": 17.5,
+      "type": "flow",
+      "startSec": 16.82,
+      "endSec": 28.26,
       "direction": "from-left",
-      "title": "Trader Strategy",
-      "body": "Book 50% listing profits on Day 1.\nSet strict trailing Stop-Loss for remaining.",
-      "accentColor": "#fb923c",
-      "voice": "Agar aap short-term gains ke liye aaye ho, toh listing day pe 50 percent profit book karo aur baaki par strict stop loss lagao.",
-      "id": "scene-4",
-      "headline": "Trader Strategy",
-      "chip": "HIGHLIGHT",
-      "cardText": "Book 50% listing profits on Day 1.\nSet strict trailing Stop-Loss for remaining."
+      "headline": "*Listing Day* Decision Engine",
+      "voice": "Toh humara execution flow simple hai: Pre-open price check karo, GMP percentage calculate karo, trailing stop-loss set karo, aur system exit execute karega.",
+      "steps": [
+        "Pre-Open Price",
+        "GMP % Analysis",
+        "Trailing Stop-Loss",
+        "Execute Hold/Sell"
+      ],
+      "id": "scene-3",
+      "nodes": [
+        "Pre-Open Price",
+        "GMP % Analysis",
+        "Trailing Stop-Loss",
+        "Execute Hold/Sell"
+      ]
     },
     {
       "type": "compare",
-      "startSec": 17.5,
-      "endSec": 22.5,
-      "direction": "from-top",
-      "title": "Strategy Comparison",
-      "left": {
-        "label": "Listing Trader",
-        "value": "Book 50% & Trail SL"
-      },
-      "right": {
-        "label": "Long-Term Investor",
-        "value": "Hold 3-5 Yrs Compound"
-      },
-      "voice": "Long term investors ke liye simple strategy hai: Hold for 3 to 5 years, India ki digital expansion story abhi shuru huyi hai.",
-      "id": "scene-5",
-      "headline": "Strategy Comparison"
+      "startSec": 28.26,
+      "endSec": 39.31,
+      "direction": "from-bottom",
+      "headline": "_Listing Gain_ vs _Long Term HODL_",
+      "voice": "Agar 30 percent plus listing gain milta hai, short-term flippers partial profit book kar sakte hain. But long-term 5G scale ke liye HODL solid logic hai.",
+      "id": "scene-4"
     },
     {
-      "type": "stacked",
-      "startSec": 22.5,
-      "endSec": 27,
+      "type": "code",
+      "startSec": 39.31,
+      "endSec": 47.26,
+      "direction": "from-top",
+      "headline": "Automated *(Trailing SL)* Algo",
+      "codeLanguage": "python",
+      "codeSnippet": "def listing_day_strategy(gmp_pct, price):\n    if gmp_pct > 30:\n        lock_profit(ratio=0.50)\n        set_trailing_sl(pct=5.0)\n    return 'HODL_REMAINDER'",
+      "voice": "Python me aisa simple stop-loss script run kar sakte ho taaki listing day pe zero emotions ke saath profit lock ho sake!",
+      "id": "scene-5",
+      "filename": "index.ts",
+      "lines": [
+        "echo 'Hello World'"
+      ]
+    },
+    {
+      "type": "pills",
+      "startSec": 47.26,
+      "endSec": 56.55,
       "direction": "pop-3d",
-      "title": "Key Risk Factors",
-      "items": [
-        "Heavy 5G Capex Spend",
-        "Monetization Speed",
-        "Regulatory Changes"
+      "headline": "4 *Critical Risks* to Track",
+      "voice": "Ye 4 factors launch day pe zaroor monitor karna: Telecom ARPU rate, market volatility, FII flows, aur retail sector margins.",
+      "pills": [
+        "Telecom ARPU",
+        "Market Volatility",
+        "FII Inflows",
+        "Retail Margins"
       ],
-      "voice": "Par watch out! Heavy 5G capex aur delayed monetization risks ko hamesha dhyan me rakhein.",
       "id": "scene-6",
-      "headline": "Key Risk Factors"
+      "items": [
+        "Telecom ARPU",
+        "Market Volatility",
+        "FII Inflows",
+        "Retail Margins"
+      ]
     },
     {
       "type": "cta",
-      "startSec": 27,
-      "endSec": 32,
+      "startSec": 56.55,
+      "endSec": 67.11,
       "direction": "from-right",
-      "title": "Want Full IPO Analysis?",
-      "action": "Comment 'JIO' for PDF",
+      "headline": "Comment *JIO* for Full Sheet!",
+      "voice": "Aapka kya plan hai? Hold ya Sell? Comment JIO to get our free Listing Day Calculation Sheet! Follow techwith.GenZ for tech and market breakdown!",
       "buttonText": "Follow @techwith.GenZ",
-      "voice": "Aapka kya plan hai, Hold or Sell? Comment karo 'JIO' for full valuation report and follow @techwith.GenZ!",
-      "id": "scene-7",
-      "headline": "Want Full IPO Analysis?"
+      "id": "scene-7"
     }
   ]
 }

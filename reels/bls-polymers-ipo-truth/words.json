@@ -1,0 +1,652 @@
+[
+  {
+    "word": "Agar",
+    "startSec": 0,
+    "endSec": 0.26
+  },
+  {
+    "word": "tum",
+    "startSec": 0.26,
+    "endSec": 0.52
+  },
+  {
+    "word": "bhi",
+    "startSec": 0.52,
+    "endSec": 0.78
+  },
+  {
+    "word": "BLS",
+    "startSec": 0.78,
+    "endSec": 1.04
+  },
+  {
+    "word": "Polymers",
+    "startSec": 1.04,
+    "endSec": 1.3
+  },
+  {
+    "word": "IPO",
+    "startSec": 1.3,
+    "endSec": 1.56
+  },
+  {
+    "word": "mein",
+    "startSec": 1.57,
+    "endSec": 1.83
+  },
+  {
+    "word": "apne",
+    "startSec": 1.83,
+    "endSec": 2.09
+  },
+  {
+    "word": "15",
+    "startSec": 2.09,
+    "endSec": 2.35
+  },
+  {
+    "word": "hazar",
+    "startSec": 2.35,
+    "endSec": 2.61
+  },
+  {
+    "word": "lagane",
+    "startSec": 2.61,
+    "endSec": 2.87
+  },
+  {
+    "word": "ki",
+    "startSec": 2.87,
+    "endSec": 3.13
+  },
+  {
+    "word": "soch",
+    "startSec": 3.13,
+    "endSec": 3.39
+  },
+  {
+    "word": "rahe",
+    "startSec": 3.39,
+    "endSec": 3.65
+  },
+  {
+    "word": "ho,",
+    "startSec": 3.65,
+    "endSec": 3.91
+  },
+  {
+    "word": "toh",
+    "startSec": 3.91,
+    "endSec": 4.17
+  },
+  {
+    "word": "pehle",
+    "startSec": 4.17,
+    "endSec": 4.43
+  },
+  {
+    "word": "in",
+    "startSec": 4.43,
+    "endSec": 4.69
+  },
+  {
+    "word": "numbers",
+    "startSec": 4.7,
+    "endSec": 4.96
+  },
+  {
+    "word": "ki",
+    "startSec": 4.96,
+    "endSec": 5.22
+  },
+  {
+    "word": "asliyat",
+    "startSec": 5.22,
+    "endSec": 5.48
+  },
+  {
+    "word": "sun",
+    "startSec": 5.48,
+    "endSec": 5.74
+  },
+  {
+    "word": "lo.",
+    "startSec": 5.74,
+    "endSec": 6
+  },
+  {
+    "word": "Sab",
+    "startSec": 6,
+    "endSec": 6.23
+  },
+  {
+    "word": "bol",
+    "startSec": 6.23,
+    "endSec": 6.46
+  },
+  {
+    "word": "rahe",
+    "startSec": 6.47,
+    "endSec": 6.7
+  },
+  {
+    "word": "hain",
+    "startSec": 6.7,
+    "endSec": 6.93
+  },
+  {
+    "word": "profit",
+    "startSec": 6.93,
+    "endSec": 7.16
+  },
+  {
+    "word": "27",
+    "startSec": 7.17,
+    "endSec": 7.4
+  },
+  {
+    "word": "crore",
+    "startSec": 7.4,
+    "endSec": 7.63
+  },
+  {
+    "word": "ho",
+    "startSec": 7.63,
+    "endSec": 7.86
+  },
+  {
+    "word": "gaya,",
+    "startSec": 7.87,
+    "endSec": 8.1
+  },
+  {
+    "word": "par",
+    "startSec": 8.1,
+    "endSec": 8.33
+  },
+  {
+    "word": "sach",
+    "startSec": 8.33,
+    "endSec": 8.56
+  },
+  {
+    "word": "ye",
+    "startSec": 8.57,
+    "endSec": 8.8
+  },
+  {
+    "word": "hai",
+    "startSec": 8.8,
+    "endSec": 9.03
+  },
+  {
+    "word": "ki",
+    "startSec": 9.03,
+    "endSec": 9.26
+  },
+  {
+    "word": "inki",
+    "startSec": 9.27,
+    "endSec": 9.5
+  },
+  {
+    "word": "revenue",
+    "startSec": 9.5,
+    "endSec": 9.73
+  },
+  {
+    "word": "growth",
+    "startSec": 9.73,
+    "endSec": 9.96
+  },
+  {
+    "word": "gir",
+    "startSec": 9.97,
+    "endSec": 10.2
+  },
+  {
+    "word": "kar",
+    "startSec": 10.2,
+    "endSec": 10.43
+  },
+  {
+    "word": "sirf",
+    "startSec": 10.43,
+    "endSec": 10.66
+  },
+  {
+    "word": "6",
+    "startSec": 10.67,
+    "endSec": 10.9
+  },
+  {
+    "word": "percent",
+    "startSec": 10.9,
+    "endSec": 11.13
+  },
+  {
+    "word": "reh",
+    "startSec": 11.13,
+    "endSec": 11.36
+  },
+  {
+    "word": "gayi",
+    "startSec": 11.37,
+    "endSec": 11.6
+  },
+  {
+    "word": "hai.",
+    "startSec": 11.6,
+    "endSec": 11.83
+  },
+  {
+    "word": "Ye",
+    "startSec": 11.83,
+    "endSec": 12.06
+  },
+  {
+    "word": "thoda",
+    "startSec": 12.07,
+    "endSec": 12.3
+  },
+  {
+    "word": "ajeeb",
+    "startSec": 12.3,
+    "endSec": 12.53
+  },
+  {
+    "word": "nahi",
+    "startSec": 12.53,
+    "endSec": 12.76
+  },
+  {
+    "word": "lagta?",
+    "startSec": 12.77,
+    "endSec": 13
+  },
+  {
+    "word": "Valuation",
+    "startSec": 13,
+    "endSec": 13.23
+  },
+  {
+    "word": "dekhein",
+    "startSec": 13.23,
+    "endSec": 13.46
+  },
+  {
+    "word": "toh",
+    "startSec": 13.46,
+    "endSec": 13.69
+  },
+  {
+    "word": "34",
+    "startSec": 13.69,
+    "endSec": 13.92
+  },
+  {
+    "word": "ke",
+    "startSec": 13.92,
+    "endSec": 14.15
+  },
+  {
+    "word": "P/E",
+    "startSec": 14.15,
+    "endSec": 14.38
+  },
+  {
+    "word": "ratio",
+    "startSec": 14.38,
+    "endSec": 14.61
+  },
+  {
+    "word": "par",
+    "startSec": 14.62,
+    "endSec": 14.85
+  },
+  {
+    "word": "ye",
+    "startSec": 14.85,
+    "endSec": 15.08
+  },
+  {
+    "word": "apne",
+    "startSec": 15.08,
+    "endSec": 15.31
+  },
+  {
+    "word": "competitors",
+    "startSec": 15.31,
+    "endSec": 15.54
+  },
+  {
+    "word": "se",
+    "startSec": 15.54,
+    "endSec": 15.77
+  },
+  {
+    "word": "kaafi",
+    "startSec": 15.77,
+    "endSec": 16
+  },
+  {
+    "word": "mehanga",
+    "startSec": 16,
+    "endSec": 16.23
+  },
+  {
+    "word": "IPO",
+    "startSec": 16.23,
+    "endSec": 16.46
+  },
+  {
+    "word": "de",
+    "startSec": 16.46,
+    "endSec": 16.69
+  },
+  {
+    "word": "rahe",
+    "startSec": 16.69,
+    "endSec": 16.92
+  },
+  {
+    "word": "hain.",
+    "startSec": 16.92,
+    "endSec": 17.15
+  },
+  {
+    "word": "Aur",
+    "startSec": 17.15,
+    "endSec": 17.38
+  },
+  {
+    "word": "crude",
+    "startSec": 17.38,
+    "endSec": 17.61
+  },
+  {
+    "word": "oil",
+    "startSec": 17.62,
+    "endSec": 17.85
+  },
+  {
+    "word": "ka",
+    "startSec": 17.85,
+    "endSec": 18.08
+  },
+  {
+    "word": "risk",
+    "startSec": 18.08,
+    "endSec": 18.31
+  },
+  {
+    "word": "alag",
+    "startSec": 18.31,
+    "endSec": 18.54
+  },
+  {
+    "word": "se",
+    "startSec": 18.54,
+    "endSec": 18.77
+  },
+  {
+    "word": "hai.",
+    "startSec": 18.77,
+    "endSec": 19
+  },
+  {
+    "word": "Sabse",
+    "startSec": 19,
+    "endSec": 19.35
+  },
+  {
+    "word": "bada",
+    "startSec": 19.35,
+    "endSec": 19.7
+  },
+  {
+    "word": "risk",
+    "startSec": 19.69,
+    "endSec": 20.04
+  },
+  {
+    "word": "batau?",
+    "startSec": 20.04,
+    "endSec": 20.39
+  },
+  {
+    "word": "Inka",
+    "startSec": 20.38,
+    "endSec": 20.73
+  },
+  {
+    "word": "66",
+    "startSec": 20.73,
+    "endSec": 21.08
+  },
+  {
+    "word": "percent",
+    "startSec": 21.08,
+    "endSec": 21.43
+  },
+  {
+    "word": "dhanda",
+    "startSec": 21.42,
+    "endSec": 21.77
+  },
+  {
+    "word": "sirf",
+    "startSec": 21.77,
+    "endSec": 22.12
+  },
+  {
+    "word": "top",
+    "startSec": 22.12,
+    "endSec": 22.47
+  },
+  {
+    "word": "10",
+    "startSec": 22.46,
+    "endSec": 22.81
+  },
+  {
+    "word": "clients",
+    "startSec": 22.81,
+    "endSec": 23.16
+  },
+  {
+    "word": "se",
+    "startSec": 23.15,
+    "endSec": 23.5
+  },
+  {
+    "word": "aata",
+    "startSec": 23.5,
+    "endSec": 23.85
+  },
+  {
+    "word": "hai,",
+    "startSec": 23.85,
+    "endSec": 24.2
+  },
+  {
+    "word": "aur",
+    "startSec": 24.19,
+    "endSec": 24.54
+  },
+  {
+    "word": "poori",
+    "startSec": 24.54,
+    "endSec": 24.89
+  },
+  {
+    "word": "manufacturing",
+    "startSec": 24.88,
+    "endSec": 25.23
+  },
+  {
+    "word": "sirf",
+    "startSec": 25.23,
+    "endSec": 25.58
+  },
+  {
+    "word": "ek",
+    "startSec": 25.58,
+    "endSec": 25.93
+  },
+  {
+    "word": "Goa",
+    "startSec": 25.92,
+    "endSec": 26.27
+  },
+  {
+    "word": "ki",
+    "startSec": 26.27,
+    "endSec": 26.62
+  },
+  {
+    "word": "factory",
+    "startSec": 26.62,
+    "endSec": 26.97
+  },
+  {
+    "word": "par",
+    "startSec": 26.96,
+    "endSec": 27.31
+  },
+  {
+    "word": "dependent",
+    "startSec": 27.31,
+    "endSec": 27.66
+  },
+  {
+    "word": "hai.",
+    "startSec": 27.65,
+    "endSec": 28
+  },
+  {
+    "word": "Brokerages",
+    "startSec": 28,
+    "endSec": 28.28
+  },
+  {
+    "word": "naye",
+    "startSec": 28.28,
+    "endSec": 28.56
+  },
+  {
+    "word": "expansion",
+    "startSec": 28.56,
+    "endSec": 28.84
+  },
+  {
+    "word": "ke",
+    "startSec": 28.84,
+    "endSec": 29.12
+  },
+  {
+    "word": "dum",
+    "startSec": 29.12,
+    "endSec": 29.4
+  },
+  {
+    "word": "par",
+    "startSec": 29.4,
+    "endSec": 29.68
+  },
+  {
+    "word": "isko",
+    "startSec": 29.68,
+    "endSec": 29.96
+  },
+  {
+    "word": "long-term",
+    "startSec": 29.96,
+    "endSec": 30.24
+  },
+  {
+    "word": "hold",
+    "startSec": 30.24,
+    "endSec": 30.52
+  },
+  {
+    "word": "bata",
+    "startSec": 30.52,
+    "endSec": 30.8
+  },
+  {
+    "word": "rahi",
+    "startSec": 30.8,
+    "endSec": 31.08
+  },
+  {
+    "word": "hain.",
+    "startSec": 31.08,
+    "endSec": 31.36
+  },
+  {
+    "word": "Tumhara",
+    "startSec": 31.36,
+    "endSec": 31.64
+  },
+  {
+    "word": "kya",
+    "startSec": 31.64,
+    "endSec": 31.92
+  },
+  {
+    "word": "plan",
+    "startSec": 31.92,
+    "endSec": 32.2
+  },
+  {
+    "word": "hai?",
+    "startSec": 32.2,
+    "endSec": 32.48
+  },
+  {
+    "word": "Asli",
+    "startSec": 32.48,
+    "endSec": 32.76
+  },
+  {
+    "word": "market",
+    "startSec": 32.76,
+    "endSec": 33.04
+  },
+  {
+    "word": "reality",
+    "startSec": 33.04,
+    "endSec": 33.32
+  },
+  {
+    "word": "ke",
+    "startSec": 33.32,
+    "endSec": 33.6
+  },
+  {
+    "word": "liye",
+    "startSec": 33.6,
+    "endSec": 33.88
+  },
+  {
+    "word": "techwith.GenZ",
+    "startSec": 33.88,
+    "endSec": 34.16
+  },
+  {
+    "word": "ko",
+    "startSec": 34.16,
+    "endSec": 34.44
+  },
+  {
+    "word": "follow",
+    "startSec": 34.44,
+    "endSec": 34.72
+  },
+  {
+    "word": "karo.",
+    "startSec": 34.72,
+    "endSec": 35
+  }
+]

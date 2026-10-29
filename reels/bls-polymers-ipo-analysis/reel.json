@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "topic": "BLS Polymers IPO Review",
+    "audience": "Retail investors, stock market beginners, traders",
+    "lengthSec": 35,
+    "language": "Hinglish",
+    "handle": "@techwith.GenZ",
+    "slug": "bls-polymers-ipo-analysis",
+    "voiceFile": "reels/bls-polymers-ipo-analysis/voice.mp3"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 6,
+      "voice": "Market mein ek aur IPO aa gaya hai jo ₹15,000 lagane par sidha 30 percent profit dikha raha hai, BLS Polymers!",
+      "headline": "30% IPO PROFIT?"
+    },
+    {
+      "id": "s2-gmp",
+      "type": "stat",
+      "startSec": 6,
+      "endSec": 12,
+      "voice": "Iska GMP already 47 rupees chal raha hai, NIIs ne daba ke paisa lagaya hai aur issue kal hi close ho raha hai.",
+      "headline": "CURRENT GMP",
+      "value": "₹47",
+      "label": "Expected Listing Gain"
+    },
+    {
+      "id": "s3-business",
+      "type": "pills",
+      "startSec": 12,
+      "endSec": 19,
+      "voice": "Company wires aur cables ke liye specialty polymers banati hai, aur inka profit 2 saal mein 7 crore se jump hoke 27 crore ho gaya hai!",
+      "headline": "MASSIVE GROWTH",
+      "items": [
+        "Specialty Polymers",
+        "20x Subscribed",
+        "Profit: 7Cr to 27Cr"
+      ]
+    },
+    {
+      "id": "s4-risk",
+      "type": "card",
+      "startSec": 19,
+      "endSec": 28,
+      "voice": "Par dhyan rakhna, hidden risk ye hai ki inka 60 percent revenue sirf top 10 clients se aata hai, toh concentration risk kaafi high hai.",
+      "headline": "HIDDEN RISK",
+      "body": "60% of total revenue comes from just Top 10 Clients. High dependency!",
+      "cardText": "60% of total revenue comes from just Top 10 Clients. High dependency!",
+      "chip": "KEY HIGHLIGHT"
+    },
+    {
+      "id": "s5-cta",
+      "type": "cta",
+      "startSec": 28,
+      "endSec": 35,
+      "voice": "Apply karne se pehle pura data caption mein padh lo, aur aise hi quick IPO analysis ke liye techwith.GenZ ko abhi follow kar lo!",
+      "headline": "APPLY OR AVOID?",
+      "buttonText": "FOLLOW @techwith.GenZ"
+    }
+  ]
+}

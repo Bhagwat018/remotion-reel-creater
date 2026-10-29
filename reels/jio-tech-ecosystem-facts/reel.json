@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "slug": "jio-tech-ecosystem-facts",
+    "title": "Jio Stock & Tech Ecosystem Facts",
+    "topic": "Jio Tech Ecosystem Architecture & Scale",
+    "handle": "@techwith.GenZ",
+    "voiceFile": "reels/jio-tech-ecosystem-facts/voice.mp3",
+    "loop": true,
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.18,
+    "voice": "Rishi",
+    "voiceSpeed": 1.05,
+    "durationSec": 60,
+    "wordsFile": "reels/jio-tech-ecosystem-facts/words.json"
+  },
+  "scenes": [
+    {
+      "type": "title",
+      "startSec": 0,
+      "endSec": 7.39,
+      "direction": "from-top",
+      "leadIn": "Telecom or Tech Giant?",
+      "title": "Jio is *NOT* Just Telecom! It's a *(Tech Giant)*",
+      "subtitle": "450M+ users powered by homegrown cloud-native tech stack",
+      "badge": "TECH UNCOVERED",
+      "voice": "Jio ko bas telecom SIM provider samjhte ho? Reliance Jio is actually a massive software tech powerhouse!",
+      "id": "scene-1",
+      "headline": "Jio is *NOT* Just Telecom! It's a *(Tech Giant)*"
+    },
+    {
+      "type": "stat",
+      "startSec": 7.39,
+      "endSec": 16,
+      "direction": "from-right",
+      "leadIn": "Insane Scale & Traffic",
+      "number": "500+ PB",
+      "label": "Daily Data Processing",
+      "subtext": "Carrying over 60% of India's mobile data traffic",
+      "highlight": "#fb923c",
+      "voice": "India ka 60% se zyada mobile data traffic Jio akela process karta hai! That is over 500 Petabytes daily.",
+      "id": "scene-2",
+      "headline": "Key Feature",
+      "value": "10x"
+    },
+    {
+      "type": "orbit",
+      "startSec": 16,
+      "endSec": 24.47,
+      "direction": "from-bottom",
+      "title": "The *Jio Tech* Ecosystem",
+      "centerLabel": "Jio Core",
+      "items": [
+        {
+          "label": "JioBrain AI",
+          "color": "#f472b6",
+          "icon": "brain"
+        },
+        {
+          "label": "JioCloud",
+          "color": "#60a5fa",
+          "icon": "cloud"
+        },
+        {
+          "label": "JioCinema",
+          "color": "#c084fc",
+          "icon": "play"
+        },
+        {
+          "label": "5G SA Core",
+          "color": "#4ade80",
+          "icon": "cpu"
+        },
+        {
+          "label": "JioFinance",
+          "color": "#fb923c",
+          "icon": "wallet"
+        }
+      ],
+      "voice": "Inka homegrown ecosystem dekho: JioCloud, JioCinema streaming infra, 5G SA Core, aur JioBrain AI engines.",
+      "id": "scene-3",
+      "headline": "The *Jio Tech* Ecosystem",
+      "center": "docker",
+      "nodes": [
+        "kubernetes",
+        "aws",
+        "linux"
+      ]
+    },
+    {
+      "type": "flow",
+      "startSec": 24.47,
+      "endSec": 32.24,
+      "direction": "from-left",
+      "title": "5G *Standalone Core* Flow",
+      "steps": [
+        {
+          "id": "1",
+          "label": "User Request",
+          "subtext": "Edge Device 5G",
+          "status": "active",
+          "color": "#60a5fa"
+        },
+        {
+          "id": "2",
+          "label": "Cloud Core",
+          "subtext": "Kubernetes Microservices",
+          "status": "active",
+          "color": "#c084fc"
+        },
+        {
+          "id": "3",
+          "label": "JioBrain AI",
+          "subtext": "Real-time Traffic Routing",
+          "status": "active",
+          "color": "#f472b6"
+        },
+        {
+          "id": "4",
+          "label": "Data Mesh",
+          "subtext": "Distributed Processing",
+          "status": "pending",
+          "color": "#4ade80"
+        }
+      ],
+      "voice": "Inka 5G network legacy hardware pe nahi, balki cloud-native software defined architecture pe chal raha hai.",
+      "id": "scene-4",
+      "headline": "5G *Standalone Core* Flow",
+      "nodes": [
+        {
+          "id": "1",
+          "label": "User Request",
+          "subtext": "Edge Device 5G",
+          "status": "active",
+          "color": "#60a5fa"
+        },
+        {
+          "id": "2",
+          "label": "Cloud Core",
+          "subtext": "Kubernetes Microservices",
+          "status": "active",
+          "color": "#c084fc"
+        },
+        {
+          "id": "3",
+          "label": "JioBrain AI",
+          "subtext": "Real-time Traffic Routing",
+          "status": "active",
+          "color": "#f472b6"
+        },
+        {
+          "id": "4",
+          "label": "Data Mesh",
+          "subtext": "Distributed Processing",
+          "status": "pending",
+          "color": "#4ade80"
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "startSec": 32.24,
+      "endSec": 42.26,
+      "direction": "pop-3d",
+      "title": "Powering *(JioBrain AI)* Platform",
+      "leadIn": "Enterprise Generative AI",
+      "accentColor": "#f472b6",
+      "items": [
+        "LLM & GenAI integration across telecom network",
+        "Predictive network optimization using machine learning",
+        "Automated enterprise workflow execution at scale"
+      ],
+      "voice": "JioBrain AI inka dynamic enterprise platform hai jo real-time analytics aur LLMs ko 5G network optimization ke liye use karta hai.",
+      "id": "scene-5",
+      "headline": "Powering *(JioBrain AI)* Platform",
+      "chip": "HIGHLIGHT",
+      "cardText": "Detailed explanation goes here."
+    },
+    {
+      "type": "pills",
+      "startSec": 42.26,
+      "endSec": 51.19,
+      "direction": "from-right",
+      "title": "Core Tech *Stack* Drivers",
+      "pills": [
+        {
+          "label": "Cloud Native",
+          "color": "#60a5fa"
+        },
+        {
+          "label": "Kubernetes",
+          "color": "#c084fc"
+        },
+        {
+          "label": "5G SA Core",
+          "color": "#4ade80"
+        },
+        {
+          "label": "Edge AI",
+          "color": "#f472b6"
+        },
+        {
+          "label": "OpenRAN",
+          "color": "#fb923c"
+        }
+      ],
+      "voice": "Kubernetes, OpenRAN, aur Edge Computing leverage karke ye telecom industry ko cloud software domain me transform kar chuke hain!",
+      "id": "scene-6",
+      "headline": "Core Tech *Stack* Drivers",
+      "items": [
+        {
+          "label": "Cloud Native",
+          "color": "#60a5fa"
+        },
+        {
+          "label": "Kubernetes",
+          "color": "#c084fc"
+        },
+        {
+          "label": "5G SA Core",
+          "color": "#4ade80"
+        },
+        {
+          "label": "Edge AI",
+          "color": "#f472b6"
+        },
+        {
+          "label": "OpenRAN",
+          "color": "#fb923c"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "startSec": 51.19,
+      "endSec": 59.28,
+      "direction": "from-bottom",
+      "title": "Want More *Tech Ecosystem* Teardowns?",
+      "subtitle": "Level up your tech knowledge with daily dev insights!",
+      "buttonText": "Follow Now",
+      "handle": "@techwith.GenZ",
+      "voice": "Aise hi mega tech ecosystem breakdowns aur architectural insights ke liye follow karke rakho @techwith.GenZ ko!",
+      "id": "scene-7",
+      "headline": "Want More *Tech Ecosystem* Teardowns?"
+    }
+  ]
+}

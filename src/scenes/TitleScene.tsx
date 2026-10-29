@@ -4,26 +4,45 @@ import { TitleSceneProps } from "../schema";
 import { SceneLayout } from "../components/SceneLayout";
 import { NeoSticker } from "../components/neo/NeoSticker";
 import { MotionDirection } from "../lib/directionalMotion";
+import { StarburstBadge } from "../components/StarburstBadge";
+import { TechLogo, findBrandInText } from "../components/TechLogo";
 
 export const TitleScene: React.FC<
-  TitleSceneProps & { subtitle?: string; durationInFrames: number; direction?: MotionDirection; id?: string }
-> = ({ id, direction, leadIn, subtitle, headline, durationInFrames }) => {
+  TitleSceneProps & {
+    subtitle?: string;
+    items?: string[];
+    tags?: string[];
+    durationInFrames: number;
+    direction?: MotionDirection;
+    id?: string;
+  }
+> = ({ id, direction, leadIn, subtitle, headline, items, tags, durationInFrames }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
   const entrance = spring({
-    frame: frame - 4,
+    frame: frame - 2,
     fps,
     config: { damping: 14, stiffness: 120 },
   });
 
-  const pulse = Math.sin(frame / 6) * 0.02 + 1;
+  const pulse = Math.sin(frame / 6) * 0.015 + 1;
+
+  // Extract brand if mentioned in headline or leadIn
+  const brand = findBrandInText(`${headline} ${leadIn || ""} ${subtitle || ""}`);
+
+  // Dynamic tags from props or fallback to high-energy hooks
+  const displayTags = items && items.length > 0 
+    ? items.slice(0, 3)
+    : tags && tags.length > 0
+    ? tags.slice(0, 3)
+    : ["⚡ SPECIAL REPORT", "🔥 DEEP DIVE", "💎 DATA BACKED"];
 
   return (
     <SceneLayout
       id={id}
       direction={direction}
-      leadIn={leadIn || subtitle || "SYSTEM ARCHITECTURE"}
+      leadIn={leadIn || "EXCLUSIVE REPORT"}
       headline={headline}
       durationInFrames={durationInFrames}
     >
@@ -36,89 +55,138 @@ export const TitleScene: React.FC<
           width: "100%",
           transform: `scale(${entrance * pulse})`,
           opacity: entrance,
-          gap: 20,
-          marginTop: 10,
+          gap: 22,
+          marginTop: 12,
         }}
       >
-        {/* Playful tilted NeoSticker */}
-        <div style={{ display: "flex", gap: 14, alignItems: "center" }}>
-          <NeoSticker text="⚡ 100% AUTOMATED" rotate={-4} bg="#fb923c" color="#000000" fontSize={28} />
-          <NeoSticker text="🚀 PRODUCTION READY" rotate={3} bg="#38bdf8" color="#000000" fontSize={28} />
+        {/* Dynamic Stickers Row */}
+        <div style={{ display: "flex", gap: 14, alignItems: "center", flexWrap: "wrap", justifyContent: "center" }}>
+          {displayTags.map((tag, idx) => {
+            const colors = ["#fb923c", "#38bdf8", "#4ade80", "#c084fc"];
+            const rots = [-3, 2, -2, 3];
+            return (
+              <NeoSticker
+                key={idx}
+                text={tag}
+                rotate={rots[idx % rots.length]}
+                bg={colors[idx % colors.length]}
+                color="#000000"
+                fontSize={24}
+              />
+            );
+          })}
         </div>
 
-        {/* Hero Mac Window Card Preview */}
+        {/* Dynamic Hero Spotlight Card */}
         <div
           style={{
+            position: "relative",
             width: "100%",
             maxWidth: 920,
             backgroundColor: "#ffffff",
-            border: "3.5px solid #000000",
-            borderRadius: 22,
-            boxShadow: "7px 7px 0px #000000",
-            overflow: "hidden",
-            marginTop: 6,
+            border: "4px solid #000000",
+            borderRadius: 26,
+            boxShadow: "9px 9px 0px #000000",
+            padding: "38px 36px",
+            boxSizing: "border-box",
+            display: "flex",
+            flexDirection: "column",
+            gap: 18,
           }}
         >
-          {/* Mac Header */}
-          <div
-            style={{
-              height: 48,
-              backgroundColor: "#f1f5f9",
-              borderBottom: "3px solid #000000",
-              display: "flex",
-              alignItems: "center",
-              padding: "0 18px",
-              gap: 8,
-            }}
-          >
-            <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#ef4444", border: "1.5px solid #000000" }} />
-            <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#eab308", border: "1.5px solid #000000" }} />
-            <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#22c55e", border: "1.5px solid #000000" }} />
-            <span
+          {/* Top Row: Brand / Icon or Spotlight Badge */}
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+              {brand ? (
+                <div style={{ width: 44, height: 44, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <TechLogo brand={brand} size={42} />
+                </div>
+              ) : (
+                <div
+                  style={{
+                    width: 14,
+                    height: 14,
+                    borderRadius: "50%",
+                    backgroundColor: "#ef4444",
+                    border: "2px solid #000000",
+                  }}
+                />
+              )}
+              <span
+                style={{
+                  fontFamily: "'JetBrains Mono', monospace",
+                  fontSize: 20,
+                  fontWeight: 800,
+                  color: "#000000",
+                  letterSpacing: "0.06em",
+                  textTransform: "uppercase",
+                }}
+              >
+                {leadIn || "MARKET INSIGHTS"}
+              </span>
+            </div>
+
+            <div
               style={{
-                marginLeft: 14,
+                backgroundColor: "#fef08a",
+                border: "2.5px solid #000000",
+                borderRadius: 12,
+                padding: "6px 14px",
                 fontFamily: "'JetBrains Mono', monospace",
                 fontSize: 18,
-                fontWeight: 700,
-                color: "#64748b",
+                fontWeight: 900,
+                color: "#000000",
+                boxShadow: "3px 3px 0px #000000",
               }}
             >
-              pipeline.config.ts
-            </span>
+              DAY 1 ACTION
+            </div>
           </div>
 
+          {/* Subtitle / Big Hook Summary */}
           <div
             style={{
-              padding: "26px 30px",
+              fontFamily: "'Outfit', 'Plus Jakarta Sans', sans-serif",
+              fontSize: 34,
+              fontWeight: 800,
+              color: "#0f172a",
+              lineHeight: 1.35,
+              letterSpacing: "-0.02em",
+            }}
+          >
+            {subtitle || (
+              <>
+                Comprehensive analysis on whether to <span style={{ color: "#16a34a" }}>HOLD</span> for the long term or <span style={{ color: "#dc2626" }}>BOOK PROFITS</span> immediately!
+              </>
+            )}
+          </div>
+
+          {/* Bottom Data Trust Bar */}
+          <div
+            style={{
               display: "flex",
-              flexDirection: "column",
-              gap: 14,
-              fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 24,
-              fontWeight: 700,
-              color: "#000000",
+              alignItems: "center",
+              justifyContent: "space-between",
+              borderTop: "3px dashed #e2e8f0",
+              paddingTop: 18,
+              marginTop: 6,
             }}
           >
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ color: "#7c3aed" }}>&gt;</span>
-              <span>ai_agents.run({`{ topic: "${(headline || "Deep Dive").replace(/[*_#`]/g, "").slice(0, 24)}" }`})</span>
+              <span style={{ color: "#16a34a", fontSize: 24, fontWeight: 900 }}>●</span>
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 19, fontWeight: 700, color: "#475569" }}>
+                LIVE MARKET RADAR
+              </span>
             </div>
-            <div style={{ color: "#16a34a", fontSize: 21 }}>
-              ✔ Voice synthesized &amp; Whisper word timestamps locked (0.01s)
-            </div>
-            <div style={{ color: "#2563eb", fontSize: 21 }}>
-              ✔ Remotion scenes auto-aligned to speech durations
-            </div>
-            <div style={{ color: "#9333ea", fontSize: 21 }}>
-              ✔ Multi-layer neo-brutalist visuals synced
+            <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 19, fontWeight: 800, color: "#7c3aed" }}>
+              CONFIDENTIAL // RETAIL DESK
             </div>
           </div>
-        </div>
 
-        {/* Secondary Bottom Feature Badges */}
-        <div style={{ display: "flex", gap: 14, alignItems: "center", marginTop: 4 }}>
-          <NeoSticker text="🔥 60 FPS ULTRA" rotate={2} bg="#fef08a" color="#000000" fontSize={24} />
-          <NeoSticker text="✨ ZERO VOID CANVAS" rotate={-2} bg="#86efac" color="#000000" fontSize={24} />
+          {/* Corner Starburst Badge */}
+          <div style={{ position: "absolute", top: -24, right: -24 }}>
+            <StarburstBadge text="HOT" subtext="NOW" color="#facc15" size={88} />
+          </div>
         </div>
       </div>
     </SceneLayout>

@@ -10,6 +10,7 @@ import {
   getSceneDirection,
   getDirectionalStyle,
 } from "../lib/directionalMotion";
+import { AutoTechBadge } from "./AutoTechBadge";
 
 export interface SceneLayoutProps {
   id?: string;
@@ -19,6 +20,8 @@ export interface SceneLayoutProps {
   direction?: MotionDirection;
   sceneIndex?: number;
   slug?: string;
+  brand?: string;
+  showTechBadge?: boolean;
   children?: React.ReactNode;
 }
 
@@ -30,6 +33,8 @@ export const SceneLayout: React.FC<SceneLayoutProps> = ({
   direction,
   sceneIndex,
   slug,
+  brand,
+  showTechBadge,
   children,
 }) => {
   const frame = useCurrentFrame();
@@ -76,6 +81,15 @@ export const SceneLayout: React.FC<SceneLayoutProps> = ({
     >
       {/* Ambient Cyber Particles (Remotion Scenes) */}
       <CyberParticles count={16} seed={headline || leadIn || id || 42} />
+
+      {/* Auto-detected 3D Tech Logo Badge */}
+      {showTechBadge !== false && (
+        <AutoTechBadge
+          brandName={brand}
+          contextText={`${headline || ""} ${leadIn || ""} ${id || ""}`}
+          delayFrames={5}
+        />
+      )}
 
       {/* Top Header Zone */}
       <div

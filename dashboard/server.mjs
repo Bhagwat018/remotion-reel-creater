@@ -2,7 +2,7 @@
 import http from "http";
 import fs from "fs";
 import path from "path";
-import { spawn } from "child_process";
+import { spawn, execSync } from "child_process";
 import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -59,7 +59,7 @@ function getGeminiApiKey(customKey = "") {
 /**
  * Call Gemini 2.5 Flash (or 1.5 Flash fallback) to create high-retention 8-scene reel JSON
  */
-async function generateReelWithGemini({ topic, script = "", language = "hinglish", apiKey = "", durationSec = 42 }) {
+async function generateReelWithGemini({ topic, script = "", language = "hinglish", voice = "Madhur", apiKey = "", durationSec = 42 }) {
   const resolvedKey = getGeminiApiKey(apiKey);
   if (!resolvedKey) {
     throw new Error(
@@ -82,11 +82,34 @@ Language: ${
       : "Energetic, engaging English"
   }.
 
+### CRITICAL SCRIPT ADAPTATION RULE (ZERO GENERIC PLACEHOLDERS):
+If the user provided a script or bullet points above:
+- YOU MUST USE THE USER'S EXACT TOPIC, NUMBERS, ENTITIES, AND TALKING POINTS!
+- NEVER output generic test data (like 'Traditional Cloud Server 180ms', 'pipeline.config.ts', or 'Feature 1').
+- If the script mentions finance/stocks: generate real numbers ('₹30,000 Cr', '70x', '21%') in 'stat' scenes.
+- If the script mentions code/automation: write real relevant code (Python, TS, Bash) matching the topic in 'code' scene.
+- If the script compares two items: use the exact names and metrics from the script in 'compare' scene.
+- Every single scene's 'voice' field MUST contain the actual spoken sentences from the script in natural, engaging Hinglish/Hindi/English. NEVER write 'Scene 1', 'Scene 2' or dummy text.
+
 ### DYNAMIC SCENE NARRATIVE PACING (Neo-Brutalism Light Dot Grid Style):
 Generate 6 to 8 engaging scenes custom-picked for the topic:
-- Choose from: "title", "code", "terminal", "compare", "stat", "pills", "diagram", "orbit", "card", "cta", "bot", "knobs", "stacked".
+- Choose from: "title", "flow", "code", "terminal", "compare", "stat", "pills", "diagram", "orbit", "card", "cta", "bot", "knobs", "stacked".
+- Visual Superpowers:
+  * For architecture/data flow: USE "flow" scene (4-stage pipeline with dynamic SVG connecting wires & travelling cyber pulses).
+  * For syntax/logic: USE "code" scene (types out line-by-line with blinking cursor & live execution status).
+  * For headlines: Use markdown formatting! *word* creates an animated hand-drawn fluorescent highlighter; *(word)* creates a hand-drawn circle; _word_ creates an underline!
+  * Mention tech brands (Kubernetes, Redis, Docker, Claude, Python, Go, AWS, React, etc.) in headlines or leadIn to trigger auto-fetching official 3D logos!
 - Visual Style: Neo-Brutalism Light Dot Grid (#f4f5f8 canvas, 3px solid black borders, colorful pills: Orange #fb923c, Purple #c084fc, Pink #f472b6, Blue #60a5fa, Green #4ade80).
-- Voice Script: Write natural, punchy, spoken Hinglish sentences in 'scene.voice'. Pacing is Voice-First (scene duration will dynamically snap to the exact spoken audio length!).
+- Voice Script: Every single scene MUST have 2 to 3 natural, conversational, punchy spoken Hinglish sentences in 'scene.voice'. The voice script will be synthesized into actual spoken audio.
+
+### CONCRETE SCENE SCHEMAS TO GENERATE:
+1. "title": { "type": "title", "headline": "*TOPIC* HEADLINE", "leadIn": "CATEGORY", "subtitle": "Hook subtitle", "voice": "Spoken intro script..." }
+2. "stat": { "type": "stat", "headline": "*NUMERIC* HIGHLIGHT", "leadIn": "METRIC", "value": "70x", "label": "Institutional Subscription", "pills": ["Retail 2.5x", "QIB 70x"], "voice": "Spoken stat script..." }
+3. "flow": { "type": "flow", "headline": "EXECUTION *PIPELINE*", "steps": [{ "label": "Step 1", "desc": "Desc" }, { "label": "Step 2", "desc": "Desc" }, { "label": "Step 3", "desc": "Desc" }, { "label": "Step 4", "desc": "Desc" }], "voice": "Spoken flow script..." }
+4. "compare": { "type": "compare", "headline": "OPTION A VS *OPTION B*", "left": { "label": "Legacy Approach", "items": ["Item 1", "Item 2"] }, "right": { "label": "Winning Strategy", "items": ["Item 1", "Item 2"] }, "voice": "Spoken comparison script..." }
+5. "code": { "type": "code", "headline": "AUTOMATION *SCRIPT*", "filename": "tracker.py", "lines": ["import nsepython", "qib = nsepython.get_flow('JIO')"], "highlightLines": [2], "voice": "Spoken code script..." }
+6. "pills": { "type": "pills", "headline": "KEY *ADVANTAGES*", "items": ["Takeaway 1", "Takeaway 2", "Takeaway 3"], "voice": "Spoken takeaways script..." }
+7. "cta": { "type": "cta", "headline": "FOLLOW *FOR UPDATES*", "buttonText": "FOLLOW @techwith.GenZ", "voice": "Spoken call to action..." }
 
 ### TIMING & DIRECTION RULES:
 - Provide approximate consecutive timestamps (startSec, endSec) totaling ~${durationSec}s (Voice-First engine will dynamically refine to exact speech timestamps).
@@ -103,22 +126,29 @@ Generate 6 to 8 engaging scenes custom-picked for the topic:
     "voiceFile": "reels/<slug>/voice.mp3",
     "loop": true,
     "captions": true,
-    "avatar": { "enabled": true, "position": "left" },
-    "captionStyle": "bubble",
+    "avatar": { "enabled": false },
+    "captionStyle": "kinetic",
     "bgm": "bgm/cyber-groove.mp3",
     "bgmVolume": 0.18
   },
   "scenes": [
-    ... 8 scenes with valid types: "title", "code", "terminal", "stat", "pills", "orbit", "card", "cta", "bot", "knobs", "stacked", etc. ...
+    ... 6 to 8 scenes using the schemas above ...
   ]
 }
 `;
 
-  const models = ["gemini-3.5-flash", "gemini-3.8-flash", "gemini-flash-latest"];
+  const models = [
+    "gemini-3.5-flash",
+    "gemini-flash-lite-latest",
+    "gemini-3.5-flash-lite",
+    "gemini-flash-latest",
+    "gemini-2.5-flash",
+  ];
   let lastError = null;
 
   for (const model of models) {
     try {
+      console.log(`[AI Director] Contacting ${model} for topic: "${topic}" (Voice: ${voice})...`);
       const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${resolvedKey}`;
       const payload = {
         contents: [
@@ -136,6 +166,7 @@ Generate 6 to 8 engaging scenes custom-picked for the topic:
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
+        signal: AbortSignal.timeout(20000),
       });
 
       if (!resp.ok) {
@@ -145,15 +176,24 @@ Generate 6 to 8 engaging scenes custom-picked for the topic:
           errorData = JSON.parse(errorText);
         } catch {}
         const msg = errorData?.error?.message || `Status ${resp.status}: ${errorText}`;
+        lastError = new Error(`[${model}] ${msg}`);
+        console.warn(`[AI Director] Model ${model} returned error (${resp.status}): ${msg}. Falling back to next available model...`);
         if (model !== models[models.length - 1]) {
+          await new Promise((r) => setTimeout(r, 600));
           continue;
         }
-        throw new Error(msg);
+        throw lastError;
       }
 
       const resData = await resp.json();
       const rawJson = resData.candidates?.[0]?.content?.parts?.[0]?.text;
-      if (!rawJson) throw new Error("Empty response received from Gemini AI model.");
+      if (!rawJson) {
+        lastError = new Error(`Empty response received from ${model}`);
+        if (model !== models[models.length - 1]) {
+          continue;
+        }
+        throw lastError;
+      }
 
       const parsed = JSON.parse(rawJson);
 
@@ -165,6 +205,8 @@ Generate 6 to 8 engaging scenes custom-picked for the topic:
           .replace(/^-+|-+$/g, "");
       }
       parsed.meta.handle = parsed.meta.handle || "@techwith.GenZ";
+      parsed.meta.voice = voice || "Madhur";
+      parsed.meta.voiceSpeed = 1.05;
       parsed.meta.voiceFile = `reels/${parsed.meta.slug}/voice.mp3`;
       parsed.meta.loop = true;
       parsed.meta.captions = true;
@@ -198,6 +240,13 @@ Generate 6 to 8 engaging scenes custom-picked for the topic:
             } else if (!Array.isArray(norm.lines)) {
               norm.lines = [s.command || "echo 'Hello World'"];
             }
+          } else if (norm.type === "flow") {
+            norm.nodes = Array.isArray(s.nodes) ? s.nodes : Array.isArray(s.steps) ? s.steps : Array.isArray(s.flow) ? s.flow : [
+              { title: "Client", subtitle: "HTTPS / API Request", icon: "user", status: "200 OK", accentColor: "#3b82f6" },
+              { title: "Gateway", subtitle: "Ingress / Route", icon: "gateway", status: "Active", accentColor: "#8b5cf6" },
+              { title: "Service Pod", subtitle: "Core Logic Cluster", icon: "server", status: "Healthy", accentColor: "#10b981" },
+              { title: "Data Store", subtitle: "Distributed Cache", icon: "database", status: "Synced", accentColor: "#ec4899" },
+            ];
           } else if (norm.type === "pills") {
             norm.items = Array.isArray(s.items) ? s.items : Array.isArray(s.pills) ? s.pills : ["Fast", "Secure"];
           } else if (norm.type === "orbit") {
@@ -207,8 +256,13 @@ Generate 6 to 8 engaging scenes custom-picked for the topic:
             norm.chip = s.chip || s.badge || "HIGHLIGHT";
             norm.cardText = s.cardText || s.content || s.body || s.text || "Detailed explanation goes here.";
           } else if (norm.type === "stat") {
-            norm.value = s.value !== undefined ? String(s.value) : s.stat ? String(s.stat) : "10x";
-            norm.label = s.label || s.description || s.subtext || s.unit || "Performance Metric";
+            norm.value = s.value !== undefined ? String(s.value) : s.statNumber !== undefined ? String(s.statNumber) : s.stat ? String(s.stat) : s.number ? String(s.number) : "10x";
+            norm.label = s.label || s.statLabel || s.description || s.subtext || s.unit || "Performance Metric";
+            if (Array.isArray(s.pills)) norm.pills = s.pills;
+            if (Array.isArray(s.items)) norm.items = s.items;
+          } else if (norm.type === "compare") {
+            norm.left = s.left || (s.leftTitle ? { label: s.leftTitle, items: s.leftItems || [] } : undefined);
+            norm.right = s.right || (s.rightTitle ? { label: s.rightTitle, items: s.rightItems || [] } : undefined);
           } else if (norm.type === "cta") {
             norm.buttonText = s.buttonText || s.callToAction || "FOLLOW @techwith.GenZ";
           } else if (norm.type === "terminal") {
@@ -223,10 +277,16 @@ Generate 6 to 8 engaging scenes custom-picked for the topic:
       return parsed;
     } catch (err) {
       lastError = err;
+      console.warn(`[AI Director] Attempt with ${model} encountered exception: ${err.message}. Falling back...`);
+      if (model !== models[models.length - 1]) {
+        await new Promise((r) => setTimeout(r, 600));
+        continue;
+      }
+      throw lastError;
     }
   }
 
-  throw lastError || new Error("Failed to generate reel with Gemini.");
+  throw lastError || new Error("Failed to generate reel with all available Gemini AI models.");
 }
 
 
@@ -659,6 +719,14 @@ const server = http.createServer(async (req, res) => {
         const audioBuffer = Buffer.from(base64Data, "base64");
         fs.writeFileSync(targetPubVoice, audioBuffer);
         fs.writeFileSync(targetReelVoice, audioBuffer);
+      } else {
+        // Voice-First Pipeline: Auto-synthesize voiceover and auto-align scene timestamps
+        try {
+          const genVoiceScript = path.join(rootDir, "scripts", "generate-voice.mjs");
+          execSync(`node "${genVoiceScript}" "${slug}" --force`, { cwd: rootDir, stdio: "inherit" });
+        } catch (voiceErr) {
+          console.warn("⚠️ Automatic voice-sync notice:", voiceErr.message);
+        }
       }
 
       // 4. Start Render Job
@@ -739,7 +807,7 @@ const server = http.createServer(async (req, res) => {
     try {
       const body = await parseJsonBody(req);
       const customKey = req.headers["x-gemini-api-key"] || body.apiKey || "";
-      const { topic, script, language, durationSec } = body;
+      const { topic, script, language, voice, durationSec } = body;
 
       if (!topic || !topic.trim()) {
         res.writeHead(400, { "Content-Type": "application/json" });
@@ -751,6 +819,7 @@ const server = http.createServer(async (req, res) => {
         topic: topic.trim(),
         script: script ? script.trim() : "",
         language: language || "hinglish",
+        voice: voice || "Rishi",
         apiKey: customKey,
         durationSec: durationSec ? parseInt(durationSec, 10) : 42,
       });

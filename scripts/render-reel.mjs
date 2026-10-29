@@ -49,10 +49,21 @@ const reelVoiceFile = path.join(reelsDir, "voice.mp3");
 const pubWordsFile = path.join(publicDir, "words.json");
 const reelWordsFile = path.join(reelsDir, "words.json");
 
-// Auto-generate voice and words if voice.mp3 is missing
-if (!fs.existsSync(pubVoiceFile) && !fs.existsSync(reelVoiceFile)) {
-  console.log(`🎙️ No voice.mp3 found. Auto-generating voice-first audio for "${slug}"...`);
-  spawnSync("node", [path.join(rootDir, "scripts", "generate-voice.mjs"), slug], {
+// Auto-generate voice and words if voice.mp3 is missing or stale
+let needsVoice = !fs.existsSync(pubVoiceFile) && !fs.existsSync(reelVoiceFile);
+if (!needsVoice && (fs.existsSync(pubWordsFile) || fs.existsSync(reelWordsFile))) {
+  try {
+    const wPath = fs.existsSync(pubWordsFile) ? pubWordsFile : reelWordsFile;
+    const wData = JSON.parse(fs.readFileSync(wPath, "utf-8"));
+    if (wData.length <= 14 && wData.some((w) => w.word === "Scene")) {
+      needsVoice = true;
+    }
+  } catch {}
+}
+
+if (needsVoice || process.argv.includes("--force-voice")) {
+  console.log(`🎙️ Auto-generating voice-first audio for "${slug}"...`);
+  spawnSync("node", [path.join(rootDir, "scripts", "generate-voice.mjs"), slug, "--force"], {
     stdio: "inherit",
     cwd: rootDir,
   });

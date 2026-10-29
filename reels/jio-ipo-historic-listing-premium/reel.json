@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "jio-ipo-historic-listing-premium",
+    "title": "Jio IPO Historic Listing & Premium",
+    "topic": "Jio IPO Historic Listing & Premium",
+    "handle": "@techwith.GenZ",
+    "voiceFile": "reels/jio-ipo-historic-listing-premium/voice.mp3",
+    "loop": true,
+    "captions": true,
+    "avatar": {
+      "enabled": false
+    },
+    "captionStyle": "kinetic",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.18,
+    "voice": "Rishi",
+    "voiceSpeed": 1.05,
+    "durationSec": 70,
+    "wordsFile": "reels/jio-ipo-historic-listing-premium/words.json"
+  },
+  "scenes": [
+    {
+      "type": "title",
+      "headline": "*JIO IPO* KA BADA DHAMAKA",
+      "leadIn": "MARKET INSIGHT",
+      "subtitle": "Historic Listing & Grey Market Premium",
+      "voice": "Jio ka IPO market me aane wala hai, aur iska historic listing aur grey market premium dekh kar sabhi traders shock me hain! Kya aapko ismega listing me invest karna chahiye?",
+      "startSec": 0,
+      "endSec": 12.59,
+      "direction": "from-top",
+      "id": "scene-1"
+    },
+    {
+      "type": "stat",
+      "headline": "GREY MARKET *PREMIUM*",
+      "leadIn": "VALUATION SURGE",
+      "value": "65%",
+      "label": "Expected Listing Gain",
+      "pills": [
+        "GMP Rs 450",
+        "Valuation $110B"
+      ],
+      "voice": "Grey market me Jio ka premium seedha 65 percent par trade kar raha hai. Matlab listing ke din hi heavy profits dekhne ko mil sakte hain.",
+      "startSec": 12.59,
+      "endSec": 23.12,
+      "direction": "from-right",
+      "id": "scene-2"
+    },
+    {
+      "type": "flow",
+      "headline": "SUBSCRIPTION *TIMELINE*",
+      "steps": [
+        {
+          "label": "Anchor Book",
+          "desc": "Institutional investors lock-in"
+        },
+        {
+          "label": "QIB Bidding",
+          "desc": "Massive capital deployment"
+        },
+        {
+          "label": "Retail Allotment",
+          "desc": "High oversubscription ratio"
+        },
+        {
+          "label": "Listing Day",
+          "desc": "BSE & NSE blockbuster entry"
+        }
+      ],
+      "voice": "Iska subscription pipeline kafi tagda hone wala hai. Anchor investors se lekar retail quota tak sabhi log allotments ke liye line me hain.",
+      "startSec": 23.12,
+      "endSec": 33.93,
+      "direction": "from-left",
+      "id": "scene-3",
+      "nodes": [
+        {
+          "label": "Anchor Book",
+          "desc": "Institutional investors lock-in"
+        },
+        {
+          "label": "QIB Bidding",
+          "desc": "Massive capital deployment"
+        },
+        {
+          "label": "Retail Allotment",
+          "desc": "High oversubscription ratio"
+        },
+        {
+          "label": "Listing Day",
+          "desc": "BSE & NSE blockbuster entry"
+        }
+      ]
+    },
+    {
+      "type": "compare",
+      "headline": "TRADITIONAL TELCO *VS* *JIO TECH*",
+      "left": {
+        "label": "Old Telecom Model",
+        "items": [
+          "Low ARPU growth",
+          "High infrastructure debt"
+        ]
+      },
+      "right": {
+        "label": "Jio Tech Ecosystem",
+        "items": [
+          "Cloud & AI infrastructure",
+          "Monetizable 5G subscriber base"
+        ]
+      },
+      "voice": "Agar hum traditional telecom companies ko Jio ke sath compare karein, toh Jio sirf ek sim card company nahi, balki ek full-stack tech giant ban chuki hai.",
+      "startSec": 33.93,
+      "endSec": 44.31,
+      "direction": "from-bottom",
+      "id": "scene-4"
+    },
+    {
+      "type": "code",
+      "headline": "ALLOTMENT *TRACKER*",
+      "filename": "ipo_check.py",
+      "lines": [
+        "import requests",
+        "status = requests.get('api.jioipo.com/allotment')",
+        "print(status.json())"
+      ],
+      "highlightLines": [
+        2
+      ],
+      "voice": "Aap khud apna allotment status check karne ke liye ye chhota sa Python script use kar sakte hain jo direct registrar API ko hit karega.",
+      "startSec": 44.31,
+      "endSec": 53.73,
+      "direction": "from-right",
+      "id": "scene-5"
+    },
+    {
+      "type": "pills",
+      "headline": "KEY *TAKEAWAYS*",
+      "items": [
+        "Strong QIB demand",
+        "High long-term potential",
+        "Managed listing volatility"
+      ],
+      "voice": "Bottom line ye hai ki agar aapko allotment milta hai, toh long term ke liye hold karna ek smart tech move ho sakta hai.",
+      "startSec": 53.73,
+      "endSec": 62.26,
+      "direction": "from-top",
+      "id": "scene-6"
+    },
+    {
+      "type": "cta",
+      "headline": "FOLLOW *FOR UPDATES*",
+      "buttonText": "FOLLOW @techwith.GenZ",
+      "voice": "Aise hi market updates aur tech deep dives ke liye @techwith.GenZ ko abhi follow karo!",
+      "startSec": 62.26,
+      "endSec": 69.56,
+      "direction": "from-left",
+      "id": "scene-7"
+    }
+  ]
+}

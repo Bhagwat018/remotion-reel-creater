@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "slug": "jio-stock-tech-ecosystem",
+    "title": "Jio Stock & Tech Ecosystem Facts",
+    "topic": "Jio Stock & Tech Ecosystem Facts",
+    "handle": "@techwith.GenZ",
+    "voiceFile": "reels/jio-stock-tech-ecosystem/voice.mp3",
+    "loop": true,
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.18,
+    "voice": "Rishi",
+    "voiceSpeed": 1.05,
+    "durationSec": 10,
+    "wordsFile": "reels/jio-stock-tech-ecosystem/words.json"
+  },
+  "scenes": [
+    {
+      "type": "title",
+      "startSec": 0,
+      "endSec": 1.36,
+      "direction": "pop-3d",
+      "headline": "Jio ka *tech stack* sirf telecom nahi hai!",
+      "leadIn": "Kabhi socha hai Jio backend kaise handle karta hai? Let's check out the *stats*!",
+      "accentColor": "#fb923c",
+      "id": "scene-1",
+      "voice": "Scene 1"
+    },
+    {
+      "type": "stat",
+      "startSec": 1.36,
+      "endSec": 2.58,
+      "direction": "from-right",
+      "headline": "Over *(450M)* Active Subscribers",
+      "leadIn": "Itni massive traffic ke liye kaunsa *infrastructure* use hota hai?",
+      "statNumber": "450M+",
+      "statLabel": "Daily Active Users on *AWS* & Custom Cloud",
+      "accentColor": "#60a5fa",
+      "id": "scene-2",
+      "voice": "Scene 2",
+      "value": "10x",
+      "label": "Performance Metric"
+    },
+    {
+      "type": "flow",
+      "startSec": 2.58,
+      "endSec": 3.82,
+      "direction": "from-left",
+      "headline": "JioCloud & *Kubernetes* Pipeline",
+      "leadIn": "Data flow dekho bhai, ekdam *zero latency* architecture!",
+      "nodes": [
+        "Edge Gateway",
+        "Load Balancer",
+        "K8s Cluster",
+        "PostgreSQL DB"
+      ],
+      "accentColor": "#c084fc",
+      "id": "scene-3",
+      "voice": "Scene 3"
+    },
+    {
+      "type": "pills",
+      "startSec": 3.82,
+      "endSec": 4.97,
+      "direction": "from-top",
+      "headline": "Made-in-India _Tech Stack_",
+      "leadIn": "Ye saare tools milkar banate hain Jio ka digital empire:",
+      "pills": [
+        "JioFiber",
+        "JioOS",
+        "Python",
+        "Go",
+        "React",
+        "Kubernetes"
+      ],
+      "accentColor": "#4ade80",
+      "id": "scene-4",
+      "voice": "Scene 4",
+      "items": [
+        "JioFiber",
+        "JioOS",
+        "Python",
+        "Go",
+        "React",
+        "Kubernetes"
+      ]
+    },
+    {
+      "type": "code",
+      "startSec": 4.97,
+      "endSec": 6.28,
+      "direction": "from-bottom",
+      "headline": "Backend _Optimization_ Script",
+      "leadIn": "High concurrency handle karne ke liye Golang use hota hai:",
+      "language": "go",
+      "codeSnippet": "package main\n\nimport (\n\t\"fmt\"\n\t\"net/http\"\n)\n\nfunc main() {\n\thttp.HandleFunc(\"/jio\", func(w http.ResponseWriter, r *http.Request) {\n\t\tfmt.Fprintf(w, \"Scaling to 1B users!\")\n\t})\n\thttp.ListenAndServe(\":8080\", nil)\n}",
+      "accentColor": "#f472b6",
+      "id": "scene-5",
+      "voice": "Scene 5",
+      "filename": "index.ts",
+      "lines": [
+        "echo 'Hello World'"
+      ]
+    },
+    {
+      "type": "compare",
+      "startSec": 6.28,
+      "endSec": 7.6,
+      "direction": "from-right",
+      "headline": "Legacy vs *(Jio Ecosystem)*",
+      "leadIn": "Traditional telcos se kitna aage hai hamara *tech*?",
+      "leftTitle": "Old Telco",
+      "rightTitle": "Jio Ecosystem",
+      "leftItems": [
+        "Legacy billing",
+        "Manual scaling",
+        "High downtime"
+      ],
+      "rightItems": [
+        "AI-Driven 5G",
+        "Auto Kubernetes",
+        "99.99% Uptime"
+      ],
+      "accentColor": "#fb923c",
+      "id": "scene-6",
+      "voice": "Scene 6"
+    },
+    {
+      "type": "cta",
+      "startSec": 7.6,
+      "endSec": 9.17,
+      "direction": "from-left",
+      "headline": "Follow @techwith.GenZ for *more*!",
+      "leadIn": "Aise hi deep-dives ke liye channel *subscribe* karo!",
+      "ctaText": "Hit Follow!",
+      "accentColor": "#60a5fa",
+      "id": "scene-7",
+      "voice": "Scene 7",
+      "buttonText": "FOLLOW @techwith.GenZ"
+    }
+  ]
+}

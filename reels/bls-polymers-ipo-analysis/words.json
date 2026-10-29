@@ -1,0 +1,597 @@
+[
+  {
+    "word": "Market",
+    "startSec": 0,
+    "endSec": 0.41
+  },
+  {
+    "word": "mein",
+    "startSec": 0.41,
+    "endSec": 0.82
+  },
+  {
+    "word": "ek",
+    "startSec": 0.82,
+    "endSec": 1.23
+  },
+  {
+    "word": "aur",
+    "startSec": 1.23,
+    "endSec": 1.64
+  },
+  {
+    "word": "IPO",
+    "startSec": 1.64,
+    "endSec": 2.05
+  },
+  {
+    "word": "aa",
+    "startSec": 2.05,
+    "endSec": 2.46
+  },
+  {
+    "word": "gaya",
+    "startSec": 2.46,
+    "endSec": 2.87
+  },
+  {
+    "word": "hai",
+    "startSec": 2.87,
+    "endSec": 3.28
+  },
+  {
+    "word": "jo",
+    "startSec": 3.28,
+    "endSec": 3.69
+  },
+  {
+    "word": "₹15,000",
+    "startSec": 3.69,
+    "endSec": 4.1
+  },
+  {
+    "word": "lagane",
+    "startSec": 4.1,
+    "endSec": 4.51
+  },
+  {
+    "word": "par",
+    "startSec": 4.51,
+    "endSec": 4.92
+  },
+  {
+    "word": "sidha",
+    "startSec": 4.92,
+    "endSec": 5.33
+  },
+  {
+    "word": "30",
+    "startSec": 5.33,
+    "endSec": 5.74
+  },
+  {
+    "word": "percent",
+    "startSec": 5.74,
+    "endSec": 6.15
+  },
+  {
+    "word": "profit",
+    "startSec": 6.15,
+    "endSec": 6.56
+  },
+  {
+    "word": "dikha",
+    "startSec": 6.56,
+    "endSec": 6.97
+  },
+  {
+    "word": "raha",
+    "startSec": 6.97,
+    "endSec": 7.38
+  },
+  {
+    "word": "hai,",
+    "startSec": 7.39,
+    "endSec": 7.8
+  },
+  {
+    "word": "BLS",
+    "startSec": 7.8,
+    "endSec": 8.21
+  },
+  {
+    "word": "Polymers!",
+    "startSec": 8.21,
+    "endSec": 8.62
+  },
+  {
+    "word": "Iska",
+    "startSec": 8.97,
+    "endSec": 9.36
+  },
+  {
+    "word": "GMP",
+    "startSec": 9.36,
+    "endSec": 9.75
+  },
+  {
+    "word": "already",
+    "startSec": 9.74,
+    "endSec": 10.13
+  },
+  {
+    "word": "47",
+    "startSec": 10.13,
+    "endSec": 10.52
+  },
+  {
+    "word": "rupees",
+    "startSec": 10.51,
+    "endSec": 10.9
+  },
+  {
+    "word": "chal",
+    "startSec": 10.9,
+    "endSec": 11.29
+  },
+  {
+    "word": "raha",
+    "startSec": 11.29,
+    "endSec": 11.68
+  },
+  {
+    "word": "hai,",
+    "startSec": 11.67,
+    "endSec": 12.06
+  },
+  {
+    "word": "NIIs",
+    "startSec": 12.06,
+    "endSec": 12.45
+  },
+  {
+    "word": "ne",
+    "startSec": 12.44,
+    "endSec": 12.83
+  },
+  {
+    "word": "daba",
+    "startSec": 12.83,
+    "endSec": 13.22
+  },
+  {
+    "word": "ke",
+    "startSec": 13.22,
+    "endSec": 13.61
+  },
+  {
+    "word": "paisa",
+    "startSec": 13.6,
+    "endSec": 13.99
+  },
+  {
+    "word": "lagaya",
+    "startSec": 13.99,
+    "endSec": 14.38
+  },
+  {
+    "word": "hai",
+    "startSec": 14.38,
+    "endSec": 14.77
+  },
+  {
+    "word": "aur",
+    "startSec": 14.76,
+    "endSec": 15.15
+  },
+  {
+    "word": "issue",
+    "startSec": 15.15,
+    "endSec": 15.54
+  },
+  {
+    "word": "kal",
+    "startSec": 15.53,
+    "endSec": 15.92
+  },
+  {
+    "word": "hi",
+    "startSec": 15.92,
+    "endSec": 16.31
+  },
+  {
+    "word": "close",
+    "startSec": 16.31,
+    "endSec": 16.7
+  },
+  {
+    "word": "ho",
+    "startSec": 16.69,
+    "endSec": 17.08
+  },
+  {
+    "word": "raha",
+    "startSec": 17.08,
+    "endSec": 17.47
+  },
+  {
+    "word": "hai.",
+    "startSec": 17.46,
+    "endSec": 17.85
+  },
+  {
+    "word": "Company",
+    "startSec": 18.2,
+    "endSec": 18.56
+  },
+  {
+    "word": "wires",
+    "startSec": 18.56,
+    "endSec": 18.92
+  },
+  {
+    "word": "aur",
+    "startSec": 18.92,
+    "endSec": 19.28
+  },
+  {
+    "word": "cables",
+    "startSec": 19.27,
+    "endSec": 19.63
+  },
+  {
+    "word": "ke",
+    "startSec": 19.63,
+    "endSec": 19.99
+  },
+  {
+    "word": "liye",
+    "startSec": 19.99,
+    "endSec": 20.35
+  },
+  {
+    "word": "specialty",
+    "startSec": 20.35,
+    "endSec": 20.71
+  },
+  {
+    "word": "polymers",
+    "startSec": 20.71,
+    "endSec": 21.07
+  },
+  {
+    "word": "banati",
+    "startSec": 21.07,
+    "endSec": 21.43
+  },
+  {
+    "word": "hai,",
+    "startSec": 21.42,
+    "endSec": 21.78
+  },
+  {
+    "word": "aur",
+    "startSec": 21.78,
+    "endSec": 22.14
+  },
+  {
+    "word": "inka",
+    "startSec": 22.14,
+    "endSec": 22.5
+  },
+  {
+    "word": "profit",
+    "startSec": 22.5,
+    "endSec": 22.86
+  },
+  {
+    "word": "2",
+    "startSec": 22.86,
+    "endSec": 23.22
+  },
+  {
+    "word": "saal",
+    "startSec": 23.21,
+    "endSec": 23.57
+  },
+  {
+    "word": "mein",
+    "startSec": 23.57,
+    "endSec": 23.93
+  },
+  {
+    "word": "7",
+    "startSec": 23.93,
+    "endSec": 24.29
+  },
+  {
+    "word": "crore",
+    "startSec": 24.29,
+    "endSec": 24.65
+  },
+  {
+    "word": "se",
+    "startSec": 24.65,
+    "endSec": 25.01
+  },
+  {
+    "word": "jump",
+    "startSec": 25,
+    "endSec": 25.36
+  },
+  {
+    "word": "hoke",
+    "startSec": 25.36,
+    "endSec": 25.72
+  },
+  {
+    "word": "27",
+    "startSec": 25.72,
+    "endSec": 26.08
+  },
+  {
+    "word": "crore",
+    "startSec": 26.08,
+    "endSec": 26.44
+  },
+  {
+    "word": "ho",
+    "startSec": 26.44,
+    "endSec": 26.8
+  },
+  {
+    "word": "gaya",
+    "startSec": 26.8,
+    "endSec": 27.16
+  },
+  {
+    "word": "hai!",
+    "startSec": 27.15,
+    "endSec": 27.51
+  },
+  {
+    "word": "Par",
+    "startSec": 27.86,
+    "endSec": 28.24
+  },
+  {
+    "word": "dhyan",
+    "startSec": 28.24,
+    "endSec": 28.62
+  },
+  {
+    "word": "rakhna,",
+    "startSec": 28.62,
+    "endSec": 29
+  },
+  {
+    "word": "hidden",
+    "startSec": 29,
+    "endSec": 29.38
+  },
+  {
+    "word": "risk",
+    "startSec": 29.38,
+    "endSec": 29.76
+  },
+  {
+    "word": "ye",
+    "startSec": 29.76,
+    "endSec": 30.14
+  },
+  {
+    "word": "hai",
+    "startSec": 30.14,
+    "endSec": 30.52
+  },
+  {
+    "word": "ki",
+    "startSec": 30.52,
+    "endSec": 30.9
+  },
+  {
+    "word": "inka",
+    "startSec": 30.9,
+    "endSec": 31.28
+  },
+  {
+    "word": "60",
+    "startSec": 31.28,
+    "endSec": 31.66
+  },
+  {
+    "word": "percent",
+    "startSec": 31.66,
+    "endSec": 32.04
+  },
+  {
+    "word": "revenue",
+    "startSec": 32.04,
+    "endSec": 32.42
+  },
+  {
+    "word": "sirf",
+    "startSec": 32.42,
+    "endSec": 32.8
+  },
+  {
+    "word": "top",
+    "startSec": 32.8,
+    "endSec": 33.18
+  },
+  {
+    "word": "10",
+    "startSec": 33.18,
+    "endSec": 33.56
+  },
+  {
+    "word": "clients",
+    "startSec": 33.56,
+    "endSec": 33.94
+  },
+  {
+    "word": "se",
+    "startSec": 33.94,
+    "endSec": 34.32
+  },
+  {
+    "word": "aata",
+    "startSec": 34.32,
+    "endSec": 34.7
+  },
+  {
+    "word": "hai,",
+    "startSec": 34.7,
+    "endSec": 35.08
+  },
+  {
+    "word": "toh",
+    "startSec": 35.08,
+    "endSec": 35.46
+  },
+  {
+    "word": "concentration",
+    "startSec": 35.46,
+    "endSec": 35.84
+  },
+  {
+    "word": "risk",
+    "startSec": 35.84,
+    "endSec": 36.22
+  },
+  {
+    "word": "kaafi",
+    "startSec": 36.22,
+    "endSec": 36.6
+  },
+  {
+    "word": "high",
+    "startSec": 36.6,
+    "endSec": 36.98
+  },
+  {
+    "word": "hai.",
+    "startSec": 36.98,
+    "endSec": 37.36
+  },
+  {
+    "word": "Apply",
+    "startSec": 37.71,
+    "endSec": 38.08
+  },
+  {
+    "word": "karne",
+    "startSec": 38.08,
+    "endSec": 38.45
+  },
+  {
+    "word": "se",
+    "startSec": 38.44,
+    "endSec": 38.81
+  },
+  {
+    "word": "pehle",
+    "startSec": 38.81,
+    "endSec": 39.18
+  },
+  {
+    "word": "pura",
+    "startSec": 39.18,
+    "endSec": 39.55
+  },
+  {
+    "word": "data",
+    "startSec": 39.55,
+    "endSec": 39.92
+  },
+  {
+    "word": "caption",
+    "startSec": 39.91,
+    "endSec": 40.28
+  },
+  {
+    "word": "mein",
+    "startSec": 40.28,
+    "endSec": 40.65
+  },
+  {
+    "word": "padh",
+    "startSec": 40.65,
+    "endSec": 41.02
+  },
+  {
+    "word": "lo,",
+    "startSec": 41.01,
+    "endSec": 41.38
+  },
+  {
+    "word": "aur",
+    "startSec": 41.38,
+    "endSec": 41.75
+  },
+  {
+    "word": "aise",
+    "startSec": 41.75,
+    "endSec": 42.12
+  },
+  {
+    "word": "hi",
+    "startSec": 42.11,
+    "endSec": 42.48
+  },
+  {
+    "word": "quick",
+    "startSec": 42.48,
+    "endSec": 42.85
+  },
+  {
+    "word": "IPO",
+    "startSec": 42.85,
+    "endSec": 43.22
+  },
+  {
+    "word": "analysis",
+    "startSec": 43.22,
+    "endSec": 43.59
+  },
+  {
+    "word": "ke",
+    "startSec": 43.58,
+    "endSec": 43.95
+  },
+  {
+    "word": "liye",
+    "startSec": 43.95,
+    "endSec": 44.32
+  },
+  {
+    "word": "techwith.GenZ",
+    "startSec": 44.32,
+    "endSec": 44.69
+  },
+  {
+    "word": "ko",
+    "startSec": 44.68,
+    "endSec": 45.05
+  },
+  {
+    "word": "abhi",
+    "startSec": 45.05,
+    "endSec": 45.42
+  },
+  {
+    "word": "follow",
+    "startSec": 45.42,
+    "endSec": 45.79
+  },
+  {
+    "word": "kar",
+    "startSec": 45.78,
+    "endSec": 46.15
+  },
+  {
+    "word": "lo!",
+    "startSec": 46.15,
+    "endSec": 46.52
+  }
+]
