@@ -13,6 +13,7 @@ export interface TerminalSceneProps {
   path?: string;
   branch?: string;
   output?: (string | TerminalOutputLine)[];
+  lines?: (string | TerminalOutputLine)[];
   durationInFrames?: number;
 }
 
@@ -21,16 +22,33 @@ export const TerminalScene: React.FC<TerminalSceneProps> = ({
   direction,
   leadIn,
   headline = "RUN *CLAUDE* AGENT",
-  command = "claude run --agent",
+  command: explicitCommand,
   path = "~/dev/project",
   branch = "main",
-  output = [
+  output: explicitOutput,
+  lines,
+  durationInFrames = 150,
+}) => {
+  // Support either explicit command/output or raw "lines" array
+  let resolvedCommand = explicitCommand || "ipo-calendar --listing";
+  let resolvedOutput = explicitOutput;
+
+  if (lines && lines.length > 0 && !explicitOutput) {
+    const first = lines[0];
+    const firstText = typeof first === "string" ? first : first.text;
+    if (firstText.startsWith("$") || firstText.startsWith(">")) {
+      resolvedCommand = firstText.replace(/^[$>]\s*/, "");
+      resolvedOutput = lines.slice(1);
+    } else {
+      resolvedOutput = lines;
+    }
+  }
+
+  const finalOutput = resolvedOutput || [
     { text: "✓ Loaded anthropic/claude-3-5-sonnet", type: "success" },
     { text: "➜ 14 files indexed & parsed", type: "info" },
     { text: "⚡ Autonomous build passing (100%)", type: "success" },
-  ],
-  durationInFrames = 150,
-}) => {
+  ];
   return (
     <SceneLayout
       id={id}
@@ -49,10 +67,10 @@ export const TerminalScene: React.FC<TerminalSceneProps> = ({
         }}
       >
         <TerminalWindow
-          command={command}
+          command={resolvedCommand}
           path={path}
           branch={branch}
-          output={output}
+          output={finalOutput}
           delayFrames={4}
         />
       </div>

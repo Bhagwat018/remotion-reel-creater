@@ -6,16 +6,62 @@ import { Cursor } from "../components/Cursor";
 import { NeoBigButton } from "../components/neo/NeoBigButton";
 import { NeoTopPill } from "../components/neo/NeoTopPill";
 import { MotionDirection } from "../lib/directionalMotion";
-
 import { StarburstBadge } from "../components/StarburstBadge";
+import { StartupBattlePoll } from "../components/startup/StartupBattlePoll";
 
 export const CtaScene: React.FC<
-  CtaSceneProps & { callToAction?: string; durationInFrames: number; direction?: MotionDirection; id?: string }
-> = ({ id, direction, leadIn, headline, buttonText, callToAction, durationInFrames }) => {
+  CtaSceneProps & {
+    callToAction?: string;
+    durationInFrames: number;
+    direction?: MotionDirection;
+    id?: string;
+    handle?: string;
+    subtitle?: string;
+    badgeText?: string;
+    badgeSubtext?: string;
+    slug?: string;
+  }
+> = ({
+  id,
+  direction,
+  leadIn,
+  headline,
+  buttonText,
+  callToAction,
+  handle,
+  subtitle,
+  badgeText,
+  badgeSubtext,
+  durationInFrames,
+  slug,
+}) => {
+  const resolvedHandle = handle || "@techwith.GenZ";
+
+  // Bespoke interactive poll scene for Startup IPO Delays
+  if (id === "s5-cta" || slug === "startup-ipos-delayed-2027") {
+    return (
+      <SceneLayout
+        id={id}
+        direction={direction}
+        leadIn={leadIn || "COMMUNITY POLL"}
+        headline={headline}
+        durationInFrames={durationInFrames}
+        slug={slug}
+        showTechBadge={false}
+      >
+        <StartupBattlePoll handle={resolvedHandle} delayFrames={2} />
+      </SceneLayout>
+    );
+  }
+
   const frame = useCurrentFrame();
-  const effectiveButtonText = buttonText || callToAction || "COMMENT 'CODE' 💬";
+  const effectiveButtonText = buttonText || callToAction || "FOLLOW NOW 🔥";
   const clickFrame = 36;
   const isDepressed = frame >= clickFrame && frame <= clickFrame + 6;
+
+  const resolvedSubtext = subtitle ? subtitle.toUpperCase() : "LIVE TECH & MARKET UPDATES ⚡";
+  const resolvedBadgeText = badgeText || "DAILY";
+  const resolvedBadgeSubtext = badgeSubtext || "ALERTS";
 
   return (
     <SceneLayout
@@ -32,11 +78,11 @@ export const CtaScene: React.FC<
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          gap: 26,
+          gap: 24,
           marginTop: 10,
         }}
       >
-        <NeoTopPill text="@techwith.GenZ" color="orange" delayFrames={2} />
+        <NeoTopPill text={resolvedHandle} color="orange" delayFrames={2} />
 
         <div
           style={{
@@ -47,19 +93,19 @@ export const CtaScene: React.FC<
         >
           <NeoBigButton
             text={effectiveButtonText}
-            subtext="DROP A COMMENT TO GET CODE & ARCHITECTURE 🚀"
+            subtext={resolvedSubtext}
             bg="#ec4899"
             color="#ffffff"
             rotate={-2.5}
             delayFrames={4}
           />
           <StarburstBadge
-            text="100% FREE"
-            subtext="DROP 'CODE'"
+            text={resolvedBadgeText}
+            subtext={resolvedBadgeSubtext}
             color="#22c55e"
             textColor="#ffffff"
             position="none"
-            style={{ position: "absolute", top: -28, right: -28 }}
+            style={{ position: "absolute", top: -38, right: -28 }}
             delayFrames={8}
           />
         </div>

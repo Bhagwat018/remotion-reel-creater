@@ -63,11 +63,15 @@ export const cardSceneSchema = baseSceneSchema
   .extend({
     type: z.literal("card"),
     headline: z.string().min(1, "Headline is required for card scene"),
-    cardText: z.string().min(1, "cardText is required for card scene"),
-    chip: z.string().min(1, "chip label is required for card scene"),
+    cardText: z.string().optional(),
+    body: z.string().optional(),
+    chip: z.string().optional(),
+    bullets: z.array(z.string()).optional(),
   })
   .transform((data) => ({
     ...data,
+    cardText: data.cardText || data.body || (data.bullets ? data.bullets.join(" • ") : "Key Takeaway"),
+    chip: data.chip || "KEY HIGHLIGHT",
     leadIn: data.leadIn || data.subtitle,
   }));
 
@@ -214,11 +218,14 @@ export const ctaSceneSchema = baseSceneSchema
     headline: z.string().min(1, "Headline is required for cta scene"),
     buttonText: z.string().optional(),
     callToAction: z.string().optional(),
+    handle: z.string().optional(),
+    badgeText: z.string().optional(),
+    badgeSubtext: z.string().optional(),
   })
   .transform((data) => ({
     ...data,
     leadIn: data.leadIn || data.subtitle,
-    buttonText: data.buttonText || data.callToAction || "FOLLOW FOR MORE",
+    buttonText: data.buttonText || data.callToAction || (data.handle ? `FOLLOW ${data.handle.toUpperCase()}` : "FOLLOW FOR MORE"),
   }));
 
 export const diagramSceneSchema = baseSceneSchema
@@ -245,6 +252,7 @@ export const terminalSceneSchema = baseSceneSchema
     path: z.string().optional().default("~/dev/project"),
     branch: z.string().optional().default("main"),
     output: z.array(z.union([z.string(), z.object({ text: z.string(), type: z.string().optional() })])).optional(),
+    lines: z.array(z.union([z.string(), z.object({ text: z.string(), type: z.string().optional() })])).optional(),
   })
   .transform((data) => ({
     ...data,

@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "slug": "startup-ipos-delayed-2027",
+    "topic": "Zepto, PhonePe, Razorpay IPO Delays",
+    "title": "Where Are The Mega Startup IPOs?",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "audience": "Retail investors, startup enthusiasts",
+    "lengthSec": 34.77,
+    "totalDurationSec": 34.77,
+    "voiceFile": "reels/startup-ipos-delayed-2027/voice.mp3",
+    "wordsFile": "reels/startup-ipos-delayed-2027/words.json",
+    "loop": false,
+    "captions": true,
+    "avatar": {
+      "enabled": false
+    },
+    "captionStyle": "kinetic",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.16,
+    "fullVoiceover": "Jio ka IPO list ho gaya, par wait... Zepto, PhonePe aur Razorpay ke mega IPOs kahan gaye? Zepto ko investors se kam valuation mili, isliye unhone apna IPO seedha 2027 tak hold par daal diya hai. PhonePe ko SEBI approval toh mil gaya tha, par market volatility ke chakkar mein unhone bhi launch pause kar diya. Aur Razorpay ne confidential filing zaroor ki hai, par date ka koi ata-pata nahi. Ab in sabka target 2027 me shift ho chuka hai. Tum inme se kis IPO ka wait kar rahe ho? techwith.GenZ ko follow karke comments mein batao!",
+    "instagramCaption": "🚨 Jio ka IPO toh list ho gaya, par India ke mega startup IPOs kahan gaye? 👇\n\n1️⃣ Zepto: Investors se expected valuation na milne ke chakkar mein IPO plans seedha 2027 tak hold par daal diye hain.\n2️⃣ PhonePe: SEBI approval mil chuka tha, par current market volatility dekh kar launch pause kar diya gaya hai.\n3️⃣ Razorpay: June me confidential DRHP file ki thi, par abhi tak official date ka koi ata-pata nahi hai.\n\nAb in sabhi mega startups ka target seedha 2027 me shift ho gaya hai.\n\nAap inme se kis IPO ka sabse zyada wait kar rahe ho? Comments me batao 👇\nAur ye reel us dost ko bhejo jo IPO me invest karta hai 🔥\n\nFollow @techwith.GenZ for daily tech aur startup updates.\n\n#zepto #phonepe #razorpay #ipo #startups #investing #sharemarket #stockmarketindia #techwithgenz",
+    "disclaimer": "Educational content only. Not investment advice."
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 7.2,
+      "direction": "from-top",
+      "headline": "WHERE ARE THE *MEGA IPOS*?",
+      "leadIn": "STARTUP IPO RADAR ⚡",
+      "subtitle": "Zepto, PhonePe & Razorpay mega IPOs delayed to 2027",
+      "items": [
+        "⚡ ZEPTO ON HOLD",
+        "🔥 PHONEPE DELAYED",
+        "🚀 RAZORPAY 2027"
+      ],
+      "voice": "Jio ka IPO list ho gaya, par wait... Zepto, PhonePe aur Razorpay ke mega IPOs kahan gaye?"
+    },
+    {
+      "id": "s2-zepto",
+      "type": "pills",
+      "startSec": 7.2,
+      "endSec": 14.6,
+      "direction": "from-right",
+      "headline": "ZEPTO *ON HOLD*",
+      "leadIn": "QUICK COMMERCE GIANT",
+      "items": [
+        "LOW VALUATION FROM INVESTORS",
+        "IPO PLANS OFFICIALLY PAUSED",
+        "NEW LISTING TARGET: 2027"
+      ],
+      "badgeText": "VALUATION MISMATCH ⚠️",
+      "voice": "Zepto ko investors se kam valuation mili, isliye unhone apna IPO seedha 2027 tak hold par daal diya hai."
+    },
+    {
+      "id": "s3-phonepe",
+      "type": "orbit",
+      "startSec": 14.6,
+      "endSec": 20.8,
+      "direction": "from-left",
+      "headline": "PHONEPE *DELAYED*",
+      "leadIn": "FINTECH MARKET RADAR",
+      "center": "PhonePe",
+      "orbiting": [
+        "SEBI Approved",
+        "Market Volatility",
+        "Pushed to 2027"
+      ],
+      "nodes": [
+        "SEBI Approved",
+        "Market Volatility",
+        "Pushed to 2027"
+      ],
+      "voice": "PhonePe ko SEBI approval toh mil gaya tha, par market volatility ke chakkar mein unhone bhi launch pause kar diya."
+    },
+    {
+      "id": "s4-razorpay",
+      "type": "card",
+      "startSec": 20.8,
+      "endSec": 29.2,
+      "direction": "from-bottom",
+      "headline": "RAZORPAY *STATUS*",
+      "leadIn": "PAYMENTS UNICORN",
+      "icon": "razorpay",
+      "featuredBadge": {
+        "icon": "razorpay",
+        "title": "RAZORPAY INDIA",
+        "subtitle": "Fintech Payments Gateway",
+        "chip": "CONFIDENTIAL DRHP"
+      },
+      "cardText": "Confidential DRHP filed in June, but no official launch date announced yet.",
+      "body": "Confidential DRHP filed in June, but no official launch date announced yet.",
+      "chip": "CONFIDENTIAL DRHP",
+      "bullets": [
+        "Confidential DRHP filed with SEBI",
+        "No official launch date yet",
+        "Listing target shifted to 2027"
+      ],
+      "voice": "Aur Razorpay ne confidential filing zaroor ki hai, par date ka koi ata-pata nahi. Ab in sabka target 2027 me shift ho chuka hai."
+    },
+    {
+      "id": "s5-cta",
+      "type": "cta",
+      "startSec": 29.2,
+      "endSec": 34.77,
+      "direction": "pop-3d",
+      "headline": "WHO'S *NEXT*?",
+      "leadIn": "COMMUNITY POLL",
+      "subtitle": "Comment your most anticipated IPO 👇",
+      "handle": "@techwith.GenZ",
+      "buttonText": "COMMENT YOUR PICK 👇",
+      "badgeText": "VOTE",
+      "badgeSubtext": "NOW",
+      "voice": "Tum inme se kis IPO ka wait kar rahe ho? techwith.GenZ ko follow karke comments mein batao!"
+    }
+  ]
+}

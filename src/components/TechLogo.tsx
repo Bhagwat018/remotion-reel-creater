@@ -31,6 +31,8 @@ import {
   SiCloudflare,
   SiGitlab,
   SiJenkins,
+  SiPhonepe,
+  SiRazorpay,
 } from "react-icons/si";
 import { TbBrandOpenai } from "react-icons/tb";
 import { FaAws } from "react-icons/fa6";
@@ -63,7 +65,6 @@ const BRAND_MAP: Record<string, BrandConfig> = {
   javascript: { component: SiJavascript, defaultColor: "#F7DF1E", label: "JavaScript" },
   js: { component: SiJavascript, defaultColor: "#F7DF1E", label: "JavaScript" },
   nextjs: { component: SiNextdotjs, defaultColor: "#FFFFFF", label: "Next.js" },
-  next: { component: SiNextdotjs, defaultColor: "#FFFFFF", label: "Next.js" },
   redis: { component: SiRedis, defaultColor: "#DC382D", label: "Redis" },
   postgresql: { component: SiPostgresql, defaultColor: "#4169E1", label: "PostgreSQL" },
   postgres: { component: SiPostgresql, defaultColor: "#4169E1", label: "PostgreSQL" },
@@ -95,6 +96,8 @@ const BRAND_MAP: Record<string, BrandConfig> = {
   cloudflare: { component: SiCloudflare, defaultColor: "#F38020", label: "Cloudflare" },
   gitlab: { component: SiGitlab, defaultColor: "#FC6D26", label: "GitLab" },
   jenkins: { component: SiJenkins, defaultColor: "#D24939", label: "Jenkins" },
+  phonepe: { component: SiPhonepe, defaultColor: "#5f259f", label: "PhonePe" },
+  razorpay: { component: SiRazorpay, defaultColor: "#0284c7", label: "Razorpay" },
 };
 
 export const getBrandMeta = (name: string) => {

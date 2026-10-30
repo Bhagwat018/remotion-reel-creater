@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "slug": "binance-hack-biggest-heist",
+    "topic": "Binance Hack - Biggest Crypto Heist",
+    "title": "Binance Hack - Biggest Crypto Heist",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "totalDurationSec": 32,
+    "lengthSec": 32,
+    "voiceFile": "reels/binance-hack-biggest-heist/voice.mp3",
+    "wordsFile": "reels/binance-hack-biggest-heist/words.json",
+    "captions": true,
+    "captionStyle": "bubble",
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "fullVoiceover": "Binance hack ho gaya! Ab tak ka sabse bada crypto hack! Impact lagbhag 6 billion dollar, 10 blockchains se. Shuruaati jaanch me DevOps engineer ka laptop compromise nikla, aur hackers ne withdrawals kar liye. Report ke mutabik North Korea ke hackers par shak hai. Lagbhag 3 billion dollar freeze, Binance loss cover karega, par withdrawals abhi band hain. Pro tip: Binance ke naam ka DM ya email scam ho sakta hai, click mat karo. Latest updates ke liye follow karo @techwith.GenZ.",
+    "instagramCaption": "🚨 Binance hack ho gaya! Ab tak ka sabse bada crypto hack 😱 Jo ab tak pata hai 👇\n\n💥 Binance ke mutabik impact lagbhag $6.3 billion, 10 blockchains se\n💻 Shuruaati jaanch: ek DevOps engineer ka laptop compromise hua\n🕵️ Report ke mutabik North Korea ke hackers par shak (TRM Labs, Chainalysis)\n🧊 Lagbhag $3 billion freeze kiya gaya\n🛡️ Binance ne saara loss cover karne ka wada kiya hai\n⏸️ Deposits aur withdrawals abhi band hain\n📉 Bitcoin bhi gira, ~$77,000 ke paas\n\n💡 Pro tips:\n✅ Binance ke naam se aaye DM, email ya link pe click mat karo, scam ho sakta hai\n✅ Sirf Binance ka official app aur official channels dekho\n✅ Apne account me 2FA on rakho\n\n⏳ Ye developing story hai, numbers badal sakte hain.\n\nAap apna crypto kahan rakhte ho? Comment me batao 👇\nAur ye reel us dost ko bhejo jo crypto me paisa lagata hai 🔥\n\nFollow @techwith.GenZ for daily tech aur market updates.\n\n⚠️ Disclaimer: Ye sirf educational information hai, financial advice nahi. Crypto me paisa lagane se pehle apna research karo.\n\n#binance #binancehack #crypto #cryptonews #cryptohack #bitcoin #bnb #cybersecurity #northkorea #breakingnews #cryptoindia #techwithgenz",
+    "disclaimer": "Educational content only. Not financial advice. Developing story, figures may change."
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 4.15,
+      "leadIn": "BREAKING NEWS",
+      "headline": "BINANCE *HACKED*!",
+      "subtitle": "Ab tak ka sabse bada crypto hack",
+      "voice": "Binance hack ho gaya! Ab tak ka sabse bada crypto hack!"
+    },
+    {
+      "id": "scene-2",
+      "type": "stat",
+      "startSec": 4.15,
+      "endSec": 7.95,
+      "leadIn": "MASSIVE EXPLOIT",
+      "headline": "IMPACT *$6.3 BILLION*",
+      "value": "$6.3B",
+      "label": "Binance estimate | 10 blockchains",
+      "voice": "Impact lagbhag 6 billion dollar, 10 blockchains se."
+    },
+    {
+      "id": "scene-3",
+      "type": "terminal",
+      "startSec": 7.95,
+      "endSec": 13.6,
+      "leadIn": "INCIDENT LOG",
+      "headline": "HOW IT *HAPPENED*",
+      "command": "binance --incident-log",
+      "path": "~/security/incident-response",
+      "branch": "sec-team",
+      "lines": [
+        "$ binance --incident-log",
+        "initial : DevOps laptop compromised",
+        "access  : internal service container",
+        "result  : unauthorized withdrawals"
+      ],
+      "voice": "Shuruaati jaanch me DevOps engineer ka laptop compromise nikla, aur hackers ne withdrawals kar liye."
+    },
+    {
+      "id": "scene-4",
+      "type": "card",
+      "startSec": 13.6,
+      "endSec": 16.85,
+      "leadIn": "CYBER INTEL",
+      "headline": "*NORTH KOREA* LINK?",
+      "bullets": [
+        "TRM Labs: high confidence",
+        "Chainalysis: DPRK link",
+        "Investigation ongoing"
+      ],
+      "voice": "Report ke mutabik North Korea ke hackers par shak hai.",
+      "cardText": "TRM Labs: high confidence • Chainalysis: DPRK link • Investigation ongoing",
+      "chip": "CYBER INTEL"
+    },
+    {
+      "id": "scene-5",
+      "type": "pills",
+      "startSec": 16.85,
+      "endSec": 23.4,
+      "leadIn": "DAMAGE CONTROL",
+      "headline": "*$3B* FROZEN",
+      "items": [
+        "~$3B FROZEN",
+        "LOSS COVER KARENGE",
+        "WITHDRAWALS BAND"
+      ],
+      "voice": "Lagbhag 3 billion dollar freeze, Binance loss cover karega, par withdrawals abhi band hain."
+    },
+    {
+      "id": "scene-6",
+      "type": "card",
+      "startSec": 23.4,
+      "endSec": 27.9,
+      "leadIn": "CRITICAL WARNING",
+      "headline": "PRO TIP: *SCAM* ALERT",
+      "bullets": [
+        "Binance ke naam ka DM/email = scam?",
+        "Link pe click mat karo",
+        "Sirf official app dekho"
+      ],
+      "voice": "Pro tip: Binance ke naam ka DM ya email scam ho sakta hai, click mat karo.",
+      "cardText": "Binance ke naam ka DM/email = scam? • Link pe click mat karo • Sirf official app dekho",
+      "chip": "CRITICAL WARNING"
+    },
+    {
+      "id": "scene-7",
+      "type": "cta",
+      "startSec": 27.9,
+      "endSec": 32,
+      "leadIn": "STAY INFORMED",
+      "headline": "FOLLOW *@TECHWITH.GENZ*",
+      "subtitle": "Live tech + market updates",
+      "buttonText": "FOLLOW NOW 🔥",
+      "callToAction": "FOLLOW NOW 🔥",
+      "handle": "@techwith.GenZ",
+      "voice": "Latest updates ke liye follow karo @techwith.GenZ."
+    }
+  ]
+}

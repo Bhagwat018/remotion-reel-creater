@@ -74,7 +74,7 @@ export const NeoStatCard: React.FC<NeoStatCardProps> = ({
       <div
         style={{
           fontFamily: "'Inter', sans-serif",
-          fontSize: 88,
+          fontSize: value.length > 9 ? 68 : value.length > 6 ? 78 : 88,
           fontWeight: 900,
           color: accentColor,
           lineHeight: 1,

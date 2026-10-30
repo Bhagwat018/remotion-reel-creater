@@ -3,11 +3,38 @@ import { PillsSceneProps } from "../schema";
 import { SceneLayout } from "../components/SceneLayout";
 import { Pill } from "../components/Pill";
 import { MotionDirection } from "../lib/directionalMotion";
+import { ValuationGapCard } from "../components/startup/ValuationGapCard";
 
 export const PillsScene: React.FC<
-  PillsSceneProps & { pills?: string[]; durationInFrames: number; direction?: MotionDirection; id?: string }
-> = ({ id, direction, leadIn, headline, items, pills, durationInFrames }) => {
+  PillsSceneProps & {
+    pills?: string[];
+    badgeText?: string;
+    subtext?: string;
+    durationInFrames: number;
+    direction?: MotionDirection;
+    id?: string;
+    slug?: string;
+  }
+> = ({ id, direction, leadIn, headline, items, pills, badgeText, subtext, durationInFrames, slug }) => {
+  // Bespoke scene for Zepto Valuation Gap & IPO freeze
+  if (id === "s2-zepto" || (slug === "startup-ipos-delayed-2027" && id?.includes("zepto"))) {
+    return (
+      <SceneLayout
+        id={id}
+        direction={direction}
+        leadIn={leadIn || "QUICK COMMERCE GIANT"}
+        headline={headline}
+        durationInFrames={durationInFrames}
+        slug={slug}
+        showTechBadge={false}
+      >
+        <ValuationGapCard delayFrames={2} />
+      </SceneLayout>
+    );
+  }
+
   const pillList = items && items.length > 0 ? items : pills || [];
+  const displayBadge = badgeText || subtext || "OFFICIAL TIMELINE LOCKED";
 
   return (
     <SceneLayout
@@ -56,7 +83,7 @@ export const PillsScene: React.FC<
                 letterSpacing: "0.02em",
               }}
             >
-              KEY HIGHLIGHTS LOCKED
+              {displayBadge}
             </span>
           </div>
         )}

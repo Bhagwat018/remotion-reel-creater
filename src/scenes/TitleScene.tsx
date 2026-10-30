@@ -6,6 +6,7 @@ import { NeoSticker } from "../components/neo/NeoSticker";
 import { MotionDirection } from "../lib/directionalMotion";
 import { StarburstBadge } from "../components/StarburstBadge";
 import { TechLogo, findBrandInText } from "../components/TechLogo";
+import { IpoShowdownCard } from "../components/startup/IpoShowdownCard";
 
 export const TitleScene: React.FC<
   TitleSceneProps & {
@@ -15,10 +16,28 @@ export const TitleScene: React.FC<
     durationInFrames: number;
     direction?: MotionDirection;
     id?: string;
+    slug?: string;
   }
-> = ({ id, direction, leadIn, subtitle, headline, items, tags, durationInFrames }) => {
+> = ({ id, direction, leadIn, subtitle, headline, items, tags, durationInFrames, slug }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+
+  // Bespoke scene for Startup IPOs Showdown
+  if (id === "s1-hook" || slug === "startup-ipos-delayed-2027") {
+    return (
+      <SceneLayout
+        id={id}
+        direction={direction}
+        leadIn={leadIn || "STARTUP IPO RADAR ⚡"}
+        headline={headline}
+        durationInFrames={durationInFrames}
+        slug={slug}
+        showTechBadge={false}
+      >
+        <IpoShowdownCard delayFrames={2} />
+      </SceneLayout>
+    );
+  }
 
   const entrance = spring({
     frame: frame - 2,
@@ -99,7 +118,7 @@ export const TitleScene: React.FC<
             <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
               {brand ? (
                 <div style={{ width: 44, height: 44, display: "flex", alignItems: "center", justifyContent: "center" }}>
-                  <TechLogo brand={brand} size={42} />
+                  <TechLogo name={brand.key} size={42} />
                 </div>
               ) : (
                 <div

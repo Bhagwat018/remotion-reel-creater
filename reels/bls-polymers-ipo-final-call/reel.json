@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "slug": "bls-polymers-ipo-final-call",
+    "title": "BLS Polymers IPO Final Call",
+    "topic": "BLS Polymers IPO Final Call Review & Allotment Analysis",
+    "handle": "@techwith.GenZ",
+    "voiceFile": "reels/bls-polymers-ipo-final-call/voice.mp3",
+    "wordsFile": "reels/bls-polymers-ipo-final-call/words.json",
+    "durationSec": 35,
+    "loop": false,
+    "captions": true,
+    "avatar": {
+      "enabled": false
+    },
+    "captionStyle": "kinetic",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.16
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 9.3,
+      "direction": "from-top",
+      "headline": "*BLS POLYMERS* LAST CALL",
+      "leadIn": "IPO CLOSING TODAY",
+      "subtitle": "Price Band ₹142 - ₹150 // Lot: 100 Shares",
+      "items": [
+        "🔥 CLOSING TODAY",
+        "💰 ₹142 - ₹150 BAND",
+        "⚡ MIN ₹15,000 LOT"
+      ],
+      "voice": "Rukk jao! BLS Polymers IPO aaj band ho raha hai. Price band 142 se 150 rupaye. Ek lot 100 shares, matlab minimum 15 hazaar."
+    },
+    {
+      "id": "scene-2",
+      "type": "stat",
+      "startSec": 9.3,
+      "endSec": 14.25,
+      "direction": "from-right",
+      "headline": "INSANE *DEMAND*",
+      "leadIn": "DAY 2 SUBSCRIPTION",
+      "value": "35x",
+      "label": "Total Subscription",
+      "subtext": "NII Category 78x & Retail 30x",
+      "badge": "RECORD BIDDING 🔥",
+      "pills": [
+        "⚡ NII: 78x Subscribed",
+        "🔥 Retail: 30x Subscribed",
+        "📈 Day 2 Heavy Inflow"
+      ],
+      "voice": "Demand pagal hai! Day 2 tak 35 guna subscription."
+    },
+    {
+      "id": "scene-3",
+      "type": "card",
+      "startSec": 14.25,
+      "endSec": 18.1,
+      "direction": "from-left",
+      "headline": "REALITY *CHECK*",
+      "leadIn": "ALLOTMENT ODDS",
+      "featuredBadge": {
+        "icon": "🎰",
+        "title": "1 IN 30 CHANCE",
+        "subtitle": "Retail Quota 30x Subscribed",
+        "chip": "3.3% ALLOTMENT ODDS"
+      },
+      "cardText": "Retail quota 30 guna bhar chuka hai, matlab 30 me se sirf 1 applicant ko hi lot milega! Extreme competition.",
+      "chip": "HIGH COMPETITION ⚠️",
+      "voice": "Retail 30 guna bhara, matlab lagbhag 30 mein se ek ko hi lot milega."
+    },
+    {
+      "id": "scene-4",
+      "type": "flow",
+      "startSec": 18.1,
+      "endSec": 23.6,
+      "direction": "from-bottom",
+      "headline": "KEY *IPO DATES*",
+      "leadIn": "CALENDAR ROADMAP",
+      "nodes": [
+        {
+          "id": "1",
+          "title": "Allotment Date",
+          "subtitle": "30 October 2024 (KFintech & NSE)",
+          "icon": "📅",
+          "status": "ALLOTMENT",
+          "accentColor": "#facc15"
+        },
+        {
+          "id": "2",
+          "title": "Refunds & Demat Credit",
+          "subtitle": "2 November 2024 (Shares Credited)",
+          "icon": "💳",
+          "status": "REFUND // DEMAT",
+          "accentColor": "#38bdf8"
+        },
+        {
+          "id": "3",
+          "title": "Listing Day",
+          "subtitle": "3 November 2024 (BSE & NSE)",
+          "icon": "🚀",
+          "status": "LISTING GAINS",
+          "accentColor": "#4ade80"
+        }
+      ],
+      "voice": "Dates note karo: allotment 30 October, refund 2 November, listing 3 November."
+    },
+    {
+      "id": "scene-5",
+      "type": "card",
+      "startSec": 23.6,
+      "endSec": 30.7,
+      "direction": "from-right",
+      "headline": "PRO *TIPS*",
+      "leadIn": "CRITICAL WARNING",
+      "featuredBadge": {
+        "icon": "⚡",
+        "title": "APPROVE BEFORE 5 PM",
+        "subtitle": "UPI Mandate Deadline Today",
+        "chip": "URGENT ACTION"
+      },
+      "cardText": "5:00 PM se pehle UPI mandate approve karo warna bid reject ho jayegi! Aur GMP par andha bharosa mat karo, pehle research karo.",
+      "chip": "DON'T TRUST GMP ⚠️",
+      "voice": "Pro tip: 5 baje se pehle UPI approve karo, aur GMP pe andha bharosa mat karo."
+    },
+    {
+      "id": "scene-6",
+      "type": "cta",
+      "startSec": 30.7,
+      "endSec": 34.92,
+      "direction": "pop-3d",
+      "headline": "FOLLOW *@techwith.GenZ*",
+      "leadIn": "NOT FINANCIAL ADVICE",
+      "buttonText": "FOLLOW @techwith.GenZ 🚀",
+      "callToAction": "FOLLOW @techwith.GenZ 🚀",
+      "voice": "Ye advice nahi hai. Aisi updates ke liye follow karo @techwith.GenZ."
+    }
+  ]
+}

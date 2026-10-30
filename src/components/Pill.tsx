@@ -39,8 +39,8 @@ export const Pill: React.FC<PillProps> = ({
   // Contextual icon detection for tech concepts
   const lower = text.toLowerCase();
   let contextualIcon: React.ReactNode = null;
-  let badgeLabel = "DETECT";
-  let badgeColor = "#38bdf8";
+  let badgeLabel = "CONFIRMED";
+  let badgeColor = "#22c55e";
 
   if (brandMeta) {
     contextualIcon = <TechLogo name={text} size={32} />;
@@ -58,6 +58,10 @@ export const Pill: React.FC<PillProps> = ({
     contextualIcon = <FaBiohazard size={28} color="#a855f7" style={{ filter: "drop-shadow(0 0 10px rgba(168,85,247,0.5))" }} />;
     badgeLabel = "CODE DEBT";
     badgeColor = "#a855f7";
+  } else if (lower.includes("nov") || lower.includes("listing") || lower.includes("credit") || lower.includes("date") || lower.includes("bse") || lower.includes("nse")) {
+    contextualIcon = <FiCheckCircle size={28} color="#16a34a" style={{ filter: "drop-shadow(0 0 8px rgba(22,163,74,0.5))" }} />;
+    badgeLabel = "KEY DATE";
+    badgeColor = "#16a34a";
   } else {
     contextualIcon = <FiCheckCircle size={28} color="#22c55e" style={{ filter: "drop-shadow(0 0 8px rgba(34,197,94,0.5))" }} />;
   }

@@ -109,6 +109,7 @@ const sceneTypeMap = {
     body: z.string().optional(),
     chip: z.string().optional(),
     badge: z.string().optional(),
+    bullets: z.array(z.string()).optional(),
   }),
   code: baseSceneSchema.extend({
     type: z.literal("code"),
@@ -174,8 +175,11 @@ const sceneTypeMap = {
     headline: z.string().min(1, "Headline is required for cta scene"),
     buttonText: z.string().optional(),
     callToAction: z.string().optional(),
-  }).refine((d) => Boolean(d.buttonText || d.callToAction), {
-    message: "buttonText or callToAction is required for cta scene",
+    handle: z.string().optional(),
+    badgeText: z.string().optional(),
+    badgeSubtext: z.string().optional(),
+  }).refine((d) => Boolean(d.buttonText || d.callToAction || d.handle), {
+    message: "buttonText, callToAction, or handle is required for cta scene",
   }),
   diagram: baseSceneSchema.extend({
     type: z.literal("diagram"),
@@ -194,6 +198,7 @@ const sceneTypeMap = {
     path: z.string().optional(),
     branch: z.string().optional(),
     output: z.array(z.any()).optional(),
+    lines: z.array(z.any()).optional(),
   }),
   chart: baseSceneSchema.extend({
     type: z.literal("chart"),
@@ -344,7 +349,7 @@ if (!Array.isArray(rawData.scenes) || rawData.scenes.length === 0) {
     const s = { ...scene };
     if (!s.id) { s.id = `scene-${idx + 1}`; modified = true; }
     if (s.type === "card") {
-      const text = s.cardText || s.body || s.text || s.content || s.desc || s.description || s.headline || "Key Takeaway";
+      const text = s.cardText || s.body || (Array.isArray(s.bullets) ? s.bullets.join(" • ") : null) || s.text || s.content || s.desc || s.description || s.headline || "Key Takeaway";
       const chip = s.chip || s.badge || s.tag || s.leadIn || "KEY HIGHLIGHT";
       if (s.cardText !== text || s.chip !== chip) {
         s.cardText = text;

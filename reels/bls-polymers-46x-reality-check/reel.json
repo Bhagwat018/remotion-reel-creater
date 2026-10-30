@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "slug": "bls-polymers-46x-reality-check",
+    "title": "BLS Polymers IPO - Blockbuster Demand + Reality Check",
+    "topic": "BLS Polymers IPO - Blockbuster Demand + Reality Check",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "durationSec": 33,
+    "voiceFile": "reels/bls-polymers-46x-reality-check/voice.mp3",
+    "wordsFile": "reels/bls-polymers-46x-reality-check/words.json",
+    "loop": false,
+    "captions": true,
+    "avatar": {
+      "enabled": false
+    },
+    "captionStyle": "kinetic",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.16
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 4.4,
+      "direction": "from-top",
+      "headline": "*46X* BLS POLYMERS IPO!",
+      "leadIn": "LAST DAY SURGE ⚡",
+      "subtitle": "Blockbuster demand on last day",
+      "items": [
+        "🔥 46X SUBSCRIPTION",
+        "🚀 HNI 117X BIDDING",
+        "💰 RECORD INFLOW"
+      ],
+      "voice": "46 guna! BLS Polymers IPO pe log toot pade hain!"
+    },
+    {
+      "id": "scene-2",
+      "type": "stat",
+      "startSec": 4.4,
+      "endSec": 10.1,
+      "direction": "from-right",
+      "headline": "HNI DEMAND *117X*",
+      "leadIn": "FINAL DAY BIDDING RADAR",
+      "value": "46x",
+      "label": "Overall Subscription by 10:15 AM",
+      "subtext": "HNI Category: Massive 117x Oversubscribed",
+      "badge": "RECORD DEMAND 🔥",
+      "pills": [
+        "⚡ HNI Category: 117x",
+        "🔥 Retail Bids: ~36x",
+        "📈 Total Inflow: 46x+"
+      ],
+      "voice": "Last day subah tak hi subscription 46 guna, aur HNI category 117 guna."
+    },
+    {
+      "id": "scene-3",
+      "type": "pills",
+      "startSec": 10.1,
+      "endSec": 14.5,
+      "direction": "from-left",
+      "headline": "STRONG *NUMBERS*",
+      "leadIn": "FINANCIAL FUNDAMENTALS",
+      "items": [
+        "PROFIT ~₹27 CRORE (FY26)",
+        "RoNW ~33% RETURN",
+        "EBITDA MARGIN ~13%"
+      ],
+      "voice": "Company ka profit 27 crore, aur return on net worth 33 percent."
+    },
+    {
+      "id": "scene-4",
+      "type": "stat",
+      "startSec": 14.5,
+      "endSec": 17.9,
+      "direction": "from-bottom",
+      "headline": "GREY MARKET *34%* PREMIUM",
+      "leadIn": "UNOFFICIAL GMP RADAR",
+      "value": "+34%",
+      "label": "Grey Market Premium Estimate",
+      "subtext": "Expected Listing Gain (Subject to market conditions)",
+      "badge": "UNOFFICIAL GMP ⚠️",
+      "pills": [
+        "📊 Estimated Gain: ~34%",
+        "⚠️ Grey Market Rumor",
+        "❌ No Official Guarantee"
+      ],
+      "voice": "Grey market bhi lagbhag 34 percent premium bata raha hai."
+    },
+    {
+      "id": "scene-5",
+      "type": "card",
+      "startSec": 17.9,
+      "endSec": 24.2,
+      "direction": "from-left",
+      "headline": "*REALITY CHECK*",
+      "leadIn": "VALUATION & GROWTH WARNING",
+      "featuredBadge": {
+        "icon": "⚠️",
+        "title": "KEY RISKS IDENTIFIED",
+        "subtitle": "Check valuation before applying",
+        "chip": "HIGH VALUATION"
+      },
+      "bullets": [
+        "Revenue growth sirf ~6% (Slow top-line)",
+        "P/E multiple lagbhag 34x (Expensive valuation)",
+        "High client concentration risk"
+      ],
+      "cardText": "Revenue growth sirf ~6% • P/E lagbhag 34x • Thoda mehnga valuation",
+      "chip": "REALITY CHECK ⚠️",
+      "voice": "Par reality check: revenue growth sirf 6 percent, aur P/E lagbhag 34."
+    },
+    {
+      "id": "scene-6",
+      "type": "terminal",
+      "startSec": 24.2,
+      "endSec": 28.9,
+      "direction": "from-right",
+      "headline": "PRO TIP: *RISK* CHECK",
+      "leadIn": "INVESTOR SAFETY RULES",
+      "command": "ipo-risk-check",
+      "lines": [
+        "$ ipo-risk-check",
+        "GMP    : rumor, no guarantee ⚠️",
+        "invest : only what you can risk",
+        "advice : not financial advice"
+      ],
+      "voice": "Pro tip: GMP rumor hai, sirf wahi paisa lagao jiska risk le sako."
+    },
+    {
+      "id": "scene-7",
+      "type": "cta",
+      "startSec": 28.9,
+      "endSec": 32.6,
+      "direction": "pop-3d",
+      "headline": "FOLLOW *@TECHWITH.GENZ*",
+      "leadIn": "NOT FINANCIAL ADVICE",
+      "subtitle": "Daily market + tech updates",
+      "buttonText": "FOLLOW @techwith.GenZ 🚀",
+      "callToAction": "FOLLOW @techwith.GenZ 🚀",
+      "voice": "Ye advice nahi hai. Follow karo @techwith.GenZ."
+    }
+  ]
+}

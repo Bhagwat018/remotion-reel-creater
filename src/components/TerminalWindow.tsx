@@ -60,9 +60,9 @@ export const TerminalWindow: React.FC<TerminalWindowProps> = ({
   const normalizedOutput: TerminalOutputLine[] = (output || []).map((line) => {
     if (typeof line === "string") {
       let type: TerminalOutputLine["type"] = "dim";
-      if (line.startsWith("✓") || line.includes("success") || line.includes("Done")) type = "success";
-      else if (line.startsWith("➜") || line.includes("info")) type = "info";
-      else if (line.startsWith("⚠") || line.includes("warn")) type = "warning";
+      if (line.startsWith("✓") || line.includes("success") || line.includes("Done") || line.includes("KFin")) type = "success";
+      else if (line.startsWith("➜") || line.includes("info") || line.includes("BSE") || line.includes("portal 1") || line.includes("portal 2")) type = "info";
+      else if (line.startsWith("⚠") || line.includes("warn") || line.includes("NSE") || line.includes("portal 3")) type = "warning";
       else if (line.startsWith("✖") || line.includes("error")) type = "error";
       return { text: line, type };
     }

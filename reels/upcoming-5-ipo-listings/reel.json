@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "slug": "upcoming-5-ipo-listings",
+    "title": "5 IPO Listing in 4 Days - IPO Calendar",
+    "topic": "5 IPO Listing in 4 Days - Complete IPO Calendar Analysis",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "durationSec": 37,
+    "voiceFile": "reels/upcoming-5-ipo-listings/voice.mp3",
+    "wordsFile": "reels/upcoming-5-ipo-listings/words.json",
+    "loop": false,
+    "captions": true,
+    "avatar": {
+      "enabled": false
+    },
+    "captionStyle": "kinetic",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.16
+  },
+  "scenes": [
+    {
+      "id": "scene-1",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 3.6,
+      "direction": "from-top",
+      "headline": "5 IPO *LISTINGS* IN 4 DAYS!",
+      "leadIn": "IPO CALENDAR ⚡",
+      "subtitle": "Complete listing dates & action plan",
+      "items": [
+        "📅 2 - 5 NOVEMBER",
+        "🔥 5 FRESH LISTINGS",
+        "⚡ LISTING ACTION"
+      ],
+      "voice": "Agle 4 din me 5 IPO list hone wale hain!"
+    },
+    {
+      "id": "scene-2",
+      "type": "terminal",
+      "startSec": 3.6,
+      "endSec": 8.6,
+      "direction": "from-left",
+      "headline": "LISTING *CALENDAR* (TENTATIVE)",
+      "leadIn": "TERMINAL RADAR",
+      "command": "ipo-calendar --listing",
+      "lines": [
+        "$ ipo-calendar --listing",
+        "02 Nov : EAAA India Alternatives",
+        "03 Nov : BLS Polymers",
+        "03 Nov : SFC Environmental"
+      ],
+      "voice": "2 November: EAAA India Alternatives. 3 November: BLS Polymers aur SFC Environmental."
+    },
+    {
+      "id": "scene-3",
+      "type": "card",
+      "startSec": 8.6,
+      "endSec": 14.7,
+      "direction": "from-right",
+      "headline": "*4 & 5 NOV* LISTINGS",
+      "leadIn": "UPCOMING RADAR",
+      "featuredBadge": {
+        "icon": "💎",
+        "title": "4 & 5 NOV SCHEDULE",
+        "subtitle": "Jewels & Heavy Industry IPOs",
+        "chip": "TENTATIVE DATES"
+      },
+      "bullets": [
+        "04 Nov: M.K. Sons Fine Jewels",
+        "05 Nov: Bombay Coated & Special Steels",
+        "Dates tentative (Check BSE/NSE notice)"
+      ],
+      "cardText": "04 Nov: M.K. Sons Fine Jewels • 05 Nov: Bombay Coated & Special Steels • Dates tentative",
+      "chip": "CALENDAR // TENTATIVE",
+      "voice": "4 November: M.K. Sons Fine Jewels. 5 November: Bombay Coated and Special Steels."
+    },
+    {
+      "id": "scene-4",
+      "type": "stat",
+      "startSec": 14.7,
+      "endSec": 18.2,
+      "direction": "from-bottom",
+      "headline": "STILL *OPEN* NOW",
+      "leadIn": "CURRENT BIDDING WINDOW",
+      "value": "2 NOV",
+      "label": "Bombay Coated Bidding Closes",
+      "subtext": "Price Band: ₹78 - ₹82 | Bidding Window Active",
+      "badge": "STILL OPEN ⚡",
+      "pills": [
+        "🔥 Price Band: ₹78 - ₹82",
+        "⚡ Closes 2 November",
+        "📈 Live Bidding Open"
+      ],
+      "voice": "Aur iska IPO abhi 2 November tak khula hai."
+    },
+    {
+      "id": "scene-5",
+      "type": "card",
+      "startSec": 18.2,
+      "endSec": 24.3,
+      "direction": "from-left",
+      "headline": "DON'T TRUST ONLY *GMP*",
+      "leadIn": "CRITICAL PRO TIP",
+      "featuredBadge": {
+        "icon": "⚠️",
+        "title": "PRO TIP // DUE DILIGENCE",
+        "subtitle": "Look beyond grey market hype",
+        "chip": "FUNDAMENTALS FIRST"
+      },
+      "bullets": [
+        "Company ka net profit trend check karo",
+        "Balance sheet ka karza (debt) verify karo",
+        "GMP sirf unofficial rumor hai, guarantee nahi"
+      ],
+      "cardText": "Sirf GMP dekh ke apply mat karo! Company ka profit aur debt dono balance sheet me verify karo.",
+      "chip": "PRO TIP 💡",
+      "voice": "Pro tip: sirf GMP dekh ke apply mat karo, company ka profit aur karza bhi check karo."
+    },
+    {
+      "id": "scene-6",
+      "type": "pills",
+      "startSec": 24.3,
+      "endSec": 29.3,
+      "direction": "from-right",
+      "headline": "1 PAN = 1 *APPLICATION*",
+      "leadIn": "MANDATORY BIDDING RULE",
+      "items": [
+        "DUPLICATE BID = AUTO REJECT",
+        "FAMILY = SEPARATE PAN",
+        "SEPARATE DEMAT ACCOUNT"
+      ],
+      "voice": "Aur ek PAN se ek hi application, warna bid reject ho sakti hai."
+    },
+    {
+      "id": "scene-7",
+      "type": "cta",
+      "startSec": 29.3,
+      "endSec": 36.6,
+      "direction": "pop-3d",
+      "headline": "FOLLOW *@TECHWITH.GENZ*",
+      "leadIn": "NOT FINANCIAL ADVICE",
+      "buttonText": "FOLLOW @techwith.GenZ 🚀",
+      "callToAction": "FOLLOW @techwith.GenZ 🚀",
+      "voice": "Ye advice nahi hai. Roz ki market updates ke liye follow karo @techwith.GenZ."
+    }
+  ]
+}

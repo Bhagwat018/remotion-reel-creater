@@ -79,12 +79,13 @@ export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
               key={`${item.word}-${idx}`}
               style={{
                 fontFamily: theme.typography.headline,
-                fontSize: isSpoken ? 52 : 44,
+                fontSize: isSpoken ? 46 : 40,
                 fontWeight: 900,
                 textTransform: "uppercase",
-                letterSpacing: "-0.02em",
+                letterSpacing: "0.02em",
+                margin: "0 4px",
                 color: isSpoken ? "#facc15" : isPast ? "#ffffff" : "#94a3b8",
-                transform: isSpoken ? "scale(1.15) translateY(-2px)" : "scale(1)",
+                transform: isSpoken ? "scale(1.12) translateY(-2px)" : "scale(1)",
                 transition: "transform 0.08s ease-out, color 0.08s ease-out",
                 textShadow: isSpoken
                   ? "0 0 20px rgba(250, 204, 21, 0.6), 0 4px 10px rgba(0,0,0,0.9)"

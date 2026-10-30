@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "slug": "bls-polymers-ipo-allotment-today",
+    "topic": "BLS Polymers IPO Allotment Today",
+    "title": "BLS Polymers IPO Allotment Today",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "totalDurationSec": 32.52,
+    "lengthSec": 32.52,
+    "voiceFile": "reels/bls-polymers-ipo-allotment-today/voice.mp3",
+    "wordsFile": "reels/bls-polymers-ipo-allotment-today/words.json",
+    "loop": false,
+    "captions": true,
+    "avatar": {
+      "enabled": false
+    },
+    "captionStyle": "kinetic",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.16,
+    "fullVoiceover": "BLS Polymers IPO ka allotment aaj hai! Subscription 241 guna, retail 128 guna. Matlab lagbhag 128 mein se sirf 1 ko shares milenge. Check kaise karein? KFin Technologies, BSE ya NSE pe PAN daalo. Pro tip: allotment na mile toh ghabrao mat, 2 November ko paisa apne aap unblock ho jayega. Mil gaye toh listing 3 November ko hai. GMP lagbhag 44 percent, par wo sirf rumor hai. Ye advice nahi hai. Follow karo @techwith.GenZ.",
+    "instagramCaption": "🚨 BLS Polymers IPO ka allotment aaj hai! Check karne se pehle ye jaan lo 👇\n\n📈 Final subscription: 241.22x\n🎟️ Retail: ~128x, matlab lagbhag 128 me se 1 ko hi shares milte hain\n📅 Refund/Demat credit: 2 Nov | Listing: 3 Nov (BSE & NSE)\n🎯 GMP: ~44% (unofficial rumor)\n\n🔍 Allotment kaise check karein:\n1️⃣ KFin Technologies IPO status page\n2️⃣ BSE application status page\n3️⃣ NSE IPO bid verification page\nPAN ya application number daalo.\n\n💡 Pro tips:\n✅ Allotment na mile toh ghabrao mat, 2 Nov ko paisa apne aap unblock ho jata hai\n✅ Allotment ke naam pe aaye unknown link, DM ya call pe PAN/OTP mat dena, scam ho sakta hai\n✅ GMP guarantee nahi hota, listing se pehle apna research karo\n\nAapko allotment mila ya nahi? Comment me batao 👇\nAur ye reel us dost ko bhejo jisne apply kiya tha 🔥\n\nFollow @techwith.GenZ for daily market aur tech updates.\n\n⚠️ Disclaimer: Ye sirf educational information hai, investment advice nahi. Allotment aur listing gain guaranteed nahi hote. Invest karne se pehle apna research karo ya SEBI-registered advisor se salah lo.\n\n#blspolymersipo #blspolymers #ipoallotment #ipo #ipoalert #iponews #gmp #sharemarket #stockmarketindia #investing #financeindia #techwithgenz",
+    "disclaimer": "Educational content only. Not investment advice. GMP is unofficial."
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 7,
+      "direction": "from-top",
+      "headline": "ALLOTMENT *AAJ* HAI!",
+      "leadIn": "IPO ALLOTMENT DAY ⚡",
+      "subtitle": "BLS Polymers IPO | 241.22x subscribed",
+      "items": [
+        "⚡ 241X TOTAL",
+        "🔥 128X RETAIL",
+        "🚨 ALLOTMENT OUT"
+      ],
+      "voice": "BLS Polymers IPO ka allotment aaj hai! Subscription 241 guna, retail 128 guna."
+    },
+    {
+      "id": "s2",
+      "type": "stat",
+      "startSec": 7,
+      "endSec": 10.9,
+      "direction": "from-right",
+      "headline": "RETAIL ODDS: *1 IN 128*",
+      "leadIn": "RETAIL PROBABILITY",
+      "value": "~1 IN 128",
+      "label": "Retail subscribed 128.36x",
+      "subtext": "Only ~0.78% of retail applicants will get shares!",
+      "badge": "128.36X RETAIL 🔥",
+      "pills": [
+        "Retail Bids: 128x",
+        "Odds: ~1 Winner in 128",
+        "Computer Lottery Allotment"
+      ],
+      "voice": "Matlab lagbhag 128 mein se sirf 1 ko shares milenge."
+    },
+    {
+      "id": "s3",
+      "type": "terminal",
+      "startSec": 10.9,
+      "endSec": 16.5,
+      "direction": "from-left",
+      "headline": "CHECK *ALLOTMENT* NOW",
+      "leadIn": "OFFICIAL PORTALS",
+      "path": "~/allotment",
+      "branch": "live",
+      "lines": [
+        "$ check-allotment --pan YOUR_PAN",
+        "portal 1 : KFin Technologies",
+        "portal 2 : BSE",
+        "portal 3 : NSE"
+      ],
+      "voice": "Check kaise karein? KFin Technologies, BSE ya NSE pe PAN daalo."
+    },
+    {
+      "id": "s4",
+      "type": "card",
+      "startSec": 16.5,
+      "endSec": 22.6,
+      "direction": "from-bottom",
+      "headline": "NOT ALLOTTED? *RELAX*",
+      "leadIn": "PRO TIPS & SECURITY",
+      "bullets": [
+        "2 Nov ko paisa auto unblock",
+        "Kisi ko PAN/OTP mat dena",
+        "Fake links se bacho"
+      ],
+      "voice": "Pro tip: allotment na mile toh ghabrao mat, 2 November ko paisa apne aap unblock ho jayega.",
+      "cardText": "2 Nov ko paisa auto unblock • Kisi ko PAN/OTP mat dena • Fake links se bacho",
+      "chip": "PRO TIPS & SECURITY"
+    },
+    {
+      "id": "s5",
+      "type": "pills",
+      "startSec": 22.6,
+      "endSec": 25,
+      "direction": "from-right",
+      "headline": "NEXT *DATES*",
+      "leadIn": "KEY TIMELINE",
+      "items": [
+        "2 NOV: DEMAT CREDIT",
+        "3 NOV: LISTING",
+        "BSE + NSE"
+      ],
+      "subtext": "OFFICIAL TIMELINE LOCKED 🗓️",
+      "voice": "Mil gaye toh listing 3 November ko hai."
+    },
+    {
+      "id": "s6",
+      "type": "stat",
+      "startSec": 25,
+      "endSec": 29,
+      "direction": "from-left",
+      "headline": "GMP = *RUMOR*",
+      "leadIn": "GREY MARKET RADAR",
+      "value": "~44% GMP",
+      "label": "Unofficial, no guarantee",
+      "subtext": "Grey market premiums are unofficial and not guaranteed!",
+      "badge": "GREY MARKET RUMOR ⚡",
+      "pills": [
+        "Unofficial Grey Market",
+        "Zero Listing Guarantee",
+        "Do Your Own Research"
+      ],
+      "voice": "GMP lagbhag 44 percent, par wo sirf rumor hai."
+    },
+    {
+      "id": "s7",
+      "type": "cta",
+      "startSec": 29,
+      "endSec": 32.52,
+      "direction": "pop-3d",
+      "headline": "FOLLOW *@TECHWITH.GENZ*",
+      "leadIn": "STAY AHEAD",
+      "subtitle": "Daily market + tech updates",
+      "handle": "@techwith.GenZ",
+      "buttonText": "FOLLOW FOR UPDATES 🔥",
+      "badgeText": "DAILY",
+      "badgeSubtext": "ALERTS",
+      "voice": "Ye advice nahi hai. Follow karo @techwith.GenZ."
+    }
+  ]
+}

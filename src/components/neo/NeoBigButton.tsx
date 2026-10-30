@@ -29,6 +29,8 @@ export const NeoBigButton: React.FC<NeoBigButtonProps> = ({
 
   const pulse = Math.sin(frame / 6) * 0.03 + 1;
 
+  const fontSize = text.length > 22 ? 30 : text.length > 16 ? 34 : 44;
+
   return (
     <div
       style={{
@@ -46,10 +48,10 @@ export const NeoBigButton: React.FC<NeoBigButtonProps> = ({
           color,
           border: "4px solid #000000",
           borderRadius: 22,
-          padding: "20px 48px",
+          padding: "18px 40px",
           boxShadow: "7px 7px 0px #000000",
           fontFamily: "'Inter', sans-serif",
-          fontSize: 44,
+          fontSize,
           fontWeight: 900,
           letterSpacing: "-0.02em",
           textAlign: "center",
