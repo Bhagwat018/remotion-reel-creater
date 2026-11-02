@@ -1,0 +1,28 @@
+{
+  "channels": [
+    "adilet.fndr",
+    "mrcreates.ai",
+    "techstackbro",
+    "oruim.tech"
+  ],
+  "processedReels": [
+    {
+      "channel": "adilet.fndr",
+      "shortcode": "De_3hwXIBYi",
+      "url": "https://www.instagram.com/adilet.fndr/reel/De_3hwXIBYi/",
+      "originalTopic": "Claude Code AI Animated Reels",
+      "ourSlug": "claude-code-top-5-repos",
+      "processedAt": "2026-10-27T01:03:00.000Z",
+      "status": "COMPLETED"
+    },
+    {
+      "channel": "mrcreates.ai",
+      "shortcode": "DfKFK7RJdjl",
+      "url": "https://www.instagram.com/mrcreates.ai/reel/DfKFK7RJdjl/",
+      "originalTopic": "Free AI Video Editing Workflow",
+      "ourSlug": "stop-paying-for-ai-editing",
+      "processedAt": "2026-11-02T15:01:53.119Z",
+      "status": "RENDERED"
+    }
+  ]
+}

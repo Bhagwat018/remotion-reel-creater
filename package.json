@@ -45,6 +45,8 @@
     "post:reel": "node scripts/post-reel.mjs",
     "instagram:login": "node scripts/instagram-login.mjs",
     "post:reel:browser": "node scripts/post-reel-browser.mjs",
+    "spy:remix": "node scripts/spy-competitors.mjs",
+    "spy:pipeline": "node scripts/spy-pipeline.mjs",
     "make-words": "node scripts/make-words.mjs",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",

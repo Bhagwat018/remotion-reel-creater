@@ -3,6 +3,9 @@ import fs from "fs";
 import path from "path";
 import { execSync } from "child_process";
 import { fileURLToPath } from "url";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -53,13 +56,35 @@ const sceneAudioFiles = [];
 const requestedVoice = (
   args.find((a) => a.startsWith("--voice="))?.split("=")[1] ||
   reelData.meta?.voice ||
-  "Madhur"
+  "Rishi"
 ).trim();
 
 const speedMultiplier = parseFloat(reelData.meta?.voiceSpeed || 1.05);
 const rateWpm = Math.round(180 * speedMultiplier);
 const openaiVoices = ["alloy", "echo", "fable", "onyx", "nova", "shimmer"];
 const isOpenAIVoice = openaiVoices.includes(requestedVoice.toLowerCase());
+
+const ELEVENLABS_VOICES = {
+  liam: "TX3LPaxmHKxFdv7VOQHJ",
+  charlie: "IKne3meq5aSn9XLyUdCD",
+  chris: "iP95p4xoKVk53GoZ742B",
+  adam: "pNInz6obpgDQGcFmaJgB",
+  george: "JBFqnCBsd6RMkjVDRZzb",
+  callum: "N2lVS1w4EtoT3dr4eOWO",
+  will: "bIHbv24MWmeRgasZH58o",
+  eric: "cjVigY5qzO86Huf0OWal",
+  brian: "nPczCjzI2devNBz1zQrb",
+  daniel: "onwK4e9ZLuTAKqWW03F9",
+  bunty: "FZkK3TvQ0pjyDmT8fzIW",
+};
+
+const isEdgeVoice = ["madhur", "swara", "neerja", "prabhat", "edgetts", "edge-tts"].some((v) =>
+  requestedVoice.toLowerCase().includes(v)
+);
+
+const isSarvamVoice = ["sarvam", "shubh", "bulbul"].some((v) =>
+  requestedVoice.toLowerCase().includes(v)
+);
 
 console.log(`🎙️ Active Voice: "${requestedVoice}" | Pace: ${speedMultiplier}x (${rateWpm} WPM)`);
 
@@ -80,13 +105,52 @@ for (let i = 0; i < scenes.length; i++) {
     .replace(/\s+/g, " ")
     .trim();
 
-  // 1. Synthesize audio with ElevenLabs, OpenAI, or Microsoft Neural EdgeTTS
+  // 1. Synthesize audio with Sarvam AI, ElevenLabs, OpenAI, or Microsoft Neural EdgeTTS
   let synthesized = false;
 
-  // Option A: ElevenLabs if API key configured
-  if (process.env.ELEVENLABS_API_KEY) {
+  // Option S: Sarvam AI (Bulbul V3/V4 - Native Indian Hinglish)
+  if (!synthesized && (isSarvamVoice || requestedVoice.toLowerCase() === "sarvam") && process.env.SARVAM_API_KEY) {
     try {
-      const voiceId = process.env.ELEVENLABS_VOICE_ID || "pNInz6obpgDQGcFmaJgB"; // Default energetic voice
+      const resp = await fetch("https://api.sarvam.ai/text-to-speech", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "api-subscription-key": process.env.SARVAM_API_KEY,
+        },
+        body: JSON.stringify({
+          text: cleanVoiceText,
+          target_language_code: "hi-IN",
+          model: "bulbul:v3",
+          speaker: "shubh",
+          pace: speedMultiplier,
+          speech_sample_rate: 24000,
+          enable_preprocessing: true,
+        }),
+      });
+      if (resp.ok) {
+        const json = await resp.json();
+        if (json.audios && json.audios[0]) {
+          const rawWav = path.join(tempDir, `sarvam_${i}.wav`);
+          fs.writeFileSync(rawWav, Buffer.from(json.audios[0], "base64"));
+          execSync(`ffmpeg -y -i "${rawWav}" -codec:a libmp3lame -b:a 192k "${sceneMp3}" 2>/dev/null`);
+          synthesized = true;
+        }
+      } else {
+        const errText = await resp.text();
+        console.warn(`⚠️ Sarvam AI API (${resp.status}): ${errText.slice(0, 150)}`);
+      }
+    } catch (sarvamErr) {
+      console.warn("Sarvam AI TTS attempt:", sarvamErr.message);
+    }
+  }
+
+  // Option A: ElevenLabs if API key configured (and not explicitly requesting EdgeTTS or Sarvam)
+  if (!synthesized && !isEdgeVoice && !isSarvamVoice && process.env.ELEVENLABS_API_KEY) {
+    try {
+      const voiceId =
+        ELEVENLABS_VOICES[requestedVoice.toLowerCase()] ||
+        process.env.ELEVENLABS_VOICE_ID ||
+        "TX3LPaxmHKxFdv7VOQHJ"; // Liam as fast, energetic default
       const resp = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
         method: "POST",
         headers: {
@@ -107,6 +171,9 @@ for (let i = 0; i < scenes.length; i++) {
         const buf = Buffer.from(await resp.arrayBuffer());
         fs.writeFileSync(sceneMp3, buf);
         synthesized = true;
+      } else {
+        const errText = await resp.text();
+        console.warn(`⚠️ OpenAI TTS (${resp.status}): ${errText.slice(0, 150)}`);
       }
     } catch (e) {
       console.warn("ElevenLabs TTS attempt:", e.message);
@@ -133,12 +200,26 @@ for (let i = 0; i < scenes.length; i++) {
         const buf = Buffer.from(await resp.arrayBuffer());
         fs.writeFileSync(sceneMp3, buf);
         synthesized = true;
+      } else {
+        const errText = await resp.text();
+        console.warn(`⚠️ OpenAI TTS (${resp.status}): ${errText.slice(0, 150)}`);
       }
     } catch {}
   }
 
-  // Option C: Microsoft Neural EdgeTTS (High-Energy Viral Creator Mode)
-  if (!synthesized) {
+  // Option C: macOS Native Rishi Voice (Exact match for beat-broker-crashes-jio-ipo)
+  if (!synthesized && requestedVoice.toLowerCase() === "rishi") {
+    try {
+      execSync(`say -v "Rishi" -r ${rateWpm} "${cleanVoiceText.replace(/"/g, '\\"')}" -o "${rawAiff}"`);
+      execSync(`ffmpeg -y -i "${rawAiff}" -codec:a libmp3lame -b:a 192k "${sceneMp3}" 2>/dev/null`);
+      synthesized = true;
+    } catch (rishiErr) {
+      console.warn("macOS Rishi voice fallback warning:", rishiErr.message);
+    }
+  }
+
+  // Option D: Microsoft Neural EdgeTTS (for Madhur/Swara if specifically requested)
+  if (!synthesized && requestedVoice.toLowerCase() !== "rishi") {
     try {
       const { MsEdgeTTS, OUTPUT_FORMAT } = await import("msedge-tts");
       const tts = new MsEdgeTTS();
