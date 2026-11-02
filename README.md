@@ -180,10 +180,18 @@ The look and feel is completely controlled by `src/theme/theme.ts`:
 - **Motion**: Deterministic spring curves (<=5% overshoot), 10-frame blur-in, 8-frame blur-out, 8-frame scene crossfades.
 
 -->>>>
+
+or those card ko kamm use kroo her jagah card hi dkih rhe h kuch 3D bi use kroo jo gole how alag laga patten ka hoo icon sbb abi asa lagata h k sab card dikh rhe h koi bording sa presentation chal rha h  
 ye mp3 h make a perfect video not compomized to work fi required make new compoents but matcg proper script vai scence
 
-tum her video me same compoents kuu use kr raho ho her video same compoents se hi start ho rhi. or middle me her her video me sam things
+tum her video me same compoents kuu use kr raho ho her video same compoents se hi start ho rhi. or middle me her her video me sam things her video me
 
 scence ke accrdoign new compoents kiuuu nhi banatee hooo her barr
 
-is video ke liye proper compoents banaooo scence ke accroding .....
+is video ke liye proper compoents banaooo ager existing ko shor se use nhi ho rhe. tabb scence ke accroding or starting ke 1 2 scence bahut acha hoo taki reel adience rukoo reel dakneee .....
+
+\*\*
+or puri jagah use krooo screen ki dakoo compoent ke baddd or caption ke upper kitne jagah bakii h waha bii componets ko banaoooo or purii screen bari huii lagnii cahiyiii
+
+make sa standard and professtional reel
+do it this work fast

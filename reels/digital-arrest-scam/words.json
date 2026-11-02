@@ -1,0 +1,422 @@
+[
+  {
+    "word": "Video",
+    "startSec": 0.2,
+    "endSec": 0.49
+  },
+  {
+    "word": "call",
+    "startSec": 0.49,
+    "endSec": 0.78
+  },
+  {
+    "word": "pe",
+    "startSec": 0.79,
+    "endSec": 1.08
+  },
+  {
+    "word": "police",
+    "startSec": 1.08,
+    "endSec": 1.37
+  },
+  {
+    "word": "bole",
+    "startSec": 1.37,
+    "endSec": 1.66
+  },
+  {
+    "word": "'tum",
+    "startSec": 1.67,
+    "endSec": 1.96
+  },
+  {
+    "word": "arrest",
+    "startSec": 1.96,
+    "endSec": 2.25
+  },
+  {
+    "word": "ho'?",
+    "startSec": 2.26,
+    "endSec": 2.55
+  },
+  {
+    "word": "Ruko,",
+    "startSec": 3.08,
+    "endSec": 3.42
+  },
+  {
+    "word": "ye",
+    "startSec": 3.42,
+    "endSec": 3.76
+  },
+  {
+    "word": "scam",
+    "startSec": 3.77,
+    "endSec": 4.11
+  },
+  {
+    "word": "hai!",
+    "startSec": 4.11,
+    "endSec": 4.45
+  },
+  {
+    "word": "Jan",
+    "startSec": 5.07,
+    "endSec": 5.46
+  },
+  {
+    "word": "se",
+    "startSec": 5.46,
+    "endSec": 5.85
+  },
+  {
+    "word": "August",
+    "startSec": 5.85,
+    "endSec": 6.24
+  },
+  {
+    "word": "2026",
+    "startSec": 6.25,
+    "endSec": 6.64
+  },
+  {
+    "word": "me",
+    "startSec": 6.64,
+    "endSec": 7.03
+  },
+  {
+    "word": "21",
+    "startSec": 7.25,
+    "endSec": 7.44
+  },
+  {
+    "word": "hazaar",
+    "startSec": 7.44,
+    "endSec": 7.63
+  },
+  {
+    "word": "se",
+    "startSec": 7.63,
+    "endSec": 7.82
+  },
+  {
+    "word": "zyada",
+    "startSec": 7.82,
+    "endSec": 8.01
+  },
+  {
+    "word": "complaints,",
+    "startSec": 8.01,
+    "endSec": 8.2
+  },
+  {
+    "word": "647",
+    "startSec": 8.2,
+    "endSec": 8.42
+  },
+  {
+    "word": "crore",
+    "startSec": 8.42,
+    "endSec": 8.64
+  },
+  {
+    "word": "ka",
+    "startSec": 8.65,
+    "endSec": 8.88
+  },
+  {
+    "word": "nuksaan.",
+    "startSec": 8.88,
+    "endSec": 9.11
+  },
+  {
+    "word": "Fake",
+    "startSec": 9.44,
+    "endSec": 9.75
+  },
+  {
+    "word": "CBI",
+    "startSec": 9.75,
+    "endSec": 10.06
+  },
+  {
+    "word": "ya",
+    "startSec": 10.07,
+    "endSec": 10.38
+  },
+  {
+    "word": "police",
+    "startSec": 10.38,
+    "endSec": 10.7
+  },
+  {
+    "word": "video",
+    "startSec": 10.7,
+    "endSec": 11.01
+  },
+  {
+    "word": "call,",
+    "startSec": 11.02,
+    "endSec": 11.33
+  },
+  {
+    "word": "darate",
+    "startSec": 11.91,
+    "endSec": 12.25
+  },
+  {
+    "word": "hain,",
+    "startSec": 12.25,
+    "endSec": 12.59
+  },
+  {
+    "word": "aur",
+    "startSec": 12.6,
+    "endSec": 12.83
+  },
+  {
+    "word": "paisa",
+    "startSec": 12.83,
+    "endSec": 13.06
+  },
+  {
+    "word": "transfer",
+    "startSec": 13.07,
+    "endSec": 13.3
+  },
+  {
+    "word": "karwate",
+    "startSec": 13.3,
+    "endSec": 13.53
+  },
+  {
+    "word": "hain.",
+    "startSec": 13.54,
+    "endSec": 13.77
+  },
+  {
+    "word": "Red",
+    "startSec": 14.18,
+    "endSec": 14.59
+  },
+  {
+    "word": "flag:",
+    "startSec": 14.59,
+    "endSec": 15
+  },
+  {
+    "word": "wo",
+    "startSec": 15,
+    "endSec": 15.44
+  },
+  {
+    "word": "call",
+    "startSec": 15.44,
+    "endSec": 15.88
+  },
+  {
+    "word": "kaatne",
+    "startSec": 15.89,
+    "endSec": 16.33
+  },
+  {
+    "word": "aur",
+    "startSec": 16.95,
+    "endSec": 17.04
+  },
+  {
+    "word": "family",
+    "startSec": 17.04,
+    "endSec": 17.13
+  },
+  {
+    "word": "ko",
+    "startSec": 17.14,
+    "endSec": 17.23
+  },
+  {
+    "word": "batane",
+    "startSec": 17.23,
+    "endSec": 17.32
+  },
+  {
+    "word": "se",
+    "startSec": 17.33,
+    "endSec": 17.42
+  },
+  {
+    "word": "rokenge.",
+    "startSec": 17.43,
+    "endSec": 17.52
+  },
+  {
+    "word": "Sach",
+    "startSec": 17.92,
+    "endSec": 18.45
+  },
+  {
+    "word": "ye",
+    "startSec": 18.45,
+    "endSec": 18.98
+  },
+  {
+    "word": "hai:",
+    "startSec": 18.97,
+    "endSec": 19.5
+  },
+  {
+    "word": "India",
+    "startSec": 21.09,
+    "endSec": 21.39
+  },
+  {
+    "word": "me",
+    "startSec": 21.39,
+    "endSec": 21.69
+  },
+  {
+    "word": "phone",
+    "startSec": 21.69,
+    "endSec": 21.99
+  },
+  {
+    "word": "ya",
+    "startSec": 21.99,
+    "endSec": 22.29
+  },
+  {
+    "word": "video",
+    "startSec": 22.3,
+    "endSec": 22.6
+  },
+  {
+    "word": "call",
+    "startSec": 22.6,
+    "endSec": 22.9
+  },
+  {
+    "word": "pe",
+    "startSec": 22.9,
+    "endSec": 23.2
+  },
+  {
+    "word": "arrest",
+    "startSec": 23.2,
+    "endSec": 23.64
+  },
+  {
+    "word": "hota",
+    "startSec": 23.64,
+    "endSec": 24.09
+  },
+  {
+    "word": "hi",
+    "startSec": 24.09,
+    "endSec": 24.54
+  },
+  {
+    "word": "nahi!",
+    "startSec": 24.54,
+    "endSec": 24.98
+  },
+  {
+    "word": "Pro",
+    "startSec": 25.59,
+    "endSec": 25.89
+  },
+  {
+    "word": "tip:",
+    "startSec": 25.89,
+    "endSec": 26.2
+  },
+  {
+    "word": "call",
+    "startSec": 26.39,
+    "endSec": 26.7
+  },
+  {
+    "word": "kaato,",
+    "startSec": 26.7,
+    "endSec": 27.01
+  },
+  {
+    "word": "paisa",
+    "startSec": 27.25,
+    "endSec": 27.52
+  },
+  {
+    "word": "mat",
+    "startSec": 27.52,
+    "endSec": 27.79
+  },
+  {
+    "word": "bhejo,",
+    "startSec": 27.8,
+    "endSec": 28.07
+  },
+  {
+    "word": "aur",
+    "startSec": 28.35,
+    "endSec": 28.73
+  },
+  {
+    "word": "1930",
+    "startSec": 28.73,
+    "endSec": 29.11
+  },
+  {
+    "word": "pe",
+    "startSec": 29.11,
+    "endSec": 29.49
+  },
+  {
+    "word": "call",
+    "startSec": 29.48,
+    "endSec": 29.86
+  },
+  {
+    "word": "karo.",
+    "startSec": 29.86,
+    "endSec": 30.24
+  },
+  {
+    "word": "Ye",
+    "startSec": 30.68,
+    "endSec": 30.94
+  },
+  {
+    "word": "reel",
+    "startSec": 30.94,
+    "endSec": 31.2
+  },
+  {
+    "word": "parents",
+    "startSec": 31.2,
+    "endSec": 31.46
+  },
+  {
+    "word": "ko",
+    "startSec": 31.47,
+    "endSec": 31.73
+  },
+  {
+    "word": "bhejo.",
+    "startSec": 31.73,
+    "endSec": 31.99
+  },
+  {
+    "word": "Follow",
+    "startSec": 32.44,
+    "endSec": 33.07
+  },
+  {
+    "word": "karo",
+    "startSec": 33.07,
+    "endSec": 33.7
+  },
+  {
+    "word": "@techwith.GenZ.",
+    "startSec": 33.71,
+    "endSec": 34.34
+  }
+]

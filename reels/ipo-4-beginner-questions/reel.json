@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "slug": "ipo-4-beginner-questions",
+    "topic": "IPO ke 4 Sawaal Jo Har Beginner Puchta Hai",
+    "title": "IPO ke 4 Sawaal Jo Har Beginner Puchta Hai",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "audience": "Beginner investors, retail traders",
+    "lengthSec": 32.6,
+    "totalDurationSec": 32.6,
+    "voiceFile": "reels/ipo-4-beginner-questions/voice.mp3",
+    "wordsFile": "reels/ipo-4-beginner-questions/words.json",
+    "loop": false,
+    "captions": true,
+    "avatar": {
+      "enabled": false
+    },
+    "captionStyle": "kinetic",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.16,
+    "fullVoiceover": "IPO ke 4 sawaal jo har beginner puchta hai! Ek: GMP? Ye sirf grey market ka unofficial rate hai, guarantee nahi. Do: allotment na mile toh? Paisa kata nahi, sirf block tha, listing se pehle apne aap unblock. Teen: listing day pe bechein ya hold? Ye aapke goal pe depend karta hai, GMP ya hype pe nahi. Char: SME ya mainboard? SME me minimum 2 lakh se zyada lagte hain aur risk zyada hai. Ye advice nahi hai. Follow karo @techwith.GenZ.",
+    "instagramCaption": "🤔 IPO ke 4 sawaal jo har beginner puchta hai! Save kar lo 📌\n\n1️⃣ GMP kya hai?\nGrey market ka unofficial rate. Guarantee nahi, sirf ek rumor jaisa indicator.\n\n2️⃣ Allotment na mile toh paisa?\nPaisa kata nahi hota, sirf block hota hai (ASBA). Allotment na mile toh listing se pehle apne aap unblock ho jata hai.\n\n3️⃣ Listing day pe bechein ya hold karein?\nYe aapke goal pe depend karta hai: jaldi listing gain ya long-term growth. Hype ya GMP dekh ke decide mat karo.\n\n4️⃣ SME ya mainboard?\nSME me minimum application ₹2 lakh se zyada hota hai, liquidity kam aur risk zyada. Mainboard retail me minimum aam taur par ₹15,000 ke aas-paas hota hai.\n\n📝 Update: SEBI ne SME IPO ka minimum ₹1 lakh karne ka proposal diya hai, par abhi ye final rule nahi hai.\n\nAapka sabse bada IPO sawaal kya hai? Comment me batao 👇\nAur ye reel us dost ko bhejo jo pehli baar IPO me apply karne wala hai 🔥\n\nFollow @techwith.GenZ for daily market aur tech updates.\n\n⚠️ Disclaimer: Ye sirf educational information hai, investment advice nahi. Invest karne se pehle apna research karo ya SEBI-registered advisor se salah lo.\n\n#ipo #ipotips #gmp #smeipo #mainboardipo #ipoallotment #beginnerinvesting #sharemarket #stockmarketindia #financeindia #moneytips #techwithgenz",
+    "disclaimer": "Educational content only. Not investment advice."
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 3.2,
+      "headline": "IPO KE *4 SAWAAL*",
+      "leadIn": "STOP SCROLLING 🛑",
+      "subtitle": "Har beginner ka confusion, 30 sec me clear",
+      "voice": "IPO ke 4 sawaal jo har beginner puchta hai!"
+    },
+    {
+      "id": "s2-gmp",
+      "type": "card",
+      "startSec": 3.2,
+      "endSec": 8.6,
+      "headline": "Q1: *GMP* KYA HAI?",
+      "leadIn": "QUESTION #1",
+      "cardText": "Grey market ka unofficial rate. Guarantee nahi, rumor jaisa indicator.",
+      "bullets": [
+        "Grey market ka unofficial rate",
+        "Guarantee nahi",
+        "Sirf indicator, rumor jaisa"
+      ],
+      "voice": "Ek: GMP? Ye sirf grey market ka unofficial rate hai, guarantee nahi.",
+      "chip": "QUESTION #1"
+    },
+    {
+      "id": "s3-asba",
+      "type": "terminal",
+      "startSec": 8.6,
+      "endSec": 15.2,
+      "headline": "Q2: ALLOTMENT *NAHI* MILA?",
+      "leadIn": "QUESTION #2",
+      "lines": [
+        "$ allotment --status not-allotted",
+        "money  : BLOCKED (not deducted)",
+        "refund : auto unblock ✅",
+        "timing : before listing day"
+      ],
+      "voice": "Do: allotment na mile toh? Paisa kata nahi, sirf block tha, listing se pehle apne aap unblock."
+    },
+    {
+      "id": "s4-sell-hold",
+      "type": "pills",
+      "startSec": 15.2,
+      "endSec": 22,
+      "headline": "Q3: SELL YA *HOLD*?",
+      "leadIn": "QUESTION #3",
+      "items": [
+        "SHORT TERM = LISTING GAIN",
+        "LONG TERM = COMPANY GROWTH",
+        "GOAL PEHLE, HYPE BAAD ME"
+      ],
+      "voice": "Teen: listing day pe bechein ya hold? Ye aapke goal pe depend karta hai, GMP ya hype pe nahi."
+    },
+    {
+      "id": "s5-sme",
+      "type": "stat",
+      "startSec": 22,
+      "endSec": 28.6,
+      "headline": "Q4: SME YA *MAINBOARD*?",
+      "leadIn": "QUESTION #4",
+      "value": "₹2L+ vs ~₹15K",
+      "label": "SME minimum vs typical mainboard retail minimum",
+      "voice": "Char: SME ya mainboard? SME me minimum 2 lakh se zyada lagte hain aur risk zyada hai."
+    },
+    {
+      "id": "s6-cta",
+      "type": "cta",
+      "startSec": 28.6,
+      "endSec": 32.6,
+      "headline": "FOLLOW *@TECHWITH.GENZ*",
+      "leadIn": "SAVE KAR LO 📌",
+      "subtitle": "Save kar lo + dost ko bhejo",
+      "handle": "@techwith.GenZ",
+      "buttonText": "FOLLOW @TECHWITH.GENZ",
+      "voice": "Ye advice nahi hai. Follow karo @techwith.GenZ."
+    }
+  ]
+}

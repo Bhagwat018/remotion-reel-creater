@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "slug": "dark-store-delivery",
+    "topic": "10 Minute Delivery Ka Asli Raaz: Dark Store",
+    "title": "10 Minute Delivery Ka Asli Raaz: Dark Store",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "audience": "Consumers, startup founders, tech enthusiasts",
+    "lengthSec": 35.866,
+    "totalDurationSec": 35.866,
+    "voiceFile": "reels/dark-store-delivery/voice.mp3",
+    "wordsFile": "reels/dark-store-delivery/words.json",
+    "loop": false,
+    "captions": true,
+    "avatar": {
+      "enabled": false
+    },
+    "captionStyle": "kinetic",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.16,
+    "fullVoiceover": "10 minute me delivery? Rider ki speed ka isse koi lena-dena nahi! Asli raaz: dark store, yani tumhare area ke paas ek chhota warehouse, jahan saaman pehle se rakha hota hai. Order aaya, pack hua, rider nikla. Bas! Blinkit ke aise 2,751 dark stores hain, aur Instamart ke 1,240. Par twist: ek quarter me Instamart ko 895 crore ka loss, jabki Blinkit 184 crore profit me. Pro tip: order se pehle fees check karo, rush mehnga pad sakta hai. Follow karo @techwith.GenZ.",
+    "instagramCaption": "🤯 10 minute me delivery ka raaz rider ki speed nahi, dark store hai! 👇\n\n🏭 Dark store = tumhare area ke paas ek chhota warehouse, jahan saaman pehle se rakha hota hai\n⚡ Order aaya, pack hua, rider nikla. Bas!\n📍 Blinkit: 2,751 dark stores | Instamart: 1,240 (Jul-Sep 2026 quarter)\n\n😳 Twist: speed ki keemat badi hai\n• Instamart: ₹895 crore ka adjusted EBITDA loss (ek quarter)\n• Blinkit: ₹184 crore ka adjusted EBITDA profit\n\n💡 Pro tip: order karne se pehle cart me fees check karo. 10 minute ka rush mehnga pad sakta hai.\n\nAap sabse zyada kya mangwate ho, late night snacks ya groceries? Comment me batao 👇\nAur ye reel us dost ko bhejo jo roz 10 minute wali delivery pe nirbhar hai 😅\n\nFollow @techwith.GenZ for daily tech aur business updates.\n\n⚠️ Disclaimer: Ye sirf educational information hai, investment advice nahi.\n\n#quickcommerce #blinkit #swiggyinstamart #zomato #darkstore #businessstory #startupindia #techexplained #hinditech #genz #techwithgenz",
+    "disclaimer": "Educational content only. Not investment advice. Figures are adjusted EBITDA for Q2 FY27."
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 4.6,
+      "headline": "10 MIN DELIVERY: RIDER NAHI, KUCH AUR!",
+      "leadIn": "MYTH BUSTED ⚡",
+      "subtitle": "Rider ki speed ka lena-dena nahi",
+      "voice": "10 minute me delivery? Rider ki speed ka isse koi lena-dena nahi!"
+    },
+    {
+      "id": "s2-warehouse",
+      "type": "card",
+      "startSec": 4.6,
+      "endSec": 11.5,
+      "headline": "ASLI RAAZ: DARK STORE",
+      "leadIn": "SECRET REVEALED 🏭",
+      "subtitle": "Hyperlocal Micro-Warehouse",
+      "voice": "Asli raaz: dark store, yani tumhare area ke paas ek chhota warehouse, jahan saaman pehle se rakha hota hai.",
+      "cardText": "ASLI RAAZ: DARK STORE",
+      "chip": "SECRET REVEALED 🏭"
+    },
+    {
+      "id": "s3-pipeline",
+      "type": "terminal",
+      "startSec": 11.5,
+      "endSec": 14.8,
+      "headline": "THE 10-MIN PIPELINE",
+      "leadIn": "ORDER FLOW ⏱️",
+      "voice": "Order aaya, pack hua, rider nikla. Bas!",
+      "lines": [
+        "$ order --place",
+        "dark-store : pick + pack in 2 mins ✅",
+        "rider      : pickup & dispatch in 3 mins ✅",
+        "delivery   : doorstep in 5 mins 🚀"
+      ]
+    },
+    {
+      "id": "s4-battle",
+      "type": "stat",
+      "startSec": 14.8,
+      "endSec": 21.2,
+      "headline": "BLINKIT: 2X DARK STORES",
+      "leadIn": "SCALE COMPARISON 📍",
+      "value": "2,751 vs 1,240",
+      "label": "Blinkit vs Instamart Dark Stores (Q2 FY27)",
+      "voice": "Blinkit ke aise 2,751 dark stores hain, aur Instamart ke 1,240."
+    },
+    {
+      "id": "s5-paradox",
+      "type": "card",
+      "startSec": 21.2,
+      "endSec": 28.9,
+      "headline": "TWIST: LOSS VS PROFIT",
+      "leadIn": "FINANCIAL SHOCKER 💰",
+      "voice": "Par twist: ek quarter me Instamart ko 895 crore ka loss, jabki Blinkit 184 crore profit me.",
+      "cardText": "TWIST: LOSS VS PROFIT",
+      "chip": "FINANCIAL SHOCKER 💰",
+      "bullets": [
+        "Instamart: -₹895 Cr (adj. EBITDA loss)",
+        "Blinkit: +₹184 Cr (adj. EBITDA profit)",
+        "Period: Single Quarter (Jul-Sep 2026)"
+      ]
+    },
+    {
+      "id": "s6-tip",
+      "type": "pills",
+      "startSec": 28.9,
+      "endSec": 33.4,
+      "headline": "PRO TIP: FEES CHECK KARO",
+      "leadIn": "CONSUMER HACK 💡",
+      "voice": "Pro tip: order se pehle fees check karo, rush mehnga pad sakta hai.",
+      "items": [
+        "CHECK CART TOTAL",
+        "RAIN & SURGE CHARGES",
+        "HANDLING & PLATFORM FEES"
+      ]
+    },
+    {
+      "id": "s7-cta",
+      "type": "cta",
+      "startSec": 33.4,
+      "endSec": 35.866,
+      "headline": "FOLLOW @TECHWITH.GENZ",
+      "leadIn": "DAILY TECH & BUSINESS 🔥",
+      "handle": "@techwith.GenZ",
+      "voice": "Follow karo @techwith.GenZ."
+    }
+  ]
+}

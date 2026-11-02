@@ -1,0 +1,402 @@
+[
+  {
+    "word": "BLS",
+    "startSec": 0.2,
+    "endSec": 0.65
+  },
+  {
+    "word": "me",
+    "startSec": 0.65,
+    "endSec": 1.1
+  },
+  {
+    "word": "1",
+    "startSec": 1.1,
+    "endSec": 1.55
+  },
+  {
+    "word": "in",
+    "startSec": 1.55,
+    "endSec": 2
+  },
+  {
+    "word": "128,",
+    "startSec": 2,
+    "endSec": 2.45
+  },
+  {
+    "word": "is",
+    "startSec": 2.94,
+    "endSec": 3.26
+  },
+  {
+    "word": "IPO",
+    "startSec": 3.26,
+    "endSec": 3.58
+  },
+  {
+    "word": "me",
+    "startSec": 3.57,
+    "endSec": 3.89
+  },
+  {
+    "word": "lagbhag",
+    "startSec": 3.89,
+    "endSec": 4.21
+  },
+  {
+    "word": "1",
+    "startSec": 4.21,
+    "endSec": 4.53
+  },
+  {
+    "word": "in",
+    "startSec": 4.53,
+    "endSec": 4.85
+  },
+  {
+    "word": "3!",
+    "startSec": 4.84,
+    "endSec": 5.16
+  },
+  {
+    "word": "Bombay",
+    "startSec": 5.76,
+    "endSec": 6.11
+  },
+  {
+    "word": "Coated",
+    "startSec": 6.11,
+    "endSec": 6.46
+  },
+  {
+    "word": "IPO",
+    "startSec": 6.46,
+    "endSec": 6.81
+  },
+  {
+    "word": "kal",
+    "startSec": 6.8,
+    "endSec": 7.15
+  },
+  {
+    "word": "band.",
+    "startSec": 7.15,
+    "endSec": 7.5
+  },
+  {
+    "word": "Price",
+    "startSec": 7.93,
+    "endSec": 8.28
+  },
+  {
+    "word": "band",
+    "startSec": 8.28,
+    "endSec": 8.63
+  },
+  {
+    "word": "78",
+    "startSec": 8.63,
+    "endSec": 8.98
+  },
+  {
+    "word": "se",
+    "startSec": 8.99,
+    "endSec": 9.34
+  },
+  {
+    "word": "82,",
+    "startSec": 9.34,
+    "endSec": 9.69
+  },
+  {
+    "word": "minimum",
+    "startSec": 10.09,
+    "endSec": 10.47
+  },
+  {
+    "word": "15",
+    "startSec": 10.47,
+    "endSec": 10.85
+  },
+  {
+    "word": "hazaar.",
+    "startSec": 10.84,
+    "endSec": 11.22
+  },
+  {
+    "word": "Subscription",
+    "startSec": 11.76,
+    "endSec": 12.13
+  },
+  {
+    "word": "sirf",
+    "startSec": 12.13,
+    "endSec": 12.5
+  },
+  {
+    "word": "4",
+    "startSec": 12.5,
+    "endSec": 12.87
+  },
+  {
+    "word": "guna,",
+    "startSec": 12.87,
+    "endSec": 13.24
+  },
+  {
+    "word": "retail",
+    "startSec": 13.59,
+    "endSec": 13.92
+  },
+  {
+    "word": "3",
+    "startSec": 13.92,
+    "endSec": 14.25
+  },
+  {
+    "word": "guna,",
+    "startSec": 14.26,
+    "endSec": 14.59
+  },
+  {
+    "word": "isliye",
+    "startSec": 14.94,
+    "endSec": 15.31
+  },
+  {
+    "word": "chance",
+    "startSec": 15.31,
+    "endSec": 15.68
+  },
+  {
+    "word": "zyada.",
+    "startSec": 15.68,
+    "endSec": 16.05
+  },
+  {
+    "word": "GMP",
+    "startSec": 16.63,
+    "endSec": 17.06
+  },
+  {
+    "word": "lagbhag",
+    "startSec": 17.06,
+    "endSec": 17.49
+  },
+  {
+    "word": "11",
+    "startSec": 17.49,
+    "endSec": 17.92
+  },
+  {
+    "word": "percent,",
+    "startSec": 17.92,
+    "endSec": 18.35
+  },
+  {
+    "word": "par",
+    "startSec": 18.78,
+    "endSec": 18.98
+  },
+  {
+    "word": "wo",
+    "startSec": 18.98,
+    "endSec": 19.18
+  },
+  {
+    "word": "sirf",
+    "startSec": 19.18,
+    "endSec": 19.38
+  },
+  {
+    "word": "rumor",
+    "startSec": 19.37,
+    "endSec": 19.57
+  },
+  {
+    "word": "hai.",
+    "startSec": 19.57,
+    "endSec": 19.77
+  },
+  {
+    "word": "Reality",
+    "startSec": 20.34,
+    "endSec": 20.71
+  },
+  {
+    "word": "check:",
+    "startSec": 20.71,
+    "endSec": 21.08
+  },
+  {
+    "word": "revenue",
+    "startSec": 21.47,
+    "endSec": 21.82
+  },
+  {
+    "word": "20",
+    "startSec": 21.82,
+    "endSec": 22.18
+  },
+  {
+    "word": "percent",
+    "startSec": 22.18,
+    "endSec": 22.54
+  },
+  {
+    "word": "badha,",
+    "startSec": 22.54,
+    "endSec": 22.89
+  },
+  {
+    "word": "profit",
+    "startSec": 23.25,
+    "endSec": 23.6
+  },
+  {
+    "word": "sirf",
+    "startSec": 23.6,
+    "endSec": 23.95
+  },
+  {
+    "word": "7",
+    "startSec": 23.95,
+    "endSec": 24.3
+  },
+  {
+    "word": "percent,",
+    "startSec": 24.3,
+    "endSec": 24.65
+  },
+  {
+    "word": "aur",
+    "startSec": 25.03,
+    "endSec": 25.28
+  },
+  {
+    "word": "raw",
+    "startSec": 25.28,
+    "endSec": 25.53
+  },
+  {
+    "word": "material",
+    "startSec": 25.54,
+    "endSec": 25.79
+  },
+  {
+    "word": "ek",
+    "startSec": 25.79,
+    "endSec": 26.04
+  },
+  {
+    "word": "hi",
+    "startSec": 26.04,
+    "endSec": 26.29
+  },
+  {
+    "word": "supplier",
+    "startSec": 26.29,
+    "endSec": 26.54
+  },
+  {
+    "word": "se.",
+    "startSec": 26.55,
+    "endSec": 26.8
+  },
+  {
+    "word": "Pro",
+    "startSec": 27.38,
+    "endSec": 27.74
+  },
+  {
+    "word": "tip:",
+    "startSec": 27.74,
+    "endSec": 28.1
+  },
+  {
+    "word": "allotment",
+    "startSec": 28.15,
+    "endSec": 28.46
+  },
+  {
+    "word": "aasan",
+    "startSec": 28.46,
+    "endSec": 28.77
+  },
+  {
+    "word": "ho,",
+    "startSec": 28.78,
+    "endSec": 29.09
+  },
+  {
+    "word": "toh",
+    "startSec": 29.09,
+    "endSec": 29.4
+  },
+  {
+    "word": "IPO",
+    "startSec": 29.4,
+    "endSec": 29.71
+  },
+  {
+    "word": "accha",
+    "startSec": 29.71,
+    "endSec": 30.02
+  },
+  {
+    "word": "ho",
+    "startSec": 30.03,
+    "endSec": 30.34
+  },
+  {
+    "word": "ye",
+    "startSec": 30.34,
+    "endSec": 30.65
+  },
+  {
+    "word": "zaroori",
+    "startSec": 30.65,
+    "endSec": 30.96
+  },
+  {
+    "word": "nahi.",
+    "startSec": 30.97,
+    "endSec": 31.28
+  },
+  {
+    "word": "Ye",
+    "startSec": 31.76,
+    "endSec": 31.97
+  },
+  {
+    "word": "advice",
+    "startSec": 31.97,
+    "endSec": 32.18
+  },
+  {
+    "word": "nahi",
+    "startSec": 32.19,
+    "endSec": 32.4
+  },
+  {
+    "word": "hai.",
+    "startSec": 32.4,
+    "endSec": 32.61
+  },
+  {
+    "word": "Follow",
+    "startSec": 33,
+    "endSec": 33.64
+  },
+  {
+    "word": "karo",
+    "startSec": 33.64,
+    "endSec": 34.28
+  },
+  {
+    "word": "@techwith.GenZ.",
+    "startSec": 34.27,
+    "endSec": 34.91
+  }
+]

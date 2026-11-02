@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "slug": "bombay-coated-ipo-last-day",
+    "topic": "Bombay Coated & Special Steels IPO - Last Day",
+    "title": "Bombay Coated & Special Steels IPO - Last Day",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "audience": "Retail investors, IPO seekers",
+    "lengthSec": 35.16,
+    "totalDurationSec": 35.16,
+    "voiceFile": "reels/bombay-coated-ipo-last-day/voice.mp3",
+    "wordsFile": "reels/bombay-coated-ipo-last-day/words.json",
+    "loop": false,
+    "captions": true,
+    "avatar": {
+      "enabled": false
+    },
+    "captionStyle": "kinetic",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.16,
+    "fullVoiceover": "BLS me 1 in 128, is IPO me lagbhag 1 in 3! Bombay Coated IPO kal band. Price band 78 se 82, minimum 15 hazaar. Subscription sirf 4 guna, retail 3 guna, isliye chance zyada. GMP lagbhag 11 percent, par wo sirf rumor hai. Reality check: revenue 20 percent badha, profit sirf 7 percent, aur raw material ek hi supplier se. Pro tip: allotment aasan ho, toh IPO accha ho ye zaroori nahi. Ye advice nahi hai. Follow karo @techwith.GenZ.",
+    "instagramCaption": "🚨 BLS Polymers me chance tha 1 in 128. Is IPO me lagbhag 1 in 3! Bombay Coated & Special Steels IPO kal band ho raha hai 👇\n\n💰 Price band: ₹78-₹82 | Lot: 182 shares | Min: ₹14,924\n📈 Subscription: ~4x (QIB ~6.9x, NII ~1.9x, Retail ~3.2x)\n🎟️ Retail ~3x subscribed = allotment chance lagbhag 3 me se 1\n🎯 GMP: ~₹7-₹10 (~9-12%), unofficial rumor\n📅 Allotment: 3 Nov | Refund/Demat: 4 Nov | Listing: 5 Nov\n🏭 100% fresh issue: ₹183 crore, koi OFS nahi\n\n⚠️ Reality check:\n• Revenue ~20% badha, profit sirf ~7%\n• Raw material ek hi primary supplier se aata hai\n\n💡 Pro tip:\nAllotment milna aasan ho, iska matlab ye nahi ki IPO accha hi hoga. Demand kam hone ki wajah bhi samjho!\n\nAap isme apply kar rahe ho ya avoid? Comment me batao 👇\n\nFollow @techwith.GenZ for daily market aur tech updates.\n\n⚠️ Disclaimer: Ye sirf educational information hai, investment advice nahi. Invest karne se pehle apna research karo ya SEBI-registered advisor se salah lo.\n\n#bombaycoated #bombaycoatedipo #ipo #ipoalert #iponews #gmp #sharemarket #stockmarketindia #investing #financeindia #techwithgenz",
+    "disclaimer": "Educational content only. Not investment advice."
+  },
+  "scenes": [
+    {
+      "id": "s1-odds-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 5.5,
+      "headline": "BLS 1:128 vs BOMBAY 1:3!",
+      "leadIn": "CHANCE 42x ZYADA? 🎯",
+      "subtitle": "BLS me 1 in 128, Bombay Coated me 1 in 3!",
+      "voice": "BLS me 1 in 128, is IPO me lagbhag 1 in 3!"
+    },
+    {
+      "id": "s2-pricing-ticket",
+      "type": "card",
+      "startSec": 5.5,
+      "endSec": 11.5,
+      "headline": "KAL BAND! ₹78 - ₹82",
+      "leadIn": "IPO DETAILS ⏳",
+      "cardText": "Price band ₹78-₹82, 1 lot 182 shares, minimum ₹14,924",
+      "voice": "Bombay Coated IPO kal band. Price band 78 se 82, minimum 15 hazaar.",
+      "chip": "IPO DETAILS ⏳"
+    },
+    {
+      "id": "s3-subscription-gauge",
+      "type": "stat",
+      "startSec": 11.5,
+      "endSec": 16.5,
+      "headline": "SUBSCRIPTION SIRF ~4x",
+      "leadIn": "DEMAND AUDIT 📊",
+      "value": "~4.0x",
+      "label": "Retail ~3.2x (1 in 3 chance)",
+      "voice": "Subscription sirf 4 guna, retail 3 guna, isliye chance zyada."
+    },
+    {
+      "id": "s4-gmp-rumor",
+      "type": "pills",
+      "startSec": 16.5,
+      "endSec": 20.2,
+      "headline": "GMP ~11% (RUMOR HAI)",
+      "leadIn": "GREY MARKET ⚠️",
+      "items": [
+        "GMP: +₹8 to ₹10",
+        "Estimated Gain: ~11%",
+        "Sirf Rumor Hai"
+      ],
+      "voice": "GMP lagbhag 11 percent, par wo sirf rumor hai."
+    },
+    {
+      "id": "s5-reality-check",
+      "type": "terminal",
+      "startSec": 20.2,
+      "endSec": 27.2,
+      "headline": "REALITY CHECK: 2 BIG RISKS",
+      "leadIn": "FINANCIAL WARNING 🚨",
+      "lines": [
+        "$ audit --company 'Bombay Coated'",
+        "revenue_growth : +20%",
+        "profit_growth  : +7% (margin squeeze)",
+        "supplier_risk  : 1 single supplier"
+      ],
+      "voice": "Reality check: revenue 20 percent badha, profit sirf 7 percent, aur raw material ek hi supplier se."
+    },
+    {
+      "id": "s6-contrarian-tip",
+      "type": "stacked",
+      "startSec": 27.2,
+      "endSec": 31.5,
+      "headline": "ALLOTMENT AASAN ≠ ACCHA IPO",
+      "leadIn": "PRO INVESTOR RULE 💡",
+      "cards": [
+        {
+          "tag": "RULE #1",
+          "title": "Smart Money Cautious",
+          "body": "Demand kam hai kyu ki institutions avoid kar rahe hain"
+        },
+        {
+          "tag": "RULE #2",
+          "title": "Business First",
+          "body": "Sirf isliye mat lo ki shares aasani se mil jayenge"
+        }
+      ],
+      "voice": "Pro tip: allotment aasan ho, toh IPO accha ho ye zaroori nahi."
+    },
+    {
+      "id": "s7-verdict-cta",
+      "type": "cta",
+      "startSec": 31.5,
+      "endSec": 35.16,
+      "headline": "FOLLOW @TECHWITH.GENZ",
+      "leadIn": "FINAL VERDICT 🎯",
+      "buttonText": "FOLLOW @techwith.GenZ",
+      "handle": "@techwith.GenZ",
+      "voice": "Ye advice nahi hai. Follow karo @techwith.GenZ."
+    }
+  ]
+}

@@ -6,7 +6,13 @@ import { NeoSticker } from "../components/neo/NeoSticker";
 import { MotionDirection } from "../lib/directionalMotion";
 import { StarburstBadge } from "../components/StarburstBadge";
 import { TechLogo, findBrandInText } from "../components/TechLogo";
-import { IpoShowdownCard } from "../components/startup/IpoShowdownCard";
+import { IpoShowdownScene } from "./startup/IpoShowdownScene";
+import { BeginnerHookScene } from "./beginnerIpo/BeginnerHookScene";
+import { BombayOddsHookScene } from "./bombayCoated/BombayOddsHookScene";
+import { DigitalArrestHookScene } from "./digitalArrest/DigitalArrestHookScene";
+import { DarkStoreHookScene } from "./darkStore/DarkStoreHookScene";
+import { ZeptoHookScene } from "./zeptoStory/ZeptoHookScene";
+import { UpiHookScene } from "./upiFree/UpiHookScene";
 
 export const TitleScene: React.FC<
   TitleSceneProps & {
@@ -19,25 +25,43 @@ export const TitleScene: React.FC<
     slug?: string;
   }
 > = ({ id, direction, leadIn, subtitle, headline, items, tags, durationInFrames, slug }) => {
+  // Bespoke full-screen hook for UPI Free Economics
+  if (slug === "upi-free-secret" || (id === "s1-hook" && headline?.includes("UPI"))) {
+    return <UpiHookScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke full-screen hook for Zepto Fail to Unicorn
+  if (slug === "zepto-fail-to-unicorn" || (id === "s1-hook" && headline?.includes("FAIL"))) {
+    return <ZeptoHookScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke full-screen hook for Dark Store Delivery
+  if (slug === "dark-store-delivery" || id === "s1-hook" && headline?.includes("10 MIN")) {
+    return <DarkStoreHookScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke full-screen hook for Digital Arrest Scam
+  if (slug === "digital-arrest-scam" || id === "s1-call-hook") {
+    return <DigitalArrestHookScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke full-screen hook for Bombay Coated IPO
+  if (slug === "bombay-coated-ipo-last-day" || id === "s1-odds-hook") {
+    return <BombayOddsHookScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke full-screen hook for Beginner IPO 4 Questions
+  if (slug === "ipo-4-beginner-questions" || id === "s1-hook" && headline?.includes("4 SAWAAL")) {
+    return <BeginnerHookScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke full-screen scene for Startup IPOs Showdown
+  if (slug === "startup-ipos-delayed-2027") {
+    return <IpoShowdownScene durationInFrames={durationInFrames} />;
+  }
+
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-
-  // Bespoke scene for Startup IPOs Showdown
-  if (id === "s1-hook" || slug === "startup-ipos-delayed-2027") {
-    return (
-      <SceneLayout
-        id={id}
-        direction={direction}
-        leadIn={leadIn || "STARTUP IPO RADAR ⚡"}
-        headline={headline}
-        durationInFrames={durationInFrames}
-        slug={slug}
-        showTechBadge={false}
-      >
-        <IpoShowdownCard delayFrames={2} />
-      </SceneLayout>
-    );
-  }
 
   const entrance = spring({
     frame: frame - 2,

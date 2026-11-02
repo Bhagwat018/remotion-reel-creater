@@ -1,0 +1,397 @@
+[
+  {
+    "word": "UPI",
+    "startSec": 0,
+    "endSec": 0.46
+  },
+  {
+    "word": "free",
+    "startSec": 0.46,
+    "endSec": 0.92
+  },
+  {
+    "word": "hai,",
+    "startSec": 0.91,
+    "endSec": 1.37
+  },
+  {
+    "word": "toh",
+    "startSec": 1.37,
+    "endSec": 1.83
+  },
+  {
+    "word": "paisa",
+    "startSec": 1.82,
+    "endSec": 2.28
+  },
+  {
+    "word": "kahan",
+    "startSec": 2.28,
+    "endSec": 2.74
+  },
+  {
+    "word": "se",
+    "startSec": 2.73,
+    "endSec": 3.19
+  },
+  {
+    "word": "aata",
+    "startSec": 3.19,
+    "endSec": 3.65
+  },
+  {
+    "word": "hai?",
+    "startSec": 3.64,
+    "endSec": 4.1
+  },
+  {
+    "word": "Sach:",
+    "startSec": 4.1,
+    "endSec": 4.66
+  },
+  {
+    "word": "UPI",
+    "startSec": 4.66,
+    "endSec": 5.22
+  },
+  {
+    "word": "free",
+    "startSec": 5.22,
+    "endSec": 5.78
+  },
+  {
+    "word": "nahi,",
+    "startSec": 5.78,
+    "endSec": 6.34
+  },
+  {
+    "word": "bas",
+    "startSec": 6.35,
+    "endSec": 6.91
+  },
+  {
+    "word": "tumhare",
+    "startSec": 6.91,
+    "endSec": 7.47
+  },
+  {
+    "word": "liye",
+    "startSec": 7.47,
+    "endSec": 8.03
+  },
+  {
+    "word": "free.",
+    "startSec": 8.03,
+    "endSec": 8.59
+  },
+  {
+    "word": "August",
+    "startSec": 8.59,
+    "endSec": 9.15
+  },
+  {
+    "word": "me",
+    "startSec": 9.15,
+    "endSec": 9.71
+  },
+  {
+    "word": "2,451",
+    "startSec": 9.72,
+    "endSec": 10.28
+  },
+  {
+    "word": "crore",
+    "startSec": 10.28,
+    "endSec": 10.84
+  },
+  {
+    "word": "transactions!",
+    "startSec": 10.84,
+    "endSec": 11.4
+  },
+  {
+    "word": "NPCI",
+    "startSec": 11.4,
+    "endSec": 11.89
+  },
+  {
+    "word": "dukaandar",
+    "startSec": 11.89,
+    "endSec": 12.38
+  },
+  {
+    "word": "se",
+    "startSec": 12.37,
+    "endSec": 12.86
+  },
+  {
+    "word": "₹2,000",
+    "startSec": 12.86,
+    "endSec": 13.35
+  },
+  {
+    "word": "se",
+    "startSec": 13.34,
+    "endSec": 13.83
+  },
+  {
+    "word": "upar",
+    "startSec": 13.83,
+    "endSec": 14.32
+  },
+  {
+    "word": "ke",
+    "startSec": 14.31,
+    "endSec": 14.8
+  },
+  {
+    "word": "select",
+    "startSec": 14.8,
+    "endSec": 15.29
+  },
+  {
+    "word": "payments",
+    "startSec": 15.29,
+    "endSec": 15.78
+  },
+  {
+    "word": "pe",
+    "startSec": 15.77,
+    "endSec": 16.26
+  },
+  {
+    "word": "0.4",
+    "startSec": 16.26,
+    "endSec": 16.75
+  },
+  {
+    "word": "percent",
+    "startSec": 16.74,
+    "endSec": 17.23
+  },
+  {
+    "word": "fee",
+    "startSec": 17.23,
+    "endSec": 17.72
+  },
+  {
+    "word": "lega.",
+    "startSec": 17.71,
+    "endSec": 18.2
+  },
+  {
+    "word": "Matlab",
+    "startSec": 18.2,
+    "endSec": 18.62
+  },
+  {
+    "word": "₹5,000",
+    "startSec": 18.62,
+    "endSec": 19.04
+  },
+  {
+    "word": "pe",
+    "startSec": 19.04,
+    "endSec": 19.46
+  },
+  {
+    "word": "₹20.",
+    "startSec": 19.45,
+    "endSec": 19.87
+  },
+  {
+    "word": "Ye",
+    "startSec": 19.87,
+    "endSec": 20.29
+  },
+  {
+    "word": "fee",
+    "startSec": 20.29,
+    "endSec": 20.71
+  },
+  {
+    "word": "sirf",
+    "startSec": 20.71,
+    "endSec": 21.13
+  },
+  {
+    "word": "merchant",
+    "startSec": 21.13,
+    "endSec": 21.55
+  },
+  {
+    "word": "payments",
+    "startSec": 21.55,
+    "endSec": 21.97
+  },
+  {
+    "word": "pe",
+    "startSec": 21.96,
+    "endSec": 22.38
+  },
+  {
+    "word": "hai.",
+    "startSec": 22.38,
+    "endSec": 22.8
+  },
+  {
+    "word": "Ye",
+    "startSec": 22.8,
+    "endSec": 23.13
+  },
+  {
+    "word": "15",
+    "startSec": 23.13,
+    "endSec": 23.46
+  },
+  {
+    "word": "October",
+    "startSec": 23.46,
+    "endSec": 23.79
+  },
+  {
+    "word": "se",
+    "startSec": 23.79,
+    "endSec": 24.12
+  },
+  {
+    "word": "aana",
+    "startSec": 24.11,
+    "endSec": 24.44
+  },
+  {
+    "word": "tha,",
+    "startSec": 24.44,
+    "endSec": 24.77
+  },
+  {
+    "word": "par",
+    "startSec": 24.77,
+    "endSec": 25.1
+  },
+  {
+    "word": "Diwali",
+    "startSec": 25.1,
+    "endSec": 25.43
+  },
+  {
+    "word": "ke",
+    "startSec": 25.43,
+    "endSec": 25.76
+  },
+  {
+    "word": "baad",
+    "startSec": 25.76,
+    "endSec": 26.09
+  },
+  {
+    "word": "tak",
+    "startSec": 26.09,
+    "endSec": 26.42
+  },
+  {
+    "word": "taal",
+    "startSec": 26.41,
+    "endSec": 26.74
+  },
+  {
+    "word": "diya",
+    "startSec": 26.74,
+    "endSec": 27.07
+  },
+  {
+    "word": "gaya.",
+    "startSec": 27.07,
+    "endSec": 27.4
+  },
+  {
+    "word": "Pro",
+    "startSec": 27.4,
+    "endSec": 27.77
+  },
+  {
+    "word": "tip:",
+    "startSec": 27.77,
+    "endSec": 28.14
+  },
+  {
+    "word": "bill",
+    "startSec": 28.15,
+    "endSec": 28.52
+  },
+  {
+    "word": "me",
+    "startSec": 28.52,
+    "endSec": 28.89
+  },
+  {
+    "word": "extra",
+    "startSec": 28.89,
+    "endSec": 29.26
+  },
+  {
+    "word": "UPI",
+    "startSec": 29.26,
+    "endSec": 29.63
+  },
+  {
+    "word": "charge",
+    "startSec": 29.64,
+    "endSec": 30.01
+  },
+  {
+    "word": "dikhe",
+    "startSec": 30.01,
+    "endSec": 30.38
+  },
+  {
+    "word": "toh",
+    "startSec": 30.38,
+    "endSec": 30.75
+  },
+  {
+    "word": "pooch",
+    "startSec": 30.75,
+    "endSec": 31.12
+  },
+  {
+    "word": "lo.",
+    "startSec": 31.13,
+    "endSec": 31.5
+  },
+  {
+    "word": "Ye",
+    "startSec": 31.5,
+    "endSec": 31.86
+  },
+  {
+    "word": "advice",
+    "startSec": 31.86,
+    "endSec": 32.22
+  },
+  {
+    "word": "nahi",
+    "startSec": 32.23,
+    "endSec": 32.59
+  },
+  {
+    "word": "hai.",
+    "startSec": 32.59,
+    "endSec": 32.95
+  },
+  {
+    "word": "Follow",
+    "startSec": 32.95,
+    "endSec": 33.31
+  },
+  {
+    "word": "karo",
+    "startSec": 33.31,
+    "endSec": 33.67
+  },
+  {
+    "word": "@techwith.GenZ.",
+    "startSec": 33.68,
+    "endSec": 34.04
+  }
+]

@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "slug": "zepto-fail-to-unicorn",
+    "topic": "Pehla Startup Fail, Doosra $1.4 Billion Ka: Zepto Story",
+    "title": "Pehla Startup Fail, Doosra $1.4 Billion Ka: Zepto Story",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "audience": "Entrepreneurs, GenZ founders, startup enthusiasts",
+    "lengthSec": 42.45,
+    "totalDurationSec": 42.45,
+    "voiceFile": "reels/zepto-fail-to-unicorn/voice.mp3",
+    "wordsFile": "reels/zepto-fail-to-unicorn/words.json",
+    "loop": false,
+    "captions": true,
+    "avatar": {
+      "enabled": false
+    },
+    "captionStyle": "kinetic",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.16,
+    "fullVoiceover": "Pehla startup fail hua. Lagbhag do saal baad doosra $1.4 billion ka! Kaise? 2020 me 17-18 saal ke Aadit aur Kaivalya ne KiranaKart banaya. Wo chala nahi. Par ruke nahi. 2021 me 10 minute delivery ka idea leke Zepto banaya. Jan 2021 me valuation $2.5 million thi. August 2023 me $1.4 billion! Twist: reports ke mutabik Zepto ne IPO ab aage badha diya hai. Pro tip: fail hona end nahi, seekhne ka data hai. Tumhari sabse badi failure? Comment karo, aur follow karo @techwith.GenZ.",
+    "instagramCaption": "🤯 Pehla startup fail hua. Lagbhag do saal baad doosra $1.4 billion ka ban gaya. Kaise? Zepto ki kahani 👇\n\n💥 2020: Aadit Palicha aur Kaivalya Vohra (17-18 saal) ne KiranaKart banaya, par wo chala nahi\n🚀 2021: 10 minute delivery ke idea ke saath Zepto banaya\n📈 Jan 2021: valuation ~$2.5 million\n🦄 Aug 2023: $200M funding, valuation $1.4 billion (unicorn!)\n⏳ Twist: reports ke mutabik Zepto ne apna IPO aage badha diya hai. Unicorn banna ek baat hai, tikna doosri.\n\n💡 Pro tip: fail hona end nahi, seekhne ka data hai. Pehle idea se seekho, phir pivot karo.\n\nAapki sabse badi failure ne aapko kya sikhaya? Comment me batao 👇\nAur ye reel us dost ko bhejo jo fail hone se darta hai 🔥\n\nFollow @techwith.GenZ for daily tech aur startup stories.\n\n⚠️ Disclaimer: Ye sirf educational aur motivational content hai, investment advice nahi. Numbers public reports par based hain.\n\n#zepto #startupindia #founderstory #aaditpalicha #kaivalyavohra #unicorn #startupstory #entrepreneurship #quickcommerce #motivation #techwithgenz",
+    "disclaimer": "Educational content only. Not investment advice. Figures from public reports."
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 8,
+      "headline": "PEHLA STARTUP FAIL, DOOSRA $1.4B KA!",
+      "leadIn": "CRAZY FOUNDER PIVOT 🦄",
+      "subtitle": "KiranaKart Fail Se $1.4B Zepto Unicorn Tak",
+      "voice": "Pehla startup fail hua. Lagbhag do saal baad doosra $1.4 billion ka! Kaise?"
+    },
+    {
+      "id": "s2-kiranakart",
+      "type": "card",
+      "startSec": 8,
+      "endSec": 15.7,
+      "headline": "2020: KIRANAKART CRASH",
+      "leadIn": "THE $0 ATTEMPT 💥",
+      "subtitle": "17-18 Saal Ke Teenage Founders",
+      "voice": "2020 me 17-18 saal ke Aadit aur Kaivalya ne KiranaKart banaya. Wo chala nahi.",
+      "cardText": "2020: KIRANAKART CRASH",
+      "chip": "FAILURE ANALYSIS ❌",
+      "bullets": [
+        "Aadit Palicha (18) + Kaivalya Vohra (17)",
+        "Kirana store aggregator model crashed",
+        "Delayed deliveries & zero tech moats"
+      ]
+    },
+    {
+      "id": "s3-pivot",
+      "type": "terminal",
+      "startSec": 15.7,
+      "endSec": 24.5,
+      "headline": "RUKE NAHI: 10-MIN PIVOT",
+      "leadIn": "THE REBIRTH 🔄",
+      "voice": "Par ruke nahi. 2021 me 10 minute delivery ka idea leke Zepto banaya.",
+      "lines": [
+        "$ startup --pivot --speed=10m",
+        "2020 : KiranaKart  ❌ FAILED (aggregator)",
+        "2021 : Zepto       ✅ LAUNCHED (dark stores)",
+        "status: second attempt becomes viral 🚀"
+      ]
+    },
+    {
+      "id": "s4-valuation",
+      "type": "stat",
+      "startSec": 24.5,
+      "endSec": 29.7,
+      "headline": "$2.5M TO $1.4 BILLION",
+      "leadIn": "HYPERGROWTH CURVE 📈",
+      "value": "$2.5M → $1.4B",
+      "label": "Valuation: Jan 2021 → Aug 2023 (560x in 2.5 Yrs)",
+      "voice": "Jan 2021 me valuation $2.5 million thi. August 2023 me $1.4 billion!"
+    },
+    {
+      "id": "s5-ipo-delay",
+      "type": "card",
+      "startSec": 29.7,
+      "endSec": 34.4,
+      "headline": "TWIST: IPO POSTPONED",
+      "leadIn": "PUBLIC MARKET REALITY ⏸️",
+      "voice": "Twist: reports ke mutabik Zepto ne IPO ab aage badha diya hai.",
+      "cardText": "TWIST: IPO POSTPONED",
+      "chip": "2026 REALITY CHECK ⚠️",
+      "bullets": [
+        "IPO delayed to 2026-2027",
+        "Profitability before public listing",
+        "Cash burn vs EBITDA sustainability"
+      ]
+    },
+    {
+      "id": "s6-fail-data",
+      "type": "pills",
+      "startSec": 34.4,
+      "endSec": 39,
+      "headline": "PRO TIP: FAIL = DATA",
+      "leadIn": "FOUNDER MINDSET 💡",
+      "voice": "Pro tip: fail hona end nahi, seekhne ka data hai.",
+      "items": [
+        "FAIL IS NOT THE END",
+        "EVERY FAILURE IS DATA",
+        "PIVOT BEFORE RUNWAY DIES"
+      ]
+    },
+    {
+      "id": "s7-cta",
+      "type": "cta",
+      "startSec": 39,
+      "endSec": 42.45,
+      "headline": "TUMHARI BADI FAILURE KYA HAI?",
+      "leadIn": "COMMENT BELOW 👇",
+      "handle": "@techwith.GenZ",
+      "voice": "Tumhari sabse badi failure? Comment karo, aur follow karo @techwith.GenZ."
+    }
+  ]
+}

@@ -198,7 +198,7 @@ console.log(`\n=======================================================`);
 console.log(`🎥 2/3 Rendering Reel to: out/${slug}.mp4`);
 console.log(`=======================================================`);
 
-const renderCommand = `npx remotion render Reel "${outputPath}" --props="${resolvedPropsPath}"`;
+const renderCommand = `npx remotion render Reel "${outputPath}" --props="${resolvedPropsPath}" --concurrency=2`;
 
 try {
   execSync(renderCommand, {

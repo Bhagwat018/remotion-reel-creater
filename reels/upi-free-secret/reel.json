@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "slug": "upi-free-secret",
+    "topic": "UPI Free Hai, Toh Banks Kamate Kaise Hain?",
+    "title": "UPI Free Hai, Toh Banks Kamate Kaise Hain?",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "audience": "Consumers, GenZ shoppers, small business owners",
+    "lengthSec": 34.04,
+    "totalDurationSec": 34.04,
+    "voiceFile": "reels/upi-free-secret/voice.mp3",
+    "wordsFile": "reels/upi-free-secret/words.json",
+    "loop": false,
+    "captions": true,
+    "avatar": {
+      "enabled": false
+    },
+    "captionStyle": "kinetic",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.16,
+    "fullVoiceover": "UPI free hai, toh paisa kahan se aata hai? Sach: UPI free nahi, bas tumhare liye free. August me 2,451 crore transactions! NPCI dukaandar se ₹2,000 se upar ke select payments pe 0.4 percent fee lega. Matlab ₹5,000 pe ₹20. Ye fee sirf merchant payments pe hai. Ye 15 October se aana tha, par Diwali ke baad tak taal diya gaya. Pro tip: bill me extra UPI charge dikhe toh pooch lo. Ye advice nahi hai. Follow karo @techwith.GenZ.",
+    "instagramCaption": "🤯 UPI free hai, toh paisa kahan se aata hai? Peeche ka system free nahi hai 👇\n\n📈 August 2026 me record ~2,451 crore UPI transactions hue\n💸 NPCI ne select merchant payments (₹2,000 se upar) pe 0.4% MDR fee ka plan banaya hai\n🧮 Example: ₹5,000 ka payment = ~₹20 fee, jo dukaandar se lagegi, customer se nahi\n🔒 ₹75,000+ ke payments pe fee ka cap ₹300 hai\n⏳ Ye 15 Oct se start hona tha, par Diwali ke baad tak taal diya gaya, nayi date abhi announce nahi hui\n\n💡 Pro tip: bill me extra 'UPI charge' dikhe toh dukaandar se pooch lo.\n\nKya dukaandar ye kharcha customers par daalenge? Comment me batao 👇\nAur ye reel us dost ko bhejo jo roz UPI use karta hai 📲\n\nFollow @techwith.GenZ for daily tech aur money updates.\n\n⚠️ Disclaimer: Ye sirf educational information hai, financial advice nahi. Fee plan NPCI ke announcement par based hai aur badal sakta hai.\n\n#upi #npci #digitalindia #moneyknowledge #financeforbeginners #fintech #upipayments #mdr #techexplained #hinditech #techwithgenz",
+    "disclaimer": "Educational content only. Not financial advice. Fee plan is deferred, new date awaited."
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 4.1,
+      "headline": "UPI FREE HAI? PAISA KAHAN SE?",
+      "leadIn": "FINTECH MYTH BUSTED ⚡",
+      "subtitle": "Peeche Ka System Free Nahi Hai",
+      "voice": "UPI free hai, toh paisa kahan se aata hai?"
+    },
+    {
+      "id": "s2-volume",
+      "type": "stat",
+      "startSec": 4.1,
+      "endSec": 11.4,
+      "headline": "FREE NAHI, BAS TUMHARE LIYE!",
+      "leadIn": "INSANE RECORD VOLUME 📊",
+      "value": "2,451 CR",
+      "label": "Monthly UPI Transactions (August Record)",
+      "voice": "Sach: UPI free nahi, bas tumhare liye free. August me 2,451 crore transactions!"
+    },
+    {
+      "id": "s3-mdr-rule",
+      "type": "card",
+      "startSec": 11.4,
+      "endSec": 18.2,
+      "headline": "NPCI NEW RULE: 0.4% MDR",
+      "leadIn": "WHO ACTUALLY PAYS? 💸",
+      "voice": "NPCI dukaandar se ₹2,000 se upar ke select payments pe 0.4 percent fee lega.",
+      "cardText": "NPCI NEW RULE: 0.4% MDR",
+      "chip": "MERCHANT CHARGES 🏪",
+      "bullets": [
+        "Transactions above ₹2,000 threshold",
+        "Select merchant payments (P2M only)",
+        "Maximum cap capped at ₹300 for ₹75,000+"
+      ]
+    },
+    {
+      "id": "s4-math",
+      "type": "terminal",
+      "startSec": 18.2,
+      "endSec": 22.8,
+      "headline": "₹5,000 PAYMENT PE ₹20 FEE",
+      "leadIn": "TRANSACTION BREAKDOWN 🧾",
+      "voice": "Matlab ₹5,000 pe ₹20. Ye fee sirf merchant payments pe hai.",
+      "lines": [
+        "$ upi --pay 5000 --to merchant",
+        "you pay      : ₹5,000 (Customer = ₹0 Fee) ✅",
+        "merchant fee : ₹20 (0.4% MDR Deducted) 💸",
+        "settled bank : ₹4,980 to shopkeeper 🏦"
+      ]
+    },
+    {
+      "id": "s5-postponed",
+      "type": "card",
+      "startSec": 22.8,
+      "endSec": 27.4,
+      "headline": "DIWALI TAK TAAL DIYA GAYA",
+      "leadIn": "POLICY POSTPONED ⏸️",
+      "voice": "Ye 15 October se aana tha, par Diwali ke baad tak taal diya gaya.",
+      "cardText": "DIWALI TAK TAAL DIYA GAYA",
+      "chip": "GOVERNMENT HOLD ⏳",
+      "bullets": [
+        "Original launch: 15 October 2026",
+        "Postponed till after festive Diwali season",
+        "New official implementation date TBA"
+      ]
+    },
+    {
+      "id": "s6-bill-tip",
+      "type": "pills",
+      "startSec": 27.4,
+      "endSec": 31.5,
+      "headline": "PRO TIP: BILL ME CHECK KARO",
+      "leadIn": "CONSUMER AWARENESS 💡",
+      "voice": "Pro tip: bill me extra UPI charge dikhe toh pooch lo.",
+      "items": [
+        "EXTRA UPI CHARGE?",
+        "DUKAANDAR SE POOCHO",
+        "CUSTOMER CANNOT BE BILLED"
+      ]
+    },
+    {
+      "id": "s7-cta",
+      "type": "cta",
+      "startSec": 31.5,
+      "endSec": 34.04,
+      "headline": "FOLLOW @TECHWITH.GENZ",
+      "leadIn": "DAILY FINTECH TRUTHS 🔥",
+      "handle": "@techwith.GenZ",
+      "voice": "Ye advice nahi hai. Follow karo @techwith.GenZ."
+    }
+  ]
+}

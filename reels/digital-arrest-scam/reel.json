@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "slug": "digital-arrest-scam",
+    "topic": "Digital Arrest Scam: Parents Ko Bachao",
+    "title": "Digital Arrest Scam: Parents Ko Bachao",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "audience": "Parents, families, digital citizens",
+    "lengthSec": 34.586,
+    "totalDurationSec": 34.586,
+    "voiceFile": "reels/digital-arrest-scam/voice.mp3",
+    "wordsFile": "reels/digital-arrest-scam/words.json",
+    "loop": false,
+    "captions": true,
+    "avatar": {
+      "enabled": false
+    },
+    "captionStyle": "kinetic",
+    "bgm": "bgm/cyber-groove.mp3",
+    "bgmVolume": 0.16,
+    "fullVoiceover": "Video call pe police bole 'tum arrest ho'? Ruko, ye scam hai! Jan se August 2026 me 21 hazaar se zyada complaints, 647 crore ka nuksaan. Fake CBI ya police video call, darate hain, aur paisa transfer karwate hain. Red flag: wo call kaatne aur family ko batane se rokenge. Sach ye hai: India me phone ya video call pe arrest hota hi nahi! Pro tip: call kaato, paisa mat bhejo, aur 1930 pe call karo. Ye reel parents ko bhejo. Follow karo @techwith.GenZ.",
+    "instagramCaption": "🚨 Video call pe police bole 'tum arrest ho'? Ruko, ye SCAM hai! Parents ko zaroor dikhao 👇\n\n📊 Jan-Aug 2026: 21,900+ digital arrest complaints, ₹647 crore se zyada ka nuksaan\n\n🎭 Kaise hota hai?\nFake CBI/police/ED officer video call karta hai, 'arrest' ka darr dikhata hai aur paisa transfer karwata hai.\n\n🚩 Red flags:\n• Call kaatne se rokenge\n• Family ko batane se rokenge\n• 'Verification' ke naam pe paisa mangenge\n\n✅ Sach: India me phone ya video call pe arrest nahi hota.\n\n💡 Kya karein:\n1️⃣ Call kaat do\n2️⃣ Kisi ko paisa mat bhejo\n3️⃣ Turant 1930 pe call karo ya cybercrime.gov.in par complaint karo\n\nAapke ghar me kisi ko aisa call aaya hai? Comment me batao 👇\nAur ye reel apne parents ko abhi bhejo 🙏\n\nFollow @techwith.GenZ for daily tech aur safety updates.\n\n⚠️ Disclaimer: Ye reel sirf awareness ke liye hai. Fraud hone par turant official helpline ya apne nazdiki police station se sampark karo.\n\n#digitalarrest #cyberscam #cybersecurity #scamalert #cybercrime #onlinefraud #techawareness #staysafeonline #parentsawareness #hinditech #genz #techwithgenz",
+    "disclaimer": "Awareness content only. Contact official helpline 1930 or police in case of fraud."
+  },
+  "scenes": [
+    {
+      "id": "s1-call-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 4.8,
+      "headline": "'TUM ARREST HO' VIDEO CALL?",
+      "leadIn": "STOP SCROLLING 🛑",
+      "subtitle": "Ruko, ye scam hai!",
+      "voice": "Video call pe police bole 'tum arrest ho'? Ruko, ye scam hai!"
+    },
+    {
+      "id": "s2-crore-loot",
+      "type": "stat",
+      "startSec": 4.8,
+      "endSec": 9.3,
+      "headline": "₹647 CRORE LOOT",
+      "leadIn": "CRIME STATS 📊",
+      "value": "21,900+",
+      "label": "Digital arrest complaints in 2026",
+      "voice": "Jan se August 2026 me 21 hazaar se zyada complaints, 647 crore ka nuksaan."
+    },
+    {
+      "id": "s3-modus-operandi",
+      "type": "terminal",
+      "startSec": 9.3,
+      "endSec": 14,
+      "headline": "SCAM KAISE CHALTA HAI",
+      "leadIn": "MODUS OPERANDI 🎭",
+      "lines": [
+        "$ incoming-call: 'CBI officer'",
+        "claim  : you are under digital arrest",
+        "demand : transfer money now",
+        "reality: SCAM ❌"
+      ],
+      "voice": "Fake CBI ya police video call, darate hain, aur paisa transfer karwate hain."
+    },
+    {
+      "id": "s4-red-flags",
+      "type": "pills",
+      "startSec": 14,
+      "endSec": 17.8,
+      "headline": "3 BIG RED FLAGS 🚩",
+      "leadIn": "WARNING SIGNS ⚠️",
+      "items": [
+        "CALL KAATNE SE ROKENGE",
+        "FAMILY KO BATANE SE ROKENGE",
+        "PAISA TRANSFER MANGENGE"
+      ],
+      "voice": "Red flag: wo call kaatne aur family ko batane se rokenge."
+    },
+    {
+      "id": "s5-legal-truth",
+      "type": "card",
+      "startSec": 17.8,
+      "endSec": 25.3,
+      "headline": "CALL PE ARREST = FAKE",
+      "leadIn": "LEGAL REALITY ⚖️",
+      "cardText": "India me phone ya video call pe arrest hota hi nahi!",
+      "bullets": [
+        "India me phone/video call pe arrest nahi hota",
+        "Police aise paisa nahi mangti",
+        "Dar gaye = scam jeet gaya"
+      ],
+      "voice": "Sach ye hai: India me phone ya video call pe arrest hota hi nahi!",
+      "chip": "LEGAL REALITY ⚖️"
+    },
+    {
+      "id": "s6-emergency-1930",
+      "type": "terminal",
+      "startSec": 25.3,
+      "endSec": 30.5,
+      "headline": "PRO TIP: 1930 HELPLINE",
+      "leadIn": "EMERGENCY PROTOCOL 🛡️",
+      "lines": [
+        "$ if scam-call:",
+        "  1. hang up ✅",
+        "  2. send no money ✅",
+        "  3. call 1930 ✅"
+      ],
+      "voice": "Pro tip: call kaato, paisa mat bhejo, aur 1930 pe call karo."
+    },
+    {
+      "id": "s7-parents-cta",
+      "type": "cta",
+      "startSec": 30.5,
+      "endSec": 34.586,
+      "headline": "PARENTS KO BHEJO 🙏",
+      "leadIn": "SAVE YOUR FAMILY ❤️",
+      "buttonText": "FOLLOW @techwith.GenZ",
+      "handle": "@techwith.GenZ",
+      "voice": "Ye reel parents ko bhejo. Follow karo @techwith.GenZ."
+    }
+  ]
+}

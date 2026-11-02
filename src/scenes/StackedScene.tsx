@@ -3,6 +3,7 @@ import { SceneLayout } from "../components/SceneLayout";
 import { NeoStackedCards, StackedCardItem } from "../components/neo/NeoStackedCards";
 import { NeoMultiStepPipeline } from "../components/neo/NeoMultiStepPipeline";
 import { MotionDirection } from "../lib/directionalMotion";
+import { BombayContrarianTipScene } from "./bombayCoated/BombayContrarianTipScene";
 
 export interface StackedSceneProps {
   id?: string;
@@ -12,6 +13,7 @@ export interface StackedSceneProps {
   direction?: MotionDirection;
   cards?: StackedCardItem[];
   isPipeline?: boolean;
+  slug?: string;
 }
 
 export const StackedScene: React.FC<StackedSceneProps> = ({
@@ -22,7 +24,13 @@ export const StackedScene: React.FC<StackedSceneProps> = ({
   cards,
   isPipeline = false,
   durationInFrames,
+  slug,
 }) => {
+  // Bespoke scene for Bombay Coated Contrarian Tip
+  if (slug === "bombay-coated-ipo-last-day" || id === "s6-contrarian-tip") {
+    return <BombayContrarianTipScene durationInFrames={durationInFrames} />;
+  }
+
   return (
     <SceneLayout
       id={id}

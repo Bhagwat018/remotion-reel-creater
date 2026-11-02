@@ -3,7 +3,13 @@ import { PillsSceneProps } from "../schema";
 import { SceneLayout } from "../components/SceneLayout";
 import { Pill } from "../components/Pill";
 import { MotionDirection } from "../lib/directionalMotion";
-import { ValuationGapCard } from "../components/startup/ValuationGapCard";
+import { ZeptoValuationScene } from "./startup/ZeptoValuationScene";
+import { SellOrHoldScene } from "./beginnerIpo/SellOrHoldScene";
+import { BombayGmpScene } from "./bombayCoated/BombayGmpScene";
+import { RedFlagsScene } from "./digitalArrest/RedFlagsScene";
+import { HiddenFeesTipScene } from "./darkStore/HiddenFeesTipScene";
+import { FailureIsDataScene } from "./zeptoStory/FailureIsDataScene";
+import { UpiBillCheckTipScene } from "./upiFree/UpiBillCheckTipScene";
 
 export const PillsScene: React.FC<
   PillsSceneProps & {
@@ -16,21 +22,39 @@ export const PillsScene: React.FC<
     slug?: string;
   }
 > = ({ id, direction, leadIn, headline, items, pills, badgeText, subtext, durationInFrames, slug }) => {
-  // Bespoke scene for Zepto Valuation Gap & IPO freeze
+  // Bespoke scene for UPI Bill Check Tip
+  if (slug === "upi-free-secret" || id === "s6-bill-tip") {
+    return <UpiBillCheckTipScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Zepto Failure Is Data Tip
+  if (slug === "zepto-fail-to-unicorn" || id === "s6-fail-data") {
+    return <FailureIsDataScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Dark Store Hidden Fees Tip
+  if (slug === "dark-store-delivery" || id === "s6-tip") {
+    return <HiddenFeesTipScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Digital Arrest Red Flags
+  if (slug === "digital-arrest-scam" || id === "s4-red-flags") {
+    return <RedFlagsScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Bombay Coated GMP Rumor
+  if (slug === "bombay-coated-ipo-last-day" || id === "s4-gmp-rumor") {
+    return <BombayGmpScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Sell ya Hold (Beginner IPOs)
+  if (slug === "ipo-4-beginner-questions" || id === "s4-sell-hold" && headline?.includes("HOLD")) {
+    return <SellOrHoldScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke full-screen scene for Zepto Valuation Gap & IPO freeze
   if (id === "s2-zepto" || (slug === "startup-ipos-delayed-2027" && id?.includes("zepto"))) {
-    return (
-      <SceneLayout
-        id={id}
-        direction={direction}
-        leadIn={leadIn || "QUICK COMMERCE GIANT"}
-        headline={headline}
-        durationInFrames={durationInFrames}
-        slug={slug}
-        showTechBadge={false}
-      >
-        <ValuationGapCard delayFrames={2} />
-      </SceneLayout>
-    );
+    return <ZeptoValuationScene durationInFrames={durationInFrames} />;
   }
 
   const pillList = items && items.length > 0 ? items : pills || [];

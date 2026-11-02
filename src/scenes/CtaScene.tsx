@@ -7,7 +7,13 @@ import { NeoBigButton } from "../components/neo/NeoBigButton";
 import { NeoTopPill } from "../components/neo/NeoTopPill";
 import { MotionDirection } from "../lib/directionalMotion";
 import { StarburstBadge } from "../components/StarburstBadge";
-import { StartupBattlePoll } from "../components/startup/StartupBattlePoll";
+import { StartupPollScene } from "./startup/StartupPollScene";
+import { BeginnerCtaScene } from "./beginnerIpo/BeginnerCtaScene";
+import { BombayCtaScene } from "./bombayCoated/BombayCtaScene";
+import { ParentsCtaScene } from "./digitalArrest/ParentsCtaScene";
+import { DarkStoreCtaScene } from "./darkStore/DarkStoreCtaScene";
+import { ZeptoCtaScene } from "./zeptoStory/ZeptoCtaScene";
+import { UpiCtaScene } from "./upiFree/UpiCtaScene";
 
 export const CtaScene: React.FC<
   CtaSceneProps & {
@@ -37,21 +43,39 @@ export const CtaScene: React.FC<
 }) => {
   const resolvedHandle = handle || "@techwith.GenZ";
 
-  // Bespoke interactive poll scene for Startup IPO Delays
+  // Bespoke scene for UPI CTA
+  if (slug === "upi-free-secret" || (id === "s7-cta" && resolvedHandle === "@techwith.GenZ" && !headline?.includes("FAILURE") && !headline?.includes("DARK"))) {
+    return <UpiCtaScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Zepto Failure CTA
+  if (slug === "zepto-fail-to-unicorn" || (id === "s7-cta" && headline?.includes("FAILURE"))) {
+    return <ZeptoCtaScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Dark Store Summary & Follow CTA
+  if (slug === "dark-store-delivery" || id === "s7-cta") {
+    return <DarkStoreCtaScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Digital Arrest Parents CTA
+  if (slug === "digital-arrest-scam" || id === "s7-parents-cta") {
+    return <ParentsCtaScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Bombay Coated Verdict & CTA
+  if (slug === "bombay-coated-ipo-last-day" || id === "s7-verdict-cta") {
+    return <BombayCtaScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Beginner IPO 4 Questions
+  if (slug === "ipo-4-beginner-questions" || id === "s6-cta" && headline?.includes("TECHWITH.GENZ")) {
+    return <BeginnerCtaScene durationInFrames={durationInFrames} handle={resolvedHandle} />;
+  }
+
+  // Bespoke full-screen interactive poll scene for Startup IPO Delays
   if (id === "s5-cta" || slug === "startup-ipos-delayed-2027") {
-    return (
-      <SceneLayout
-        id={id}
-        direction={direction}
-        leadIn={leadIn || "COMMUNITY POLL"}
-        headline={headline}
-        durationInFrames={durationInFrames}
-        slug={slug}
-        showTechBadge={false}
-      >
-        <StartupBattlePoll handle={resolvedHandle} delayFrames={2} />
-      </SceneLayout>
-    );
+    return <StartupPollScene durationInFrames={durationInFrames} handle={resolvedHandle} />;
   }
 
   const frame = useCurrentFrame();

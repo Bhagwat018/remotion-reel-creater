@@ -1,0 +1,407 @@
+[
+  {
+    "word": "IPO",
+    "startSec": 0.08,
+    "endSec": 0.4
+  },
+  {
+    "word": "ke",
+    "startSec": 0.4,
+    "endSec": 0.72
+  },
+  {
+    "word": "4",
+    "startSec": 0.72,
+    "endSec": 1.04
+  },
+  {
+    "word": "sawaal",
+    "startSec": 1.04,
+    "endSec": 1.36
+  },
+  {
+    "word": "jo",
+    "startSec": 1.36,
+    "endSec": 1.67
+  },
+  {
+    "word": "har",
+    "startSec": 1.67,
+    "endSec": 1.99
+  },
+  {
+    "word": "beginner",
+    "startSec": 1.99,
+    "endSec": 2.31
+  },
+  {
+    "word": "puchta",
+    "startSec": 2.31,
+    "endSec": 2.63
+  },
+  {
+    "word": "hai!",
+    "startSec": 2.63,
+    "endSec": 2.95
+  },
+  {
+    "word": "Ek:",
+    "startSec": 3.35,
+    "endSec": 3.77
+  },
+  {
+    "word": "GMP?",
+    "startSec": 3.77,
+    "endSec": 4.2
+  },
+  {
+    "word": "Ye",
+    "startSec": 4.2,
+    "endSec": 4.63
+  },
+  {
+    "word": "sirf",
+    "startSec": 4.63,
+    "endSec": 5.05
+  },
+  {
+    "word": "grey",
+    "startSec": 5.05,
+    "endSec": 5.47
+  },
+  {
+    "word": "market",
+    "startSec": 5.47,
+    "endSec": 5.9
+  },
+  {
+    "word": "ka",
+    "startSec": 5.9,
+    "endSec": 6.33
+  },
+  {
+    "word": "unofficial",
+    "startSec": 6.33,
+    "endSec": 6.75
+  },
+  {
+    "word": "rate",
+    "startSec": 6.75,
+    "endSec": 7.17
+  },
+  {
+    "word": "hai,",
+    "startSec": 7.17,
+    "endSec": 7.6
+  },
+  {
+    "word": "guarantee",
+    "startSec": 7.6,
+    "endSec": 8.03
+  },
+  {
+    "word": "nahi.",
+    "startSec": 8.03,
+    "endSec": 8.45
+  },
+  {
+    "word": "Do:",
+    "startSec": 8.85,
+    "endSec": 9.22
+  },
+  {
+    "word": "allotment",
+    "startSec": 9.22,
+    "endSec": 9.59
+  },
+  {
+    "word": "na",
+    "startSec": 9.59,
+    "endSec": 9.95
+  },
+  {
+    "word": "mile",
+    "startSec": 9.95,
+    "endSec": 10.32
+  },
+  {
+    "word": "toh?",
+    "startSec": 10.32,
+    "endSec": 10.69
+  },
+  {
+    "word": "Paisa",
+    "startSec": 10.69,
+    "endSec": 11.06
+  },
+  {
+    "word": "kata",
+    "startSec": 11.06,
+    "endSec": 11.42
+  },
+  {
+    "word": "nahi,",
+    "startSec": 11.42,
+    "endSec": 11.79
+  },
+  {
+    "word": "sirf",
+    "startSec": 11.79,
+    "endSec": 12.16
+  },
+  {
+    "word": "block",
+    "startSec": 12.16,
+    "endSec": 12.53
+  },
+  {
+    "word": "tha,",
+    "startSec": 12.53,
+    "endSec": 12.89
+  },
+  {
+    "word": "listing",
+    "startSec": 12.89,
+    "endSec": 13.26
+  },
+  {
+    "word": "se",
+    "startSec": 13.26,
+    "endSec": 13.63
+  },
+  {
+    "word": "pehle",
+    "startSec": 13.63,
+    "endSec": 14
+  },
+  {
+    "word": "apne",
+    "startSec": 14,
+    "endSec": 14.36
+  },
+  {
+    "word": "aap",
+    "startSec": 14.36,
+    "endSec": 14.73
+  },
+  {
+    "word": "unblock.",
+    "startSec": 14.73,
+    "endSec": 15.1
+  },
+  {
+    "word": "Teen:",
+    "startSec": 15.45,
+    "endSec": 15.79
+  },
+  {
+    "word": "listing",
+    "startSec": 15.79,
+    "endSec": 16.13
+  },
+  {
+    "word": "day",
+    "startSec": 16.13,
+    "endSec": 16.47
+  },
+  {
+    "word": "pe",
+    "startSec": 16.47,
+    "endSec": 16.81
+  },
+  {
+    "word": "bechein",
+    "startSec": 16.81,
+    "endSec": 17.15
+  },
+  {
+    "word": "ya",
+    "startSec": 17.15,
+    "endSec": 17.49
+  },
+  {
+    "word": "hold?",
+    "startSec": 17.49,
+    "endSec": 17.83
+  },
+  {
+    "word": "Ye",
+    "startSec": 17.83,
+    "endSec": 18.17
+  },
+  {
+    "word": "aapke",
+    "startSec": 18.17,
+    "endSec": 18.51
+  },
+  {
+    "word": "goal",
+    "startSec": 18.51,
+    "endSec": 18.84
+  },
+  {
+    "word": "pe",
+    "startSec": 18.84,
+    "endSec": 19.18
+  },
+  {
+    "word": "depend",
+    "startSec": 19.18,
+    "endSec": 19.52
+  },
+  {
+    "word": "karta",
+    "startSec": 19.52,
+    "endSec": 19.86
+  },
+  {
+    "word": "hai,",
+    "startSec": 19.86,
+    "endSec": 20.2
+  },
+  {
+    "word": "GMP",
+    "startSec": 20.2,
+    "endSec": 20.54
+  },
+  {
+    "word": "ya",
+    "startSec": 20.54,
+    "endSec": 20.88
+  },
+  {
+    "word": "hype",
+    "startSec": 20.88,
+    "endSec": 21.22
+  },
+  {
+    "word": "pe",
+    "startSec": 21.22,
+    "endSec": 21.56
+  },
+  {
+    "word": "nahi.",
+    "startSec": 21.56,
+    "endSec": 21.9
+  },
+  {
+    "word": "Char:",
+    "startSec": 22.35,
+    "endSec": 22.71
+  },
+  {
+    "word": "SME",
+    "startSec": 22.71,
+    "endSec": 23.08
+  },
+  {
+    "word": "ya",
+    "startSec": 23.08,
+    "endSec": 23.44
+  },
+  {
+    "word": "mainboard?",
+    "startSec": 23.44,
+    "endSec": 23.81
+  },
+  {
+    "word": "SME",
+    "startSec": 23.81,
+    "endSec": 24.17
+  },
+  {
+    "word": "me",
+    "startSec": 24.17,
+    "endSec": 24.54
+  },
+  {
+    "word": "minimum",
+    "startSec": 24.54,
+    "endSec": 24.9
+  },
+  {
+    "word": "2",
+    "startSec": 24.9,
+    "endSec": 25.27
+  },
+  {
+    "word": "lakh",
+    "startSec": 25.27,
+    "endSec": 25.63
+  },
+  {
+    "word": "se",
+    "startSec": 25.63,
+    "endSec": 26
+  },
+  {
+    "word": "zyada",
+    "startSec": 26,
+    "endSec": 26.36
+  },
+  {
+    "word": "lagte",
+    "startSec": 26.36,
+    "endSec": 26.73
+  },
+  {
+    "word": "hain",
+    "startSec": 26.73,
+    "endSec": 27.09
+  },
+  {
+    "word": "aur",
+    "startSec": 27.09,
+    "endSec": 27.46
+  },
+  {
+    "word": "risk",
+    "startSec": 27.46,
+    "endSec": 27.82
+  },
+  {
+    "word": "zyada",
+    "startSec": 27.82,
+    "endSec": 28.19
+  },
+  {
+    "word": "hai.",
+    "startSec": 28.19,
+    "endSec": 28.55
+  },
+  {
+    "word": "Ye",
+    "startSec": 28.95,
+    "endSec": 29.46
+  },
+  {
+    "word": "advice",
+    "startSec": 29.46,
+    "endSec": 29.96
+  },
+  {
+    "word": "nahi",
+    "startSec": 29.96,
+    "endSec": 30.47
+  },
+  {
+    "word": "hai.",
+    "startSec": 30.47,
+    "endSec": 30.98
+  },
+  {
+    "word": "Follow",
+    "startSec": 30.98,
+    "endSec": 31.49
+  },
+  {
+    "word": "karo",
+    "startSec": 31.49,
+    "endSec": 31.99
+  },
+  {
+    "word": "@techwith.GenZ.",
+    "startSec": 31.99,
+    "endSec": 32.5
+  }
+]

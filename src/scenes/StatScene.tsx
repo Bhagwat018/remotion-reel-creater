@@ -6,6 +6,12 @@ import { SceneLayout } from "../components/SceneLayout";
 import { NeoStatCard } from "../components/neo/NeoStatCard";
 import { MotionDirection } from "../lib/directionalMotion";
 import { StarburstBadge } from "../components/StarburstBadge";
+import { SmeVsMainboardScene } from "./beginnerIpo/SmeVsMainboardScene";
+import { BombaySubscriptionScene } from "./bombayCoated/BombaySubscriptionScene";
+import { LootStatScene } from "./digitalArrest/LootStatScene";
+import { DarkStoreWarStatScene } from "./darkStore/DarkStoreWarStatScene";
+import { ValuationRocketScene } from "./zeptoStory/ValuationRocketScene";
+import { UpiRecordVolumeScene } from "./upiFree/UpiRecordVolumeScene";
 
 export const StatScene: React.FC<
   StatSceneProps & {
@@ -18,6 +24,7 @@ export const StatScene: React.FC<
     durationInFrames: number;
     direction?: MotionDirection;
     id?: string;
+    slug?: string;
   }
 > = ({
   id,
@@ -33,7 +40,37 @@ export const StatScene: React.FC<
   pills,
   items,
   durationInFrames,
+  slug,
 }) => {
+  // Bespoke scene for UPI August Record Volume (2,451 CR)
+  if (slug === "upi-free-secret" || id === "s2-volume") {
+    return <UpiRecordVolumeScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Zepto Valuation Rocket ($2.5M to $1.4B)
+  if (slug === "zepto-fail-to-unicorn" || id === "s4-valuation") {
+    return <ValuationRocketScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Dark Store Battle (2,751 vs 1,240)
+  if (slug === "dark-store-delivery" || id === "s4-battle") {
+    return <DarkStoreWarStatScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Digital Arrest ₹647 Crore Loot
+  if (slug === "digital-arrest-scam" || id === "s2-crore-loot") {
+    return <LootStatScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Bombay Coated Subscription Gauge
+  if (slug === "bombay-coated-ipo-last-day" || id === "s3-subscription-gauge") {
+    return <BombaySubscriptionScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for SME vs Mainboard (Beginner IPOs)
+  if (slug === "ipo-4-beginner-questions" || id === "s5-sme" && headline?.includes("SME")) {
+    return <SmeVsMainboardScene durationInFrames={durationInFrames} />;
+  }
   const frame = useCurrentFrame();
 
   const rawVal = String(value || statNumber || "10x");

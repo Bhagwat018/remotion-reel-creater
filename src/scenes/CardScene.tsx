@@ -5,7 +5,16 @@ import { SceneLayout } from "../components/SceneLayout";
 import { DarkCard } from "../components/DarkCard";
 import { FloatingBadge } from "../components/FloatingBadge";
 import { MotionDirection } from "../lib/directionalMotion";
-import { ConfidentialDossierCard } from "../components/startup/ConfidentialDossierCard";
+import { RazorpayDossierScene } from "./startup/RazorpayDossierScene";
+import { GmpRealityCheckScene } from "./beginnerIpo/GmpRealityCheckScene";
+import { BombayPricingScene } from "./bombayCoated/BombayPricingScene";
+import { LegalRealityScene } from "./digitalArrest/LegalRealityScene";
+import { DarkStoreWarehouseScene } from "./darkStore/DarkStoreWarehouseScene";
+import { ProfitVsLossScene } from "./darkStore/ProfitVsLossScene";
+import { KiranaKartCrashScene } from "./zeptoStory/KiranaKartCrashScene";
+import { IpoPostponedScene } from "./zeptoStory/IpoPostponedScene";
+import { MdrRuleScene } from "./upiFree/MdrRuleScene";
+import { UpiPostponedScene } from "./upiFree/UpiPostponedScene";
 
 export const CardScene: React.FC<
   CardSceneProps & {
@@ -30,25 +39,58 @@ export const CardScene: React.FC<
   durationInFrames,
   slug,
 }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  // Bespoke scene for NPCI 0.4% MDR Rule (UPI Reel)
+  if (slug === "upi-free-secret" && id === "s3-mdr-rule" || id === "s3-mdr-rule") {
+    return <MdrRuleScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for UPI Fee Postponed (UPI Reel)
+  if (slug === "upi-free-secret" && id === "s5-postponed" || id === "s5-postponed") {
+    return <UpiPostponedScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for KiranaKart Crash (Zepto Story)
+  if (slug === "zepto-fail-to-unicorn" && id === "s2-kiranakart" || id === "s2-kiranakart") {
+    return <KiranaKartCrashScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Zepto IPO Postponed (Zepto Story)
+  if (slug === "zepto-fail-to-unicorn" && id === "s5-ipo-delay" || id === "s5-ipo-delay") {
+    return <IpoPostponedScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Dark Store Micro-Warehouse
+  if (slug === "dark-store-delivery" && id === "s2-warehouse" || id === "s2-warehouse") {
+    return <DarkStoreWarehouseScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Dark Store Profit vs Loss Paradox
+  if (slug === "dark-store-delivery" && id === "s5-paradox" || id === "s5-paradox") {
+    return <ProfitVsLossScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Digital Arrest Legal Reality
+  if (slug === "digital-arrest-scam" || id === "s5-legal-truth") {
+    return <LegalRealityScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Bombay Coated Pricing Ticket
+  if (slug === "bombay-coated-ipo-last-day" || id === "s2-pricing-ticket") {
+    return <BombayPricingScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for GMP Reality Check (Beginner IPOs)
+  if (slug === "ipo-4-beginner-questions" || id === "s2-gmp" && headline?.includes("GMP")) {
+    return <GmpRealityCheckScene durationInFrames={durationInFrames} />;
+  }
 
   // Bespoke scene for Razorpay Confidential DRHP Dossier & 2027 Shift
   if (id === "s4-razorpay" || (slug === "startup-ipos-delayed-2027" && id?.includes("razorpay"))) {
-    return (
-      <SceneLayout
-        id={id}
-        direction={direction}
-        leadIn={leadIn || "PAYMENTS UNICORN"}
-        headline={headline}
-        durationInFrames={durationInFrames}
-        slug={slug}
-        showTechBadge={false}
-      >
-        <ConfidentialDossierCard delayFrames={2} />
-      </SceneLayout>
-    );
+    return <RazorpayDossierScene durationInFrames={durationInFrames} />;
   }
+
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
 
   const hasBadge = !!(icon || featuredBadge);
   const badgeTitle = featuredBadge?.title || (icon ? icon.toUpperCase() : cardText);
