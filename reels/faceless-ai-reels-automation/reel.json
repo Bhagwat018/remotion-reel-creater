@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "slug": "faceless-ai-reels-automation",
+    "topic": "Automating faceless AI reels using Claude Code",
+    "title": "Build Faceless AI Reels Instantly",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "audience": "Tech enthusiasts, creators, AI seekers",
+    "loop": false,
+    "captions": true,
+    "avatar": {
+      "enabled": false
+    },
+    "captionStyle": "kinetic",
+    "bgm": false,
+    "bgmVolume": 0.16,
+    "fullVoiceover": "Bina shakal dikhaye viral reels banana chahte ho? Yeh dekho! Sirf ek folder dalo jisme saare viral hooks aur pacing rules hain. Claude Code khud video likhega, bolegi, animate karega aur render karega. Yeh AI khud apni video dekhta hai aur weak moments ko fix kar deta hai. Aise daily AI updates ke liye follow karo @techwith.GenZ",
+    "instagramCaption": "Bina shakal dikhaye Instagram pe viral hona hai? 🤯 Yeh AI folder aur Claude Code ka hack use karo jo khud video banata hai, voiceover karta hai aur errors bhi fix karta hai!\n\nComment 'SKILL' and I'll send you the link! 🔗\n\nFollow @techwith.GenZ for daily AI tricks!\n\n#claudecode #aivideo #facelesscontent #contentcreator #aitools #techwithgenz",
+    "disclaimer": "Educational content only.",
+    "voice": "shubh",
+    "voiceSpeed": 1.05,
+    "durationSec": 20,
+    "voiceFile": "reels/faceless-ai-reels-automation/voice.mp3",
+    "wordsFile": "reels/faceless-ai-reels-automation/words.json"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "headline": "Bina Face Ke Viral",
+      "leadIn": "FACEOFF HACK ⚡",
+      "subtitle": "No Face, Pure Viral Content",
+      "voice": "Bina shakal dikhaye viral reels banana chahte ho? Yeh dekho!",
+      "startSec": 0,
+      "endSec": 3.67
+    },
+    {
+      "id": "s2-point1",
+      "type": "card",
+      "headline": "The 191 Files Folder",
+      "leadIn": "SECRET WEAPON 🚀",
+      "cardText": "Hooks, pacing rules, and physics",
+      "voice": "Sirf ek folder dalo jisme saare viral hooks aur pacing rules hain.",
+      "startSec": 3.67,
+      "endSec": 8,
+      "chip": "SECRET WEAPON 🚀"
+    },
+    {
+      "id": "s3-point2",
+      "type": "stat",
+      "headline": "Fully Automated",
+      "leadIn": "AI POWER 📊",
+      "value": "100%",
+      "label": "Auto-Scripted & Rendered",
+      "voice": "Claude Code khud video likhega, bolegi, animate karega aur render karega.",
+      "startSec": 8,
+      "endSec": 12.62
+    },
+    {
+      "id": "s4-point3",
+      "type": "card",
+      "headline": "Self-Fixing Videos",
+      "leadIn": "PRO TIP 💡",
+      "cardText": "AI watches and fixes weak spots",
+      "voice": "Yeh AI khud apni video dekhta hai aur weak moments ko fix kar deta hai.",
+      "startSec": 12.62,
+      "endSec": 15.89,
+      "chip": "PRO TIP 💡"
+    },
+    {
+      "id": "s5-cta",
+      "type": "title",
+      "headline": "Comment SKILL Below",
+      "leadIn": "DAILY AI TRICKS 🔥",
+      "subtitle": "Follow @techwith.GenZ",
+      "voice": "Aise daily AI updates ke liye follow karo @techwith.GenZ",
+      "startSec": 15.89,
+      "endSec": 19.78
+    }
+  ]
+}

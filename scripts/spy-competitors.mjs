@@ -39,6 +39,54 @@ console.log(`📚 Already Processed Reels: ${processedSet.size}`);
 console.log("=======================================================\n");
 
 async function main() {
+  const explicitUrlArg =
+    process.argv.find((a) => a.startsWith("--url="))?.split("=")[1] ||
+    (process.argv.indexOf("--url") !== -1
+      ? process.argv[process.argv.indexOf("--url") + 1]
+      : null);
+
+  const explicitTopicArg =
+    process.argv.find((a) => a.startsWith("--topic="))?.split("=")[1] ||
+    (process.argv.indexOf("--topic") !== -1
+      ? process.argv[process.argv.indexOf("--topic") + 1]
+      : null);
+
+  // Fast-track: Direct Topic Mode without browser
+  if (explicitTopicArg) {
+    console.log(`💡 Instant Topic Mode: "${explicitTopicArg}"`);
+    console.log(`🤖 Calling Gemini 3.5 Flash to design Indian Gen-Z tech reel...`);
+    const remixedReel = await remixContentWithGemini({
+      channel: "tech-trends",
+      url: "https://instagram.com/techwith.genz",
+      caption: explicitTopicArg,
+      topicHint: explicitTopicArg,
+    });
+
+    const slug = remixedReel.meta.slug || `reel-${Date.now()}`;
+    const targetDir = path.join(rootDir, "reels", slug);
+    fs.mkdirSync(targetDir, { recursive: true });
+    fs.writeFileSync(path.join(targetDir, "reel.json"), JSON.stringify(remixedReel, null, 2));
+
+    history.processedReels.push({
+      channel: "custom-topic",
+      shortcode: `topic-${Date.now()}`,
+      url: "https://instagram.com/techwith.genz",
+      originalTopic: remixedReel.meta.topic || explicitTopicArg,
+      ourSlug: slug,
+      processedAt: new Date().toISOString(),
+      status: "READY_TO_RENDER",
+    });
+    fs.writeFileSync(historyPath, JSON.stringify(history, null, 2));
+
+    console.log("\n=======================================================");
+    console.log(`🎉 SUCCESS: New Reel Created: "${slug}"`);
+    console.log(`📄 Path: reels/${slug}/reel.json`);
+    console.log(`🔥 Title: "${remixedReel.meta.title}"`);
+    console.log(`🎙️ Scenes: ${remixedReel.scenes.length} Scenes in Hindi`);
+    console.log("=======================================================\n");
+    return;
+  }
+
   const context = await chromium.launchPersistentContext(userDataDir, {
     headless: true,
     viewport: { width: 1280, height: 900 },
@@ -47,54 +95,65 @@ async function main() {
     args: ["--disable-blink-features=AutomationControlled"],
   });
 
-  const page = context.pages()[0] || await context.newPage();
+  const page = context.pages()[0] || (await context.newPage());
 
   let targetReel = null;
 
-  for (const ch of channels) {
-    console.log(`🔍 Scanning @${ch}...`);
-    try {
-      await page.goto(`https://www.instagram.com/${ch}/`, {
-        waitUntil: "domcontentloaded",
-        timeout: 25000,
-      });
-      await page.waitForTimeout(2000);
+  if (explicitUrlArg) {
+    console.log(`🎯 Targeted URL Mode: ${explicitUrlArg}`);
+    const parts = explicitUrlArg.split("/").filter(Boolean);
+    const shortcode = parts[parts.length - 1];
+    targetReel = {
+      channel: "direct-link",
+      shortcode,
+      url: explicitUrlArg,
+    };
+  } else {
+    for (const ch of channels) {
+      console.log(`🔍 Scanning @${ch}...`);
+      try {
+        await page.goto(`https://www.instagram.com/${ch}/`, {
+          waitUntil: "domcontentloaded",
+          timeout: 25000,
+        });
+        await page.waitForTimeout(2000);
 
-      const allLinks = await page.locator("a").all();
-      const reelUrls = [];
+        const allLinks = await page.locator("a").all();
+        const reelUrls = [];
 
-      for (const a of allLinks) {
-        const h = await a.getAttribute("href");
-        if (h && (h.includes("/reel/") || h.includes("/p/"))) {
-          const clean = h.split("?")[0];
-          if (!reelUrls.includes(clean)) reelUrls.push(clean);
+        for (const a of allLinks) {
+          const h = await a.getAttribute("href");
+          if (h && (h.includes("/reel/") || h.includes("/p/"))) {
+            const clean = h.split("?")[0];
+            if (!reelUrls.includes(clean)) reelUrls.push(clean);
+          }
         }
-      }
 
-      console.log(`   Found ${reelUrls.length} media posts for @${ch}`);
+        console.log(`   Found ${reelUrls.length} media posts for @${ch}`);
 
-      // Check for unprocessed reel
-      for (const rPath of reelUrls) {
-        const parts = rPath.split("/").filter(Boolean);
-        const shortcode = parts[parts.length - 1];
-        const fullUrl = `https://www.instagram.com${rPath}`;
+        // Check for unprocessed reel
+        for (const rPath of reelUrls) {
+          const parts = rPath.split("/").filter(Boolean);
+          const shortcode = parts[parts.length - 1];
+          const fullUrl = `https://www.instagram.com${rPath}`;
 
-        if (!processedSet.has(shortcode) && !processedSet.has(fullUrl)) {
-          console.log(`   ✨ NEW UNPROCESSED REEL FOUND: ${fullUrl}`);
-          targetReel = {
-            channel: ch,
-            shortcode,
-            url: fullUrl,
-          };
-          break;
-        } else {
-          console.log(`   ⏭️  Already processed: ${shortcode}`);
+          if (!processedSet.has(shortcode) && !processedSet.has(fullUrl)) {
+            console.log(`   ✨ NEW UNPROCESSED REEL FOUND: ${fullUrl}`);
+            targetReel = {
+              channel: ch,
+              shortcode,
+              url: fullUrl,
+            };
+            break;
+          } else {
+            console.log(`   ⏭️  Already processed: ${shortcode}`);
+          }
         }
-      }
 
-      if (targetReel) break; // Found fresh reel, proceed to extraction
-    } catch (err) {
-      console.warn(`   ⚠️ Could not scan @${ch}: ${err.message}`);
+        if (targetReel) break; // Found fresh reel, proceed to extraction
+      } catch (err) {
+        console.warn(`   ⚠️ Could not scan @${ch}: ${err.message}`);
+      }
     }
   }
 

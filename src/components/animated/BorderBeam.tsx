@@ -15,7 +15,6 @@ export interface BorderBeamProps {
  * Animates a glowing traveling light beam along the border of any container.
  */
 export const BorderBeam: React.FC<BorderBeamProps> = ({
-  size = 120,
   duration = 90,
   colorFrom = "#06b6d4",
   colorTo = "#3b82f6",

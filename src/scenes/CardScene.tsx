@@ -39,6 +39,9 @@ export const CardScene: React.FC<
   durationInFrames,
   slug,
 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+
   // Bespoke scene for NPCI 0.4% MDR Rule (UPI Reel)
   if (slug === "upi-free-secret" && id === "s3-mdr-rule" || id === "s3-mdr-rule") {
     return <MdrRuleScene durationInFrames={durationInFrames} />;
@@ -88,9 +91,6 @@ export const CardScene: React.FC<
   if (id === "s4-razorpay" || (slug === "startup-ipos-delayed-2027" && id?.includes("razorpay"))) {
     return <RazorpayDossierScene durationInFrames={durationInFrames} />;
   }
-
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
 
   const hasBadge = !!(icon || featuredBadge);
   const badgeTitle = featuredBadge?.title || (icon ? icon.toUpperCase() : cardText);

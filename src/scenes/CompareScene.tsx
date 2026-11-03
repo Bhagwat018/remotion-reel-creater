@@ -36,16 +36,16 @@ export const CompareScene: React.FC<
   durationInFrames,
 }) => {
   const parseSide = (
-    obj?: any,
+    obj?: Record<string, unknown> | null,
     labelStr?: string,
     titleProp?: string,
     itemsProp?: string[],
     badgeProp?: string,
     defaultLabel = "Strategy A"
   ) => {
-    const title = obj?.label || obj?.title || titleProp || labelStr || defaultLabel;
-    const items = obj?.items || obj?.points || itemsProp || ["Key Highlight", "Performance Metric"];
-    const badge = obj?.badge || badgeProp || undefined;
+    const title = (obj?.label as string) || (obj?.title as string) || titleProp || labelStr || defaultLabel;
+    const items = (obj?.items as string[]) || (obj?.points as string[]) || itemsProp || ["Key Highlight", "Performance Metric"];
+    const badge = (obj?.badge as string) || badgeProp || undefined;
 
     return {
       title,

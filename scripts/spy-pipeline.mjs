@@ -10,15 +10,19 @@ const rootDir = path.resolve(__dirname, "..");
 const historyPath = path.join(rootDir, "data", "competitors_history.json");
 
 const shouldPost = process.argv.includes("--post");
+const passthroughArgs = process.argv.slice(2).filter((arg) => arg !== "--post" && arg !== "--");
 
 console.log("\n=======================================================");
 console.log("⚡ 1-CLICK AI SPY, REMIX, RENDER & AUTO-POST PIPELINE");
 console.log(`Auto Post: ${shouldPost ? "YES (Will post to Instagram)" : "NO (Render only)"}`);
+if (passthroughArgs.length > 0) {
+  console.log(`Parameters: ${passthroughArgs.join(" ")}`);
+}
 console.log("=======================================================\n");
 
 // 1. Run Spy Script
 const spyScript = path.join(rootDir, "scripts", "spy-competitors.mjs");
-const spyRes = spawnSync("node", [spyScript], {
+const spyRes = spawnSync("node", [spyScript, ...passthroughArgs], {
   stdio: "inherit",
   cwd: rootDir,
 });

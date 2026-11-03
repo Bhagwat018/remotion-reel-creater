@@ -42,6 +42,8 @@ export const StatScene: React.FC<
   durationInFrames,
   slug,
 }) => {
+  const frame = useCurrentFrame();
+
   // Bespoke scene for UPI August Record Volume (2,451 CR)
   if (slug === "upi-free-secret" || id === "s2-volume") {
     return <UpiRecordVolumeScene durationInFrames={durationInFrames} />;
@@ -71,7 +73,6 @@ export const StatScene: React.FC<
   if (slug === "ipo-4-beginner-questions" || id === "s5-sme" && headline?.includes("SME")) {
     return <SmeVsMainboardScene durationInFrames={durationInFrames} />;
   }
-  const frame = useCurrentFrame();
 
   const rawVal = String(value || statNumber || "10x");
   const displayLabel = label || statLabel || "Key Highlight Metric";

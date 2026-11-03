@@ -52,11 +52,11 @@ fs.mkdirSync(tempDir, { recursive: true });
 const wordsList = [];
 const sceneAudioFiles = [];
 
-// Voice selection: meta.voice > CLI param > default "Rishi"
+// Voice selection: meta.voice > CLI param > default "shubh" if Sarvam available, else "Rishi"
 const requestedVoice = (
   args.find((a) => a.startsWith("--voice="))?.split("=")[1] ||
   reelData.meta?.voice ||
-  "Rishi"
+  (process.env.SARVAM_API_KEY ? "shubh" : "Rishi")
 ).trim();
 
 const speedMultiplier = parseFloat(reelData.meta?.voiceSpeed || 1.05);
@@ -132,7 +132,10 @@ for (let i = 0; i < scenes.length; i++) {
         if (json.audios && json.audios[0]) {
           const rawWav = path.join(tempDir, `sarvam_${i}.wav`);
           fs.writeFileSync(rawWav, Buffer.from(json.audios[0], "base64"));
-          execSync(`ffmpeg -y -i "${rawWav}" -codec:a libmp3lame -b:a 192k "${sceneMp3}" 2>/dev/null`);
+          // Broadcast Studio EQ & Compression on raw Sarvam audio
+          execSync(
+            `ffmpeg -y -i "${rawWav}" -af "equalizer=f=120:width_type=o:width=2:g=3.5,equalizer=f=3200:width_type=o:width=1.5:g=2.5,acompressor=threshold=-16dB:ratio=4:attack=5:release=50,loudnorm=I=-14:LRA=7:tp=-1.5" -b:a 192k "${sceneMp3}" 2>/dev/null`
+          );
           synthesized = true;
         }
       } else {
@@ -348,7 +351,9 @@ sceneAudioFiles.forEach((item, idx) => {
 });
 
 const mixInputs = sceneAudioFiles.map((_, idx) => `[a${idx}]`).join("");
-filterComplex.push(`${mixInputs}amix=inputs=${sceneAudioFiles.length}:dropout_transition=0,volume=1.4[outa]`);
+// Broadcast Studio Master vocal chain (-14 LUFS standard, EQ warmth, dynamic compression)
+const masterMasteringChain = "equalizer=f=120:width_type=o:width=2:g=2.5,equalizer=f=3200:width_type=o:width=1.5:g=2,acompressor=threshold=-16dB:ratio=4:attack=5:release=50,loudnorm=I=-14:LRA=7:tp=-1.5";
+filterComplex.push(`${mixInputs}amix=inputs=${sceneAudioFiles.length}:dropout_transition=0,volume=1.2,${masterMasteringChain}[outa]`);
 
 const combinedMp3 = path.join(tempDir, "voice_combined.mp3");
 const ffmpegCmd = `ffmpeg -y ${filterInputs.join(" ")} -filter_complex "${filterComplex.join(";")}" -map "[outa]" -t ${totalDuration} "${combinedMp3}" 2>/dev/null`;

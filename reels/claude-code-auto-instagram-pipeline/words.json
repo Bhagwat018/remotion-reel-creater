@@ -1,0 +1,642 @@
+[
+  {
+    "word": "Yeh",
+    "startSec": 0,
+    "endSec": 0.33
+  },
+  {
+    "word": "banda",
+    "startSec": 0.33,
+    "endSec": 0.66
+  },
+  {
+    "word": "sirf",
+    "startSec": 0.66,
+    "endSec": 0.99
+  },
+  {
+    "word": "1",
+    "startSec": 1,
+    "endSec": 1.33
+  },
+  {
+    "word": "folder",
+    "startSec": 1.33,
+    "endSec": 1.66
+  },
+  {
+    "word": "aur",
+    "startSec": 1.66,
+    "endSec": 1.99
+  },
+  {
+    "word": "Claude",
+    "startSec": 1.99,
+    "endSec": 2.32
+  },
+  {
+    "word": "Code",
+    "startSec": 2.32,
+    "endSec": 2.65
+  },
+  {
+    "word": "se",
+    "startSec": 2.66,
+    "endSec": 2.99
+  },
+  {
+    "word": "poora",
+    "startSec": 2.99,
+    "endSec": 3.32
+  },
+  {
+    "word": "Instagram",
+    "startSec": 3.32,
+    "endSec": 3.65
+  },
+  {
+    "word": "channel",
+    "startSec": 3.65,
+    "endSec": 3.98
+  },
+  {
+    "word": "auto-pilot",
+    "startSec": 3.98,
+    "endSec": 4.31
+  },
+  {
+    "word": "pe",
+    "startSec": 4.32,
+    "endSec": 4.65
+  },
+  {
+    "word": "chala",
+    "startSec": 4.65,
+    "endSec": 4.98
+  },
+  {
+    "word": "raha",
+    "startSec": 4.98,
+    "endSec": 5.31
+  },
+  {
+    "word": "hai!",
+    "startSec": 5.31,
+    "endSec": 5.64
+  },
+  {
+    "word": "Paanch",
+    "startSec": 5.99,
+    "endSec": 6.29
+  },
+  {
+    "word": "ghante",
+    "startSec": 6.29,
+    "endSec": 6.59
+  },
+  {
+    "word": "Premiere",
+    "startSec": 6.6,
+    "endSec": 6.9
+  },
+  {
+    "word": "Pro",
+    "startSec": 6.9,
+    "endSec": 7.2
+  },
+  {
+    "word": "mein",
+    "startSec": 7.21,
+    "endSec": 7.51
+  },
+  {
+    "word": "waste",
+    "startSec": 7.51,
+    "endSec": 7.81
+  },
+  {
+    "word": "karna",
+    "startSec": 7.82,
+    "endSec": 8.12
+  },
+  {
+    "word": "chhod",
+    "startSec": 8.12,
+    "endSec": 8.42
+  },
+  {
+    "word": "do.",
+    "startSec": 8.43,
+    "endSec": 8.73
+  },
+  {
+    "word": "Claude",
+    "startSec": 8.73,
+    "endSec": 9.03
+  },
+  {
+    "word": "Code",
+    "startSec": 9.04,
+    "endSec": 9.34
+  },
+  {
+    "word": "saara",
+    "startSec": 9.34,
+    "endSec": 9.64
+  },
+  {
+    "word": "kaam",
+    "startSec": 9.65,
+    "endSec": 9.95
+  },
+  {
+    "word": "kuch",
+    "startSec": 9.95,
+    "endSec": 10.25
+  },
+  {
+    "word": "seconds",
+    "startSec": 10.26,
+    "endSec": 10.56
+  },
+  {
+    "word": "mein",
+    "startSec": 10.56,
+    "endSec": 10.86
+  },
+  {
+    "word": "karta",
+    "startSec": 10.87,
+    "endSec": 11.17
+  },
+  {
+    "word": "hai.",
+    "startSec": 11.17,
+    "endSec": 11.47
+  },
+  {
+    "word": "System",
+    "startSec": 11.83,
+    "endSec": 12.15
+  },
+  {
+    "word": "architecture",
+    "startSec": 12.15,
+    "endSec": 12.47
+  },
+  {
+    "word": "mein",
+    "startSec": 12.47,
+    "endSec": 12.79
+  },
+  {
+    "word": "dataset",
+    "startSec": 12.78,
+    "endSec": 13.1
+  },
+  {
+    "word": "core",
+    "startSec": 13.1,
+    "endSec": 13.42
+  },
+  {
+    "word": "se",
+    "startSec": 13.42,
+    "endSec": 13.74
+  },
+  {
+    "word": "lekar",
+    "startSec": 13.74,
+    "endSec": 14.06
+  },
+  {
+    "word": "multi-agent",
+    "startSec": 14.06,
+    "endSec": 14.38
+  },
+  {
+    "word": "engine",
+    "startSec": 14.37,
+    "endSec": 14.69
+  },
+  {
+    "word": "aur",
+    "startSec": 14.69,
+    "endSec": 15.01
+  },
+  {
+    "word": "Remotion",
+    "startSec": 15.01,
+    "endSec": 15.33
+  },
+  {
+    "word": "renderer",
+    "startSec": 15.33,
+    "endSec": 15.65
+  },
+  {
+    "word": "tak",
+    "startSec": 15.64,
+    "endSec": 15.96
+  },
+  {
+    "word": "sab",
+    "startSec": 15.96,
+    "endSec": 16.28
+  },
+  {
+    "word": "kuch",
+    "startSec": 16.28,
+    "endSec": 16.6
+  },
+  {
+    "word": "fully",
+    "startSec": 16.6,
+    "endSec": 16.92
+  },
+  {
+    "word": "connected",
+    "startSec": 16.92,
+    "endSec": 17.24
+  },
+  {
+    "word": "hai.",
+    "startSec": 17.23,
+    "endSec": 17.55
+  },
+  {
+    "word": "Do",
+    "startSec": 17.9,
+    "endSec": 18.17
+  },
+  {
+    "word": "sau",
+    "startSec": 18.17,
+    "endSec": 18.44
+  },
+  {
+    "word": "ikkis",
+    "startSec": 18.44,
+    "endSec": 18.71
+  },
+  {
+    "word": "engineered",
+    "startSec": 18.72,
+    "endSec": 18.99
+  },
+  {
+    "word": "viral",
+    "startSec": 18.99,
+    "endSec": 19.26
+  },
+  {
+    "word": "prompt",
+    "startSec": 19.26,
+    "endSec": 19.53
+  },
+  {
+    "word": "files",
+    "startSec": 19.53,
+    "endSec": 19.8
+  },
+  {
+    "word": "direct",
+    "startSec": 19.81,
+    "endSec": 20.08
+  },
+  {
+    "word": "feed",
+    "startSec": 20.08,
+    "endSec": 20.35
+  },
+  {
+    "word": "kiye",
+    "startSec": 20.35,
+    "endSec": 20.62
+  },
+  {
+    "word": "hain",
+    "startSec": 20.62,
+    "endSec": 20.89
+  },
+  {
+    "word": "system",
+    "startSec": 20.89,
+    "endSec": 21.16
+  },
+  {
+    "word": "ke",
+    "startSec": 21.17,
+    "endSec": 21.44
+  },
+  {
+    "word": "andar.",
+    "startSec": 21.44,
+    "endSec": 21.71
+  },
+  {
+    "word": "Bus",
+    "startSec": 22.06,
+    "endSec": 22.44
+  },
+  {
+    "word": "ek",
+    "startSec": 22.44,
+    "endSec": 22.82
+  },
+  {
+    "word": "terminal",
+    "startSec": 22.82,
+    "endSec": 23.2
+  },
+  {
+    "word": "command",
+    "startSec": 23.21,
+    "endSec": 23.59
+  },
+  {
+    "word": "run",
+    "startSec": 23.59,
+    "endSec": 23.97
+  },
+  {
+    "word": "karo,",
+    "startSec": 23.97,
+    "endSec": 24.35
+  },
+  {
+    "word": "aur",
+    "startSec": 24.35,
+    "endSec": 24.73
+  },
+  {
+    "word": "instant",
+    "startSec": 24.73,
+    "endSec": 25.11
+  },
+  {
+    "word": "high-retention",
+    "startSec": 25.11,
+    "endSec": 25.49
+  },
+  {
+    "word": "9-by-16",
+    "startSec": 25.5,
+    "endSec": 25.88
+  },
+  {
+    "word": "video",
+    "startSec": 25.88,
+    "endSec": 26.26
+  },
+  {
+    "word": "ready",
+    "startSec": 26.26,
+    "endSec": 26.64
+  },
+  {
+    "word": "ho",
+    "startSec": 26.64,
+    "endSec": 27.02
+  },
+  {
+    "word": "jaati",
+    "startSec": 27.02,
+    "endSec": 27.4
+  },
+  {
+    "word": "hai.",
+    "startSec": 27.41,
+    "endSec": 27.79
+  },
+  {
+    "word": "Steps",
+    "startSec": 28.14,
+    "endSec": 28.5
+  },
+  {
+    "word": "simple",
+    "startSec": 28.5,
+    "endSec": 28.86
+  },
+  {
+    "word": "hain:",
+    "startSec": 28.85,
+    "endSec": 29.21
+  },
+  {
+    "word": "folder",
+    "startSec": 29.21,
+    "endSec": 29.57
+  },
+  {
+    "word": "banao,",
+    "startSec": 29.57,
+    "endSec": 29.93
+  },
+  {
+    "word": "Claude",
+    "startSec": 29.92,
+    "endSec": 30.28
+  },
+  {
+    "word": "Code",
+    "startSec": 30.28,
+    "endSec": 30.64
+  },
+  {
+    "word": "skill",
+    "startSec": 30.64,
+    "endSec": 31
+  },
+  {
+    "word": "load",
+    "startSec": 30.99,
+    "endSec": 31.35
+  },
+  {
+    "word": "karo,",
+    "startSec": 31.35,
+    "endSec": 31.71
+  },
+  {
+    "word": "aur",
+    "startSec": 31.7,
+    "endSec": 32.06
+  },
+  {
+    "word": "automated",
+    "startSec": 32.06,
+    "endSec": 32.42
+  },
+  {
+    "word": "generation",
+    "startSec": 32.42,
+    "endSec": 32.78
+  },
+  {
+    "word": "start",
+    "startSec": 32.77,
+    "endSec": 33.13
+  },
+  {
+    "word": "karo.",
+    "startSec": 33.13,
+    "endSec": 33.49
+  },
+  {
+    "word": "Asli",
+    "startSec": 33.84,
+    "endSec": 34.18
+  },
+  {
+    "word": "game-changer",
+    "startSec": 34.18,
+    "endSec": 34.52
+  },
+  {
+    "word": "ye",
+    "startSec": 34.52,
+    "endSec": 34.86
+  },
+  {
+    "word": "hai",
+    "startSec": 34.86,
+    "endSec": 35.2
+  },
+  {
+    "word": "ki",
+    "startSec": 35.2,
+    "endSec": 35.54
+  },
+  {
+    "word": "aap",
+    "startSec": 35.53,
+    "endSec": 35.87
+  },
+  {
+    "word": "infinite",
+    "startSec": 35.87,
+    "endSec": 36.21
+  },
+  {
+    "word": "scale",
+    "startSec": 36.21,
+    "endSec": 36.55
+  },
+  {
+    "word": "pe",
+    "startSec": 36.55,
+    "endSec": 36.89
+  },
+  {
+    "word": "content",
+    "startSec": 36.89,
+    "endSec": 37.23
+  },
+  {
+    "word": "batching",
+    "startSec": 37.23,
+    "endSec": 37.57
+  },
+  {
+    "word": "kar",
+    "startSec": 37.57,
+    "endSec": 37.91
+  },
+  {
+    "word": "sakte",
+    "startSec": 37.91,
+    "endSec": 38.25
+  },
+  {
+    "word": "ho",
+    "startSec": 38.24,
+    "endSec": 38.58
+  },
+  {
+    "word": "bina",
+    "startSec": 38.58,
+    "endSec": 38.92
+  },
+  {
+    "word": "team",
+    "startSec": 38.92,
+    "endSec": 39.26
+  },
+  {
+    "word": "ke.",
+    "startSec": 39.26,
+    "endSec": 39.6
+  },
+  {
+    "word": "Aise",
+    "startSec": 39.95,
+    "endSec": 40.35
+  },
+  {
+    "word": "hi",
+    "startSec": 40.35,
+    "endSec": 40.75
+  },
+  {
+    "word": "real-world",
+    "startSec": 40.76,
+    "endSec": 41.16
+  },
+  {
+    "word": "tech",
+    "startSec": 41.16,
+    "endSec": 41.56
+  },
+  {
+    "word": "aur",
+    "startSec": 41.57,
+    "endSec": 41.97
+  },
+  {
+    "word": "system",
+    "startSec": 41.97,
+    "endSec": 42.37
+  },
+  {
+    "word": "architecture",
+    "startSec": 42.37,
+    "endSec": 42.77
+  },
+  {
+    "word": "breakdowns",
+    "startSec": 42.78,
+    "endSec": 43.18
+  },
+  {
+    "word": "ke",
+    "startSec": 43.18,
+    "endSec": 43.58
+  },
+  {
+    "word": "liye",
+    "startSec": 43.58,
+    "endSec": 43.98
+  },
+  {
+    "word": "@techwith.GenZ",
+    "startSec": 43.99,
+    "endSec": 44.39
+  },
+  {
+    "word": "ko",
+    "startSec": 44.39,
+    "endSec": 44.79
+  },
+  {
+    "word": "follow",
+    "startSec": 44.8,
+    "endSec": 45.2
+  },
+  {
+    "word": "karo!",
+    "startSec": 45.2,
+    "endSec": 45.6
+  }
+]

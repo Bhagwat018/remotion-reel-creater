@@ -25,6 +25,9 @@ export const TitleScene: React.FC<
     slug?: string;
   }
 > = ({ id, direction, leadIn, subtitle, headline, items, tags, durationInFrames, slug }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+
   // Bespoke full-screen hook for UPI Free Economics
   if (slug === "upi-free-secret" || (id === "s1-hook" && headline?.includes("UPI"))) {
     return <UpiHookScene durationInFrames={durationInFrames} />;
@@ -59,9 +62,6 @@ export const TitleScene: React.FC<
   if (slug === "startup-ipos-delayed-2027") {
     return <IpoShowdownScene durationInFrames={durationInFrames} />;
   }
-
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
 
   const entrance = spring({
     frame: frame - 2,

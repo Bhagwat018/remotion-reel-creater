@@ -1,0 +1,287 @@
+[
+  {
+    "word": "Bina",
+    "startSec": 0,
+    "endSec": 0.33
+  },
+  {
+    "word": "shakal",
+    "startSec": 0.33,
+    "endSec": 0.66
+  },
+  {
+    "word": "dikhaye",
+    "startSec": 0.66,
+    "endSec": 0.99
+  },
+  {
+    "word": "viral",
+    "startSec": 1,
+    "endSec": 1.33
+  },
+  {
+    "word": "reels",
+    "startSec": 1.33,
+    "endSec": 1.66
+  },
+  {
+    "word": "banana",
+    "startSec": 1.66,
+    "endSec": 1.99
+  },
+  {
+    "word": "chahte",
+    "startSec": 1.99,
+    "endSec": 2.32
+  },
+  {
+    "word": "ho?",
+    "startSec": 2.32,
+    "endSec": 2.65
+  },
+  {
+    "word": "Yeh",
+    "startSec": 2.65,
+    "endSec": 2.98
+  },
+  {
+    "word": "dekho!",
+    "startSec": 2.99,
+    "endSec": 3.32
+  },
+  {
+    "word": "Sirf",
+    "startSec": 3.67,
+    "endSec": 4
+  },
+  {
+    "word": "ek",
+    "startSec": 4,
+    "endSec": 4.33
+  },
+  {
+    "word": "folder",
+    "startSec": 4.33,
+    "endSec": 4.66
+  },
+  {
+    "word": "dalo",
+    "startSec": 4.67,
+    "endSec": 5
+  },
+  {
+    "word": "jisme",
+    "startSec": 5,
+    "endSec": 5.33
+  },
+  {
+    "word": "saare",
+    "startSec": 5.33,
+    "endSec": 5.66
+  },
+  {
+    "word": "viral",
+    "startSec": 5.66,
+    "endSec": 5.99
+  },
+  {
+    "word": "hooks",
+    "startSec": 5.99,
+    "endSec": 6.32
+  },
+  {
+    "word": "aur",
+    "startSec": 6.32,
+    "endSec": 6.65
+  },
+  {
+    "word": "pacing",
+    "startSec": 6.66,
+    "endSec": 6.99
+  },
+  {
+    "word": "rules",
+    "startSec": 6.99,
+    "endSec": 7.32
+  },
+  {
+    "word": "hain.",
+    "startSec": 7.32,
+    "endSec": 7.65
+  },
+  {
+    "word": "Claude",
+    "startSec": 8,
+    "endSec": 8.39
+  },
+  {
+    "word": "Code",
+    "startSec": 8.39,
+    "endSec": 8.78
+  },
+  {
+    "word": "khud",
+    "startSec": 8.78,
+    "endSec": 9.17
+  },
+  {
+    "word": "video",
+    "startSec": 9.16,
+    "endSec": 9.55
+  },
+  {
+    "word": "likhega,",
+    "startSec": 9.55,
+    "endSec": 9.94
+  },
+  {
+    "word": "bolegi,",
+    "startSec": 9.94,
+    "endSec": 10.33
+  },
+  {
+    "word": "animate",
+    "startSec": 10.33,
+    "endSec": 10.72
+  },
+  {
+    "word": "karega",
+    "startSec": 10.72,
+    "endSec": 11.11
+  },
+  {
+    "word": "aur",
+    "startSec": 11.11,
+    "endSec": 11.5
+  },
+  {
+    "word": "render",
+    "startSec": 11.49,
+    "endSec": 11.88
+  },
+  {
+    "word": "karega.",
+    "startSec": 11.88,
+    "endSec": 12.27
+  },
+  {
+    "word": "Yeh",
+    "startSec": 12.62,
+    "endSec": 12.81
+  },
+  {
+    "word": "AI",
+    "startSec": 12.81,
+    "endSec": 13
+  },
+  {
+    "word": "khud",
+    "startSec": 13.01,
+    "endSec": 13.2
+  },
+  {
+    "word": "apni",
+    "startSec": 13.2,
+    "endSec": 13.39
+  },
+  {
+    "word": "video",
+    "startSec": 13.4,
+    "endSec": 13.59
+  },
+  {
+    "word": "dekhta",
+    "startSec": 13.59,
+    "endSec": 13.78
+  },
+  {
+    "word": "hai",
+    "startSec": 13.79,
+    "endSec": 13.98
+  },
+  {
+    "word": "aur",
+    "startSec": 13.98,
+    "endSec": 14.17
+  },
+  {
+    "word": "weak",
+    "startSec": 14.18,
+    "endSec": 14.37
+  },
+  {
+    "word": "moments",
+    "startSec": 14.37,
+    "endSec": 14.56
+  },
+  {
+    "word": "ko",
+    "startSec": 14.57,
+    "endSec": 14.76
+  },
+  {
+    "word": "fix",
+    "startSec": 14.76,
+    "endSec": 14.95
+  },
+  {
+    "word": "kar",
+    "startSec": 14.96,
+    "endSec": 15.15
+  },
+  {
+    "word": "deta",
+    "startSec": 15.15,
+    "endSec": 15.34
+  },
+  {
+    "word": "hai.",
+    "startSec": 15.35,
+    "endSec": 15.54
+  },
+  {
+    "word": "Aise",
+    "startSec": 15.89,
+    "endSec": 16.26
+  },
+  {
+    "word": "daily",
+    "startSec": 16.26,
+    "endSec": 16.63
+  },
+  {
+    "word": "AI",
+    "startSec": 16.62,
+    "endSec": 16.99
+  },
+  {
+    "word": "updates",
+    "startSec": 16.99,
+    "endSec": 17.36
+  },
+  {
+    "word": "ke",
+    "startSec": 17.35,
+    "endSec": 17.72
+  },
+  {
+    "word": "liye",
+    "startSec": 17.72,
+    "endSec": 18.09
+  },
+  {
+    "word": "follow",
+    "startSec": 18.09,
+    "endSec": 18.46
+  },
+  {
+    "word": "karo",
+    "startSec": 18.45,
+    "endSec": 18.82
+  },
+  {
+    "word": "@techwith.GenZ",
+    "startSec": 18.82,
+    "endSec": 19.19
+  }
+]

@@ -42,12 +42,16 @@ let caption = customCaption;
 if (!caption && fs.existsSync(reelJsonPath)) {
   try {
     const reelData = JSON.parse(fs.readFileSync(reelJsonPath, "utf-8"));
-    const title = reelData.title || reelData.meta?.title || slug;
-    const desc = reelData.meta?.description || "";
-    const tags = reelData.meta?.tags
-      ? reelData.meta.tags.map((t) => `#${t.replace(/^#/, "")}`).join(" ")
-      : "";
-    caption = `${title}\n\n${desc}\n\n${tags || "#reels #trending"}`.trim();
+    if (reelData.meta?.instagramCaption) {
+      caption = reelData.meta.instagramCaption;
+    } else {
+      const title = reelData.title || reelData.meta?.title || slug;
+      const desc = reelData.meta?.description || "";
+      const tags = reelData.meta?.tags
+        ? reelData.meta.tags.map((t) => `#${t.replace(/^#/, "")}`).join(" ")
+        : "";
+      caption = `${title}\n\n${desc}\n\n${tags || "#reels #trending"}`.trim();
+    }
   } catch {}
 }
 if (!caption) {

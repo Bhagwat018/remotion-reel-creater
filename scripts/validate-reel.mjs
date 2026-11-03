@@ -145,16 +145,28 @@ const sceneTypeMap = {
   compare: baseSceneSchema.extend({
     type: z.literal("compare"),
     headline: z.string().min(1, "Headline is required for compare scene"),
-    left: z.object({ label: z.string(), items: z.array(z.string()).optional() }).optional(),
-    right: z.object({ label: z.string(), items: z.array(z.string()).optional() }).optional(),
+    left: z.object({ label: z.string().optional(), title: z.string().optional(), items: z.array(z.string()).optional(), points: z.array(z.string()).optional(), badge: z.string().optional() }).optional(),
+    right: z.object({ label: z.string().optional(), title: z.string().optional(), items: z.array(z.string()).optional(), points: z.array(z.string()).optional(), badge: z.string().optional() }).optional(),
     leftLabel: z.string().optional(),
     rightLabel: z.string().optional(),
+    leftTitle: z.string().optional(),
+    rightTitle: z.string().optional(),
+    leftItems: z.array(z.string()).optional(),
+    rightItems: z.array(z.string()).optional(),
+    leftBadge: z.string().optional(),
+    rightBadge: z.string().optional(),
   }),
   stat: baseSceneSchema.extend({
     type: z.literal("stat"),
     headline: z.string().optional(),
-    value: z.union([z.number(), z.string()]),
-    label: z.string().min(1, "label is required for stat scene"),
+    value: z.union([z.number(), z.string()]).optional(),
+    statNumber: z.union([z.number(), z.string()]).optional(),
+    label: z.string().optional(),
+    statLabel: z.string().optional(),
+    subtext: z.string().optional(),
+    badge: z.string().optional(),
+    pills: z.array(z.string()).optional(),
+    items: z.array(z.string()).optional(),
   }),
   steps: baseSceneSchema.extend({
     type: z.literal("steps"),
@@ -362,6 +374,12 @@ if (!Array.isArray(rawData.scenes) || rawData.scenes.length === 0) {
     }
     if (s.type === "cta") {
       if (!s.buttonText && s.callToAction) { s.buttonText = s.callToAction; modified = true; }
+      if (!s.handle && s.subtitle?.startsWith("@")) { s.handle = s.subtitle; modified = true; }
+      if (!s.buttonText && !s.handle && !s.callToAction) {
+        s.buttonText = "FOLLOW NOW 🔥";
+        s.handle = rawData.meta?.handle || "@techwith.GenZ";
+        modified = true;
+      }
     }
     return s;
   });

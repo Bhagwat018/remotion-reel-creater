@@ -41,6 +41,7 @@ export const CtaScene: React.FC<
   durationInFrames,
   slug,
 }) => {
+  const frame = useCurrentFrame();
   const resolvedHandle = handle || "@techwith.GenZ";
 
   // Bespoke scene for UPI CTA
@@ -78,7 +79,6 @@ export const CtaScene: React.FC<
     return <StartupPollScene durationInFrames={durationInFrames} handle={resolvedHandle} />;
   }
 
-  const frame = useCurrentFrame();
   const effectiveButtonText = buttonText || callToAction || "FOLLOW NOW 🔥";
   const clickFrame = 36;
   const isDepressed = frame >= clickFrame && frame <= clickFrame + 6;
