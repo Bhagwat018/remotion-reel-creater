@@ -22,6 +22,8 @@ const defaultFallbackProps: RootReelProps = {
     showSafeZone: false,
     showHandle: false,
     showTicker: true,
+    tickerPosition: "bottom",
+    tickerBottomOffset: 130,
     manychatHook: false,
     coverIntro: false,
   },

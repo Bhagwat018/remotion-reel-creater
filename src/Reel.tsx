@@ -174,7 +174,12 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
         {meta.showHandle && <HandlePill handle={meta.handle} />}
 
         {/* Live Scrolling Financial Market Ticker (Bloomberg / CNBC Style) */}
-        {meta.showTicker !== false && <MarketTickerTape />}
+        {meta.showTicker !== false && (
+          <MarketTickerTape
+            position={meta.tickerPosition ?? "bottom"}
+            bottomOffset={meta.tickerBottomOffset ?? 130}
+          />
+        )}
 
         {/* Real-time Speech-reactive Audio Waveform Spectrogram */}
         <AudioWaveformSpectrogram

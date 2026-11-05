@@ -513,6 +513,8 @@ export const metaSchema = z
     showSafeZone: z.boolean().optional().default(false),
     showHandle: z.boolean().optional().default(false),
     showTicker: z.boolean().optional().default(true),
+    tickerPosition: z.enum(["bottom", "top"]).optional().default("bottom"),
+    tickerBottomOffset: z.number().optional().default(130),
     manychatHook: z.boolean().optional().default(false),
     coverIntro: z.boolean().optional().default(false),
     voice: z.string().optional(),
@@ -534,6 +536,8 @@ export const metaSchema = z
       showSafeZone: meta.showSafeZone ?? false,
       showHandle: meta.showHandle ?? false,
       showTicker: meta.showTicker ?? true,
+      tickerPosition: meta.tickerPosition ?? "bottom",
+      tickerBottomOffset: meta.tickerBottomOffset ?? 130,
       manychatHook: meta.manychatHook ?? false,
       coverIntro: meta.coverIntro ?? false,
     };

@@ -3,7 +3,9 @@ import { interpolate, useCurrentFrame } from "remotion";
 
 export interface MarketTickerTapeProps {
   visible?: boolean;
+  position?: "bottom" | "top";
   topOffset?: number;
+  bottomOffset?: number;
   items?: Array<{
     symbol: string;
     value: string;
@@ -24,7 +26,9 @@ const DEFAULT_TICKER_ITEMS = [
 
 export const MarketTickerTape: React.FC<MarketTickerTapeProps> = ({
   visible = true,
-  topOffset = 185,
+  position = "bottom",
+  topOffset,
+  bottomOffset = 130, // Screen bottom se thoda upar (CNBC/Bloomberg Lower-Third)
   items = DEFAULT_TICKER_ITEMS,
 }) => {
   const frame = useCurrentFrame();
@@ -38,18 +42,24 @@ export const MarketTickerTape: React.FC<MarketTickerTapeProps> = ({
   // Pulsing Live Indicator dot
   const pulseOpacity = interpolate(Math.sin(frame * 0.18), [-1, 1], [0.4, 1]);
 
+  const isTop = position === "top" || (topOffset !== undefined && bottomOffset === undefined);
+  const positionStyle: React.CSSProperties = isTop
+    ? { top: topOffset ?? 185 }
+    : { bottom: bottomOffset ?? 130 };
+
   return (
     <div
       style={{
         position: "absolute",
-        top: topOffset,
+        ...positionStyle,
         left: 0,
         width: 1080,
         height: 52,
-        backgroundColor: "rgba(9, 9, 11, 0.88)",
+        backgroundColor: "rgba(9, 9, 11, 0.92)",
         backdropFilter: "blur(12px)",
-        borderTop: "1px solid rgba(255, 255, 255, 0.08)",
+        borderTop: "1px solid rgba(255, 255, 255, 0.12)",
         borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
+        boxShadow: "0 -4px 24px rgba(0, 0, 0, 0.45)",
         display: "flex",
         alignItems: "center",
         overflow: "hidden",
@@ -139,3 +149,4 @@ export const MarketTickerTape: React.FC<MarketTickerTapeProps> = ({
     </div>
   );
 };
+
