@@ -105,9 +105,9 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
               const talking =
                 words && words.length > 0
                   ? words.some(
-                      (w) =>
-                        tSec >= w.startSec - 0.12 && tSec <= w.endSec + 0.12
-                    )
+                    (w) =>
+                      tSec >= w.startSec - 0.12 && tSec <= w.endSec + 0.12
+                  )
                   : true;
               return talking ? 0.06 : (meta.bgmVolume || 0.22);
             }}
@@ -127,8 +127,8 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
             scene.data.type === "chart" || scene.data.type === "stat"
               ? "sfx/ding.mp3"
               : scene.data.type === "code" || scene.data.type === "flow" || scene.data.type === "bot"
-              ? "sfx/pop.mp3"
-              : "sfx/whoosh.mp3";
+                ? "sfx/pop.mp3"
+                : "sfx/whoosh.mp3";
 
           return (
             <Sequence

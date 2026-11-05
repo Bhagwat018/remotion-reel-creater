@@ -77,6 +77,16 @@
       "status": "POSTED_WITH_STORY",
       "durationSec": 46,
       "postedAt": "2026-11-05T07:37:30.000Z"
+    },
+    {
+      "channel": "live-market-ipo",
+      "shortcode": "ipo-1793875472888",
+      "url": "https://www.investorgain.com/report/live-ipo-gmp/331/",
+      "originalTopic": "HGS (India) IPO Analysis",
+      "ourSlug": "hgs-india--ipo-analysis",
+      "processedAt": "2026-11-05T10:44:32.888Z",
+      "status": "RENDERED",
+      "durationSec": 37
     }
   ]
 }
