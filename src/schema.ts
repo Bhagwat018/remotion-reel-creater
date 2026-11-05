@@ -20,6 +20,9 @@ export const VALID_SCENE_TYPES = [
   "knobs",
   "stacked",
   "flow",
+  "gmp-gauge",
+  "subscription-xray",
+  "valuation-battle",
 ] as const;
 
 export type SceneType = (typeof VALID_SCENE_TYPES)[number];
@@ -362,6 +365,54 @@ export const flowSceneSchema = baseSceneSchema
     leadIn: data.leadIn || data.subtitle,
   }));
 
+export const gmpGaugeSceneSchema = baseSceneSchema
+  .extend({
+    type: z.literal("gmp-gauge"),
+    headline: z.string().optional(),
+    gmpPercent: z.union([z.number(), z.string()]).optional(),
+    gmpPrice: z.union([z.number(), z.string()]).optional(),
+    issuePrice: z.union([z.number(), z.string()]).optional(),
+    expectedListingPrice: z.union([z.number(), z.string()]).optional(),
+    lotSize: z.union([z.number(), z.string()]).optional(),
+    profitPerLot: z.union([z.number(), z.string()]).optional(),
+    sentiment: z.string().optional(),
+  })
+  .transform((data) => ({
+    ...data,
+    leadIn: data.leadIn || data.subtitle,
+  }));
+
+export const subscriptionXraySceneSchema = baseSceneSchema
+  .extend({
+    type: z.literal("subscription-xray"),
+    headline: z.string().optional(),
+    totalMultiple: z.union([z.number(), z.string()]).optional(),
+    qibMultiple: z.union([z.number(), z.string()]).optional(),
+    niiMultiple: z.union([z.number(), z.string()]).optional(),
+    retailMultiple: z.union([z.number(), z.string()]).optional(),
+    verdict: z.string().optional(),
+  })
+  .transform((data) => ({
+    ...data,
+    leadIn: data.leadIn || data.subtitle,
+  }));
+
+export const valuationBattleSceneSchema = baseSceneSchema
+  .extend({
+    type: z.literal("valuation-battle"),
+    headline: z.string().optional(),
+    companyName: z.string().optional(),
+    companyPe: z.union([z.number(), z.string()]).optional(),
+    peerName: z.string().optional(),
+    peerPe: z.union([z.number(), z.string()]).optional(),
+    verdictBadge: z.string().optional(),
+    points: z.array(z.string()).optional(),
+  })
+  .transform((data) => ({
+    ...data,
+    leadIn: data.leadIn || data.subtitle,
+  }));
+
 export const sceneSchema = z.discriminatedUnion("type", [
   titleSceneSchema,
   pillsSceneSchema,
@@ -382,6 +433,9 @@ export const sceneSchema = z.discriminatedUnion("type", [
   knobsSceneSchema,
   stackedSceneSchema,
   flowSceneSchema,
+  gmpGaugeSceneSchema,
+  subscriptionXraySceneSchema,
+  valuationBattleSceneSchema,
 ]);
 
 export type TitleSceneProps = z.infer<typeof titleSceneSchema>;
@@ -403,6 +457,9 @@ export type BotSceneProps = z.infer<typeof botSceneSchema>;
 export type KnobsSceneProps = z.infer<typeof knobsSceneSchema>;
 export type StackedSceneProps = z.infer<typeof stackedSceneSchema>;
 export type FlowSceneProps = z.infer<typeof flowSceneSchema>;
+export type GmpGaugeSceneProps = z.infer<typeof gmpGaugeSceneSchema>;
+export type SubscriptionXraySceneProps = z.infer<typeof subscriptionXraySceneSchema>;
+export type ValuationBattleSceneProps = z.infer<typeof valuationBattleSceneSchema>;
 
 export type SceneData =
   | TitleSceneProps
@@ -423,7 +480,10 @@ export type SceneData =
   | BotSceneProps
   | KnobsSceneProps
   | StackedSceneProps
-  | FlowSceneProps;
+  | FlowSceneProps
+  | GmpGaugeSceneProps
+  | SubscriptionXraySceneProps
+  | ValuationBattleSceneProps;
 
 export const avatarSchema = z.object({
   enabled: z.boolean().default(true),

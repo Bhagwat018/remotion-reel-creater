@@ -78,6 +78,9 @@ export const VALID_SCENE_TYPES = [
   "knobs",
   "stacked",
   "flow",
+  "gmp-gauge",
+  "subscription-xray",
+  "valuation-battle",
 ];
 
 const baseSceneSchema = z.object({
@@ -252,6 +255,36 @@ const sceneTypeMap = {
     steps: z.array(z.any()).optional(),
     flow: z.array(z.any()).optional(),
     brand: z.string().optional(),
+  }),
+  "gmp-gauge": baseSceneSchema.extend({
+    type: z.literal("gmp-gauge"),
+    headline: z.string().optional(),
+    gmpPercent: z.union([z.number(), z.string()]).optional(),
+    gmpPrice: z.union([z.number(), z.string()]).optional(),
+    issuePrice: z.union([z.number(), z.string()]).optional(),
+    expectedListingPrice: z.union([z.number(), z.string()]).optional(),
+    lotSize: z.union([z.number(), z.string()]).optional(),
+    profitPerLot: z.union([z.number(), z.string()]).optional(),
+    sentiment: z.string().optional(),
+  }),
+  "subscription-xray": baseSceneSchema.extend({
+    type: z.literal("subscription-xray"),
+    headline: z.string().optional(),
+    totalMultiple: z.union([z.number(), z.string()]).optional(),
+    qibMultiple: z.union([z.number(), z.string()]).optional(),
+    niiMultiple: z.union([z.number(), z.string()]).optional(),
+    retailMultiple: z.union([z.number(), z.string()]).optional(),
+    verdict: z.string().optional(),
+  }),
+  "valuation-battle": baseSceneSchema.extend({
+    type: z.literal("valuation-battle"),
+    headline: z.string().optional(),
+    companyName: z.string().optional(),
+    companyPe: z.union([z.number(), z.string()]).optional(),
+    peerName: z.string().optional(),
+    peerPe: z.union([z.number(), z.string()]).optional(),
+    verdictBadge: z.string().optional(),
+    points: z.array(z.string()).optional(),
   }),
 };
 

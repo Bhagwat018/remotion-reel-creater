@@ -1,5 +1,10 @@
 {
   "channels": [
+    "ipowatch.in",
+    "shashankudupa",
+    "ipocentral",
+    "ca_rachanaranade",
+    "labourlawadvisor",
     "adilet.fndr",
     "mrcreates.ai",
     "techstackbro",
@@ -61,6 +66,16 @@
       "processedAt": "2026-11-05T06:46:47.070Z",
       "status": "RENDERED",
       "durationSec": 41
+    },
+    {
+      "channel": "live-market-ipo",
+      "shortcode": "ipo-1793863796788",
+      "url": "https://www.investorgain.com/report/live-ipo-gmp/331/",
+      "originalTopic": "Maxwell Engineering Solutions IPO Analysis",
+      "ourSlug": "maxwell-engineering-solutions-ipo-analysis",
+      "processedAt": "2026-11-05T07:29:56.788Z",
+      "status": "RENDERED",
+      "durationSec": 46
     }
   ]
 }

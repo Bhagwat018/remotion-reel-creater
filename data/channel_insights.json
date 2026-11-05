@@ -1,0 +1,115 @@
+{
+  "auditedAt": "2026-11-05T07:28:03.896Z",
+  "channel": "@techwith.genz",
+  "totalReelsScanned": 12,
+  "topWinningFormat": "Indian IPO & Valuation Reality Checks (15k - 19k views)",
+  "categories": {
+    "ipo": {
+      "label": "Indian IPOs & GMP Reality Checks",
+      "views": [
+        12300,
+        19000,
+        16200
+      ],
+      "avgViews": 15833,
+      "weight": 0.45
+    },
+    "fintech": {
+      "label": "Startup & FinTech Unit Economics",
+      "views": [
+        7715,
+        3717,
+        2893,
+        1759
+      ],
+      "avgViews": 4021,
+      "weight": 0.35
+    },
+    "ai": {
+      "label": "AI & Developer Superpowers",
+      "views": [
+        1292,
+        592,
+        1706,
+        627,
+        201
+      ],
+      "avgViews": 884,
+      "weight": 0.2
+    }
+  },
+  "reels": [
+    {
+      "shortcode": "DfEYmshhmNn",
+      "url": "https://www.instagram.com/techwith.genz/reel/DfEYmshhmNn/",
+      "viewsText": "12.3K",
+      "views": 12300
+    },
+    {
+      "shortcode": "DfCqzySOHD6",
+      "url": "https://www.instagram.com/techwith.genz/reel/DfCqzySOHD6/",
+      "viewsText": "19K",
+      "views": 19000
+    },
+    {
+      "shortcode": "DfCWQZuxW5f",
+      "url": "https://www.instagram.com/techwith.genz/reel/DfCWQZuxW5f/",
+      "viewsText": "16.2K",
+      "views": 16200
+    },
+    {
+      "shortcode": "DfOxa5gTSd9",
+      "url": "https://www.instagram.com/techwith.genz/reel/DfOxa5gTSd9/",
+      "viewsText": "1,292",
+      "views": 1292
+    },
+    {
+      "shortcode": "DfMu1pqTlx4",
+      "url": "https://www.instagram.com/techwith.genz/reel/DfMu1pqTlx4/",
+      "viewsText": "592",
+      "views": 592
+    },
+    {
+      "shortcode": "DfMD26nT14M",
+      "url": "https://www.instagram.com/techwith.genz/reel/DfMD26nT14M/",
+      "viewsText": "1,706",
+      "views": 1706
+    },
+    {
+      "shortcode": "DfH9n-zzjMi",
+      "url": "https://www.instagram.com/techwith.genz/reel/DfH9n-zzjMi/",
+      "viewsText": "627",
+      "views": 627
+    },
+    {
+      "shortcode": "DfHzXbbS4nq",
+      "url": "https://www.instagram.com/techwith.genz/reel/DfHzXbbS4nq/",
+      "viewsText": "201",
+      "views": 201
+    },
+    {
+      "shortcode": "DfHBVflxfaL",
+      "url": "https://www.instagram.com/techwith.genz/reel/DfHBVflxfaL/",
+      "viewsText": "7,715",
+      "views": 7715
+    },
+    {
+      "shortcode": "DfFEdkBuqCS",
+      "url": "https://www.instagram.com/techwith.genz/reel/DfFEdkBuqCS/",
+      "viewsText": "3,717",
+      "views": 3717
+    },
+    {
+      "shortcode": "DfEiT3zyMuY",
+      "url": "https://www.instagram.com/techwith.genz/reel/DfEiT3zyMuY/",
+      "viewsText": "2,893",
+      "views": 2893
+    },
+    {
+      "shortcode": "DfB0TN5Ad2d",
+      "url": "https://www.instagram.com/techwith.genz/reel/DfB0TN5Ad2d/",
+      "viewsText": "1,759",
+      "views": 1759
+    }
+  ]
+}

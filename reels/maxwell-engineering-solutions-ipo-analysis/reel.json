@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "slug": "maxwell-engineering-solutions-ipo-analysis",
+    "topic": "Maxwell Engineering Solutions SME IPO Analysis & Listing Gain",
+    "title": "Maxwell Engineering Solutions IPO: Listing Gain or Trap?",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "audience": "Indian Retail Investors & Gen-Z Traders",
+    "loop": false,
+    "captions": true,
+    "captionStyle": "kinetic",
+    "bgm": false,
+    "bgmVolume": 0.16,
+    "voice": "shubh",
+    "voiceSpeed": 1.1,
+    "instagramCaption": "Kal list hone wala hai Maxwell Engineering Solutions IPO with a massive +72.78% GMP! 🚀📈\n\nKya allotment mila? Here is your game plan:\n• Issue Price: ₹158 (Lot: 800)\n• Current GMP: +72.78% (Est. Profit: ₹92,000/lot)\n• Total Subscription: 536.8x\n\nFollow @techwith.GenZ for daily unbiased IPO breakdowns!\n\n#IPO #StockMarketIndia #GMP #ShareMarket #techwithgenz #MaxwellEngineeringSolutions",
+    "disclaimer": "Educational content only. Not SEBI registered investment advice.",
+    "fullVoiceover": "Maxwell Engineering ka SME IPO kal list hone wala hai aur yeh 537x oversubscribe ho chuka hai! GMP plus 72.8 percent chal raha hai, matlab lagbhag 92,000 per lot listing gain dikh raha hai! Subscription numbers crazy hain, NII category me intense bidding aur retail quota bhi fully packed hai. Lekin valuation expensive hai — P/E ratio peer average se 55 percent premium par hai. Positive point: poora issue fresh capital hai, zero OFS exit by promoters. Strategy: Allotment mila toh opening pe profit book karo. Naya entry listing day peak par mat lena! Kyunki heavy gap-up ke baad big players exit karte hain aur retail trap ho jata hai. Aise hi unbiased daily IPO alerts ke liye @techwith.GenZ ko follow karo!",
+    "durationSec": 46,
+    "voiceFile": "reels/maxwell-engineering-solutions-ipo-analysis/voice.mp3",
+    "wordsFile": "reels/maxwell-engineering-solutions-ipo-analysis/words.json"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "headline": "537X OVERSUBSCRIBED IPO?!",
+      "leadIn": "MAXWELL ENGINEERING IPO 🚨",
+      "subtitle": "Listing Tomorrow with +72.78% GMP!",
+      "voice": "Maxwell Engineering ka SME IPO kal list hone wala hai aur yeh 537x oversubscribe ho chuka hai!",
+      "startSec": 0,
+      "endSec": 7.16
+    },
+    {
+      "id": "s2-gmp",
+      "type": "gmp-gauge",
+      "headline": "ESTIMATED LISTING GAIN",
+      "leadIn": "GREY MARKET PREDICTION 📈",
+      "gmpPercent": 72.78,
+      "gmpPrice": 115,
+      "issuePrice": 158,
+      "expectedListingPrice": 273,
+      "lotSize": 800,
+      "profitPerLot": "92,000",
+      "sentiment": "SUPER BULLISH 🔥🔥🔥",
+      "voice": "GMP plus 72.8 percent chal raha hai, matlab lagbhag 92,000 per lot listing gain dikh raha hai!",
+      "startSec": 7.16,
+      "endSec": 13.31
+    },
+    {
+      "id": "s3-sub",
+      "type": "subscription-xray",
+      "headline": "WHO IS BUYING THIS IPO?",
+      "leadIn": "LIVE DEMAND X-RAY 🔍",
+      "totalMultiple": "536.8x",
+      "qibMultiple": "188x",
+      "niiMultiple": "752x",
+      "retailMultiple": "349x",
+      "verdict": "MASSIVE DEMAND RUSH 🔥",
+      "voice": "Subscription numbers crazy hain, NII category me intense bidding aur retail quota bhi fully packed hai.",
+      "startSec": 13.31,
+      "endSec": 18.76
+    },
+    {
+      "id": "s4-valuation",
+      "type": "valuation-battle",
+      "headline": "EXPENSIVE YA VALUE?",
+      "leadIn": "VALUATION REALITY CHECK ⚖️",
+      "companyName": "Maxwell Engineering",
+      "companyPe": "34.5x",
+      "peerName": "Industry Peers",
+      "peerPe": "22.0x",
+      "verdictBadge": "PREMIUM PRICING ⚠️",
+      "points": [
+        "Trading at a 55% premium compared to established peers",
+        "Top clients bring in high customer concentration",
+        "Strong operating margins supporting the high price band"
+      ],
+      "voice": "Lekin valuation expensive hai — P/E ratio peer average se 55 percent premium par hai.",
+      "startSec": 18.76,
+      "endSec": 24.22
+    },
+    {
+      "id": "s5-proceeds",
+      "type": "stat",
+      "headline": "100% FRESH ISSUE",
+      "leadIn": "WHERE MONEY GOES 🏭",
+      "value": "₹57.64 Cr",
+      "label": "Fresh Issue Capital",
+      "subtext": "Zero OFS Promoter Dumping",
+      "badge": "EXPANSION PROCEED ✅",
+      "voice": "Positive point: poora issue fresh capital hai, zero OFS exit by promoters.",
+      "startSec": 24.22,
+      "endSec": 29.62
+    },
+    {
+      "id": "s6-strategy",
+      "type": "steps",
+      "headline": "LISTING DAY STRATEGY",
+      "leadIn": "PRO DECISION MATRIX 🚀",
+      "steps": [
+        "If allotted: Book 70% listing profit immediately at 9:15 AM",
+        "Keep remaining with strict stop-loss at issue price ₹158",
+        "If not allotted: Strictly avoid buying on listing day peak"
+      ],
+      "voice": "Strategy: Allotment mila toh opening pe profit book karo. Naya entry listing day peak par mat lena!",
+      "startSec": 29.62,
+      "endSec": 35.57
+    },
+    {
+      "id": "s7-rule",
+      "type": "card",
+      "headline": "THE RETAIL GOLDEN RULE",
+      "leadIn": "CRITICAL INSIGHT 💡",
+      "cardText": "Never chase a stock on listing day after a 70% gap-up opening — big institutions use retail euphoria to exit.",
+      "chip": "KEY TAKEAWAY",
+      "voice": "Kyunki heavy gap-up ke baad big players exit karte hain aur retail trap ho jata hai.",
+      "startSec": 35.57,
+      "endSec": 40.4
+    },
+    {
+      "id": "s8-cta",
+      "type": "cta",
+      "headline": "FOLLOW FOR DAILY IPO ALERTS",
+      "leadIn": "UNBIASED MARKET DATA 🔥",
+      "buttonText": "FOLLOW NOW 🔥",
+      "handle": "@techwith.GenZ",
+      "subtitle": "@techwith.GenZ",
+      "voice": "Aise hi unbiased daily IPO alerts ke liye @techwith.GenZ ko follow karo!",
+      "startSec": 40.4,
+      "endSec": 45.58
+    }
+  ]
+}

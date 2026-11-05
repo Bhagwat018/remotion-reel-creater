@@ -19,6 +19,9 @@ import { BotScene } from "./BotScene";
 import { KnobsScene } from "./KnobsScene";
 import { StackedScene } from "./StackedScene";
 import { FlowScene } from "./FlowScene";
+import { GmpGaugeScene } from "./GmpGaugeScene";
+import { SubscriptionXrayScene } from "./SubscriptionXrayScene";
+import { ValuationBattleScene } from "./ValuationBattleScene";
 
 type SceneComponent = React.FC<
   SceneData & { durationInFrames: number; sceneIndex?: number; slug?: string }
@@ -44,6 +47,9 @@ export const sceneRegistry: Record<SceneType, SceneComponent> = {
   knobs: KnobsScene as unknown as SceneComponent,
   stacked: StackedScene as unknown as SceneComponent,
   flow: FlowScene as unknown as SceneComponent,
+  "gmp-gauge": GmpGaugeScene as unknown as SceneComponent,
+  "subscription-xray": SubscriptionXrayScene as unknown as SceneComponent,
+  "valuation-battle": ValuationBattleScene as unknown as SceneComponent,
 };
 
 export const getSceneComponent = (type: string): SceneComponent => {
