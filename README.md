@@ -195,3 +195,28 @@ or puri jagah use krooo screen ki dakoo compoent ke baddd or caption ke upper ki
 
 make sa standard and professtional reel
 do it this work fast
+
+---
+
+Ready-to-Use Commands:
+
+Aaj ka status check karne ke liye:
+
+bash
+npm run schedule:status
+
+(Current status: Slot 1 COMPLETED ✅ | Slot 2 PENDING ⏳ | Slot 3 PENDING ⏳)
+
+Agla pending slot (Slot 2) abhi generate aur post karne ke liye:
+
+bash
+npm run schedule:now
+
+24/7 background listener run karne ke liye:
+
+bash
+npm run schedule:daemon
+
+TIP
+
+Agar aap system se recurring background triggers chahte hain, toh aap chat me /schedule command ka use kar sakte hain.

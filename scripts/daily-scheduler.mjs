@@ -9,28 +9,28 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, "..");
 const scheduleRunsPath = path.join(rootDir, "data", "schedule_runs.json");
 
-// Daily Production Schedule (Indian Standard Time - Asia/Kolkata)
+// Daily Production Schedule Synced with IT Work Shift (12:00 PM - 08:30 PM IST)
 const SCHEDULE_SLOTS = [
   {
     id: 1,
-    name: "Morning Pre-Market Bell",
-    time: "09:00", // 9:00 AM IST
-    type: "ipo",
-    description: "Opening GMP Speedometer & Listing Day Playbook Alert",
-  },
-  {
-    id: 2,
     name: "Lunchtime Market Pulse",
     time: "13:30", // 1:30 PM IST
     type: "ipo",
-    description: "Subscription Demand X-Ray & Valuation Battle Check",
+    description: "Morning Demand Surge, Subscription X-Ray & Apply/Avoid Decision Point",
+  },
+  {
+    id: 2,
+    name: "Market Close Final Tally",
+    time: "17:45", // 5:45 PM IST (After 5:00 PM Bidding Closes)
+    type: "ipo",
+    description: "Final Day 1/2/3 Bidding Numbers, QIB Institutional Rush & Closing GMP",
   },
   {
     id: 3,
-    name: "Evening Prime Teardown",
-    time: "20:00", // 8:00 PM IST
+    name: "Evening Prime & Tomorrow Listing Alert",
+    time: "20:00", // 8:00 PM IST (Right before 8:30 PM Logoff)
     type: "ipo",
-    description: "Upcoming IPO Preview / High-Retention Strategy Teardown",
+    description: "Tomorrow's Listing Gain Gameplan, Traps to Avoid & Overnight Momentum",
   },
 ];
 
