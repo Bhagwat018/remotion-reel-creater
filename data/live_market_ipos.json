@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-05T07:23:48.410Z",
+  "fetchedAt": "2026-11-05T07:43:31.307Z",
   "ipos": [
     {
       "rawName": "Antala Industries BSE SMECT",
@@ -8,7 +8,7 @@
       "status": "ACTIVE",
       "gmpPrice": 0,
       "gmpPercent": 0,
-      "subMultiple": 6.79,
+      "subMultiple": 7.96,
       "issuePrice": 66,
       "lotSize": 2000,
       "minInvestment": 132000,
@@ -91,8 +91,8 @@
       "company": "Maxwell Engineering Solutions",
       "type": "SME",
       "status": "ACTIVE",
-      "gmpPrice": 115,
-      "gmpPercent": 72.78,
+      "gmpPrice": 117,
+      "gmpPercent": 74.05,
       "subMultiple": 536.8,
       "issuePrice": 158,
       "lotSize": 800,

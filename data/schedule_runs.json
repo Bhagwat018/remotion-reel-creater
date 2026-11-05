@@ -1,0 +1,14 @@
+{
+  "runs": [
+    {
+      "date": "2026-11-05",
+      "slotId": 1,
+      "slotName": "Morning Pre-Market Bell",
+      "scheduledTime": "09:00",
+      "executedAt": "2026-11-05T07:37:30.000Z",
+      "durationMin": "2.1",
+      "slug": "maxwell-engineering-solutions-ipo-analysis",
+      "status": "SUCCESS"
+    }
+  ]
+}

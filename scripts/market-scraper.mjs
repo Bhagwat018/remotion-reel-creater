@@ -185,14 +185,38 @@ export async function pickTopTrendingIpo(options = {}) {
 
   freshIpos.sort((a, b) => b.viralScore - a.viralScore);
 
-  console.log("\n🏆 Top 3 Fresh Market IPOs Ranked by Viral Potential:");
-  freshIpos.slice(0, 3).forEach((item, idx) => {
+  // De-duplication against data/competitors_history.json
+  const historyPath = path.join(rootDir, "data", "competitors_history.json");
+  const processedCompanies = new Set();
+  if (fs.existsSync(historyPath)) {
+    try {
+      const history = JSON.parse(fs.readFileSync(historyPath, "utf-8"));
+      (history.processedReels || []).forEach((r) => {
+        if (r.originalTopic) processedCompanies.add(r.originalTopic.toLowerCase());
+        if (r.ourSlug) processedCompanies.add(r.ourSlug.toLowerCase());
+      });
+    } catch {}
+  }
+
+  const unpostedIpos = freshIpos.filter((item) => {
+    const rawName = item.company.toLowerCase();
+    const slugName = rawName.replace(/[^a-z0-9]+/g, "-");
+    for (const p of processedCompanies) {
+      if (p.includes(rawName) || p.includes(slugName)) return false;
+    }
+    return true;
+  });
+
+  const candidates = unpostedIpos.length > 0 ? unpostedIpos : freshIpos;
+
+  console.log("\n🏆 Top 3 Fresh Unposted Market IPOs Ranked by Viral Potential:");
+  candidates.slice(0, 3).forEach((item, idx) => {
     console.log(
       `   #${idx + 1} ${item.company} [${item.type}] | GMP: +${item.gmpPercent}% (₹${item.gmpPrice}) | Sub: ${item.subMultiple}x | Status: ${item.status} | Viral Score: ${item.viralScore}`
     );
   });
 
-  return freshIpos[0];
+  return candidates[0];
 }
 
 // Allow direct CLI test run
