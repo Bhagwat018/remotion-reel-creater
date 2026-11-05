@@ -1,5 +1,5 @@
 import React from "react";
-import { interpolate, useCurrentFrame } from "remotion";
+import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 
 export interface CinematicCameraProps {
   sceneType?: string;
@@ -15,26 +15,49 @@ export const CinematicCamera: React.FC<CinematicCameraProps> = ({
   children,
 }) => {
   const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
 
   if (!enableDynamicZoom) {
     return <>{children}</>;
   }
 
-  // 1. Slow Push-In Zoom (1.00 -> 1.03) over the scene duration
-  const pushIn = interpolate(frame, [0, durationInFrames], [1.0, 1.032], {
+  // 1. High-Impact Financial & Hook Scenes get an instant dynamic Spring Zoom Punch
+  const isHighImpact = [
+    "title",
+    "gmp-gauge",
+    "subscription-xray",
+    "valuation-battle",
+    "stat",
+    "cta",
+    "compare",
+  ].includes(sceneType || "");
+
+  // Spring entrance punch (0 -> 14 frames)
+  const springPunch = spring({
+    frame,
+    fps,
+    config: {
+      damping: 14,
+      stiffness: 130,
+      mass: 0.75,
+    },
+  });
+
+  const punchScale = isHighImpact
+    ? interpolate(springPunch, [0, 1], [1.0, 1.048])
+    : 1.0;
+
+  // 2. Continuous slow cinematic push-in (1.00 -> 1.025)
+  const slowPushIn = interpolate(frame, [0, durationInFrames], [1.0, 1.025], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  // 2. Punch Zoom on high-emphasis scenes (stat, cta, bot)
-  const isHighImpact = sceneType === "stat" || sceneType === "cta" || sceneType === "bot";
-  const punchScale = isHighImpact ? 1.025 : 1.0;
+  // 3. Subtle organic handheld micro-drift (keeps screen alive & fluid)
+  const driftX = Math.sin(frame * 0.055) * 1.5;
+  const driftY = Math.cos(frame * 0.045) * 1.2;
 
-  // 3. Subtle organic handheld micro-drift (0.5px - 1.5px)
-  const driftX = Math.sin(frame * 0.05) * 1.5;
-  const driftY = Math.cos(frame * 0.04) * 1.2;
-
-  const totalScale = pushIn * punchScale;
+  const totalScale = punchScale * slowPushIn;
 
   return (
     <div

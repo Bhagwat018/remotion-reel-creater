@@ -20,6 +20,7 @@ console.log("   Audio:   Sarvam AI (Shubh) + Broadcast Studio EQ & -14 LUFS");
 console.log("=======================================================\n");
 
 const shouldPost = process.argv.includes("--post");
+const manychatArg = process.argv.includes("--manychat");
 const typeArg = process.argv.find((a) => a.startsWith("--type="))?.split("=")[1];
 const voiceArg = process.argv.find((a) => a.startsWith("--voice="))?.split("=")[1] || "shubh";
 const explicitSlug = process.argv.find((a) => a.startsWith("--slug="))?.split("=")[1];
@@ -46,7 +47,8 @@ async function main() {
       console.log(`   GMP: +${topIpo.gmpPercent}% | Subscription: ${topIpo.subMultiple}x | Status: ${topIpo.status}`);
 
       console.log("🤖 [Stage 2/7] Conducting Fundamental Valuation & Strategy Research...");
-      const ipoReel = await conductIpoResearch(topIpo);
+      if (manychatArg) console.log("   💬 ManyChat Growth Hook: ENABLED (Comment 'IPO' Lead Magnet Trigger)");
+      const ipoReel = await conductIpoResearch(topIpo, { manychat: manychatArg });
       slug = ipoReel.meta.slug || `${topIpo.company.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-ipo`;
 
       const targetDir = path.join(rootDir, "reels", slug);

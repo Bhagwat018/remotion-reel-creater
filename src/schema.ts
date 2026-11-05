@@ -512,6 +512,8 @@ export const metaSchema = z
     captionStyle: z.enum(["bubble", "kinetic", "both", "none"]).optional().default("bubble"),
     showSafeZone: z.boolean().optional().default(false),
     showHandle: z.boolean().optional().default(false),
+    showTicker: z.boolean().optional().default(true),
+    manychatHook: z.boolean().optional().default(false),
     coverIntro: z.boolean().optional().default(false),
     voice: z.string().optional(),
     voiceSpeed: z.number().optional(),
@@ -531,6 +533,8 @@ export const metaSchema = z
       captionStyle: meta.captionStyle ?? "bubble",
       showSafeZone: meta.showSafeZone ?? false,
       showHandle: meta.showHandle ?? false,
+      showTicker: meta.showTicker ?? true,
+      manychatHook: meta.manychatHook ?? false,
       coverIntro: meta.coverIntro ?? false,
     };
   });

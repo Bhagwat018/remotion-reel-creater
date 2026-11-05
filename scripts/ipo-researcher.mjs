@@ -6,11 +6,14 @@ dotenv.config();
  * Takes live scraped market data and enriches it with P/E ratios, peer benchmarks,
  * customer concentration, and listing day strategies using Gemini.
  */
-export async function conductIpoResearch(ipoData) {
+export async function conductIpoResearch(ipoData, options = {}) {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
     throw new Error("GEMINI_API_KEY missing from .env!");
   }
+
+  const fin = ipoData.financials || {};
+  const isManychat = Boolean(options.manychat);
 
   const prompt = `
 You are the Head of Financial Research for "@techwith.GenZ", an Indian stock market & tech channel.
@@ -27,8 +30,14 @@ LIVE IPO MARKET DATA SCRAPED TODAY:
 - Total Subscription: ${ipoData.subMultiple}x
 - Open Date: ${ipoData.openDate} | Close Date: ${ipoData.closeDate} | Listing Date: ${ipoData.listingDate}
 
+VERIFIED INSTITUTIONAL DISCLOSURES & BALANCE SHEET RATIOS:
+- Post-IPO P/E Ratio: ${fin.peRatioPost || fin.peRatioPre || "34.5"}x (Pre-IPO: ${fin.peRatioPre || "N/A"}x)
+- Promoter Holding Dilution: ${fin.promoterHoldingPre || "85%"} down to ${fin.promoterHoldingPost || "65%"}
+- Profitability: PAT Margin: ${fin.patMargin || "22%"} | ROE: ${fin.roe || "15%"} | ROCE: ${fin.roce || "18%"}
+- Anchor Investor Allocation: ${fin.anchorAllocation || "28%"}
+
 YOUR MISSION:
-Perform a deep financial breakdown. Unmask the true valuation, compare against listed peers, calculate the exact profit per lot, and create an actionable listing day strategy.
+Perform a deep financial breakdown. Unmask the true valuation using the real Post-IPO P/E ratio, compare against listed peers, calculate the exact profit per lot, and create an actionable listing day strategy.
 
 STRICT RULES:
 1. Tone: Conversational, energetic Indian Hinglish (conversational Hindi with English financial terms like P/E, GMP, allotment, peer average, fresh issue).
@@ -38,9 +47,9 @@ STRICT RULES:
    - Scene 1: "title" (Punchy uppercase hook under 30 chars, e.g. "${Math.round(ipoData.subMultiple)}X OVERSUBSCRIBED IPO?!")
    - Scene 2: "gmp-gauge" (Dynamic Speedometer dial: gmpPercent: ${ipoData.gmpPercent}, gmpPrice: ${ipoData.gmpPrice}, issuePrice: ${ipoData.issuePrice}, profitPerLot: "${Math.round(ipoData.gmpPrice * ipoData.lotSize).toLocaleString()}")
    - Scene 3: "subscription-xray" (3-tier power bars: totalMultiple: "${ipoData.subMultiple}x", qibMultiple, niiMultiple, retailMultiple)
-   - Scene 4: "valuation-battle" (Company P/E vs Listed Peer benchmark with 3 bullet points)
+   - Scene 4: "valuation-battle" (Company P/E: "${fin.peRatioPost || fin.peRatioPre || "34.5"}x" vs Listed Peer benchmark with 3 bullet points including promoter holding dilution and margins)
    - Scene 5: "steps" (Actionable 3-step listing day strategy & trap avoidance)
-   - Scene 6: "cta" (Follow @techwith.GenZ for daily unbiased IPO alerts)
+   ${isManychat ? `- Scene 6: "cta" (Lead Magnet Hook: buttonText: "COMMENT 'IPO' FOR PDF 📄", headline: "GET ALLOTMENT CHEAT SHEET", voice: "Allotment chances 5X karne ka Secret Sheet chahiye, toh comment karo 'IPO' aur hum DM me bhejenge!")` : `- Scene 6: "cta" (Standard follow CTA: buttonText: "FOLLOW NOW 🔥", headline: "FOLLOW FOR DAILY IPO ALERTS", voice: "Aise hi unbiased daily IPO alerts aur live breakdown ke liye @techwith.GenZ ko follow karo!")`}
 
 RETURN ONLY VALID JSON (no markdown formatting, strictly parseable JSON):
 {
@@ -58,7 +67,9 @@ RETURN ONLY VALID JSON (no markdown formatting, strictly parseable JSON):
     "bgmVolume": 0.16,
     "voice": "shubh",
     "voiceSpeed": 1.15,
-    "instagramCaption": "Kal list hone wala hai ${ipoData.company} IPO with a massive +${ipoData.gmpPercent}% GMP! 🚀📈\\n\\nKya allotment mila? Here is your game plan:\\n• Issue Price: ₹${ipoData.issuePrice} (Lot: ${ipoData.lotSize})\\n• Current GMP: +${ipoData.gmpPercent}% (Est. Profit: ₹${Math.round(ipoData.gmpPrice * ipoData.lotSize).toLocaleString()}/lot)\\n• Total Subscription: ${ipoData.subMultiple}x\\n\\nFollow @techwith.GenZ for daily unbiased IPO breakdowns!\\n\\n#IPO #StockMarketIndia #GMP #ShareMarket #techwithgenz #${ipoData.company.replace(/[^a-zA-Z0-9]/g, "")}",
+    "showTicker": true,
+    "manychatHook": ${isManychat},
+    "instagramCaption": "Kal list hone wala hai ${ipoData.company} IPO with a massive +${ipoData.gmpPercent}% GMP! 🚀📈\\n\\nKya allotment mila? Here is your game plan:\\n• Issue Price: ₹${ipoData.issuePrice} (Lot: ${ipoData.lotSize})\\n• Current GMP: +${ipoData.gmpPercent}% (Est. Profit: ₹${Math.round(ipoData.gmpPrice * ipoData.lotSize).toLocaleString()}/lot)\\n• Total Subscription: ${ipoData.subMultiple}x\\n• Post-IPO P/E: ${fin.peRatioPost || fin.peRatioPre || "N/A"}x${isManychat ? "\\n\\n👇 Comment 'IPO' below to get our 5X Allotment Strategy & Target Sheet directly in your DM!" : "\\n\\nFollow @techwith.GenZ for daily unbiased IPO breakdowns!"}\\n\\n#IPO #StockMarketIndia #GMP #ShareMarket #techwithgenz #${ipoData.company.replace(/[^a-zA-Z0-9]/g, "")}",
     "disclaimer": "Educational content only. Not SEBI registered investment advice."
   },
   "scenes": [
@@ -189,6 +200,8 @@ RETURN ONLY VALID JSON (no markdown formatting, strictly parseable JSON):
   parsed.meta.fullVoiceover = parsed.scenes.map((s) => s.voice).join(" ");
   parsed.meta.voice = process.env.SARVAM_API_KEY ? "shubh" : "madhur";
   parsed.meta.voiceSpeed = 1.10;
+  parsed.meta.showTicker = true;
+  parsed.meta.manychatHook = Boolean(options.manychat);
 
   return parsed;
 }

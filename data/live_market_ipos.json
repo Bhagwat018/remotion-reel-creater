@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-05T07:43:31.307Z",
+  "fetchedAt": "2026-11-05T10:39:15.023Z",
   "ipos": [
     {
       "rawName": "Antala Industries BSE SMECT",
@@ -8,7 +8,7 @@
       "status": "ACTIVE",
       "gmpPrice": 0,
       "gmpPercent": 0,
-      "subMultiple": 7.96,
+      "subMultiple": 12.27,
       "issuePrice": 66,
       "lotSize": 2000,
       "minInvestment": 132000,
@@ -16,7 +16,8 @@
       "openDate": "29-Oct",
       "closeDate": "5-Nov",
       "allotmentDate": "6-Nov",
-      "listingDate": "11-Nov"
+      "listingDate": "11-Nov",
+      "ipoUrl": "https://www.investorgain.com/gmp/antala-industries-ipo/2375/"
     },
     {
       "rawName": "Vedant Poly Fabs NSE SMEC",
@@ -33,15 +34,16 @@
       "openDate": "2-Nov",
       "closeDate": "4-Nov",
       "allotmentDate": "5-Nov",
-      "listingDate": "9-Nov"
+      "listingDate": "9-Nov",
+      "ipoUrl": "https://www.investorgain.com/gmp/vedant-poly-fabs-ipo/2297/"
     },
     {
       "rawName": "HGS (India) NSE SMEC",
       "company": "HGS (India)",
       "type": "SME",
       "status": "ACTIVE",
-      "gmpPrice": 38,
-      "gmpPercent": 31.67,
+      "gmpPrice": 40,
+      "gmpPercent": 33.33,
       "subMultiple": 248.58,
       "issuePrice": 120,
       "lotSize": 1200,
@@ -50,7 +52,8 @@
       "openDate": "30-Oct",
       "closeDate": "3-Nov",
       "allotmentDate": "4-Nov",
-      "listingDate": "6-Nov"
+      "listingDate": "6-Nov",
+      "ipoUrl": "https://www.investorgain.com/gmp/hgs-india-ipo/2241/"
     },
     {
       "rawName": "Johnsoncab Electricals BSE SMECALLOTTED",
@@ -67,7 +70,8 @@
       "openDate": "30-Oct",
       "closeDate": "3-Nov",
       "allotmentDate": "4-Nov",
-      "listingDate": "6-Nov"
+      "listingDate": "6-Nov",
+      "ipoUrl": "https://www.investorgain.com/gmp/johnsoncab-electricals-ipo/2371/"
     },
     {
       "rawName": "Vectras Enprocon BSE SMECALLOTTED",
@@ -84,15 +88,16 @@
       "openDate": "30-Oct",
       "closeDate": "3-Nov",
       "allotmentDate": "4-Nov",
-      "listingDate": "6-Nov"
+      "listingDate": "6-Nov",
+      "ipoUrl": "https://www.investorgain.com/gmp/vectras-enprocon-ipo/1998/"
     },
     {
       "rawName": "Maxwell Engineering Solutions NSE SMEC",
       "company": "Maxwell Engineering Solutions",
       "type": "SME",
       "status": "ACTIVE",
-      "gmpPrice": 117,
-      "gmpPercent": 74.05,
+      "gmpPrice": 111,
+      "gmpPercent": 70.25,
       "subMultiple": 536.8,
       "issuePrice": 158,
       "lotSize": 800,
@@ -101,7 +106,8 @@
       "openDate": "30-Oct",
       "closeDate": "3-Nov",
       "allotmentDate": "4-Nov",
-      "listingDate": "6-Nov"
+      "listingDate": "6-Nov",
+      "ipoUrl": "https://www.investorgain.com/gmp/maxwell-engineering-solutions-ipo/1965/"
     },
     {
       "rawName": "Bombay Coated and Special Steels IPOL@91.00 (10.98%)",
@@ -118,7 +124,8 @@
       "openDate": "29-Oct",
       "closeDate": "2-Nov",
       "allotmentDate": "3-Nov",
-      "listingDate": "5-Nov"
+      "listingDate": "5-Nov",
+      "ipoUrl": "https://www.investorgain.com/gmp/bombay-coated-and-special-steels-ipo/1936/"
     },
     {
       "rawName": "M.K.Sons Fine Jewels IPOL@171.00 (5.56%)",
@@ -135,7 +142,8 @@
       "openDate": "28-Oct",
       "closeDate": "30-Oct",
       "allotmentDate": "2-Nov",
-      "listingDate": "4-Nov"
+      "listingDate": "4-Nov",
+      "ipoUrl": "https://www.investorgain.com/gmp/mksons-fine-jewels-ipo/2288/"
     },
     {
       "rawName": "Ajwa Projects BSE SMEL@203.00 (0%)",
@@ -152,7 +160,8 @@
       "openDate": "28-Oct",
       "closeDate": "30-Oct",
       "allotmentDate": "2-Nov",
-      "listingDate": "4-Nov"
+      "listingDate": "4-Nov",
+      "ipoUrl": "https://www.investorgain.com/gmp/ajwa-projects-ipo/2017/"
     },
     {
       "rawName": "Carver Roboweld BSE SMEL@90.00 (12.5%)",
@@ -169,7 +178,8 @@
       "openDate": "28-Oct",
       "closeDate": "30-Oct",
       "allotmentDate": "2-Nov",
-      "listingDate": "4-Nov"
+      "listingDate": "4-Nov",
+      "ipoUrl": "https://www.investorgain.com/gmp/carver-roboweld-ipo/2393/"
     },
     {
       "rawName": "Wiscon Industries BSE SMEL@204.00 (0%)",
@@ -186,7 +196,8 @@
       "openDate": "27-Oct",
       "closeDate": "29-Oct",
       "allotmentDate": "30-Oct",
-      "listingDate": "3-Nov"
+      "listingDate": "3-Nov",
+      "ipoUrl": "https://www.investorgain.com/gmp/wiscon-industries-ipo/2356/"
     },
     {
       "rawName": "SFC Environmental Technologies IPOL@355.10 (7.61%)",
@@ -203,7 +214,8 @@
       "openDate": "27-Oct",
       "closeDate": "29-Oct",
       "allotmentDate": "30-Oct",
-      "listingDate": "3-Nov"
+      "listingDate": "3-Nov",
+      "ipoUrl": "https://www.investorgain.com/gmp/sfc-environmental-technologies-ipo/1642/"
     },
     {
       "rawName": "BLS Polymers IPOL@248.00 (65.33%)",
@@ -220,7 +232,8 @@
       "openDate": "27-Oct",
       "closeDate": "29-Oct",
       "allotmentDate": "30-Oct",
-      "listingDate": "3-Nov"
+      "listingDate": "3-Nov",
+      "ipoUrl": "https://www.investorgain.com/gmp/bls-polymers-ipo/1849/"
     },
     {
       "rawName": "EAAA India Alternatives IPOL@1675.50 (0.63%)",
@@ -237,7 +250,8 @@
       "openDate": "26-Oct",
       "closeDate": "28-Oct",
       "allotmentDate": "29-Oct",
-      "listingDate": "2-Nov"
+      "listingDate": "2-Nov",
+      "ipoUrl": "https://www.investorgain.com/gmp/eaaa-india-alternatives-ipo/1635/"
     },
     {
       "rawName": "Core4 Engineers BSE SMEL@74.4 (-20%)",
@@ -254,7 +268,8 @@
       "openDate": "23-Oct",
       "closeDate": "27-Oct",
       "allotmentDate": "28-Oct",
-      "listingDate": "30-Oct"
+      "listingDate": "30-Oct",
+      "ipoUrl": "https://www.investorgain.com/gmp/core4-engineers-ipo/2229/"
     },
     {
       "rawName": "Paras Healthcare IPOL@720.00 (3.9%)",
@@ -271,7 +286,8 @@
       "openDate": "21-Oct",
       "closeDate": "23-Oct",
       "allotmentDate": "26-Oct",
-      "listingDate": "28-Oct"
+      "listingDate": "28-Oct",
+      "ipoUrl": "https://www.investorgain.com/gmp/paras-healthcare-ipo/1728/"
     },
     {
       "rawName": "Jio Platforms IPOL@1358.00 (21.36%)",
@@ -288,7 +304,8 @@
       "openDate": "21-Oct",
       "closeDate": "23-Oct",
       "allotmentDate": "26-Oct",
-      "listingDate": "28-Oct"
+      "listingDate": "28-Oct",
+      "ipoUrl": "https://www.investorgain.com/gmp/jio-platforms-ipo/2306/"
     },
     {
       "rawName": "Zetwerk IPOL@159.25 (5.46%)",
@@ -305,7 +322,8 @@
       "openDate": "15-Oct",
       "closeDate": "19-Oct",
       "allotmentDate": "21-Oct",
-      "listingDate": "23-Oct"
+      "listingDate": "23-Oct",
+      "ipoUrl": "https://www.investorgain.com/gmp/zetwerk-ipo/2279/"
     },
     {
       "rawName": "Tonbo Imaging India IPOL@1160.00 (65.71%)",
@@ -322,7 +340,8 @@
       "openDate": "15-Oct",
       "closeDate": "19-Oct",
       "allotmentDate": "21-Oct",
-      "listingDate": "23-Oct"
+      "listingDate": "23-Oct",
+      "ipoUrl": "https://www.investorgain.com/gmp/tonbo-imaging-india-ipo/2369/"
     },
     {
       "rawName": "Sahajanand Medical Technologies IPOL@371.15 (7.89%)",
@@ -339,7 +358,8 @@
       "openDate": "15-Oct",
       "closeDate": "19-Oct",
       "allotmentDate": "21-Oct",
-      "listingDate": "23-Oct"
+      "listingDate": "23-Oct",
+      "ipoUrl": "https://www.investorgain.com/gmp/sahajanand-medical-technologies-ipo/1842/"
     },
     {
       "rawName": "Bonfiglioli Transmissions IPOL@586.00 (0%)",
@@ -356,7 +376,8 @@
       "openDate": "15-Oct",
       "closeDate": "19-Oct",
       "allotmentDate": "21-Oct",
-      "listingDate": "23-Oct"
+      "listingDate": "23-Oct",
+      "ipoUrl": "https://www.investorgain.com/gmp/bonfiglioli-transmissions-ipo/2124/"
     },
     {
       "rawName": "Shellz India BSE SMEL@179.00 (0%)",
@@ -373,7 +394,8 @@
       "openDate": "15-Oct",
       "closeDate": "19-Oct",
       "allotmentDate": "21-Oct",
-      "listingDate": "23-Oct"
+      "listingDate": "23-Oct",
+      "ipoUrl": "https://www.investorgain.com/gmp/shellz-india-ipo/2228/"
     },
     {
       "rawName": "Ravita Engineering Services NSE SMEL@112.00 (0%)",
@@ -390,7 +412,8 @@
       "openDate": "14-Oct",
       "closeDate": "16-Oct",
       "allotmentDate": "19-Oct",
-      "listingDate": "22-Oct"
+      "listingDate": "22-Oct",
+      "ipoUrl": "https://www.investorgain.com/gmp/ravita-engineering-services-ipo/2220/"
     },
     {
       "rawName": "Fusion CX IPOL@305.00 (5.54%)",
@@ -407,7 +430,8 @@
       "openDate": "14-Oct",
       "closeDate": "16-Oct",
       "allotmentDate": "19-Oct",
-      "listingDate": "22-Oct"
+      "listingDate": "22-Oct",
+      "ipoUrl": "https://www.investorgain.com/gmp/fusion-cx-ipo/1792/"
     },
     {
       "rawName": "HD Fire Protect IPOL@335.00 (23.62%)",
@@ -424,7 +448,8 @@
       "openDate": "13-Oct",
       "closeDate": "15-Oct",
       "allotmentDate": "16-Oct",
-      "listingDate": "21-Oct"
+      "listingDate": "21-Oct",
+      "ipoUrl": "https://www.investorgain.com/gmp/hd-fire-protect-ipo/1902/"
     }
   ]
 }

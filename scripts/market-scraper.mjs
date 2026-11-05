@@ -60,6 +60,14 @@ export async function fetchLiveIpos({ forceRefresh = false } = {}) {
         const rawAllotment = cells[9]?.trim().replace(/\n+/g, " ") || "";
         const rawListing = cells[10]?.trim().replace(/\n+/g, " ") || "";
 
+        let ipoUrl = "";
+        try {
+          const href = await r.locator("td a").first().getAttribute("href");
+          if (href) {
+            ipoUrl = href.startsWith("http") ? href : `https://www.investorgain.com${href}`;
+          }
+        } catch {}
+
         // Extract clean company name
         const cleanName = rawName
           .replace(/BSE\s*SME.*/i, "")
@@ -126,6 +134,7 @@ export async function fetchLiveIpos({ forceRefresh = false } = {}) {
           closeDate,
           allotmentDate,
           listingDate,
+          ipoUrl,
         });
       } catch (rowErr) {
         // Skip malformed row
@@ -216,7 +225,87 @@ export async function pickTopTrendingIpo(options = {}) {
     );
   });
 
-  return candidates[0];
+  const selectedIpo = candidates[0];
+
+  // Deep Data Enrichment: Extract real P/E, Promoter Holding, Anchor book, and margins
+  if (selectedIpo.ipoUrl) {
+    try {
+      console.log(`\n🔍 [Deep Data Engine] Extracting verified financial disclosures for "${selectedIpo.company}"...`);
+      selectedIpo.financials = await fetchIpoDeepFinancials(selectedIpo.ipoUrl);
+      if (selectedIpo.financials) {
+        console.log(`   ✅ Financial Truth: P/E ${selectedIpo.financials.peRatioPost || selectedIpo.financials.peRatioPre || "N/A"}x | Promoter: ${selectedIpo.financials.promoterHoldingPre || "N/A"} ➜ ${selectedIpo.financials.promoterHoldingPost || "N/A"} | PAT Margin: ${selectedIpo.financials.patMargin || "N/A"}`);
+      }
+    } catch (finErr) {
+      console.warn("   ⚠️ Deep financial extraction warning:", finErr.message);
+    }
+  }
+
+  return selectedIpo;
+}
+
+/**
+ * Deep Data Scraper: Extracts real P/E, Anchor Investor Quota, Promoter Dilution, and Margins
+ */
+export async function fetchIpoDeepFinancials(ipoUrl) {
+  if (!ipoUrl) return null;
+  const detailsUrl = ipoUrl.replace("/gmp/", "/ipo/");
+
+  const browser = await chromium.launch({ headless: true });
+  const context = await browser.newContext({ ignoreHTTPSErrors: true });
+  const page = await context.newPage();
+
+  try {
+    await page.goto(detailsUrl, { waitUntil: "domcontentloaded", timeout: 25000 });
+    await page.waitForTimeout(2000);
+
+    const financials = await page.evaluate(() => {
+      const result = {
+        peRatioPre: null,
+        peRatioPost: null,
+        promoterHoldingPre: null,
+        promoterHoldingPost: null,
+        roe: null,
+        roce: null,
+        patMargin: null,
+        anchorAllocation: null,
+      };
+
+      const rows = Array.from(document.querySelectorAll("table tr"));
+      for (const row of rows) {
+        const cells = Array.from(row.querySelectorAll("td, th")).map((c) => c.innerText.trim());
+        const rowStr = cells.join(" ").toUpperCase();
+
+        if (rowStr.includes("P/E (X)") || rowStr.includes("PE RATIO")) {
+          if (cells[1]) result.peRatioPre = cells[1];
+          if (cells[2]) result.peRatioPost = cells[2];
+        }
+        if (rowStr.includes("PROMOTER HOLDING")) {
+          if (cells[1]) result.promoterHoldingPre = cells[1];
+          if (cells[2]) result.promoterHoldingPost = cells[2];
+        }
+        if (rowStr.includes("ROE") && !result.roe) {
+          result.roe = cells[cells.length - 1];
+        }
+        if (rowStr.includes("ROCE") && !result.roce) {
+          result.roce = cells[cells.length - 1];
+        }
+        if (rowStr.includes("PAT MARGIN") && !result.patMargin) {
+          result.patMargin = cells[cells.length - 1];
+        }
+        if (rowStr.includes("ANCHOR INVESTOR") && !result.anchorAllocation) {
+          result.anchorAllocation = cells.find((c) => c.includes("%")) || cells[cells.length - 1];
+        }
+      }
+
+      return result;
+    });
+
+    await browser.close();
+    return financials;
+  } catch (err) {
+    await browser.close();
+    return null;
+  }
 }
 
 // Allow direct CLI test run

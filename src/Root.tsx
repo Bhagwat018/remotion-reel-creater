@@ -21,6 +21,8 @@ const defaultFallbackProps: RootReelProps = {
     captionStyle: "bubble",
     showSafeZone: false,
     showHandle: false,
+    showTicker: true,
+    manychatHook: false,
     coverIntro: false,
   },
   scenes: [

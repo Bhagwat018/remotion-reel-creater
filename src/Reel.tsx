@@ -13,6 +13,7 @@ import { SafeZoneOverlay } from "./components/SafeZoneOverlay";
 import { CoverThumbnail } from "./components/CoverThumbnail";
 import { CinematicCamera } from "./components/CinematicCamera";
 import { AudioWaveformSpectrogram } from "./components/AudioWaveformSpectrogram";
+import { MarketTickerTape } from "./components/MarketTickerTape";
 import { getSceneComponent } from "./scenes/registry";
 import { framesToSec, getSceneWords, resolveSceneTimings } from "./lib/timing";
 
@@ -171,6 +172,9 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
 
         {/* Fixed bottom handle pill (only when explicitly requested) */}
         {meta.showHandle && <HandlePill handle={meta.handle} />}
+
+        {/* Live Scrolling Financial Market Ticker (Bloomberg / CNBC Style) */}
+        {meta.showTicker !== false && <MarketTickerTape />}
 
         {/* Real-time Speech-reactive Audio Waveform Spectrogram */}
         <AudioWaveformSpectrogram
