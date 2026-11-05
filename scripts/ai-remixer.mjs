@@ -40,18 +40,16 @@ TECHNICAL RESEARCH DATA (USE THESE EXACT COMPONENTS):
 - Actionable Steps: ${JSON.stringify(research.actionableSteps)}
 
 VIDEO SPECIFICATIONS (STRICT RULES):
-1. Target Duration: EXACTLY 30 to 35 seconds total runtime.
-2. Scene Count: STRICTLY 7 to 9 scenes (Scene cut every 3.5 to 4.5 seconds for maximum retention).
-3. Total Spoken Words: 100 to 115 words in high-energy, conversational Indian Hinglish (conversational Hindi with English tech terms).
+1. Target Duration: STRICTLY 30 to 35 SECONDS MAX (Short, punchy video for maximum viral watch time & completion rate).
+2. Scene Count: STRICTLY 6 high-impact scenes (Scene cuts every 4.0 to 5.0 seconds).
+3. Total Spoken Words: STRICTLY 75 to 85 WORDS in high-energy, conversational Indian Hinglish. Each scene voice must be 1 single punchy sentence (10-14 words max).
 4. MANDATORY VISUAL SCENES:
-   - Scene 1: "title" (Punchy uppercase hook under 35 chars, e.g. "1 FOLDER SE AUTO CHANNEL?!", with subtitle explaining "${research.recommendedHook}")
+   - Scene 1: "title" (Punchy uppercase hook under 30 chars, e.g. "1 FOLDER SE AUTO REELS?!", with subtitle explaining "${research.recommendedHook}")
    - Scene 2: "compare" (Split-screen battle using the comparisonBattle data)
-   - Scene 3: "flow" (Architecture pipeline with 3-4 glowing nodes using technicalArchitecture.nodes)
-   - Scene 4: "stat" (Big bold metric with keyMetrics data)
-   - Scene 5: "terminal" (Real CLI command and output logs using terminalCommand data)
-   - Scene 6: "steps" (3 actionable steps roadmap under 10 words per step using actionableSteps data)
-   - Scene 7: "card" (The key secret/twist or pro tip)
-   - Scene 8: "cta" (Call-to-action to follow @techwith.GenZ for daily deep dives)
+   - Scene 3: "flow" (Architecture pipeline with glowing nodes using technicalArchitecture.nodes)
+   - Scene 4: "terminal" (Real CLI command and output logs using terminalCommand data)
+   - Scene 5: "steps" (3 actionable steps roadmap under 10 words per step using actionableSteps data)
+   - Scene 6: "cta" (Call-to-action to follow @techwith.GenZ for daily deep dives)
 5. VOICE SCRIPT:
    - Natural conversational Indian creator tone (Shubh voice).
    - Fast, confident, zero fluff, zero "comment karo" spam in the middle.

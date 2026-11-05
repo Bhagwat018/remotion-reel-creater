@@ -477,6 +477,15 @@ if (Array.isArray(rawData.scenes)) {
     }
   }
 
+  // Check Total Duration (Optimal: 30 - 35 seconds for Instagram viral retention)
+  const lastScene = rawData.scenes[rawData.scenes.length - 1];
+  const totalSec = lastScene?.endSec || rawData.meta?.durationSec || 0;
+  if (totalSec > 35) {
+    warnings.push(
+      `Total duration is ${totalSec}s. Optimal Instagram viral sweet-spot is 30-35s max. Longer reels suffer from lower completion rate.`
+    );
+  }
+
   // Check Headline Lengths
   rawData.scenes.forEach((scene) => {
     if (scene.headline) {

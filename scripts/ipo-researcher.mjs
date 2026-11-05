@@ -32,17 +32,15 @@ Perform a deep financial breakdown. Unmask the true valuation, compare against l
 
 STRICT RULES:
 1. Tone: Conversational, energetic Indian Hinglish (conversational Hindi with English financial terms like P/E, GMP, allotment, peer average, fresh issue).
-2. Word count: Approx 100 to 115 total words for the entire voiceover.
-3. Target Duration: 30 to 35 seconds.
-4. Output MUST use the bespoke financial components:
-   - Scene 1: "title" (Punchy uppercase hook under 35 characters, e.g. "${Math.round(ipoData.subMultiple)}X OVERSUBSCRIBED IPO?!")
-   - Scene 2: "gmp-gauge" (Speedometer dial with gmpPercent: ${ipoData.gmpPercent}, gmpPrice: ${ipoData.gmpPrice}, issuePrice: ${ipoData.issuePrice}, profitPerLot: "${Math.round(ipoData.gmpPrice * ipoData.lotSize).toLocaleString()}")
-   - Scene 3: "subscription-xray" (3-tier breakdown: totalMultiple: "${ipoData.subMultiple}x", qibMultiple, niiMultiple, retailMultiple)
-   - Scene 4: "valuation-battle" (Company P/E vs Listed Peer benchmark with red flag points)
-   - Scene 5: "stat" (Fresh issue proceeds vs OFS exit)
-   - Scene 6: "steps" (Actionable 3-step listing day strategy)
-   - Scene 7: "card" (The retail investor golden rule / warning)
-   - Scene 8: "cta" (Follow @techwith.GenZ for unbiased daily IPO alerts)
+2. Word count: STRICTLY 70 to 80 TOTAL WORDS for the entire voiceover. Each scene voice MUST be 1 single short sentence (10-14 words max).
+3. Target Duration: STRICTLY 30 to 34 SECONDS (DO NOT EXCEED 35 SECONDS). Short, punchy reels get maximum viral retention and completion rate.
+4. Output MUST use EXACTLY 6 bespoke financial scenes:
+   - Scene 1: "title" (Punchy uppercase hook under 30 chars, e.g. "${Math.round(ipoData.subMultiple)}X OVERSUBSCRIBED IPO?!")
+   - Scene 2: "gmp-gauge" (Dynamic Speedometer dial: gmpPercent: ${ipoData.gmpPercent}, gmpPrice: ${ipoData.gmpPrice}, issuePrice: ${ipoData.issuePrice}, profitPerLot: "${Math.round(ipoData.gmpPrice * ipoData.lotSize).toLocaleString()}")
+   - Scene 3: "subscription-xray" (3-tier power bars: totalMultiple: "${ipoData.subMultiple}x", qibMultiple, niiMultiple, retailMultiple)
+   - Scene 4: "valuation-battle" (Company P/E vs Listed Peer benchmark with 3 bullet points)
+   - Scene 5: "steps" (Actionable 3-step listing day strategy & trap avoidance)
+   - Scene 6: "cta" (Follow @techwith.GenZ for daily unbiased IPO alerts)
 
 RETURN ONLY VALID JSON (no markdown formatting, strictly parseable JSON):
 {
@@ -59,7 +57,7 @@ RETURN ONLY VALID JSON (no markdown formatting, strictly parseable JSON):
     "bgm": false,
     "bgmVolume": 0.16,
     "voice": "shubh",
-    "voiceSpeed": 1.10,
+    "voiceSpeed": 1.15,
     "instagramCaption": "Kal list hone wala hai ${ipoData.company} IPO with a massive +${ipoData.gmpPercent}% GMP! 🚀📈\\n\\nKya allotment mila? Here is your game plan:\\n• Issue Price: ₹${ipoData.issuePrice} (Lot: ${ipoData.lotSize})\\n• Current GMP: +${ipoData.gmpPercent}% (Est. Profit: ₹${Math.round(ipoData.gmpPrice * ipoData.lotSize).toLocaleString()}/lot)\\n• Total Subscription: ${ipoData.subMultiple}x\\n\\nFollow @techwith.GenZ for daily unbiased IPO breakdowns!\\n\\n#IPO #StockMarketIndia #GMP #ShareMarket #techwithgenz #${ipoData.company.replace(/[^a-zA-Z0-9]/g, "")}",
     "disclaimer": "Educational content only. Not SEBI registered investment advice."
   },
@@ -69,8 +67,8 @@ RETURN ONLY VALID JSON (no markdown formatting, strictly parseable JSON):
       "type": "title",
       "headline": "${Math.round(ipoData.subMultiple)}X OVERSUBSCRIBED IPO?!",
       "leadIn": "${ipoData.company.toUpperCase()} IPO 🚨",
-      "subtitle": "Listing Tomorrow with +${ipoData.gmpPercent}% GMP!",
-      "voice": "Bhai ${ipoData.company} ka IPO kal list hone wala hai aur yeh ${Math.round(ipoData.subMultiple)} guna se zyada over-subscribe ho chuka hai!"
+      "subtitle": "Listing with +${ipoData.gmpPercent}% GMP!",
+      "voice": "${ipoData.company} ka IPO list hone wala hai aur yeh ${Math.round(ipoData.subMultiple)} guna oversubscribe ho chuka hai!"
     },
     {
       "id": "s2-gmp",
@@ -84,7 +82,7 @@ RETURN ONLY VALID JSON (no markdown formatting, strictly parseable JSON):
       "lotSize": ${ipoData.lotSize},
       "profitPerLot": "${Math.round(ipoData.gmpPrice * ipoData.lotSize).toLocaleString()}",
       "sentiment": "${ipoData.gmpPercent > 40 ? "SUPER BULLISH 🔥🔥🔥" : "SOLID LISTING GAIN ⚡"}",
-      "voice": "Grey market me iska GMP ${ipoData.gmpPercent} percent chal raha hai, matlab ek single lot pe lagbhag ${Math.round(ipoData.gmpPrice * ipoData.lotSize).toLocaleString()} rupaye ka expected profit dikh raha hai!"
+      "voice": "GMP chal raha hai plus ${ipoData.gmpPercent} percent, matlab ek lot par lagbhag ${Math.round(ipoData.gmpPrice * ipoData.lotSize).toLocaleString()} rupaye profit expected hai!"
     },
     {
       "id": "s3-sub",
@@ -96,7 +94,7 @@ RETURN ONLY VALID JSON (no markdown formatting, strictly parseable JSON):
       "niiMultiple": "${Math.round(ipoData.subMultiple * 1.4)}x",
       "retailMultiple": "${Math.round(ipoData.subMultiple * 0.65)}x",
       "verdict": "MASSIVE DEMAND RUSH 🔥",
-      "voice": "Demand dekhoge toh hosh ud jayenge: HNI category me insane bidding hui hai aur retail quota bhi poora pack hai."
+      "voice": "Subscription me N-I-I aur retail dono quota fully packed hain, heavy institutional interest hai."
     },
     {
       "id": "s4-valuation",
@@ -109,53 +107,33 @@ RETURN ONLY VALID JSON (no markdown formatting, strictly parseable JSON):
       "peerPe": "22.0x",
       "verdictBadge": "PREMIUM PRICING ⚠️",
       "points": [
-        "Trading at a 55% premium compared to established peers",
+        "Trading at premium compared to established peers",
         "Top clients bring in high customer concentration",
-        "Strong operating margins supporting the high price band"
+        "Strong operating margins supporting the issue"
       ],
-      "voice": "Lekin savdhaan! Company ka P-E ratio peer average se lagbhag pachpan percent premium par trade kar raha hai."
+      "voice": "Lekin valuation expensive hai — P-E ratio industry peer average se premium par chal raha hai."
     },
     {
-      "id": "s5-proceeds",
-      "type": "stat",
-      "headline": "100% FRESH ISSUE",
-      "leadIn": "WHERE MONEY GOES 🏭",
-      "value": "${ipoData.issueSize}",
-      "label": "Fresh Issue Capital",
-      "subtext": "Zero OFS Promoter Dumping",
-      "badge": "EXPANSION PROCEED ✅",
-      "voice": "Sabse acchi baat yeh hai ki promoters ne ek bhi share dump nahi kiya, poora paisa business expansion me jaa raha hai."
-    },
-    {
-      "id": "s6-strategy",
+      "id": "s5-strategy",
       "type": "steps",
       "headline": "LISTING DAY STRATEGY",
       "leadIn": "PRO DECISION MATRIX 🚀",
       "steps": [
-        "If allotted: Book 70% listing profit immediately at 9:15 AM",
-        "Keep remaining with strict stop-loss at issue price ₹${ipoData.issuePrice}",
-        "If not allotted: Strictly avoid buying on listing day peak"
+        "Allotment mila toh opening par profit book karo",
+        "Fresh entry listing day peak par bilkul mat lena",
+        "Big players listing gap-up par exit karte hain"
       ],
-      "voice": "Toh strategy simple hai: Allotment mila toh opening par profit book karo, aur listing ke din FOMO me buy mat karna!"
+      "voice": "Strategy simple hai: Allotment mila toh opening pe profit book karo, FOMO me top par buy mat karna!"
     },
     {
-      "id": "s7-rule",
-      "type": "card",
-      "headline": "THE RETAIL GOLDEN RULE",
-      "leadIn": "CRITICAL INSIGHT 💡",
-      "cardText": "Never chase a stock on listing day after a 70% gap-up opening — big institutions use retail euphoria to exit.",
-      "chip": "KEY TAKEAWAY",
-      "voice": "Kyunki heavy gap-up opening ke baad aksar profit booking aati hai aur retail buyers top par phas jaate hain."
-    },
-    {
-      "id": "s8-cta",
+      "id": "s6-cta",
       "type": "cta",
       "headline": "FOLLOW FOR DAILY IPO ALERTS",
       "leadIn": "UNBIASED MARKET DATA 🔥",
       "buttonText": "FOLLOW NOW 🔥",
       "handle": "@techwith.GenZ",
       "subtitle": "@techwith.GenZ",
-      "voice": "Aise hi honest IPO breakdowns aur live data ke liye @techwith.GenZ ko follow karo!"
+      "voice": "Aise hi unbiased daily IPO alerts aur live breakdown ke liye @techwith.GenZ ko follow karo!"
     }
   ]
 }

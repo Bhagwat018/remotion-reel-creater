@@ -204,35 +204,46 @@ async function runScheduler() {
     return;
   }
 
-  // Daemon Mode: Continuous schedule listener
+  // Daemon Mode: Continuous schedule listener (Checking every 15 minutes to save CPU)
   if (isDaemon) {
     console.log("\n=======================================================");
-    console.log("🤖 24/7 AUTONOMOUS REEL & STORY SCHEDULER DAEMON");
+    console.log("🤖 24/7 AUTONOMOUS REEL SCHEDULER DAEMON");
     console.log("📡 Tracking Indian Market Hours (Asia/Kolkata)");
-    console.log("⏰ Slots: 09:00 AM | 01:30 PM | 08:00 PM IST");
+    console.log("⏰ Slots: 01:30 PM | 05:45 PM | 08:00 PM IST");
+    console.log("🔋 Power-Saver Mode: Checks every 15 minutes (Zero CPU waste)");
     console.log("=======================================================\n");
 
     printStatusDashboard();
 
-    console.log("👂 Listening for next trigger time (checking every 30s)... Press Ctrl+C to stop.\n");
+    console.log("👂 Listening for next trigger time (checking every 15 minutes)... Press Ctrl+C to stop.\n");
 
-    // Tick loop every 30 seconds
-    setInterval(async () => {
-      const { dateStr, timeStr, fullStr } = getIstTime();
+    const checkAndTrigger = async () => {
+      const { dateStr, hour, minute, fullStr } = getIstTime();
+      const currentMinutes = hour * 60 + minute;
       const runs = loadRuns().filter((r) => r.date === dateStr && r.status === "SUCCESS");
       const executedSlotIds = new Set(runs.map((r) => r.slotId));
 
       for (const slot of SCHEDULE_SLOTS) {
-        if (slot.time === timeStr && !executedSlotIds.has(slot.id)) {
-          console.log(`\n🔔 [ALARM] Current Time (${timeStr} IST) matches Slot ${slot.id}: ${slot.name}!`);
+        const [sHour, sMin] = slot.time.split(":").map(Number);
+        const slotMinutes = sHour * 60 + sMin;
+
+        // Trigger if current time has reached or passed slot time today, and slot has not yet executed
+        if (currentMinutes >= slotMinutes && !executedSlotIds.has(slot.id)) {
+          console.log(`\n🔔 [ALARM] Current Time (${fullStr}) is due for Slot ${slot.id}: ${slot.name}!`);
           try {
             await executeSlot(slot, false);
           } catch (err) {
-            console.error("Slot execution failed, will retry next tick:", err.message);
+            console.error(`Slot ${slot.id} execution failed, will retry on next 15-min tick:`, err.message);
           }
         }
       }
-    }, 30000);
+    };
+
+    // Run check immediately on start
+    await checkAndTrigger();
+
+    // Then check every 15 minutes (15 * 60 * 1000 ms)
+    setInterval(checkAndTrigger, 15 * 60 * 1000);
 
     return;
   }
