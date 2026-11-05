@@ -197,25 +197,7 @@ async function main() {
         }
       }
       console.log("✅ Reel successfully published to Instagram with 9:16 crop & AI label ON!");
-
-      console.log("📸 [Stage 7b/7] Auto-Publishing Story to Instagram (@techwith.genz)...");
-      try {
-        execSync(`npm run post:story -- "${slug}"`, {
-          stdio: "inherit",
-          cwd: rootDir,
-        });
-        if (fs.existsSync(historyPath)) {
-          const history = JSON.parse(fs.readFileSync(historyPath, "utf-8"));
-          const entry = history.processedReels.find((r) => r.ourSlug === slug);
-          if (entry) {
-            entry.status = "POSTED_WITH_STORY";
-            fs.writeFileSync(historyPath, JSON.stringify(history, null, 2));
-          }
-        }
-        console.log("✅ Story successfully published to Instagram with high-CTR cover & AI label!");
-      } catch (storyErr) {
-        console.error("⚠️ Instagram Story posting warning:", storyErr.message);
-      }
+      console.log("📲 Tip: Open Instagram on your phone to 1-tap share the new reel to your Story!");
     } catch (postErr) {
       console.error("❌ Instagram posting failed:", postErr.message);
     }
