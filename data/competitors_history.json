@@ -51,6 +51,16 @@
       "processedAt": "2026-11-03T07:24:19.983Z",
       "status": "RENDERED",
       "durationSec": 47
+    },
+    {
+      "channel": "adilet.fndr",
+      "shortcode": "De6BhOXo0s3",
+      "url": "https://www.instagram.com/adilet.fndr/reel/De6BhOXo0s3/",
+      "originalTopic": "A fully automated headless media generation pipeline using Claude Code CLI to orchestrate AI scriptwriting, TTS audio synthesis, and headless video rendering inside a local skill folder.",
+      "ourSlug": "claude-code-video-agency-automation",
+      "processedAt": "2026-11-05T06:46:47.070Z",
+      "status": "RENDERED",
+      "durationSec": 41
     }
   ]
 }

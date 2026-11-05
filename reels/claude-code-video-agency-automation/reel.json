@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "claude-code-video-agency-automation",
+    "topic": "A fully automated headless media generation pipeline using Claude Code CLI to orchestrate AI scriptwriting, TTS audio synthesis, and headless video rendering inside a local skill folder.",
+    "title": "Automate Video Reels with Claude CLI",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "audience": "Developers, AI enthusiasts, Tech creators",
+    "loop": false,
+    "captions": true,
+    "captionStyle": "kinetic",
+    "bgm": false,
+    "bgmVolume": 0.16,
+    "voice": "shubh",
+    "voiceSpeed": 1.1,
+    "instagramCaption": "Replace your video editing team with 1 CLI command! 🚀\n\nHere is how to automate video generation:\n• Use Claude Code CLI with local skill configs\n• Synthesize script, TTS audio, and motion keyframes\n• Headless Remotion renders 60FPS vertical reels instantly\n\nFollow @techwith.GenZ for daily AI tricks!\n\n#AI #ClaudeCode #TechNews #ViralReels #techwithgenz",
+    "disclaimer": "Educational content only.",
+    "fullVoiceover": "Kaise sirf 1 single folder aur CLI prompt tumhari poori video agency replace kar sakta hai? Manual editing me ghanto waste mat karo, Claude Code pipeline se zeroes me kaam hoga! Terminal trigger se LLM synthesis, neural voice aur headless Remotion se video auto render hoti hai. Bas ek akeli single terminal command, aur poora content tayar! Sirf ek command run karo aur 28 seconds me 60FPS full video ready! Skill folder setup karo, prompts dalo, aur single command se dynamic reels banao. Real secret hai headless automation jo top content creators secretly use karte hain. Aise hi solid AI system design aur tech breakdowns ke liye techwith.GenZ ko follow karo!",
+    "durationSec": 41,
+    "voiceFile": "reels/claude-code-video-agency-automation/voice.mp3",
+    "wordsFile": "reels/claude-code-video-agency-automation/words.json"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "headline": "REPLACE ₹30,000 VIDEO AGENCY?!",
+      "leadIn": "INSANE AI SECRET ⚡",
+      "subtitle": "1 Folder + Claude Code CLI Automation",
+      "voice": "Kaise sirf 1 single folder aur CLI prompt tumhari poori video agency replace kar sakta hai?",
+      "startSec": 0,
+      "endSec": 4.15
+    },
+    {
+      "id": "s2-compare",
+      "type": "compare",
+      "headline": "THE REAL COMPARISON",
+      "leadIn": "OLD VS NEW ⚔️",
+      "leftTitle": "Traditional Editing",
+      "leftBadge": "MANUAL & SLOW",
+      "leftItems": [
+        "₹15,000/mo Premiere Pro Sub",
+        "4-6 Hours Manual Keyframing",
+        "Scattered Asset Management"
+      ],
+      "rightTitle": "Claude Code Pipeline",
+      "rightBadge": "FULLY AUTONOMOUS",
+      "rightItems": [
+        "₹0 Local Open-Source CLI",
+        "30-Second Terminal Run",
+        "Zero-Touch Automated Output"
+      ],
+      "voice": "Manual editing me ghanto waste mat karo, Claude Code pipeline se zeroes me kaam hoga!",
+      "startSec": 4.15,
+      "endSec": 9.4
+    },
+    {
+      "id": "s3-flow",
+      "type": "flow",
+      "headline": "HEADLESS AI VIDEO ENGINE",
+      "leadIn": "SYSTEM DESIGN 🧠",
+      "nodes": [
+        {
+          "title": "Skill Trigger",
+          "subtitle": "Claude Code CLI",
+          "icon": "⚡",
+          "status": "INITIALIZED",
+          "accentColor": "#60a5fa"
+        },
+        {
+          "title": "Script & Logic",
+          "subtitle": "LLM Synthesis Engine",
+          "icon": "🧠",
+          "status": "PARSING",
+          "accentColor": "#c084fc"
+        },
+        {
+          "title": "Voice Gen",
+          "subtitle": "Neural TTS Audio",
+          "icon": "🎙️",
+          "status": "24kHz HI-RES",
+          "accentColor": "#fb923c"
+        },
+        {
+          "title": "Video Render",
+          "subtitle": "Headless Remotion",
+          "icon": "🎬",
+          "status": "9:16 60FPS",
+          "accentColor": "#4ade80"
+        }
+      ],
+      "voice": "Terminal trigger se LLM synthesis, neural voice aur headless Remotion se video auto render hoti hai.",
+      "startSec": 9.4,
+      "endSec": 15.24
+    },
+    {
+      "id": "s4-stat",
+      "type": "stat",
+      "headline": "THE PERFORMANCE JUMP",
+      "leadIn": "PROVEN STATS 📊",
+      "value": "1-Line",
+      "label": "Terminal Trigger",
+      "voice": "Bas ek akeli single terminal command, aur poora content tayar!",
+      "startSec": 15.24,
+      "endSec": 18.91
+    },
+    {
+      "id": "s5-terminal",
+      "type": "terminal",
+      "headline": "LIVE EXECUTION",
+      "leadIn": "DEV WORKFLOW 💻",
+      "command": "claude --skill generate-reel --topic='adilet.fndr'",
+      "output": [
+        "[INFO] Reading local skill folder... DONE",
+        "[INFO] Synthesizing script, voice & animations... DONE",
+        "[SUCCESS] 9:16 vertical video rendered in 28 seconds!"
+      ],
+      "voice": "Sirf ek command run karo aur 28 seconds me 60FPS full video ready!",
+      "startSec": 18.91,
+      "endSec": 25.29
+    },
+    {
+      "id": "s6-steps",
+      "type": "steps",
+      "headline": "3-STEP CLI BLUEPRINT",
+      "leadIn": "HOW YOU CAN DO IT 🚀",
+      "steps": [
+        "Set up local skill folder with Claude Code configs",
+        "Write custom prompt instructions for script & visual scenes",
+        "Run single CLI command to auto-generate & render 9:16 reels"
+      ],
+      "voice": "Skill folder setup karo, prompts dalo, aur single command se dynamic reels banao.",
+      "startSec": 25.29,
+      "endSec": 30.07
+    },
+    {
+      "id": "s7-twist",
+      "type": "card",
+      "headline": "THE 1% CREATOR SECRET",
+      "leadIn": "INSIDER HACK 💡",
+      "cardText": "Headless Remotion scripts combined with AI CLI skills let you scale endless faceless tech channels effortlessly.",
+      "chip": "KEY TAKEAWAY",
+      "voice": "Real secret hai headless automation jo top content creators secretly use karte hain.",
+      "startSec": 30.07,
+      "endSec": 34.28
+    },
+    {
+      "id": "s8-cta",
+      "type": "cta",
+      "headline": "FOLLOW FOR DAILY HACKS",
+      "leadIn": "DAILY TECH BREAKDOWNS 🔥",
+      "buttonText": "FOLLOW NOW 🔥",
+      "handle": "@techwith.GenZ",
+      "subtitle": "@techwith.GenZ",
+      "voice": "Aise hi solid AI system design aur tech breakdowns ke liye techwith.GenZ ko follow karo!",
+      "startSec": 34.28,
+      "endSec": 40.68
+    }
+  ]
+}

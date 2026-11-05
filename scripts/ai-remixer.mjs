@@ -155,25 +155,52 @@ RETURN ONLY VALID JSON (no markdown fences, strictly JSON):
 }
 `;
 
-  const urlEndpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${apiKey}`;
+  const candidateModels = [
+    "gemini-3.5-flash-lite",
+    "gemini-3.5-flash",
+    "gemini-flash-latest",
+  ];
 
-  const res = await fetch(urlEndpoint, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: {
-        responseMimeType: "application/json",
-      },
-    }),
-  });
+  let rawJson = null;
+  let lastError = null;
 
-  const data = await res.json();
-  if (data.error) {
-    throw new Error(`Gemini API Error: ${data.error.message}`);
+  for (const model of candidateModels) {
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        const urlEndpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+        const res = await fetch(urlEndpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+            generationConfig: {
+              responseMimeType: "application/json",
+            },
+          }),
+        });
+
+        const data = await res.json();
+        if (data.error) {
+          throw new Error(data.error.message || JSON.stringify(data.error));
+        }
+
+        if (data.candidates && data.candidates[0]?.content?.parts?.[0]?.text) {
+          rawJson = data.candidates[0].content.parts[0].text.trim();
+          break;
+        }
+      } catch (err) {
+        lastError = err;
+        console.warn(`   ⚠️ Gemini attempt ${attempt} on ${model} warning: ${err.message}. Retrying...`);
+        await new Promise((r) => setTimeout(r, 1500 * attempt));
+      }
+    }
+    if (rawJson) break;
   }
 
-  const rawJson = data.candidates[0].content.parts[0].text.trim();
+  if (!rawJson) {
+    throw new Error(`Gemini API Error (all fallbacks exhausted): ${lastError?.message}`);
+  }
+
   const parsed = JSON.parse(rawJson);
 
   parsed.meta.fullVoiceover = parsed.scenes.map((s) => s.voice).join(" ");
