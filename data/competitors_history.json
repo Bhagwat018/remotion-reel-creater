@@ -74,8 +74,9 @@
       "originalTopic": "Maxwell Engineering Solutions IPO Analysis",
       "ourSlug": "maxwell-engineering-solutions-ipo-analysis",
       "processedAt": "2026-11-05T07:29:56.788Z",
-      "status": "RENDERED",
-      "durationSec": 46
+      "status": "POSTED_WITH_STORY",
+      "durationSec": 46,
+      "postedAt": "2026-11-05T07:37:30.000Z"
     }
   ]
 }
