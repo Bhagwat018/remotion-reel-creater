@@ -65,8 +65,8 @@ RETURN ONLY VALID JSON (no markdown formatting, strictly parseable JSON):
     "captionStyle": "kinetic",
     "bgm": false,
     "bgmVolume": 0.16,
-    "voice": "shubh",
-    "voiceSpeed": 1.15,
+    "voice": "rohan",
+    "voiceSpeed": 1.10,
     "showTicker": true,
     "manychatHook": ${isManychat},
     "instagramCaption": "Kal list hone wala hai ${ipoData.company} IPO with a massive +${ipoData.gmpPercent}% GMP! 🚀📈\\n\\nKya allotment mila? Here is your game plan:\\n• Issue Price: ₹${ipoData.issuePrice} (Lot: ${ipoData.lotSize})\\n• Current GMP: +${ipoData.gmpPercent}% (Est. Profit: ₹${Math.round(ipoData.gmpPrice * ipoData.lotSize).toLocaleString()}/lot)\\n• Total Subscription: ${ipoData.subMultiple}x\\n• Post-IPO P/E: ${fin.peRatioPost || fin.peRatioPre || "N/A"}x${isManychat ? "\\n\\n👇 Comment 'IPO' below to get our 5X Allotment Strategy & Target Sheet directly in your DM!" : "\\n\\nFollow @techwith.GenZ for daily unbiased IPO breakdowns!"}\\n\\n#IPO #StockMarketIndia #GMP #ShareMarket #techwithgenz #${ipoData.company.replace(/[^a-zA-Z0-9]/g, "")}",
@@ -198,7 +198,7 @@ RETURN ONLY VALID JSON (no markdown formatting, strictly parseable JSON):
 
   const parsed = JSON.parse(rawJson);
   parsed.meta.fullVoiceover = parsed.scenes.map((s) => s.voice).join(" ");
-  parsed.meta.voice = process.env.SARVAM_API_KEY ? "shubh" : "madhur";
+  parsed.meta.voice = process.env.SARVAM_API_KEY ? "rohan" : "madhur";
   parsed.meta.voiceSpeed = 1.10;
   parsed.meta.showTicker = true;
   parsed.meta.manychatHook = Boolean(options.manychat);

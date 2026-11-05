@@ -52,14 +52,14 @@ fs.mkdirSync(tempDir, { recursive: true });
 const wordsList = [];
 const sceneAudioFiles = [];
 
-// Voice selection: meta.voice > CLI param > default "shubh" if Sarvam available, else "Rishi"
+// Voice selection: meta.voice > CLI param > default "rohan" (Studio Mic Profile) if Sarvam available, else "hi-IN-MadhurNeural"
 const requestedVoice = (
   args.find((a) => a.startsWith("--voice="))?.split("=")[1] ||
   reelData.meta?.voice ||
-  (process.env.SARVAM_API_KEY ? "shubh" : "Rishi")
+  (process.env.SARVAM_API_KEY ? "rohan" : "hi-IN-MadhurNeural")
 ).trim();
 
-const speedMultiplier = parseFloat(reelData.meta?.voiceSpeed || 1.05);
+const speedMultiplier = parseFloat(reelData.meta?.voiceSpeed || 1.10);
 const rateWpm = Math.round(180 * speedMultiplier);
 const openaiVoices = ["alloy", "echo", "fable", "onyx", "nova", "shimmer"];
 const isOpenAIVoice = openaiVoices.includes(requestedVoice.toLowerCase());
@@ -82,7 +82,7 @@ const isEdgeVoice = ["madhur", "swara", "neerja", "prabhat", "edgetts", "edge-tt
   requestedVoice.toLowerCase().includes(v)
 );
 
-const isSarvamVoice = ["sarvam", "shubh", "bulbul"].some((v) =>
+const isSarvamVoice = ["sarvam", "rohan", "shubh", "bulbul", "rahul", "aditya", "kabir"].some((v) =>
   requestedVoice.toLowerCase().includes(v)
 );
 
@@ -100,17 +100,25 @@ for (let i = 0; i < scenes.length; i++) {
   if (!voiceText || /^scene\s*\d+$/i.test(voiceText)) {
     voiceText = `${scene.headline || ""}. ${scene.subtitle || scene.label || scene.cardText || ""}`.trim();
   }
+  // Phonetic polish for natural Indian Hinglish pronunciation
   const cleanVoiceText = (voiceText || `Highlight ${i + 1}`)
     .replace(/[*_#`]/g, "")
+    .replace(/\b(\d+)\s*[xX]\b/g, "$1 guna")
+    .replace(/\bP[\/\-]E\b/gi, "P-E ratio")
+    .replace(/\bQIB\b/g, "Q-I-B")
+    .replace(/\bNII\b/g, "N-I-I")
+    .replace(/₹\s*/g, "rupaye ")
+    .replace(/%/g, " percent")
     .replace(/\s+/g, " ")
     .trim();
 
   // 1. Synthesize audio with Sarvam AI, ElevenLabs, OpenAI, or Microsoft Neural EdgeTTS
   let synthesized = false;
 
-  // Option S: Sarvam AI (Bulbul V3/V4 - Native Indian Hinglish)
+  // Option S: Sarvam AI (Bulbul V3/V4 - Native Indian Hinglish, Rohan Studio Mic)
   if (!synthesized && (isSarvamVoice || requestedVoice.toLowerCase() === "sarvam") && process.env.SARVAM_API_KEY) {
     try {
+      const speakerName = requestedVoice.toLowerCase() === "sarvam" ? "rohan" : requestedVoice.toLowerCase();
       const resp = await fetch("https://api.sarvam.ai/text-to-speech", {
         method: "POST",
         headers: {
@@ -121,7 +129,7 @@ for (let i = 0; i < scenes.length; i++) {
           text: cleanVoiceText,
           target_language_code: "hi-IN",
           model: "bulbul:v3",
-          speaker: "shubh",
+          speaker: speakerName,
           pace: speedMultiplier,
           speech_sample_rate: 24000,
           enable_preprocessing: true,
@@ -132,9 +140,10 @@ for (let i = 0; i < scenes.length; i++) {
         if (json.audios && json.audios[0]) {
           const rawWav = path.join(tempDir, `sarvam_${i}.wav`);
           fs.writeFileSync(rawWav, Buffer.from(json.audios[0], "base64"));
-          // Broadcast Studio EQ & Compression on raw Sarvam audio
+          // Shure SM7B Studio Podcast Mic + Neve Tube EQ & Compression Chain
+          const studioChain = "highpass=f=75,equalizer=f=120:width_type=o:width=1.8:g=4.0,equalizer=f=3600:width_type=o:width=1.4:g=4.2,equalizer=f=10500:width_type=o:width=2.0:g=2.8,acompressor=threshold=-15dB:ratio=4.0:attack=4:release=45,loudnorm=I=-13.8:LRA=5.5:tp=-1.2";
           execSync(
-            `ffmpeg -y -i "${rawWav}" -af "equalizer=f=120:width_type=o:width=2:g=3.5,equalizer=f=3200:width_type=o:width=1.5:g=2.5,acompressor=threshold=-16dB:ratio=4:attack=5:release=50,loudnorm=I=-14:LRA=7:tp=-1.5" -b:a 192k "${sceneMp3}" 2>/dev/null`
+            `ffmpeg -y -i "${rawWav}" -af "${studioChain}" -b:a 192k "${sceneMp3}" 2>/dev/null`
           );
           synthesized = true;
         }
@@ -351,8 +360,8 @@ sceneAudioFiles.forEach((item, idx) => {
 });
 
 const mixInputs = sceneAudioFiles.map((_, idx) => `[a${idx}]`).join("");
-// Broadcast Studio Master vocal chain (-14 LUFS standard, EQ warmth, dynamic compression)
-const masterMasteringChain = "equalizer=f=120:width_type=o:width=2:g=2.5,equalizer=f=3200:width_type=o:width=1.5:g=2,acompressor=threshold=-16dB:ratio=4:attack=5:release=50,loudnorm=I=-14:LRA=7:tp=-1.5";
+// Shure SM7B Studio Master vocal chain (-13.8 LUFS standard, Neve warmth, dynamic leveling)
+const masterMasteringChain = "highpass=f=75,equalizer=f=120:width_type=o:width=1.8:g=3.0,equalizer=f=3600:width_type=o:width=1.4:g=3.5,equalizer=f=10500:width_type=o:width=2.0:g=2.2,acompressor=threshold=-15dB:ratio=3.5:attack=4:release=45,loudnorm=I=-13.8:LRA=5.5:tp=-1.2";
 filterComplex.push(`${mixInputs}amix=inputs=${sceneAudioFiles.length}:dropout_transition=0,volume=1.2,${masterMasteringChain}[outa]`);
 
 const combinedMp3 = path.join(tempDir, "voice_combined.mp3");

@@ -69,7 +69,7 @@ RETURN ONLY VALID JSON (no markdown fences, strictly JSON):
     "captionStyle": "kinetic",
     "bgm": false,
     "bgmVolume": 0.16,
-    "voice": "${process.env.SARVAM_API_KEY ? "shubh" : "madhur"}",
+    "voice": "${process.env.SARVAM_API_KEY ? "rohan" : "madhur"}",
     "voiceSpeed": 1.10,
     "instagramCaption": "SEO-friendly caption with emojis, 3-bullet technical summary, and hashtags\\n\\nFollow @techwith.GenZ for daily AI tricks!\\n\\n#AI #TechNews #ViralReels #techwithgenz",
     "disclaimer": "Educational content only."
@@ -202,7 +202,7 @@ RETURN ONLY VALID JSON (no markdown fences, strictly JSON):
   const parsed = JSON.parse(rawJson);
 
   parsed.meta.fullVoiceover = parsed.scenes.map((s) => s.voice).join(" ");
-  parsed.meta.voice = process.env.SARVAM_API_KEY ? "shubh" : "madhur";
+  parsed.meta.voice = process.env.SARVAM_API_KEY ? "rohan" : "madhur";
   parsed.meta.voiceSpeed = 1.10;
 
   return parsed;
