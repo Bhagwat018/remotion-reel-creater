@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "slug": "zepto-blinkit-dark-store-economics",
+    "topic": "Zepto & Blinkit 10-Minute Dark Store Economics",
+    "title": "10-Minute Delivery Trap: ₹70 Loss Per Order",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "audience": "Indian Consumers, Techies & Gen-Z Traders",
+    "loop": false,
+    "captions": true,
+    "captionStyle": "kinetic",
+    "bgm": false,
+    "voice": "rohan",
+    "voiceSpeed": 1.1,
+    "showTicker": true,
+    "tickerPosition": "bottom",
+    "tickerBottomOffset": 130,
+    "manychatHook": false,
+    "instagramCaption": "Blinkit aur Zepto 10 minute me delivery de kar har order par ₹70 ka loss kaise jhel rahe hain? 🛵📦\n\nHere is the quick commerce reality check:\n• Dark Store Cost: ₹110 per delivery\n• Customer Fee: Only ₹15-₹25\n• Silent Trap: Handling fees & surge pricing creeping up\n\nFollow @techwith.GenZ for daily tech & business breakdowns!\n\n#QuickCommerce #Zepto #Blinkit #StartupIndia #TechNews #techwithgenz",
+    "disclaimer": "Educational content only. Based on publicly disclosed Quick Commerce unit economics.",
+    "durationSec": 37,
+    "voiceFile": "reels/zepto-blinkit-dark-store-economics/voice.mp3",
+    "wordsFile": "reels/zepto-blinkit-dark-store-economics/words.json"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "headline": "10 MIN DELIVERY TRAP: ₹70 LOSS?!",
+      "leadIn": "QUICK COMMERCE TRUTH 🚨",
+      "voice": "Bhai suno! Blinkit aur Zepto har 10-minute delivery par 70 rupaye ka loss jhel rahe hain!",
+      "startSec": 0,
+      "endSec": 6.07
+    },
+    {
+      "id": "s2-compare",
+      "type": "card",
+      "headline": "DARK STORE REALITY: ₹110 KHARCHA",
+      "leadIn": "HIGH-RENT WAREHOUSES 🏢",
+      "voice": "Har do kilometer par dark store aur delivery staff milakar delivery kharcha 110 rupaye aata hai!",
+      "startSec": 6.07,
+      "endSec": 12.76,
+      "cardText": "DARK STORE REALITY: ₹110 KHARCHA",
+      "chip": "HIGH-RENT WAREHOUSES 🏢"
+    },
+    {
+      "id": "s3-stat",
+      "type": "terminal",
+      "headline": "CUSTOMER PAYS ONLY ₹20",
+      "leadIn": "VC CASH SUBSIDY 💸",
+      "voice": "Lekin aapse sirf 20 rupaye lete hain, bacha hua 70 rupaye VC funding se burn hota hai!",
+      "startSec": 12.76,
+      "endSec": 19.07
+    },
+    {
+      "id": "s4-chart",
+      "type": "card",
+      "headline": "SILENT SURGE FEES CREEPING IN",
+      "leadIn": "THE SUBSIDY IS ENDING ⚠️",
+      "voice": "Ab funding rukte hi silently handling fee aur surge charges add ho rahe hain!",
+      "startSec": 19.07,
+      "endSec": 23.98,
+      "cardText": "SILENT SURGE FEES CREEPING IN",
+      "chip": "THE SUBSIDY IS ENDING ⚠️"
+    },
+    {
+      "id": "s5-steps",
+      "type": "pills",
+      "headline": "SMART CONSUMER GOLDEN RULE",
+      "leadIn": "SAVE ₹15,000 YEARLY 💰",
+      "voice": "Rule simple hai: Emergency me hi quick commerce use karo, daily grocery local store se lo!",
+      "startSec": 23.98,
+      "endSec": 30.83,
+      "items": [
+        "Emergency Only for 10-Min Delivery",
+        "Daily Grocery from Local Kirana",
+        "Check Silent Surge Fees"
+      ]
+    },
+    {
+      "id": "s6-cta",
+      "type": "cta",
+      "headline": "FOLLOW TECH WITH GEN Z",
+      "leadIn": "UNBIASED TECH & MONEY TRUTHS 🔥",
+      "voice": "Aise hi real startup aur tech reality checks ke liye Tech with Gen Z ko abhi follow karo!",
+      "startSec": 30.83,
+      "endSec": 36.37,
+      "buttonText": "FOLLOW NOW 🔥",
+      "handle": "@techwith.GenZ"
+    }
+  ]
+}

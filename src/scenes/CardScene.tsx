@@ -43,12 +43,12 @@ export const CardScene: React.FC<
   const { fps } = useVideoConfig();
 
   // Bespoke scene for NPCI 0.4% MDR Rule (UPI Reel)
-  if (slug === "upi-free-secret" && id === "s3-mdr-rule" || id === "s3-mdr-rule") {
+  if (slug === "upi-free-secret" || slug === "is-upi-really-free-hidden-charges" && (id === "s3-mdr-rule" || id === "s3-stat" || id === "s2-compare")) {
     return <MdrRuleScene durationInFrames={durationInFrames} />;
   }
 
   // Bespoke scene for UPI Fee Postponed (UPI Reel)
-  if (slug === "upi-free-secret" && id === "s5-postponed" || id === "s5-postponed") {
+  if (slug === "upi-free-secret" || slug === "is-upi-really-free-hidden-charges" && (id === "s5-postponed" || id === "s5-steps")) {
     return <UpiPostponedScene durationInFrames={durationInFrames} />;
   }
 
@@ -63,17 +63,17 @@ export const CardScene: React.FC<
   }
 
   // Bespoke scene for Dark Store Micro-Warehouse
-  if (slug === "dark-store-delivery" && id === "s2-warehouse" || id === "s2-warehouse") {
+  if ((slug === "dark-store-delivery" || slug === "zepto-blinkit-dark-store-economics") && (id === "s2-warehouse" || id === "s2-compare")) {
     return <DarkStoreWarehouseScene durationInFrames={durationInFrames} />;
   }
 
   // Bespoke scene for Dark Store Profit vs Loss Paradox
-  if (slug === "dark-store-delivery" && id === "s5-paradox" || id === "s5-paradox") {
+  if ((slug === "dark-store-delivery" || slug === "zepto-blinkit-dark-store-economics") && (id === "s5-paradox" || id === "s4-chart")) {
     return <ProfitVsLossScene durationInFrames={durationInFrames} />;
   }
 
   // Bespoke scene for Digital Arrest Legal Reality
-  if (slug === "digital-arrest-scam" || id === "s5-legal-truth") {
+  if (slug === "digital-arrest-scam" || slug === "digital-arrest-scam-reality-check" || id === "s5-legal-truth" || id === "s4-compare") {
     return <LegalRealityScene durationInFrames={durationInFrames} />;
   }
 
@@ -82,8 +82,8 @@ export const CardScene: React.FC<
     return <BombayPricingScene durationInFrames={durationInFrames} />;
   }
 
-  // Bespoke scene for GMP Reality Check (Beginner IPOs)
-  if (slug === "ipo-4-beginner-questions" || id === "s2-gmp" && headline?.includes("GMP")) {
+  // Bespoke scene for GMP Reality Check (Beginner IPOs / SME Trap)
+  if (slug === "ipo-4-beginner-questions" || slug === "sme-ipo-500x-allotment-trap" || (id === "s2-gmp" && headline?.includes("GMP")) || (id === "s3-gmp-gauge")) {
     return <GmpRealityCheckScene durationInFrames={durationInFrames} />;
   }
 

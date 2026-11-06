@@ -6,13 +6,25 @@ import { SceneLayout } from "../components/SceneLayout";
 import { resolveFontFamily, useTheme } from "../theme/theme";
 import { entranceSpring } from "../lib/motion";
 import { TechLogo, findBrandInText } from "../components/TechLogo";
+import { ListingSplitScene } from "./mondayPlaybook/ListingSplitScene";
+import { SwitchFolioScene } from "./mutualFunds/SwitchFolioScene";
 
 export const StepsScene: React.FC<
-  StepsSceneProps & { steps?: string[]; durationInFrames: number }
-> = ({ leadIn, headline, items, steps, durationInFrames }) => {
+  StepsSceneProps & { steps?: string[]; durationInFrames: number; id?: string; slug?: string }
+> = ({ id, slug, leadIn, headline, items, steps, durationInFrames }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const theme = useTheme();
+
+  // Bespoke scene for Monday Listing 50-50 Rule
+  if (slug === "monday-ipo-listing-day-playbook" && (id === "s2-steps" || id === "s2-split")) {
+    return <ListingSplitScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for 2-Click Switch Folio
+  if (slug === "direct-vs-regular-mutual-funds-truth" && (id === "s5-steps" || id === "s5-switch")) {
+    return <SwitchFolioScene durationInFrames={durationInFrames} />;
+  }
 
   const stepList = items && items.length > 0 ? items : steps || [];
 

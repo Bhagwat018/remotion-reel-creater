@@ -5,6 +5,8 @@ import { TechLogo } from "../components/TechLogo";
 import { SceneLayout } from "../components/SceneLayout";
 import { NeoLineChartCard } from "../components/neo/NeoLineChartCard";
 import { MotionDirection } from "../lib/directionalMotion";
+import { CompoundingDivergenceScene } from "./mutualFunds/CompoundingDivergenceScene";
+import { PreOpenOrderBookScene } from "./mondayPlaybook/PreOpenOrderBookScene";
 
 export interface ChartItem {
   label: string;
@@ -29,6 +31,7 @@ export interface ChartSceneProps {
   metricComparison?: string;
   metricIcon?: string;
   durationInFrames?: number;
+  slug?: string;
 }
 
 export const ChartScene: React.FC<ChartSceneProps> = ({
@@ -46,10 +49,21 @@ export const ChartScene: React.FC<ChartSceneProps> = ({
   metricValue = "+106%",
   metricComparison = "Benchmark tested under 50,000 req/sec load",
   durationInFrames = 150,
+  slug,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const theme = useTheme();
+
+  // Bespoke scene for Mutual Fund 25-Year Divergence Chart
+  if (slug === "direct-vs-regular-mutual-funds-truth" && (id === "s4-chart" || id === "s3-stat")) {
+    return <CompoundingDivergenceScene durationInFrames={durationInFrames} />;
+  }
+
+  // Bespoke scene for Pre-Open Auction Order Book
+  if (slug === "monday-ipo-listing-day-playbook" && (id === "s5-stat" || id === "s3-chart" || id === "s5-chart")) {
+    return <PreOpenOrderBookScene durationInFrames={durationInFrames} />;
+  }
 
   return (
     <SceneLayout

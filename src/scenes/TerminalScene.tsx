@@ -39,7 +39,7 @@ export const TerminalScene: React.FC<TerminalSceneProps> = ({
   slug,
 }) => {
   // Bespoke scene for UPI ₹5,000 / ₹20 Math Breakdown
-  if (slug === "upi-free-secret" || id === "s4-math") {
+  if (slug === "upi-free-secret" || slug === "is-upi-really-free-hidden-charges" || id === "s4-math" || id === "s3-stat") {
     return <UpiMathBreakdownScene durationInFrames={durationInFrames} />;
   }
 
@@ -49,19 +49,19 @@ export const TerminalScene: React.FC<TerminalSceneProps> = ({
   }
 
   // Bespoke scene for Dark Store 10-Min Order Pipeline
-  if (slug === "dark-store-delivery" || id === "s3-pipeline") {
+  if (slug === "dark-store-delivery" || slug === "zepto-blinkit-dark-store-economics" || id === "s3-pipeline" || id === "s3-stat") {
     return <OrderFlowPipelineScene durationInFrames={durationInFrames} />;
   }
 
   // Bespoke scenes for Digital Arrest
-  if (slug === "digital-arrest-scam" || id === "s3-modus-operandi") {
-    if (id === "s3-modus-operandi" || headline?.includes("CHALTA")) {
+  if (slug === "digital-arrest-scam" || slug === "digital-arrest-scam-reality-check" || id === "s3-modus-operandi" || id === "s2-steps") {
+    if (id === "s3-modus-operandi" || id === "s2-steps" || headline?.includes("CHALTA") || headline?.includes("FEAR")) {
       return <ModusOperandiScene durationInFrames={durationInFrames} />;
     }
   }
 
-  if (slug === "digital-arrest-scam" || id === "s6-emergency-1930") {
-    if (id === "s6-emergency-1930" || headline?.includes("1930")) {
+  if (slug === "digital-arrest-scam" || slug === "digital-arrest-scam-reality-check" || id === "s6-emergency-1930" || id === "s5-steps") {
+    if (id === "s6-emergency-1930" || id === "s5-steps" || headline?.includes("1930")) {
       return <Emergency1930Scene durationInFrames={durationInFrames} />;
     }
   }
@@ -72,7 +72,7 @@ export const TerminalScene: React.FC<TerminalSceneProps> = ({
   }
 
   // Bespoke full-screen scene for Bank ASBA Auto-Refund (Beginner IPOs)
-  if (slug === "ipo-4-beginner-questions" || id === "s3-asba" && headline?.includes("ALLOTMENT")) {
+  if (slug === "ipo-4-beginner-questions" || slug === "sme-ipo-500x-allotment-trap" || (id === "s3-asba" && headline?.includes("ALLOTMENT")) || id === "s4-compare") {
     return <AsbaRefundScene durationInFrames={durationInFrames} />;
   }
   // Support either explicit command/output or raw "lines" array

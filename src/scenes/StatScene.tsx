@@ -45,7 +45,7 @@ export const StatScene: React.FC<
   const frame = useCurrentFrame();
 
   // Bespoke scene for UPI August Record Volume (2,451 CR)
-  if (slug === "upi-free-secret" || id === "s2-volume") {
+  if (slug === "upi-free-secret" || slug === "is-upi-really-free-hidden-charges" || id === "s2-volume" || id === "s4-chart") {
     return <UpiRecordVolumeScene durationInFrames={durationInFrames} />;
   }
 
@@ -55,12 +55,12 @@ export const StatScene: React.FC<
   }
 
   // Bespoke scene for Dark Store Battle (2,751 vs 1,240)
-  if (slug === "dark-store-delivery" || id === "s4-battle") {
+  if (slug === "dark-store-delivery" || slug === "zepto-blinkit-dark-store-economics" || id === "s4-battle") {
     return <DarkStoreWarStatScene durationInFrames={durationInFrames} />;
   }
 
-  // Bespoke scene for Digital Arrest ₹647 Crore Loot
-  if (slug === "digital-arrest-scam" || id === "s2-crore-loot") {
+  // Bespoke scene for Digital Arrest ₹647 Crore / ₹1,200 Crore Loot
+  if (slug === "digital-arrest-scam" || slug === "digital-arrest-scam-reality-check" || id === "s2-crore-loot" || id === "s3-stat") {
     return <LootStatScene durationInFrames={durationInFrames} />;
   }
 
@@ -69,8 +69,8 @@ export const StatScene: React.FC<
     return <BombaySubscriptionScene durationInFrames={durationInFrames} />;
   }
 
-  // Bespoke scene for SME vs Mainboard (Beginner IPOs)
-  if (slug === "ipo-4-beginner-questions" || id === "s5-sme" && headline?.includes("SME")) {
+  // Bespoke scene for SME vs Mainboard (Beginner IPOs / 500x Trap)
+  if (slug === "ipo-4-beginner-questions" || slug === "sme-ipo-500x-allotment-trap" || (id === "s5-sme" && headline?.includes("SME")) || id === "s2-stat") {
     return <SmeVsMainboardScene durationInFrames={durationInFrames} />;
   }
 

@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "slug": "sme-ipo-500x-allotment-trap",
+    "topic": "The 500X SME IPO Allotment Trap & Grey Market Truth",
+    "title": "500X SME IPO Allotment Trap: Retail Truth",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "audience": "Indian Retail Investors & Gen-Z Traders",
+    "loop": false,
+    "captions": true,
+    "captionStyle": "kinetic",
+    "bgm": false,
+    "voice": "rohan",
+    "voiceSpeed": 1.1,
+    "showTicker": true,
+    "tickerPosition": "bottom",
+    "tickerBottomOffset": 130,
+    "manychatHook": false,
+    "instagramCaption": "Kya SME IPOs me 500X subscription dekh kar apply karna safe hai? ⚠️📉\n\nSME IPO Reality Check:\n• Allotment Odds: 1 in 850+ when 500x subscribed\n• Liquidity Risk: Lot-based selling means no exit during lower circuits\n• Golden Rule: Check audited 3-year PAT, ignore artificial GMP hype!\n\nFollow @techwith.GenZ for daily unbiased market truth!\n\n#SMEIPO #StockMarketIndia #IPOAlert #ShareMarket #techwithgenz #InvestingTips",
+    "disclaimer": "Educational content only. Not SEBI registered investment advice.",
+    "durationSec": 38,
+    "voiceFile": "reels/sme-ipo-500x-allotment-trap/voice.mp3",
+    "wordsFile": "reels/sme-ipo-500x-allotment-trap/words.json"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "headline": "500X SME IPO ALLOTMENT TRAP?!",
+      "leadIn": "GREY MARKET REALITY 🚨",
+      "voice": "Agar aap bhi har SME IPO me dedh lakh rupaye laga rahe ho... toh pehle yeh sach sun lo!",
+      "startSec": 0,
+      "endSec": 5.94
+    },
+    {
+      "id": "s2-stat",
+      "type": "stat",
+      "headline": "RETAIL ODDS: 1 IN 850 APPLICANTS",
+      "leadIn": "THE MATH SHOCK 📉",
+      "voice": "Jab SME IPO 500 guna bharta hai, toh retail category me allotment ke odds 850 me se sirf ek hote hain!",
+      "startSec": 5.94,
+      "endSec": 13.1
+    },
+    {
+      "id": "s3-gmp-gauge",
+      "type": "card",
+      "headline": "ARTIFICIAL OPERATOR DEMAND",
+      "leadIn": "GMP MANIPULATION ⚠️",
+      "voice": "Operators chote issue size me fake grey market demand banate hain taaki retail listing day par panic me buy kare!",
+      "startSec": 13.1,
+      "endSec": 19.56,
+      "cardText": "ARTIFICIAL OPERATOR DEMAND",
+      "chip": "GMP MANIPULATION ⚠️"
+    },
+    {
+      "id": "s4-compare",
+      "type": "terminal",
+      "headline": "NO LIQUIDITY IN LOWER CIRCUITS",
+      "leadIn": "LOT-BASED TRAP 🔒",
+      "voice": "Lower circuit lagne par exit impossible hota hai, kyunki yahan single share nahi, poora lot bechna padta hai!",
+      "startSec": 19.56,
+      "endSec": 25.97
+    },
+    {
+      "id": "s5-steps",
+      "type": "pills",
+      "headline": "CAPITAL PROTECTION RULES",
+      "leadIn": "AVOID PENNY TRAPS 🛡️",
+      "voice": "Golden rule: Jin companies ka profit growth real na ho, sirf GMP dekh kar kabhi apply mat karna!",
+      "startSec": 25.97,
+      "endSec": 32.51,
+      "items": [
+        "Check Operating Cash Flow",
+        "Avoid >100x Subscription Hype",
+        "Never Apply on Fake GMP"
+      ]
+    },
+    {
+      "id": "s6-cta",
+      "type": "cta",
+      "headline": "FOLLOW FOR UNBIASED IPO ALERTS",
+      "leadIn": "SEBI COMPLIANT INSIGHTS 🔥",
+      "voice": "Unbiased daily IPO alerts aur live breakdown ke liye Tech with Gen Z ko follow karo!",
+      "startSec": 32.51,
+      "endSec": 37.82,
+      "buttonText": "FOLLOW NOW 🔥",
+      "handle": "@techwith.GenZ"
+    }
+  ]
+}

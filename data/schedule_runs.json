@@ -9,6 +9,16 @@
       "durationMin": "2.1",
       "slug": "maxwell-engineering-solutions-ipo-analysis",
       "status": "SUCCESS"
+    },
+    {
+      "date": "2026-11-06",
+      "slotId": 1,
+      "slotName": "Lunchtime Market Pulse",
+      "scheduledTime": "13:30",
+      "executedAt": "2026-11-06T08:09:45.828Z",
+      "durationMin": "2.3",
+      "slug": "antala-industries-ipo-analysis",
+      "status": "SUCCESS"
     }
   ]
 }

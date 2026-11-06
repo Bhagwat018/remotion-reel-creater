@@ -29,7 +29,7 @@ export const TitleScene: React.FC<
   const { fps } = useVideoConfig();
 
   // Bespoke full-screen hook for UPI Free Economics
-  if (slug === "upi-free-secret" || (id === "s1-hook" && headline?.includes("UPI"))) {
+  if (slug === "upi-free-secret" || slug === "is-upi-really-free-hidden-charges" || (id === "s1-hook" && headline?.includes("UPI"))) {
     return <UpiHookScene durationInFrames={durationInFrames} />;
   }
 
@@ -39,12 +39,12 @@ export const TitleScene: React.FC<
   }
 
   // Bespoke full-screen hook for Dark Store Delivery
-  if (slug === "dark-store-delivery" || id === "s1-hook" && headline?.includes("10 MIN")) {
+  if (slug === "dark-store-delivery" || slug === "zepto-blinkit-dark-store-economics" || id === "s1-hook" && headline?.includes("10 MIN")) {
     return <DarkStoreHookScene durationInFrames={durationInFrames} />;
   }
 
   // Bespoke full-screen hook for Digital Arrest Scam
-  if (slug === "digital-arrest-scam" || id === "s1-call-hook") {
+  if (slug === "digital-arrest-scam" || slug === "digital-arrest-scam-reality-check" || id === "s1-call-hook" || id === "s1-hook" && headline?.includes("ARREST")) {
     return <DigitalArrestHookScene durationInFrames={durationInFrames} />;
   }
 
@@ -53,8 +53,8 @@ export const TitleScene: React.FC<
     return <BombayOddsHookScene durationInFrames={durationInFrames} />;
   }
 
-  // Bespoke full-screen hook for Beginner IPO 4 Questions
-  if (slug === "ipo-4-beginner-questions" || id === "s1-hook" && headline?.includes("4 SAWAAL")) {
+  // Bespoke full-screen hook for Beginner IPO 4 Questions / SME Allotment Trap
+  if (slug === "ipo-4-beginner-questions" || slug === "sme-ipo-500x-allotment-trap" || id === "s1-hook" && (headline?.includes("4 SAWAAL") || headline?.includes("OVERSUBSCRIBED") || headline?.includes("500X"))) {
     return <BeginnerHookScene durationInFrames={durationInFrames} />;
   }
 

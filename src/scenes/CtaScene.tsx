@@ -45,7 +45,7 @@ export const CtaScene: React.FC<
   const resolvedHandle = handle || "@techwith.GenZ";
 
   // Bespoke scene for UPI CTA
-  if (slug === "upi-free-secret" || (id === "s7-cta" && resolvedHandle === "@techwith.GenZ" && !headline?.includes("FAILURE") && !headline?.includes("DARK"))) {
+  if (slug === "upi-free-secret" || slug === "is-upi-really-free-hidden-charges" || (id === "s7-cta" && resolvedHandle === "@techwith.GenZ" && !headline?.includes("FAILURE") && !headline?.includes("DARK"))) {
     return <UpiCtaScene durationInFrames={durationInFrames} />;
   }
 
@@ -55,12 +55,12 @@ export const CtaScene: React.FC<
   }
 
   // Bespoke scene for Dark Store Summary & Follow CTA
-  if (slug === "dark-store-delivery" || id === "s7-cta") {
+  if (slug === "dark-store-delivery" || slug === "zepto-blinkit-dark-store-economics" || id === "s7-cta") {
     return <DarkStoreCtaScene durationInFrames={durationInFrames} />;
   }
 
   // Bespoke scene for Digital Arrest Parents CTA
-  if (slug === "digital-arrest-scam" || id === "s7-parents-cta") {
+  if (slug === "digital-arrest-scam" || slug === "digital-arrest-scam-reality-check" || id === "s7-parents-cta" || id === "s6-cta") {
     return <ParentsCtaScene durationInFrames={durationInFrames} />;
   }
 
@@ -69,8 +69,8 @@ export const CtaScene: React.FC<
     return <BombayCtaScene durationInFrames={durationInFrames} />;
   }
 
-  // Bespoke scene for Beginner IPO 4 Questions
-  if (slug === "ipo-4-beginner-questions" || id === "s6-cta" && headline?.includes("TECHWITH.GENZ")) {
+  // Bespoke scene for Beginner IPO 4 Questions / SME Allotment Trap
+  if (slug === "ipo-4-beginner-questions" || slug === "sme-ipo-500x-allotment-trap" || (id === "s6-cta" && headline?.includes("TECHWITH.GENZ"))) {
     return <BeginnerCtaScene durationInFrames={durationInFrames} handle={resolvedHandle} />;
   }
 

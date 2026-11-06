@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "slug": "antala-industries-ipo-analysis",
+    "topic": "Antala Industries SME IPO Analysis & Listing Gain",
+    "title": "Antala Industries IPO: Listing Gain or Trap?",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "audience": "Indian Retail Investors & Gen-Z Traders",
+    "loop": false,
+    "captions": true,
+    "captionStyle": "kinetic",
+    "bgm": false,
+    "bgmVolume": 0.16,
+    "voice": "rohan",
+    "voiceSpeed": 1.1,
+    "showTicker": true,
+    "manychatHook": false,
+    "instagramCaption": "Kal list hone wala hai Antala Industries IPO with a massive +0% GMP! 🚀📈\n\nKya allotment mila? Here is your game plan:\n• Issue Price: ₹66 (Lot: 2000)\n• Current GMP: +0% (Est. Profit: ₹0/lot)\n• Total Subscription: 12.79x\n• Post-IPO P/E: 9.58x\n\nFollow @techwith.GenZ for daily unbiased IPO breakdowns!\n\n#IPO #StockMarketIndia #GMP #ShareMarket #techwithgenz #AntalaIndustries",
+    "disclaimer": "Educational content only. Not SEBI registered investment advice.",
+    "fullVoiceover": "Antala Industries ka IPO list hone wala hai aur yeh tera guna oversubscribe ho chuka hai! Grey market mein GMP zero chal raha hai, matlab listing profit zero expected hai. Total subscription barah point saat guna hai, jisme NII aur retail ka demand strong hai. Post P-E ratio nau point paanch aath hai, aur promoter holding zero ho chuki hai. Strategy simple hai: Allotment mila toh exit karo aur FOMO me entry mat lena! Aise hi unbiased daily IPO alerts aur live breakdown ke liye @techwith.GenZ ko follow karo!",
+    "durationSec": 35,
+    "voiceFile": "reels/antala-industries-ipo-analysis/voice.mp3",
+    "wordsFile": "reels/antala-industries-ipo-analysis/words.json"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "headline": "13X OVERSUBSCRIBED IPO?!",
+      "leadIn": "ANTALA INDUSTRIES IPO 🚨",
+      "subtitle": "Listing with +0% GMP!",
+      "voice": "Antala Industries ka IPO list hone wala hai aur yeh tera guna oversubscribe ho chuka hai!",
+      "startSec": 0,
+      "endSec": 5.3
+    },
+    {
+      "id": "s2-gmp",
+      "type": "gmp-gauge",
+      "headline": "ESTIMATED LISTING GAIN",
+      "leadIn": "GREY MARKET PREDICTION 📈",
+      "gmpPercent": 0,
+      "gmpPrice": 0,
+      "issuePrice": 66,
+      "expectedListingPrice": 66,
+      "lotSize": 2000,
+      "profitPerLot": "0",
+      "sentiment": "FLAT LISTING ⚡",
+      "voice": "Grey market mein GMP zero chal raha hai, matlab listing profit zero expected hai.",
+      "startSec": 5.3,
+      "endSec": 10.36
+    },
+    {
+      "id": "s3-sub",
+      "type": "subscription-xray",
+      "headline": "WHO IS BUYING THIS IPO?",
+      "leadIn": "LIVE DEMAND X-RAY 🔍",
+      "totalMultiple": "12.79x",
+      "qibMultiple": "4x",
+      "niiMultiple": "18x",
+      "retailMultiple": "8x",
+      "verdict": "STRONG DEMAND 🔥",
+      "voice": "Total subscription barah point saat guna hai, jisme NII aur retail ka demand strong hai.",
+      "startSec": 10.36,
+      "endSec": 16.74
+    },
+    {
+      "id": "s4-valuation",
+      "type": "valuation-battle",
+      "headline": "EXPENSIVE YA VALUE?",
+      "leadIn": "VALUATION REALITY CHECK ⚖️",
+      "companyName": "Antala Industries",
+      "companyPe": "9.58x",
+      "peerName": "Industry Peers",
+      "peerPe": "13.52x",
+      "verdictBadge": "ATTRACTIVE P/E ⚠️",
+      "points": [
+        "Post-IPO P/E ratio is attractive at 9.58x",
+        "Promoter holding fully diluted to zero post-issue",
+        "Strong ROE of 33 percent with solid margins"
+      ],
+      "voice": "Post P-E ratio nau point paanch aath hai, aur promoter holding zero ho chuki hai.",
+      "startSec": 16.74,
+      "endSec": 21.65
+    },
+    {
+      "id": "s5-strategy",
+      "type": "steps",
+      "headline": "LISTING DAY STRATEGY",
+      "leadIn": "PRO DECISION MATRIX 🚀",
+      "steps": [
+        "Allotment mila toh opening par profit book karo",
+        "Fresh entry listing day peak par bilkul mat lena",
+        "Exit safely if market opens flat or negative"
+      ],
+      "voice": "Strategy simple hai: Allotment mila toh exit karo aur FOMO me entry mat lena!",
+      "startSec": 21.65,
+      "endSec": 26.71
+    },
+    {
+      "id": "s6-cta",
+      "type": "cta",
+      "headline": "FOLLOW FOR DAILY IPO ALERTS",
+      "leadIn": "UNBIASED MARKET DATA 🔥",
+      "buttonText": "FOLLOW NOW 🔥",
+      "handle": "@techwith.GenZ",
+      "subtitle": "@techwith.GenZ",
+      "voice": "Aise hi unbiased daily IPO alerts aur live breakdown ke liye @techwith.GenZ ko follow karo!",
+      "startSec": 26.71,
+      "endSec": 34.2
+    }
+  ]
+}

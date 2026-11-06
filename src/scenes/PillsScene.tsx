@@ -23,7 +23,7 @@ export const PillsScene: React.FC<
   }
 > = ({ id, direction, leadIn, headline, items, pills, badgeText, subtext, durationInFrames, slug }) => {
   // Bespoke scene for UPI Bill Check Tip
-  if (slug === "upi-free-secret" || id === "s6-bill-tip") {
+  if (slug === "upi-free-secret" || slug === "is-upi-really-free-hidden-charges" || id === "s6-bill-tip" || id === "s5-steps") {
     return <UpiBillCheckTipScene durationInFrames={durationInFrames} />;
   }
 
@@ -33,12 +33,12 @@ export const PillsScene: React.FC<
   }
 
   // Bespoke scene for Dark Store Hidden Fees Tip
-  if (slug === "dark-store-delivery" || id === "s6-tip") {
+  if (slug === "dark-store-delivery" || slug === "zepto-blinkit-dark-store-economics" || id === "s6-tip" || id === "s5-steps") {
     return <HiddenFeesTipScene durationInFrames={durationInFrames} />;
   }
 
   // Bespoke scene for Digital Arrest Red Flags
-  if (slug === "digital-arrest-scam" || id === "s4-red-flags") {
+  if (slug === "digital-arrest-scam" || slug === "digital-arrest-scam-reality-check" || id === "s4-red-flags" || id === "s5-steps") {
     return <RedFlagsScene durationInFrames={durationInFrames} />;
   }
 
@@ -47,8 +47,8 @@ export const PillsScene: React.FC<
     return <BombayGmpScene durationInFrames={durationInFrames} />;
   }
 
-  // Bespoke scene for Sell ya Hold (Beginner IPOs)
-  if (slug === "ipo-4-beginner-questions" || id === "s4-sell-hold" && headline?.includes("HOLD")) {
+  // Bespoke scene for Sell ya Hold (Beginner IPOs / 500X Trap)
+  if (slug === "ipo-4-beginner-questions" || slug === "sme-ipo-500x-allotment-trap" || (id === "s4-sell-hold" && headline?.includes("HOLD")) || id === "s5-steps") {
     return <SellOrHoldScene durationInFrames={durationInFrames} />;
   }
 
