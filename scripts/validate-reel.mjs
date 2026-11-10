@@ -81,6 +81,8 @@ export const VALID_SCENE_TYPES = [
   "gmp-gauge",
   "subscription-xray",
   "valuation-battle",
+  "evidence",
+  "visual-broll",
 ];
 
 const baseSceneSchema = z.object({
@@ -90,6 +92,7 @@ const baseSceneSchema = z.object({
   voice: z.string().min(1, "Scene voice line is required"),
   leadIn: z.string().optional(),
   subtitle: z.string().optional(),
+  evidence: z.any().optional(),
 });
 
 const sceneTypeMap = {
@@ -285,6 +288,21 @@ const sceneTypeMap = {
     peerPe: z.union([z.number(), z.string()]).optional(),
     verdictBadge: z.string().optional(),
     points: z.array(z.string()).optional(),
+  }),
+  evidence: baseSceneSchema.extend({
+    type: z.literal("evidence"),
+    headline: z.string().optional(),
+    evidence: z.any().optional(),
+  }),
+  "visual-broll": baseSceneSchema.extend({
+    type: z.literal("visual-broll"),
+    headline: z.string().min(1, "Headline is required for visual-broll scene"),
+    italicAccent: z.string().optional(),
+    brollVideo: z.string().optional(),
+    heroImage: z.string().optional(),
+    pillText: z.string().optional(),
+    pillColor: z.string().optional(),
+    glowColor: z.string().optional(),
   }),
 };
 

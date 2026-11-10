@@ -23,9 +23,45 @@ export const VALID_SCENE_TYPES = [
   "gmp-gauge",
   "subscription-xray",
   "valuation-battle",
+  "evidence",
+  "visual-broll",
 ] as const;
 
 export type SceneType = (typeof VALID_SCENE_TYPES)[number];
+
+export const evidenceConfigSchema = z.object({
+  type: z
+    .enum(["phone-mockup", "zoom-callout", "split-proof", "headline-clip"])
+    .default("zoom-callout"),
+  image: z.string().min(1, "Evidence image path is required"),
+  secondaryImage: z.string().optional(),
+  caption: z.string().optional(),
+  highlightLabel: z.string().optional(),
+  highlightBox: z
+    .object({
+      top: z.union([z.string(), z.number()]).optional(),
+      left: z.union([z.string(), z.number()]).optional(),
+      width: z.union([z.string(), z.number()]).optional(),
+      height: z.union([z.string(), z.number()]).optional(),
+    })
+    .optional(),
+  zoomTarget: z
+    .object({
+      x: z.string().optional(),
+      y: z.string().optional(),
+      scale: z.number().optional(),
+    })
+    .optional(),
+  highlightYPercent: z.number().optional(),
+  badgeText: z.string().optional(),
+  source: z.string().optional(),
+  panDistance: z.number().optional(),
+  leftLabel: z.string().optional(),
+  rightLabel: z.string().optional(),
+  savingsText: z.string().optional(),
+});
+
+export type EvidenceConfig = z.infer<typeof evidenceConfigSchema>;
 
 const baseSceneSchema = z.object({
   id: z.string().min(1, "Scene id is required"),
@@ -37,6 +73,7 @@ const baseSceneSchema = z.object({
   direction: z
     .enum(["from-left", "from-right", "from-top", "from-bottom", "pop-3d"])
     .optional(),
+  evidence: evidenceConfigSchema.optional(),
 });
 
 export const titleSceneSchema = baseSceneSchema
@@ -413,6 +450,17 @@ export const valuationBattleSceneSchema = baseSceneSchema
     leadIn: data.leadIn || data.subtitle,
   }));
 
+export const evidenceSceneSchema = baseSceneSchema
+  .extend({
+    type: z.literal("evidence"),
+    headline: z.string().min(1, "Headline is required for evidence scene"),
+    evidence: evidenceConfigSchema,
+  })
+  .transform((data) => ({
+    ...data,
+    leadIn: data.leadIn || data.subtitle,
+  }));
+
 export const sceneSchema = z.discriminatedUnion("type", [
   titleSceneSchema,
   pillsSceneSchema,
@@ -436,6 +484,7 @@ export const sceneSchema = z.discriminatedUnion("type", [
   gmpGaugeSceneSchema,
   subscriptionXraySceneSchema,
   valuationBattleSceneSchema,
+  evidenceSceneSchema,
 ]);
 
 export type TitleSceneProps = z.infer<typeof titleSceneSchema>;
@@ -460,6 +509,7 @@ export type FlowSceneProps = z.infer<typeof flowSceneSchema>;
 export type GmpGaugeSceneProps = z.infer<typeof gmpGaugeSceneSchema>;
 export type SubscriptionXraySceneProps = z.infer<typeof subscriptionXraySceneSchema>;
 export type ValuationBattleSceneProps = z.infer<typeof valuationBattleSceneSchema>;
+export type EvidenceSceneProps = z.infer<typeof evidenceSceneSchema>;
 
 export type SceneData =
   | TitleSceneProps
@@ -483,7 +533,8 @@ export type SceneData =
   | FlowSceneProps
   | GmpGaugeSceneProps
   | SubscriptionXraySceneProps
-  | ValuationBattleSceneProps;
+  | ValuationBattleSceneProps
+  | EvidenceSceneProps;
 
 export const avatarSchema = z.object({
   enabled: z.boolean().default(true),

@@ -56,13 +56,17 @@ const sceneAudioFiles = [];
 const requestedVoice = (
   args.find((a) => a.startsWith("--voice="))?.split("=")[1] ||
   reelData.meta?.voice ||
-  (process.env.SARVAM_API_KEY ? "rohan" : "hi-IN-MadhurNeural")
+  (process.env.VOICESTUDIO_ENABLED === "true" ? "voicestudio" : (process.env.SARVAM_API_KEY ? "rohan" : "hi-IN-MadhurNeural"))
 ).trim();
 
 const speedMultiplier = parseFloat(reelData.meta?.voiceSpeed || 1.10);
 const rateWpm = Math.round(180 * speedMultiplier);
 const openaiVoices = ["alloy", "echo", "fable", "onyx", "nova", "shimmer"];
 const isOpenAIVoice = openaiVoices.includes(requestedVoice.toLowerCase());
+
+const isVoiceStudioVoice = ["voicestudio", "voice-studio", "local-indian", "local"].some((v) =>
+  requestedVoice.toLowerCase().includes(v)
+);
 
 const ELEVENLABS_VOICES = {
   liam: "TX3LPaxmHKxFdv7VOQHJ",
@@ -100,20 +104,58 @@ for (let i = 0; i < scenes.length; i++) {
   if (!voiceText || /^scene\s*\d+$/i.test(voiceText)) {
     voiceText = `${scene.headline || ""}. ${scene.subtitle || scene.label || scene.cardText || ""}`.trim();
   }
-  // Phonetic polish for natural Indian Hinglish pronunciation
+  // Indian Hinglish Phonetic Normalization for ultra-natural voice cadence
   const cleanVoiceText = (voiceText || `Highlight ${i + 1}`)
     .replace(/[*_#`]/g, "")
     .replace(/\b(\d+)\s*[xX]\b/g, "$1 guna")
     .replace(/\bP[\/\-]E\b/gi, "P-E ratio")
     .replace(/\bQIB\b/g, "Q-I-B")
     .replace(/\bNII\b/g, "N-I-I")
+    .replace(/₹\s*(\d+)\.(\d+)/g, "$1 rupaye $2 paise")
+    .replace(/₹\s*(\d+(?:\.\d+)?)\s*[lL](?:akh)?\b/gi, "$1 lakh rupaye")
+    .replace(/₹\s*(\d+(?:\.\d+)?)\s*[kK]\b/g, "$1 hazaar rupaye")
+    .replace(/₹\s*(\d+(?:\.\d+)?)\s*[cC][rR](?:ore)?\b/gi, "$1 crore rupaye")
     .replace(/₹\s*/g, "rupaye ")
+    .replace(/(\d+(?:\.\d+)?)\s*[lL](?:akh)?\b/gi, "$1 lakh")
+    .replace(/(\d+(?:\.\d+)?)\s*[kK]\b/g, "$1 hazaar")
     .replace(/%/g, " percent")
     .replace(/\s+/g, " ")
     .trim();
 
-  // 1. Synthesize audio with Sarvam AI, ElevenLabs, OpenAI, or Microsoft Neural EdgeTTS
+  // 1. Synthesize audio: Free Local VoiceStudio -> Sarvam Indian AI -> EdgeTTS -> ElevenLabs
   let synthesized = false;
+
+  // Option 0: Local VoiceStudio (100% Free, Local Engine - debpalash/VoiceStudio)
+  const voiceStudioUrl = process.env.VOICESTUDIO_URL || "http://localhost:3900";
+  if (!synthesized && (isVoiceStudioVoice || process.env.VOICESTUDIO_DEFAULT === "true")) {
+    try {
+      const vsResp = await fetch(`${voiceStudioUrl}/v1/audio/speech`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "tts-1",
+          voice: requestedVoice.toLowerCase() === "voicestudio" ? "indian_male" : requestedVoice,
+          input: cleanVoiceText,
+          speed: speedMultiplier,
+          response_format: "wav",
+        }),
+      });
+      if (vsResp.ok) {
+        const rawWav = path.join(tempDir, `voicestudio_${i}.wav`);
+        const buf = Buffer.from(await vsResp.arrayBuffer());
+        fs.writeFileSync(rawWav, buf);
+        // Studio broadcast mastering chain for Indian Voice
+        const studioChain = "highpass=f=75,equalizer=f=120:width_type=o:width=1.8:g=4.0,equalizer=f=3600:width_type=o:width=1.4:g=4.2,equalizer=f=10500:width_type=o:width=2.0:g=2.8,acompressor=threshold=-15dB:ratio=4.0:attack=4:release=45,loudnorm=I=-13.8:LRA=5.5:tp=-1.2";
+        execSync(`ffmpeg -y -i "${rawWav}" -af "${studioChain}" -b:a 192k "${sceneMp3}" 2>/dev/null`);
+        synthesized = true;
+        console.log(`    ✅ Synthesized via Local VoiceStudio (100% Free)`);
+      } else {
+        console.warn(`⚠️ VoiceStudio returned ${vsResp.status}. Falling back to Indian cloud engines.`);
+      }
+    } catch (vsErr) {
+      console.warn(`⚠️ Local VoiceStudio not reachable at ${voiceStudioUrl}. Falling back to Sarvam Indian AI / EdgeTTS.`);
+    }
+  }
 
   // Option S: Sarvam AI (Bulbul V3/V4 - Native Indian Hinglish, Rohan Studio Mic)
   if (!synthesized && (isSarvamVoice || requestedVoice.toLowerCase() === "sarvam") && process.env.SARVAM_API_KEY) {
@@ -156,13 +198,14 @@ for (let i = 0; i < scenes.length; i++) {
     }
   }
 
-  // Option A: ElevenLabs if API key configured (and not explicitly requesting EdgeTTS or Sarvam)
-  if (!synthesized && !isEdgeVoice && !isSarvamVoice && process.env.ELEVENLABS_API_KEY) {
+  // Option A: ElevenLabs if API key configured (and not explicitly requesting EdgeTTS, Sarvam, or VoiceStudio)
+  if (!synthesized && !isEdgeVoice && !isSarvamVoice && !isVoiceStudioVoice && process.env.ELEVENLABS_API_KEY) {
     try {
       const voiceId =
         ELEVENLABS_VOICES[requestedVoice.toLowerCase()] ||
+        (requestedVoice.length > 15 ? requestedVoice : null) ||
         process.env.ELEVENLABS_VOICE_ID ||
-        "TX3LPaxmHKxFdv7VOQHJ"; // Liam as fast, energetic default
+        "FZkK3TvQ0pjyDmT8fzIW"; // Bunty - Punchy, Crisp and Reel King default
       const resp = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
         method: "POST",
         headers: {

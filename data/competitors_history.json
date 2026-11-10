@@ -96,7 +96,26 @@
       "ourSlug": "antala-industries-ipo-analysis",
       "processedAt": "2026-11-06T08:07:40.187Z",
       "status": "POSTED",
-      "durationSec": 35
+      "durationSec": 37
+    },
+    {
+      "channel": "live-market-ipo",
+      "shortcode": "ipo-1793967865154",
+      "url": "https://www.investorgain.com/report/live-ipo-gmp/331/",
+      "originalTopic": "Vedant Poly Fabs IPO Analysis",
+      "ourSlug": "vedant-poly-fabs-ipo-analysis",
+      "processedAt": "2026-11-06T12:24:25.154Z",
+      "status": "POSTED",
+      "durationSec": 42
+    },
+    {
+      "channel": "live-market-ipo",
+      "shortcode": "ipo-1794224091395",
+      "url": "https://www.investorgain.com/report/live-ipo-gmp/331/",
+      "originalTopic": "Antala Industries IPO Analysis",
+      "ourSlug": "antala-industries-ipo-analysis",
+      "processedAt": "2026-11-09T11:34:51.395Z",
+      "status": "READY_TO_RENDER"
     }
   ]
 }

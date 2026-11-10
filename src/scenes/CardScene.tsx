@@ -5,6 +5,7 @@ import { SceneLayout } from "../components/SceneLayout";
 import { DarkCard } from "../components/DarkCard";
 import { FloatingBadge } from "../components/FloatingBadge";
 import { MotionDirection } from "../lib/directionalMotion";
+import { EvidenceRenderer } from "../components/evidence/EvidenceRenderer";
 import { RazorpayDossierScene } from "./startup/RazorpayDossierScene";
 import { GmpRealityCheckScene } from "./beginnerIpo/GmpRealityCheckScene";
 import { BombayPricingScene } from "./bombayCoated/BombayPricingScene";
@@ -38,9 +39,26 @@ export const CardScene: React.FC<
   bullets,
   durationInFrames,
   slug,
+  evidence,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+
+  // If scene has real-world evidence asset, render high-impact evidence view
+  if (evidence) {
+    return (
+      <SceneLayout
+        id={id}
+        direction={direction}
+        leadIn={leadIn}
+        headline={headline}
+        durationInFrames={durationInFrames}
+        slug={slug}
+      >
+        <EvidenceRenderer evidence={evidence} durationInFrames={durationInFrames} />
+      </SceneLayout>
+    );
+  }
 
   // Bespoke scene for NPCI 0.4% MDR Rule (UPI Reel)
   if (slug === "upi-free-secret" || slug === "is-upi-really-free-hidden-charges" && (id === "s3-mdr-rule" || id === "s3-stat" || id === "s2-compare")) {

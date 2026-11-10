@@ -6,6 +6,7 @@ import { SceneLayout } from "../components/SceneLayout";
 import { NeoStatCard } from "../components/neo/NeoStatCard";
 import { MotionDirection } from "../lib/directionalMotion";
 import { StarburstBadge } from "../components/StarburstBadge";
+import { EvidenceRenderer } from "../components/evidence/EvidenceRenderer";
 import { SmeVsMainboardScene } from "./beginnerIpo/SmeVsMainboardScene";
 import { BombaySubscriptionScene } from "./bombayCoated/BombaySubscriptionScene";
 import { LootStatScene } from "./digitalArrest/LootStatScene";
@@ -41,8 +42,25 @@ export const StatScene: React.FC<
   items,
   durationInFrames,
   slug,
+  evidence,
 }) => {
   const frame = useCurrentFrame();
+
+  // If scene has real-world evidence asset, render high-impact evidence view
+  if (evidence) {
+    return (
+      <SceneLayout
+        id={id}
+        direction={direction}
+        leadIn={leadIn}
+        headline={headline}
+        durationInFrames={durationInFrames}
+        slug={slug}
+      >
+        <EvidenceRenderer evidence={evidence} durationInFrames={durationInFrames} />
+      </SceneLayout>
+    );
+  }
 
   // Bespoke scene for UPI August Record Volume (2,451 CR)
   if (slug === "upi-free-secret" || slug === "is-upi-really-free-hidden-charges" || id === "s2-volume" || id === "s4-chart") {

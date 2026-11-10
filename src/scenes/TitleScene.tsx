@@ -6,6 +6,7 @@ import { NeoSticker } from "../components/neo/NeoSticker";
 import { MotionDirection } from "../lib/directionalMotion";
 import { StarburstBadge } from "../components/StarburstBadge";
 import { TechLogo, findBrandInText } from "../components/TechLogo";
+import { EvidenceRenderer } from "../components/evidence/EvidenceRenderer";
 import { IpoShowdownScene } from "./startup/IpoShowdownScene";
 import { BeginnerHookScene } from "./beginnerIpo/BeginnerHookScene";
 import { BombayOddsHookScene } from "./bombayCoated/BombayOddsHookScene";
@@ -24,9 +25,25 @@ export const TitleScene: React.FC<
     id?: string;
     slug?: string;
   }
-> = ({ id, direction, leadIn, subtitle, headline, items, tags, durationInFrames, slug }) => {
+> = ({ id, direction, leadIn, subtitle, headline, items, tags, durationInFrames, slug, evidence }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+
+  // If scene has real-world evidence asset, render high-impact evidence view
+  if (evidence) {
+    return (
+      <SceneLayout
+        id={id}
+        direction={direction}
+        leadIn={leadIn}
+        headline={headline}
+        durationInFrames={durationInFrames}
+        slug={slug}
+      >
+        <EvidenceRenderer evidence={evidence} durationInFrames={durationInFrames} />
+      </SceneLayout>
+    );
+  }
 
   // Bespoke full-screen hook for UPI Free Economics
   if (slug === "upi-free-secret" || slug === "is-upi-really-free-hidden-charges" || (id === "s1-hook" && headline?.includes("UPI"))) {

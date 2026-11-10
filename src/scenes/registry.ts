@@ -22,6 +22,8 @@ import { FlowScene } from "./FlowScene";
 import { GmpGaugeScene } from "./GmpGaugeScene";
 import { SubscriptionXrayScene } from "./SubscriptionXrayScene";
 import { ValuationBattleScene } from "./ValuationBattleScene";
+import { EvidenceScene } from "./EvidenceScene";
+import { VisualBrollScene } from "./VisualBrollScene";
 
 type SceneComponent = React.FC<
   SceneData & { durationInFrames: number; sceneIndex?: number; slug?: string }
@@ -50,6 +52,8 @@ export const sceneRegistry: Record<SceneType, SceneComponent> = {
   "gmp-gauge": GmpGaugeScene as unknown as SceneComponent,
   "subscription-xray": SubscriptionXrayScene as unknown as SceneComponent,
   "valuation-battle": ValuationBattleScene as unknown as SceneComponent,
+  evidence: EvidenceScene as unknown as SceneComponent,
+  "visual-broll": VisualBrollScene as unknown as SceneComponent,
 };
 
 export const getSceneComponent = (type: string): SceneComponent => {

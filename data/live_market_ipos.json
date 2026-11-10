@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-06T08:07:32.735Z",
+  "fetchedAt": "2026-11-09T11:34:42.415Z",
   "ipos": [
     {
       "rawName": "Antala Industries BSE SMEC",
@@ -20,10 +20,10 @@
       "ipoUrl": "https://www.investorgain.com/gmp/antala-industries-ipo/2375/"
     },
     {
-      "rawName": "Vedant Poly Fabs NSE SMEC",
+      "rawName": "Vedant Poly Fabs NSE SMEL@94.00 (0%)",
       "company": "Vedant Poly Fabs",
       "type": "SME",
-      "status": "ACTIVE",
+      "status": "LISTED",
       "gmpPrice": 1,
       "gmpPercent": 1.06,
       "subMultiple": 1.9,

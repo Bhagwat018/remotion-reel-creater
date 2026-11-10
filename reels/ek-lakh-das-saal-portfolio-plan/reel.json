@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "slug": "ek-lakh-das-saal-portfolio-plan",
+    "topic": "₹1 Lakh, 10 Saal Ka Plan: Portfolio Kaise Banayein?",
+    "title": "₹1 LAKH, 10 SAAL KA PLAN: 1 COMPANY YA 20 COMPANIES?",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "audience": "Indian Stock Investors & Gen-Z Wealth Builders",
+    "loop": false,
+    "captions": true,
+    "captionStyle": "bubble",
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "bgm": false,
+    "voice": "rohan",
+    "voiceSpeed": 1.1,
+    "showTicker": false,
+    "manychatHook": false,
+    "instagramCaption": "₹1 lakh, 10 saal ka plan: sab ek company mein ya 20 mein? 🤔\n\nDono tareeqe ghalat ho sakte hain!\n\nAsli portfolio banane ke 4 aasaan niyam:\n1. Sirf 5-7 solid companies chuno\n2. 4 core sectors: Banking, IT, FMCG, Pharma\n3. 40-35-25 allocation rule for maximum compounding\n4. Saal mein sirf 2 baar check aur rebalance karo!\n\nAap sabse zyada paisa kahan lagaoge? 👇\nComment karo \"BANK\", \"IT\", \"FMCG\" ya \"PHARMA\"!\n\n📌 Save karo aur us dost ko bhejo jo investing shuru kar raha hai!\n\nFollow @techwith.GenZ for real wealth secrets!\n\n#StockMarket #InvestingInHindi #PortfolioBuilding #PersonalFinance #StartupIndia #techwithgenz",
+    "disclaimer": "Educational content only. Not financial advice.",
+    "durationSec": 34,
+    "voiceFile": "reels/ek-lakh-das-saal-portfolio-plan/voice.mp3",
+    "wordsFile": "reels/ek-lakh-das-saal-portfolio-plan/words.json"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "visual-broll",
+      "headline": "₹1 LAKH, 10 SAAL PLAN",
+      "italicAccent": "Ek Company ya 20 Companies? 🤔",
+      "leadIn": "INVESTING SECRET 💸",
+      "brollVideo": "broll/stock_market_trading_chart.mp4",
+      "heroImage": "cutouts/money_coins.png",
+      "voice": "Agar aapke paas ek lakh rupaye hain aur 10 saal ka plan hai — kya sab ek hi company mein lagayein ya 20 alag alag mein? Dono tareeqe galat hain!",
+      "startSec": 0,
+      "endSec": 8.15
+    },
+    {
+      "id": "s2-sectors",
+      "type": "visual-broll",
+      "headline": "4 SECTORS KI FORMULA",
+      "italicAccent": "Bank • IT • FMCG • Pharma 🏛️",
+      "leadIn": "SMART DIVERSIFICATION 📊",
+      "brollVideo": "broll/office_skyscraper_city.mp4",
+      "heroImage": "cutouts/bank_finance.png",
+      "voice": "Sirf 5 se 7 solid companies chuno jo in chaar strong sectors mein aati hain: Banking, I-T, FMCG aur Pharma.",
+      "startSec": 8.15,
+      "endSec": 16.03
+    },
+    {
+      "id": "s3-formula",
+      "type": "visual-broll",
+      "headline": "40-35-25 GOLDEN RULE",
+      "italicAccent": "Compounding Growth Engine 📈",
+      "leadIn": "THE WEALTH MATH 💰",
+      "brollVideo": "broll/digital_technology_data.mp4",
+      "heroImage": "cutouts/stock_exchange_bull.png",
+      "voice": "40 percent Large Cap mein safety ke liye, 35 percent Mid Cap mein growth ke liye, aur bacha 25 percent high potential stocks mein!",
+      "startSec": 16.03,
+      "endSec": 24.33
+    },
+    {
+      "id": "s4-cta",
+      "type": "visual-broll",
+      "headline": "AAP KAUNSA CHUNOGE?",
+      "italicAccent": "Bank • IT • FMCG • Pharma 💬",
+      "leadIn": "COMMENT BELOW 👇",
+      "brollVideo": "broll/highway_traffic.mp4",
+      "heroImage": "cutouts/money_coins.png",
+      "voice": "Aap sabse zyada paisa kahan lagaoge? Comment mein BANK, I-T, FMCG ya PHARMA likho, aur follow karo techwith gen z ko!",
+      "startSec": 24.33,
+      "endSec": 33.38
+    }
+  ]
+}

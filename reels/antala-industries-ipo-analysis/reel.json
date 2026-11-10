@@ -15,10 +15,10 @@
     "voiceSpeed": 1.1,
     "showTicker": true,
     "manychatHook": false,
-    "instagramCaption": "Kal list hone wala hai Antala Industries IPO with a massive +0% GMP! 🚀📈\n\nKya allotment mila? Here is your game plan:\n• Issue Price: ₹66 (Lot: 2000)\n• Current GMP: +0% (Est. Profit: ₹0/lot)\n• Total Subscription: 12.79x\n• Post-IPO P/E: 9.58x\n\nFollow @techwith.GenZ for daily unbiased IPO breakdowns!\n\n#IPO #StockMarketIndia #GMP #ShareMarket #techwithgenz #AntalaIndustries",
+    "instagramCaption": "Antala Industries IPO mein 12.79x subscription mila hai with +0% GMP! 🚀📈\n\nKya allotment mila? Here is your game plan:\n• Issue Price: ₹66 (Lot: 2000)\n• Current GMP: +0% (Est. Profit: ₹0/lot)\n• Post-IPO P/E: 9.58x\n\nFollow @techwith.GenZ for daily unbiased IPO breakdowns!\n\n#IPO #StockMarketIndia #GMP #ShareMarket #techwithgenz #AntalaIndustries",
     "disclaimer": "Educational content only. Not SEBI registered investment advice.",
-    "fullVoiceover": "Antala Industries ka IPO list hone wala hai aur yeh tera guna oversubscribe ho chuka hai! Grey market mein GMP zero chal raha hai, matlab listing profit zero expected hai. Total subscription barah point saat guna hai, jisme NII aur retail ka demand strong hai. Post P-E ratio nau point paanch aath hai, aur promoter holding zero ho chuki hai. Strategy simple hai: Allotment mila toh exit karo aur FOMO me entry mat lena! Aise hi unbiased daily IPO alerts aur live breakdown ke liye @techwith.GenZ ko follow karo!",
-    "durationSec": 35,
+    "fullVoiceover": "Antala Industries ka IPO list hone wala hai aur yeh 13 guna oversubscribe ho chuka hai! GMP abhi zero percent par hai, matlab listing par koi extra profit expected nahi hai. Total subscription barah point saat guna hai, jismein heavy institutional aur retail interest dikh raha hai. Post-P-E ratio sirf نو point paanch aath hai jo peers ke mukable kafi sasta hai. Strategy simple hai: Allotment milne par panic mat karo aur long-term fundamentals par focus rakho. Aise hi unbiased daily IPO alerts aur live breakdown ke liye @techwith.GenZ ko follow karo!",
+    "durationSec": 37,
     "voiceFile": "reels/antala-industries-ipo-analysis/voice.mp3",
     "wordsFile": "reels/antala-industries-ipo-analysis/words.json"
   },
@@ -29,9 +29,9 @@
       "headline": "13X OVERSUBSCRIBED IPO?!",
       "leadIn": "ANTALA INDUSTRIES IPO 🚨",
       "subtitle": "Listing with +0% GMP!",
-      "voice": "Antala Industries ka IPO list hone wala hai aur yeh tera guna oversubscribe ho chuka hai!",
+      "voice": "Antala Industries ka IPO list hone wala hai aur yeh 13 guna oversubscribe ho chuka hai!",
       "startSec": 0,
-      "endSec": 5.3
+      "endSec": 5.14
     },
     {
       "id": "s2-gmp",
@@ -44,10 +44,10 @@
       "expectedListingPrice": 66,
       "lotSize": 2000,
       "profitPerLot": "0",
-      "sentiment": "FLAT LISTING ⚡",
-      "voice": "Grey market mein GMP zero chal raha hai, matlab listing profit zero expected hai.",
-      "startSec": 5.3,
-      "endSec": 10.36
+      "sentiment": "ZERO GAIN ⚡",
+      "voice": "GMP abhi zero percent par hai, matlab listing par koi extra profit expected nahi hai.",
+      "startSec": 5.14,
+      "endSec": 10.51
     },
     {
       "id": "s3-sub",
@@ -58,10 +58,10 @@
       "qibMultiple": "4x",
       "niiMultiple": "18x",
       "retailMultiple": "8x",
-      "verdict": "STRONG DEMAND 🔥",
-      "voice": "Total subscription barah point saat guna hai, jisme NII aur retail ka demand strong hai.",
-      "startSec": 10.36,
-      "endSec": 16.74
+      "verdict": "STRONG DEMAND RUSH 🔥",
+      "voice": "Total subscription barah point saat guna hai, jismein heavy institutional aur retail interest dikh raha hai.",
+      "startSec": 10.51,
+      "endSec": 17.13
     },
     {
       "id": "s4-valuation",
@@ -71,16 +71,16 @@
       "companyName": "Antala Industries",
       "companyPe": "9.58x",
       "peerName": "Industry Peers",
-      "peerPe": "13.52x",
-      "verdictBadge": "ATTRACTIVE P/E ⚠️",
+      "peerPe": "14.0x",
+      "verdictBadge": "ATTRACTIVE VALUATION ⚠️",
       "points": [
-        "Post-IPO P/E ratio is attractive at 9.58x",
-        "Promoter holding fully diluted to zero post-issue",
-        "Strong ROE of 33 percent with solid margins"
+        "Post-IPO P/E ratio is an attractive 9.58x",
+        "ROCE stands strong at 42.23% with zero dilution risk",
+        "Promoter holding fully diluted to zero post issue"
       ],
-      "voice": "Post P-E ratio nau point paanch aath hai, aur promoter holding zero ho chuki hai.",
-      "startSec": 16.74,
-      "endSec": 21.65
+      "voice": "Post-P-E ratio sirf نو point paanch aath hai jo peers ke mukable kafi sasta hai.",
+      "startSec": 17.13,
+      "endSec": 22.68
     },
     {
       "id": "s5-strategy",
@@ -88,13 +88,13 @@
       "headline": "LISTING DAY STRATEGY",
       "leadIn": "PRO DECISION MATRIX 🚀",
       "steps": [
-        "Allotment mila toh opening par profit book karo",
-        "Fresh entry listing day peak par bilkul mat lena",
-        "Exit safely if market opens flat or negative"
+        "Allotment mila toh opening par market sentiment dekho",
+        "Zero GMP ke chalte panic selling avoid karo",
+        "Long term growth ke liye fundamentals par focus rakho"
       ],
-      "voice": "Strategy simple hai: Allotment mila toh exit karo aur FOMO me entry mat lena!",
-      "startSec": 21.65,
-      "endSec": 26.71
+      "voice": "Strategy simple hai: Allotment milne par panic mat karo aur long-term fundamentals par focus rakho.",
+      "startSec": 22.68,
+      "endSec": 28.98
     },
     {
       "id": "s6-cta",
@@ -105,8 +105,8 @@
       "handle": "@techwith.GenZ",
       "subtitle": "@techwith.GenZ",
       "voice": "Aise hi unbiased daily IPO alerts aur live breakdown ke liye @techwith.GenZ ko follow karo!",
-      "startSec": 26.71,
-      "endSec": 34.2
+      "startSec": 28.98,
+      "endSec": 36.85
     }
   ]
 }

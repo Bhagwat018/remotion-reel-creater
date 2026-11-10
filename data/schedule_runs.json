@@ -19,6 +19,36 @@
       "durationMin": "2.3",
       "slug": "antala-industries-ipo-analysis",
       "status": "SUCCESS"
+    },
+    {
+      "date": "2026-11-06",
+      "slotId": 2,
+      "slotName": "Market Close Final Tally",
+      "scheduledTime": "17:45",
+      "executedAt": "2026-11-06T12:26:35.889Z",
+      "durationMin": "2.4",
+      "slug": "vedant-poly-fabs-ipo-analysis",
+      "status": "SUCCESS"
+    },
+    {
+      "date": "2026-11-09",
+      "slotId": 1,
+      "slotName": "Lunchtime Market Pulse",
+      "scheduledTime": "13:30",
+      "executedAt": "2026-11-09T11:37:04.496Z",
+      "durationMin": "2.4",
+      "slug": "antala-industries-ipo-analysis",
+      "status": "SUCCESS"
+    },
+    {
+      "date": "2026-11-09",
+      "slotId": 2,
+      "slotName": "Real-World Evidence Engine Demo",
+      "scheduledTime": "17:35",
+      "executedAt": "2026-11-09T12:05:54.000Z",
+      "durationMin": "1.0",
+      "slug": "demo-evidence-dark-store-economics",
+      "status": "SUCCESS"
     }
   ]
 }
