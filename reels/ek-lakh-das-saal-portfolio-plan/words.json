@@ -2,476 +2,476 @@
   {
     "word": "Agar",
     "startSec": 0,
-    "endSec": 0.26
+    "endSec": 0.32
   },
   {
     "word": "aapke",
-    "startSec": 0.26,
-    "endSec": 0.52
+    "startSec": 0.32,
+    "endSec": 0.64
   },
   {
     "word": "paas",
-    "startSec": 0.52,
-    "endSec": 0.78
+    "startSec": 0.64,
+    "endSec": 0.96
   },
   {
     "word": "ek",
-    "startSec": 0.78,
-    "endSec": 1.04
+    "startSec": 0.96,
+    "endSec": 1.28
   },
   {
     "word": "lakh",
-    "startSec": 1.04,
-    "endSec": 1.3
+    "startSec": 1.28,
+    "endSec": 1.6
   },
   {
     "word": "rupaye",
-    "startSec": 1.3,
-    "endSec": 1.56
+    "startSec": 1.6,
+    "endSec": 1.92
   },
   {
     "word": "hain",
-    "startSec": 1.56,
-    "endSec": 1.82
+    "startSec": 1.92,
+    "endSec": 2.24
   },
   {
     "word": "aur",
-    "startSec": 1.82,
-    "endSec": 2.08
+    "startSec": 2.24,
+    "endSec": 2.56
   },
   {
     "word": "10",
-    "startSec": 2.08,
-    "endSec": 2.34
+    "startSec": 2.56,
+    "endSec": 2.88
   },
   {
     "word": "saal",
-    "startSec": 2.34,
-    "endSec": 2.6
+    "startSec": 2.88,
+    "endSec": 3.2
   },
   {
     "word": "ka",
-    "startSec": 2.6,
-    "endSec": 2.86
+    "startSec": 3.2,
+    "endSec": 3.52
   },
   {
     "word": "plan",
-    "startSec": 2.86,
-    "endSec": 3.12
+    "startSec": 3.52,
+    "endSec": 3.84
   },
   {
     "word": "hai",
-    "startSec": 3.12,
-    "endSec": 3.38
-  },
-  {
-    "word": "—",
-    "startSec": 3.38,
-    "endSec": 3.64
-  },
-  {
-    "word": "kya",
-    "startSec": 3.64,
-    "endSec": 3.9
-  },
-  {
-    "word": "sab",
-    "startSec": 3.9,
+    "startSec": 3.84,
     "endSec": 4.16
   },
   {
-    "word": "ek",
+    "word": "—",
     "startSec": 4.16,
-    "endSec": 4.42
+    "endSec": 4.48
+  },
+  {
+    "word": "kya",
+    "startSec": 4.48,
+    "endSec": 4.8
+  },
+  {
+    "word": "sab",
+    "startSec": 4.8,
+    "endSec": 5.12
+  },
+  {
+    "word": "ek",
+    "startSec": 5.12,
+    "endSec": 5.44
   },
   {
     "word": "hi",
-    "startSec": 4.42,
-    "endSec": 4.68
+    "startSec": 5.44,
+    "endSec": 5.76
   },
   {
     "word": "company",
-    "startSec": 4.68,
-    "endSec": 4.94
+    "startSec": 5.76,
+    "endSec": 6.08
   },
   {
     "word": "mein",
-    "startSec": 4.94,
-    "endSec": 5.2
+    "startSec": 6.08,
+    "endSec": 6.4
   },
   {
     "word": "lagayein",
-    "startSec": 5.2,
-    "endSec": 5.46
+    "startSec": 6.4,
+    "endSec": 6.72
   },
   {
     "word": "ya",
-    "startSec": 5.46,
-    "endSec": 5.72
+    "startSec": 6.72,
+    "endSec": 7.04
   },
   {
     "word": "20",
-    "startSec": 5.72,
-    "endSec": 5.98
+    "startSec": 7.04,
+    "endSec": 7.36
   },
   {
     "word": "alag",
-    "startSec": 5.98,
-    "endSec": 6.24
+    "startSec": 7.36,
+    "endSec": 7.68
   },
   {
     "word": "alag",
-    "startSec": 6.24,
-    "endSec": 6.5
+    "startSec": 7.68,
+    "endSec": 8
   },
   {
     "word": "mein?",
-    "startSec": 6.5,
-    "endSec": 6.76
+    "startSec": 8,
+    "endSec": 8.32
   },
   {
     "word": "Dono",
-    "startSec": 6.76,
-    "endSec": 7.02
+    "startSec": 8.32,
+    "endSec": 8.64
   },
   {
     "word": "tareeqe",
-    "startSec": 7.02,
-    "endSec": 7.28
+    "startSec": 8.64,
+    "endSec": 8.96
   },
   {
     "word": "galat",
-    "startSec": 7.28,
-    "endSec": 7.54
-  },
-  {
-    "word": "hain!",
-    "startSec": 7.54,
-    "endSec": 7.8
-  },
-  {
-    "word": "Sirf",
-    "startSec": 8.15,
-    "endSec": 8.53
-  },
-  {
-    "word": "5",
-    "startSec": 8.53,
-    "endSec": 8.91
-  },
-  {
-    "word": "se",
-    "startSec": 8.9,
+    "startSec": 8.96,
     "endSec": 9.28
   },
   {
-    "word": "7",
+    "word": "hain!",
     "startSec": 9.28,
-    "endSec": 9.66
+    "endSec": 9.6
+  },
+  {
+    "word": "Sirf",
+    "startSec": 9.95,
+    "endSec": 10.3
+  },
+  {
+    "word": "5",
+    "startSec": 10.3,
+    "endSec": 10.65
+  },
+  {
+    "word": "se",
+    "startSec": 10.65,
+    "endSec": 11
+  },
+  {
+    "word": "7",
+    "startSec": 11,
+    "endSec": 11.35
   },
   {
     "word": "solid",
-    "startSec": 9.66,
-    "endSec": 10.04
+    "startSec": 11.36,
+    "endSec": 11.71
   },
   {
     "word": "companies",
-    "startSec": 10.03,
-    "endSec": 10.41
+    "startSec": 11.71,
+    "endSec": 12.06
   },
   {
     "word": "chuno",
-    "startSec": 10.41,
-    "endSec": 10.79
+    "startSec": 12.06,
+    "endSec": 12.41
   },
   {
     "word": "jo",
-    "startSec": 10.79,
-    "endSec": 11.17
+    "startSec": 12.41,
+    "endSec": 12.76
   },
   {
     "word": "in",
-    "startSec": 11.16,
-    "endSec": 11.54
+    "startSec": 12.76,
+    "endSec": 13.11
   },
   {
     "word": "chaar",
-    "startSec": 11.54,
-    "endSec": 11.92
+    "startSec": 13.11,
+    "endSec": 13.46
   },
   {
     "word": "strong",
-    "startSec": 11.91,
-    "endSec": 12.29
+    "startSec": 13.46,
+    "endSec": 13.81
   },
   {
     "word": "sectors",
-    "startSec": 12.29,
-    "endSec": 12.67
+    "startSec": 13.82,
+    "endSec": 14.17
   },
   {
     "word": "mein",
-    "startSec": 12.67,
-    "endSec": 13.05
+    "startSec": 14.17,
+    "endSec": 14.52
   },
   {
     "word": "aati",
-    "startSec": 13.04,
-    "endSec": 13.42
+    "startSec": 14.52,
+    "endSec": 14.87
   },
   {
     "word": "hain:",
-    "startSec": 13.42,
-    "endSec": 13.8
+    "startSec": 14.87,
+    "endSec": 15.22
   },
   {
     "word": "Banking,",
-    "startSec": 13.8,
-    "endSec": 14.18
+    "startSec": 15.22,
+    "endSec": 15.57
   },
   {
     "word": "I-T,",
-    "startSec": 14.17,
-    "endSec": 14.55
+    "startSec": 15.57,
+    "endSec": 15.92
   },
   {
     "word": "FMCG",
-    "startSec": 14.55,
-    "endSec": 14.93
+    "startSec": 15.92,
+    "endSec": 16.27
   },
   {
     "word": "aur",
-    "startSec": 14.93,
-    "endSec": 15.31
+    "startSec": 16.28,
+    "endSec": 16.63
   },
   {
     "word": "Pharma.",
-    "startSec": 15.3,
-    "endSec": 15.68
+    "startSec": 16.63,
+    "endSec": 16.98
   },
   {
     "word": "40",
-    "startSec": 16.03,
-    "endSec": 16.36
-  },
-  {
-    "word": "percent",
-    "startSec": 16.36,
-    "endSec": 16.69
-  },
-  {
-    "word": "Large",
-    "startSec": 16.69,
-    "endSec": 17.02
-  },
-  {
-    "word": "Cap",
-    "startSec": 17.02,
-    "endSec": 17.35
-  },
-  {
-    "word": "mein",
-    "startSec": 17.36,
+    "startSec": 17.33,
     "endSec": 17.69
   },
   {
-    "word": "safety",
-    "startSec": 17.69,
-    "endSec": 18.02
-  },
-  {
-    "word": "ke",
-    "startSec": 18.02,
-    "endSec": 18.35
-  },
-  {
-    "word": "liye,",
-    "startSec": 18.35,
-    "endSec": 18.68
-  },
-  {
-    "word": "35",
-    "startSec": 18.68,
-    "endSec": 19.01
-  },
-  {
     "word": "percent",
-    "startSec": 19.01,
-    "endSec": 19.34
+    "startSec": 17.69,
+    "endSec": 18.05
   },
   {
-    "word": "Mid",
-    "startSec": 19.34,
-    "endSec": 19.67
+    "word": "Large",
+    "startSec": 18.04,
+    "endSec": 18.4
   },
   {
     "word": "Cap",
-    "startSec": 19.67,
-    "endSec": 20
+    "startSec": 18.4,
+    "endSec": 18.76
   },
   {
     "word": "mein",
-    "startSec": 20.01,
-    "endSec": 20.34
+    "startSec": 18.75,
+    "endSec": 19.11
   },
   {
-    "word": "growth",
-    "startSec": 20.34,
-    "endSec": 20.67
+    "word": "safety",
+    "startSec": 19.11,
+    "endSec": 19.47
   },
   {
     "word": "ke",
-    "startSec": 20.67,
-    "endSec": 21
+    "startSec": 19.47,
+    "endSec": 19.83
   },
   {
     "word": "liye,",
-    "startSec": 21,
-    "endSec": 21.33
+    "startSec": 19.82,
+    "endSec": 20.18
   },
   {
-    "word": "aur",
-    "startSec": 21.33,
-    "endSec": 21.66
-  },
-  {
-    "word": "bacha",
-    "startSec": 21.66,
-    "endSec": 21.99
-  },
-  {
-    "word": "25",
-    "startSec": 21.99,
-    "endSec": 22.32
+    "word": "35",
+    "startSec": 20.18,
+    "endSec": 20.54
   },
   {
     "word": "percent",
-    "startSec": 22.32,
-    "endSec": 22.65
+    "startSec": 20.53,
+    "endSec": 20.89
   },
   {
-    "word": "high",
-    "startSec": 22.66,
-    "endSec": 22.99
+    "word": "Mid",
+    "startSec": 20.89,
+    "endSec": 21.25
   },
   {
-    "word": "potential",
-    "startSec": 22.99,
-    "endSec": 23.32
-  },
-  {
-    "word": "stocks",
-    "startSec": 23.32,
-    "endSec": 23.65
-  },
-  {
-    "word": "mein!",
-    "startSec": 23.65,
-    "endSec": 23.98
-  },
-  {
-    "word": "Aap",
-    "startSec": 24.33,
-    "endSec": 24.73
-  },
-  {
-    "word": "sabse",
-    "startSec": 24.73,
-    "endSec": 25.13
-  },
-  {
-    "word": "zyada",
-    "startSec": 25.14,
-    "endSec": 25.54
-  },
-  {
-    "word": "paisa",
-    "startSec": 25.54,
-    "endSec": 25.94
-  },
-  {
-    "word": "kahan",
-    "startSec": 25.94,
-    "endSec": 26.34
-  },
-  {
-    "word": "lagaoge?",
-    "startSec": 26.34,
-    "endSec": 26.74
-  },
-  {
-    "word": "Comment",
-    "startSec": 26.75,
-    "endSec": 27.15
+    "word": "Cap",
+    "startSec": 21.25,
+    "endSec": 21.61
   },
   {
     "word": "mein",
-    "startSec": 27.15,
-    "endSec": 27.55
+    "startSec": 21.6,
+    "endSec": 21.96
   },
   {
-    "word": "BANK,",
-    "startSec": 27.55,
-    "endSec": 27.95
+    "word": "growth",
+    "startSec": 21.96,
+    "endSec": 22.32
   },
   {
-    "word": "I-T,",
-    "startSec": 27.95,
-    "endSec": 28.35
+    "word": "ke",
+    "startSec": 22.31,
+    "endSec": 22.67
   },
   {
-    "word": "FMCG",
-    "startSec": 28.36,
-    "endSec": 28.76
-  },
-  {
-    "word": "ya",
-    "startSec": 28.76,
-    "endSec": 29.16
-  },
-  {
-    "word": "PHARMA",
-    "startSec": 29.16,
-    "endSec": 29.56
-  },
-  {
-    "word": "likho,",
-    "startSec": 29.56,
-    "endSec": 29.96
+    "word": "liye,",
+    "startSec": 22.67,
+    "endSec": 23.03
   },
   {
     "word": "aur",
-    "startSec": 29.97,
-    "endSec": 30.37
+    "startSec": 23.03,
+    "endSec": 23.39
+  },
+  {
+    "word": "bacha",
+    "startSec": 23.38,
+    "endSec": 23.74
+  },
+  {
+    "word": "25",
+    "startSec": 23.74,
+    "endSec": 24.1
+  },
+  {
+    "word": "percent",
+    "startSec": 24.09,
+    "endSec": 24.45
+  },
+  {
+    "word": "high",
+    "startSec": 24.45,
+    "endSec": 24.81
+  },
+  {
+    "word": "potential",
+    "startSec": 24.81,
+    "endSec": 25.17
+  },
+  {
+    "word": "stocks",
+    "startSec": 25.16,
+    "endSec": 25.52
+  },
+  {
+    "word": "mein!",
+    "startSec": 25.52,
+    "endSec": 25.88
+  },
+  {
+    "word": "Aap",
+    "startSec": 26.22,
+    "endSec": 26.59
+  },
+  {
+    "word": "sabse",
+    "startSec": 26.59,
+    "endSec": 26.96
+  },
+  {
+    "word": "zyada",
+    "startSec": 26.95,
+    "endSec": 27.32
+  },
+  {
+    "word": "paisa",
+    "startSec": 27.32,
+    "endSec": 27.69
+  },
+  {
+    "word": "kahan",
+    "startSec": 27.68,
+    "endSec": 28.05
+  },
+  {
+    "word": "lagaoge?",
+    "startSec": 28.05,
+    "endSec": 28.42
+  },
+  {
+    "word": "Comment",
+    "startSec": 28.42,
+    "endSec": 28.79
+  },
+  {
+    "word": "mein",
+    "startSec": 28.78,
+    "endSec": 29.15
+  },
+  {
+    "word": "BANK,",
+    "startSec": 29.15,
+    "endSec": 29.52
+  },
+  {
+    "word": "I-T,",
+    "startSec": 29.52,
+    "endSec": 29.89
+  },
+  {
+    "word": "FMCG",
+    "startSec": 29.88,
+    "endSec": 30.25
+  },
+  {
+    "word": "ya",
+    "startSec": 30.25,
+    "endSec": 30.62
+  },
+  {
+    "word": "PHARMA",
+    "startSec": 30.61,
+    "endSec": 30.98
+  },
+  {
+    "word": "likho,",
+    "startSec": 30.98,
+    "endSec": 31.35
+  },
+  {
+    "word": "aur",
+    "startSec": 31.35,
+    "endSec": 31.72
   },
   {
     "word": "follow",
-    "startSec": 30.37,
-    "endSec": 30.77
+    "startSec": 31.71,
+    "endSec": 32.08
   },
   {
     "word": "karo",
-    "startSec": 30.77,
-    "endSec": 31.17
+    "startSec": 32.08,
+    "endSec": 32.45
   },
   {
     "word": "techwith",
-    "startSec": 31.17,
-    "endSec": 31.57
+    "startSec": 32.45,
+    "endSec": 32.82
   },
   {
     "word": "gen",
-    "startSec": 31.58,
-    "endSec": 31.98
+    "startSec": 32.81,
+    "endSec": 33.18
   },
   {
     "word": "z",
-    "startSec": 31.98,
-    "endSec": 32.38
+    "startSec": 33.18,
+    "endSec": 33.55
   },
   {
     "word": "ko!",
-    "startSec": 32.38,
-    "endSec": 32.78
+    "startSec": 33.54,
+    "endSec": 33.91
   }
 ]

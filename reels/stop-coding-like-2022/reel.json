@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "slug": "stop-coding-like-2022",
+    "topic": "Stop Coding Like 2022: The 10-Minute AI Agent Breakthrough",
+    "title": "STOP CODING LIKE 2022: 5 DAYS -> 10 MINUTES!",
+    "handle": "@techwith.GenZ",
+    "language": "Hinglish",
+    "audience": "Developers, Tech Creators & Solopreneurs",
+    "loop": false,
+    "captions": true,
+    "captionStyle": "bubble",
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "bgm": false,
+    "voice": "charlie",
+    "voiceSpeed": 1.12,
+    "showTicker": false,
+    "manychatHook": false,
+    "instagramCaption": "Stop coding like it's 2022! 🛑💻\n\nJis full-stack app ko banane mein pehle 5 din lagte the, ab autonomous AI agents use 10 minute mein create kar rahe hain.\n\nHere is the 2026 playbook:\n1. Stop writing boilerplate syntax by hand\n2. Shift to System Architecture & Prompt Spec\n3. Use AI Agents to write, test, debug and deploy end-to-end\n\nComment \"CODE\" below and I will DM you my Top 3 AI Developer Prompts & setup guide for free! 🚀\n\nFollow @techwith.GenZ for the real future of AI & Tech.\n\n#AIAgents #Coding2026 #SoftwareEngineer #FullStack #TechWithGenZ #DeveloperHumor #TechCareers",
+    "disclaimer": "Educational & industry breakdown.",
+    "durationSec": 37,
+    "voiceFile": "reels/stop-coding-like-2022/voice.mp3",
+    "wordsFile": "reels/stop-coding-like-2022/words.json"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "visual-broll",
+      "headline": "STOP CODING LIKE 2022",
+      "italicAccent": "5 Days ➔ 10 Minutes ⚡",
+      "leadIn": "NEGATIVE COMMAND 🛑",
+      "brollVideo": "broll/digital_technology_data.mp4",
+      "heroImage": "cutouts/ai_agent_chip.png",
+      "voice": "Stop writing code like it's 2022! Jis full-stack app ko banane mein 5 din lagte the, ab AI agents use 10 minute mein bana rahe hain!",
+      "startSec": 0,
+      "endSec": 9.55
+    },
+    {
+      "id": "s2-architecture",
+      "type": "visual-broll",
+      "headline": "1-PROMPT ARCHITECTURE",
+      "italicAccent": "React + Backend + DB 🔥",
+      "leadIn": "THE TIME COLLAPSE ⏱️",
+      "brollVideo": "broll/office_skyscraper_city.mp4",
+      "heroImage": "cutouts/terminal_code.png",
+      "voice": "Frontend, backend, database — pehle sab haath se likhna padta tha. Ab sirf ek system prompt do, aur AI agent poora codebase generate kar deta hai!",
+      "startSec": 9.55,
+      "endSec": 20.49
+    },
+    {
+      "id": "s3-salaries",
+      "type": "visual-broll",
+      "headline": "SYNTAX VS LOGIC",
+      "italicAccent": "3X Salary or Replaced? 💸",
+      "leadIn": "THE HARSH TRUTH ⚠️",
+      "brollVideo": "broll/stock_market_trading_chart.mp4",
+      "heroImage": "cutouts/stock_exchange_bull.png",
+      "voice": "Syntax ratne wale developers replace ho rahe hain, lekin jo AI agents chalana jante hain, unki market value seedha 3 guna badh chuki hai!",
+      "startSec": 20.49,
+      "endSec": 29.29
+    },
+    {
+      "id": "s4-cta",
+      "type": "visual-broll",
+      "headline": "STEAL MY BLUEPRINT",
+      "italicAccent": "Comment \"CODE\" Below 🚀",
+      "leadIn": "FREE SYSTEM GUIDE 🎁",
+      "brollVideo": "broll/digital_technology_data.mp4",
+      "heroImage": "cutouts/rocket_growth.png",
+      "voice": "Comment mein likho CODE aur main aapko top 3 AI developer prompts bhej dunga. Follow karo techwith gen z ko!",
+      "startSec": 29.29,
+      "endSec": 36.11
+    }
+  ]
+}

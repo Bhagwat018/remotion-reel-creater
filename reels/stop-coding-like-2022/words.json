@@ -1,0 +1,482 @@
+[
+  {
+    "word": "Stop",
+    "startSec": 0,
+    "endSec": 0.35
+  },
+  {
+    "word": "writing",
+    "startSec": 0.35,
+    "endSec": 0.7
+  },
+  {
+    "word": "code",
+    "startSec": 0.71,
+    "endSec": 1.06
+  },
+  {
+    "word": "like",
+    "startSec": 1.06,
+    "endSec": 1.41
+  },
+  {
+    "word": "it's",
+    "startSec": 1.41,
+    "endSec": 1.76
+  },
+  {
+    "word": "2022!",
+    "startSec": 1.77,
+    "endSec": 2.12
+  },
+  {
+    "word": "Jis",
+    "startSec": 2.12,
+    "endSec": 2.47
+  },
+  {
+    "word": "full-stack",
+    "startSec": 2.48,
+    "endSec": 2.83
+  },
+  {
+    "word": "app",
+    "startSec": 2.83,
+    "endSec": 3.18
+  },
+  {
+    "word": "ko",
+    "startSec": 3.18,
+    "endSec": 3.53
+  },
+  {
+    "word": "banane",
+    "startSec": 3.54,
+    "endSec": 3.89
+  },
+  {
+    "word": "mein",
+    "startSec": 3.89,
+    "endSec": 4.24
+  },
+  {
+    "word": "5",
+    "startSec": 4.24,
+    "endSec": 4.59
+  },
+  {
+    "word": "din",
+    "startSec": 4.6,
+    "endSec": 4.95
+  },
+  {
+    "word": "lagte",
+    "startSec": 4.95,
+    "endSec": 5.3
+  },
+  {
+    "word": "the,",
+    "startSec": 5.3,
+    "endSec": 5.65
+  },
+  {
+    "word": "ab",
+    "startSec": 5.66,
+    "endSec": 6.01
+  },
+  {
+    "word": "AI",
+    "startSec": 6.01,
+    "endSec": 6.36
+  },
+  {
+    "word": "agents",
+    "startSec": 6.37,
+    "endSec": 6.72
+  },
+  {
+    "word": "use",
+    "startSec": 6.72,
+    "endSec": 7.07
+  },
+  {
+    "word": "10",
+    "startSec": 7.07,
+    "endSec": 7.42
+  },
+  {
+    "word": "minute",
+    "startSec": 7.43,
+    "endSec": 7.78
+  },
+  {
+    "word": "mein",
+    "startSec": 7.78,
+    "endSec": 8.13
+  },
+  {
+    "word": "bana",
+    "startSec": 8.13,
+    "endSec": 8.48
+  },
+  {
+    "word": "rahe",
+    "startSec": 8.49,
+    "endSec": 8.84
+  },
+  {
+    "word": "hain!",
+    "startSec": 8.84,
+    "endSec": 9.19
+  },
+  {
+    "word": "Frontend,",
+    "startSec": 9.55,
+    "endSec": 9.96
+  },
+  {
+    "word": "backend,",
+    "startSec": 9.96,
+    "endSec": 10.37
+  },
+  {
+    "word": "database",
+    "startSec": 10.36,
+    "endSec": 10.77
+  },
+  {
+    "word": "—",
+    "startSec": 10.77,
+    "endSec": 11.18
+  },
+  {
+    "word": "pehle",
+    "startSec": 11.18,
+    "endSec": 11.59
+  },
+  {
+    "word": "sab",
+    "startSec": 11.59,
+    "endSec": 12
+  },
+  {
+    "word": "haath",
+    "startSec": 11.99,
+    "endSec": 12.4
+  },
+  {
+    "word": "se",
+    "startSec": 12.4,
+    "endSec": 12.81
+  },
+  {
+    "word": "likhna",
+    "startSec": 12.81,
+    "endSec": 13.22
+  },
+  {
+    "word": "padta",
+    "startSec": 13.22,
+    "endSec": 13.63
+  },
+  {
+    "word": "tha.",
+    "startSec": 13.62,
+    "endSec": 14.03
+  },
+  {
+    "word": "Ab",
+    "startSec": 14.03,
+    "endSec": 14.44
+  },
+  {
+    "word": "sirf",
+    "startSec": 14.44,
+    "endSec": 14.85
+  },
+  {
+    "word": "ek",
+    "startSec": 14.84,
+    "endSec": 15.25
+  },
+  {
+    "word": "system",
+    "startSec": 15.25,
+    "endSec": 15.66
+  },
+  {
+    "word": "prompt",
+    "startSec": 15.66,
+    "endSec": 16.07
+  },
+  {
+    "word": "do,",
+    "startSec": 16.07,
+    "endSec": 16.48
+  },
+  {
+    "word": "aur",
+    "startSec": 16.47,
+    "endSec": 16.88
+  },
+  {
+    "word": "AI",
+    "startSec": 16.88,
+    "endSec": 17.29
+  },
+  {
+    "word": "agent",
+    "startSec": 17.29,
+    "endSec": 17.7
+  },
+  {
+    "word": "poora",
+    "startSec": 17.69,
+    "endSec": 18.1
+  },
+  {
+    "word": "codebase",
+    "startSec": 18.1,
+    "endSec": 18.51
+  },
+  {
+    "word": "generate",
+    "startSec": 18.51,
+    "endSec": 18.92
+  },
+  {
+    "word": "kar",
+    "startSec": 18.92,
+    "endSec": 19.33
+  },
+  {
+    "word": "deta",
+    "startSec": 19.32,
+    "endSec": 19.73
+  },
+  {
+    "word": "hai!",
+    "startSec": 19.73,
+    "endSec": 20.14
+  },
+  {
+    "word": "Syntax",
+    "startSec": 20.49,
+    "endSec": 20.84
+  },
+  {
+    "word": "ratne",
+    "startSec": 20.84,
+    "endSec": 21.19
+  },
+  {
+    "word": "wale",
+    "startSec": 21.19,
+    "endSec": 21.54
+  },
+  {
+    "word": "developers",
+    "startSec": 21.55,
+    "endSec": 21.9
+  },
+  {
+    "word": "replace",
+    "startSec": 21.9,
+    "endSec": 22.25
+  },
+  {
+    "word": "ho",
+    "startSec": 22.25,
+    "endSec": 22.6
+  },
+  {
+    "word": "rahe",
+    "startSec": 22.6,
+    "endSec": 22.95
+  },
+  {
+    "word": "hain,",
+    "startSec": 22.96,
+    "endSec": 23.31
+  },
+  {
+    "word": "lekin",
+    "startSec": 23.31,
+    "endSec": 23.66
+  },
+  {
+    "word": "jo",
+    "startSec": 23.66,
+    "endSec": 24.01
+  },
+  {
+    "word": "AI",
+    "startSec": 24.01,
+    "endSec": 24.36
+  },
+  {
+    "word": "agents",
+    "startSec": 24.36,
+    "endSec": 24.71
+  },
+  {
+    "word": "chalana",
+    "startSec": 24.72,
+    "endSec": 25.07
+  },
+  {
+    "word": "jante",
+    "startSec": 25.07,
+    "endSec": 25.42
+  },
+  {
+    "word": "hain,",
+    "startSec": 25.42,
+    "endSec": 25.77
+  },
+  {
+    "word": "unki",
+    "startSec": 25.77,
+    "endSec": 26.12
+  },
+  {
+    "word": "market",
+    "startSec": 26.12,
+    "endSec": 26.47
+  },
+  {
+    "word": "value",
+    "startSec": 26.48,
+    "endSec": 26.83
+  },
+  {
+    "word": "seedha",
+    "startSec": 26.83,
+    "endSec": 27.18
+  },
+  {
+    "word": "3",
+    "startSec": 27.18,
+    "endSec": 27.53
+  },
+  {
+    "word": "guna",
+    "startSec": 27.53,
+    "endSec": 27.88
+  },
+  {
+    "word": "badh",
+    "startSec": 27.89,
+    "endSec": 28.24
+  },
+  {
+    "word": "chuki",
+    "startSec": 28.24,
+    "endSec": 28.59
+  },
+  {
+    "word": "hai!",
+    "startSec": 28.59,
+    "endSec": 28.94
+  },
+  {
+    "word": "Comment",
+    "startSec": 29.29,
+    "endSec": 29.6
+  },
+  {
+    "word": "mein",
+    "startSec": 29.6,
+    "endSec": 29.91
+  },
+  {
+    "word": "likho",
+    "startSec": 29.91,
+    "endSec": 30.22
+  },
+  {
+    "word": "CODE",
+    "startSec": 30.22,
+    "endSec": 30.53
+  },
+  {
+    "word": "aur",
+    "startSec": 30.53,
+    "endSec": 30.84
+  },
+  {
+    "word": "main",
+    "startSec": 30.85,
+    "endSec": 31.16
+  },
+  {
+    "word": "aapko",
+    "startSec": 31.16,
+    "endSec": 31.47
+  },
+  {
+    "word": "top",
+    "startSec": 31.47,
+    "endSec": 31.78
+  },
+  {
+    "word": "3",
+    "startSec": 31.78,
+    "endSec": 32.09
+  },
+  {
+    "word": "AI",
+    "startSec": 32.09,
+    "endSec": 32.4
+  },
+  {
+    "word": "developer",
+    "startSec": 32.4,
+    "endSec": 32.71
+  },
+  {
+    "word": "prompts",
+    "startSec": 32.71,
+    "endSec": 33.02
+  },
+  {
+    "word": "bhej",
+    "startSec": 33.02,
+    "endSec": 33.33
+  },
+  {
+    "word": "dunga.",
+    "startSec": 33.33,
+    "endSec": 33.64
+  },
+  {
+    "word": "Follow",
+    "startSec": 33.65,
+    "endSec": 33.96
+  },
+  {
+    "word": "karo",
+    "startSec": 33.96,
+    "endSec": 34.27
+  },
+  {
+    "word": "techwith",
+    "startSec": 34.27,
+    "endSec": 34.58
+  },
+  {
+    "word": "gen",
+    "startSec": 34.58,
+    "endSec": 34.89
+  },
+  {
+    "word": "z",
+    "startSec": 34.89,
+    "endSec": 35.2
+  },
+  {
+    "word": "ko!",
+    "startSec": 35.2,
+    "endSec": 35.51
+  }
+]

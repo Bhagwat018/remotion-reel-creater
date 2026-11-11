@@ -1,0 +1,612 @@
+[
+  {
+    "word": "Believe",
+    "startSec": 0,
+    "endSec": 0.31
+  },
+  {
+    "word": "it",
+    "startSec": 0.31,
+    "endSec": 0.62
+  },
+  {
+    "word": "or",
+    "startSec": 0.62,
+    "endSec": 0.93
+  },
+  {
+    "word": "not,",
+    "startSec": 0.93,
+    "endSec": 1.24
+  },
+  {
+    "word": "is",
+    "startSec": 1.23,
+    "endSec": 1.54
+  },
+  {
+    "word": "video",
+    "startSec": 1.54,
+    "endSec": 1.85
+  },
+  {
+    "word": "mein",
+    "startSec": 1.85,
+    "endSec": 2.16
+  },
+  {
+    "word": "na",
+    "startSec": 2.16,
+    "endSec": 2.47
+  },
+  {
+    "word": "koi",
+    "startSec": 2.47,
+    "endSec": 2.78
+  },
+  {
+    "word": "camera",
+    "startSec": 2.78,
+    "endSec": 3.09
+  },
+  {
+    "word": "use",
+    "startSec": 3.09,
+    "endSec": 3.4
+  },
+  {
+    "word": "hua",
+    "startSec": 3.4,
+    "endSec": 3.71
+  },
+  {
+    "word": "hai,",
+    "startSec": 3.7,
+    "endSec": 4.01
+  },
+  {
+    "word": "na",
+    "startSec": 4.01,
+    "endSec": 4.32
+  },
+  {
+    "word": "koi",
+    "startSec": 4.32,
+    "endSec": 4.63
+  },
+  {
+    "word": "video",
+    "startSec": 4.63,
+    "endSec": 4.94
+  },
+  {
+    "word": "clip,",
+    "startSec": 4.94,
+    "endSec": 5.25
+  },
+  {
+    "word": "aur",
+    "startSec": 5.25,
+    "endSec": 5.56
+  },
+  {
+    "word": "na",
+    "startSec": 5.56,
+    "endSec": 5.87
+  },
+  {
+    "word": "hi",
+    "startSec": 5.87,
+    "endSec": 6.18
+  },
+  {
+    "word": "koi",
+    "startSec": 6.17,
+    "endSec": 6.48
+  },
+  {
+    "word": "photo!",
+    "startSec": 6.48,
+    "endSec": 6.79
+  },
+  {
+    "word": "Yeh",
+    "startSec": 6.79,
+    "endSec": 7.1
+  },
+  {
+    "word": "poori",
+    "startSec": 7.1,
+    "endSec": 7.41
+  },
+  {
+    "word": "reel",
+    "startSec": 7.41,
+    "endSec": 7.72
+  },
+  {
+    "word": "100",
+    "startSec": 7.72,
+    "endSec": 8.03
+  },
+  {
+    "word": "percent",
+    "startSec": 8.03,
+    "endSec": 8.34
+  },
+  {
+    "word": "pure",
+    "startSec": 8.33,
+    "endSec": 8.64
+  },
+  {
+    "word": "React",
+    "startSec": 8.64,
+    "endSec": 8.95
+  },
+  {
+    "word": "code",
+    "startSec": 8.95,
+    "endSec": 9.26
+  },
+  {
+    "word": "se",
+    "startSec": 9.26,
+    "endSec": 9.57
+  },
+  {
+    "word": "render",
+    "startSec": 9.57,
+    "endSec": 9.88
+  },
+  {
+    "word": "hui",
+    "startSec": 9.88,
+    "endSec": 10.19
+  },
+  {
+    "word": "hai!",
+    "startSec": 10.19,
+    "endSec": 10.5
+  },
+  {
+    "word": "Pehle",
+    "startSec": 10.85,
+    "endSec": 11.25
+  },
+  {
+    "word": "AI",
+    "startSec": 11.25,
+    "endSec": 11.65
+  },
+  {
+    "word": "script",
+    "startSec": 11.65,
+    "endSec": 12.05
+  },
+  {
+    "word": "generate",
+    "startSec": 12.05,
+    "endSec": 12.45
+  },
+  {
+    "word": "karta",
+    "startSec": 12.44,
+    "endSec": 12.84
+  },
+  {
+    "word": "hai,",
+    "startSec": 12.84,
+    "endSec": 13.24
+  },
+  {
+    "word": "ElevenLabs",
+    "startSec": 13.24,
+    "endSec": 13.64
+  },
+  {
+    "word": "voice",
+    "startSec": 13.64,
+    "endSec": 14.04
+  },
+  {
+    "word": "synthesize",
+    "startSec": 14.04,
+    "endSec": 14.44
+  },
+  {
+    "word": "karta",
+    "startSec": 14.44,
+    "endSec": 14.84
+  },
+  {
+    "word": "hai,",
+    "startSec": 14.84,
+    "endSec": 15.24
+  },
+  {
+    "word": "aur",
+    "startSec": 15.24,
+    "endSec": 15.64
+  },
+  {
+    "word": "Remotion",
+    "startSec": 15.63,
+    "endSec": 16.03
+  },
+  {
+    "word": "har",
+    "startSec": 16.03,
+    "endSec": 16.43
+  },
+  {
+    "word": "single",
+    "startSec": 16.43,
+    "endSec": 16.83
+  },
+  {
+    "word": "pixel",
+    "startSec": 16.83,
+    "endSec": 17.23
+  },
+  {
+    "word": "ko",
+    "startSec": 17.23,
+    "endSec": 17.63
+  },
+  {
+    "word": "mathematics",
+    "startSec": 17.63,
+    "endSec": 18.03
+  },
+  {
+    "word": "se",
+    "startSec": 18.03,
+    "endSec": 18.43
+  },
+  {
+    "word": "calculate",
+    "startSec": 18.43,
+    "endSec": 18.83
+  },
+  {
+    "word": "karke",
+    "startSec": 18.82,
+    "endSec": 19.22
+  },
+  {
+    "word": "draw",
+    "startSec": 19.22,
+    "endSec": 19.62
+  },
+  {
+    "word": "karta",
+    "startSec": 19.62,
+    "endSec": 20.02
+  },
+  {
+    "word": "hai",
+    "startSec": 20.02,
+    "endSec": 20.42
+  },
+  {
+    "word": "60",
+    "startSec": 20.42,
+    "endSec": 20.82
+  },
+  {
+    "word": "frames",
+    "startSec": 20.82,
+    "endSec": 21.22
+  },
+  {
+    "word": "per",
+    "startSec": 21.22,
+    "endSec": 21.62
+  },
+  {
+    "word": "second",
+    "startSec": 21.62,
+    "endSec": 22.02
+  },
+  {
+    "word": "par!",
+    "startSec": 22.01,
+    "endSec": 22.41
+  },
+  {
+    "word": "Ek",
+    "startSec": 22.76,
+    "endSec": 23.11
+  },
+  {
+    "word": "human",
+    "startSec": 23.11,
+    "endSec": 23.46
+  },
+  {
+    "word": "editor",
+    "startSec": 23.46,
+    "endSec": 23.81
+  },
+  {
+    "word": "ko",
+    "startSec": 23.8,
+    "endSec": 24.15
+  },
+  {
+    "word": "aisi",
+    "startSec": 24.15,
+    "endSec": 24.5
+  },
+  {
+    "word": "video",
+    "startSec": 24.5,
+    "endSec": 24.85
+  },
+  {
+    "word": "banane",
+    "startSec": 24.85,
+    "endSec": 25.2
+  },
+  {
+    "word": "mein",
+    "startSec": 25.2,
+    "endSec": 25.55
+  },
+  {
+    "word": "3",
+    "startSec": 25.55,
+    "endSec": 25.9
+  },
+  {
+    "word": "ghante",
+    "startSec": 25.89,
+    "endSec": 26.24
+  },
+  {
+    "word": "lagte",
+    "startSec": 26.24,
+    "endSec": 26.59
+  },
+  {
+    "word": "hain.",
+    "startSec": 26.59,
+    "endSec": 26.94
+  },
+  {
+    "word": "Lekin",
+    "startSec": 26.94,
+    "endSec": 27.29
+  },
+  {
+    "word": "yeh",
+    "startSec": 27.29,
+    "endSec": 27.64
+  },
+  {
+    "word": "autonomous",
+    "startSec": 27.64,
+    "endSec": 27.99
+  },
+  {
+    "word": "coding",
+    "startSec": 27.98,
+    "endSec": 28.33
+  },
+  {
+    "word": "engine",
+    "startSec": 28.33,
+    "endSec": 28.68
+  },
+  {
+    "word": "sirf",
+    "startSec": 28.68,
+    "endSec": 29.03
+  },
+  {
+    "word": "30",
+    "startSec": 29.03,
+    "endSec": 29.38
+  },
+  {
+    "word": "second",
+    "startSec": 29.38,
+    "endSec": 29.73
+  },
+  {
+    "word": "mein",
+    "startSec": 29.73,
+    "endSec": 30.08
+  },
+  {
+    "word": "poora",
+    "startSec": 30.07,
+    "endSec": 30.42
+  },
+  {
+    "word": "final",
+    "startSec": 30.42,
+    "endSec": 30.77
+  },
+  {
+    "word": "video",
+    "startSec": 30.77,
+    "endSec": 31.12
+  },
+  {
+    "word": "export",
+    "startSec": 31.12,
+    "endSec": 31.47
+  },
+  {
+    "word": "kar",
+    "startSec": 31.47,
+    "endSec": 31.82
+  },
+  {
+    "word": "deta",
+    "startSec": 31.82,
+    "endSec": 32.17
+  },
+  {
+    "word": "hai!",
+    "startSec": 32.16,
+    "endSec": 32.51
+  },
+  {
+    "word": "Agar",
+    "startSec": 32.86,
+    "endSec": 33.18
+  },
+  {
+    "word": "aap",
+    "startSec": 33.18,
+    "endSec": 33.5
+  },
+  {
+    "word": "bhi",
+    "startSec": 33.5,
+    "endSec": 33.82
+  },
+  {
+    "word": "bina",
+    "startSec": 33.83,
+    "endSec": 34.15
+  },
+  {
+    "word": "camera",
+    "startSec": 34.15,
+    "endSec": 34.47
+  },
+  {
+    "word": "ke",
+    "startSec": 34.47,
+    "endSec": 34.79
+  },
+  {
+    "word": "pure",
+    "startSec": 34.79,
+    "endSec": 35.11
+  },
+  {
+    "word": "code",
+    "startSec": 35.11,
+    "endSec": 35.43
+  },
+  {
+    "word": "se",
+    "startSec": 35.44,
+    "endSec": 35.76
+  },
+  {
+    "word": "reels",
+    "startSec": 35.76,
+    "endSec": 36.08
+  },
+  {
+    "word": "banana",
+    "startSec": 36.08,
+    "endSec": 36.4
+  },
+  {
+    "word": "chahte",
+    "startSec": 36.4,
+    "endSec": 36.72
+  },
+  {
+    "word": "hain,",
+    "startSec": 36.73,
+    "endSec": 37.05
+  },
+  {
+    "word": "toh",
+    "startSec": 37.05,
+    "endSec": 37.37
+  },
+  {
+    "word": "comment",
+    "startSec": 37.37,
+    "endSec": 37.69
+  },
+  {
+    "word": "mein",
+    "startSec": 37.69,
+    "endSec": 38.01
+  },
+  {
+    "word": "likho",
+    "startSec": 38.01,
+    "endSec": 38.33
+  },
+  {
+    "word": "BUILD",
+    "startSec": 38.34,
+    "endSec": 38.66
+  },
+  {
+    "word": "aur",
+    "startSec": 38.66,
+    "endSec": 38.98
+  },
+  {
+    "word": "main",
+    "startSec": 38.98,
+    "endSec": 39.3
+  },
+  {
+    "word": "poora",
+    "startSec": 39.3,
+    "endSec": 39.62
+  },
+  {
+    "word": "setup",
+    "startSec": 39.62,
+    "endSec": 39.94
+  },
+  {
+    "word": "breakdown",
+    "startSec": 39.95,
+    "endSec": 40.27
+  },
+  {
+    "word": "bhej",
+    "startSec": 40.27,
+    "endSec": 40.59
+  },
+  {
+    "word": "dunga.",
+    "startSec": 40.59,
+    "endSec": 40.91
+  },
+  {
+    "word": "Follow",
+    "startSec": 40.91,
+    "endSec": 41.23
+  },
+  {
+    "word": "karo",
+    "startSec": 41.23,
+    "endSec": 41.55
+  },
+  {
+    "word": "techwith",
+    "startSec": 41.56,
+    "endSec": 41.88
+  },
+  {
+    "word": "gen",
+    "startSec": 41.88,
+    "endSec": 42.2
+  },
+  {
+    "word": "z",
+    "startSec": 42.2,
+    "endSec": 42.52
+  },
+  {
+    "word": "ko!",
+    "startSec": 42.52,
+    "endSec": 42.84
+  }
+]

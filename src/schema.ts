@@ -461,6 +461,23 @@ export const evidenceSceneSchema = baseSceneSchema
     leadIn: data.leadIn || data.subtitle,
   }));
 
+export const visualBrollSceneSchema = baseSceneSchema
+  .extend({
+    type: z.literal("visual-broll"),
+    headline: z.string().min(1, "Headline is required for visual-broll scene"),
+    italicAccent: z.string().optional(),
+    brollVideo: z.string().optional(),
+    bgImage: z.string().optional(),
+    heroImage: z.string().optional(),
+    pillText: z.string().optional(),
+    pillColor: z.string().optional(),
+    glowColor: z.string().optional(),
+  })
+  .transform((data) => ({
+    ...data,
+    leadIn: data.leadIn || data.subtitle,
+  }));
+
 export const sceneSchema = z.discriminatedUnion("type", [
   titleSceneSchema,
   pillsSceneSchema,
@@ -485,6 +502,7 @@ export const sceneSchema = z.discriminatedUnion("type", [
   subscriptionXraySceneSchema,
   valuationBattleSceneSchema,
   evidenceSceneSchema,
+  visualBrollSceneSchema,
 ]);
 
 export type TitleSceneProps = z.infer<typeof titleSceneSchema>;
@@ -510,6 +528,7 @@ export type GmpGaugeSceneProps = z.infer<typeof gmpGaugeSceneSchema>;
 export type SubscriptionXraySceneProps = z.infer<typeof subscriptionXraySceneSchema>;
 export type ValuationBattleSceneProps = z.infer<typeof valuationBattleSceneSchema>;
 export type EvidenceSceneProps = z.infer<typeof evidenceSceneSchema>;
+export type VisualBrollSceneProps = z.infer<typeof visualBrollSceneSchema>;
 
 export type SceneData =
   | TitleSceneProps
@@ -534,7 +553,8 @@ export type SceneData =
   | GmpGaugeSceneProps
   | SubscriptionXraySceneProps
   | ValuationBattleSceneProps
-  | EvidenceSceneProps;
+  | EvidenceSceneProps
+  | VisualBrollSceneProps;
 
 export const avatarSchema = z.object({
   enabled: z.boolean().default(true),

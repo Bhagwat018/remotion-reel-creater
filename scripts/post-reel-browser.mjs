@@ -22,8 +22,13 @@ if (!slug) {
   process.exit(1);
 }
 
-const videoPath = path.join(rootDir, "out", `${slug}.mp4`);
-const reelJsonPath = path.join(rootDir, "reels", slug, "reel.json");
+const isDirectFile = fs.existsSync(slug) || fs.existsSync(path.resolve(slug));
+const videoPath = isDirectFile
+  ? path.resolve(slug)
+  : path.join(rootDir, "out", `${slug}.mp4`);
+const reelJsonPath = isDirectFile
+  ? path.join(rootDir, "reels", path.basename(slug, path.extname(slug)), "reel.json")
+  : path.join(rootDir, "reels", slug, "reel.json");
 
 if (!fs.existsSync(videoPath)) {
   console.error(`❌ Video file not found at: ${videoPath}`);
@@ -218,6 +223,7 @@ async function postReel() {
 
     // 10. Click Share
     console.log("🚀 Clicking 'Share' button...");
+    await page.screenshot({ path: path.join(rootDir, "out", "insta_before_share.png") });
     const shareBtn = page.locator(
       "div[role='dialog'] div[role='button']:has-text('Share'), div[role='dialog'] button:has-text('Share')"
     ).first();
@@ -226,12 +232,13 @@ async function postReel() {
     // 11. Actively Poll Every 2 Seconds for Completion
     console.log("⏳ Monitoring post status every 2 seconds...");
     let isShared = false;
-    const maxChecks = 45; // 45 * 2s = 90s max
+    const maxChecks = 120; // 120 * 2s = 240s max (4 minutes)
 
     for (let i = 1; i <= maxChecks; i++) {
       await page.waitForTimeout(2000);
 
       // Check for success confirmation text
+      const dialogText = await page.locator("div[role='dialog']").innerText().catch(() => "");
       const hasSuccessText = await page.evaluate(() => {
         const text = document.body ? document.body.innerText : "";
         return (
@@ -248,7 +255,7 @@ async function postReel() {
       // Check if upload modal has completely closed
       const dialogCount = await page.locator("div[role='dialog']").count();
 
-      if (hasSuccessText || checkmark) {
+      if (hasSuccessText || checkmark || /shared/i.test(dialogText)) {
         console.log(`\n✅ [${i * 2}s] Instagram Confirmation: "Your reel has been shared."`);
         isShared = true;
         break;
@@ -263,13 +270,32 @@ async function postReel() {
       process.stdout.write(`   ⏳ [${i * 2}s] Uploading & Processing... \r`);
     }
 
+    await page.screenshot({ path: path.join(rootDir, "out", "insta_after_share.png") });
+
     if (isShared) {
       console.log("\n=======================================================");
       console.log("🎉 SUCCESS! Reel has been posted to @techwith.genz !");
-      console.log("🔗 Profile: https://www.instagram.com/techwith.genz/reels/");
+      
+      // Let's fetch the new reel URL from the profile
+      try {
+        console.log("🔍 Fetching new reel link from profile...");
+        await page.goto("https://www.instagram.com/techwith.genz/reels/", { waitUntil: "networkidle", timeout: 30000 });
+        await page.waitForTimeout(4000);
+        const latestReel = await page.evaluate(() => {
+          const first = document.querySelector("a[href*='/reel/']");
+          return first ? first.href : null;
+        });
+        if (latestReel) {
+          console.log(`🔗 LIVE REEL LINK: ${latestReel}`);
+        } else {
+          console.log("🔗 Profile: https://www.instagram.com/techwith.genz/reels/");
+        }
+      } catch (e) {
+        console.log("🔗 Profile: https://www.instagram.com/techwith.genz/reels/");
+      }
       console.log("=======================================================\n");
     } else {
-      console.log("\n⚠️ Upload took longer than 90s, check your Instagram profile.");
+      console.log("\n⚠️ Upload took longer than 240s, check your Instagram profile.");
     }
   } catch (err) {
     console.error("\n❌ Upload failed:", err.message);

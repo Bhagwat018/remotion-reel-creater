@@ -24,6 +24,12 @@ import { SubscriptionXrayScene } from "./SubscriptionXrayScene";
 import { ValuationBattleScene } from "./ValuationBattleScene";
 import { EvidenceScene } from "./EvidenceScene";
 import { VisualBrollScene } from "./VisualBrollScene";
+import {
+  CodeEngineHookScene,
+  CodePipelineScene,
+  CodeVsHumanScene,
+  CodeCtaScene,
+} from "./pureAiCode";
 
 type SceneComponent = React.FC<
   SceneData & { durationInFrames: number; sceneIndex?: number; slug?: string }
@@ -63,5 +69,25 @@ export const getSceneComponent = (type: string): SceneComponent => {
       `Unknown scene type "${type}". Valid types are: ${VALID_SCENE_TYPES.join(", ")}`
     );
   }
-  return component;
+
+  // Bespoke scene dispatcher for pure AI coding reels (Zero Videos, Zero Images)
+  const PureCodeDispatchedScene: SceneComponent = (props) => {
+    if (props.slug === "pure-ai-code-reel" || props.slug?.includes("pure-ai-code")) {
+      if (props.id === "s1-hook" || props.type === "code") {
+        return React.createElement(CodeEngineHookScene, { durationInFrames: props.durationInFrames });
+      }
+      if (props.id === "s2-pipeline" || props.type === "flow") {
+        return React.createElement(CodePipelineScene, { durationInFrames: props.durationInFrames });
+      }
+      if (props.id === "s3-battle" || props.type === "compare") {
+        return React.createElement(CodeVsHumanScene, { durationInFrames: props.durationInFrames });
+      }
+      if (props.id === "s4-cta" || props.type === "cta") {
+        return React.createElement(CodeCtaScene, { durationInFrames: props.durationInFrames });
+      }
+    }
+    return React.createElement(component, props);
+  };
+
+  return PureCodeDispatchedScene;
 };

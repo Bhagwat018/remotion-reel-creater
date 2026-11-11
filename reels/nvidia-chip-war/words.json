@@ -1,0 +1,527 @@
+[
+  {
+    "word": "Nvidia",
+    "startSec": 0,
+    "endSec": 0.32
+  },
+  {
+    "word": "CEO",
+    "startSec": 0.32,
+    "endSec": 0.64
+  },
+  {
+    "word": "Jensen",
+    "startSec": 0.65,
+    "endSec": 0.97
+  },
+  {
+    "word": "Huang",
+    "startSec": 0.97,
+    "endSec": 1.29
+  },
+  {
+    "word": "par",
+    "startSec": 1.29,
+    "endSec": 1.61
+  },
+  {
+    "word": "US",
+    "startSec": 1.62,
+    "endSec": 1.94
+  },
+  {
+    "word": "Government",
+    "startSec": 1.94,
+    "endSec": 2.26
+  },
+  {
+    "word": "ne",
+    "startSec": 2.26,
+    "endSec": 2.58
+  },
+  {
+    "word": "ek",
+    "startSec": 2.58,
+    "endSec": 2.9
+  },
+  {
+    "word": "aisi",
+    "startSec": 2.91,
+    "endSec": 3.23
+  },
+  {
+    "word": "secret",
+    "startSec": 3.23,
+    "endSec": 3.55
+  },
+  {
+    "word": "enquiry",
+    "startSec": 3.55,
+    "endSec": 3.87
+  },
+  {
+    "word": "shuru",
+    "startSec": 3.88,
+    "endSec": 4.2
+  },
+  {
+    "word": "ki",
+    "startSec": 4.2,
+    "endSec": 4.52
+  },
+  {
+    "word": "hai,",
+    "startSec": 4.52,
+    "endSec": 4.84
+  },
+  {
+    "word": "jisne",
+    "startSec": 4.85,
+    "endSec": 5.17
+  },
+  {
+    "word": "poore",
+    "startSec": 5.17,
+    "endSec": 5.49
+  },
+  {
+    "word": "Silicon",
+    "startSec": 5.49,
+    "endSec": 5.81
+  },
+  {
+    "word": "Valley",
+    "startSec": 5.82,
+    "endSec": 6.14
+  },
+  {
+    "word": "ko",
+    "startSec": 6.14,
+    "endSec": 6.46
+  },
+  {
+    "word": "hila",
+    "startSec": 6.46,
+    "endSec": 6.78
+  },
+  {
+    "word": "diya",
+    "startSec": 6.78,
+    "endSec": 7.1
+  },
+  {
+    "word": "hai!",
+    "startSec": 7.11,
+    "endSec": 7.43
+  },
+  {
+    "word": "Nvidia",
+    "startSec": 7.78,
+    "endSec": 8.16
+  },
+  {
+    "word": "ke",
+    "startSec": 8.16,
+    "endSec": 8.54
+  },
+  {
+    "word": "ye",
+    "startSec": 8.55,
+    "endSec": 8.93
+  },
+  {
+    "word": "AI",
+    "startSec": 8.93,
+    "endSec": 9.31
+  },
+  {
+    "word": "superchips",
+    "startSec": 9.32,
+    "endSec": 9.7
+  },
+  {
+    "word": "poori",
+    "startSec": 9.7,
+    "endSec": 10.08
+  },
+  {
+    "word": "duniya",
+    "startSec": 10.09,
+    "endSec": 10.47
+  },
+  {
+    "word": "ke",
+    "startSec": 10.47,
+    "endSec": 10.85
+  },
+  {
+    "word": "90",
+    "startSec": 10.86,
+    "endSec": 11.24
+  },
+  {
+    "word": "percent",
+    "startSec": 11.24,
+    "endSec": 11.62
+  },
+  {
+    "word": "AI",
+    "startSec": 11.62,
+    "endSec": 12
+  },
+  {
+    "word": "models",
+    "startSec": 12.01,
+    "endSec": 12.39
+  },
+  {
+    "word": "ko",
+    "startSec": 12.39,
+    "endSec": 12.77
+  },
+  {
+    "word": "power",
+    "startSec": 12.78,
+    "endSec": 13.16
+  },
+  {
+    "word": "karte",
+    "startSec": 13.16,
+    "endSec": 13.54
+  },
+  {
+    "word": "hain.",
+    "startSec": 13.55,
+    "endSec": 13.93
+  },
+  {
+    "word": "Lekin",
+    "startSec": 13.93,
+    "endSec": 14.31
+  },
+  {
+    "word": "US",
+    "startSec": 14.32,
+    "endSec": 14.7
+  },
+  {
+    "word": "export",
+    "startSec": 14.7,
+    "endSec": 15.08
+  },
+  {
+    "word": "bans",
+    "startSec": 15.08,
+    "endSec": 15.46
+  },
+  {
+    "word": "ke",
+    "startSec": 15.47,
+    "endSec": 15.85
+  },
+  {
+    "word": "bawajood,",
+    "startSec": 15.85,
+    "endSec": 16.23
+  },
+  {
+    "word": "reports",
+    "startSec": 16.24,
+    "endSec": 16.62
+  },
+  {
+    "word": "kehti",
+    "startSec": 16.62,
+    "endSec": 17
+  },
+  {
+    "word": "hain",
+    "startSec": 17.01,
+    "endSec": 17.39
+  },
+  {
+    "word": "ki",
+    "startSec": 17.39,
+    "endSec": 17.77
+  },
+  {
+    "word": "ye",
+    "startSec": 17.77,
+    "endSec": 18.15
+  },
+  {
+    "word": "chips",
+    "startSec": 18.16,
+    "endSec": 18.54
+  },
+  {
+    "word": "backdoor",
+    "startSec": 18.54,
+    "endSec": 18.92
+  },
+  {
+    "word": "routes",
+    "startSec": 18.93,
+    "endSec": 19.31
+  },
+  {
+    "word": "se",
+    "startSec": 19.31,
+    "endSec": 19.69
+  },
+  {
+    "word": "superpowers",
+    "startSec": 19.7,
+    "endSec": 20.08
+  },
+  {
+    "word": "tak",
+    "startSec": 20.08,
+    "endSec": 20.46
+  },
+  {
+    "word": "pahunch",
+    "startSec": 20.47,
+    "endSec": 20.85
+  },
+  {
+    "word": "rahe",
+    "startSec": 20.85,
+    "endSec": 21.23
+  },
+  {
+    "word": "the!",
+    "startSec": 21.23,
+    "endSec": 21.61
+  },
+  {
+    "word": "Taipei",
+    "startSec": 21.97,
+    "endSec": 22.35
+  },
+  {
+    "word": "meetings",
+    "startSec": 22.35,
+    "endSec": 22.73
+  },
+  {
+    "word": "ke",
+    "startSec": 22.73,
+    "endSec": 23.11
+  },
+  {
+    "word": "baad",
+    "startSec": 23.11,
+    "endSec": 23.49
+  },
+  {
+    "word": "Washington",
+    "startSec": 23.49,
+    "endSec": 23.87
+  },
+  {
+    "word": "Congress",
+    "startSec": 23.88,
+    "endSec": 24.26
+  },
+  {
+    "word": "mein",
+    "startSec": 24.26,
+    "endSec": 24.64
+  },
+  {
+    "word": "high-level",
+    "startSec": 24.64,
+    "endSec": 25.02
+  },
+  {
+    "word": "probe",
+    "startSec": 25.02,
+    "endSec": 25.4
+  },
+  {
+    "word": "shuru",
+    "startSec": 25.4,
+    "endSec": 25.78
+  },
+  {
+    "word": "hui.",
+    "startSec": 25.78,
+    "endSec": 26.16
+  },
+  {
+    "word": "Antitrust",
+    "startSec": 26.16,
+    "endSec": 26.54
+  },
+  {
+    "word": "investigations",
+    "startSec": 26.54,
+    "endSec": 26.92
+  },
+  {
+    "word": "aur",
+    "startSec": 26.93,
+    "endSec": 27.31
+  },
+  {
+    "word": "legal",
+    "startSec": 27.31,
+    "endSec": 27.69
+  },
+  {
+    "word": "warnings",
+    "startSec": 27.69,
+    "endSec": 28.07
+  },
+  {
+    "word": "ne",
+    "startSec": 28.07,
+    "endSec": 28.45
+  },
+  {
+    "word": "Nvidia",
+    "startSec": 28.45,
+    "endSec": 28.83
+  },
+  {
+    "word": "par",
+    "startSec": 28.83,
+    "endSec": 29.21
+  },
+  {
+    "word": "pressure",
+    "startSec": 29.21,
+    "endSec": 29.59
+  },
+  {
+    "word": "10",
+    "startSec": 29.59,
+    "endSec": 29.97
+  },
+  {
+    "word": "guna",
+    "startSec": 29.98,
+    "endSec": 30.36
+  },
+  {
+    "word": "badha",
+    "startSec": 30.36,
+    "endSec": 30.74
+  },
+  {
+    "word": "diya!",
+    "startSec": 30.74,
+    "endSec": 31.12
+  },
+  {
+    "word": "Toh",
+    "startSec": 31.47,
+    "endSec": 31.9
+  },
+  {
+    "word": "kya",
+    "startSec": 31.9,
+    "endSec": 32.33
+  },
+  {
+    "word": "US",
+    "startSec": 32.33,
+    "endSec": 32.76
+  },
+  {
+    "word": "regulations",
+    "startSec": 32.76,
+    "endSec": 33.19
+  },
+  {
+    "word": "Jensen",
+    "startSec": 33.19,
+    "endSec": 33.62
+  },
+  {
+    "word": "Huang",
+    "startSec": 33.62,
+    "endSec": 34.05
+  },
+  {
+    "word": "ki",
+    "startSec": 34.05,
+    "endSec": 34.48
+  },
+  {
+    "word": "AI",
+    "startSec": 34.48,
+    "endSec": 34.91
+  },
+  {
+    "word": "monopoly",
+    "startSec": 34.91,
+    "endSec": 35.34
+  },
+  {
+    "word": "ko",
+    "startSec": 35.35,
+    "endSec": 35.78
+  },
+  {
+    "word": "rok",
+    "startSec": 35.78,
+    "endSec": 36.21
+  },
+  {
+    "word": "paayenge?",
+    "startSec": 36.21,
+    "endSec": 36.64
+  },
+  {
+    "word": "Comment",
+    "startSec": 36.64,
+    "endSec": 37.07
+  },
+  {
+    "word": "karo",
+    "startSec": 37.07,
+    "endSec": 37.5
+  },
+  {
+    "word": "'CHIP'",
+    "startSec": 37.5,
+    "endSec": 37.93
+  },
+  {
+    "word": "aur",
+    "startSec": 37.93,
+    "endSec": 38.36
+  },
+  {
+    "word": "hum",
+    "startSec": 38.36,
+    "endSec": 38.79
+  },
+  {
+    "word": "bhejenge",
+    "startSec": 38.79,
+    "endSec": 39.22
+  },
+  {
+    "word": "poori",
+    "startSec": 39.22,
+    "endSec": 39.65
+  },
+  {
+    "word": "confidential",
+    "startSec": 39.65,
+    "endSec": 40.08
+  },
+  {
+    "word": "investigation",
+    "startSec": 40.08,
+    "endSec": 40.51
+  },
+  {
+    "word": "report!",
+    "startSec": 40.51,
+    "endSec": 40.94
+  }
+]

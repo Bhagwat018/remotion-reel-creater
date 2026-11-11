@@ -20,7 +20,7 @@
     "manychatHook": false,
     "instagramCaption": "₹1 lakh, 10 saal ka plan: sab ek company mein ya 20 mein? 🤔\n\nDono tareeqe ghalat ho sakte hain!\n\nAsli portfolio banane ke 4 aasaan niyam:\n1. Sirf 5-7 solid companies chuno\n2. 4 core sectors: Banking, IT, FMCG, Pharma\n3. 40-35-25 allocation rule for maximum compounding\n4. Saal mein sirf 2 baar check aur rebalance karo!\n\nAap sabse zyada paisa kahan lagaoge? 👇\nComment karo \"BANK\", \"IT\", \"FMCG\" ya \"PHARMA\"!\n\n📌 Save karo aur us dost ko bhejo jo investing shuru kar raha hai!\n\nFollow @techwith.GenZ for real wealth secrets!\n\n#StockMarket #InvestingInHindi #PortfolioBuilding #PersonalFinance #StartupIndia #techwithgenz",
     "disclaimer": "Educational content only. Not financial advice.",
-    "durationSec": 34,
+    "durationSec": 35,
     "voiceFile": "reels/ek-lakh-das-saal-portfolio-plan/voice.mp3",
     "wordsFile": "reels/ek-lakh-das-saal-portfolio-plan/words.json"
   },
@@ -35,7 +35,7 @@
       "heroImage": "cutouts/money_coins.png",
       "voice": "Agar aapke paas ek lakh rupaye hain aur 10 saal ka plan hai — kya sab ek hi company mein lagayein ya 20 alag alag mein? Dono tareeqe galat hain!",
       "startSec": 0,
-      "endSec": 8.15
+      "endSec": 9.95
     },
     {
       "id": "s2-sectors",
@@ -46,8 +46,8 @@
       "brollVideo": "broll/office_skyscraper_city.mp4",
       "heroImage": "cutouts/bank_finance.png",
       "voice": "Sirf 5 se 7 solid companies chuno jo in chaar strong sectors mein aati hain: Banking, I-T, FMCG aur Pharma.",
-      "startSec": 8.15,
-      "endSec": 16.03
+      "startSec": 9.95,
+      "endSec": 17.33
     },
     {
       "id": "s3-formula",
@@ -58,8 +58,8 @@
       "brollVideo": "broll/digital_technology_data.mp4",
       "heroImage": "cutouts/stock_exchange_bull.png",
       "voice": "40 percent Large Cap mein safety ke liye, 35 percent Mid Cap mein growth ke liye, aur bacha 25 percent high potential stocks mein!",
-      "startSec": 16.03,
-      "endSec": 24.33
+      "startSec": 17.33,
+      "endSec": 26.22
     },
     {
       "id": "s4-cta",
@@ -70,8 +70,8 @@
       "brollVideo": "broll/highway_traffic.mp4",
       "heroImage": "cutouts/money_coins.png",
       "voice": "Aap sabse zyada paisa kahan lagaoge? Comment mein BANK, I-T, FMCG ya PHARMA likho, aur follow karo techwith gen z ko!",
-      "startSec": 24.33,
-      "endSec": 33.38
+      "startSec": 26.22,
+      "endSec": 34.51
     }
   ]
 }

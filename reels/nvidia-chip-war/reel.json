@@ -1,0 +1,80 @@
+{
+  "meta": {
+    "slug": "nvidia-chip-war",
+    "topic": "Jensen Huang & The Secret Nvidia AI Chip War",
+    "title": "Jensen Huang Par Govt Enquiry: The AI Chip War Explained",
+    "handle": "@techwith.genz",
+    "language": "Hinglish",
+    "voice": "charlie",
+    "captions": true,
+    "captionStyle": "kinetic",
+    "bgm": false,
+    "manychatHook": false,
+    "showTicker": true,
+    "tickerPosition": "bottom",
+    "tickerBottomOffset": 130,
+    "instagramCaption": "Nvidia CEO Jensen Huang par US Government ki aisi secret enquiry baithayi gayi hai jisne poori tech industry ko hila diya hai! ⚡️🤖\n\nDarasal, Nvidia ke AI chips poori duniya ke 90% AI supercomputers ko power karte hain. Lekin global export bans aur Taipei closed-door meetings ke baad Washington Senate aur Antitrust probes ne investigation shuru kar di hai!\n\nComment 'CHIP' below aur hum aapko poori breakdown dossier bhejenge! 🚀\n\nFollow @techwith.genz for daily deep tech breakdowns!\n\n#JensenHuang #Nvidia #AIChips #SiliconValley #ArtificialIntelligence #TechNews #TechWithGenZ #DeepTech",
+    "disclaimer": "Educational analysis based on public media reports and global tech policy developments.",
+    "voiceFile": "reels/nvidia-chip-war/voice.mp3",
+    "wordsFile": "reels/nvidia-chip-war/words.json",
+    "durationSec": 42
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "visual-broll",
+      "leadIn": "BREAKING TECH PROBE ⚡",
+      "headline": "JENSEN HUANG PAR GOVT ENQUIRY?!",
+      "italicAccent": "The Secret AI Chip War",
+      "bgImage": "images/jensen_stage.jpg",
+      "pillText": "🔴 LIVE INVESTIGATION",
+      "pillColor": "#10b981",
+      "glowColor": "#10b981",
+      "voice": "Nvidia CEO Jensen Huang par US Government ne ek aisi secret enquiry shuru ki hai, jisne poore Silicon Valley ko hila diya hai!",
+      "startSec": 0,
+      "endSec": 7.78
+    },
+    {
+      "id": "s2-chip",
+      "type": "visual-broll",
+      "leadIn": "AI MONOPOLY 90% 🌐",
+      "headline": "SUPERCHIP KE BACKDOOR EXPORTS?",
+      "italicAccent": "World's Most Dangerous Silicon",
+      "bgImage": "images/nvidia_blackwell_chip.jpg",
+      "pillText": "BLACKWELL ARCHITECTURE",
+      "pillColor": "#34d399",
+      "glowColor": "#34d399",
+      "voice": "Nvidia ke ye AI superchips poori duniya ke 90% AI models ko power karte hain. Lekin US export bans ke bawajood, reports kehti hain ki ye chips backdoor routes se superpowers tak pahunch rahe the!",
+      "startSec": 7.78,
+      "endSec": 21.97
+    },
+    {
+      "id": "s3-probe",
+      "type": "visual-broll",
+      "leadIn": "WASHINGTON SHOWDOWN 🏛️",
+      "headline": "CONGRESS PROBE & ANTITRUST HEAT!",
+      "italicAccent": "Geopolitical Showdown",
+      "bgImage": "images/us_capitol_geopolitical.jpg",
+      "pillText": "SENATE PROBE ACTIVE",
+      "pillColor": "#38bdf8",
+      "glowColor": "#38bdf8",
+      "voice": "Taipei meetings ke baad Washington Congress mein high-level probe shuru hui. Antitrust investigations aur legal warnings ne Nvidia par pressure 10 guna badha diya!",
+      "startSec": 21.97,
+      "endSec": 31.47
+    },
+    {
+      "id": "s4-market-cta",
+      "type": "visual-broll",
+      "leadIn": "WALL STREET SHOCKWAVE 📈",
+      "headline": "COMMENT 'CHIP' FOR FULL REPORT!",
+      "italicAccent": "Trillion Dollar AI Battle",
+      "bgImage": "images/wall_street_hologram.jpg",
+      "pillText": "FREE DOSSIER IN DM",
+      "pillColor": "#f43f5e",
+      "glowColor": "#f43f5e",
+      "voice": "Toh kya US regulations Jensen Huang ki AI monopoly ko rok paayenge? Comment karo 'CHIP' aur hum bhejenge poori confidential investigation report!",
+      "startSec": 31.47,
+      "endSec": 41.54
+    }
+  ]
+}

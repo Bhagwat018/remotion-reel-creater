@@ -15,6 +15,7 @@ export interface VisualBrollSceneProps {
   italicAccent?: string;
   subtitle?: string;
   brollVideo?: string;
+  bgImage?: string;
   heroImage?: string;
   pillText?: string;
   pillColor?: string;
@@ -28,6 +29,7 @@ export const VisualBrollScene: React.FC<VisualBrollSceneProps> = ({
   italicAccent,
   subtitle,
   brollVideo,
+  bgImage,
   heroImage,
   pillText,
   pillColor = "#a855f7",
@@ -56,8 +58,8 @@ export const VisualBrollScene: React.FC<VisualBrollSceneProps> = ({
     config: { damping: 15, stiffness: 140 },
   });
 
-  // Smooth cinematic slow zoom for background video
-  const brollZoom = interpolate(frame, [0, durationInFrames], [1.0, 1.08], {
+  // Smooth cinematic slow zoom for background video/image
+  const brollZoom = interpolate(frame, [0, durationInFrames], [1.0, 1.1], {
     extrapolateRight: "clamp",
   });
 
@@ -69,6 +71,10 @@ export const VisualBrollScene: React.FC<VisualBrollSceneProps> = ({
 
   const videoSrc = brollVideo
     ? staticFile(brollVideo.replace(/^\/?public\//, "").replace(/^\//, ""))
+    : null;
+
+  const bgImageSrc = bgImage
+    ? staticFile(bgImage.replace(/^\/?public\//, "").replace(/^\//, ""))
     : null;
 
   const imageSrc = heroImage
@@ -93,8 +99,8 @@ export const VisualBrollScene: React.FC<VisualBrollSceneProps> = ({
           "-apple-system, BlinkMacSystemFont, 'Montserrat', 'Inter', sans-serif",
       }}
     >
-      {/* 1. CINEMATIC REAL VIDEO B-ROLL BACKGROUND */}
-      {videoSrc && (
+      {/* 1. CINEMATIC REAL VIDEO OR FULL-BLEED IMAGE BACKGROUND */}
+      {(videoSrc || bgImageSrc) && (
         <div
           style={{
             position: "absolute",
@@ -107,15 +113,27 @@ export const VisualBrollScene: React.FC<VisualBrollSceneProps> = ({
             zIndex: 0,
           }}
         >
-          <OffthreadVideo
-            src={videoSrc}
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-            }}
-            muted
-          />
+          {videoSrc ? (
+            <OffthreadVideo
+              src={videoSrc}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
+              muted
+            />
+          ) : (
+            <img
+              src={bgImageSrc}
+              alt="Cinematic Background"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
+            />
+          )}
         </div>
       )}
 
