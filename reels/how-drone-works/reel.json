@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "slug": "how-drone-works",
+    "topic": "How Does a Drone Work - Educational Reel",
+    "title": "How Does a Drone Actually Fly? 🚁",
+    "handle": "@_crackwithcode",
+    "language": "English",
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "bgm": false,
+    "showTicker": false,
+    "voice": "bunty",
+    "voiceFile": "reels/how-drone-works/voice.mp3",
+    "wordsFile": "reels/how-drone-works/words.json",
+    "durationSec": 38,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "visual-broll",
+      "leadIn": "🛸 SCIENCE BEHIND THE FLIGHT",
+      "headline": "HOW DOES A DRONE ACTUALLY FLY?",
+      "italicAccent": "Ever wondered how it stays balanced in the sky?",
+      "brollVideo": "broll/drone_closeup.mp4",
+      "pillText": "⚡ 4 MOTORS • 1 BRAIN • INFINITE CONTROL",
+      "pillColor": "#6366f1",
+      "glowColor": "#a78bfa",
+      "voice": "Have you ever thought how a drone is perfectly balanced in the sky?",
+      "startSec": 0,
+      "endSec": 5.1
+    },
+    {
+      "id": "s2-anatomy",
+      "type": "flow",
+      "leadIn": "⚙️ DRONE ANATOMY",
+      "headline": "4 PARTS THAT MAKE IT FLY",
+      "brollVideo": "broll/drone_parts.mp4",
+      "nodes": [
+        {
+          "title": "4 Brushless Motors",
+          "subtitle": "High RPM • Zero Friction Thrust",
+          "icon": "🔄",
+          "status": "THRUST"
+        },
+        {
+          "title": "ESC Controllers",
+          "subtitle": "Electronic Speed Control Per Motor",
+          "icon": "⚡",
+          "status": "SPEED"
+        },
+        {
+          "title": "Flight Controller",
+          "subtitle": "The Real Brain (1,000x/sec)",
+          "icon": "🧠",
+          "status": "CORE"
+        },
+        {
+          "title": "LiPo Battery",
+          "subtitle": "High Discharge Power Pack",
+          "icon": "🔋",
+          "status": "11.1V"
+        }
+      ],
+      "voice": "There are four brushless motors in a drone. The ESC controllers are connected to it. Flight controller, this is the real brain.",
+      "startSec": 5.1,
+      "endSec": 13.4
+    },
+    {
+      "id": "s3-sensors",
+      "type": "pills",
+      "leadIn": "📡 SENSOR FUSION SYSTEM",
+      "headline": "HOW IT STAYS PERFECTLY STABLE",
+      "brollVideo": "broll/drone_closeup.mp4",
+      "pills": [
+        "🔵 Gyroscope (Tilt Detection)",
+        "🟣 Accelerometer (Motion Tracking)",
+        "🟢 Barometer (Altitude Lock)",
+        "🔴 GPS Module (Coordinates)",
+        "🟡 PID Algorithm (Auto-Correction)",
+        "🧭 Digital Compass (Heading)"
+      ],
+      "voice": "The gyroscope and accelerometer send 1,000 times per second data. The PID algorithm adjusts every motor in real time.",
+      "startSec": 13.4,
+      "endSec": 21.7,
+      "items": [
+        "🔵 Gyroscope (Tilt Detection)",
+        "🟣 Accelerometer (Motion Tracking)",
+        "🟢 Barometer (Altitude Lock)",
+        "🔴 GPS Module (Coordinates)",
+        "🟡 PID Algorithm (Auto-Correction)",
+        "🧭 Digital Compass (Heading)"
+      ]
+    },
+    {
+      "id": "s4-flight-physics",
+      "type": "compare",
+      "leadIn": "🚀 FLIGHT DYNAMICS",
+      "headline": "MOTOR SPEED = DIRECTION CONTROL",
+      "brollVideo": "broll/drone_parts.mp4",
+      "left": {
+        "title": "Rise Up ⬆️",
+        "badge": "ALL 4 MOTORS FAST",
+        "items": [
+          "All 4 motors spin faster",
+          "Thrust > Gravity (9.8 m/s²)",
+          "Drone lifts vertically"
+        ]
+      },
+      "right": {
+        "title": "Turn Left ↩️",
+        "badge": "DIFFERENTIAL THRUST",
+        "items": [
+          "Right motors spin faster",
+          "Left motors slow down",
+          "Torque creates rotation"
+        ]
+      },
+      "voice": "If you want to go ahead, then the rear motors are fast and the front motors are slow. Direction only controls the RPM difference.",
+      "startSec": 21.7,
+      "endSec": 29.5
+    },
+    {
+      "id": "s5-cta",
+      "type": "visual-broll",
+      "leadIn": "🌍 GPS + AUTO RETURN",
+      "headline": "LOST SIGNAL? AUTO RETURN-TO-HOME!",
+      "italicAccent": "GPS brings it back to coordinates! 🚁",
+      "brollVideo": "broll/drone_flying.mp4",
+      "pillText": "🔴 FOLLOW @_CRACKWITHCODE",
+      "pillColor": "#ef4444",
+      "glowColor": "#f97316",
+      "voice": "GPS module signals lose on drone automatically on home coordinates. This is the return to home technology.",
+      "startSec": 29.5,
+      "endSec": 38
+    }
+  ]
+}

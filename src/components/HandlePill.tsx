@@ -68,7 +68,7 @@ export const HandlePill: React.FC<HandlePillProps> = ({ handle }) => {
             letterSpacing: "0.02em",
           }}
         >
-          {handle || "@techwith.GenZ"}
+          {handle || "@_crackwithcode"}
         </span>
       </div>
     </div>

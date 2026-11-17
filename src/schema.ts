@@ -74,6 +74,8 @@ const baseSceneSchema = z.object({
     .enum(["from-left", "from-right", "from-top", "from-bottom", "pop-3d"])
     .optional(),
   evidence: evidenceConfigSchema.optional(),
+  brollVideo: z.string().optional(),
+  bgImage: z.string().optional(),
 });
 
 export const titleSceneSchema = baseSceneSchema
@@ -568,7 +570,7 @@ export const metaSchema = z
     slug: z.string().min(1, "Slug is required"),
     title: z.string().optional(),
     topic: z.string().optional(),
-    handle: z.string().min(1, "Handle is required").default("@techwith.GenZ"),
+    handle: z.string().min(1, "Handle is required").default("@_crackwithcode"),
     voiceFile: z.string().optional(),
     wordsFile: z.string().nullable().optional(),
     loop: z.boolean().default(true),
@@ -583,7 +585,7 @@ export const metaSchema = z
     captionStyle: z.enum(["bubble", "kinetic", "both", "none"]).optional().default("bubble"),
     showSafeZone: z.boolean().optional().default(false),
     showHandle: z.boolean().optional().default(false),
-    showTicker: z.boolean().optional().default(true),
+    showTicker: z.boolean().optional().default(false),
     tickerPosition: z.enum(["bottom", "top"]).optional().default("bottom"),
     tickerBottomOffset: z.number().optional().default(130),
     manychatHook: z.boolean().optional().default(false),
@@ -596,7 +598,7 @@ export const metaSchema = z
     return {
       ...meta,
       title: meta.title || meta.topic || slug,
-      handle: (!meta.handle || meta.handle === "@yourhandle") ? "@techwith.GenZ" : meta.handle,
+      handle: (!meta.handle || meta.handle === "@yourhandle") ? "@_crackwithcode" : meta.handle,
       voiceFile: meta.voiceFile || `reels/${slug}/voice.mp3`,
       loop: meta.loop ?? true,
       captions: meta.captions ?? true,
@@ -606,7 +608,7 @@ export const metaSchema = z
       captionStyle: meta.captionStyle ?? "bubble",
       showSafeZone: meta.showSafeZone ?? false,
       showHandle: meta.showHandle ?? false,
-      showTicker: meta.showTicker ?? true,
+      showTicker: meta.showTicker ?? false,
       tickerPosition: meta.tickerPosition ?? "bottom",
       tickerBottomOffset: meta.tickerBottomOffset ?? 130,
       manychatHook: meta.manychatHook ?? false,

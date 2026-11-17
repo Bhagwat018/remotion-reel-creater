@@ -11,7 +11,7 @@ const defaultFallbackProps: RootReelProps = {
   meta: {
     slug: "runtime-reel",
     title: "Tech with GenZ",
-    handle: "@techwith.GenZ",
+    handle: "@techwith.genz",
     voiceFile: "voice.mp3",
     loop: true,
     captions: true,
@@ -21,7 +21,7 @@ const defaultFallbackProps: RootReelProps = {
     captionStyle: "bubble",
     showSafeZone: false,
     showHandle: false,
-    showTicker: true,
+    showTicker: false,
     tickerPosition: "bottom",
     tickerBottomOffset: 130,
     manychatHook: false,

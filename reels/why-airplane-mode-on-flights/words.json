@@ -1,0 +1,707 @@
+[
+  {
+    "word": "Take-off",
+    "startSec": 0,
+    "endSec": 0.312
+  },
+  {
+    "word": "hote",
+    "startSec": 0.312,
+    "endSec": 0.625
+  },
+  {
+    "word": "hi",
+    "startSec": 0.625,
+    "endSec": 0.937
+  },
+  {
+    "word": "air",
+    "startSec": 0.937,
+    "endSec": 1.249
+  },
+  {
+    "word": "hostess",
+    "startSec": 1.249,
+    "endSec": 1.561
+  },
+  {
+    "word": "chillati",
+    "startSec": 1.561,
+    "endSec": 1.874
+  },
+  {
+    "word": "hai",
+    "startSec": 1.874,
+    "endSec": 2.186
+  },
+  {
+    "word": "Phones",
+    "startSec": 2.186,
+    "endSec": 2.498
+  },
+  {
+    "word": "ko",
+    "startSec": 2.498,
+    "endSec": 2.81
+  },
+  {
+    "word": "Airplane",
+    "startSec": 2.81,
+    "endSec": 3.123
+  },
+  {
+    "word": "Mode",
+    "startSec": 3.123,
+    "endSec": 3.435
+  },
+  {
+    "word": "par",
+    "startSec": 3.435,
+    "endSec": 3.747
+  },
+  {
+    "word": "daalo!",
+    "startSec": 3.747,
+    "endSec": 4.059
+  },
+  {
+    "word": "Lekin",
+    "startSec": 4.059,
+    "endSec": 4.372
+  },
+  {
+    "word": "kya",
+    "startSec": 4.372,
+    "endSec": 4.684
+  },
+  {
+    "word": "ek",
+    "startSec": 4.684,
+    "endSec": 4.996
+  },
+  {
+    "word": "phone",
+    "startSec": 4.996,
+    "endSec": 5.308
+  },
+  {
+    "word": "on",
+    "startSec": 5.308,
+    "endSec": 5.621
+  },
+  {
+    "word": "rehne",
+    "startSec": 5.621,
+    "endSec": 5.933
+  },
+  {
+    "word": "se",
+    "startSec": 5.933,
+    "endSec": 6.245
+  },
+  {
+    "word": "300",
+    "startSec": 6.245,
+    "endSec": 6.557
+  },
+  {
+    "word": "logon",
+    "startSec": 6.557,
+    "endSec": 6.87
+  },
+  {
+    "word": "se",
+    "startSec": 6.87,
+    "endSec": 7.182
+  },
+  {
+    "word": "bhara",
+    "startSec": 7.182,
+    "endSec": 7.494
+  },
+  {
+    "word": "plane",
+    "startSec": 7.494,
+    "endSec": 7.806
+  },
+  {
+    "word": "sach",
+    "startSec": 7.806,
+    "endSec": 8.119
+  },
+  {
+    "word": "me",
+    "startSec": 8.119,
+    "endSec": 8.431
+  },
+  {
+    "word": "crash",
+    "startSec": 8.431,
+    "endSec": 8.743
+  },
+  {
+    "word": "ho",
+    "startSec": 8.743,
+    "endSec": 9.055
+  },
+  {
+    "word": "sakta",
+    "startSec": 9.055,
+    "endSec": 9.368
+  },
+  {
+    "word": "hai?",
+    "startSec": 9.368,
+    "endSec": 9.68
+  },
+  {
+    "word": "javab",
+    "startSec": 9.68,
+    "endSec": 10.013
+  },
+  {
+    "word": "h",
+    "startSec": 10.013,
+    "endSec": 10.345
+  },
+  {
+    "word": "Plane",
+    "startSec": 10.678,
+    "endSec": 11.011
+  },
+  {
+    "word": "crash",
+    "startSec": 11.011,
+    "endSec": 11.344
+  },
+  {
+    "word": "toh",
+    "startSec": 11.344,
+    "endSec": 11.676
+  },
+  {
+    "word": "bilkul",
+    "startSec": 11.676,
+    "endSec": 12.009
+  },
+  {
+    "word": "nahi",
+    "startSec": 12.009,
+    "endSec": 12.342
+  },
+  {
+    "word": "hoga!",
+    "startSec": 12.342,
+    "endSec": 12.675
+  },
+  {
+    "word": "Lekin",
+    "startSec": 12.675,
+    "endSec": 13.007
+  },
+  {
+    "word": "do",
+    "startSec": 13.007,
+    "endSec": 13.34
+  },
+  {
+    "word": "aisi",
+    "startSec": 13.34,
+    "endSec": 13.673
+  },
+  {
+    "word": "cheezein",
+    "startSec": 13.673,
+    "endSec": 14.005
+  },
+  {
+    "word": "hoti",
+    "startSec": 14.005,
+    "endSec": 14.338
+  },
+  {
+    "word": "hain",
+    "startSec": 14.338,
+    "endSec": 14.671
+  },
+  {
+    "word": "jo",
+    "startSec": 14.671,
+    "endSec": 15.004
+  },
+  {
+    "word": "landing",
+    "startSec": 15.004,
+    "endSec": 15.336
+  },
+  {
+    "word": "ko",
+    "startSec": 15.336,
+    "endSec": 15.669
+  },
+  {
+    "word": "khatarnak",
+    "startSec": 15.669,
+    "endSec": 16.002
+  },
+  {
+    "word": "bana",
+    "startSec": 16.002,
+    "endSec": 16.335
+  },
+  {
+    "word": "sakti",
+    "startSec": 16.335,
+    "endSec": 16.667
+  },
+  {
+    "word": "hain.",
+    "startSec": 16.667,
+    "endSec": 17
+  },
+  {
+    "word": "Pehla",
+    "startSec": 17,
+    "endSec": 17.469
+  },
+  {
+    "word": "35,000",
+    "startSec": 17.469,
+    "endSec": 17.938
+  },
+  {
+    "word": "feet",
+    "startSec": 17.938,
+    "endSec": 18.406
+  },
+  {
+    "word": "par",
+    "startSec": 18.406,
+    "endSec": 18.875
+  },
+  {
+    "word": "tower",
+    "startSec": 18.875,
+    "endSec": 19.344
+  },
+  {
+    "word": "dhoondhne",
+    "startSec": 19.344,
+    "endSec": 19.813
+  },
+  {
+    "word": "ke",
+    "startSec": 19.813,
+    "endSec": 20.281
+  },
+  {
+    "word": "liye",
+    "startSec": 20.281,
+    "endSec": 20.75
+  },
+  {
+    "word": "aapka",
+    "startSec": 20.75,
+    "endSec": 21.219
+  },
+  {
+    "word": "phone",
+    "startSec": 21.219,
+    "endSec": 21.688
+  },
+  {
+    "word": "full",
+    "startSec": 21.688,
+    "endSec": 22.156
+  },
+  {
+    "word": "power",
+    "startSec": 22.156,
+    "endSec": 22.625
+  },
+  {
+    "word": "radio",
+    "startSec": 22.625,
+    "endSec": 23.094
+  },
+  {
+    "word": "waves",
+    "startSec": 23.094,
+    "endSec": 23.563
+  },
+  {
+    "word": "fekta",
+    "startSec": 23.563,
+    "endSec": 24.031
+  },
+  {
+    "word": "hai,",
+    "startSec": 24.031,
+    "endSec": 24.5
+  },
+  {
+    "word": "jo",
+    "startSec": 24.5,
+    "endSec": 24.786
+  },
+  {
+    "word": "pilot",
+    "startSec": 24.786,
+    "endSec": 25.072
+  },
+  {
+    "word": "ke",
+    "startSec": 25.072,
+    "endSec": 25.359
+  },
+  {
+    "word": "headset",
+    "startSec": 25.359,
+    "endSec": 25.645
+  },
+  {
+    "word": "me",
+    "startSec": 25.645,
+    "endSec": 25.931
+  },
+  {
+    "word": "wahi",
+    "startSec": 25.931,
+    "endSec": 26.217
+  },
+  {
+    "word": "irritating",
+    "startSec": 26.217,
+    "endSec": 26.503
+  },
+  {
+    "word": "bzz-bzz",
+    "startSec": 26.503,
+    "endSec": 26.79
+  },
+  {
+    "word": "shor",
+    "startSec": 26.79,
+    "endSec": 27.076
+  },
+  {
+    "word": "paida",
+    "startSec": 27.076,
+    "endSec": 27.362
+  },
+  {
+    "word": "karta",
+    "startSec": 27.362,
+    "endSec": 27.648
+  },
+  {
+    "word": "hai",
+    "startSec": 27.648,
+    "endSec": 27.934
+  },
+  {
+    "word": "jo",
+    "startSec": 27.934,
+    "endSec": 28.221
+  },
+  {
+    "word": "purane",
+    "startSec": 28.221,
+    "endSec": 28.507
+  },
+  {
+    "word": "speakers",
+    "startSec": 28.507,
+    "endSec": 28.793
+  },
+  {
+    "word": "ke",
+    "startSec": 28.793,
+    "endSec": 29.079
+  },
+  {
+    "word": "paas",
+    "startSec": 29.079,
+    "endSec": 29.366
+  },
+  {
+    "word": "aata",
+    "startSec": 29.366,
+    "endSec": 29.652
+  },
+  {
+    "word": "tha",
+    "startSec": 29.652,
+    "endSec": 29.938
+  },
+  {
+    "word": "jisse",
+    "startSec": 30.224,
+    "endSec": 30.51
+  },
+  {
+    "word": "Air",
+    "startSec": 30.51,
+    "endSec": 30.797
+  },
+  {
+    "word": "Traffic",
+    "startSec": 30.797,
+    "endSec": 31.083
+  },
+  {
+    "word": "Control",
+    "startSec": 31.083,
+    "endSec": 31.369
+  },
+  {
+    "word": "ki",
+    "startSec": 31.369,
+    "endSec": 31.655
+  },
+  {
+    "word": "aawaz",
+    "startSec": 31.655,
+    "endSec": 31.941
+  },
+  {
+    "word": "dab",
+    "startSec": 31.941,
+    "endSec": 32.228
+  },
+  {
+    "word": "jaati",
+    "startSec": 32.228,
+    "endSec": 32.514
+  },
+  {
+    "word": "hai!",
+    "startSec": 32.514,
+    "endSec": 32.8
+  },
+  {
+    "word": "Doosra",
+    "startSec": 32.8,
+    "endSec": 33.17
+  },
+  {
+    "word": "High-power",
+    "startSec": 33.17,
+    "endSec": 33.54
+  },
+  {
+    "word": "5G",
+    "startSec": 33.54,
+    "endSec": 33.91
+  },
+  {
+    "word": "signals",
+    "startSec": 33.91,
+    "endSec": 34.28
+  },
+  {
+    "word": "plane",
+    "startSec": 34.28,
+    "endSec": 34.65
+  },
+  {
+    "word": "ke",
+    "startSec": 34.65,
+    "endSec": 35.02
+  },
+  {
+    "word": "Radar",
+    "startSec": 35.02,
+    "endSec": 35.39
+  },
+  {
+    "word": "Altimeter",
+    "startSec": 35.39,
+    "endSec": 35.76
+  },
+  {
+    "word": "ko",
+    "startSec": 35.76,
+    "endSec": 36.13
+  },
+  {
+    "word": "confuse",
+    "startSec": 36.13,
+    "endSec": 36.5
+  },
+  {
+    "word": "kar",
+    "startSec": 36.5,
+    "endSec": 36.87
+  },
+  {
+    "word": "sakte",
+    "startSec": 36.87,
+    "endSec": 37.24
+  },
+  {
+    "word": "hain,",
+    "startSec": 37.24,
+    "endSec": 37.61
+  },
+  {
+    "word": "jo",
+    "startSec": 37.61,
+    "endSec": 37.98
+  },
+  {
+    "word": "badal",
+    "startSec": 37.98,
+    "endSec": 38.35
+  },
+  {
+    "word": "aur",
+    "startSec": 38.35,
+    "endSec": 38.72
+  },
+  {
+    "word": "fog",
+    "startSec": 38.72,
+    "endSec": 39.09
+  },
+  {
+    "word": "me",
+    "startSec": 39.09,
+    "endSec": 39.46
+  },
+  {
+    "word": "runway",
+    "startSec": 39.46,
+    "endSec": 39.83
+  },
+  {
+    "word": "ki",
+    "startSec": 39.83,
+    "endSec": 40.2
+  },
+  {
+    "word": "accurate",
+    "startSec": 40.2,
+    "endSec": 40.57
+  },
+  {
+    "word": "height",
+    "startSec": 40.57,
+    "endSec": 40.94
+  },
+  {
+    "word": "batata",
+    "startSec": 40.94,
+    "endSec": 41.31
+  },
+  {
+    "word": "hai!",
+    "startSec": 41.31,
+    "endSec": 41.68
+  },
+  {
+    "word": "Toh",
+    "startSec": 41.68,
+    "endSec": 42.021
+  },
+  {
+    "word": "agli",
+    "startSec": 42.021,
+    "endSec": 42.363
+  },
+  {
+    "word": "baar",
+    "startSec": 42.363,
+    "endSec": 42.704
+  },
+  {
+    "word": "flight",
+    "startSec": 42.704,
+    "endSec": 43.046
+  },
+  {
+    "word": "me",
+    "startSec": 43.046,
+    "endSec": 43.387
+  },
+  {
+    "word": "pilot",
+    "startSec": 43.387,
+    "endSec": 43.729
+  },
+  {
+    "word": "ke",
+    "startSec": 43.729,
+    "endSec": 44.07
+  },
+  {
+    "word": "kaan",
+    "startSec": 44.07,
+    "endSec": 44.411
+  },
+  {
+    "word": "zaroor",
+    "startSec": 44.411,
+    "endSec": 44.753
+  },
+  {
+    "word": "bacha",
+    "startSec": 44.753,
+    "endSec": 45.094
+  },
+  {
+    "word": "lena!",
+    "startSec": 45.094,
+    "endSec": 45.436
+  },
+  {
+    "word": "Aise",
+    "startSec": 45.436,
+    "endSec": 45.777
+  },
+  {
+    "word": "hi",
+    "startSec": 45.777,
+    "endSec": 46.119
+  },
+  {
+    "word": "smart",
+    "startSec": 46.119,
+    "endSec": 46.46
+  },
+  {
+    "word": "tech",
+    "startSec": 46.46,
+    "endSec": 46.801
+  },
+  {
+    "word": "secrets",
+    "startSec": 46.801,
+    "endSec": 47.143
+  },
+  {
+    "word": "ke",
+    "startSec": 47.143,
+    "endSec": 47.484
+  },
+  {
+    "word": "liye",
+    "startSec": 47.484,
+    "endSec": 47.826
+  },
+  {
+    "word": "follow",
+    "startSec": 47.826,
+    "endSec": 48.167
+  },
+  {
+    "word": "karo",
+    "startSec": 48.167,
+    "endSec": 48.509
+  },
+  {
+    "word": "crackwithcode!",
+    "startSec": 48.509,
+    "endSec": 48.85
+  }
+]

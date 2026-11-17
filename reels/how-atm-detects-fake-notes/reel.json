@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "title": "ATM Machine 0.2 Second Me Fake Note Kaise Pehchaan Leti Hai? 🏧",
+    "topic": "How ATM Detects Counterfeit Notes Using Multi-Spectral Physics",
+    "slug": "how-atm-detects-fake-notes",
+    "handle": "@_crackwithcode",
+    "language": "Hinglish",
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "bgm": false,
+    "showTicker": false,
+    "voice": "bunty",
+    "voiceFile": "reels/how-atm-detects-fake-notes/voice.mp3",
+    "wordsFile": "reels/how-atm-detects-fake-notes/words.json",
+    "durationSec": 40
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "flow",
+      "startSec": 0.0,
+      "endSec": 7.5,
+      "leadIn": "⚡ 0.2 SECOND FRAUD TRIAGE",
+      "headline": "ATM FAKE NOTE KAISE *PEHCHAAN LETI HAI?*",
+      "voice": "Aap nakli note me dhoka khaa sakte ho, par ATM machine sirf 0.2 second me use bahar kaise phek deti hai?",
+      "voiceText": "Aap nakli note me dhoka khaa sakte ho, par ATM machine sirf 0.2 second me use bahar kaise phek deti hai?",
+      "brollVideo": "broll/atm_cash_reject.mp4",
+      "nodes": [
+        {
+          "title": "Cash Ingestion",
+          "subtitle": "1,450 RPM Intake Roller",
+          "icon": "📥",
+          "status": "Scanning"
+        },
+        {
+          "title": "Triage Core",
+          "subtitle": "Multi-Spectral Pass",
+          "icon": "⚡",
+          "status": "0.200s"
+        },
+        {
+          "title": "Fraud Detection",
+          "subtitle": "Rejection Solenoid",
+          "icon": "🚫",
+          "status": "Rejected"
+        }
+      ]
+    },
+    {
+      "id": "s2-xray",
+      "type": "flow",
+      "startSec": 7.5,
+      "endSec": 11.8,
+      "leadIn": "🔬 3-TIER HARDWARE SCAN",
+      "headline": "ATM NOTE KO DEKHTA NAHI *USKA X-RAY KARTA HAI!*",
+      "voice": "Kyunki ATM note ko dekhta nahi, uska X-ray karta hai!",
+      "voiceText": "Kyunki ATM note ko dekhta nahi, uska X-ray karta hai!",
+      "brollVideo": "broll/cash_counter_rollers.mp4",
+      "nodes": [
+        {
+          "title": "Optical UV",
+          "subtitle": "365nm Phosphor Test",
+          "icon": "🔦",
+          "status": "Layer 1"
+        },
+        {
+          "title": "Magnetic Head",
+          "subtitle": "Ferro Metal Inductance",
+          "icon": "🧲",
+          "status": "Layer 2"
+        },
+        {
+          "title": "Laser Micrometer",
+          "subtitle": "0.11mm Cotton Gauge",
+          "icon": "📐",
+          "status": "Layer 3"
+        }
+      ]
+    },
+    {
+      "id": "s3-uv",
+      "type": "flow",
+      "startSec": 11.8,
+      "endSec": 17.8,
+      "leadIn": "🔦 LAYER 1: 365nm OPTICAL SENSOR",
+      "headline": "PEHLA: UV LIGHT *CHUPI GLOWING INK*",
+      "voice": "Pehla, UV Light — jo note par chupi invisible glowing ink ko turant pakad leti hai.",
+      "voiceText": "Pehla, UV Light — jo note par chupi invisible glowing ink ko turant pakad leti hai.",
+      "brollVideo": "broll/uv_currency_glow.mp4",
+      "nodes": [
+        {
+          "title": "365nm Beam",
+          "subtitle": "Ultraviolet Excitation",
+          "icon": "🔦",
+          "status": "Active"
+        },
+        {
+          "title": "Invisible Phosphor",
+          "subtitle": "Green Glow Emitted",
+          "icon": "✨",
+          "status": "Detected"
+        },
+        {
+          "title": "Photodiode Read",
+          "subtitle": "98.4% Match Required",
+          "icon": "✅",
+          "status": "Passed"
+        }
+      ]
+    },
+    {
+      "id": "s4-magnetic",
+      "type": "flow",
+      "startSec": 17.8,
+      "endSec": 23.8,
+      "leadIn": "🧲 LAYER 2: MAGNETIC SENSOR HEAD",
+      "headline": "DUSRA: MAGNETIC HEAD *SECURITY THREAD*",
+      "voice": "Dusra, Magnetic Head — jo security thread ke andar chupe magnetic metal ko detect karta hai!",
+      "voiceText": "Dusra, Magnetic Head — jo security thread ke andar chupe magnetic metal ko detect karta hai!",
+      "brollVideo": "broll/currency_security_thread.mp4",
+      "nodes": [
+        {
+          "title": "Inductive Coil",
+          "subtitle": "High Sensitivity Head",
+          "icon": "🧲",
+          "status": "Scanning"
+        },
+        {
+          "title": "Security Strip",
+          "subtitle": "Micro Ferro Particles",
+          "icon": "🧵",
+          "status": "Embedded"
+        },
+        {
+          "title": "Flux Waveform",
+          "subtitle": "+1.85μT Voltage Peak",
+          "icon": "📈",
+          "status": "Verified"
+        }
+      ]
+    },
+    {
+      "id": "s5-cotton",
+      "type": "flow",
+      "startSec": 23.8,
+      "endSec": 32.2,
+      "leadIn": "📐 LAYER 3: OPTICAL LASER CALIPER",
+      "headline": "TEESRA: LASER SENSOR *100% PURE COTTON*",
+      "voice": "Aur teesra, Laser Sensor — jo thickness naapta hai, kyunki asli note kagaz ka nahi, 100% pure cotton ka hota hai!",
+      "voiceText": "Aur teesra, Laser Sensor — jo thickness naapta hai, kyunki asli note kagaz ka nahi, 100% pure cotton ka hota hai!",
+      "brollVideo": "broll/cotton_currency_fiber.mp4",
+      "nodes": [
+        {
+          "title": "Laser Micrometer",
+          "subtitle": "Dual Caliper Beam",
+          "icon": "📐",
+          "status": "±0.002mm"
+        },
+        {
+          "title": "Pure Cotton Rag",
+          "subtitle": "0.110mm Woven Fiber",
+          "icon": "🧵",
+          "status": "Authentic"
+        },
+        {
+          "title": "Wood Pulp Fake",
+          "subtitle": "0.18mm Standard Paper",
+          "icon": "🌲",
+          "status": "Rejected"
+        }
+      ]
+    },
+    {
+      "id": "s6-physics",
+      "type": "flow",
+      "startSec": 32.2,
+      "endSec": 36.4,
+      "leadIn": "⚡ WHY COUNTERFEITS ALWAYS FAIL",
+      "headline": "SCAMMERS CAN PRINT *CANNOT COPY PHYSICS*",
+      "voice": "Scammers print toh kar sakte hain, par ye physics copy nahi kar paate!",
+      "voiceText": "Scammers print toh kar sakte hain, par ye physics copy nahi kar paate!",
+      "brollVideo": "broll/digital_matrix_blocks.mp4",
+      "nodes": [
+        {
+          "title": "Visual Inkjet",
+          "subtitle": "Surface Pigments Only",
+          "icon": "🖨️",
+          "status": "Fake Copy"
+        },
+        {
+          "title": "Laws of Physics",
+          "subtitle": "Magnetism & Polymers",
+          "icon": "⚛️",
+          "status": "Uncopiable"
+        },
+        {
+          "title": "Zero Bypass",
+          "subtitle": "Immediate Machine Eject",
+          "icon": "🛡️",
+          "status": "Foolproof"
+        }
+      ]
+    },
+    {
+      "id": "s7-cta",
+      "type": "cta",
+      "startSec": 36.4,
+      "endSec": 40.0,
+      "leadIn": "⚡ DAILY HARDWARE & TECH SECRETS",
+      "headline": "DECODE SYSTEM SECRETS *BEFORE THE WORLD DOES*",
+      "voice": "Aise hi tech secrets ke liye follow karo crackwithcode!",
+      "voiceText": "Aise hi tech secrets ke liye follow karo crackwithcode!",
+      "buttonText": "FOLLOW @_CRACKWITHCODE 🔥",
+      "callToAction": "FOLLOW @_CRACKWITHCODE 🔥",
+      "subtitle": "DAILY REAL HARDWARE & TECH BREAKDOWNS ⚡",
+      "brollVideo": "broll/cyber_grid_loop.mp4"
+    }
+  ]
+}
+

@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "title": "The Big Illusion of Incognito Mode 🕵️‍♂️",
+    "topic": "The Reality of Incognito Mode - Zero Network Privacy",
+    "slug": "the-truth-about-incognito-mode",
+    "handle": "@_crackwithcode",
+    "language": "Hinglish",
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "bgm": false,
+    "showTicker": false,
+    "voice": "bunty",
+    "voiceFile": "reels/the-truth-about-incognito-mode/voice.mp3",
+    "wordsFile": "reels/the-truth-about-incognito-mode/words.json",
+    "durationSec": 54
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "flow",
+      "startSec": 0.0,
+      "endSec": 7.6,
+      "leadIn": "🕵️‍♂️ THE BIG ILLUSION",
+      "headline": "INCOGNITO MODE KA *ASLI SACH*",
+      "voice": "Incognito mode on karke sochte ho koi nahi dekh raha? Asal me sab dekh rahe hain! Chalo iska dark secret samjhte hain.",
+      "voiceText": "Incognito mode on karke sochte ho koi nahi dekh raha? Asal me sab dekh rahe hain! Chalo iska dark secret samjhte hain.",
+      "brollVideo": "broll/incognito_browser_mode.mp4",
+      "nodes": [
+        {
+          "title": "Incognito Switch",
+          "subtitle": "Private Window Opened",
+          "icon": "🕶️",
+          "status": "ACTIVE"
+        },
+        {
+          "title": "False Privacy",
+          "subtitle": "Network Unprotected",
+          "icon": "⚠️",
+          "status": "EXPOSED"
+        }
+      ]
+    },
+    {
+      "id": "s2-local-lie",
+      "type": "compare",
+      "startSec": 7.6,
+      "endSec": 16.7,
+      "leadIn": "📱 THE LOCAL ILLUSION",
+      "headline": "LOCAL HISTORY VS REAL *PRIVACY*",
+      "voice": "Incognito sirf ek kaam karta hai — aapke phone se local history aur cookies delete karta hai, taaki ghar me koi phone check kare toh use kuch na dikhe.",
+      "voiceText": "Incognito sirf ek kaam karta hai — aapke phone se local history aur cookies delete karta hai, taaki ghar me koi phone check kare toh use kuch na dikhe.",
+      "brollVideo": "broll/phone_clearing_history.mp4",
+      "leftTitle": "WHAT YOU THINK",
+      "rightTitle": "WHAT HAPPENS",
+      "leftItems": [
+        "Browser History Cleared 🗑️",
+        "Local Cookies Deleted ❌",
+        "Safe From Friends/Family 📱"
+      ],
+      "rightItems": [
+        "WiFi Router Logs DNS 📡",
+        "ISP Airtel/Jio Tracks 🏢",
+        "Web Servers Track IP 👁️"
+      ]
+    },
+    {
+      "id": "s3-tracker-router",
+      "type": "flow",
+      "startSec": 16.7,
+      "endSec": 25.8,
+      "leadIn": "📡 TRACKER #1 // ZERO PRIVACY",
+      "headline": "WIFI ROUTER *DNS LEAKS*",
+      "voice": "Lekin internet par aap bilkul nange ho! Pehla, aapka WiFi router — uske DNS logs me har ek website ka naam record ho raha hai.",
+      "voiceText": "Lekin internet par aap bilkul nange ho! Pehla, aapka WiFi router — uske DNS logs me har ek website ka naam record ho raha hai.",
+      "brollVideo": "broll/wifi_router_blinking.mp4",
+      "nodes": [
+        {
+          "title": "WiFi Router Cache",
+          "subtitle": "Port 53 Plaintext Queries",
+          "icon": "📡",
+          "status": "LEAKING"
+        },
+        {
+          "title": "Domain Name Log",
+          "subtitle": "Full URLs & Timestamps",
+          "icon": "📝",
+          "status": "STORED"
+        }
+      ]
+    },
+    {
+      "id": "s4-tracker-isp",
+      "type": "flow",
+      "startSec": 25.8,
+      "endSec": 33.2,
+      "leadIn": "🏢 TRACKER #2 // TELECOM LOGS",
+      "headline": "ISP AIRTEL & JIO *SURVEILLANCE*",
+      "voice": "Dusra, aapka Internet Service Provider — Airtel ya Jio ko exact pata hai aap kis waqt kya browse kar rahe ho.",
+      "voiceText": "Dusra, aapka Internet Service Provider — Airtel ya Jio ko exact pata hai aap kis waqt kya browse kar rahe ho.",
+      "brollVideo": "broll/fiber_optic_cables.mp4",
+      "nodes": [
+        {
+          "title": "Telecom Gateway",
+          "subtitle": "Airtel / Jio Broadband",
+          "icon": "🏢",
+          "status": "TRACKING"
+        },
+        {
+          "title": "IP Activity Log",
+          "subtitle": "Lawful Intercept Records",
+          "icon": "📊",
+          "status": "RECORDED"
+        }
+      ]
+    },
+    {
+      "id": "s5-tracker-fingerprint",
+      "type": "flow",
+      "startSec": 33.2,
+      "endSec": 39.6,
+      "leadIn": "🌐 TRACKER #3 // HARDWARE ID",
+      "headline": "DEVICE *FINGERPRINTING*",
+      "voice": "Aur teesra, websites ka server — jo aapka public IP aur device fingerprint live track karta hai!",
+      "voiceText": "Aur teesra, websites ka server — jo aapka public IP aur device fingerprint live track karta hai!",
+      "brollVideo": "broll/digital_fingerprint_cyber.mp4",
+      "nodes": [
+        {
+          "title": "Canvas Fingerprint",
+          "subtitle": "GPU, Fonts & Screen Res",
+          "icon": "🖥️",
+          "status": "IDENTIFIED"
+        },
+        {
+          "title": "Public IP Tracing",
+          "subtitle": "Physical Location Mapped",
+          "icon": "📍",
+          "status": "EXPOSED"
+        }
+      ]
+    },
+    {
+      "id": "s6-google-lawsuit",
+      "type": "flow",
+      "startSec": 39.6,
+      "endSec": 45.6,
+      "leadIn": "⚖️ FEDERAL COURT LAWSUIT",
+      "headline": "GOOGLE $5,000,000,000 *SETTLEMENT*",
+      "voice": "Even Google par 5 Billion Dollars ka lawsuit hua tha Incognito users ko track karne ke liye!",
+      "voiceText": "Even Google par 5 Billion Dollars ka lawsuit hua tha Incognito users ko track karne ke liye!",
+      "brollVideo": "broll/courtroom_lawsuit_gavel.mp4",
+      "nodes": [
+        {
+          "title": "Class Action Lawsuit",
+          "subtitle": "Federal Privacy Violation",
+          "icon": "🏛️",
+          "status": "SETTLED"
+        },
+        {
+          "title": "Data Deletion Order",
+          "subtitle": "Billions of Records Wiped",
+          "icon": "🔥",
+          "status": "ENFORCED"
+        }
+      ]
+    },
+    {
+      "id": "s7-cta",
+      "type": "cta",
+      "startSec": 45.6,
+      "endSec": 53.6,
+      "leadIn": "🛡️ REAL CYBER PRIVACY",
+      "headline": "USE ENCRYPTED *VPN & TOR*",
+      "voice": "Real privacy chahiye toh hamesha trustworthy VPN ya Tor use karo. Aise hi tech secrets ke liye follow karo crackwithcode!",
+      "voiceText": "Real privacy chahiye toh hamesha trustworthy VPN ya Tor use karo. Aise hi tech secrets ke liye follow karo crackwithcode!",
+      "brollVideo": "broll/vpn_encrypted_tunnel.mp4",
+      "buttonText": "FOLLOW FOR TECH SECRETS",
+      "items": [
+        "Encrypted WireGuard VPN Tunnel",
+        "Encrypted DNS (DoH / DoT)",
+        "Tor Onion Routing Network"
+      ]
+    }
+  ]
+}

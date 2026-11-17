@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "title": "Roz Subah 9:15 Pe ₹1 Lakh Crore Ka Invisible Bazaar Kaam Kaise Karta Hai?",
+    "topic": "Stock Market Order Matching Engine & T+1 Settlement Architecture",
+    "slug": "how-share-market-really-works",
+    "handle": "@techwith.genz",
+    "language": "Hinglish",
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "bgm": false,
+    "showTicker": false,
+    "voice": "bunty",
+    "voiceFile": "reels/how-share-market-really-works/voice.mp3",
+    "wordsFile": "reels/how-share-market-really-works/words.json",
+    "durationSec": 45,
+    "loop": true,
+    "instagramCaption": "Roz subah 9:15 pe ek aisa invisible bazaar khulta hai jahan roz ₹1,00,000 Crore ka turnover hota hai — par dukaan ek bhi nahi! 🤯📈\n\nKabhi socha hai jab aap Groww ya Zerodha pe \"BUY\" dabate ho, toh exact 0.001 second (1 millisecond) me kya hota hai? \n\n1️⃣ Step 1: Aapka broker sirf ek postman hai — real trade NSE aur BSE ke high-speed co-location server rack me match hota hai.\n2️⃣ Step 2: Bid aur Ask price microsecond me match hote hi SEBI ka algorithmic surveillance system trade verify karta hai.\n3️⃣ Step 3: T+1 settlement me shares aapke broker ke paas nahi, seedha CDSL / NSDL ke sovereign digital vault me lock ho jaate hain!\n\nAapke ghar me share market ko kya bolte hain: Jua ya Real Investment? Comment me batao! 👇\n\nAise hi stock market aur financial mechanisms ke deep breakdown ke liye follow karo @techwith.genz 🚀\n\n#sharemarket #stockmarketindia #nifty50 #sensex #trading #finance #financialliteracy #nse #bse #demat #investingforbeginners #money #techwithgenz"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "flow",
+      "startSec": 0.0,
+      "endSec": 7.4,
+      "leadIn": "🔔 09:15 AM OPENING BELL",
+      "headline": "ROZ SUBAH ₹1 LAKH CRORE KA SAUDA, *PAR DUKAAN EK BHI NAHI!*",
+      "voice": "Roz subah 9:15 pe ek aisa bazaar khulta hai jahan roz ek lakh crore ka sauda hota hai... par dukaan ek bhi nahi!",
+      "voiceText": "Roz subah 9:15 pe ek aisa bazaar khulta hai jahan roz ek lakh crore ka sauda hota hai... par dukaan ek bhi nahi!",
+      "brollVideo": "broll/trading_floor_screens.mp4",
+      "nodes": [
+        {
+          "title": "09:15 AM Opening Bell",
+          "subtitle": "NSE & BSE Live Trading Session",
+          "icon": "🔔",
+          "status": "LIVE"
+        },
+        {
+          "title": "₹1 Lakh Crore Volume",
+          "subtitle": "Daily Cash & Derivative Turnover",
+          "icon": "💰",
+          "status": "₹1L CR"
+        },
+        {
+          "title": "Physical Stores: ZERO",
+          "subtitle": "Pure Digital Cloud Exchange",
+          "icon": "🏪",
+          "status": "0 SHOPS"
+        }
+      ]
+    },
+    {
+      "id": "s2-pipeline",
+      "type": "flow",
+      "startSec": 7.4,
+      "endSec": 13.1,
+      "leadIn": "⚙️ THE INVISIBLE PIPELINE",
+      "headline": "AAKHIR YE SHARE MARKET KA *INVISIBLE SYSTEM KAAM KAISE KARTA HAI?*",
+      "voice": "Aakhir ye Share Market ka invisible system kaam kaise karta hai?",
+      "voiceText": "Aakhir ye Share Market ka invisible system kaam kaise karta hai?",
+      "brollVideo": "broll/stock_market_trading_chart.mp4",
+      "nodes": [
+        {
+          "title": "Client App Layer",
+          "subtitle": "Groww / Zerodha / AngelOne",
+          "icon": "📱",
+          "status": "FRONTEND"
+        },
+        {
+          "title": "Central Exchange Core",
+          "subtitle": "NSE / BSE High-Throughput Engine",
+          "icon": "⚡",
+          "status": "ENGINE"
+        },
+        {
+          "title": "Sovereign Demat Vault",
+          "subtitle": "CDSL & NSDL Digital Depositories",
+          "icon": "🏛️",
+          "status": "VAULT"
+        }
+      ]
+    },
+    {
+      "id": "s3-matching",
+      "type": "flow",
+      "startSec": 13.1,
+      "endSec": 25.2,
+      "leadIn": "⚡ 0.001s ORDER MATCHING ENGINE",
+      "headline": "BROKER NAHI, NSE/BSE *0.001 SECOND ME ORDER MATCH* KARTA HAI!",
+      "voice": "Jaise hi aap BUY dabate ho, aapka broker nahi — NSE aur BSE ka high-speed matching engine sirf 0.001 second me seller ke sath aapka order match karta hai!",
+      "voiceText": "Jaise hi aap BUY dabate ho, aapka broker nahi — NSE aur BSE ka high-speed matching engine sirf 0.001 second me seller ke sath aapka order match karta hai!",
+      "brollVideo": "broll/server_datacenter_datacable.mp4",
+      "nodes": [
+        {
+          "title": "Buyer Bid Request",
+          "subtitle": "₹2,450.00 (Buy 100 Shares)",
+          "icon": "🟢",
+          "status": "BIDDER"
+        },
+        {
+          "title": "NSE Matching Core",
+          "subtitle": "Price-Time Priority in 0.001s",
+          "icon": "⚡",
+          "status": "0.001s"
+        },
+        {
+          "title": "Seller Ask Matched",
+          "subtitle": "₹2,450.00 (Sell 100 Shares)",
+          "icon": "🔴",
+          "status": "ASK"
+        }
+      ]
+    },
+    {
+      "id": "s4-settlement",
+      "type": "flow",
+      "startSec": 25.2,
+      "endSec": 34.2,
+      "leadIn": "🛡️ SEBI RADAR & T+1 DEPOSITORY",
+      "headline": "SEBI FRAUD CHECK + *T+1 DEMAT VAULT SETTLEMENT!*",
+      "voice": "Agla step: SEBI ka radar system fraud check karta hai, aur T+1 settlement me shares seedha aapke Demat account me deposit ho jaate hain!",
+      "voiceText": "Agla step: SEBI ka radar system fraud check karta hai, aur T+1 settlement me shares seedha aapke Demat account me deposit ho jaate hain!",
+      "brollVideo": "broll/cyber_radar_vault.mp4",
+      "nodes": [
+        {
+          "title": "SEBI Surveillance Radar",
+          "subtitle": "Instant Insider Trading Check",
+          "icon": "🛡️",
+          "status": "APPROVED"
+        },
+        {
+          "title": "T+1 Clearing House",
+          "subtitle": "Clearing Corp Guarantees Trade",
+          "icon": "⚙️",
+          "status": "T+1 CYCLE"
+        },
+        {
+          "title": "CDSL/NSDL Vault",
+          "subtitle": "Shares Deposited in Demat",
+          "icon": "🏛️",
+          "status": "DEPOSITED"
+        }
+      ]
+    },
+    {
+      "id": "s5-cta",
+      "type": "cta",
+      "startSec": 34.2,
+      "endSec": 45.0,
+      "leadIn": "⚖️ THE BIG WEALTH DEBATE",
+      "headline": "SHARE MARKET: *JUA YA REAL INVESTMENT?*",
+      "voice": "Aapke ghar me share market ko kya bolte hain: Jua ya Real Investment? Comment karke batao, aur aise hi smart market secrets ke liye follow karo techwith genz!",
+      "voiceText": "Aapke ghar me share market ko kya bolte hain: Jua ya Real Investment? Comment karke batao, aur aise hi smart market secrets ke liye follow karo techwith genz!",
+      "brollVideo": "broll/cyber_grid_loop.mp4",
+      "callToAction": "COMMENT BELOW & FOLLOW",
+      "buttonText": "FOLLOW @techwith.genz",
+      "handle": "@techwith.genz"
+    }
+  ]
+}

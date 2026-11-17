@@ -296,7 +296,7 @@ export const CoverThumbnail: React.FC<CoverThumbnailProps> = ({
               letterSpacing: "0.04em",
             }}
           >
-            {meta?.handle || "@techwith.GenZ"}
+            {meta?.handle || "@_crackwithcode"}
           </span>
         </div>
 

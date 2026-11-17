@@ -12,12 +12,12 @@ const insightsPath = path.join(rootDir, "data", "channel_insights.json");
 
 /**
  * Stage 3 of Hybrid Engine: Channel Audience Insights Loop
- * Audits @techwith.genz's actual Instagram reels performance
+ * Audits @_crackwithcode's actual Instagram reels performance
  * and calculates topic category resonance scores.
  */
 export async function auditChannelInsights() {
   console.log("\n=======================================================");
-  console.log("📈 Stage 3: Channel Audience Insights Audit (@techwith.genz)");
+  console.log("📈 Stage 3: Channel Audience Insights Audit (@_crackwithcode)");
   console.log("=======================================================\n");
 
   const context = await chromium.launchPersistentContext(userDataDir, {
@@ -29,7 +29,7 @@ export async function auditChannelInsights() {
   const reels = [];
 
   try {
-    await page.goto("https://www.instagram.com/techwith.genz/reels/", {
+    await page.goto("https://www.instagram.com/_crackwithcode/reels/", {
       waitUntil: "domcontentloaded",
       timeout: 30000,
     });
@@ -101,7 +101,7 @@ export async function auditChannelInsights() {
 
   const insightsData = {
     auditedAt: new Date().toISOString(),
-    channel: "@techwith.genz",
+    channel: "@_crackwithcode",
     totalReelsScanned: reels.length,
     topWinningFormat: "Indian IPO & Valuation Reality Checks (15k - 19k views)",
     categories,

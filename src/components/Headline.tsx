@@ -8,6 +8,8 @@ interface HeadlineProps {
   text: string;
   delayFrames?: number;
   maxWidth?: number;
+  color?: string;
+  textShadow?: string;
 }
 
 interface HeadlineToken {
@@ -16,14 +18,20 @@ interface HeadlineToken {
 }
 
 export const Headline: React.FC<HeadlineProps> = ({
-  text,
+  text: rawText,
   delayFrames = 2,
   maxWidth = 920,
+  color,
+  textShadow,
 }) => {
+  const text = rawText.replace(/₹/g, "Rs. ");
   const frame = useCurrentFrame();
   const theme = useTheme();
 
-  const motionStyle = useBlurIn(frame, delayFrames);
+  const motionStyle =
+    delayFrames === 0
+      ? { opacity: 1, filter: "none", transform: "none" }
+      : useBlurIn(frame, delayFrames);
   const fontFamily = resolveFontFamily(text, theme.typography.headline);
   const isDevanagariText = hasDevanagari(text);
 
@@ -94,6 +102,7 @@ export const Headline: React.FC<HeadlineProps> = ({
       });
     }
 
+    console.error("DEBUG_HEADLINE_TOKENS:", JSON.stringify({ text, list }));
     return list;
   }, [text]);
 
@@ -115,7 +124,8 @@ export const Headline: React.FC<HeadlineProps> = ({
           fontWeight: isDevanagariText ? 700 : 900,
           textTransform: "none",
           letterSpacing: isDevanagariText ? "normal" : "0.01em",
-          color: theme.colors.ink,
+          color: color || theme.colors.ink,
+          textShadow: textShadow || (color ? "0 4px 20px rgba(0,0,0,0.85)" : undefined),
           margin: 0,
           padding: 0,
           wordBreak: "break-word",
@@ -123,7 +133,21 @@ export const Headline: React.FC<HeadlineProps> = ({
       >
         {tokens.map((token, i) => {
           if (!token.annotation) {
-            return <span key={i}>{token.text}</span>;
+            console.error("DEBUG_TOKEN_0_RENDER:", {
+              tokenText: token.text,
+              color: color || theme.colors.ink,
+            });
+            return (
+              <span
+                key={i}
+                style={{
+                  color: color || theme.colors.ink,
+                  textShadow: textShadow || (color ? "0 4px 20px rgba(0,0,0,0.95)" : undefined),
+                }}
+              >
+                {token.text}
+              </span>
+            );
           }
 
           if (token.annotation === "circle") {
@@ -137,7 +161,13 @@ export const Headline: React.FC<HeadlineProps> = ({
                 delayFrames={delayFrames + 4}
                 durationFrames={12}
               >
-                <span style={{ color: theme.colors.ink, padding: "0 6px" }}>
+                <span
+                  style={{
+                    color: color || theme.colors.ink,
+                    padding: "0 6px",
+                    textShadow: color ? "0 4px 16px rgba(0,0,0,0.95)" : undefined,
+                  }}
+                >
                   {token.text}
                 </span>
               </RoughHighlight>
@@ -154,7 +184,14 @@ export const Headline: React.FC<HeadlineProps> = ({
                 delayFrames={delayFrames + 4}
                 durationFrames={12}
               >
-                <span style={{ color: theme.colors.ink }}>{token.text}</span>
+                <span
+                  style={{
+                    color: color || theme.colors.ink,
+                    textShadow: color ? "0 4px 16px rgba(0,0,0,0.95)" : undefined,
+                  }}
+                >
+                  {token.text}
+                </span>
               </RoughHighlight>
             );
           }
@@ -169,7 +206,9 @@ export const Headline: React.FC<HeadlineProps> = ({
                 delayFrames={delayFrames + 4}
                 durationFrames={10}
               >
-                <span style={{ color: "#64748b" }}>{token.text}</span>
+                <span style={{ color: color ? "rgba(255,255,255,0.7)" : "#64748b" }}>
+                  {token.text}
+                </span>
               </RoughHighlight>
             );
           }
@@ -183,7 +222,13 @@ export const Headline: React.FC<HeadlineProps> = ({
               delayFrames={delayFrames + 4}
               durationFrames={14}
             >
-              <span style={{ color: theme.colors.ink, padding: "0 4px" }}>
+              <span
+                style={{
+                  color: color || theme.colors.ink,
+                  padding: "0 4px",
+                  textShadow: color ? "0 4px 16px rgba(0,0,0,0.95)" : undefined,
+                }}
+              >
                 {token.text}
               </span>
             </RoughHighlight>

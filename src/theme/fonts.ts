@@ -25,15 +25,15 @@ const devanagariFont = loadDevanagari("normal", {
 });
 
 export const fontFamilies = {
-  headline: antonFont.fontFamily,
-  leadIn: interFont.fontFamily,
-  ui: interFont.fontFamily,
-  mono: monoFont.fontFamily,
-  devanagari: devanagariFont.fontFamily,
+  headline: `${antonFont.fontFamily}, 'Noto Sans Devanagari', -apple-system, sans-serif`,
+  leadIn: `${interFont.fontFamily}, 'Noto Sans Devanagari', -apple-system, sans-serif`,
+  ui: `${interFont.fontFamily}, 'Noto Sans Devanagari', -apple-system, sans-serif`,
+  mono: `${monoFont.fontFamily}, monospace`,
+  devanagari: `${devanagariFont.fontFamily}, sans-serif`,
 };
 
-// Regex to detect Devanagari Unicode characters (Hindi, Marathi, Nepali, Sanskrit, etc.)
-const DEVANAGARI_REGEX = /[\u0900-\u097F]/;
+// Regex to detect Devanagari Unicode characters (Hindi, Marathi, Nepali, Sanskrit, etc.) and Rupee symbol \u20B9
+const DEVANAGARI_REGEX = /[\u0900-\u097F\u20B9]/;
 
 /**
  * Returns true if text contains Devanagari characters.

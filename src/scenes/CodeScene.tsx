@@ -5,7 +5,7 @@ import { CodeSynthesizer } from "../components/CodeSynthesizer";
 import { MotionDirection } from "../lib/directionalMotion";
 
 export const CodeScene: React.FC<
-  CodeSceneProps & { durationInFrames: number; direction?: MotionDirection; id?: string }
+  CodeSceneProps & { durationInFrames: number; direction?: MotionDirection; id?: string; brollVideo?: string; bgImage?: string }
 > = ({
   id,
   direction,
@@ -14,6 +14,8 @@ export const CodeScene: React.FC<
   filename,
   lines,
   highlightLines,
+  brollVideo,
+  bgImage,
   durationInFrames,
 }) => {
   const fname = filename || "script.ts";
@@ -33,6 +35,8 @@ export const CodeScene: React.FC<
       direction={direction}
       leadIn={leadIn || "CODE SYNTHESIZER"}
       headline={headline}
+      brollVideo={brollVideo}
+      bgImage={bgImage}
       durationInFrames={durationInFrames}
     >
       <div

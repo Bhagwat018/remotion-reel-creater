@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "slug": "why-phone-touchscreen-works",
+    "topic": "How Touchscreens Actually Detect Fingers - Hardware Secrets",
+    "title": "Why Does Your Phone Only React to Your Finger? 📱",
+    "handle": "@_crackwithcode",
+    "language": "English",
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "bgm": false,
+    "showTicker": false,
+    "voice": "bunty",
+    "voiceFile": "reels/why-phone-touchscreen-works/voice.mp3",
+    "wordsFile": "reels/why-phone-touchscreen-works/words.json",
+    "durationSec": 43
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "visual-broll",
+      "leadIn": "📱 SMARTPHONE HARDWARE MYSTERY",
+      "headline": "WHY DOES YOUR PHONE ONLY REACT TO FINGERS?",
+      "italicAccent": "Paper or plastic does nothing... so how does it know?",
+      "brollVideo": "broll/phone_touch_macro.mp4",
+      "pillText": "⚡ CAPACITIVE TOUCH SENSING",
+      "pillColor": "#3b82f6",
+      "glowColor": "#60a5fa",
+      "voice": "Do you ever think that the screen of the phone is only due to you? Are you saying plastic or why not?",
+      "startSec": 0,
+      "endSec": 6.8
+    },
+    {
+      "id": "s2-anatomy",
+      "type": "flow",
+      "leadIn": "🔬 INSIDE THE DISPLAY",
+      "headline": "THE 4-LAYER CAPACITIVE MATRIX",
+      "brollVideo": "broll/display_layers_exploded.mp4",
+      "nodes": [
+        {
+          "title": "Gorilla Glass Cover",
+          "subtitle": "Scratch-Resistant Protective Shield",
+          "icon": "🛡️",
+          "status": "0.5mm"
+        },
+        {
+          "title": "ITO Electrode Grid",
+          "subtitle": "Invisible Microscopic Conductive Wires",
+          "icon": "⚡",
+          "status": "GRID"
+        },
+        {
+          "title": "Electrostatic Field",
+          "subtitle": "Constant Uniform Voltage Distribution",
+          "icon": "📡",
+          "status": "ACTIVE"
+        },
+        {
+          "title": "OLED Display Panel",
+          "subtitle": "High-Definition Visual Substrate",
+          "icon": "🖥️",
+          "status": "120Hz"
+        }
+      ],
+      "voice": "A microscope of transparent electrical sensors inside the glass is a grid that is called a capacitive layer.",
+      "startSec": 6.8,
+      "endSec": 14.1
+    },
+    {
+      "id": "s3-physics",
+      "type": "compare",
+      "leadIn": "⚡ THE HUMAN BODY SECRET",
+      "headline": "CONDUCTOR VS INSULATOR",
+      "brollVideo": "broll/bio_electricity_pulse.mp4",
+      "left": {
+        "title": "Human Finger 👆",
+        "badge": "60% WATER + SALT",
+        "items": [
+          "Conducts electrical charge",
+          "Absorbs screen electrons",
+          "Distorts electrostatic field"
+        ]
+      },
+      "right": {
+        "title": "Paper / Plastic 📄",
+        "badge": "ZERO CONDUCTION",
+        "items": [
+          "Pure electrical insulator",
+          "Zero electron absorption",
+          "Sensor grid detects nothing"
+        ]
+      },
+      "voice": "The real secret is that the body of a human is made of water and salt, which is used to conduct the body. As soon as your screen is turned on, the screen absorbs a little bit of electric charge.",
+      "startSec": 14.1,
+      "endSec": 27.2
+    },
+    {
+      "id": "s4-controller",
+      "type": "pills",
+      "leadIn": "🧠 240Hz TOUCH CONTROLLER",
+      "headline": "HOW EXACT PIXELS ARE LOCATED",
+      "brollVideo": "broll/microchip_touch_circuit.mp4",
+      "pills": [
+        "⚡ 240Hz Polling Rate",
+        "📍 X-Axis Voltage Drop",
+        "📍 Y-Axis Voltage Drop",
+        "🎯 Intersection Coordinates",
+        "📐 Multi-Touch Gestures",
+        "🚀 0.004 Second Latency"
+      ],
+      "voice": "Touch controller chip scans this grid at a distance of 240 times in a second and takes out exact X and Y coordinates.",
+      "startSec": 27.2,
+      "endSec": 35.4,
+      "items": [
+        "⚡ 240Hz Polling Rate",
+        "📍 X-Axis Voltage Drop",
+        "📍 Y-Axis Voltage Drop",
+        "🎯 Intersection Coordinates",
+        "📐 Multi-Touch Gestures",
+        "🚀 0.004 Second Latency"
+      ]
+    },
+    {
+      "id": "s5-gloves-cta",
+      "type": "visual-broll",
+      "leadIn": "🧤 THE GLOVE PARADOX",
+      "headline": "WHY NORMAL GLOVES DON'T WORK!",
+      "italicAccent": "Wool blocks electricity — conductive thread fixes it! ⚡",
+      "brollVideo": "broll/gloves_phone_touch.mp4",
+      "pillText": "🔴 FOLLOW @_CRACKWITHCODE",
+      "pillColor": "#ef4444",
+      "glowColor": "#f97316",
+      "voice": "That's why I don't run a phone on gloves. Follow us for such tech secrets at crackwithcode.",
+      "startSec": 35.4,
+      "endSec": 43
+    }
+  ]
+}

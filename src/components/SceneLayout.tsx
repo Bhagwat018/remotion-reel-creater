@@ -1,5 +1,5 @@
 import React from "react";
-import { useCurrentFrame, useVideoConfig } from "remotion";
+import { interpolate, OffthreadVideo, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { useTheme } from "../theme/theme";
 import { getSceneMotionStyle } from "../lib/motion";
 import { LeadIn } from "./LeadIn";
@@ -22,6 +22,8 @@ export interface SceneLayoutProps {
   slug?: string;
   brand?: string;
   showTechBadge?: boolean;
+  brollVideo?: string;
+  bgImage?: string;
   children?: React.ReactNode;
 }
 
@@ -35,6 +37,8 @@ export const SceneLayout: React.FC<SceneLayoutProps> = ({
   slug,
   brand,
   showTechBadge,
+  brollVideo,
+  bgImage,
   children,
 }) => {
   const frame = useCurrentFrame();
@@ -56,9 +60,16 @@ export const SceneLayout: React.FC<SceneLayoutProps> = ({
   const resolvedDirection =
     direction || getSceneDirection(slug || id || headline || "scene", computedIndex);
 
-  // Directional entrance transform for the visual content
-  const directionalStyle = getDirectionalStyle(resolvedDirection, frame, fps, 3);
-  const containerMotionStyle = getSceneMotionStyle(frame, durationInFrames);
+  const isFirstScene = computedIndex === 0;
+  // Directional entrance transform for the visual content (scene 0 starts immediately in place)
+  const directionalStyle = isFirstScene
+    ? { opacity: 1, transform: "none" }
+    : getDirectionalStyle(resolvedDirection, frame, fps, 3);
+  const containerMotionStyle = isFirstScene
+    ? {
+        opacity: frame > durationInFrames - 8 ? Math.max(0, (durationInFrames - frame) / 8) : 1,
+      }
+    : getSceneMotionStyle(frame, durationInFrames);
 
   return (
     <div
@@ -79,6 +90,58 @@ export const SceneLayout: React.FC<SceneLayoutProps> = ({
         zIndex: 10,
       }}
     >
+      {/* 0. CINEMATIC REAL VIDEO OR IMAGE BACKGROUND */}
+      {(brollVideo || bgImage) && (
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: theme.layout.width,
+            height: theme.layout.height,
+            zIndex: 0,
+            overflow: "hidden",
+            pointerEvents: "none",
+          }}
+        >
+          {brollVideo ? (
+            <OffthreadVideo
+              src={staticFile(brollVideo.replace(/^\/?public\//, "").replace(/^\//, ""))}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                transform: `scale(${interpolate(frame, [0, durationInFrames], [1.0, 1.08], { extrapolateRight: "clamp" })})`,
+              }}
+              muted
+            />
+          ) : (
+            <img
+              src={staticFile(bgImage!.replace(/^\/?public\//, "").replace(/^\//, ""))}
+              alt="Cinematic BG"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                transform: `scale(${interpolate(frame, [0, durationInFrames], [1.0, 1.08], { extrapolateRight: "clamp" })})`,
+              }}
+            />
+          )}
+          {/* Dark Glassmorphic Vignette Overlay for High Readability of Foreground Cards */}
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              background:
+                "linear-gradient(to bottom, rgba(5, 8, 15, 0.78) 0%, rgba(5, 8, 15, 0.60) 40%, rgba(5, 8, 15, 0.90) 100%)",
+            }}
+          />
+        </div>
+      )}
+
       {/* Ambient Cyber Particles (Remotion Scenes) */}
       <CyberParticles count={16} seed={headline || leadIn || id || 42} />
 
@@ -102,8 +165,15 @@ export const SceneLayout: React.FC<SceneLayoutProps> = ({
           gap: 12,
         }}
       >
-        {leadIn && <LeadIn text={leadIn} />}
-        {headline && <Headline text={headline} />}
+        {leadIn && <LeadIn text={leadIn} delayFrames={isFirstScene ? 0 : 0} />}
+        {headline && (
+          <Headline
+            text={headline}
+            delayFrames={isFirstScene ? 0 : 2}
+            color={brollVideo || bgImage ? "#ffffff" : undefined}
+            textShadow={brollVideo || bgImage ? "0 6px 24px rgba(0,0,0,0.95)" : undefined}
+          />
+        )}
       </div>
 
       {/* Visual Content Zone with Kinetic Directional Physics */}

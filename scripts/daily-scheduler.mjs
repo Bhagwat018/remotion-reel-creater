@@ -140,7 +140,7 @@ async function executeSlot(slot, isDryRun = false) {
     };
     saveRun(runRecord);
 
-    console.log(`\n🎉 [SLOT ${slot.id} SUCCESS] High-Quality Reel published live to @techwith.genz in ${durationMin} mins!`);
+    console.log(`\n🎉 [SLOT ${slot.id} SUCCESS] High-Quality Reel published live to @_crackwithcode in ${durationMin} mins!`);
     console.log(`🔗 Reel Target: ${producedSlug}`);
     console.log(`📲 Tip: Open Instagram on your phone to 1-tap share this reel to your Story for native video playback!\n`);
     return runRecord;

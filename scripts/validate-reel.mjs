@@ -428,7 +428,7 @@ if (!Array.isArray(rawData.scenes) || rawData.scenes.length === 0) {
       if (!s.handle && s.subtitle?.startsWith("@")) { s.handle = s.subtitle; modified = true; }
       if (!s.buttonText && !s.handle && !s.callToAction) {
         s.buttonText = "FOLLOW NOW 🔥";
-        s.handle = rawData.meta?.handle || "@techwith.GenZ";
+        s.handle = rawData.meta?.handle || "@techwith.genz";
         modified = true;
       }
     }

@@ -20,6 +20,7 @@
     "@remotion/starburst": "4.0.538",
     "@remotion/transitions": "4.0.538",
     "cloudinary": "^2.11.0",
+    "hyperframes": "^0.9.33",
     "msedge-tts": "^2.1.1",
     "playwright": "^1.64.1",
     "react": "19.2.3",

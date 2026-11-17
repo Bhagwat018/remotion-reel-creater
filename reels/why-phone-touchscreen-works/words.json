@@ -1,0 +1,607 @@
+[
+  {
+    "word": "Do",
+    "startSec": 0.13,
+    "endSec": 0.28
+  },
+  {
+    "word": "you",
+    "startSec": 0.28,
+    "endSec": 0.75
+  },
+  {
+    "word": "ever",
+    "startSec": 0.75,
+    "endSec": 1.26
+  },
+  {
+    "word": "think",
+    "startSec": 1.26,
+    "endSec": 2
+  },
+  {
+    "word": "that",
+    "startSec": 2,
+    "endSec": 2.15
+  },
+  {
+    "word": "the",
+    "startSec": 2.15,
+    "endSec": 2.31
+  },
+  {
+    "word": "screen",
+    "startSec": 2.31,
+    "endSec": 2.48
+  },
+  {
+    "word": "of",
+    "startSec": 2.48,
+    "endSec": 2.55
+  },
+  {
+    "word": "the",
+    "startSec": 2.55,
+    "endSec": 2.66
+  },
+  {
+    "word": "phone",
+    "startSec": 2.66,
+    "endSec": 2.91
+  },
+  {
+    "word": "is",
+    "startSec": 2.91,
+    "endSec": 3.07
+  },
+  {
+    "word": "only",
+    "startSec": 3.07,
+    "endSec": 3.45
+  },
+  {
+    "word": "due",
+    "startSec": 3.45,
+    "endSec": 3.73
+  },
+  {
+    "word": "to",
+    "startSec": 3.73,
+    "endSec": 3.92
+  },
+  {
+    "word": "you?",
+    "startSec": 3.92,
+    "endSec": 4.4
+  },
+  {
+    "word": "Are",
+    "startSec": 4.4,
+    "endSec": 4.64
+  },
+  {
+    "word": "you",
+    "startSec": 4.64,
+    "endSec": 4.88
+  },
+  {
+    "word": "saying",
+    "startSec": 4.88,
+    "endSec": 5.37
+  },
+  {
+    "word": "plastic",
+    "startSec": 5.37,
+    "endSec": 6.1
+  },
+  {
+    "word": "or",
+    "startSec": 6.1,
+    "endSec": 6.17
+  },
+  {
+    "word": "why",
+    "startSec": 6.17,
+    "endSec": 6.34
+  },
+  {
+    "word": "not?",
+    "startSec": 6.34,
+    "endSec": 6.72
+  },
+  {
+    "word": "A",
+    "startSec": 6.72,
+    "endSec": 6.85
+  },
+  {
+    "word": "microscope",
+    "startSec": 6.85,
+    "endSec": 7.65
+  },
+  {
+    "word": "of",
+    "startSec": 7.65,
+    "endSec": 7.76
+  },
+  {
+    "word": "transparent",
+    "startSec": 7.76,
+    "endSec": 8.65
+  },
+  {
+    "word": "electrical",
+    "startSec": 8.65,
+    "endSec": 9.45
+  },
+  {
+    "word": "sensors",
+    "startSec": 9.45,
+    "endSec": 10.04
+  },
+  {
+    "word": "inside",
+    "startSec": 10.04,
+    "endSec": 10.87
+  },
+  {
+    "word": "the",
+    "startSec": 10.87,
+    "endSec": 11.4
+  },
+  {
+    "word": "glass",
+    "startSec": 11.4,
+    "endSec": 12.04
+  },
+  {
+    "word": "is",
+    "startSec": 12.04,
+    "endSec": 12.1
+  },
+  {
+    "word": "a",
+    "startSec": 12.1,
+    "endSec": 12.22
+  },
+  {
+    "word": "grid",
+    "startSec": 12.22,
+    "endSec": 12.26
+  },
+  {
+    "word": "that",
+    "startSec": 12.26,
+    "endSec": 12.4
+  },
+  {
+    "word": "is",
+    "startSec": 12.4,
+    "endSec": 12.5
+  },
+  {
+    "word": "called",
+    "startSec": 12.5,
+    "endSec": 12.82
+  },
+  {
+    "word": "a",
+    "startSec": 12.82,
+    "endSec": 12.88
+  },
+  {
+    "word": "capacitive",
+    "startSec": 12.88,
+    "endSec": 13.66
+  },
+  {
+    "word": "layer.",
+    "startSec": 13.66,
+    "endSec": 14.12
+  },
+  {
+    "word": "The",
+    "startSec": 14.12,
+    "endSec": 14.39
+  },
+  {
+    "word": "real",
+    "startSec": 14.39,
+    "endSec": 14.75
+  },
+  {
+    "word": "secret",
+    "startSec": 14.75,
+    "endSec": 15.29
+  },
+  {
+    "word": "is",
+    "startSec": 15.29,
+    "endSec": 15.47
+  },
+  {
+    "word": "that",
+    "startSec": 15.47,
+    "endSec": 15.89
+  },
+  {
+    "word": "the",
+    "startSec": 15.89,
+    "endSec": 16.1
+  },
+  {
+    "word": "body",
+    "startSec": 16.1,
+    "endSec": 16.46
+  },
+  {
+    "word": "of",
+    "startSec": 16.46,
+    "endSec": 16.64
+  },
+  {
+    "word": "a",
+    "startSec": 16.64,
+    "endSec": 16.73
+  },
+  {
+    "word": "human",
+    "startSec": 16.73,
+    "endSec": 17.18
+  },
+  {
+    "word": "is",
+    "startSec": 17.18,
+    "endSec": 17.44
+  },
+  {
+    "word": "made",
+    "startSec": 17.44,
+    "endSec": 17.72
+  },
+  {
+    "word": "of",
+    "startSec": 17.72,
+    "endSec": 17.86
+  },
+  {
+    "word": "100%",
+    "startSec": 17.86,
+    "endSec": 18.8
+  },
+  {
+    "word": "water",
+    "startSec": 18.8,
+    "endSec": 19.28
+  },
+  {
+    "word": "and",
+    "startSec": 19.28,
+    "endSec": 19.29
+  },
+  {
+    "word": "salt,",
+    "startSec": 19.29,
+    "endSec": 19.32
+  },
+  {
+    "word": "which",
+    "startSec": 19.32,
+    "endSec": 19.62
+  },
+  {
+    "word": "is",
+    "startSec": 19.62,
+    "endSec": 19.72
+  },
+  {
+    "word": "used",
+    "startSec": 19.72,
+    "endSec": 19.95
+  },
+  {
+    "word": "to",
+    "startSec": 19.95,
+    "endSec": 20.06
+  },
+  {
+    "word": "conduct",
+    "startSec": 20.06,
+    "endSec": 20.44
+  },
+  {
+    "word": "the",
+    "startSec": 20.44,
+    "endSec": 20.87
+  },
+  {
+    "word": "body.",
+    "startSec": 20.87,
+    "endSec": 21.08
+  },
+  {
+    "word": "As",
+    "startSec": 21.08,
+    "endSec": 21.26
+  },
+  {
+    "word": "soon",
+    "startSec": 21.26,
+    "endSec": 21.63
+  },
+  {
+    "word": "as",
+    "startSec": 21.63,
+    "endSec": 21.83
+  },
+  {
+    "word": "your",
+    "startSec": 21.83,
+    "endSec": 22.18
+  },
+  {
+    "word": "screen",
+    "startSec": 22.18,
+    "endSec": 22.85
+  },
+  {
+    "word": "is",
+    "startSec": 22.85,
+    "endSec": 22.91
+  },
+  {
+    "word": "turned",
+    "startSec": 22.91,
+    "endSec": 23.46
+  },
+  {
+    "word": "on,",
+    "startSec": 23.46,
+    "endSec": 23.83
+  },
+  {
+    "word": "the",
+    "startSec": 23.83,
+    "endSec": 24.12
+  },
+  {
+    "word": "screen",
+    "startSec": 24.12,
+    "endSec": 24.52
+  },
+  {
+    "word": "absorbs",
+    "startSec": 24.52,
+    "endSec": 25.06
+  },
+  {
+    "word": "a",
+    "startSec": 25.06,
+    "endSec": 25.13
+  },
+  {
+    "word": "little",
+    "startSec": 25.13,
+    "endSec": 25.75
+  },
+  {
+    "word": "bit",
+    "startSec": 25.75,
+    "endSec": 25.82
+  },
+  {
+    "word": "of",
+    "startSec": 25.82,
+    "endSec": 25.98
+  },
+  {
+    "word": "electric",
+    "startSec": 25.98,
+    "endSec": 26.58
+  },
+  {
+    "word": "charge.",
+    "startSec": 26.58,
+    "endSec": 27.12
+  },
+  {
+    "word": "Touch",
+    "startSec": 27.25,
+    "endSec": 27.52
+  },
+  {
+    "word": "controller",
+    "startSec": 27.52,
+    "endSec": 28.38
+  },
+  {
+    "word": "chip",
+    "startSec": 28.38,
+    "endSec": 28.89
+  },
+  {
+    "word": "scans",
+    "startSec": 28.89,
+    "endSec": 29.05
+  },
+  {
+    "word": "this",
+    "startSec": 29.05,
+    "endSec": 29.43
+  },
+  {
+    "word": "grid",
+    "startSec": 29.43,
+    "endSec": 29.69
+  },
+  {
+    "word": "at",
+    "startSec": 29.69,
+    "endSec": 29.85
+  },
+  {
+    "word": "a",
+    "startSec": 29.85,
+    "endSec": 29.93
+  },
+  {
+    "word": "distance",
+    "startSec": 29.93,
+    "endSec": 30.58
+  },
+  {
+    "word": "of",
+    "startSec": 30.58,
+    "endSec": 30.74
+  },
+  {
+    "word": "240",
+    "startSec": 30.74,
+    "endSec": 31.79
+  },
+  {
+    "word": "times",
+    "startSec": 31.79,
+    "endSec": 31.92
+  },
+  {
+    "word": "in",
+    "startSec": 31.92,
+    "endSec": 31.96
+  },
+  {
+    "word": "a",
+    "startSec": 31.96,
+    "endSec": 31.98
+  },
+  {
+    "word": "second",
+    "startSec": 31.98,
+    "endSec": 32.11
+  },
+  {
+    "word": "and",
+    "startSec": 32.11,
+    "endSec": 32.2
+  },
+  {
+    "word": "takes",
+    "startSec": 32.2,
+    "endSec": 32.66
+  },
+  {
+    "word": "out",
+    "startSec": 32.66,
+    "endSec": 32.93
+  },
+  {
+    "word": "exact",
+    "startSec": 32.93,
+    "endSec": 33.37
+  },
+  {
+    "word": "X",
+    "startSec": 33.37,
+    "endSec": 33.42
+  },
+  {
+    "word": "and",
+    "startSec": 33.42,
+    "endSec": 33.98
+  },
+  {
+    "word": "Y",
+    "startSec": 33.98,
+    "endSec": 34.06
+  },
+  {
+    "word": "coordinates.",
+    "startSec": 34.06,
+    "endSec": 35.4
+  },
+  {
+    "word": "That's",
+    "startSec": 35.4,
+    "endSec": 35.83
+  },
+  {
+    "word": "why",
+    "startSec": 35.83,
+    "endSec": 36.05
+  },
+  {
+    "word": "I",
+    "startSec": 36.05,
+    "endSec": 36.15
+  },
+  {
+    "word": "don't",
+    "startSec": 36.15,
+    "endSec": 36.48
+  },
+  {
+    "word": "run",
+    "startSec": 36.48,
+    "endSec": 36.7
+  },
+  {
+    "word": "a",
+    "startSec": 36.7,
+    "endSec": 36.77
+  },
+  {
+    "word": "phone",
+    "startSec": 36.77,
+    "endSec": 37.18
+  },
+  {
+    "word": "on",
+    "startSec": 37.18,
+    "endSec": 37.28
+  },
+  {
+    "word": "gloves.",
+    "startSec": 37.28,
+    "endSec": 38
+  },
+  {
+    "word": "Follow",
+    "startSec": 38,
+    "endSec": 38.57
+  },
+  {
+    "word": "us",
+    "startSec": 38.57,
+    "endSec": 38.76
+  },
+  {
+    "word": "for",
+    "startSec": 38.76,
+    "endSec": 39.04
+  },
+  {
+    "word": "such",
+    "startSec": 39.04,
+    "endSec": 39.42
+  },
+  {
+    "word": "tech",
+    "startSec": 39.42,
+    "endSec": 39.8
+  },
+  {
+    "word": "secrets",
+    "startSec": 39.8,
+    "endSec": 40.47
+  },
+  {
+    "word": "at",
+    "startSec": 40.47,
+    "endSec": 40.68
+  },
+  {
+    "word": "crackwithcode!",
+    "startSec": 40.68,
+    "endSec": 42.16
+  }
+]

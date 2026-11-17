@@ -68,7 +68,7 @@ async function generateReelWithGemini({ topic, script = "", language = "hinglish
   }
 
   const prompt = `
-You are the Lead Video Director for an elite developer tech reels channel (@techwith.GenZ).
+You are the Lead Video Director for an elite developer tech reels channel (@_crackwithcode).
 Your task is to generate a complete, high-converting Remotion 'reel.json' configuration for:
 Topic: "${topic}"
 ${script ? `User Script / Key Points:\n${script}\n` : ""}
@@ -109,7 +109,7 @@ Generate 6 to 8 engaging scenes custom-picked for the topic:
 4. "compare": { "type": "compare", "headline": "OPTION A VS *OPTION B*", "left": { "label": "Legacy Approach", "items": ["Item 1", "Item 2"] }, "right": { "label": "Winning Strategy", "items": ["Item 1", "Item 2"] }, "voice": "Spoken comparison script..." }
 5. "code": { "type": "code", "headline": "AUTOMATION *SCRIPT*", "filename": "tracker.py", "lines": ["import nsepython", "qib = nsepython.get_flow('JIO')"], "highlightLines": [2], "voice": "Spoken code script..." }
 6. "pills": { "type": "pills", "headline": "KEY *ADVANTAGES*", "items": ["Takeaway 1", "Takeaway 2", "Takeaway 3"], "voice": "Spoken takeaways script..." }
-7. "cta": { "type": "cta", "headline": "FOLLOW *FOR UPDATES*", "buttonText": "FOLLOW @techwith.GenZ", "voice": "Spoken call to action..." }
+7. "cta": { "type": "cta", "headline": "FOLLOW *FOR UPDATES*", "buttonText": "FOLLOW @_crackwithcode", "voice": "Spoken call to action..." }
 
 ### TIMING & DIRECTION RULES:
 - Provide approximate consecutive timestamps (startSec, endSec) totaling ~${durationSec}s (Voice-First engine will dynamically refine to exact speech timestamps).
@@ -122,7 +122,7 @@ Generate 6 to 8 engaging scenes custom-picked for the topic:
     "slug": "kebab-case-topic-slug",
     "title": "Title Here",
     "topic": "Topic Here",
-    "handle": "@techwith.GenZ",
+    "handle": "@_crackwithcode",
     "voiceFile": "reels/<slug>/voice.mp3",
     "loop": true,
     "captions": true,
@@ -204,7 +204,7 @@ Generate 6 to 8 engaging scenes custom-picked for the topic:
           .replace(/[^a-z0-9]+/g, "-")
           .replace(/^-+|-+$/g, "");
       }
-      parsed.meta.handle = parsed.meta.handle || "@techwith.GenZ";
+      parsed.meta.handle = parsed.meta.handle || "@_crackwithcode";
       parsed.meta.voice = voice || "Madhur";
       parsed.meta.voiceSpeed = 1.05;
       parsed.meta.voiceFile = `reels/${parsed.meta.slug}/voice.mp3`;
@@ -264,7 +264,7 @@ Generate 6 to 8 engaging scenes custom-picked for the topic:
             norm.left = s.left || (s.leftTitle ? { label: s.leftTitle, items: s.leftItems || [] } : undefined);
             norm.right = s.right || (s.rightTitle ? { label: s.rightTitle, items: s.rightItems || [] } : undefined);
           } else if (norm.type === "cta") {
-            norm.buttonText = s.buttonText || s.callToAction || "FOLLOW @techwith.GenZ";
+            norm.buttonText = s.buttonText || s.callToAction || "FOLLOW @_crackwithcode";
           } else if (norm.type === "terminal") {
             norm.command = s.command || "npm run build";
             norm.output = Array.isArray(s.output) ? s.output : typeof s.output === "string" ? s.output.split("\n") : ["[OK] Process completed."];

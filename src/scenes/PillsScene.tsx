@@ -10,6 +10,7 @@ import { RedFlagsScene } from "./digitalArrest/RedFlagsScene";
 import { HiddenFeesTipScene } from "./darkStore/HiddenFeesTipScene";
 import { FailureIsDataScene } from "./zeptoStory/FailureIsDataScene";
 import { UpiBillCheckTipScene } from "./upiFree/UpiBillCheckTipScene";
+import { CoordinateRadarScene } from "./touchscreen/CoordinateRadarScene";
 
 export const PillsScene: React.FC<
   PillsSceneProps & {
@@ -20,8 +21,23 @@ export const PillsScene: React.FC<
     direction?: MotionDirection;
     id?: string;
     slug?: string;
+    brollVideo?: string;
+    bgImage?: string;
   }
-> = ({ id, direction, leadIn, headline, items, pills, badgeText, subtext, durationInFrames, slug }) => {
+> = ({ id, direction, leadIn, headline, items, pills, badgeText, subtext, brollVideo, bgImage, durationInFrames, slug }) => {
+  // Bespoke scene for Touchscreen Coordinate Radar
+  if (slug === "why-phone-touchscreen-works" || (headline && headline.includes("PIXELS"))) {
+    return (
+      <CoordinateRadarScene
+        id={id}
+        leadIn={leadIn}
+        headline={headline}
+        brollVideo={brollVideo}
+        durationInFrames={durationInFrames}
+      />
+    );
+  }
+
   // Bespoke scene for UPI Bill Check Tip
   if (slug === "upi-free-secret" || slug === "is-upi-really-free-hidden-charges" || id === "s6-bill-tip" || id === "s5-steps") {
     return <UpiBillCheckTipScene durationInFrames={durationInFrames} />;
@@ -66,6 +82,8 @@ export const PillsScene: React.FC<
       direction={direction}
       leadIn={leadIn}
       headline={headline}
+      brollVideo={brollVideo}
+      bgImage={bgImage}
       durationInFrames={durationInFrames}
     >
       <div

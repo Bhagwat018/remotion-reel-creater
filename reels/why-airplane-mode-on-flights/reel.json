@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "title": "Why Does Flight Require Airplane Mode? ✈️ Real Science",
+    "topic": "The Real Science of Airplane Mode - RF Jamming and 5G Radar Bleed",
+    "slug": "why-airplane-mode-on-flights",
+    "handle": "@_crackwithcode",
+    "language": "Hinglish",
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "bgm": false,
+    "showTicker": false,
+    "voice": "bunty",
+    "voiceFile": "reels/why-airplane-mode-on-flights/voice.mp3",
+    "wordsFile": "reels/why-airplane-mode-on-flights/words.json",
+    "durationSec": 49
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "flow",
+      "startSec": 0.0,
+      "endSec": 9.68,
+      "leadIn": "✈️ FLIGHT SAFETY REALITY CHECK",
+      "headline": "KYA EK PHONE ON REHNE SE *PLANE CRASH HO SAKTA HAI?*",
+      "voice": "Take-off hote hi air hostess chillati hai: 'Phones ko Airplane Mode par daalo!' Lekin kya ek phone on rehne se 300 logon se bhara plane sach me crash ho sakta hai?",
+      "voiceText": "Take-off hote hi air hostess chillati hai: 'Phones ko Airplane Mode par daalo!' Lekin kya ek phone on rehne se 300 logon se bhara plane sach me crash ho sakta hai?",
+      "brollVideo": "broll/airplane_takeoff_cockpit.mp4",
+      "nodes": [
+        {
+          "title": "Cabin Announcement",
+          "subtitle": "Airplane Mode Mandatory",
+          "icon": "📢",
+          "status": "Takeoff"
+        },
+        {
+          "title": "300 Passengers",
+          "subtitle": "Cellular Radios Active",
+          "icon": "👥",
+          "status": "Scanning"
+        },
+        {
+          "title": "Crash Question",
+          "subtitle": "Avionics Failure Myth",
+          "icon": "❓",
+          "status": "Investigating"
+        }
+      ]
+    },
+    {
+      "id": "s2-myth",
+      "type": "flow",
+      "startSec": 9.68,
+      "endSec": 17.0,
+      "leadIn": "🛡️ AVIONICS REALITY CHECK",
+      "headline": "PLANE CRASH TOH NAHI HOGA! *LEKIN 2 BADE KHATRE HAIN*",
+      "voice": "javab h : Plane crash toh bilkul nahi hoga! Lekin do aisi cheezein hoti hain jo landing ko khatarnak bana sakti hain.",
+      "voiceText": "javab h : Plane crash toh bilkul nahi hoga! Lekin do aisi cheezein hoti hain jo landing ko khatarnak bana sakti hain.",
+      "brollVideo": "broll/airplane_passenger_cabin.mp4",
+      "nodes": [
+        {
+          "title": "Crash Risk: 0%",
+          "subtitle": "Faraday Shielded Controls",
+          "icon": "🛡️",
+          "status": "Safe"
+        },
+        {
+          "title": "Threat #1",
+          "subtitle": "Pilot Headset RF Noise",
+          "icon": "🎧",
+          "status": "High"
+        },
+        {
+          "title": "Threat #2",
+          "subtitle": "5G Radar Altimeter Bleed",
+          "icon": "📡",
+          "status": "Critical"
+        }
+      ]
+    },
+    {
+      "id": "s3-rf-blast",
+      "type": "flow",
+      "startSec": 17.0,
+      "endSec": 24.5,
+      "leadIn": "📡 DANGER #1: MAXIMUM RF BLAST",
+      "headline": "35,000 FEET PAR PHONE KARTA HAI *FULL POWER RF BLAST!*",
+      "voice": "Pehla: 35,000 feet par tower dhoondhne ke liye aapka phone full power radio waves fekta hai,",
+      "voiceText": "Pehla: 35,000 feet par tower dhoondhne ke liye aapka phone full power radio waves fekta hai,",
+      "brollVideo": "broll/cell_tower_radio_waves.mp4",
+      "nodes": [
+        {
+          "title": "Cruising Altitude",
+          "subtitle": "35,000 Feet Above Ground",
+          "icon": "✈️",
+          "status": "No Towers"
+        },
+        {
+          "title": "Modem Amplifier",
+          "subtitle": "Maximum 3,000mW Gain",
+          "icon": "⚡",
+          "status": "30x Power"
+        },
+        {
+          "title": "RF Bubble",
+          "subtitle": "Cabin Signal Flooding",
+          "icon": "📶",
+          "status": "Interference"
+        }
+      ]
+    },
+    {
+      "id": "s4-pilot-buzz",
+      "type": "flow",
+      "startSec": 24.5,
+      "endSec": 32.8,
+      "leadIn": "🎧 ELECTROMAGNETIC AUDIO INDUCTION",
+      "headline": "PILOT HEADSET AUDIO JAM: *IRRITATING 'BZZ-BZZ' SHOR!*",
+      "voice": "jo pilot ke headset me wahi irritating 'bzz-bzz' shor paida karta hai jo purane speakers ke paas aata tha — jisse Air Traffic Control ki aawaz dab jaati hai!",
+      "voiceText": "jo pilot ke headset me wahi irritating 'bzz-bzz' shor paida karta hai jo purane speakers ke paas aata tha — jisse Air Traffic Control ki aawaz dab jaati hai!",
+      "brollVideo": "broll/pilot_cockpit_headset.mp4",
+      "nodes": [
+        {
+          "title": "Headphone Wire",
+          "subtitle": "Acts as Radio Receiver",
+          "icon": "🎧",
+          "status": "Induction"
+        },
+        {
+          "title": "'Bzz-Bzz' Static",
+          "subtitle": "217Hz GSM Pulse Noise",
+          "icon": "🔊",
+          "status": "Buzzing"
+        },
+        {
+          "title": "ATC Jammed",
+          "subtitle": "Runway Instructions Muted",
+          "icon": "🚫",
+          "status": "Dangerous"
+        }
+      ]
+    },
+    {
+      "id": "s5-radar-altimeter",
+      "type": "flow",
+      "startSec": 32.8,
+      "endSec": 41.68,
+      "leadIn": "📡 DANGER #2: FREQUENCY BLEED HAZARD",
+      "headline": "HIGH-POWER 5G SIGNALS *RUIN RADAR ALTIMETER IN FOG!*",
+      "voice": "Doosra: High-power 5G signals plane ke Radar Altimeter ko confuse kar sakte hain, jo badal aur fog me runway ki accurate height batata hai!",
+      "voiceText": "Doosra: High-power 5G signals plane ke Radar Altimeter ko confuse kar sakte hain, jo badal aur fog me runway ki accurate height batata hai!",
+      "brollVideo": "broll/airplane_landing_fog.mp4",
+      "nodes": [
+        {
+          "title": "5G C-Band",
+          "subtitle": "3.70 - 3.98 GHz High Power",
+          "icon": "📶",
+          "status": "Transmitting"
+        },
+        {
+          "title": "Radar Altimeter",
+          "subtitle": "4.20 - 4.40 GHz Avionics",
+          "icon": "📡",
+          "status": "Near Band"
+        },
+        {
+          "title": "Fog Landing",
+          "subtitle": "Runway Height Calculation",
+          "icon": "🛬",
+          "status": "Risk Zone"
+        }
+      ]
+    },
+    {
+      "id": "s6-cta",
+      "type": "cta",
+      "startSec": 41.68,
+      "endSec": 48.85,
+      "leadIn": "✈️ SAVE PILOT'S EARS ON YOUR NEXT FLIGHT",
+      "headline": "DECODE EVERYDAY TECH *BEFORE THE WORLD DOES*",
+      "voice": "Toh agli baar flight me pilot ke kaan zaroor bacha lena! Aise hi smart tech secrets ke liye follow karo crackwithcode!",
+      "voiceText": "Toh agli baar flight me pilot ke kaan zaroor bacha lena! Aise hi smart tech secrets ke liye follow karo crackwithcode!",
+      "buttonText": "FOLLOW @_CRACKWITHCODE 🔥",
+      "callToAction": "FOLLOW @_CRACKWITHCODE 🔥",
+      "subtitle": "DAILY REAL TECH & HARDWARE SECRETS ⚡",
+      "brollVideo": "broll/cyber_grid_loop.mp4"
+    }
+  ]
+}
+

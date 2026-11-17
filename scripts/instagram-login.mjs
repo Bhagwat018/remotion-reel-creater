@@ -39,18 +39,42 @@ async function main() {
     output: process.stdout,
   });
 
-  await new Promise((resolve) => {
-    rl.question(
-      "\n👉 Browser me login complete hone ke baad yahan ENTER press karein: ",
-      () => {
-        rl.close();
-        resolve();
+  await Promise.race([
+    new Promise((resolve) => {
+      rl.question(
+        "\n👉 Browser me login complete hone ke baad yahan ENTER press karein: ",
+        () => {
+          rl.close();
+          resolve();
+        }
+      );
+    }),
+    new Promise(async (resolve) => {
+      // Auto-detect login every 2 seconds
+      while (true) {
+        await page.waitForTimeout(2000);
+        try {
+          const loggedIn = await page.evaluate(() => {
+            return Boolean(
+              document.querySelector('svg[aria-label="Home"]') ||
+              document.querySelector('svg[aria-label="New post"]') ||
+              document.querySelector('a[href*="/direct/inbox/"]') ||
+              document.querySelector('svg[aria-label="Search"]')
+            );
+          });
+          if (loggedIn) {
+            console.log("\n⚡ Auto-detected successful Instagram login!");
+            rl.close();
+            resolve();
+            break;
+          }
+        } catch {}
       }
-    );
-  });
+    })
+  ]);
 
   console.log("\n💾 Saving session...");
-  await page.waitForTimeout(2000);
+  await page.waitForTimeout(3000);
   await context.close();
 
   console.log("🎉 SUCCESS: Aapka Instagram session '.instagram-session' folder me save ho gaya hai!");

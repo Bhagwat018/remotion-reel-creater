@@ -174,7 +174,7 @@ export const Reel: React.FC<ReelProps> = ({ meta, scenes, words }) => {
         {meta.showHandle && <HandlePill handle={meta.handle} />}
 
         {/* Live Scrolling Financial Market Ticker (Bloomberg / CNBC Style) */}
-        {meta.showTicker !== false && (
+        {meta.showTicker === true && (
           <MarketTickerTape
             position={meta.tickerPosition ?? "bottom"}
             bottomOffset={meta.tickerBottomOffset ?? 130}

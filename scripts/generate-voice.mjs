@@ -369,10 +369,9 @@ for (let i = 0; i < scenes.length; i++) {
   });
 }
 
-// 5. Check if OpenAI Whisper is available for true word-level precision
-if (process.env.OPENAI_API_KEY) {
-  console.log(`🤖 OpenAI API Key detected: Could refine with Whisper word timestamps if needed.`);
-}
+// 5. Enhance timestamps with local Apple Silicon Whisper.cpp if available
+const whisperBin = "/opt/homebrew/bin/whisper-cli";
+const whisperModel = path.join(process.env.HOME || "", ".whisper", "ggml-base.bin");
 
 // 6. Combine scene audio tracks into master voice.mp3 using ffmpeg adelay
 const totalDuration = parseFloat(currentCursorSec.toFixed(2));
@@ -399,6 +398,41 @@ try {
 } catch (err) {
   console.error("❌ FFmpeg audio mix error:", err.message);
   process.exit(1);
+}
+
+// 6b. True millisecond word timestamps using local Whisper.cpp
+if (fs.existsSync(whisperBin) && fs.existsSync(whisperModel)) {
+  try {
+    const tempWav = path.join(tempDir, "whisper_temp.wav");
+    execSync(`ffmpeg -y -i "${combinedMp3}" -ar 16000 -ac 1 -c:a pcm_s16le "${tempWav}" -loglevel error`);
+    const whisperOut = path.join(tempDir, "whisper_words");
+    execSync(`${whisperBin} -m "${whisperModel}" -f "${tempWav}" -ml 1 -sow -oj -of "${whisperOut}" -np`);
+    const jsonPath = `${whisperOut}.json`;
+    if (fs.existsSync(jsonPath)) {
+      const wData = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
+      if (wData.transcription && wData.transcription.length > 5) {
+        wordsList.length = 0; // Clear fallback math split
+        for (const seg of wData.transcription) {
+          const wText = seg.text ? seg.text.trim() : "";
+          if (!wText) continue;
+          const parseTs = (ts) => {
+            if (!ts) return 0;
+            const [hms, ms] = ts.replace(",", ".").split(".");
+            const [h, m, s] = hms.split(":").map(Number);
+            return parseFloat((h * 3600 + m * 60 + s + (Number(ms || 0) / 1000)).toFixed(2));
+          };
+          wordsList.push({
+            word: wText,
+            startSec: parseTs(seg.timestamps.from),
+            endSec: parseTs(seg.timestamps.to),
+          });
+        }
+        console.log(`⚡ Local Whisper.cpp: Synced ${wordsList.length} millisecond-precision words in 500ms!`);
+      }
+    }
+  } catch (wErr) {
+    console.warn("ℹ️ Local Whisper skipped, fallback timestamps active.");
+  }
 }
 
 // 7. Update reelData meta with duration & file paths

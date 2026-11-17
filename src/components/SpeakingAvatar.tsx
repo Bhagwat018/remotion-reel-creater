@@ -28,7 +28,7 @@ export const SpeakingAvatar: React.FC<SpeakingAvatarProps> = ({
   );
   const isSpeaking = activeWordIndex >= 0;
 
-  // Window of words around current speaking word (keeps stable window during sentence pauses)
+  // Window of words around current speaking word (stable 4-word window)
   let targetIndex = activeWordIndex;
   if (targetIndex < 0) {
     for (let i = words.length - 1; i >= 0; i--) {
@@ -40,25 +40,28 @@ export const SpeakingAvatar: React.FC<SpeakingAvatarProps> = ({
     if (targetIndex < 0) targetIndex = 0;
   }
   const windowStart = Math.max(0, targetIndex - 1);
-  const windowEnd = Math.min(words.length, windowStart + 5);
+  const windowEnd = Math.min(words.length, windowStart + 4);
   const visibleWords = words.slice(windowStart, windowEnd);
 
-  // Fallback text if words not populated yet
   const hasText = visibleWords.length > 0;
-  const sampleText = hasText ? visibleWords.map((w) => w.word).join(" ") : "System Scaling";
+  const sampleText = hasText ? visibleWords.map((w) => w.word).join(" ") : "Tech Breakdown";
   const fontFamily = resolveFontFamily(sampleText, theme.typography.ui);
 
-  // Subtle breathing and speech bobbing
-  const bobbing = Math.sin(frame / 8) * 3;
-  // Natural eye blink (every ~105 frames, blinks for 5 frames)
-  const isBlinking = frame % 105 < 5;
+  // Smart natural movements: subtle breathing + speech emphasis bobbing
+  const speechBob = isSpeaking ? Math.sin((frame * Math.PI) / 4) * 2.5 : 0;
+  const idleBob = Math.sin(frame / 12) * 2;
+  const headTilt = Math.sin(frame / 24) * 1.8;
 
-  // Natural speech mouth flap animation (smooth oscillation between open and closed, NO tongue)
-  const speechFlap = isSpeaking ? Math.sin((frame * Math.PI) / 3.8) * 0.5 + 0.5 : 0;
-  const isMouthOpen = isSpeaking && speechFlap > 0.2;
-  const mouthHeight = Math.round(8 + speechFlap * 12);
+  // Eye blinking (blinks every ~110 frames for 4 frames)
+  const isBlinking = frame % 110 < 4;
 
-  // Spring entrance on first appear
+  // Natural speaking mouth oscillation (smooth, crisp lip flap)
+  const flapPhase = Math.sin((frame * Math.PI) / 3.6);
+  const speechFlap = isSpeaking ? Math.max(0, flapPhase) : 0;
+  const isMouthOpen = isSpeaking && speechFlap > 0.25;
+  const mouthOpening = Math.round(4 + speechFlap * 14);
+
+  // Spring entrance on mount
   const entrance = spring({
     frame,
     fps,
@@ -79,177 +82,239 @@ export const SpeakingAvatar: React.FC<SpeakingAvatarProps> = ({
         pointerEvents: "none",
       }}
     >
-      {/* 1. Professional Tech Creator Avatar (Anchored cleanly at bottom, taller and wider) */}
+      {/* 1. SMART TECH CREATOR AVATAR (Modern Cyberpunk Lead Dev Persona) */}
       <div
         style={{
           position: "absolute",
-          left: isLeft ? 100 : "auto",
-          right: isLeft ? "auto" : 100,
+          left: isLeft ? 80 : "auto",
+          right: isLeft ? "auto" : 80,
           bottom: 0,
-          width: 380,
-          height: 480,
-          transform: `scale(${entrance}) translateY(${bobbing}px)`,
+          width: 390,
+          height: 490,
+          transform: `scale(${entrance}) translateY(${idleBob + speechBob}px) rotate(${headTilt}deg)`,
           transformOrigin: isLeft ? "bottom left" : "bottom right",
-          maskImage: "linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 40px)",
-          WebkitMaskImage: "linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 40px)",
+          maskImage: "linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50px)",
+          WebkitMaskImage: "linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50px)",
         }}
       >
         <svg
           viewBox="0 0 240 290"
-          width="380"
-          height="480"
+          width="390"
+          height="490"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* Subtle drop shadow under avatar */}
-          <ellipse cx="120" cy="282" rx="85" ry="9" fill="rgba(0,0,0,0.35)" />
+          {/* Subtle Ambient Neon Base Glow */}
+          <ellipse cx="120" cy="284" rx="90" ry="10" fill="rgba(56, 189, 248, 0.25)" filter="blur(6px)" />
+          <ellipse cx="120" cy="282" rx="75" ry="8" fill="rgba(0,0,0,0.4)" />
 
-          {/* Teal-Green Creator Hoodie / Torso */}
+          {/* Smart Matte Techwear Bomber Jacket (Dark Obsidian & Cyber Accents) */}
           <path
-            d="M36 280 C36 215, 76 182, 120 182 C164 182, 204 215, 204 280 Z"
-            fill="#238276"
+            d="M26 290 C26 218, 70 182, 120 182 C170 182, 214 218, 214 290 Z"
+            fill="#090d16"
             stroke="#000000"
             strokeWidth="4"
           />
 
-          {/* Hoodie Collar / Neckline */}
+          {/* Jacket Cyber Accent Shoulders & Sleeves */}
           <path
-            d="M86 182 C86 216, 154 216, 154 182 Z"
-            fill="#1b6b61"
+            d="M26 290 C34 240, 56 208, 80 196"
+            stroke="#1e293b"
+            strokeWidth="3.5"
+            strokeLinecap="round"
+          />
+          <path
+            d="M214 290 C206 240, 184 208, 160 196"
+            stroke="#1e293b"
+            strokeWidth="3.5"
+            strokeLinecap="round"
+          />
+
+          {/* Inner Fitted Graphite Crewneck Shirt */}
+          <path
+            d="M92 182 C92 210, 148 210, 148 182 Z"
+            fill="#1e293b"
+            stroke="#000000"
+            strokeWidth="3"
+          />
+
+          {/* High-Tech Cyber Collar Trim with Cyan Edge */}
+          <path
+            d="M80 184 L102 236 L120 250 L138 236 L160 184"
+            stroke="#38bdf8"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+
+          {/* Central Asymmetric Tech Zipper */}
+          <line x1="120" y1="210" x2="120" y2="290" stroke="#000000" strokeWidth="4" />
+          <line x1="120" y1="210" x2="120" y2="290" stroke="#475569" strokeWidth="2" strokeDasharray="3 3" />
+
+          {/* Cyber Badge / Terminal Tag on Left Chest: ">_ CODE" */}
+          <g transform="translate(142, 216)">
+            <rect x="0" y="0" width="38" height="18" rx="5" fill="#030712" stroke="#38bdf8" strokeWidth="1.8" />
+            <text x="5" y="13" fill="#38bdf8" fontSize="10" fontFamily="'JetBrains Mono', monospace" fontWeight="900">
+              &gt;_
+            </text>
+            <circle cx="28" cy="9" r="2.5" fill="#10b981" />
+          </g>
+
+          {/* Anatomical Athletic Neck */}
+          <path
+            d="M104 142 L104 186 Q120 192 136 186 L136 142 Z"
+            fill="#e0a97a"
             stroke="#000000"
             strokeWidth="3.5"
           />
-
-          {/* White Hoodie Drawstrings */}
-          <line x1="106" y1="202" x2="106" y2="242" stroke="#ffffff" strokeWidth="4.5" strokeLinecap="round" />
-          <line x1="134" y1="202" x2="134" y2="242" stroke="#ffffff" strokeWidth="4.5" strokeLinecap="round" />
-
-          {/* Creator Orange Pin Badge on Chest */}
-          <circle cx="168" cy="226" r="13" fill="#fb923c" stroke="#000000" strokeWidth="2.5" />
-          <path d="M162 226 Q168 221 174 226" stroke="#000000" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-
-          {/* Neck with subtle shadow */}
-          <rect x="105" y="148" width="30" height="38" fill="#d4956a" stroke="#000000" strokeWidth="3" rx="4" />
-          <path d="M105 148 Q120 158 135 148 L135 158 Q120 168 105 158 Z" fill="#be7e54" />
-
-          {/* Professional Stylized Head & Jaw */}
+          {/* Subtle Neck Shadow under Chin */}
           <path
-            d="M72 112 C72 78, 168 78, 168 112 C168 146, 146 166, 120 166 C94 166, 72 146, 72 112 Z"
-            fill="#d4956a"
-            stroke="#0f172a"
+            d="M104 142 Q120 156 136 142 L136 150 Q120 164 104 150 Z"
+            fill="#c98a58"
+          />
+
+          {/* Chiseled Modern Jawline & Head Structure */}
+          <path
+            d="M74 104
+               C72 74, 168 74, 166 104
+               C166 132, 148 162, 120 162
+               C92 162, 74 132, 74 104 Z"
+            fill="#e0a97a"
+            stroke="#000000"
             strokeWidth="4"
           />
 
-          {/* Left Ear + Sleek Wireless Earbud */}
-          <ellipse cx="68" cy="120" rx="9" ry="13" fill="#d4956a" stroke="#0f172a" strokeWidth="3" />
-          <path d="M66 118 Q69 121 66 124" stroke="#be7e54" strokeWidth="2" fill="none" />
-          {/* Wireless AirPod / Earbud */}
-          <rect x="63" y="118" width="4.5" height="9" rx="2" fill="#f8fafc" stroke="#cbd5e1" strokeWidth="1" />
+          {/* Left Ear with Wireless Tech In-Ear Monitor */}
+          <ellipse cx="69" cy="112" rx="8" ry="12" fill="#e0a97a" stroke="#000000" strokeWidth="3" />
+          <ellipse cx="68" cy="112" rx="4" ry="6" fill="#ffffff" stroke="#000000" strokeWidth="1.5" />
+          <circle cx="68" cy="111" r="1.5" fill="#10b981" />
 
-          {/* Right Ear */}
-          <ellipse cx="172" cy="120" rx="9" ry="13" fill="#d4956a" stroke="#0f172a" strokeWidth="3" />
-          <path d="M174 118 Q171 121 174 124" stroke="#be7e54" strokeWidth="2" fill="none" />
+          {/* Right Ear with Wireless Tech In-Ear Monitor */}
+          <ellipse cx="171" cy="112" rx="8" ry="12" fill="#e0a97a" stroke="#000000" strokeWidth="3" />
+          <ellipse cx="172" cy="112" rx="4" ry="6" fill="#ffffff" stroke="#000000" strokeWidth="1.5" />
+          <circle cx="172" cy="111" r="1.5" fill="#10b981" />
 
-          {/* Authentic Curly Afro-Puffs Textured Hair (Matching Reference Video) */}
+          {/* Smart Modern Textured Fade Hairstyle (Sharp, Clean, Contemporary) */}
           <path
-            d="M60 114
-               C50 106, 48 90, 56 78
-               C50 64, 58 48, 74 44
-               C76 30, 92 22, 108 24
-               C118 16, 134 16, 146 24
-               C160 20, 176 28, 178 42
-               C192 46, 200 62, 194 76
-               C202 88, 198 106, 186 114
-               C180 100, 168 94, 154 94
-               C138 94, 130 88, 114 88
-               C98 88, 88 94, 76 96
-               C68 102, 64 108, 60 114 Z"
-            fill="#18181b"
-            stroke="#0f172a"
+            d="M66 104
+               C64 88, 68 70, 80 58
+               C94 44, 120 40, 142 46
+               C158 50, 172 64, 174 80
+               C176 96, 170 106, 166 108
+               C164 94, 154 84, 142 82
+               C126 80, 110 82, 94 80
+               C82 78, 72 88, 68 98
+               C66 102, 66 104, 66 104 Z"
+            fill="#111827"
+            stroke="#000000"
             strokeWidth="4"
           />
-          {/* Rounded textured curl bumps along the crown */}
-          <circle cx="72" cy="58" r="13" fill="#18181b" stroke="#0f172a" strokeWidth="3" />
-          <circle cx="96" cy="38" r="15" fill="#18181b" stroke="#0f172a" strokeWidth="3" />
-          <circle cx="126" cy="32" r="16" fill="#18181b" stroke="#0f172a" strokeWidth="3" />
-          <circle cx="156" cy="38" r="15" fill="#18181b" stroke="#0f172a" strokeWidth="3" />
-          <circle cx="180" cy="58" r="13" fill="#18181b" stroke="#0f172a" strokeWidth="3" />
-          <circle cx="192" cy="84" r="12" fill="#18181b" stroke="#0f172a" strokeWidth="3" />
-          <circle cx="56" cy="84" r="12" fill="#18181b" stroke="#0f172a" strokeWidth="3" />
 
-          {/* Confident Expressive Eyebrows */}
-          <path d="M84 103 Q98 98 111 102" stroke="#1e2029" strokeWidth="4" strokeLinecap="round" />
-          <path d="M129 102 Q142 98 156 103" stroke="#1e2029" strokeWidth="4" strokeLinecap="round" />
+          {/* Textured Volume Peaks on Top */}
+          <path
+            d="M80 58 Q98 42 118 44 Q136 38 150 48 Q166 46 172 66"
+            stroke="#1f2937"
+            strokeWidth="4"
+            fill="none"
+          />
+          {/* Subtle Cyber Sheen in Hair */}
+          <path
+            d="M96 52 Q116 46 136 48"
+            stroke="#38bdf8"
+            strokeWidth="2"
+            strokeLinecap="round"
+            opacity="0.4"
+          />
 
-          {/* Eyes with Natural Blinking */}
+          {/* Sharp, Determined Eyebrows */}
+          <path d="M84 98 Q98 94 110 98" stroke="#090d16" strokeWidth="4" strokeLinecap="round" />
+          <path d="M130 98 Q142 94 156 98" stroke="#090d16" strokeWidth="4" strokeLinecap="round" />
+
+          {/* Smart Expressive Eyes with Reflections */}
           {isBlinking ? (
             <>
-              <line x1="88" y1="118" x2="108" y2="118" stroke="#0f172a" strokeWidth="3.5" strokeLinecap="round" />
-              <line x1="132" y1="118" x2="152" y2="118" stroke="#0f172a" strokeWidth="3.5" strokeLinecap="round" />
+              <line x1="88" y1="112" x2="108" y2="112" stroke="#090d16" strokeWidth="3.5" strokeLinecap="round" />
+              <line x1="132" y1="112" x2="152" y2="112" stroke="#090d16" strokeWidth="3.5" strokeLinecap="round" />
             </>
           ) : (
             <>
-              <ellipse cx="98" cy="118" rx="7.5" ry="8" fill="#ffffff" stroke="#0f172a" strokeWidth="1.5" />
-              <circle cx="99" cy="118" r="4.8" fill="#1e2029" />
-              <circle cx="101" cy="116" r="1.8" fill="#ffffff" />
+              {/* Left Eye */}
+              <ellipse cx="98" cy="112" rx="7.5" ry="8" fill="#ffffff" stroke="#000000" strokeWidth="2" />
+              <circle cx="99" cy="112" r="4.8" fill="#0f172a" />
+              <circle cx="101" cy="110" r="1.8" fill="#ffffff" />
+              <circle cx="97" cy="114" r="1" fill="#38bdf8" />
 
-              <ellipse cx="142" cy="118" rx="7.5" ry="8" fill="#ffffff" stroke="#0f172a" strokeWidth="1.5" />
-              <circle cx="143" cy="118" r="4.8" fill="#1e2029" />
-              <circle cx="145" cy="116" r="1.8" fill="#ffffff" />
+              {/* Right Eye */}
+              <ellipse cx="142" cy="112" rx="7.5" ry="8" fill="#ffffff" stroke="#000000" strokeWidth="2" />
+              <circle cx="143" cy="112" r="4.8" fill="#0f172a" />
+              <circle cx="145" cy="110" r="1.8" fill="#ffffff" />
+              <circle cx="141" cy="114" r="1" fill="#38bdf8" />
             </>
           )}
 
-          {/* Sleek Modern Glasses Frame */}
-          <rect x="78" y="104" width="38" height="28" rx="8" stroke="#0f172a" strokeWidth="3.5" fill="rgba(255,255,255,0.06)" />
-          <rect x="124" y="104" width="38" height="28" rx="8" stroke="#0f172a" strokeWidth="3.5" fill="rgba(255,255,255,0.06)" />
-          <line x1="116" y1="116" x2="124" y2="116" stroke="#0f172a" strokeWidth="4" />
-          {/* Subtle Glare Sheen on Glasses */}
-          <path d="M84 110 L94 110" stroke="rgba(255,255,255,0.5)" strokeWidth="2.5" strokeLinecap="round" />
-          <path d="M130 110 L140 110" stroke="rgba(255,255,255,0.5)" strokeWidth="2.5" strokeLinecap="round" />
+          {/* Ultra-Sleek Modern Titanium Glasses */}
+          <rect
+            x="80"
+            y="98"
+            width="36"
+            height="26"
+            rx="6"
+            stroke="#020617"
+            strokeWidth="3.5"
+            fill="rgba(56, 189, 248, 0.08)"
+          />
+          <rect
+            x="124"
+            y="98"
+            width="36"
+            height="26"
+            rx="6"
+            stroke="#020617"
+            strokeWidth="3.5"
+            fill="rgba(56, 189, 248, 0.08)"
+          />
+          {/* Bridge */}
+          <line x1="116" y1="110" x2="124" y2="110" stroke="#020617" strokeWidth="3.5" />
+          {/* AR Anti-Reflective Glare Sheen */}
+          <line x1="84" y1="104" x2="96" y2="104" stroke="rgba(255,255,255,0.7)" strokeWidth="2" strokeLinecap="round" />
+          <line x1="128" y1="104" x2="140" y2="104" stroke="rgba(255,255,255,0.7)" strokeWidth="2" strokeLinecap="round" />
 
-          {/* Nose */}
-          <path d="M118 124 Q120 130 122 124" stroke="#a36b44" strokeWidth="2.8" strokeLinecap="round" fill="none" />
+          {/* Refined Nose */}
+          <path d="M118 118 Q120 126 122 120" stroke="#a36b44" strokeWidth="2.8" strokeLinecap="round" fill="none" />
 
-          {/* Animated Mouth (Natural Lip Movement, strictly NO TONGUE) */}
+          {/* Animated Mouth (Natural Lip Movement) */}
           {isMouthOpen ? (
             <g>
-              {/* Natural speaking mouth opening cavity */}
+              {/* Open Mouth with subtle teeth line */}
               <path
-                d={`M104 144 Q120 ${144 + mouthHeight} 136 144 Q120 ${144 - 2} 104 144 Z`}
+                d={`M105 138 Q120 ${138 + mouthOpening} 135 138 Q120 ${138 - 2} 105 138 Z`}
                 fill="#18181b"
-                stroke="#0f172a"
-                strokeWidth="3.5"
-                strokeLinejoin="round"
-              />
-              {/* Clean upper teeth strip */}
-              <path
-                d="M107 144.5 Q120 148 133 144.5 L133 147.5 Q120 151 107 147.5 Z"
-                fill="#ffffff"
-              />
-              {/* Subtle lower lip shadow accent */}
-              <path
-                d={`M112 ${147 + mouthHeight} Q120 ${150 + mouthHeight} 128 ${147 + mouthHeight}`}
-                stroke="#be7e54"
+                stroke="#000000"
                 strokeWidth="2.5"
+              />
+              {/* Clean white upper teeth bar */}
+              <path
+                d="M109 138 Q120 142 131 138"
+                stroke="#ffffff"
+                strokeWidth="2"
                 strokeLinecap="round"
                 fill="none"
               />
             </g>
           ) : (
             <g>
-              {/* Confident Closed Smile Line */}
+              {/* Confident Slight Grin */}
               <path
-                d="M105 145 Q120 154 135 145"
-                stroke="#0f172a"
-                strokeWidth="3.8"
+                d="M106 140 Q120 148 134 140"
+                stroke="#090d16"
+                strokeWidth="3.5"
                 strokeLinecap="round"
                 fill="none"
               />
-              {/* Subtle lower lip accent */}
               <path
-                d="M114 158 Q120 160 126 158"
+                d="M115 150 Q120 152 125 150"
                 stroke="#be7e54"
-                strokeWidth="2.2"
+                strokeWidth="2"
                 strokeLinecap="round"
                 fill="none"
               />
@@ -258,17 +323,17 @@ export const SpeakingAvatar: React.FC<SpeakingAvatarProps> = ({
         </svg>
       </div>
 
-      {/* 2. Comic Speech Bubble with Spoken Subtitles (Matches Screenshot) */}
+      {/* 2. SMART TERMINAL SPEECH BUBBLE (Crisp Neo-Brutalist Presentation) */}
       <div
         style={{
           position: "absolute",
-          left: isLeft ? 430 : "auto",
-          right: isLeft ? "auto" : 430,
+          left: isLeft ? 410 : "auto",
+          right: isLeft ? "auto" : 410,
           bottom: 330,
-          maxWidth: 620,
+          maxWidth: 630,
           background: "#ffffff",
           border: "3.5px solid #000000",
-          borderRadius: 24,
+          borderRadius: 22,
           padding: "16px 26px",
           boxShadow: "5px 5px 0px #000000",
           display: "flex",
@@ -279,7 +344,7 @@ export const SpeakingAvatar: React.FC<SpeakingAvatarProps> = ({
           transformOrigin: isLeft ? "bottom left" : "bottom right",
         }}
       >
-        {/* Comic Bubble Pointer Arrow pointing towards Avatar Mouth */}
+        {/* Pointer Arrow */}
         <div
           style={{
             position: "absolute",
@@ -305,7 +370,7 @@ export const SpeakingAvatar: React.FC<SpeakingAvatarProps> = ({
           }}
         />
 
-        {/* Subtitle Words with Active Purple Pill Highlight */}
+        {/* Subtitle Words with Active Electric Indigo Highlight */}
         {hasText ? (
           visibleWords.map((item, idx) => {
             const isActive = currentTimeSec >= item.startSec && currentTimeSec < item.endSec;
@@ -316,14 +381,13 @@ export const SpeakingAvatar: React.FC<SpeakingAvatarProps> = ({
                   fontFamily,
                   fontSize: isActive ? 34 : 30,
                   fontWeight: 800,
-                  color: isActive ? "#ffffff" : "#111827",
-                  backgroundColor: isActive ? "#7c3aed" : "transparent",
+                  color: isActive ? "#ffffff" : "#0f172a",
+                  backgroundColor: isActive ? "#6366f1" : "transparent",
                   padding: isActive ? "4px 14px" : "0 2px",
-                  borderRadius: isActive ? 12 : 0,
-                  boxShadow: isActive ? "0 4px 12px rgba(124, 58, 237, 0.4)" : "none",
+                  borderRadius: isActive ? 10 : 0,
+                  boxShadow: isActive ? "0 4px 14px rgba(99, 102, 241, 0.45)" : "none",
                   display: "inline-block",
                   letterSpacing: "-0.01em",
-                  transition: "none",
                 }}
               >
                 {item.word}
@@ -334,12 +398,12 @@ export const SpeakingAvatar: React.FC<SpeakingAvatarProps> = ({
           <span
             style={{
               fontFamily,
-              fontSize: 32,
+              fontSize: 30,
               fontWeight: 800,
-              color: "#111827",
+              color: "#0f172a",
             }}
           >
-            System Load Management
+            Drone Science
           </span>
         )}
       </div>

@@ -1,0 +1,737 @@
+[
+  {
+    "word": "Incognito",
+    "startSec": 0,
+    "endSec": 0.32
+  },
+  {
+    "word": "mode",
+    "startSec": 0.32,
+    "endSec": 0.64
+  },
+  {
+    "word": "on",
+    "startSec": 0.63,
+    "endSec": 0.95
+  },
+  {
+    "word": "karke",
+    "startSec": 0.95,
+    "endSec": 1.27
+  },
+  {
+    "word": "sochte",
+    "startSec": 1.26,
+    "endSec": 1.58
+  },
+  {
+    "word": "ho",
+    "startSec": 1.58,
+    "endSec": 1.9
+  },
+  {
+    "word": "koi",
+    "startSec": 1.9,
+    "endSec": 2.22
+  },
+  {
+    "word": "nahi",
+    "startSec": 2.21,
+    "endSec": 2.53
+  },
+  {
+    "word": "dekh",
+    "startSec": 2.53,
+    "endSec": 2.85
+  },
+  {
+    "word": "raha?",
+    "startSec": 2.84,
+    "endSec": 3.16
+  },
+  {
+    "word": "Asal",
+    "startSec": 3.44,
+    "endSec": 3.72
+  },
+  {
+    "word": "me",
+    "startSec": 3.72,
+    "endSec": 4
+  },
+  {
+    "word": "sab",
+    "startSec": 4,
+    "endSec": 4.28
+  },
+  {
+    "word": "dekh",
+    "startSec": 4.28,
+    "endSec": 4.56
+  },
+  {
+    "word": "rahe",
+    "startSec": 4.56,
+    "endSec": 4.84
+  },
+  {
+    "word": "hain!",
+    "startSec": 4.84,
+    "endSec": 5.12
+  },
+  {
+    "word": "Chalo",
+    "startSec": 5.44,
+    "endSec": 5.77
+  },
+  {
+    "word": "iska",
+    "startSec": 5.77,
+    "endSec": 6.1
+  },
+  {
+    "word": "dark",
+    "startSec": 6.11,
+    "endSec": 6.44
+  },
+  {
+    "word": "secret",
+    "startSec": 6.44,
+    "endSec": 6.77
+  },
+  {
+    "word": "samjhte",
+    "startSec": 6.77,
+    "endSec": 7.1
+  },
+  {
+    "word": "hain.",
+    "startSec": 7.11,
+    "endSec": 7.44
+  },
+  {
+    "word": "Incognito",
+    "startSec": 7.92,
+    "endSec": 8.28
+  },
+  {
+    "word": "sirf",
+    "startSec": 8.28,
+    "endSec": 8.64
+  },
+  {
+    "word": "ek",
+    "startSec": 8.64,
+    "endSec": 9
+  },
+  {
+    "word": "kaam",
+    "startSec": 9,
+    "endSec": 9.36
+  },
+  {
+    "word": "karta",
+    "startSec": 9.36,
+    "endSec": 9.72
+  },
+  {
+    "word": "hai",
+    "startSec": 9.72,
+    "endSec": 10.08
+  },
+  {
+    "word": "aapke",
+    "startSec": 10.4,
+    "endSec": 10.72
+  },
+  {
+    "word": "phone",
+    "startSec": 10.72,
+    "endSec": 11.04
+  },
+  {
+    "word": "se",
+    "startSec": 11.04,
+    "endSec": 11.36
+  },
+  {
+    "word": "local",
+    "startSec": 11.36,
+    "endSec": 11.68
+  },
+  {
+    "word": "history",
+    "startSec": 11.68,
+    "endSec": 12
+  },
+  {
+    "word": "aur",
+    "startSec": 12,
+    "endSec": 12.32
+  },
+  {
+    "word": "cookies",
+    "startSec": 12.32,
+    "endSec": 12.64
+  },
+  {
+    "word": "delete",
+    "startSec": 12.64,
+    "endSec": 12.96
+  },
+  {
+    "word": "karta",
+    "startSec": 12.96,
+    "endSec": 13.28
+  },
+  {
+    "word": "hai,",
+    "startSec": 13.28,
+    "endSec": 13.6
+  },
+  {
+    "word": "taaki",
+    "startSec": 13.76,
+    "endSec": 14
+  },
+  {
+    "word": "ghar",
+    "startSec": 14,
+    "endSec": 14.24
+  },
+  {
+    "word": "me",
+    "startSec": 14.23,
+    "endSec": 14.47
+  },
+  {
+    "word": "koi",
+    "startSec": 14.47,
+    "endSec": 14.71
+  },
+  {
+    "word": "phone",
+    "startSec": 14.71,
+    "endSec": 14.95
+  },
+  {
+    "word": "check",
+    "startSec": 14.94,
+    "endSec": 15.18
+  },
+  {
+    "word": "kare",
+    "startSec": 15.18,
+    "endSec": 15.42
+  },
+  {
+    "word": "toh",
+    "startSec": 15.42,
+    "endSec": 15.66
+  },
+  {
+    "word": "use",
+    "startSec": 15.65,
+    "endSec": 15.89
+  },
+  {
+    "word": "kuch",
+    "startSec": 15.89,
+    "endSec": 16.13
+  },
+  {
+    "word": "na",
+    "startSec": 16.13,
+    "endSec": 16.37
+  },
+  {
+    "word": "dikhe.",
+    "startSec": 16.36,
+    "endSec": 16.6
+  },
+  {
+    "word": "Lekin",
+    "startSec": 16.88,
+    "endSec": 17.27
+  },
+  {
+    "word": "internet",
+    "startSec": 17.27,
+    "endSec": 17.66
+  },
+  {
+    "word": "par",
+    "startSec": 17.66,
+    "endSec": 18.05
+  },
+  {
+    "word": "aap",
+    "startSec": 18.05,
+    "endSec": 18.44
+  },
+  {
+    "word": "bilkul",
+    "startSec": 18.43,
+    "endSec": 18.82
+  },
+  {
+    "word": "nange",
+    "startSec": 18.82,
+    "endSec": 19.21
+  },
+  {
+    "word": "ho!",
+    "startSec": 19.21,
+    "endSec": 19.6
+  },
+  {
+    "word": "Pehla,",
+    "startSec": 20,
+    "endSec": 20.48
+  },
+  {
+    "word": "aapka",
+    "startSec": 20.48,
+    "endSec": 20.96
+  },
+  {
+    "word": "WiFi",
+    "startSec": 20.96,
+    "endSec": 21.44
+  },
+  {
+    "word": "router",
+    "startSec": 21.44,
+    "endSec": 21.92
+  },
+  {
+    "word": "uske",
+    "startSec": 22.12,
+    "endSec": 22.39
+  },
+  {
+    "word": "DNS",
+    "startSec": 22.39,
+    "endSec": 22.66
+  },
+  {
+    "word": "logs",
+    "startSec": 22.66,
+    "endSec": 22.93
+  },
+  {
+    "word": "me",
+    "startSec": 22.93,
+    "endSec": 23.2
+  },
+  {
+    "word": "har",
+    "startSec": 23.2,
+    "endSec": 23.47
+  },
+  {
+    "word": "ek",
+    "startSec": 23.47,
+    "endSec": 23.74
+  },
+  {
+    "word": "website",
+    "startSec": 23.74,
+    "endSec": 24.01
+  },
+  {
+    "word": "ka",
+    "startSec": 24.02,
+    "endSec": 24.29
+  },
+  {
+    "word": "naam",
+    "startSec": 24.29,
+    "endSec": 24.56
+  },
+  {
+    "word": "record",
+    "startSec": 24.56,
+    "endSec": 24.83
+  },
+  {
+    "word": "ho",
+    "startSec": 24.83,
+    "endSec": 25.1
+  },
+  {
+    "word": "raha",
+    "startSec": 25.1,
+    "endSec": 25.37
+  },
+  {
+    "word": "hai.",
+    "startSec": 25.37,
+    "endSec": 25.64
+  },
+  {
+    "word": "Dusra,",
+    "startSec": 26.04,
+    "endSec": 26.55
+  },
+  {
+    "word": "aapka",
+    "startSec": 26.55,
+    "endSec": 27.06
+  },
+  {
+    "word": "Internet",
+    "startSec": 27.06,
+    "endSec": 27.57
+  },
+  {
+    "word": "Service",
+    "startSec": 27.58,
+    "endSec": 28.09
+  },
+  {
+    "word": "Provider",
+    "startSec": 28.09,
+    "endSec": 28.6
+  },
+  {
+    "word": "Airtel",
+    "startSec": 28.8,
+    "endSec": 29.08
+  },
+  {
+    "word": "ya",
+    "startSec": 29.08,
+    "endSec": 29.36
+  },
+  {
+    "word": "Jio",
+    "startSec": 29.37,
+    "endSec": 29.65
+  },
+  {
+    "word": "ko",
+    "startSec": 29.65,
+    "endSec": 29.93
+  },
+  {
+    "word": "exact",
+    "startSec": 29.93,
+    "endSec": 30.21
+  },
+  {
+    "word": "pata",
+    "startSec": 30.21,
+    "endSec": 30.49
+  },
+  {
+    "word": "hai",
+    "startSec": 30.5,
+    "endSec": 30.78
+  },
+  {
+    "word": "aap",
+    "startSec": 30.78,
+    "endSec": 31.06
+  },
+  {
+    "word": "kis",
+    "startSec": 31.06,
+    "endSec": 31.34
+  },
+  {
+    "word": "waqt",
+    "startSec": 31.34,
+    "endSec": 31.62
+  },
+  {
+    "word": "kya",
+    "startSec": 31.63,
+    "endSec": 31.91
+  },
+  {
+    "word": "browse",
+    "startSec": 31.91,
+    "endSec": 32.19
+  },
+  {
+    "word": "kar",
+    "startSec": 32.19,
+    "endSec": 32.47
+  },
+  {
+    "word": "rahe",
+    "startSec": 32.47,
+    "endSec": 32.75
+  },
+  {
+    "word": "ho.",
+    "startSec": 32.76,
+    "endSec": 33.04
+  },
+  {
+    "word": "Aur",
+    "startSec": 33.44,
+    "endSec": 33.87
+  },
+  {
+    "word": "teesra,",
+    "startSec": 33.87,
+    "endSec": 34.3
+  },
+  {
+    "word": "websites",
+    "startSec": 34.3,
+    "endSec": 34.73
+  },
+  {
+    "word": "ka",
+    "startSec": 34.74,
+    "endSec": 35.17
+  },
+  {
+    "word": "server",
+    "startSec": 35.17,
+    "endSec": 35.6
+  },
+  {
+    "word": "jo",
+    "startSec": 35.84,
+    "endSec": 36.17
+  },
+  {
+    "word": "aapka",
+    "startSec": 36.17,
+    "endSec": 36.5
+  },
+  {
+    "word": "public",
+    "startSec": 36.49,
+    "endSec": 36.82
+  },
+  {
+    "word": "IP",
+    "startSec": 36.82,
+    "endSec": 37.15
+  },
+  {
+    "word": "aur",
+    "startSec": 37.15,
+    "endSec": 37.48
+  },
+  {
+    "word": "device",
+    "startSec": 37.48,
+    "endSec": 37.81
+  },
+  {
+    "word": "fingerprint",
+    "startSec": 37.8,
+    "endSec": 38.13
+  },
+  {
+    "word": "live",
+    "startSec": 38.13,
+    "endSec": 38.46
+  },
+  {
+    "word": "track",
+    "startSec": 38.46,
+    "endSec": 38.79
+  },
+  {
+    "word": "karta",
+    "startSec": 38.79,
+    "endSec": 39.12
+  },
+  {
+    "word": "hai!",
+    "startSec": 39.11,
+    "endSec": 39.44
+  },
+  {
+    "word": "Even",
+    "startSec": 39.76,
+    "endSec": 40.1
+  },
+  {
+    "word": "Google",
+    "startSec": 40.1,
+    "endSec": 40.44
+  },
+  {
+    "word": "par",
+    "startSec": 40.44,
+    "endSec": 40.78
+  },
+  {
+    "word": "5",
+    "startSec": 40.78,
+    "endSec": 41.12
+  },
+  {
+    "word": "Billion",
+    "startSec": 41.12,
+    "endSec": 41.46
+  },
+  {
+    "word": "Dollars",
+    "startSec": 41.45,
+    "endSec": 41.79
+  },
+  {
+    "word": "ka",
+    "startSec": 41.79,
+    "endSec": 42.13
+  },
+  {
+    "word": "lawsuit",
+    "startSec": 42.13,
+    "endSec": 42.47
+  },
+  {
+    "word": "hua",
+    "startSec": 42.47,
+    "endSec": 42.81
+  },
+  {
+    "word": "tha",
+    "startSec": 42.81,
+    "endSec": 43.15
+  },
+  {
+    "word": "Incognito",
+    "startSec": 43.15,
+    "endSec": 43.49
+  },
+  {
+    "word": "users",
+    "startSec": 43.49,
+    "endSec": 43.83
+  },
+  {
+    "word": "ko",
+    "startSec": 43.83,
+    "endSec": 44.17
+  },
+  {
+    "word": "track",
+    "startSec": 44.16,
+    "endSec": 44.5
+  },
+  {
+    "word": "karne",
+    "startSec": 44.5,
+    "endSec": 44.84
+  },
+  {
+    "word": "ke",
+    "startSec": 44.84,
+    "endSec": 45.18
+  },
+  {
+    "word": "liye!",
+    "startSec": 45.18,
+    "endSec": 45.52
+  },
+  {
+    "word": "Real",
+    "startSec": 45.88,
+    "endSec": 46.27
+  },
+  {
+    "word": "privacy",
+    "startSec": 46.27,
+    "endSec": 46.66
+  },
+  {
+    "word": "chahiye",
+    "startSec": 46.67,
+    "endSec": 47.06
+  },
+  {
+    "word": "toh",
+    "startSec": 47.06,
+    "endSec": 47.45
+  },
+  {
+    "word": "hamesha",
+    "startSec": 47.45,
+    "endSec": 47.84
+  },
+  {
+    "word": "trustworthy",
+    "startSec": 47.84,
+    "endSec": 48.23
+  },
+  {
+    "word": "VPN",
+    "startSec": 48.24,
+    "endSec": 48.63
+  },
+  {
+    "word": "ya",
+    "startSec": 48.63,
+    "endSec": 49.02
+  },
+  {
+    "word": "Tor",
+    "startSec": 49.02,
+    "endSec": 49.41
+  },
+  {
+    "word": "use",
+    "startSec": 49.41,
+    "endSec": 49.8
+  },
+  {
+    "word": "karo.",
+    "startSec": 49.81,
+    "endSec": 50.2
+  },
+  {
+    "word": "Aise",
+    "startSec": 50.56,
+    "endSec": 50.88
+  },
+  {
+    "word": "hi",
+    "startSec": 50.88,
+    "endSec": 51.2
+  },
+  {
+    "word": "tech",
+    "startSec": 51.2,
+    "endSec": 51.52
+  },
+  {
+    "word": "secrets",
+    "startSec": 51.52,
+    "endSec": 51.84
+  },
+  {
+    "word": "ke",
+    "startSec": 51.84,
+    "endSec": 52.16
+  },
+  {
+    "word": "liye",
+    "startSec": 52.16,
+    "endSec": 52.48
+  },
+  {
+    "word": "follow",
+    "startSec": 52.48,
+    "endSec": 52.8
+  },
+  {
+    "word": "karo",
+    "startSec": 52.8,
+    "endSec": 53.12
+  },
+  {
+    "word": "crackwithcode!",
+    "startSec": 53.12,
+    "endSec": 53.44
+  }
+]

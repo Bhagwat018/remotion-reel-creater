@@ -1,0 +1,572 @@
+[
+  {
+    "word": "Roz",
+    "startSec": 0,
+    "endSec": 0.444
+  },
+  {
+    "word": "subah",
+    "startSec": 0.444,
+    "endSec": 0.889
+  },
+  {
+    "word": "9:15",
+    "startSec": 0.889,
+    "endSec": 1.333
+  },
+  {
+    "word": "pe",
+    "startSec": 1.333,
+    "endSec": 1.778
+  },
+  {
+    "word": "ek",
+    "startSec": 1.778,
+    "endSec": 2.222
+  },
+  {
+    "word": "aisa",
+    "startSec": 2.222,
+    "endSec": 2.667
+  },
+  {
+    "word": "bazaar",
+    "startSec": 2.667,
+    "endSec": 3.111
+  },
+  {
+    "word": "khulta",
+    "startSec": 3.111,
+    "endSec": 3.556
+  },
+  {
+    "word": "hai",
+    "startSec": 3.556,
+    "endSec": 4
+  },
+  {
+    "word": "jahan",
+    "startSec": 4,
+    "endSec": 4.243
+  },
+  {
+    "word": "roz",
+    "startSec": 4.243,
+    "endSec": 4.486
+  },
+  {
+    "word": "ek",
+    "startSec": 4.486,
+    "endSec": 4.729
+  },
+  {
+    "word": "lakh",
+    "startSec": 4.729,
+    "endSec": 4.971
+  },
+  {
+    "word": "crore",
+    "startSec": 4.971,
+    "endSec": 5.214
+  },
+  {
+    "word": "ka",
+    "startSec": 5.214,
+    "endSec": 5.457
+  },
+  {
+    "word": "sauda",
+    "startSec": 5.457,
+    "endSec": 5.7
+  },
+  {
+    "word": "hota",
+    "startSec": 5.7,
+    "endSec": 5.943
+  },
+  {
+    "word": "hai",
+    "startSec": 5.943,
+    "endSec": 6.186
+  },
+  {
+    "word": "par",
+    "startSec": 6.186,
+    "endSec": 6.429
+  },
+  {
+    "word": "dukaan",
+    "startSec": 6.429,
+    "endSec": 6.671
+  },
+  {
+    "word": "ek",
+    "startSec": 6.671,
+    "endSec": 6.914
+  },
+  {
+    "word": "bhi",
+    "startSec": 6.914,
+    "endSec": 7.157
+  },
+  {
+    "word": "nahi!",
+    "startSec": 7.157,
+    "endSec": 7.4
+  },
+  {
+    "word": "Aakhir",
+    "startSec": 7.4,
+    "endSec": 7.918
+  },
+  {
+    "word": "ye",
+    "startSec": 7.918,
+    "endSec": 8.436
+  },
+  {
+    "word": "Share",
+    "startSec": 8.436,
+    "endSec": 8.955
+  },
+  {
+    "word": "Market",
+    "startSec": 8.955,
+    "endSec": 9.473
+  },
+  {
+    "word": "ka",
+    "startSec": 9.473,
+    "endSec": 9.991
+  },
+  {
+    "word": "invisible",
+    "startSec": 9.991,
+    "endSec": 10.509
+  },
+  {
+    "word": "system",
+    "startSec": 10.509,
+    "endSec": 11.027
+  },
+  {
+    "word": "kaam",
+    "startSec": 11.027,
+    "endSec": 11.545
+  },
+  {
+    "word": "kaise",
+    "startSec": 11.545,
+    "endSec": 12.064
+  },
+  {
+    "word": "karta",
+    "startSec": 12.064,
+    "endSec": 12.582
+  },
+  {
+    "word": "hai?",
+    "startSec": 12.582,
+    "endSec": 13.1
+  },
+  {
+    "word": "Jaise",
+    "startSec": 13.1,
+    "endSec": 13.589
+  },
+  {
+    "word": "hi",
+    "startSec": 13.589,
+    "endSec": 14.078
+  },
+  {
+    "word": "aap",
+    "startSec": 14.078,
+    "endSec": 14.567
+  },
+  {
+    "word": "BUY",
+    "startSec": 14.567,
+    "endSec": 15.056
+  },
+  {
+    "word": "dabate",
+    "startSec": 15.056,
+    "endSec": 15.544
+  },
+  {
+    "word": "ho",
+    "startSec": 15.544,
+    "endSec": 16.033
+  },
+  {
+    "word": "aapka",
+    "startSec": 16.033,
+    "endSec": 16.522
+  },
+  {
+    "word": "broker",
+    "startSec": 16.522,
+    "endSec": 17.011
+  },
+  {
+    "word": "nahi",
+    "startSec": 17.011,
+    "endSec": 17.5
+  },
+  {
+    "word": "NSE",
+    "startSec": 17.5,
+    "endSec": 17.905
+  },
+  {
+    "word": "aur",
+    "startSec": 17.905,
+    "endSec": 18.311
+  },
+  {
+    "word": "BSE",
+    "startSec": 18.311,
+    "endSec": 18.716
+  },
+  {
+    "word": "ka",
+    "startSec": 18.716,
+    "endSec": 19.121
+  },
+  {
+    "word": "high-speed",
+    "startSec": 19.121,
+    "endSec": 19.526
+  },
+  {
+    "word": "matching",
+    "startSec": 19.526,
+    "endSec": 19.932
+  },
+  {
+    "word": "engine",
+    "startSec": 19.932,
+    "endSec": 20.337
+  },
+  {
+    "word": "sirf",
+    "startSec": 20.337,
+    "endSec": 20.742
+  },
+  {
+    "word": "0.001",
+    "startSec": 20.742,
+    "endSec": 21.147
+  },
+  {
+    "word": "second",
+    "startSec": 21.147,
+    "endSec": 21.553
+  },
+  {
+    "word": "me",
+    "startSec": 21.553,
+    "endSec": 21.958
+  },
+  {
+    "word": "seller",
+    "startSec": 21.958,
+    "endSec": 22.363
+  },
+  {
+    "word": "ke",
+    "startSec": 22.363,
+    "endSec": 22.768
+  },
+  {
+    "word": "sath",
+    "startSec": 22.768,
+    "endSec": 23.174
+  },
+  {
+    "word": "aapka",
+    "startSec": 23.174,
+    "endSec": 23.579
+  },
+  {
+    "word": "order",
+    "startSec": 23.579,
+    "endSec": 23.984
+  },
+  {
+    "word": "match",
+    "startSec": 23.984,
+    "endSec": 24.389
+  },
+  {
+    "word": "karta",
+    "startSec": 24.389,
+    "endSec": 24.795
+  },
+  {
+    "word": "hai!",
+    "startSec": 24.795,
+    "endSec": 25.2
+  },
+  {
+    "word": "Agla",
+    "startSec": 25.2,
+    "endSec": 25.63
+  },
+  {
+    "word": "step",
+    "startSec": 25.63,
+    "endSec": 26.06
+  },
+  {
+    "word": "SEBI",
+    "startSec": 26.06,
+    "endSec": 26.49
+  },
+  {
+    "word": "ka",
+    "startSec": 26.49,
+    "endSec": 26.92
+  },
+  {
+    "word": "radar",
+    "startSec": 26.92,
+    "endSec": 27.35
+  },
+  {
+    "word": "system",
+    "startSec": 27.35,
+    "endSec": 27.78
+  },
+  {
+    "word": "fraud",
+    "startSec": 27.78,
+    "endSec": 28.21
+  },
+  {
+    "word": "check",
+    "startSec": 28.21,
+    "endSec": 28.64
+  },
+  {
+    "word": "karta",
+    "startSec": 28.64,
+    "endSec": 29.07
+  },
+  {
+    "word": "hai",
+    "startSec": 29.07,
+    "endSec": 29.5
+  },
+  {
+    "word": "aur",
+    "startSec": 29.5,
+    "endSec": 29.836
+  },
+  {
+    "word": "T+1",
+    "startSec": 29.836,
+    "endSec": 30.171
+  },
+  {
+    "word": "settlement",
+    "startSec": 30.171,
+    "endSec": 30.507
+  },
+  {
+    "word": "me",
+    "startSec": 30.507,
+    "endSec": 30.843
+  },
+  {
+    "word": "shares",
+    "startSec": 30.843,
+    "endSec": 31.179
+  },
+  {
+    "word": "seedha",
+    "startSec": 31.179,
+    "endSec": 31.514
+  },
+  {
+    "word": "aapke",
+    "startSec": 31.514,
+    "endSec": 31.85
+  },
+  {
+    "word": "Demat",
+    "startSec": 31.85,
+    "endSec": 32.186
+  },
+  {
+    "word": "account",
+    "startSec": 32.186,
+    "endSec": 32.521
+  },
+  {
+    "word": "me",
+    "startSec": 32.521,
+    "endSec": 32.857
+  },
+  {
+    "word": "deposit",
+    "startSec": 32.857,
+    "endSec": 33.193
+  },
+  {
+    "word": "ho",
+    "startSec": 33.193,
+    "endSec": 33.529
+  },
+  {
+    "word": "jaate",
+    "startSec": 33.529,
+    "endSec": 33.864
+  },
+  {
+    "word": "hain!",
+    "startSec": 33.864,
+    "endSec": 34.2
+  },
+  {
+    "word": "Aapke",
+    "startSec": 34.2,
+    "endSec": 34.531
+  },
+  {
+    "word": "ghar",
+    "startSec": 34.531,
+    "endSec": 34.863
+  },
+  {
+    "word": "me",
+    "startSec": 34.863,
+    "endSec": 35.194
+  },
+  {
+    "word": "share",
+    "startSec": 35.194,
+    "endSec": 35.525
+  },
+  {
+    "word": "market",
+    "startSec": 35.525,
+    "endSec": 35.856
+  },
+  {
+    "word": "ko",
+    "startSec": 35.856,
+    "endSec": 36.188
+  },
+  {
+    "word": "kya",
+    "startSec": 36.188,
+    "endSec": 36.519
+  },
+  {
+    "word": "bolte",
+    "startSec": 36.519,
+    "endSec": 36.85
+  },
+  {
+    "word": "hain",
+    "startSec": 36.85,
+    "endSec": 37.181
+  },
+  {
+    "word": "Jua",
+    "startSec": 37.181,
+    "endSec": 37.513
+  },
+  {
+    "word": "ya",
+    "startSec": 37.513,
+    "endSec": 37.844
+  },
+  {
+    "word": "Real",
+    "startSec": 37.844,
+    "endSec": 38.175
+  },
+  {
+    "word": "Investment?",
+    "startSec": 38.175,
+    "endSec": 38.506
+  },
+  {
+    "word": "Comment",
+    "startSec": 38.506,
+    "endSec": 38.837
+  },
+  {
+    "word": "karke",
+    "startSec": 38.837,
+    "endSec": 39.169
+  },
+  {
+    "word": "batao",
+    "startSec": 39.169,
+    "endSec": 39.5
+  },
+  {
+    "word": "aur",
+    "startSec": 39.5,
+    "endSec": 39.905
+  },
+  {
+    "word": "aise",
+    "startSec": 39.905,
+    "endSec": 40.31
+  },
+  {
+    "word": "hi",
+    "startSec": 40.31,
+    "endSec": 40.715
+  },
+  {
+    "word": "smart",
+    "startSec": 40.715,
+    "endSec": 41.12
+  },
+  {
+    "word": "market",
+    "startSec": 41.12,
+    "endSec": 41.525
+  },
+  {
+    "word": "secrets",
+    "startSec": 41.525,
+    "endSec": 41.93
+  },
+  {
+    "word": "ke",
+    "startSec": 41.93,
+    "endSec": 42.335
+  },
+  {
+    "word": "liye",
+    "startSec": 42.335,
+    "endSec": 42.74
+  },
+  {
+    "word": "follow",
+    "startSec": 42.74,
+    "endSec": 43.145
+  },
+  {
+    "word": "karo",
+    "startSec": 43.145,
+    "endSec": 43.55
+  },
+  {
+    "word": "techwith",
+    "startSec": 43.55,
+    "endSec": 43.955
+  },
+  {
+    "word": "genz!",
+    "startSec": 43.955,
+    "endSec": 44.36
+  }
+]

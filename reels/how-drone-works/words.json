@@ -1,0 +1,477 @@
+[
+  {
+    "word": "Have",
+    "startSec": 0.08,
+    "endSec": 0.44
+  },
+  {
+    "word": "you",
+    "startSec": 0.44,
+    "endSec": 0.78
+  },
+  {
+    "word": "ever",
+    "startSec": 0.78,
+    "endSec": 1.21
+  },
+  {
+    "word": "thought",
+    "startSec": 1.21,
+    "endSec": 2
+  },
+  {
+    "word": "how",
+    "startSec": 2,
+    "endSec": 2.23
+  },
+  {
+    "word": "a",
+    "startSec": 2.23,
+    "endSec": 2.3
+  },
+  {
+    "word": "drone",
+    "startSec": 2.3,
+    "endSec": 2.68
+  },
+  {
+    "word": "is",
+    "startSec": 2.68,
+    "endSec": 2.94
+  },
+  {
+    "word": "perfectly",
+    "startSec": 2.94,
+    "endSec": 3.52
+  },
+  {
+    "word": "balanced",
+    "startSec": 3.52,
+    "endSec": 4.14
+  },
+  {
+    "word": "in",
+    "startSec": 4.14,
+    "endSec": 4.29
+  },
+  {
+    "word": "the",
+    "startSec": 4.29,
+    "endSec": 4.52
+  },
+  {
+    "word": "sky?",
+    "startSec": 4.52,
+    "endSec": 4.84
+  },
+  {
+    "word": "There",
+    "startSec": 5.24,
+    "endSec": 5.32
+  },
+  {
+    "word": "are",
+    "startSec": 5.32,
+    "endSec": 5.47
+  },
+  {
+    "word": "four",
+    "startSec": 5.47,
+    "endSec": 5.75
+  },
+  {
+    "word": "brushless",
+    "startSec": 5.75,
+    "endSec": 6.43
+  },
+  {
+    "word": "motors",
+    "startSec": 6.43,
+    "endSec": 6.96
+  },
+  {
+    "word": "in",
+    "startSec": 6.96,
+    "endSec": 7.04
+  },
+  {
+    "word": "a",
+    "startSec": 7.04,
+    "endSec": 7.11
+  },
+  {
+    "word": "drone.",
+    "startSec": 7.11,
+    "endSec": 7.76
+  },
+  {
+    "word": "The",
+    "startSec": 7.96,
+    "endSec": 8.04
+  },
+  {
+    "word": "ESC",
+    "startSec": 8.04,
+    "endSec": 8.24
+  },
+  {
+    "word": "controllers",
+    "startSec": 8.24,
+    "endSec": 9.13
+  },
+  {
+    "word": "are",
+    "startSec": 9.13,
+    "endSec": 9.37
+  },
+  {
+    "word": "connected",
+    "startSec": 9.37,
+    "endSec": 10.14
+  },
+  {
+    "word": "to",
+    "startSec": 10.14,
+    "endSec": 10.16
+  },
+  {
+    "word": "it.",
+    "startSec": 10.16,
+    "endSec": 10.16
+  },
+  {
+    "word": "Flight",
+    "startSec": 10.52,
+    "endSec": 10.67
+  },
+  {
+    "word": "controller,",
+    "startSec": 10.67,
+    "endSec": 11.56
+  },
+  {
+    "word": "this",
+    "startSec": 11.56,
+    "endSec": 11.86
+  },
+  {
+    "word": "is",
+    "startSec": 11.86,
+    "endSec": 12.04
+  },
+  {
+    "word": "the",
+    "startSec": 12.04,
+    "endSec": 12.28
+  },
+  {
+    "word": "real",
+    "startSec": 12.28,
+    "endSec": 12.59
+  },
+  {
+    "word": "brain.",
+    "startSec": 12.59,
+    "endSec": 13.24
+  },
+  {
+    "word": "The",
+    "startSec": 13.6,
+    "endSec": 13.64
+  },
+  {
+    "word": "gyroscope",
+    "startSec": 13.64,
+    "endSec": 14.2
+  },
+  {
+    "word": "and",
+    "startSec": 14.2,
+    "endSec": 14.44
+  },
+  {
+    "word": "accelerometer",
+    "startSec": 14.44,
+    "endSec": 15.52
+  },
+  {
+    "word": "send",
+    "startSec": 15.52,
+    "endSec": 15.82
+  },
+  {
+    "word": "1,000",
+    "startSec": 15.82,
+    "endSec": 16.67
+  },
+  {
+    "word": "times",
+    "startSec": 16.67,
+    "endSec": 17.02
+  },
+  {
+    "word": "per",
+    "startSec": 17.02,
+    "endSec": 17.22
+  },
+  {
+    "word": "second",
+    "startSec": 17.22,
+    "endSec": 17.58
+  },
+  {
+    "word": "data.",
+    "startSec": 17.58,
+    "endSec": 17.92
+  },
+  {
+    "word": "The",
+    "startSec": 18.24,
+    "endSec": 18.26
+  },
+  {
+    "word": "PID",
+    "startSec": 18.26,
+    "endSec": 18.47
+  },
+  {
+    "word": "algorithm",
+    "startSec": 18.47,
+    "endSec": 19.21
+  },
+  {
+    "word": "adjusts",
+    "startSec": 19.21,
+    "endSec": 19.81
+  },
+  {
+    "word": "every",
+    "startSec": 19.81,
+    "endSec": 20.24
+  },
+  {
+    "word": "motor",
+    "startSec": 20.24,
+    "endSec": 20.71
+  },
+  {
+    "word": "in",
+    "startSec": 20.71,
+    "endSec": 20.84
+  },
+  {
+    "word": "real",
+    "startSec": 20.84,
+    "endSec": 21.19
+  },
+  {
+    "word": "time.",
+    "startSec": 21.19,
+    "endSec": 21.6
+  },
+  {
+    "word": "If",
+    "startSec": 21.92,
+    "endSec": 21.99
+  },
+  {
+    "word": "you",
+    "startSec": 21.99,
+    "endSec": 22
+  },
+  {
+    "word": "want",
+    "startSec": 22,
+    "endSec": 22.3
+  },
+  {
+    "word": "to",
+    "startSec": 22.3,
+    "endSec": 22.46
+  },
+  {
+    "word": "go",
+    "startSec": 22.46,
+    "endSec": 22.7
+  },
+  {
+    "word": "ahead,",
+    "startSec": 22.7,
+    "endSec": 23.1
+  },
+  {
+    "word": "then",
+    "startSec": 23.1,
+    "endSec": 23.27
+  },
+  {
+    "word": "the",
+    "startSec": 23.27,
+    "endSec": 23.33
+  },
+  {
+    "word": "rear",
+    "startSec": 23.33,
+    "endSec": 23.46
+  },
+  {
+    "word": "motors",
+    "startSec": 23.46,
+    "endSec": 23.68
+  },
+  {
+    "word": "are",
+    "startSec": 23.68,
+    "endSec": 23.99
+  },
+  {
+    "word": "fast",
+    "startSec": 23.99,
+    "endSec": 24.44
+  },
+  {
+    "word": "and",
+    "startSec": 24.44,
+    "endSec": 24.63
+  },
+  {
+    "word": "the",
+    "startSec": 24.63,
+    "endSec": 24.86
+  },
+  {
+    "word": "front",
+    "startSec": 24.86,
+    "endSec": 25.13
+  },
+  {
+    "word": "motors",
+    "startSec": 25.13,
+    "endSec": 25.54
+  },
+  {
+    "word": "are",
+    "startSec": 25.54,
+    "endSec": 25.7
+  },
+  {
+    "word": "slow.",
+    "startSec": 25.7,
+    "endSec": 26.16
+  },
+  {
+    "word": "Direction",
+    "startSec": 26.48,
+    "endSec": 26.85
+  },
+  {
+    "word": "only",
+    "startSec": 26.85,
+    "endSec": 27.26
+  },
+  {
+    "word": "controls",
+    "startSec": 27.26,
+    "endSec": 27.83
+  },
+  {
+    "word": "the",
+    "startSec": 27.83,
+    "endSec": 28.01
+  },
+  {
+    "word": "RPM",
+    "startSec": 28.01,
+    "endSec": 28.24
+  },
+  {
+    "word": "difference.",
+    "startSec": 28.24,
+    "endSec": 29.28
+  },
+  {
+    "word": "GPS",
+    "startSec": 29.72,
+    "endSec": 29.9
+  },
+  {
+    "word": "module",
+    "startSec": 29.9,
+    "endSec": 30.42
+  },
+  {
+    "word": "signals",
+    "startSec": 30.42,
+    "endSec": 31.02
+  },
+  {
+    "word": "lose",
+    "startSec": 31.02,
+    "endSec": 31.36
+  },
+  {
+    "word": "on",
+    "startSec": 31.36,
+    "endSec": 31.53
+  },
+  {
+    "word": "drone",
+    "startSec": 31.53,
+    "endSec": 31.96
+  },
+  {
+    "word": "automatically",
+    "startSec": 31.96,
+    "endSec": 33.12
+  },
+  {
+    "word": "on",
+    "startSec": 33.12,
+    "endSec": 33.29
+  },
+  {
+    "word": "home",
+    "startSec": 33.29,
+    "endSec": 33.64
+  },
+  {
+    "word": "coordinates.",
+    "startSec": 33.64,
+    "endSec": 34.88
+  },
+  {
+    "word": "This",
+    "startSec": 35.2,
+    "endSec": 35.28
+  },
+  {
+    "word": "is",
+    "startSec": 35.28,
+    "endSec": 35.28
+  },
+  {
+    "word": "the",
+    "startSec": 35.28,
+    "endSec": 35.48
+  },
+  {
+    "word": "return",
+    "startSec": 35.48,
+    "endSec": 35.98
+  },
+  {
+    "word": "to",
+    "startSec": 35.98,
+    "endSec": 36.02
+  },
+  {
+    "word": "home",
+    "startSec": 36.02,
+    "endSec": 36.29
+  },
+  {
+    "word": "technology.",
+    "startSec": 36.29,
+    "endSec": 37.24
+  }
+]

@@ -23,11 +23,14 @@ export const NeoTopPill: React.FC<NeoTopPillProps> = ({
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const entrance = spring({
-    frame: frame - delayFrames,
-    fps,
-    config: { damping: 14, stiffness: 140 },
-  });
+  const entrance =
+    delayFrames === 0
+      ? 1
+      : spring({
+          frame: frame - delayFrames,
+          fps,
+          config: { damping: 14, stiffness: 140 },
+        });
 
   const selectedColor = COLOR_MAP[color] || COLOR_MAP.orange;
 

@@ -90,9 +90,10 @@ async function postReel() {
 
   try {
     await page.goto("https://www.instagram.com/", {
-      waitUntil: "networkidle",
+      waitUntil: "domcontentloaded",
       timeout: 45000,
     });
+    await page.waitForTimeout(3000);
 
     // Check if logged in
     const isLoginScreen = await page.$("input[name='username']");
@@ -177,6 +178,89 @@ async function postReel() {
     ).first();
     await nextBtn1.click();
     await page.waitForTimeout(2000);
+
+    // 7a. Configure Cover Photo (Avoid default blank/white frame 0)
+    console.log("🖼️ [5b] Setting high-CTR cover photo (no blank frame)...");
+    try {
+      // Find candidate cover image on disk
+      const candidateCoverPaths = [
+        path.join(rootDir, "out", `${path.basename(slug, ".mp4")}-cover.jpg`),
+        path.join(rootDir, "out", `${slug}-cover.jpg`),
+        "/tmp/review_market/frame_01.jpg",
+        path.join(rootDir, "public", "reels", slug, "cover.jpg"),
+      ];
+      const validCover = candidateCoverPaths.find((p) => fs.existsSync(p));
+
+      // Click "Cover photo" tab if present
+      const coverTab = page.locator(
+        "div[role='dialog'] span:has-text('Cover photo'), div[role='dialog'] div:text-is('Cover photo'), div[role='dialog'] button:has-text('Cover photo')"
+      ).first();
+      if (await coverTab.count() > 0) {
+        await coverTab.click();
+        await page.waitForTimeout(1000);
+      }
+
+      // Try uploading custom cover from computer
+      let uploadedCover = false;
+      if (validCover) {
+        const coverFileInput = page.locator(
+          "div[role='dialog'] input[type='file'][accept*='image'], div[role='dialog'] input[type='file']"
+        ).first();
+
+        const selectCompBtn = page.locator(
+          "div[role='dialog'] button:has-text('Select from computer'), div[role='dialog'] span:has-text('Select from computer')"
+        ).first();
+
+        if (await coverFileInput.count() > 0) {
+          console.log(`📤 Uploading custom cover image: ${validCover}`);
+          await coverFileInput.setInputFiles(validCover);
+          uploadedCover = true;
+          await page.waitForTimeout(2000);
+        } else if (await selectCompBtn.count() > 0) {
+          const [fileChooser] = await Promise.all([
+            page.waitForEvent("filechooser", { timeout: 4000 }).catch(() => null),
+            selectCompBtn.click(),
+          ]);
+          if (fileChooser) {
+            console.log(`📤 Setting file via filechooser: ${validCover}`);
+            await fileChooser.setFiles(validCover);
+            uploadedCover = true;
+            await page.waitForTimeout(2000);
+          }
+        }
+      }
+
+      // Also adjust video scrubber timeline to ~2-3 seconds if range input or filmstrip is present
+      const rangeInput = page.locator("div[role='dialog'] input[type='range']").first();
+      if (await rangeInput.count() > 0) {
+        const maxVal = parseFloat((await rangeInput.getAttribute("max")) || "100");
+        const targetVal = String(Math.round(maxVal * 0.15)); // ~15% into video
+        await rangeInput.evaluate((el, v) => {
+          el.value = v;
+          el.dispatchEvent(new Event("input", { bubbles: true }));
+          el.dispatchEvent(new Event("change", { bubbles: true }));
+        }, targetVal);
+        console.log(`⏱️ Scrubber moved to frame timestamp at ${targetVal}/${maxVal}`);
+        await page.waitForTimeout(1000);
+      } else {
+        const filmstrip = page.locator(
+          "div[role='dialog'] div[role='slider'], div[role='dialog'] div[aria-label*='timeline'], div[role='dialog'] div[aria-label*='cover']"
+        ).first();
+        if (await filmstrip.count() > 0) {
+          const box = await filmstrip.boundingBox();
+          if (box) {
+            await page.mouse.click(box.x + box.width * 0.20, box.y + box.height * 0.5);
+            console.log("⏱️ Clicked filmstrip at 20% mark to select frame with UI");
+            await page.waitForTimeout(1000);
+          }
+        }
+      }
+
+      await page.screenshot({ path: path.join(rootDir, "out", "insta_cover_selected.png") });
+      console.log("✅ Cover photo configured successfully.");
+    } catch (coverErr) {
+      console.warn("⚠️ Could not adjust cover photo:", coverErr.message);
+    }
 
     // 7. Click Next #2 (from Cover / Filter Screen)
     const nextBtn2 = page.locator(

@@ -67,6 +67,8 @@ export const ArchitectureFlow: React.FC<ArchitectureFlowProps> = ({
 
         const isLast = index === nodes.length - 1;
         const accent = node.accentColor || "#38bdf8";
+        const title = node.title || (node as any).label || "";
+        const subtitle = node.subtitle || (node as any).sub || "";
 
         return (
           <React.Fragment key={node.id || index}>
@@ -130,11 +132,11 @@ export const ArchitectureFlow: React.FC<ArchitectureFlowProps> = ({
                         letterSpacing: "-0.01em",
                       }}
                     >
-                      {node.title}
+                      {title}
                     </span>
                   </div>
 
-                  {node.subtitle && (
+                  {subtitle && (
                     <span
                       style={{
                         fontFamily: theme.typography.mono,
@@ -143,7 +145,7 @@ export const ArchitectureFlow: React.FC<ArchitectureFlowProps> = ({
                         color: "#64748b",
                       }}
                     >
-                      {node.subtitle}
+                      {subtitle}
                     </span>
                   )}
                 </div>

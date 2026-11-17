@@ -3,6 +3,8 @@ import { CompareSceneProps } from "../schema";
 import { SceneLayout } from "../components/SceneLayout";
 import { NeoComparison } from "../components/neo/NeoComparison";
 import { MotionDirection } from "../lib/directionalMotion";
+import { IncognitoPrivacyMatrixScene } from "./incognito/IncognitoPrivacyMatrixScene";
+import { BarcodeVsQrScene } from "./qrcode/BarcodeVsQrScene";
 
 export const CompareScene: React.FC<
   CompareSceneProps & {
@@ -17,6 +19,9 @@ export const CompareScene: React.FC<
     durationInFrames: number;
     direction?: MotionDirection;
     id?: string;
+    brollVideo?: string;
+    bgImage?: string;
+    slug?: string;
   }
 > = ({
   id,
@@ -33,8 +38,42 @@ export const CompareScene: React.FC<
   rightItems,
   leftBadge,
   rightBadge,
+  brollVideo,
+  bgImage,
+  slug,
   durationInFrames,
 }) => {
+  // Bespoke scene for Barcode vs QR Superpower
+  if (
+    slug === "how-qr-code-error-correction-works" ||
+    (headline && (headline.includes("BARCODE VS") || headline.includes("QR SUPERPOWER")))
+  ) {
+    return (
+      <BarcodeVsQrScene
+        id={id}
+        leadIn={leadIn}
+        headline={headline}
+        brollVideo={brollVideo}
+        durationInFrames={durationInFrames}
+      />
+    );
+  }
+
+  // Bespoke scene for Incognito Local Lie vs Real Privacy
+  if (
+    slug === "the-truth-about-incognito-mode" ||
+    (headline && (headline.includes("LOCAL HISTORY") || headline.includes("INCOGNITO ILLUSION")))
+  ) {
+    return (
+      <IncognitoPrivacyMatrixScene
+        id={id}
+        leadIn={leadIn}
+        headline={headline}
+        brollVideo={brollVideo}
+        durationInFrames={durationInFrames}
+      />
+    );
+  }
   const parseSide = (
     obj?: Record<string, unknown> | null,
     labelStr?: string,
@@ -63,6 +102,8 @@ export const CompareScene: React.FC<
       direction={direction}
       leadIn={leadIn || "SIDE-BY-SIDE"}
       headline={headline}
+      brollVideo={brollVideo}
+      bgImage={bgImage}
       durationInFrames={durationInFrames}
     >
       <div

@@ -51,6 +51,9 @@ const reelWordsFile = path.join(reelsDir, "words.json");
 
 // Auto-generate voice and words if voice.mp3 is missing or stale
 let needsVoice = !fs.existsSync(pubVoiceFile) && !fs.existsSync(reelVoiceFile);
+if (process.argv.includes("--no-voice")) {
+  needsVoice = false;
+}
 if (!needsVoice && (fs.existsSync(pubWordsFile) || fs.existsSync(reelWordsFile))) {
   try {
     const wPath = fs.existsSync(pubWordsFile) ? pubWordsFile : reelWordsFile;

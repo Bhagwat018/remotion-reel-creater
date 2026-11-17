@@ -1,0 +1,517 @@
+[
+  {
+    "word": "Aap",
+    "startSec": 0,
+    "endSec": 0.357
+  },
+  {
+    "word": "nakli",
+    "startSec": 0.357,
+    "endSec": 0.714
+  },
+  {
+    "word": "note",
+    "startSec": 0.714,
+    "endSec": 1.071
+  },
+  {
+    "word": "me",
+    "startSec": 1.071,
+    "endSec": 1.429
+  },
+  {
+    "word": "dhoka",
+    "startSec": 1.429,
+    "endSec": 1.786
+  },
+  {
+    "word": "khaa",
+    "startSec": 1.786,
+    "endSec": 2.143
+  },
+  {
+    "word": "sakte",
+    "startSec": 2.143,
+    "endSec": 2.5
+  },
+  {
+    "word": "ho,",
+    "startSec": 2.5,
+    "endSec": 2.857
+  },
+  {
+    "word": "par",
+    "startSec": 2.857,
+    "endSec": 3.214
+  },
+  {
+    "word": "ATM",
+    "startSec": 3.214,
+    "endSec": 3.571
+  },
+  {
+    "word": "machine",
+    "startSec": 3.571,
+    "endSec": 3.929
+  },
+  {
+    "word": "sirf",
+    "startSec": 3.929,
+    "endSec": 4.286
+  },
+  {
+    "word": "0.2",
+    "startSec": 4.286,
+    "endSec": 4.643
+  },
+  {
+    "word": "second",
+    "startSec": 4.643,
+    "endSec": 5
+  },
+  {
+    "word": "me",
+    "startSec": 5,
+    "endSec": 5.357
+  },
+  {
+    "word": "use",
+    "startSec": 5.357,
+    "endSec": 5.714
+  },
+  {
+    "word": "bahar",
+    "startSec": 5.714,
+    "endSec": 6.071
+  },
+  {
+    "word": "kaise",
+    "startSec": 6.071,
+    "endSec": 6.429
+  },
+  {
+    "word": "phek",
+    "startSec": 6.429,
+    "endSec": 6.786
+  },
+  {
+    "word": "deti",
+    "startSec": 6.786,
+    "endSec": 7.143
+  },
+  {
+    "word": "hai?",
+    "startSec": 7.143,
+    "endSec": 7.5
+  },
+  {
+    "word": "Kyunki",
+    "startSec": 7.5,
+    "endSec": 7.93
+  },
+  {
+    "word": "ATM",
+    "startSec": 7.93,
+    "endSec": 8.36
+  },
+  {
+    "word": "note",
+    "startSec": 8.36,
+    "endSec": 8.79
+  },
+  {
+    "word": "ko",
+    "startSec": 8.79,
+    "endSec": 9.22
+  },
+  {
+    "word": "dekhta",
+    "startSec": 9.22,
+    "endSec": 9.65
+  },
+  {
+    "word": "nahi,",
+    "startSec": 9.65,
+    "endSec": 10.08
+  },
+  {
+    "word": "uska",
+    "startSec": 10.08,
+    "endSec": 10.51
+  },
+  {
+    "word": "X-ray",
+    "startSec": 10.51,
+    "endSec": 10.94
+  },
+  {
+    "word": "karta",
+    "startSec": 10.94,
+    "endSec": 11.37
+  },
+  {
+    "word": "hai!",
+    "startSec": 11.37,
+    "endSec": 11.8
+  },
+  {
+    "word": "Pehla,",
+    "startSec": 11.8,
+    "endSec": 12.175
+  },
+  {
+    "word": "UV",
+    "startSec": 12.175,
+    "endSec": 12.55
+  },
+  {
+    "word": "Light",
+    "startSec": 12.55,
+    "endSec": 12.925
+  },
+  {
+    "word": "jo",
+    "startSec": 13.3,
+    "endSec": 13.675
+  },
+  {
+    "word": "note",
+    "startSec": 13.675,
+    "endSec": 14.05
+  },
+  {
+    "word": "par",
+    "startSec": 14.05,
+    "endSec": 14.425
+  },
+  {
+    "word": "chupi",
+    "startSec": 14.425,
+    "endSec": 14.8
+  },
+  {
+    "word": "invisible",
+    "startSec": 14.8,
+    "endSec": 15.175
+  },
+  {
+    "word": "glowing",
+    "startSec": 15.175,
+    "endSec": 15.55
+  },
+  {
+    "word": "ink",
+    "startSec": 15.55,
+    "endSec": 15.925
+  },
+  {
+    "word": "ko",
+    "startSec": 15.925,
+    "endSec": 16.3
+  },
+  {
+    "word": "turant",
+    "startSec": 16.3,
+    "endSec": 16.675
+  },
+  {
+    "word": "pakad",
+    "startSec": 16.675,
+    "endSec": 17.05
+  },
+  {
+    "word": "leti",
+    "startSec": 17.05,
+    "endSec": 17.425
+  },
+  {
+    "word": "hai.",
+    "startSec": 17.425,
+    "endSec": 17.8
+  },
+  {
+    "word": "Dusra,",
+    "startSec": 17.8,
+    "endSec": 18.175
+  },
+  {
+    "word": "Magnetic",
+    "startSec": 18.175,
+    "endSec": 18.55
+  },
+  {
+    "word": "Head",
+    "startSec": 18.55,
+    "endSec": 18.925
+  },
+  {
+    "word": "jo",
+    "startSec": 19.3,
+    "endSec": 19.675
+  },
+  {
+    "word": "security",
+    "startSec": 19.675,
+    "endSec": 20.05
+  },
+  {
+    "word": "thread",
+    "startSec": 20.05,
+    "endSec": 20.425
+  },
+  {
+    "word": "ke",
+    "startSec": 20.425,
+    "endSec": 20.8
+  },
+  {
+    "word": "andar",
+    "startSec": 20.8,
+    "endSec": 21.175
+  },
+  {
+    "word": "chupe",
+    "startSec": 21.175,
+    "endSec": 21.55
+  },
+  {
+    "word": "magnetic",
+    "startSec": 21.55,
+    "endSec": 21.925
+  },
+  {
+    "word": "metal",
+    "startSec": 21.925,
+    "endSec": 22.3
+  },
+  {
+    "word": "ko",
+    "startSec": 22.3,
+    "endSec": 22.675
+  },
+  {
+    "word": "detect",
+    "startSec": 22.675,
+    "endSec": 23.05
+  },
+  {
+    "word": "karta",
+    "startSec": 23.05,
+    "endSec": 23.425
+  },
+  {
+    "word": "hai!",
+    "startSec": 23.425,
+    "endSec": 23.8
+  },
+  {
+    "word": "Aur",
+    "startSec": 23.8,
+    "endSec": 24.2
+  },
+  {
+    "word": "teesra,",
+    "startSec": 24.2,
+    "endSec": 24.6
+  },
+  {
+    "word": "Laser",
+    "startSec": 24.6,
+    "endSec": 25
+  },
+  {
+    "word": "Sensor",
+    "startSec": 25,
+    "endSec": 25.4
+  },
+  {
+    "word": "jo",
+    "startSec": 25.8,
+    "endSec": 26.2
+  },
+  {
+    "word": "thickness",
+    "startSec": 26.2,
+    "endSec": 26.6
+  },
+  {
+    "word": "naapta",
+    "startSec": 26.6,
+    "endSec": 27
+  },
+  {
+    "word": "hai,",
+    "startSec": 27,
+    "endSec": 27.4
+  },
+  {
+    "word": "kyunki",
+    "startSec": 27.4,
+    "endSec": 27.8
+  },
+  {
+    "word": "asli",
+    "startSec": 27.8,
+    "endSec": 28.2
+  },
+  {
+    "word": "note",
+    "startSec": 28.2,
+    "endSec": 28.6
+  },
+  {
+    "word": "kagaz",
+    "startSec": 28.6,
+    "endSec": 29
+  },
+  {
+    "word": "ka",
+    "startSec": 29,
+    "endSec": 29.4
+  },
+  {
+    "word": "nahi,",
+    "startSec": 29.4,
+    "endSec": 29.8
+  },
+  {
+    "word": "100%",
+    "startSec": 29.8,
+    "endSec": 30.2
+  },
+  {
+    "word": "pure",
+    "startSec": 30.2,
+    "endSec": 30.6
+  },
+  {
+    "word": "cotton",
+    "startSec": 30.6,
+    "endSec": 31
+  },
+  {
+    "word": "ka",
+    "startSec": 31,
+    "endSec": 31.4
+  },
+  {
+    "word": "hota",
+    "startSec": 31.4,
+    "endSec": 31.8
+  },
+  {
+    "word": "hai!",
+    "startSec": 31.8,
+    "endSec": 32.2
+  },
+  {
+    "word": "Scammers",
+    "startSec": 32.2,
+    "endSec": 32.523
+  },
+  {
+    "word": "print",
+    "startSec": 32.523,
+    "endSec": 32.846
+  },
+  {
+    "word": "toh",
+    "startSec": 32.846,
+    "endSec": 33.169
+  },
+  {
+    "word": "kar",
+    "startSec": 33.169,
+    "endSec": 33.492
+  },
+  {
+    "word": "sakte",
+    "startSec": 33.492,
+    "endSec": 33.815
+  },
+  {
+    "word": "hain,",
+    "startSec": 33.815,
+    "endSec": 34.138
+  },
+  {
+    "word": "par",
+    "startSec": 34.138,
+    "endSec": 34.462
+  },
+  {
+    "word": "ye",
+    "startSec": 34.462,
+    "endSec": 34.785
+  },
+  {
+    "word": "physics",
+    "startSec": 34.785,
+    "endSec": 35.108
+  },
+  {
+    "word": "copy",
+    "startSec": 35.108,
+    "endSec": 35.431
+  },
+  {
+    "word": "nahi",
+    "startSec": 35.431,
+    "endSec": 35.754
+  },
+  {
+    "word": "kar",
+    "startSec": 35.754,
+    "endSec": 36.077
+  },
+  {
+    "word": "paate!",
+    "startSec": 36.077,
+    "endSec": 36.4
+  },
+  {
+    "word": "Aise",
+    "startSec": 36.4,
+    "endSec": 36.797
+  },
+  {
+    "word": "hi",
+    "startSec": 36.797,
+    "endSec": 37.193
+  },
+  {
+    "word": "tech",
+    "startSec": 37.193,
+    "endSec": 37.59
+  },
+  {
+    "word": "secrets",
+    "startSec": 37.59,
+    "endSec": 37.987
+  },
+  {
+    "word": "ke",
+    "startSec": 37.987,
+    "endSec": 38.383
+  },
+  {
+    "word": "liye",
+    "startSec": 38.383,
+    "endSec": 38.78
+  },
+  {
+    "word": "follow",
+    "startSec": 38.78,
+    "endSec": 39.177
+  },
+  {
+    "word": "karo",
+    "startSec": 39.177,
+    "endSec": 39.573
+  },
+  {
+    "word": "crackwithcode!",
+    "startSec": 39.573,
+    "endSec": 39.97
+  }
+]

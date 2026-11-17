@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
       meta: {
         topic: "Production Tech Architecture",
         slug: "my-tech-reel",
-        handle: "@techwith.GenZ",
+        handle: "@_crackwithcode",
         language: "Hinglish",
         lengthSec: 32,
         voiceFile: "reels/my-tech-reel/voice.mp3",
@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
           direction: "from-top",
           startSec: 28.0,
           endSec: 32.0,
-          voice: "Backend engineering seekhne ke liye abhi follow karein @techwith.GenZ ko!",
+          voice: "Backend engineering seekhne ke liye abhi follow karein @_crackwithcode ko!",
           headline: "LEVEL UP YOUR *CODE*",
           buttonText: "FOLLOW FOR TECH TIPS"
         }

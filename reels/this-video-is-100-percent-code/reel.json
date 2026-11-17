@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "title": "This Reel Was 100% Made By Code & AI ⚡ Zero Camera, Zero Mic",
+    "topic": "How 100% Code and AI Generates Broadcast-Grade Reels",
+    "slug": "this-video-is-100-percent-code",
+    "handle": "@_crackwithcode",
+    "language": "Hinglish",
+    "captions": true,
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "bgm": false,
+    "showTicker": false,
+    "voice": "bunty",
+    "voiceFile": "reels/this-video-is-100-percent-code/voice.mp3",
+    "wordsFile": "reels/this-video-is-100-percent-code/words.json",
+    "durationSec": 47
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "flow",
+      "startSec": 0.0,
+      "endSec": 15.10,
+      "leadIn": "⚡ 100% PROGRAMMATIC VIDEO",
+      "headline": "YEH POORI VIDEO *CODE AUR AI* NE BANAYI HAI!",
+      "voice": "Ruko! Ek second is screen ko dhyaan se dekho... Is video me na koi camera use hua hai, na mic, aur na hi koi video editor! Yeh poori reel 100% CODE aur AI ne banayi hai! Kaise? Sirf chaar simple steps me:",
+      "voiceText": "Ruko! Ek second is screen ko dhyaan se dekho... Is video me na koi camera use hua hai, na mic, aur na hi koi video editor! Yeh poori reel 100% CODE aur AI ne banayi hai! Kaise? Sirf chaar simple steps me:",
+      "brollVideo": "broll/code_terminal_typing.mp4",
+      "nodes": [
+        {
+          "title": "0 Camera Used",
+          "subtitle": "Zero Physical Optics",
+          "icon": "📹",
+          "status": "Bypassed"
+        },
+        {
+          "title": "0 Mic Used",
+          "subtitle": "Zero Studio Hardware",
+          "icon": "🎙️",
+          "status": "Bypassed"
+        },
+        {
+          "title": "0 Video Editor",
+          "subtitle": "100% Pure Code Motion",
+          "icon": "⚡",
+          "status": "Active"
+        }
+      ]
+    },
+    {
+      "id": "s2-voice",
+      "type": "flow",
+      "startSec": 15.10,
+      "endSec": 20.45,
+      "leadIn": "⚡ STEP 01: AUTONOMOUS INTELLIGENCE",
+      "headline": "AI AGENT NE RESEARCH KARKE *HYPER-REALISTIC VOICE* BANAYI!",
+      "voice": "Step 1: AI agent ne research karke hyper-realistic voiceover generate kiya.",
+      "voiceText": "Step 1: AI agent ne research karke hyper-realistic voiceover generate kiya.",
+      "brollVideo": "broll/ai_neural_network.mp4",
+      "nodes": [
+        {
+          "title": "Autonomous Research",
+          "subtitle": "LLM Mechanism Breakdown",
+          "icon": "🤖",
+          "status": "Verified"
+        },
+        {
+          "title": "Neural Synthesis",
+          "subtitle": "Studio 48kHz Master Audio",
+          "icon": "🎙️",
+          "status": "Synthesized"
+        },
+        {
+          "title": "Human Cadence",
+          "subtitle": "180 WPM Natural Pace",
+          "icon": "⚡",
+          "status": "Optimal"
+        }
+      ]
+    },
+    {
+      "id": "s3-whisper",
+      "type": "flow",
+      "startSec": 20.45,
+      "endSec": 26.15,
+      "leadIn": "⚡ STEP 02: MILLISECOND PRECISION",
+      "headline": "WHISPER AI NE HAR WORD KA *MILLISECOND-ACCURATE TIMESTAMP* NIKALA!",
+      "voice": "Step 2: Whisper AI ne har single word ka millisecond-accurate timestamp nikala.",
+      "voiceText": "Step 2: Whisper AI ne har single word ka millisecond-accurate timestamp nikala.",
+      "brollVideo": "broll/digital_matrix_blocks.mp4",
+      "nodes": [
+        {
+          "title": "Whisper.cpp Engine",
+          "subtitle": "Local Base C++ Audio Model",
+          "icon": "⏱️",
+          "status": "340ms"
+        },
+        {
+          "title": "Word Telemetry",
+          "subtitle": "±1 Millisecond Accuracy",
+          "icon": "📊",
+          "status": "Synced"
+        },
+        {
+          "title": "Kinetic Alignment",
+          "subtitle": "Live Yellow Word Highlighting",
+          "icon": "✨",
+          "status": "Active"
+        }
+      ]
+    },
+    {
+      "id": "s4-remotion",
+      "type": "flow",
+      "startSec": 26.15,
+      "endSec": 32.75,
+      "leadIn": "⚡ STEP 03: ZERO PREMIERE PRO",
+      "headline": "REACT AUR REMOTION NE HAR FRAME KO *MATHEMATICALLY RENDER* KIYA!",
+      "voice": "Step 3: Premiere Pro ke bina, React aur Remotion ke code ne har frame ko mathematically render kiya.",
+      "voiceText": "Step 3: Premiere Pro ke bina, React aur Remotion ke code ne har frame ko mathematically render kiya.",
+      "brollVideo": "broll/binary_cyber_stream.mp4",
+      "nodes": [
+        {
+          "title": "0 Premiere Pro",
+          "subtitle": "Zero Manual Keyframing",
+          "icon": "❌",
+          "status": "Discarded"
+        },
+        {
+          "title": "React 19 + Remotion",
+          "subtitle": "TypeScript Spring Physics",
+          "icon": "⚛️",
+          "status": "Compiled"
+        },
+        {
+          "title": "60 FPS Chromium",
+          "subtitle": "Deterministic Frame Math",
+          "icon": "📐",
+          "status": "Rendering"
+        }
+      ]
+    },
+    {
+      "id": "s5-lipsync",
+      "type": "flow",
+      "startSec": 32.75,
+      "endSec": 38.55,
+      "leadIn": "⚡ STEP 04: ALGORITHMIC VISEMES",
+      "headline": "IS AVATAR KA LIP-SYNC BHI *SOUNDWAVE KE ALGORITHM* SE DRIVEN HAI!",
+      "voice": "Aur Step 4: Is avatar ka lip-sync bhi soundwave ke algorithm se code me drive kiya gaya!",
+      "voiceText": "Aur Step 4: Is avatar ka lip-sync bhi soundwave ke algorithm se code me drive kiya gaya!",
+      "brollVideo": "broll/soundwave_particles.mp4",
+      "nodes": [
+        {
+          "title": "FFT Audio Spectrum",
+          "subtitle": "Real-Time Frequency Analysis",
+          "icon": "🌊",
+          "status": "-14dB"
+        },
+        {
+          "title": "Viseme Calculation",
+          "subtitle": "Mouth Scale Driven by Math",
+          "icon": "🗣️",
+          "status": "Algorithmic"
+        },
+        {
+          "title": "Smart Tech Creator",
+          "subtitle": "Matte Obsidian & AR Glasses",
+          "icon": "🕶️",
+          "status": "Lip-Synced"
+        }
+      ]
+    },
+    {
+      "id": "s6-cta",
+      "type": "cta",
+      "startSec": 38.55,
+      "endSec": 46.37,
+      "leadIn": "🚀 THE NEW VIDEO PARADIGM",
+      "headline": "VIDEO EDITING KA ZAMANA GAYA, *AB CODE SE VIDEOS BANTI HAIN!*",
+      "voice": "Video editing ka zamana gaya, ab CODE se videos banti hain! Aise hi insane tech secrets ke liye follow karo crackwithcode!",
+      "voiceText": "Video editing ka zamana gaya, ab CODE se videos banti hain! Aise hi insane tech secrets ke liye follow karo crackwithcode!",
+      "buttonText": "FOLLOW @_CRACKWITHCODE 🔥",
+      "callToAction": "FOLLOW @_CRACKWITHCODE 🔥",
+      "subtitle": "DAILY HARDWARE & CODE SECRETS ⚡",
+      "brollVideo": "broll/cyber_grid_loop.mp4"
+    }
+  ]
+}
