@@ -1,0 +1,70 @@
+{
+  "niches": {
+    "gyms": {
+      "name": "Gyms & Fitness Centers",
+      "painPoint": "Manual admission registers, tracking monthly membership fees on WhatsApp, no workout guidance app",
+      "offerAngle": "Custom branded fitness web-app and official Android Mobile App on Google Play Store for membership booking, fee alerts & workout plans",
+      "tags": [
+        "indoregym",
+        "delhigym",
+        "mumbaigym",
+        "bangalorefitness",
+        "punegym",
+        "hyderabadfitness",
+        "crossfitindia"
+      ]
+    },
+    "doctors_clinics": {
+      "name": "Doctors, Dentists & Clinics",
+      "painPoint": "Reception phone constantly busy, paying high commission to aggregator apps (Practo), no 1-click booking link",
+      "offerAngle": "Custom clinic website with 1-click appointment booking system and verified Android app on Play Store with automated patient WhatsApp reminders",
+      "tags": [
+        "delhidentist",
+        "mumbaidermatologist",
+        "punedental",
+        "indoreclinic",
+        "bangaloredoc",
+        "physiotherapyindia"
+      ]
+    },
+    "real_estate": {
+      "name": "Real Estate Brokers & Realtors",
+      "painPoint": "Sending 50 heavy photos and PDFs over WhatsApp which clients lose, no professional property showroom",
+      "offerAngle": "Luxury property portfolio web-app with interactive floor plans, virtual tours & 1-click site visit scheduling on Google Play Store",
+      "tags": [
+        "mumbairealtor",
+        "delhirealestate",
+        "puneproperties",
+        "indorerealestate",
+        "bangalorehomes",
+        "gurgaonproperties"
+      ]
+    },
+    "cafes_restaurants": {
+      "name": "Cafes & Dining Lounges",
+      "painPoint": "Losing 25% to 30% profit margin on every order to Zomato/Swiggy, lack of customer loyalty program",
+      "offerAngle": "Direct QR-code table ordering web-app & branded Play Store ordering app so 100% customer payments and data stay with the cafe",
+      "tags": [
+        "delhicafe",
+        "mumbaicafe",
+        "indorecafe",
+        "bangalorecafes",
+        "punecafes",
+        "ahmedabadfoodie"
+      ]
+    },
+    "coaching_institutes": {
+      "name": "Coaching Classes & Tutors",
+      "painPoint": "Managing student batches and test papers manually, students pirating notes or missing lectures",
+      "offerAngle": "Student learning portal & branded Play Store Android app for secure test series, recorded lectures and student fee tracking",
+      "tags": [
+        "delhicoaching",
+        "neetcoaching",
+        "upsccoachingdelhi",
+        "indoreeducation",
+        "punecoaching",
+        "iitjeeprep"
+      ]
+    }
+  }
+}

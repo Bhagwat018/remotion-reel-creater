@@ -79,6 +79,7 @@ async function postReel() {
   console.log("⏳ [1/6] Launching Instagram session...");
 
   const context = await chromium.launchPersistentContext(userDataDir, {
+    channel: "chrome",
     headless: !isHeaded,
     viewport: { width: 1280, height: 900 },
     userAgent:
@@ -147,25 +148,26 @@ async function postReel() {
     console.log("📐 [5a] Ensuring 9:16 Reel aspect ratio...");
     try {
       const cropBtn = page.locator(
-        "div[role='dialog'] svg[aria-label='Select crop'], div[role='dialog'] button:has(svg[aria-label='Select crop'])"
+        "div[role='dialog'] svg[aria-label='Select Crop' i], div[role='dialog'] button:has(svg[aria-label='Select Crop' i]), div[role='dialog'] svg[aria-label*='crop' i]"
       ).first();
 
       if (await cropBtn.count() > 0) {
         await cropBtn.click();
-        await page.waitForTimeout(600);
+        await page.waitForTimeout(800);
 
         const ratio916 = page.locator(
-          "div[role='dialog'] span:text-is('9:16'), div[role='dialog'] div:text-is('9:16')"
+          "div[role='dialog'] span:text-is('9:16'), div[role='dialog'] div:text-is('9:16'), div[role='dialog'] button:has-text('9:16'), div[role='dialog'] svg[aria-label*='portrait' i]"
         ).first();
 
         if (await ratio916.count() > 0) {
           await ratio916.click();
           console.log("✅ 9:16 Aspect Ratio locked!");
+          await page.waitForTimeout(800);
         } else {
-          // Re-click to close crop menu if 9:16 was already selected
-          await cropBtn.click();
+          console.warn("⚠️ 9:16 option not found in menu!");
         }
-        await page.waitForTimeout(600);
+      } else {
+        console.warn("⚠️ Select Crop button not found on screen!");
       }
     } catch (cropErr) {
       console.warn("⚠️ Could not adjust crop ratio:", cropErr.message);

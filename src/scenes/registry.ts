@@ -30,6 +30,13 @@ import {
   CodeVsHumanScene,
   CodeCtaScene,
 } from "./pureAiCode";
+import {
+  MegaIpoHookScene,
+  AnthropicProspectusScene,
+  RevenueRocketScene,
+  BigTechConflictScene,
+  OutroIpoCtaScene,
+} from "./anthropicIpo";
 
 type SceneComponent = React.FC<
   SceneData & { durationInFrames: number; sceneIndex?: number; slug?: string }
@@ -70,7 +77,7 @@ export const getSceneComponent = (type: string): SceneComponent => {
     );
   }
 
-  // Bespoke scene dispatcher for pure AI coding reels (Zero Videos, Zero Images)
+  // Bespoke scene dispatcher
   const PureCodeDispatchedScene: SceneComponent = (props) => {
     if (props.slug === "pure-ai-code-reel" || props.slug?.includes("pure-ai-code")) {
       if (props.id === "s1-hook" || props.type === "code") {
@@ -84,6 +91,24 @@ export const getSceneComponent = (type: string): SceneComponent => {
       }
       if (props.id === "s4-cta" || props.type === "cta") {
         return React.createElement(CodeCtaScene, { durationInFrames: props.durationInFrames });
+      }
+    }
+
+    if (props.slug === "anthropic-biggest-ai-ipo" || props.slug?.includes("anthropic")) {
+      if (props.id === "s1-hook" || props.sceneIndex === 0) {
+        return React.createElement(MegaIpoHookScene, { ...props });
+      }
+      if (props.id === "s2-prospectus" || props.sceneIndex === 1) {
+        return React.createElement(AnthropicProspectusScene, { ...props });
+      }
+      if (props.id === "s3-revenue" || props.sceneIndex === 2) {
+        return React.createElement(RevenueRocketScene, { ...props });
+      }
+      if (props.id === "s4-conflict" || props.sceneIndex === 3) {
+        return React.createElement(BigTechConflictScene, { ...props });
+      }
+      if (props.id === "s5-outro" || props.sceneIndex === 4) {
+        return React.createElement(OutroIpoCtaScene, { ...props });
       }
     }
     return React.createElement(component, props);

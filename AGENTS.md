@@ -74,10 +74,24 @@ Every single new video MUST strictly follow and be validated against these 10 un
   7. [ ] Voiceover and on-screen language 100% matched; handle spoken as `techwith genz!` (Rule 7).
   8. [ ] Subtitles clearly visible at `bottom: 260px` with zero collision (Rule 8).
   9. [ ] Whisper millisecond timestamps perfectly snapped to scenes (Rule 9).
+  10. [ ] High-CTR Cover Thumbnail generated & verified (Rule 11).
+  11. [ ] Viral Hashtags & SEO Caption attached (Rule 12).
 - **THE LOOP**: If ANY of the above checks fail or show visual/audio defects:
   - **DO NOT deliver the video.**
   - **Loop back immediately**: Refactor code / update JSON / fetch correct b-roll -> re-render MP4 -> re-run Rule 10 Verification.
   - **Repeat the loop continuously** until the video passes 100% of all rules. Only deliver when certified viral-ready and broadcast-grade.
+
+### 11. High-CTR Cover Thumbnail Guarantee (Zero Blank/White Frame 0)
+- **Never Upload with Blank Cover**: Instagram defaults to Frame 0 which is often dark, blurred, or plain white. This kills feed CTR.
+- **Custom Rendered Cover Image**: Always extract or render a high-impact cover frame (`out/<slug>-cover.jpg`) at 1-2 seconds with the big bold hook headline, neon badge, and dark cinematic background.
+- **Automated Cover Upload in Browser**: In `post-reel-browser.mjs`, always upload the custom cover image file explicitly AND seek the video scrubber to 20% mark as fallback so Instagram feed always shows a visually striking cover.
+
+### 12. Viral Algorithmic Hashtags & SEO-Engineered Caption
+- **High-Reach Hashtag Mix**: Every post MUST include a strategic 3-tier hashtag stack:
+  1. *Broad Mega Reach (1M+)*: `#sharemarket #stockmarketindia #nifty50 #investing #business`
+  2. *Niche Topic Targeted (100k-500k)*: `#ipo #anthropic #claudeai #techwithgenz #stockanalysis`
+  3. *Viral Trending Audio/Format*: `#viralreels #reelsindia #fintech #moneytips #wealth`
+- **Engaging Caption Hook**: First 2 lines of caption must ask a controversial/curiosity question (e.g. *"Kya aap is \$1.5 Trillion AI Bubble me invest karoge? 👇"*), followed by 3 bullet takeaways and a clear CTA to follow `@techwith.genz`.
 
 ---
 

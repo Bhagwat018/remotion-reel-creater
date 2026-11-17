@@ -1,0 +1,26 @@
+{
+  "accountHandle": "techwith.genz",
+  "sessionDir": ".instagram-session",
+  "fallbackSessionDir": ".instagram-session",
+  "dailyDmLimit": 12,
+  "activeHours": {
+    "startHour": 12,
+    "endHour": 20
+  },
+  "delays": {
+    "minBetweenDmsSec": 60,
+    "maxBetweenDmsSec": 120,
+    "minWarmupSec": 4,
+    "maxWarmupSec": 8
+  },
+  "geminiModel": "gemini-flash-lite-latest",
+  "offerDetails": {
+    "agencyName": "TechWithGenZ Dev Studio",
+    "capabilities": [
+      "High-Performance Custom Business Websites",
+      "Branded Android Mobile Apps published live on Google Play Store",
+      "Direct QR Code / WhatsApp Booking Automations"
+    ],
+    "valueProposition": "Fast 7-day turnaround, official Google Play Store publishing, and the most founder-friendly low rates without any upfront lock-in."
+  }
+}

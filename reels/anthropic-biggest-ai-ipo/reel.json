@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "slug": "anthropic-biggest-ai-ipo",
+    "title": "Duniya Ka Sabse Bada AI IPO: Anthropic $1.5 Trillion Listing",
+    "handle": "@techwith.genz",
+    "fps": 30,
+    "durationInFrames": 1499,
+    "width": 1080,
+    "height": 1920,
+    "voiceFile": "reels/anthropic-biggest-ai-ipo/voice.mp3",
+    "wordsFile": "reels/anthropic-biggest-ai-ipo/words.json",
+    "musicTrack": "cyber",
+    "musicVolume": 0.08,
+    "voiceVolume": 1,
+    "speakingAvatar": true,
+    "accentColor": "#10b981",
+    "leadIn": "🚨 MEGA TECH IPO • 2026",
+    "instagramCaption": "Duniya ka sabse bada AI IPO aa raha hai! 🚨\n\nHyundai IPO bhool jao—Claude AI banane wali company Anthropic ne $1.5 TRILLION valuation par 400 panno ka prospectus file kar diya hai! 📈\n\nKey Breakdown:\n🔥 $1.5 Trillion Valuation & $64 Billion Capital Target\n🚀 3.5x Revenue Explosion: FY23 $5B ➔ H1 2024 $16B in just 180 days!\n⚠️ The Big Tech Paradox: Amazon, Google & Microsoft iske Investors bhi hain, Cloud Hosts bhi aur Direct Competitors bhi!\n\nKya aap is mega AI IPO me invest karoge? Comments me batao! 👇\n\n👉 Aise hi sharp share market aur tech secrets ke liye follow karo @techwith.genz !\n\n#anthropic #claudeai #aiipo #sharemarket #stockmarketindia #nifty50 #iposzn #nasdaq #investing #businessnews #techwithgenz #viralreels #reelsindia #wealthbuilding #startupnews"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 7.8,
+      "leadIn": "🚨 MEGA TECH IPO ALERT • 2026",
+      "headline": "HYUNDAI IPO BHOOL JAO! *DUNIYA KA SABSE BADA AI IPO!*",
+      "sub": "20x Bigger Than India's Largest Listing",
+      "brollVideo": "broll/trading_floor_screens.mp4",
+      "voice": "Hyundai IPO bhool jao! Kyunki ab market mein aane ja raha hai poori duniya ka sabse bada AI IPO!"
+    },
+    {
+      "id": "s2-prospectus",
+      "type": "card",
+      "startSec": 7.8,
+      "endSec": 19.1,
+      "leadIn": "📑 S-1 PROSPECTUS FILED • US SEC",
+      "headline": "CLAUDE AI: $1.5 TRILLION! *$64 BILLION MEGA RAISE*",
+      "sub": "Bigger Than Meta & Tesla at Listing",
+      "brollVideo": "broll/nasdaq_stock_ticker.mp4",
+      "voice": "Claude AI banane wali company Anthropic ne prospectus file kar diya hai—valuation lagbhag 1.5 Trillion Dollars aur 64 Billion Dollars raise karne ka mega plan!",
+      "cardText": "CLAUDE AI: $1.5 TRILLION! *$64 BILLION MEGA RAISE*",
+      "chip": "📑 S-1 PROSPECTUS FILED • US SEC"
+    },
+    {
+      "id": "s3-revenue",
+      "type": "chart",
+      "startSec": 19.1,
+      "endSec": 33.2,
+      "leadIn": "🚀 EXPLOSIVE FINANCIAL METRICS",
+      "headline": "3.5X REVENUE EXPLOSION! *6 MAHINE MEIN 3.5X JUMP*",
+      "sub": "$5B in 2023 ➔ $16B in H1 2024",
+      "brollVideo": "broll/stock_market_trading_chart.mp4",
+      "voice": "Kamaal dekho: 2023 ke poore saal ka revenue sirf 5 Billion Dollars tha, jabki 2024 ke pehle 6 mahino mein hi 16 Billion Dollars cross kar diya—poora 3.5x ka rocket jump!"
+    },
+    {
+      "id": "s4-conflict",
+      "type": "diagram",
+      "startSec": 33.2,
+      "endSec": 42.3,
+      "leadIn": "⚠️ THE GREATEST IPO CONFLICT",
+      "headline": "BIG TECH TRIPLE THREAT! *INVESTORS BHI, COMPETITORS BHI*",
+      "sub": "Amazon • Google • Microsoft Paradox",
+      "brollVideo": "broll/ai_cloud_servers.mp4",
+      "voice": "Lekin sabse bada twist: Amazon, Google aur Microsoft iske investors bhi hain, cloud providers bhi, aur market mein direct competitors bhi!"
+    },
+    {
+      "id": "s5-outro",
+      "type": "cta",
+      "startSec": 42.3,
+      "endSec": 49.95,
+      "leadIn": "🗳️ FINAL VERDICT • YOUR OPINION",
+      "headline": "AI BUBBLE YA GOLDMINE? *KYA AAP INVEST KAROGE?*",
+      "sub": "Follow For Real Market Insights",
+      "brollVideo": "broll/office_skyscraper_city.mp4",
+      "voice": "Toh kya aap is mega AI IPO mein invest karoge? Comments mein batao aur aise hi market secrets ke liye follow karo techwith genz!",
+      "buttonText": "FOLLOW NOW 🔥",
+      "handle": "@techwith.genz"
+    }
+  ]
+}
