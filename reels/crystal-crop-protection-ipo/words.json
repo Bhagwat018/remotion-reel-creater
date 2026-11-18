@@ -1,0 +1,767 @@
+[
+  {
+    "word": "₹272",
+    "start": 0.05,
+    "end": 0.84
+  },
+  {
+    "word": "ke",
+    "start": 0.84,
+    "end": 1.11
+  },
+  {
+    "word": "price",
+    "start": 1.11,
+    "end": 1.35
+  },
+  {
+    "word": "par",
+    "start": 1.35,
+    "end": 1.52
+  },
+  {
+    "word": "Crystal",
+    "start": 1.52,
+    "end": 1.85
+  },
+  {
+    "word": "Crop",
+    "start": 1.85,
+    "end": 2.12
+  },
+  {
+    "word": "Protection",
+    "start": 2.12,
+    "end": 2.43
+  },
+  {
+    "word": "ka",
+    "start": 2.43,
+    "end": 2.64
+  },
+  {
+    "word": "mega",
+    "start": 2.64,
+    "end": 2.79
+  },
+  {
+    "word": "IPO",
+    "start": 2.79,
+    "end": 3.05
+  },
+  {
+    "word": "khul",
+    "start": 3.29,
+    "end": 3.55
+  },
+  {
+    "word": "chuka",
+    "start": 3.55,
+    "end": 4.01
+  },
+  {
+    "word": "hai!",
+    "start": 4.01,
+    "end": 4.29
+  },
+  {
+    "word": "Lekin",
+    "start": 4.29,
+    "end": 4.54
+  },
+  {
+    "word": "kya",
+    "start": 4.54,
+    "end": 4.86
+  },
+  {
+    "word": "ye",
+    "start": 5.36,
+    "end": 5.51
+  },
+  {
+    "word": "IPO",
+    "start": 5.41,
+    "end": 5.59
+  },
+  {
+    "word": "aapka",
+    "start": 5.59,
+    "end": 5.8
+  },
+  {
+    "word": "paisa",
+    "start": 5.8,
+    "end": 6.31
+  },
+  {
+    "word": "double",
+    "start": 6.31,
+    "end": 6.52
+  },
+  {
+    "word": "karega",
+    "start": 6.78,
+    "end": 7.14
+  },
+  {
+    "word": "ya",
+    "start": 7.14,
+    "end": 7.48
+  },
+  {
+    "word": "seedha",
+    "start": 7.48,
+    "end": 7.77
+  },
+  {
+    "word": "capital",
+    "start": 7.77,
+    "end": 8.17
+  },
+  {
+    "word": "trap",
+    "start": 8.17,
+    "end": 8.32
+  },
+  {
+    "word": "hai?",
+    "start": 8.32,
+    "end": 8.77
+  },
+  {
+    "word": "Pehle",
+    "start": 8.77,
+    "end": 9.22
+  },
+  {
+    "word": "business",
+    "start": 9.22,
+    "end": 9.68
+  },
+  {
+    "word": "samjho:",
+    "start": 9.68,
+    "end": 9.96
+  },
+  {
+    "word": "Company",
+    "start": 10.72,
+    "end": 11.13
+  },
+  {
+    "word": "kisaano",
+    "start": 11.13,
+    "end": 11.88
+  },
+  {
+    "word": "ke",
+    "start": 12.34,
+    "end": 12.49
+  },
+  {
+    "word": "liye",
+    "start": 12.39,
+    "end": 12.89
+  },
+  {
+    "word": "pesticides,",
+    "start": 12.89,
+    "end": 13.17
+  },
+  {
+    "word": "insecticides",
+    "start": 13.17,
+    "end": 13.35
+  },
+  {
+    "word": "aur",
+    "start": 13.35,
+    "end": 14.56
+  },
+  {
+    "word": "hybrid",
+    "start": 14.56,
+    "end": 15.4
+  },
+  {
+    "word": "seeds",
+    "start": 15.4,
+    "end": 15.63
+  },
+  {
+    "word": "banati",
+    "start": 15.63,
+    "end": 16.03
+  },
+  {
+    "word": "hai—revenue",
+    "start": 16.38,
+    "end": 16.73
+  },
+  {
+    "word": "bhi",
+    "start": 16.73,
+    "end": 16.96
+  },
+  {
+    "word": "₹2,800",
+    "start": 17.42,
+    "end": 17.57
+  },
+  {
+    "word": "Crore",
+    "start": 17.5,
+    "end": 17.78
+  },
+  {
+    "word": "se",
+    "start": 17.78,
+    "end": 18.85
+  },
+  {
+    "word": "zyada",
+    "start": 18.85,
+    "end": 19.3
+  },
+  {
+    "word": "ka",
+    "start": 19.3,
+    "end": 19.8
+  },
+  {
+    "word": "dikh",
+    "start": 19.8,
+    "end": 20.23
+  },
+  {
+    "word": "raha",
+    "start": 20.23,
+    "end": 20.38
+  },
+  {
+    "word": "hai!",
+    "start": 20.74,
+    "end": 21.01
+  },
+  {
+    "word": "Lekin",
+    "start": 21.01,
+    "end": 21.2
+  },
+  {
+    "word": "asli",
+    "start": 21.58,
+    "end": 21.73
+  },
+  {
+    "word": "game",
+    "start": 21.63,
+    "end": 21.93
+  },
+  {
+    "word": "iske",
+    "start": 21.93,
+    "end": 22.21
+  },
+  {
+    "word": "profit",
+    "start": 22.21,
+    "end": 22.42
+  },
+  {
+    "word": "margins",
+    "start": 22.42,
+    "end": 22.59
+  },
+  {
+    "word": "me",
+    "start": 22.59,
+    "end": 23.05
+  },
+  {
+    "word": "chhupa",
+    "start": 23.05,
+    "end": 23.7
+  },
+  {
+    "word": "hai!",
+    "start": 23.7,
+    "end": 23.96
+  },
+  {
+    "word": "Pichhle",
+    "start": 24.24,
+    "end": 24.58
+  },
+  {
+    "word": "ek",
+    "start": 25.07,
+    "end": 25.42
+  },
+  {
+    "word": "saal",
+    "start": 25.42,
+    "end": 25.66
+  },
+  {
+    "word": "se",
+    "start": 25.66,
+    "end": 25.92
+  },
+  {
+    "word": "China",
+    "start": 25.92,
+    "end": 26.11
+  },
+  {
+    "word": "ne",
+    "start": 26.11,
+    "end": 26.51
+  },
+  {
+    "word": "poori",
+    "start": 26.51,
+    "end": 26.68
+  },
+  {
+    "word": "duniya",
+    "start": 26.68,
+    "end": 27.09
+  },
+  {
+    "word": "me",
+    "start": 27.09,
+    "end": 27.4
+  },
+  {
+    "word": "saste",
+    "start": 27.62,
+    "end": 27.95
+  },
+  {
+    "word": "agrochemicals",
+    "start": 27.95,
+    "end": 28.25
+  },
+  {
+    "word": "dump",
+    "start": 28.25,
+    "end": 28.73
+  },
+  {
+    "word": "kar",
+    "start": 28.73,
+    "end": 29.03
+  },
+  {
+    "word": "diye",
+    "start": 29.03,
+    "end": 29.18
+  },
+  {
+    "word": "hain,",
+    "start": 29.14,
+    "end": 29.3
+  },
+  {
+    "word": "jisse",
+    "start": 29.3,
+    "end": 29.88
+  },
+  {
+    "word": "Indian",
+    "start": 30.36,
+    "end": 30.51
+  },
+  {
+    "word": "chemical",
+    "start": 30.36,
+    "end": 30.51
+  },
+  {
+    "word": "companies",
+    "start": 30.38,
+    "end": 30.71
+  },
+  {
+    "word": "ke",
+    "start": 31.19,
+    "end": 31.63
+  },
+  {
+    "word": "margins",
+    "start": 31.63,
+    "end": 31.78
+  },
+  {
+    "word": "buri",
+    "start": 31.78,
+    "end": 32.25
+  },
+  {
+    "word": "tarah",
+    "start": 32.25,
+    "end": 32.58
+  },
+  {
+    "word": "crash",
+    "start": 32.58,
+    "end": 32.82
+  },
+  {
+    "word": "ho",
+    "start": 32.82,
+    "end": 33.17
+  },
+  {
+    "word": "gaye!",
+    "start": 33.17,
+    "end": 33.32
+  },
+  {
+    "word": "Aur",
+    "start": 33.32,
+    "end": 33.8
+  },
+  {
+    "word": "sabse",
+    "start": 34.2,
+    "end": 34.35
+  },
+  {
+    "word": "bada",
+    "start": 34.24,
+    "end": 34.39
+  },
+  {
+    "word": "red",
+    "start": 34.56,
+    "end": 35.04
+  },
+  {
+    "word": "flag:",
+    "start": 35.04,
+    "end": 35.29
+  },
+  {
+    "word": "Iska",
+    "start": 35.29,
+    "end": 35.78
+  },
+  {
+    "word": "Grey",
+    "start": 36.08,
+    "end": 36.23
+  },
+  {
+    "word": "Market",
+    "start": 36.13,
+    "end": 36.28
+  },
+  {
+    "word": "Premium",
+    "start": 36.18,
+    "end": 36.58
+  },
+  {
+    "word": "sirf",
+    "start": 36.58,
+    "end": 36.92
+  },
+  {
+    "word": "₹13",
+    "start": 36.92,
+    "end": 37.5
+  },
+  {
+    "word": "chal",
+    "start": 37.5,
+    "end": 37.84
+  },
+  {
+    "word": "raha",
+    "start": 38.2,
+    "end": 38.48
+  },
+  {
+    "word": "hai—yani",
+    "start": 38.48,
+    "end": 38.68
+  },
+  {
+    "word": "5%",
+    "start": 38.68,
+    "end": 39.01
+  },
+  {
+    "word": "se",
+    "start": 39.01,
+    "end": 39.2
+  },
+  {
+    "word": "bhi",
+    "start": 39.48,
+    "end": 39.63
+  },
+  {
+    "word": "kam!",
+    "start": 39.6,
+    "end": 39.92
+  },
+  {
+    "word": "Matlab",
+    "start": 39.92,
+    "end": 40.63
+  },
+  {
+    "word": "₹15,000",
+    "start": 40.63,
+    "end": 40.9
+  },
+  {
+    "word": "block",
+    "start": 40.9,
+    "end": 41.24
+  },
+  {
+    "word": "karke",
+    "start": 41.24,
+    "end": 41.48
+  },
+  {
+    "word": "sirf",
+    "start": 41.93,
+    "end": 42.97
+  },
+  {
+    "word": "₹700",
+    "start": 42.97,
+    "end": 43.21
+  },
+  {
+    "word": "ke",
+    "start": 43.21,
+    "end": 43.64
+  },
+  {
+    "word": "chote",
+    "start": 43.64,
+    "end": 43.79
+  },
+  {
+    "word": "se",
+    "start": 43.75,
+    "end": 44
+  },
+  {
+    "word": "listing",
+    "start": 44,
+    "end": 44.26
+  },
+  {
+    "word": "gain",
+    "start": 44.26,
+    "end": 44.93
+  },
+  {
+    "word": "ke",
+    "start": 44.93,
+    "end": 45.17
+  },
+  {
+    "word": "liye",
+    "start": 45.17,
+    "end": 45.32
+  },
+  {
+    "word": "itna",
+    "start": 45.65,
+    "end": 45.8
+  },
+  {
+    "word": "bada",
+    "start": 45.8,
+    "end": 46.24
+  },
+  {
+    "word": "risk",
+    "start": 46.24,
+    "end": 46.47
+  },
+  {
+    "word": "lena",
+    "start": 46.47,
+    "end": 46.62
+  },
+  {
+    "word": "100%",
+    "start": 46.62,
+    "end": 47
+  },
+  {
+    "word": "bewaqoofi",
+    "start": 47.06,
+    "end": 47.36
+  },
+  {
+    "word": "hai!",
+    "start": 47.36,
+    "end": 47.72
+  },
+  {
+    "word": "Smart",
+    "start": 47.72,
+    "end": 47.99
+  },
+  {
+    "word": "money",
+    "start": 47.99,
+    "end": 48.36
+  },
+  {
+    "word": "is",
+    "start": 48.36,
+    "end": 48.82
+  },
+  {
+    "word": "issue",
+    "start": 49.49,
+    "end": 50.28
+  },
+  {
+    "word": "ko",
+    "start": 50.28,
+    "end": 50.43
+  },
+  {
+    "word": "avoid",
+    "start": 50.81,
+    "end": 51.41
+  },
+  {
+    "word": "kar",
+    "start": 51.41,
+    "end": 51.73
+  },
+  {
+    "word": "raha",
+    "start": 51.73,
+    "end": 51.9
+  },
+  {
+    "word": "hai!",
+    "start": 51.9,
+    "end": 52.22
+  },
+  {
+    "word": "Kya",
+    "start": 52.22,
+    "end": 52.39
+  },
+  {
+    "word": "aap",
+    "start": 52.39,
+    "end": 52.63
+  },
+  {
+    "word": "is",
+    "start": 52.63,
+    "end": 52.88
+  },
+  {
+    "word": "IPO",
+    "start": 53.14,
+    "end": 53.29
+  },
+  {
+    "word": "me",
+    "start": 53.22,
+    "end": 53.96
+  },
+  {
+    "word": "apply",
+    "start": 53.96,
+    "end": 54.22
+  },
+  {
+    "word": "karoge?",
+    "start": 54.22,
+    "end": 54.77
+  },
+  {
+    "word": "Comments",
+    "start": 54.77,
+    "end": 55.05
+  },
+  {
+    "word": "me",
+    "start": 55.05,
+    "end": 55.46
+  },
+  {
+    "word": "batao",
+    "start": 55.78,
+    "end": 56.01
+  },
+  {
+    "word": "aur",
+    "start": 56.01,
+    "end": 56.35
+  },
+  {
+    "word": "aise",
+    "start": 56.35,
+    "end": 56.94
+  },
+  {
+    "word": "hi",
+    "start": 56.94,
+    "end": 57.2
+  },
+  {
+    "word": "share",
+    "start": 57.43,
+    "end": 57.58
+  },
+  {
+    "word": "market",
+    "start": 57.57,
+    "end": 57.85
+  },
+  {
+    "word": "secrets",
+    "start": 57.85,
+    "end": 58
+  },
+  {
+    "word": "ke",
+    "start": 57.99,
+    "end": 58.48
+  },
+  {
+    "word": "liye",
+    "start": 58.48,
+    "end": 58.63
+  },
+  {
+    "word": "follow",
+    "start": 58.62,
+    "end": 58.86
+  },
+  {
+    "word": "karo",
+    "start": 58.86,
+    "end": 59.3
+  },
+  {
+    "word": "techwith",
+    "start": 59.3,
+    "end": 59.64
+  },
+  {
+    "word": "genz!",
+    "start": 59.64,
+    "end": 60.27
+  }
+]

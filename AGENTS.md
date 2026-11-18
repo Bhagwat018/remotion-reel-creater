@@ -93,6 +93,22 @@ Every single new video MUST strictly follow and be validated against these 10 un
   3. *Viral Trending Audio/Format*: `#viralreels #reelsindia #fintech #moneytips #wealth`
 - **Engaging Caption Hook**: First 2 lines of caption must ask a controversial/curiosity question (e.g. *"Kya aap is \$1.5 Trillion AI Bubble me invest karoge? 👇"*), followed by 3 bullet takeaways and a clear CTA to follow `@techwith.genz`.
 
+### 13. Screen-Dominant Visual Presence & Big Bold UI Elements (User Rule)
+- **Large Screen Footprint**: Foreground UI components must NEVER look shrunken, timid, or cramped. Fill the screen space generously (`maxWidth: 960-980px`, occupying 88-94% of horizontal width).
+- **Massive Typography & Metrics**: Primary numbers, valuations, prices, and multipliers must be rendered BIG and BOLD (42px to 58px font size with heavy weights 900+).
+- **Heavy Contrast & Glowing Borders**: 3-4px solid borders with vibrant glowing neon shadows (`box-shadow: 0 14px 40px rgba(...)`) so elements pop vividly against the moving cinematic video background.
+
+### 14. Rich Bespoke Geometry & Kinetic Animation Engineering (User Rule)
+- **Beyond Plain Rectangles**: Never render plain flat boxes. Use modern futuristic geometry:
+  - Angled chamfered corners, HUD bracket accents, and layered pill headers.
+  - Dynamic dual-meter gauges, circular progress rings, and segmented risk ladders.
+  - Floating metric pods with glowing status nodes and colored laser connectors.
+- **Rich Kinetic Animations**: Every scene must feature living animations:
+  - Spring-interpolated scale & slide entrances (`damping: 12, stiffness: 140`).
+  - Animated number counters ticking from 0 to target value using `interpolate(frame, ...)`.
+  - Sinusoidal breathing pulses on danger/warning badges (`Math.sin(frame * 0.2)`).
+  - Shimmering gradient flows and kinetic status indicators.
+
 ---
 
 ## 🛠️ Step-by-Step Production Protocol

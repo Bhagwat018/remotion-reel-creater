@@ -1,0 +1,25 @@
+{
+  "riskParameters": {
+    "maxStopLossPercent": 3.5,
+    "minRiskRewardRatio": 2.5,
+    "minMarketCapCrores": 1500,
+    "maxPromoterPledgePercent": 15.0,
+    "maxPortfolioAllocationPerStock": 15,
+    "minVolumeExpansionRatio": 1.4,
+    "minRsi": 45,
+    "maxRsi": 72
+  },
+  "ipoParameters": {
+    "minGmpPercentForApply": 20.0,
+    "highConvictionGmpPercent": 35.0,
+    "minQibSubscriptionMultiple": 2.5
+  },
+  "growwDefaults": {
+    "orderType": "Limit / Regular Delivery (Cash)",
+    "holdingPeriod": "3 to 15 Days (Swing Momentum)"
+  },
+  "server": {
+    "port": 3300,
+    "host": "0.0.0.0"
+  }
+}

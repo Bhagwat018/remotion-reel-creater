@@ -37,6 +37,27 @@ import {
   BigTechConflictScene,
   OutroIpoCtaScene,
 } from "./anthropicIpo";
+import {
+  CrystalCropHookScene,
+  AgroBusinessRevenueScene,
+  ChinaDumpingImpactScene,
+  GmpRiskTrapScene,
+  CrystalOutroCtaScene,
+} from "./crystalCropIpo";
+import {
+  WatranaHookScene,
+  WarehouseRentalBoomScene,
+  SmeLotSizeDebtScene,
+  GmpDangerZoneScene,
+  SmeRuleOutroCtaScene,
+} from "./watranaRentalsIpo";
+import {
+  MahanadiHookScene,
+  PowerGridCashMachineScene,
+  ZeroDebtTreasuryScene,
+  PsuGmpTrapLicScene,
+  MahanadiOutroCtaScene,
+} from "./mahanadiCoalfieldsIpo";
 
 type SceneComponent = React.FC<
   SceneData & { durationInFrames: number; sceneIndex?: number; slug?: string }
@@ -109,6 +130,60 @@ export const getSceneComponent = (type: string): SceneComponent => {
       }
       if (props.id === "s5-outro" || props.sceneIndex === 4) {
         return React.createElement(OutroIpoCtaScene, { ...props });
+      }
+    }
+
+    if (props.slug === "crystal-crop-protection-ipo" || props.slug?.includes("crystal-crop")) {
+      if (props.id === "s1-hook" || props.sceneIndex === 0) {
+        return React.createElement(CrystalCropHookScene, { ...props });
+      }
+      if (props.id === "s2-business" || props.sceneIndex === 1) {
+        return React.createElement(AgroBusinessRevenueScene, { ...props });
+      }
+      if (props.id === "s3-dumping" || props.sceneIndex === 2) {
+        return React.createElement(ChinaDumpingImpactScene, { ...props });
+      }
+      if (props.id === "s4-gmp-trap" || props.sceneIndex === 3) {
+        return React.createElement(GmpRiskTrapScene, { ...props });
+      }
+      if (props.id === "s5-outro" || props.sceneIndex === 4) {
+        return React.createElement(CrystalOutroCtaScene, { ...props });
+      }
+    }
+
+    if (props.slug === "watrana-rentals-ipo" || props.slug?.includes("watrana")) {
+      if (props.id === "s1-hook" || props.sceneIndex === 0) {
+        return React.createElement(WatranaHookScene, { ...props });
+      }
+      if (props.id === "s2-warehouse" || props.sceneIndex === 1) {
+        return React.createElement(WarehouseRentalBoomScene, { ...props });
+      }
+      if (props.id === "s3-sme-debt" || props.sceneIndex === 2) {
+        return React.createElement(SmeLotSizeDebtScene, { ...props });
+      }
+      if (props.id === "s4-gmp-danger" || props.sceneIndex === 3) {
+        return React.createElement(GmpDangerZoneScene, { ...props });
+      }
+      if (props.id === "s5-outro" || props.sceneIndex === 4) {
+        return React.createElement(SmeRuleOutroCtaScene, { ...props });
+      }
+    }
+
+    if (props.slug === "mahanadi-coalfields-ipo" || props.slug?.includes("mahanadi")) {
+      if (props.id === "s1-hook" || props.sceneIndex === 0) {
+        return React.createElement(MahanadiHookScene, { ...props });
+      }
+      if (props.id === "s2-power-grid" || props.sceneIndex === 1) {
+        return React.createElement(PowerGridCashMachineScene, { ...props });
+      }
+      if (props.id === "s3-zero-debt" || props.sceneIndex === 2) {
+        return React.createElement(ZeroDebtTreasuryScene, { ...props });
+      }
+      if (props.id === "s4-gmp-trap" || props.sceneIndex === 3) {
+        return React.createElement(PsuGmpTrapLicScene, { ...props });
+      }
+      if (props.id === "s5-outro" || props.sceneIndex === 4) {
+        return React.createElement(MahanadiOutroCtaScene, { ...props });
       }
     }
     return React.createElement(component, props);

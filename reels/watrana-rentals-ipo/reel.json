@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "slug": "watrana-rentals-ipo",
+    "title": "Watrana Rentals IPO: ₹1.47 Lakh SME Lot & 10% GMP Reality",
+    "handle": "@techwith.genz",
+    "fps": 30,
+    "durationInFrames": 1621,
+    "width": 1080,
+    "height": 1920,
+    "voiceFile": "reels/watrana-rentals-ipo/voice.mp3",
+    "wordsFile": "reels/watrana-rentals-ipo/words.json",
+    "bgm": false,
+    "voiceVolume": 1,
+    "accentColor": "#f59e0b",
+    "leadIn": "🚜 QUICK-COMMERCE EQUIPMENT IPO • 2026",
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "instagramCaption": "Zepto, Blinkit aur Amazon ke warehouses me forklifts rent par dene wali company Watrana Rentals ka IPO aa chuka hai! Lekin kya isme ₹1.5 Lakh lagana safe hai? 👇\n\nKey Breakdown:\n⚡ ₹120 Cr SME Issue: Quick-commerce boom se inki forklifts aur cranes ki rental demand kafi fast grow kar rahi hai!\n⚠️ Massive ₹1.47 Lakh Lot Size: Normal IPO ki tarah ₹15,000 nahi, seedha ₹1,47,000 block honge! Plus machinery ke liye bhari bank debt hai!\n🚨 Weak 10% GMP: Sirf ₹14,000 ke gain ke liye dedh lakh rupaye risk par lagana 100% dangerous hai!\n\nGolden SME Rule: Jab tak GMP 30% ke upar na ho, tab tak retail capital safe rakho! Kya aap apply karoge? Comments me batao! 👇\n\n👉 Aise hi sharp share market aur SME IPO analysis ke liye follow karo @techwith.genz !\n\n#watranarentals #smeipo #ipo #iposzn #sharemarket #stockmarketindia #nifty50 #zepto #blinkit #quickcommerce #stockanalysis #investing #businessnews #techwithgenz #viralreels #reelsindia #wealthbuilding"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 9.8,
+      "leadIn": "🚜 QUICK-COMMERCE EQUIPMENT IPO • 2026",
+      "headline": "WATRANA RENTALS IPO: ₹120 CR! *SAFE BET YA CAPITAL TRAP?*",
+      "sub": "Forklifts & Cranes Rental Giant Listing",
+      "brollVideo": "broll/warehouse_forklift_moving.mp4",
+      "voice": "Watrana Rentals IPO open ho chuka hai! Lekin kya is 120 Crore ke issue me paisa lagana safe hai ya ye capital trap hai?"
+    },
+    {
+      "id": "s2-warehouse",
+      "type": "chart",
+      "startSec": 9.8,
+      "endSec": 21.5,
+      "leadIn": "🏗️ WAREHOUSE INFRASTRUCTURE MODEL",
+      "headline": "ZEPTO, BLINKIT & AMAZON WAREHOUSES! *FORKLIFTS RENTALS*",
+      "sub": "Supplying Equipment to India's Fastest Logistics",
+      "brollVideo": "broll/logistics_warehouse_conveyor.mp4",
+      "voice": "Pehle business dekho: Zepto, Blinkit aur Amazon ke warehouses me jo forklifts aur cranes chalte hain, unhe rent par deti hai Watrana Rentals! Quick-commerce boom se inka business kaafi fast grow kar raha hai!"
+    },
+    {
+      "id": "s3-sme-debt",
+      "type": "diagram",
+      "startSec": 21.5,
+      "endSec": 33.5,
+      "leadIn": "⚠️ THE SME IPO REALITY CHECK",
+      "headline": "₹1,47,000 MINIMUM LOT! *BHARI KARZA & HIGH CAPITAL RISK*",
+      "sub": "SME Minimum Lot Requires 10x More Capital",
+      "brollVideo": "broll/heavy_industrial_crane.mp4",
+      "voice": "Lekin sabse bada jhatka: SME IPO hone ki wajah se yahan 15,000 nahi, seedha 1 Lakh 47 Thousand rupaye block honge! Aur machinery khareedne ke liye company par bhari karza hai!"
+    },
+    {
+      "id": "s4-gmp-danger",
+      "type": "gmp-gauge",
+      "startSec": 33.5,
+      "endSec": 43,
+      "leadIn": "🚨 GREY MARKET PREMIUM X-RAY",
+      "headline": "GMP SIRF 10%! *DEDH LAKH RISK PAR SIRF ₹14,000 GAIN?*",
+      "sub": "Extreme Risk-Reward Asymmetry in SME Category",
+      "brollVideo": "broll/cash_counter_rollers.mp4",
+      "voice": "Iska GMP sirf 10% chal raha hai—yani sirf 14,000 ke gain ke liye apna dedh lakh rupaya risk par lagana 100% dangerous hai!"
+    },
+    {
+      "id": "s5-outro",
+      "type": "cta",
+      "startSec": 43,
+      "endSec": 54.05,
+      "leadIn": "📜 THE GOLDEN SME IPO RULE",
+      "headline": "RULE: GMP > 30% TABHI APPLY! *CAPITAL SAFE RAKHO*",
+      "sub": "Never Risk Big Capital on Thin SME Margins",
+      "brollVideo": "broll/nasdaq_stock_ticker.mp4",
+      "voice": "SME rule: Jab tak GMP 30% ke upar na ho, capital safe rakho! Kya aap Watrana Rentals me apply karoge? Comments me batao aur follow karo techwith genz!",
+      "buttonText": "FOLLOW NOW 🔥",
+      "handle": "@techwith.genz"
+    }
+  ]
+}

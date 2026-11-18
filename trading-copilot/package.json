@@ -1,0 +1,14 @@
+{
+  "name": "groww-ai-copilot",
+  "version": "1.0.0",
+  "description": "Personal AI Trading & IPO Research Copilot for Groww (100% Free Data & Capital Protection)",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server/dashboardServer.mjs",
+    "scan": "node src/cli.mjs --scan",
+    "scan:quick": "node src/cli.mjs --quick",
+    "ipo": "node src/cli.mjs --ipo",
+    "stock": "node src/cli.mjs --stock"
+  },
+  "dependencies": {}
+}

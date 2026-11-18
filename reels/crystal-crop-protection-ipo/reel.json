@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "slug": "crystal-crop-protection-ipo",
+    "title": "Crystal Crop Protection IPO ₹272: Listing Reality & GMP Trap",
+    "handle": "@techwith.genz",
+    "fps": 30,
+    "durationInFrames": 1820,
+    "width": 1080,
+    "height": 1920,
+    "voiceFile": "reels/crystal-crop-protection-ipo/voice.mp3",
+    "wordsFile": "reels/crystal-crop-protection-ipo/words.json",
+    "bgm": false,
+    "voiceVolume": 1,
+    "accentColor": "#10b981",
+    "leadIn": "🌾 AGROCHEMICAL MEGA IPO • 2026",
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "instagramCaption": "₹272 ke price par Crystal Crop Protection ka mega IPO aa chuka hai! Lekin kya ye IPO aapka paisa double karega ya seedha capital trap hai? 👇\n\nKey Breakdown:\n🌾 ₹2,800+ Cr Top-line: Pesticides, insecticides aur hybrid seeds me bada pan-India business!\n🇨🇳 China Dumping Crash: Saste chemical imports ki wajah se poore Indian chemical sector ke profit margins buri tarah dab gaye hain!\n⚠️ Dismal ₹13 GMP (<5%): ₹15,000 capital block karke sirf ₹700 ke listing gain ke liye itna bada downside risk lena 100% bewaqoofi hai!\n\nSmart money is issue ko avoid kar raha hai! Kya aap is IPO me apply karoge? Comments me batao! 👇\n\n👉 Aise hi sharp share market aur IPO reality secrets ke liye follow karo @techwith.genz !\n\n#crystalcrop #ipo #iposzn #sharemarket #stockmarketindia #nifty50 #agrochemical #stockanalysis #investing #businessnews #techwithgenz #viralreels #reelsindia #wealthbuilding #fintech"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 10.5,
+      "leadIn": "🌾 AGROCHEMICAL MEGA IPO • 2026",
+      "headline": "CRYSTAL CROP IPO: ₹272! *PAISA DOUBLE YA CAPITAL TRAP?*",
+      "sub": "Pesticides & Hybrid Seeds Giant Listing",
+      "brollVideo": "broll/crop_pesticide_spraying.mp4",
+      "voice": "₹272 ke price par Crystal Crop Protection ka mega IPO khul chuka hai! Lekin kya ye IPO aapka paisa double karega ya seedha capital trap hai? Pehle business samjho:"
+    },
+    {
+      "id": "s2-business",
+      "type": "chart",
+      "startSec": 10.5,
+      "endSec": 24.1,
+      "leadIn": "🧪 BUSINESS MODEL & FINANCIALS",
+      "headline": "REVENUE ₹2,800+ CRORE! *LEKIN PROFIT MARGINS KA KYA?*",
+      "sub": "Pesticides • Insecticides • Hybrid Seeds",
+      "brollVideo": "broll/chemical_factory_lab.mp4",
+      "voice": "Company kisaano ke liye pesticides, insecticides aur hybrid seeds banati hai—revenue bhi ₹2,800 Crore se zyada ka dikh raha hai! Lekin asli game iske profit margins me chhupa hai!"
+    },
+    {
+      "id": "s3-dumping",
+      "type": "diagram",
+      "startSec": 24.1,
+      "endSec": 33.6,
+      "leadIn": "🇨🇳 GLOBAL CHEMICAL DUMPING",
+      "headline": "CHINA DUMPING CRASH! *MARGINS BURI TARAH DAB GAYE*",
+      "sub": "Cheap Agrochemical Floods Global Supply",
+      "brollVideo": "broll/china_cargo_container_ship.mp4",
+      "voice": "Pichhle ek saal se China ne poori duniya me saste agrochemicals dump kar diye hain, jisse Indian chemical companies ke margins buri tarah crash ho gaye!"
+    },
+    {
+      "id": "s4-gmp-trap",
+      "type": "gmp-gauge",
+      "startSec": 33.6,
+      "endSec": 48,
+      "leadIn": "🚨 GREY MARKET PREMIUM X-RAY",
+      "headline": "GMP SIRF ₹13 (<5%)! *₹15,000 BLOCK KARKE SIRF ₹700 GAIN?*",
+      "sub": "Extreme Risk-Reward Asymmetry for Retail",
+      "brollVideo": "broll/counting_money.mp4",
+      "voice": "Aur sabse bada red flag: Iska Grey Market Premium sirf ₹13 chal raha hai—yani 5% se bhi kam! Matlab ₹15,000 block karke sirf ₹700 ke chote se listing gain ke liye itna bada risk lena 100% bewaqoofi hai!"
+    },
+    {
+      "id": "s5-outro",
+      "type": "cta",
+      "startSec": 48,
+      "endSec": 60.68,
+      "leadIn": "🧠 SMART MONEY VERDICT • LISTING GAIN",
+      "headline": "SMART MONEY VERDICT: AVOID! *KYA AAP APPLY KAROGE?*",
+      "sub": "Follow @techwith.genz For Share Market Secrets",
+      "brollVideo": "broll/trading_floor_screens.mp4",
+      "voice": "Smart money is issue ko avoid kar raha hai! Kya aap is IPO me apply karoge? Comments me batao aur aise hi share market secrets ke liye follow karo techwith genz!",
+      "buttonText": "FOLLOW NOW 🔥",
+      "handle": "@techwith.genz"
+    }
+  ]
+}

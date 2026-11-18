@@ -1,0 +1,617 @@
+[
+  {
+    "word": "Mahanadi",
+    "start": 0.05,
+    "end": 0.55
+  },
+  {
+    "word": "Coalfields",
+    "start": 0.55,
+    "end": 0.87
+  },
+  {
+    "word": "IPO",
+    "start": 0.87,
+    "end": 1.19
+  },
+  {
+    "word": "aa",
+    "start": 1.19,
+    "end": 1.64
+  },
+  {
+    "word": "chuka",
+    "start": 1.64,
+    "end": 2.08
+  },
+  {
+    "word": "hai!",
+    "start": 2.08,
+    "end": 2.44
+  },
+  {
+    "word": "Aur",
+    "start": 2.76,
+    "end": 2.9099999999999997
+  },
+  {
+    "word": "sach",
+    "start": 3,
+    "end": 3.23
+  },
+  {
+    "word": "ye",
+    "start": 3.23,
+    "end": 3.46
+  },
+  {
+    "word": "hai",
+    "start": 3.46,
+    "end": 3.69
+  },
+  {
+    "word": "ki",
+    "start": 3.69,
+    "end": 3.95
+  },
+  {
+    "word": "aapke",
+    "start": 3.95,
+    "end": 4.21
+  },
+  {
+    "word": "ghar",
+    "start": 4.21,
+    "end": 4.55
+  },
+  {
+    "word": "ki",
+    "start": 4.55,
+    "end": 4.71
+  },
+  {
+    "word": "bijli",
+    "start": 4.71,
+    "end": 5.2
+  },
+  {
+    "word": "aur",
+    "start": 5.2,
+    "end": 5.67
+  },
+  {
+    "word": "AC",
+    "start": 5.67,
+    "end": 6
+  },
+  {
+    "word": "isi",
+    "start": 6,
+    "end": 6.28
+  },
+  {
+    "word": "company",
+    "start": 6.28,
+    "end": 6.65
+  },
+  {
+    "word": "ke",
+    "start": 6.78,
+    "end": 7.14
+  },
+  {
+    "word": "koyla",
+    "start": 7.14,
+    "end": 7.29
+  },
+  {
+    "word": "se",
+    "start": 7.29,
+    "end": 7.56
+  },
+  {
+    "word": "chalti",
+    "start": 7.56,
+    "end": 7.8
+  },
+  {
+    "word": "hai!",
+    "start": 8.16,
+    "end": 8.31
+  },
+  {
+    "word": "Desh",
+    "start": 8.21,
+    "end": 8.360000000000001
+  },
+  {
+    "word": "ki",
+    "start": 8.25,
+    "end": 8.7
+  },
+  {
+    "word": "25%",
+    "start": 8.7,
+    "end": 9.24
+  },
+  {
+    "word": "power",
+    "start": 9.24,
+    "end": 9.61
+  },
+  {
+    "word": "supply",
+    "start": 9.61,
+    "end": 10.19
+  },
+  {
+    "word": "chalane",
+    "start": 10.19,
+    "end": 10.59
+  },
+  {
+    "word": "wali",
+    "start": 10.59,
+    "end": 10.96
+  },
+  {
+    "word": "Coal",
+    "start": 11.23,
+    "end": 11.76
+  },
+  {
+    "word": "India",
+    "start": 11.76,
+    "end": 11.95
+  },
+  {
+    "word": "ki",
+    "start": 11.95,
+    "end": 12.15
+  },
+  {
+    "word": "sabse",
+    "start": 12.15,
+    "end": 12.31
+  },
+  {
+    "word": "badi",
+    "start": 12.31,
+    "end": 12.75
+  },
+  {
+    "word": "cash-machine,",
+    "start": 12.75,
+    "end": 13.36
+  },
+  {
+    "word": "Mahanadi",
+    "start": 13.52,
+    "end": 14.02
+  },
+  {
+    "word": "Coalfields,",
+    "start": 14.02,
+    "end": 14.39
+  },
+  {
+    "word": "9,000",
+    "start": 14.39,
+    "end": 14.8
+  },
+  {
+    "word": "Crore",
+    "start": 14.96,
+    "end": 15.83
+  },
+  {
+    "word": "ka",
+    "start": 15.83,
+    "end": 16.22
+  },
+  {
+    "word": "mega",
+    "start": 16.22,
+    "end": 16.41
+  },
+  {
+    "word": "IPO",
+    "start": 16.41,
+    "end": 16.65
+  },
+  {
+    "word": "laa",
+    "start": 17.03,
+    "end": 17.62
+  },
+  {
+    "word": "rahi",
+    "start": 17.62,
+    "end": 17.77
+  },
+  {
+    "word": "hai!",
+    "start": 18.08,
+    "end": 18.24
+  },
+  {
+    "word": "Company",
+    "start": 18.24,
+    "end": 18.48
+  },
+  {
+    "word": "par",
+    "start": 18.48,
+    "end": 18.98
+  },
+  {
+    "word": "zero",
+    "start": 18.98,
+    "end": 19.52
+  },
+  {
+    "word": "debt",
+    "start": 19.6,
+    "end": 19.81
+  },
+  {
+    "word": "hai",
+    "start": 19.81,
+    "end": 20.27
+  },
+  {
+    "word": "aur",
+    "start": 20.27,
+    "end": 20.55
+  },
+  {
+    "word": "tijori",
+    "start": 20.55,
+    "end": 20.79
+  },
+  {
+    "word": "cash",
+    "start": 20.79,
+    "end": 21.11
+  },
+  {
+    "word": "se",
+    "start": 21.11,
+    "end": 21.36
+  },
+  {
+    "word": "bhari",
+    "start": 21.81,
+    "end": 21.99
+  },
+  {
+    "word": "hai!",
+    "start": 21.99,
+    "end": 22.26
+  },
+  {
+    "word": "Lekin",
+    "start": 22.26,
+    "end": 22.44
+  },
+  {
+    "word": "phir",
+    "start": 22.44,
+    "end": 22.67
+  },
+  {
+    "word": "bhi",
+    "start": 22.67,
+    "end": 22.99
+  },
+  {
+    "word": "iska",
+    "start": 22.99,
+    "end": 23.25
+  },
+  {
+    "word": "Grey",
+    "start": 23.25,
+    "end": 23.88
+  },
+  {
+    "word": "Market",
+    "start": 23.88,
+    "end": 24.15
+  },
+  {
+    "word": "Premium",
+    "start": 24.15,
+    "end": 24.42
+  },
+  {
+    "word": "sirf",
+    "start": 24.42,
+    "end": 24.78
+  },
+  {
+    "word": "3",
+    "start": 24.78,
+    "end": 24.96
+  },
+  {
+    "word": "rupaye",
+    "start": 24.96,
+    "end": 25.33
+  },
+  {
+    "word": "chal",
+    "start": 25.77,
+    "end": 26.04
+  },
+  {
+    "word": "raha",
+    "start": 26.04,
+    "end": 26.34
+  },
+  {
+    "word": "hai—yani",
+    "start": 26.34,
+    "end": 26.6
+  },
+  {
+    "word": "sirf",
+    "start": 26.6,
+    "end": 27.08
+  },
+  {
+    "word": "3%",
+    "start": 27.08,
+    "end": 27.24
+  },
+  {
+    "word": "ka",
+    "start": 27.24,
+    "end": 27.8
+  },
+  {
+    "word": "thanda",
+    "start": 27.8,
+    "end": 28.28
+  },
+  {
+    "word": "listing",
+    "start": 28.28,
+    "end": 28.6
+  },
+  {
+    "word": "gain!",
+    "start": 28.84,
+    "end": 28.99
+  },
+  {
+    "word": "Kyunki",
+    "start": 28.95,
+    "end": 29.13
+  },
+  {
+    "word": "sarkari",
+    "start": 29.13,
+    "end": 29.63
+  },
+  {
+    "word": "PSU",
+    "start": 29.63,
+    "end": 29.88
+  },
+  {
+    "word": "stocks",
+    "start": 30.63,
+    "end": 31.07
+  },
+  {
+    "word": "listing",
+    "start": 31.07,
+    "end": 31.22
+  },
+  {
+    "word": "par",
+    "start": 31.2,
+    "end": 31.71
+  },
+  {
+    "word": "lottery",
+    "start": 31.71,
+    "end": 31.86
+  },
+  {
+    "word": "nahi",
+    "start": 31.84,
+    "end": 32.2
+  },
+  {
+    "word": "lagate!",
+    "start": 32.44,
+    "end": 32.589999999999996
+  },
+  {
+    "word": "Toh",
+    "start": 32.66,
+    "end": 32.86
+  },
+  {
+    "word": "agar",
+    "start": 32.88,
+    "end": 33.08
+  },
+  {
+    "word": "1-day",
+    "start": 33.1,
+    "end": 33.3
+  },
+  {
+    "word": "listing",
+    "start": 33.32,
+    "end": 33.41
+  },
+  {
+    "word": "gain",
+    "start": 33.41,
+    "end": 33.63
+  },
+  {
+    "word": "ke",
+    "start": 33.63,
+    "end": 33.78
+  },
+  {
+    "word": "liye",
+    "start": 33.76,
+    "end": 33.97
+  },
+  {
+    "word": "apply",
+    "start": 34.32,
+    "end": 34.47
+  },
+  {
+    "word": "kar",
+    "start": 34.47,
+    "end": 34.67
+  },
+  {
+    "word": "rahe",
+    "start": 34.67,
+    "end": 34.92
+  },
+  {
+    "word": "ho",
+    "start": 34.92,
+    "end": 35.12
+  },
+  {
+    "word": "toh",
+    "start": 35.12,
+    "end": 35.54
+  },
+  {
+    "word": "bilkul",
+    "start": 35.54,
+    "end": 35.92
+  },
+  {
+    "word": "avoid",
+    "start": 35.92,
+    "end": 36.28
+  },
+  {
+    "word": "karo,",
+    "start": 36.28,
+    "end": 36.61
+  },
+  {
+    "word": "warna",
+    "start": 36.61,
+    "end": 37.02
+  },
+  {
+    "word": "LIC",
+    "start": 37.02,
+    "end": 37.19
+  },
+  {
+    "word": "ki",
+    "start": 37.19,
+    "end": 37.47
+  },
+  {
+    "word": "tarah",
+    "start": 37.47,
+    "end": 37.92
+  },
+  {
+    "word": "capital",
+    "start": 38.16,
+    "end": 38.49
+  },
+  {
+    "word": "phans",
+    "start": 38.49,
+    "end": 38.8
+  },
+  {
+    "word": "jayega!",
+    "start": 39.04,
+    "end": 39.19
+  },
+  {
+    "word": "Kya",
+    "start": 39.09,
+    "end": 39.24
+  },
+  {
+    "word": "aap",
+    "start": 39.22,
+    "end": 39.7
+  },
+  {
+    "word": "Mahanadi",
+    "start": 39.7,
+    "end": 39.94
+  },
+  {
+    "word": "Coalfields",
+    "start": 39.94,
+    "end": 40.26
+  },
+  {
+    "word": "me",
+    "start": 40.26,
+    "end": 40.51
+  },
+  {
+    "word": "apply",
+    "start": 40.51,
+    "end": 40.91
+  },
+  {
+    "word": "karoge?",
+    "start": 40.91,
+    "end": 41.08
+  },
+  {
+    "word": "Comments",
+    "start": 41.08,
+    "end": 41.52
+  },
+  {
+    "word": "me",
+    "start": 41.72,
+    "end": 41.98
+  },
+  {
+    "word": "batao",
+    "start": 42.27,
+    "end": 42.68
+  },
+  {
+    "word": "aur",
+    "start": 42.68,
+    "end": 42.94
+  },
+  {
+    "word": "follow",
+    "start": 42.94,
+    "end": 43.27
+  },
+  {
+    "word": "karo",
+    "start": 43.27,
+    "end": 43.56
+  },
+  {
+    "word": "techwith",
+    "start": 43.56,
+    "end": 44.26
+  },
+  {
+    "word": "genz!",
+    "start": 44.26,
+    "end": 44.6
+  }
+]

@@ -190,7 +190,9 @@
     "hasWebsite": false,
     "currentLink": null,
     "discoveredAt": "2026-11-16T14:30:28.163Z",
-    "status": "PENDING"
+    "status": "SKIPPED",
+    "statusNote": "Textbox not accessible",
+    "lastActionAt": "2026-11-18T07:06:40.206Z"
   },
   {
     "username": "prithvifitnessarena",
@@ -201,7 +203,9 @@
     "hasWebsite": false,
     "currentLink": null,
     "discoveredAt": "2026-11-16T14:30:39.387Z",
-    "status": "PENDING"
+    "status": "CONTACTED",
+    "statusNote": "Hey Prithvi, massive respect for what you're building in Indore with the boxing, Yogfit, and that incredible lineup of fitness zones. Having a custom website combined with your own official Android app live on the Google Play Store would make your brand look ten times more premium while automating those WhatsApp fee follow-ups and workout plans. We build these high-performance apps and sites incredibly fast at budget-friendly, founder-friendly rates. Would it be alright if I dropped a quick 30-second interactive prototype link built specifically for a gym like yours?",
+    "lastActionAt": "2026-11-18T07:09:11.578Z"
   },
   {
     "username": "16hoursfitnessindore",
@@ -212,7 +216,9 @@
     "hasWebsite": true,
     "currentLink": "https://www.threads.com/@16hoursfitnessindore?xmt=AQG01ZpZpT2gU7a4PKXJD98IAy1DUtDQOK5rdvOSD8q_QY8",
     "discoveredAt": "2026-11-16T14:30:50.472Z",
-    "status": "PENDING"
+    "status": "CONTACTED",
+    "statusNote": "Hey 16 Hours Fitness, love seeing the heavy-duty strength training setup and certified trainers you have over there in Indore. A sleek custom website combined with your own official Android app live on the Google Play Store would make your gym look 10x more premium while solving the hassle of manual fee tracking. We handle the whole build at a lightning-fast speed and at extremely budget-friendly founder rates. Would it be alright if I dropped a quick 30-second interactive prototype link built specifically for fitness centers?",
+    "lastActionAt": "2026-11-18T07:21:12.748Z"
   },
   {
     "username": "nammo_gymflex",
@@ -223,7 +229,9 @@
     "hasWebsite": false,
     "currentLink": null,
     "discoveredAt": "2026-11-16T14:31:01.946Z",
-    "status": "PENDING"
+    "status": "CONTACTED",
+    "statusNote": "Hey Nammo, love the energy and grind on your fitness page! I noticed you don't have a dedicated website or official mobile app yet, which is a huge missed opportunity for managing memberships and workouts smoothly. We can build you a custom website and your very own Android app on the Google Play Store to make your brand look 10x more premium. We deliver these lightning-fast at super budget-friendly rates without burning a hole in your pocket. Would it be cool if I dropped a quick 30-second interactive demo link built specifically for fitness centers?",
+    "lastActionAt": "2026-11-18T07:25:55.234Z"
   },
   {
     "username": "invict_fitness",
@@ -234,7 +242,9 @@
     "hasWebsite": true,
     "currentLink": "https://www.threads.com/@invict_fitness?xmt=AQG06tW_D7hkM6i7mueLkNY98FmqtBmQ3HLHFa1_tEdP_KI",
     "discoveredAt": "2026-11-16T14:31:18.107Z",
-    "status": "PENDING"
+    "status": "CONTACTED",
+    "statusNote": "Hey Invict Fitness team, love seeing the strength and transformation focus you bring to Manikonda! Upgrading your gym with a sleek custom website and your very own Android app on the Google Play Store would make your brand look 10x more premium while simplifying member signups. We build these custom solutions remarkably fast at a very budget-friendly rate so you can scale without breaking the bank. Mind if I shoot over a quick 30-second interactive demo we built for fitness centers?",
+    "lastActionAt": "2026-11-18T07:28:04.838Z"
   },
   {
     "username": "coach_mohd90",
@@ -245,7 +255,9 @@
     "hasWebsite": true,
     "currentLink": "https://www.threads.com/@coach_mohd90?xmt=AQG0lUgNDiMG2TUNBK71sOXSD6r3JOgidoJMdCQnwvIJV74",
     "discoveredAt": "2026-11-16T14:31:37.579Z",
-    "status": "PENDING"
+    "status": "CONTACTED",
+    "statusNote": "Hey Coach Mohd, massive respect for your 15+ years transforming physiques in Nizamabad! Imagine having your own custom website alongside an official AR Fitness Care Android app live on the Google Play Store to manage client plans and look 10x more premium. We build these high-performance systems with a super fast turnaround at extremely budget-friendly rates for dedicated trainers. Would you be open to checking out a quick 30-second interactive prototype we put together for fitness coaches?",
+    "lastActionAt": "2026-11-18T07:32:01.790Z"
   },
   {
     "username": "snehithasanan",
@@ -256,7 +268,9 @@
     "hasWebsite": false,
     "currentLink": null,
     "discoveredAt": "2026-11-16T14:31:57.001Z",
-    "status": "PENDING"
+    "status": "CONTACTED",
+    "statusNote": "Hey Snehitha, love your lifestyle and fitness content—truly defined by grace! I noticed you don't have a dedicated web presence or app yet, which means you're likely dealing with manual membership tracking and WhatsApp follow-ups. We build custom websites and official Android apps on the Google Play Store under your brand name that make your business look 10x more premium while automating client bookings and workout plans. We deliver these fully custom solutions in just a quick 7-day turnaround at incredibly budget-friendly, founder-friendly rates. Would it be alright if I dropped a quick 30-second interactive prototype link built specifically for your fitness brand?",
+    "lastActionAt": "2026-11-18T07:33:56.953Z"
   },
   {
     "username": "fitmealsindia",
@@ -267,7 +281,9 @@
     "hasWebsite": true,
     "currentLink": "https://www.threads.com/@fitmealsindia?xmt=AQG0klAA6fQYx1R7WKNSTscF03EVZz4hZB3uQsdlwS1afu8",
     "discoveredAt": "2026-11-16T14:32:08.422Z",
-    "status": "PENDING"
+    "status": "CONTACTED",
+    "statusNote": "Hey Fit Meals, love seeing how you're delivering nutritious, wholesome meals right to your clients' doorsteps. Upgrading your current link to a high-performance website and an official Android app on the Google Play Store would make your brand look 10x more premium while simplifying orders. We handle the whole setup at an extremely fast turnaround and a budget-friendly rate that won't break the bank. Mind if I shoot over a quick 30-second interactive demo link built specifically for food and fitness brands?",
+    "lastActionAt": "2026-11-18T07:37:12.134Z"
   },
   {
     "username": "anytimefitness_kondapur",
@@ -278,7 +294,9 @@
     "hasWebsite": true,
     "currentLink": "https://www.threads.com/@anytimefitness_kondapur?xmt=AQG0uLaQ_6ZQZgvxHGgofU4imZVBEZJX6xgBTwlX46HOoFU",
     "discoveredAt": "2026-11-16T14:32:34.442Z",
-    "status": "PENDING"
+    "status": "CONTACTED",
+    "statusNote": "Hey Anytime Fitness Kondapur team, love seeing you guys keep Kondapur healthy 24/7 with such a solid community. Imagine having a custom website and your very own branded Android app live on the Google Play Store to handle member check-ins and workout plans, making your location look 10x more premium. We build these custom solutions remarkably fast at extremely budget-friendly rates. Would you be open to checking out a quick 30-second interactive demo we put together for a fitness space?",
+    "lastActionAt": "2026-11-18T07:38:55.720Z"
   },
   {
     "username": "varunn_27_",
@@ -289,6 +307,278 @@
     "hasWebsite": false,
     "currentLink": null,
     "discoveredAt": "2026-11-16T14:32:45.330Z",
+    "status": "CONTACTED",
+    "statusNote": "Hey Varun, really cool to see a tech graduate combining engineering skills with the fitness space. Managing your gym community must keep you busy, especially handling admissions and fee tracking manually. We build custom websites and launch official Android apps on the Play Store under your brand so you can ditch the WhatsApp reminders and look 10x more premium. We deliver these completely tailored solutions surprisingly fast at very budget-friendly, founder-friendly rates. Would it be alright if I dropped a quick 30-second interactive demo link built specifically for fitness centers?",
+    "lastActionAt": "2026-11-18T07:41:23.349Z"
+  },
+  {
+    "username": "iamgopaldayma",
+    "fullName": "Gopal Dayma",
+    "bio": "iamgopaldayma\nGopal Dayma\n644 posts\n15.8k followers\n8,218 following\nCommunity\n🕉🧡🚩🇮🇳🕉\nDo Follow- @flexwithgopalssss\n@nosecrets.in - Brand Athlete ⚡️💪🏻\nDM for Paid Promotions\nIndia Top 10 🇮🇳\n8... \nmore\nyoutube.com/@gopaldayma?si=E8tVUZRgzeRGkree\niamgopaldayma\nFollow\nMessage\nABHIVYAKTI 2k26\n❤",
+    "followers": "15.8k followers",
+    "niche": "gyms",
+    "hasWebsite": true,
+    "currentLink": "https://www.threads.com/@iamgopaldayma?xmt=AQG0ZNrytCBuuinX2ehSSW2z7gSSG5dbxLDHfJ-7CNYXa34",
+    "discoveredAt": "2026-11-18T07:00:22.983Z",
+    "status": "CONTACTED",
+    "statusNote": "Hey Gopal, massive respect for grinding your way into India's Top 10 fitness creators and repping @nosecrets.in! \n\nI’m a senior full-stack developer, and we help top fitness brands scale by building high-end websites alongside your very own official Android App on the Google Play Store—making your brand look 10x more premium while simplifying member signups. We handle the entire build lightning-fast at a fraction of typical agency costs, completely tailored for fitness pros on a founder-friendly budget. \n\nWould it be cool if I dropped a quick 30-second interactive prototype link showing what this could look like for your brand?",
+    "lastActionAt": "2026-11-18T07:43:49.052Z"
+  },
+  {
+    "username": "oncemorecrossfit",
+    "fullName": "Once More CrossFit",
+    "bio": "oncemorecrossfit\nOnce More CrossFit\n852 posts\n1,495 followers\n390 following\nGym/Physical fitness centre\nOwner @kaustavbaruah CF L3\nA crossfit community in hennur that loves food.\n#strongertogether\noncemorecrossfit.com and 2 more\nFollow\nMessage\n2025\n2024\nHighlights\n'23\nTrainer\nNew batch 2023\n‘22\nWond",
+    "followers": "1,495 followers",
+    "niche": "gyms",
+    "hasWebsite": false,
+    "currentLink": null,
+    "discoveredAt": "2026-11-18T07:00:34.093Z",
+    "status": "CONTACTED",
+    "statusNote": "Hey Kaustav, loving the strong community energy you've built at Once More CrossFit right there in Hennur. Upgrading your box with a custom website and your very official Android app on the Google Play Store would make managing memberships, fee alerts, and workouts seamless while making your brand look 10x more premium. We build these high-performance apps extremely fast at very budget-friendly rates for gym owners. Would it be alright if I shoot over a quick 30-second interactive demo we put together for fitness boxes?",
+    "lastActionAt": "2026-11-18T07:46:18.581Z"
+  },
+  {
+    "username": "akshaysingh5067",
+    "fullName": "Akshay",
+    "bio": "akshaysingh5067\nAkshay\n296 posts\n5,045 followers\n407 following\nSportsperson\n🥋 JUDO WARRIOR 🇮🇳\n💪 Built by Discipline\n🔥 Pain is Temporary, Glory is Forever\n🏆 Road to the Top\n⚡ No Excuses. Just Train... \nmore\nwww.youtube.com/channel/UCqiHjAX2pVC5EMXnWO5cBSg\nFollow\nMessage\nHighlights\nHighlights\nHi",
+    "followers": "5,045 followers",
+    "niche": "gyms",
+    "hasWebsite": false,
+    "currentLink": null,
+    "discoveredAt": "2026-11-18T07:00:44.916Z",
+    "status": "CONTACTED",
+    "statusNote": "Hey Akshay, huge respect for your dedication to the sport and the discipline on your page—true judo warrior energy! I noticed you don't have an official website or app yet, which means you're likely wasting hours managing memberships on WhatsApp and paper registers. We build custom websites and your very own Android app on the Google Play Store so your training brand looks 10x more premium and automates client bookings. We deliver these lightning-fast at a super budget-friendly rate that fits any founder's pocket. Mind if I drop a quick 30-second interactive demo link tailored for fitness pros?",
+    "lastActionAt": "2026-11-18T11:00:45.168Z"
+  },
+  {
+    "username": "100.rep",
+    "fullName": "Saurabh Thapa | Fitness Experience Curator",
+    "bio": "100.rep\nSaurabh Thapa | Fitness Experience Curator\n615 posts\n7,757 followers\n1,169 following\nEntrepreneur\n𝗘𝘅-𝗻𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗮𝘁𝗵𝗹𝗲𝘁𝗲\n𝗥𝗲𝘁𝗿𝗲𝗮𝘁𝘀 • 𝗚𝘆𝗺𝘀 •\nFounder @100rep.official\n🏋️ @stride.box • @shivaya_mukteshwar\nMaking fitness the... \nmore\n100-rep.com/contact.php\nFollow\nMessa",
+    "followers": "7,757 followers",
+    "niche": "gyms",
+    "hasWebsite": false,
+    "currentLink": null,
+    "discoveredAt": "2026-11-18T07:00:55.963Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "paresh_792",
+    "fullName": "Paresh Mhatre",
+    "bio": "paresh_792\nParesh Mhatre\n53 posts\n604 followers\n855 following\nLet go of what holds you back.\nStrength & Conditioning Coach 🏋️‍♂️\nMumbai, India 🇮🇳\nFollow\nMessage\nRide it\n2.0\nAndaman 🏝️\nFitness&Fun\nKedarkantha\nKedarnath\nAesthetics\nPupper",
+    "followers": "604 followers",
+    "niche": "gyms",
+    "hasWebsite": false,
+    "currentLink": null,
+    "discoveredAt": "2026-11-18T07:01:14.189Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "curlyfitness07",
+    "fullName": "𝗖𝘂𝗿𝗹𝘆 𝗙𝗶𝘁𝗻𝗲𝘀𝘀",
+    "bio": "curlyfitness07\n𝗖𝘂𝗿𝗹𝘆 𝗙𝗶𝘁𝗻𝗲𝘀𝘀\n97 posts\n1,956 followers\n6 following\nSport & fitness instruction\n𝗠𝗮𝗶𝗻 𝗔/𝗰. :- @monudagar07\n𝗠𝗲𝘁𝗖𝗼𝗻𝘀\n𝗗𝗮𝗶𝗹𝘆 𝗪𝗢𝗗'𝘀\n𝗪𝗢𝗗 𝗮𝗻𝗱 𝗛𝗜𝗜𝗧 𝗧𝗿𝗮𝗶𝗻𝗶𝗻𝗴 🏋🏻‍♂️\n𝗙𝗼𝗹𝗹𝗼𝘄 𝗙𝗼𝗿 𝗗𝗮𝗶𝗹𝘆 𝗪𝗼𝗿𝗸𝗼𝘂𝘁 🏋🏻‍♂️\n𝗕𝗼𝗱𝘆𝘄𝗲𝗶𝗴𝗵𝘁... ",
+    "followers": "1,956 followers",
+    "niche": "gyms",
+    "hasWebsite": false,
+    "currentLink": null,
+    "discoveredAt": "2026-11-18T07:01:25.430Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "fitnessleaguethane",
+    "fullName": "Fitness League",
+    "bio": "fitnessleaguethane\nFitness League\n399 posts\n854 followers\n891 following\nGym/Physical fitness centre\n⚡️Welcome to the League of Strength⚡️\n• Gym | Cross Fit | Karate | Kick Boxing | Zumba | Kids Batch •\n🏋️‍♂️ Get fit... \nmore\nFitness League, Ground Floor, Madhu Milan Residency, Near Building No 75, ",
+    "followers": "854 followers",
+    "niche": "gyms",
+    "hasWebsite": true,
+    "currentLink": "https://www.threads.com/@fitnessleaguethane?xmt=AQG0a1fCj82k0Jm3RDsNGeGQCvxDSifCAl7NzrXRf4DstYA",
+    "discoveredAt": "2026-11-18T07:01:37.107Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "thetribeindia",
+    "fullName": "THE TRIBE | FITNESS TRAINING STUDIO",
+    "bio": "thetribeindia\nTHE TRIBE | FITNESS TRAINING STUDIO\n1,502 posts\n70.1k followers\n1,069 following\nCommunity\n#KeepMoving⚡\n📍Juhu | Linking Road\nIn-Studio Training • Virtual Training • Personal Training • Tailor-made Nutrition • ... \nmore\nThe Tribe Fitness Studio, 6th, Casablanca, 10th Rd, Gulmohar Road, ",
+    "followers": "70.1k followers",
+    "niche": "gyms",
+    "hasWebsite": false,
+    "currentLink": null,
+    "discoveredAt": "2026-11-18T07:02:16.188Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "whynotfitnessofficial",
+    "fullName": "Why Not Fitness",
+    "bio": "whynotfitnessofficial\nWhy Not Fitness\n673 posts\n9,747 followers\n15 following\nGym/Physical fitness centre\n#whynotfitness #begintobelieve\nlinktr.ee/why_not_fitness\nwhynotfitnessofficial\nFollow\nMessage\nCeleb Zone\nAthletes\nLocation",
+    "followers": "9,747 followers",
+    "niche": "gyms",
+    "hasWebsite": true,
+    "currentLink": "https://www.threads.com/@whynotfitnessofficial?xmt=AQG099pznzrcM671lBZ8VQqsUBd5MqMSMJCGp2lIqX-V98M",
+    "discoveredAt": "2026-11-18T07:02:27.892Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "elixirfitnessgym",
+    "fullName": "ELIXIR FITNESS GYM",
+    "bio": "elixirfitnessgym\nELIXIR FITNESS GYM\n846 posts\n42k followers\n308 following\nGym/Physical fitness centre\nWhere Fitness Meets Lifestyle 🏋️‍♂️\nFat Loss | Muscle Gain | Swimming\n📍Andheri West\n💼Manage by @rubydalvina\n📲 WhatsApp... \nmore\nelixirfitnessgym.com\nFollow\nMessage\n💪🏽Members\n🎥Gym Tour\nGanpati",
+    "followers": "42k followers",
+    "niche": "gyms",
+    "hasWebsite": false,
+    "currentLink": null,
+    "discoveredAt": "2026-11-18T07:02:38.925Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "kenzofitness_kharghar",
+    "fullName": "Kenzo Fitness Kharghar",
+    "bio": "kenzofitness_kharghar\nKenzo Fitness Kharghar\n76 posts\n982 followers\n19 following\n🏢 Navi Mumbai’s BIGGEST Gym Destination\n💪 Powerhouse of amenities\n📐 18,000 Sq. Ft. of pure fitness luxury\nAddress ⬇️\nshare.google/tgkBsZlvmH1Lqt1pb\nFollow\nMessage",
+    "followers": "982 followers",
+    "niche": "gyms",
+    "hasWebsite": false,
+    "currentLink": null,
+    "discoveredAt": "2026-11-18T07:02:50.627Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "malhar_fitness_official",
+    "fullName": "Malhar Fitness | Goregaon",
+    "bio": "malhar_fitness_official\nMalhar Fitness | Goregaon\n86 posts\n945 followers\n195 following\nGym/Physical fitness centre\n🏋️ Results That Speak 💯\n🔥 Fitness | Strength | Transformation\n📍Goregaon | DM to Start Today👇\n702 ,Seventh Floor, Kamalacharan Corporate Soc, Jawahar Nagar Road No.2, Above SRV Hosp",
+    "followers": "945 followers",
+    "niche": "gyms",
+    "hasWebsite": false,
+    "currentLink": null,
+    "discoveredAt": "2026-11-18T07:03:01.814Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "ufitgymborivali",
+    "fullName": "UFIT GYM",
+    "bio": "ufitgymborivali\nUFIT GYM\n163 posts\n1,127 followers\n438 following\nLUXURY IN STRENGTH | POWERED BY JERAI\nBORIVALI (W)📍\nHIGHLY EXPERIENCED & CERTIFIED TRAINERS 💪\n+91 9769998348\nUFIT Gym, 1st Floor, Modispaces Volga, opp Bank of Baroda, Shimpoli, Raiyani Gram, Boirvali West, Mumbai, Maharashtra 400092",
+    "followers": "1,127 followers",
+    "niche": "gyms",
+    "hasWebsite": false,
+    "currentLink": null,
+    "discoveredAt": "2026-11-18T07:03:27.741Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "targetdental_academy",
+    "fullName": "TARGET DENTAL ACADEMY",
+    "bio": "targetdental_academy\nTARGET DENTAL ACADEMY\n1,000 posts\n2,549 followers\n23 following\nIt is an institute which provides coaching for MDS aspirants & providing training to dentists who want to enhance their... \nmore\nNear Nanda Hospital, Chhatarpur Extension, Delhi, India 110074\nwww.targetdentalacademy.",
+    "followers": "2,549 followers",
+    "niche": "doctors_clinics",
+    "hasWebsite": true,
+    "currentLink": "https://www.threads.com/@targetdental_academy?xmt=AQG07rc-xvF4DcInrZHcSO1EVqqc6VmrtljkrlpkRgBamfU",
+    "discoveredAt": "2026-11-18T07:03:43.100Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "pitampuradentalclinic",
+    "fullName": "Pitampura Dental Clinic",
+    "bio": "pitampuradentalclinic\nPitampura Dental Clinic\n456 posts\n1,112 followers\n9 following\nHealth/beauty\nPitampura Dental Clinic\nGenuine, Quality & Affordable Dentistry\nWe have team of Masters in Dental Surgery (MDS)\nwww.pitampuradentalclinic.com and 1 more\npitampuradentalclinic\nFollow\nMessage\nDental Tips\n",
+    "followers": "1,112 followers",
+    "niche": "doctors_clinics",
+    "hasWebsite": true,
+    "currentLink": "https://www.threads.com/@pitampuradentalclinic?xmt=AQG0DanY6brCRmS4ziAa8BNrjA15ub-3xkCkqxoGh7u1rP0",
+    "discoveredAt": "2026-11-18T07:03:53.929Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "rohinidental",
+    "fullName": "Rohini Dental, NABH Accredited Dental Clinic",
+    "bio": "rohinidental\nRohini Dental, NABH Accredited Dental Clinic\n433 posts\n1,344 followers\n116 following\nYour smile is our passion\nA-5/26, sector 16, rohini,\nDelhi, DL, India, Delhi, India 110085\nwww.rohinidentalclinic.com\nrohinidental\nFollow\nMessage\nTestimonials\nDental Tips\nBefore & After\nWeekly Offers",
+    "followers": "1,344 followers",
+    "niche": "doctors_clinics",
+    "hasWebsite": true,
+    "currentLink": "https://www.threads.com/@rohinidental?xmt=AQG0ZkKn-SSlEwzlk66CSp_F1blUO9n4xFKvorcBfBzXebk",
+    "discoveredAt": "2026-11-18T07:04:04.700Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "dentistrybeyondsmiles",
+    "fullName": "SwayamDentalClinic |SmileMakeovers|PainlessDental Procedures",
+    "bio": "dentistrybeyondsmiles\nSwayamDentalClinic |SmileMakeovers|PainlessDental Procedures\n334 posts\n5,266 followers\n54 following\nDentist and dental surgery\nDr. PRAKSHI KWATRA\nDelhi📍Paschim Vihar📍Vivek Vihar\n10+years of experience\n7000+ Smiles treated with care\n📞9899956998\nFollow\nMessage\n🏋️‍♀️🤸💪\nScan ",
+    "followers": "5,266 followers",
+    "niche": "doctors_clinics",
+    "hasWebsite": false,
+    "currentLink": null,
+    "discoveredAt": "2026-11-18T07:04:15.905Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "modidentalclinic",
+    "fullName": "32 facts Modi’s Dental Clinic",
+    "bio": "modidentalclinic\n32 facts Modi’s Dental Clinic\n248 posts\n5,814 followers\n6 following\nGeneral dentist\n@drmanu_modi\n🦷 Your Smile, Our Priority\n25+ Years of Dental Excellence\n5 Lakh+ happy patients\n... \nmore\nModi Complex,Building No. 2 Ashok Vihar Phase 2, 110052, Delhi, India 110052\nModi Dental & Pro",
+    "followers": "5,814 followers",
+    "niche": "doctors_clinics",
+    "hasWebsite": false,
+    "currentLink": "https://www.facebook.com/234273073581706?ref=NONE_xav_ig_profile_page_web",
+    "discoveredAt": "2026-11-18T07:04:26.850Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "dr__rahemeen",
+    "fullName": "Dr_Rahemeen",
+    "bio": "dr__rahemeen\nDr_Rahemeen\n125 posts\n615 followers\n64 following\nDentist and dental surgery\n🦷 Gentle Dental Care\n✨ Laser • RCT • Aligners • Implants •Cosmetic dentistry\n📍Ghaffar Manzil, Okhla | 800m from Jamia M... \nmore\nwa.link/38wiy7\nFollow\nMessage\n📝",
+    "followers": "615 followers",
+    "niche": "doctors_clinics",
+    "hasWebsite": false,
+    "currentLink": null,
+    "discoveredAt": "2026-11-18T07:04:37.764Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "mmdcharitabledentalcentre",
+    "fullName": "MMD Charitable Dental Centre",
+    "bio": "mmdcharitabledentalcentre\nMMD Charitable Dental Centre\n207 posts\n994 followers\n36 following\nDentist and dental surgery\nExpert dental care at 7 locations:\nPalam | Moti Nagar | Dwarka Mor | Najafgarh | Laxmi Nagar | Uttam Nagar | Panipat... \nmore\nW Z 10 Palam Ground floor Near gol chakkar, Delhi, Indi",
+    "followers": "994 followers",
+    "niche": "doctors_clinics",
+    "hasWebsite": true,
+    "currentLink": "https://www.threads.com/@mmdcharitabledentalcentre?xmt=AQG0nYRzYA8XFa7MbiQgrGIlfV5_Cb25B3wiuM40-Sgy6oU",
+    "discoveredAt": "2026-11-18T07:04:49.052Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "drrajatdentist",
+    "fullName": "Rajat Sachdeva",
+    "bio": "drrajatdentist\nRajat Sachdeva\n9,547 posts\n114k followers\n2,031 following\nDentist and dental surgery\nDr Rajat Sachdeva || Dentist || Delhi\nMDS MBA 22+ years of experience, Surgeon TMJ Specialist, Passionate corporate... \nmore\nwww.youtube.com/user/drrajatsachdeva and 4 more\ndrrajatdentist\nFollow\nMessa",
+    "followers": "114k followers",
+    "niche": "doctors_clinics",
+    "hasWebsite": true,
+    "currentLink": "https://www.threads.com/@drrajatdentist?xmt=AQG0u6yckWfRmfGFPLuyZjs3IQMAVh231Bl9HgxFcF2p1ss",
+    "discoveredAt": "2026-11-18T07:05:00.315Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "dr.ram.orthodontist",
+    "fullName": "Dr Ram",
+    "bio": "dr.ram.orthodontist\nDr Ram\n248 posts\n1,366 followers\n90 following\nReel creator\n🦷 Dr. Ram | MDS Orthodontist\n🏆 MAIDS Top Ranker, Delhi\n📍 Dr. Ram Dental Clinic, Shahdara – 110032\n📲 WhatsApp: 9211260490\ndr.ram.orthodontist\nFollow\nMessage",
+    "followers": "1,366 followers",
+    "niche": "doctors_clinics",
+    "hasWebsite": true,
+    "currentLink": "https://www.threads.com/@dr.ram.orthodontist?xmt=AQG0XpMfj3-YUt2wH-v0v1hKQSSCQnbwvy-dxiGGPs9eUUM",
+    "discoveredAt": "2026-11-18T07:05:11.224Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "specialityaesthetics",
+    "fullName": "Speciality Aesthetics",
+    "bio": "specialityaesthetics\nSpeciality Aesthetics\n389 posts\n2,170 followers\n370 following\nSurgeon\nSpeciality Aesthetics: Transforming smiles with dental implants, braces, PRP, Botox, and hair transplants. Visit us in... \nmore\nwww.specialityaesthetics.com\nspecialityaesthetics\nFollow\nMessage\nHighlights\nHair ",
+    "followers": "2,170 followers",
+    "niche": "doctors_clinics",
+    "hasWebsite": true,
+    "currentLink": "https://www.threads.com/@specialityaesthetics?xmt=AQG0vpVlTMzFbuHMx7n0b3O10tsLTV2UK2-uqhI8xMnMUoE",
+    "discoveredAt": "2026-11-18T07:05:22.045Z",
+    "status": "PENDING"
+  },
+  {
+    "username": "sparkle_beauty_aesthetic",
+    "fullName": "Sparkle Beauty Aesthetic",
+    "bio": "sparkle_beauty_aesthetic\nSparkle Beauty Aesthetic\n253 posts\n2,171 followers\n16 following\n✨ Redefining Beauty\nSkin Specialist | Hydra Facial | Laser Hair Removal\nContact us: +919326509207\nShop No. 7, 1st Floor, Abdul Majeed Chawl, Dargah Rd, Sonapur, Bhandup West, Mumbai, Maharashtra 40078\nshare.goog",
+    "followers": "2,171 followers",
+    "niche": "doctors_clinics",
+    "hasWebsite": true,
+    "currentLink": "https://www.threads.com/@sparkle_beauty_aesthetic?xmt=AQG0N-n8QdChmbcMhqRI87c60f2HeuYWS08TbhP0WN2KPpo",
+    "discoveredAt": "2026-11-18T07:05:58.591Z",
     "status": "PENDING"
   }
 ]

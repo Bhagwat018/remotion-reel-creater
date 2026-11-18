@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "slug": "mahanadi-coalfields-ipo",
+    "title": "Mahanadi Coalfields IPO: ₹9,000 Cr PSU Trap or Dividend Gem?",
+    "handle": "@techwith.genz",
+    "fps": 30,
+    "durationInFrames": 1335,
+    "width": 1080,
+    "height": 1920,
+    "voiceFile": "reels/mahanadi-coalfields-ipo/voice.mp3",
+    "wordsFile": "reels/mahanadi-coalfields-ipo/words.json",
+    "bgm": false,
+    "voiceVolume": 1,
+    "accentColor": "#06b6d4",
+    "leadIn": "⚡ MEGA PSU IPO DISRUPTION • 2026",
+    "avatar": {
+      "enabled": true,
+      "position": "left"
+    },
+    "captionStyle": "bubble",
+    "instagramCaption": "Mahanadi Coalfields ka ₹9,000 Crore mega IPO aa raha hai! Lekin kya is sarkari issue me paisa lagana chahiye ya ye LIC jaisa trap banega? 👇\n\nKey Breakdown:\n⚡ 25% Power Supply: Aapke ghar ki bijli aur AC jis koyla se chalti hai, uska 25% Coal India ki yahi subsidiary produce karti hai!\n🛡️ Zero Debt & Cash Rich: Company par ₹0 karza hai aur tijori saalon se cash aur profits se bhari hai!\n⚠️ Cold ₹3 GMP (3% Gain): Sarkari PSU IPOs listing par lottery nahi lagate! Sirf 3% gain ke liye 1-day listing investors ka capital LIC ki tarah phans sakta hai!\n\nVerdict: 1-Day Listing Gain ke liye avoid karo! Lekin long-term regular dividend ke liye ye ek solid PSU stock ban sakta hai. Kya aap apply karoge? Comments me batao! 👇\n\n👉 Share market aur IPOs ki unbiased reality ke liye follow karo @techwith.genz !\n\n#mahanadicoalfields #coalindia #ipo #psustocks #sharemarket #stockmarketindia #nifty50 #stockanalysis #investing #businessnews #techwithgenz #viralreels #reelsindia #wealthbuilding #dividendinvesting"
+  },
+  "scenes": [
+    {
+      "id": "s1-hook",
+      "type": "title",
+      "startSec": 0,
+      "endSec": 8,
+      "leadIn": "⚡ MEGA PSU IPO DISRUPTION • 2026",
+      "headline": "MAHANADI COALFIELDS IPO! *GHAR KI BIJLI & AC KA ASLI SACH*",
+      "sub": "Coal India's Biggest Cash Engine Going Public",
+      "brollVideo": "broll/coal_mine_excavator_dumper.mp4",
+      "voice": "Mahanadi Coalfields IPO aa chuka hai! Aur sach ye hai ki aapke ghar ki bijli aur AC isi company ke koyla se chalti hai!"
+    },
+    {
+      "id": "s2-power-grid",
+      "type": "chart",
+      "startSec": 8,
+      "endSec": 17.8,
+      "leadIn": "🔌 CRITICAL ENERGY INFRASTRUCTURE",
+      "headline": "DESH KI 25% POWER SUPPLY! *COAL INDIA KI #1 CASH MACHINE*",
+      "sub": "Supplying 1 in every 4 units of electricity in India",
+      "brollVideo": "broll/thermal_power_plant_electricity.mp4",
+      "voice": "Desh ki 25% power supply chalane wali Coal India ki sabse badi cash-machine, Mahanadi Coalfields, 9,000 Crore ka mega IPO laa rahi hai!"
+    },
+    {
+      "id": "s3-zero-debt",
+      "type": "stat",
+      "startSec": 17.8,
+      "endSec": 25.5,
+      "leadIn": "💎 BULLETPROOF BALANCE SHEET",
+      "headline": "COMPANY PAR ZERO DEBT! *AUR TIJORI CASH SE BHARI HAI*",
+      "sub": "Zero Borrowings & Massive Cash Reserves",
+      "brollVideo": "broll/cash_counter_rollers.mp4",
+      "voice": "Company par zero debt hai aur tijori cash se bhari hai!"
+    },
+    {
+      "id": "s4-gmp-trap",
+      "type": "gmp-gauge",
+      "startSec": 25.5,
+      "endSec": 38.8,
+      "leadIn": "⚠️ GREY MARKET REALITY CHECK",
+      "headline": "SIRF ₹3 GMP (3% GAIN)! *LIC KI TARAH CAPITAL PHANS JAYEGA?*",
+      "sub": "Cold GMP & PSU Listing Trap Alert",
+      "brollVideo": "broll/stock_market_trading_chart.mp4",
+      "voice": "Lekin phir bhi iska Grey Market Premium sirf 3 rupaye chal raha hai—yani sirf 3% ka thanda listing gain! Kyunki sarkari PSU stocks listing par lottery nahi lagate! Toh agar 1-day listing gain ke liye apply kar rahe ho toh bilkul avoid karo, warna LIC ki tarah capital phans jayega!"
+    },
+    {
+      "id": "s5-outro",
+      "type": "cta",
+      "startSec": 38.8,
+      "endSec": 44.51,
+      "leadIn": "🎯 FINAL INVESTMENT VERDICT",
+      "headline": "MAHANADI COALFIELDS: *APPLY YA AVOID?*",
+      "sub": "Listing Gain vs Long-Term Dividend Verdict",
+      "brollVideo": "broll/trading_floor_screens.mp4",
+      "voice": "Kya aap Mahanadi Coalfields me apply karoge? Comments me batao aur follow karo techwith genz!",
+      "buttonText": "FOLLOW NOW 🔥",
+      "handle": "@techwith.genz"
+    }
+  ]
+}
