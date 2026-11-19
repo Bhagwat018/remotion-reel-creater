@@ -9,14 +9,23 @@ Every single clip generated and published by `clip-engine` MUST strictly follow 
 
 ---
 
-### RULE 1: Mandatory Transformative Framing & 3-Zone Architecture (Zero Raw Reuploads)
+### RULE 1: Mandatory Transformative Framing & Multi-Layout Architecture (Zero Raw Reuploads)
 - **Zero Raw Uploads**: Never re-upload unedited horizontal or raw screen clips. Raw clips trigger Instagram's automated video hashing/Content-ID bots within minutes.
-- **Strict 1080 × 1920 (9:16) Canvas**:
-  - **Top Zone (0 – 490px)**: Solid black header containing:
-    - *Line 1*: Creator / Show Name in **Pure White (`#FFFFFF`)** Impact font with thick black outline (`stroke_width=5`).
-    - *Line 2*: Viral Reaction / Climax Hook in **Vibrant Electric Red (`#FF2020`)** with a multi-pass diffuse neon glow (`ImageFilter.GaussianBlur(18)`).
-  - **Center Zone**: The 16:9 YouTuber footage centered vertically without stretching or aspect distortion.
-  - **Bottom Zone (1430 – 1920px)**: Dark matte framing containing the standardized credit pill (`ORIGINAL: [CREATOR] • [TOPIC]`).
+- **Strict 1080 × 1920 (9:16) Canvas with 3 Layout Modes**:
+  1. **Split-Screen Meta Layout (`--layout split`) [RECOMMENDED FOR GAMING & REACTIONS]**:
+     - *Top Zone (0 – 220px)*: Solid obsidian black header with White Creator Name + Glowing Neon Hook with breathing room away from the mobile camera notch.
+     - *Top Facecam (220 – 930px)*: Streamer Facecam cropped tightly via OpenCV YuNet deep learning (`2.8x` face width, 44% headroom), zoomed and centered with 80px side feathering/vignette so the streamer's emotions take center stage.
+     - *Divider Line (932px)*: Electric neon red laser line with Gaussian blur glow + crisp core.
+     - *Bottom Gameplay (938 – 1546px)*: **FULL UN-CROPPED 16:9 GAMEPLAY (1080 × 608)**. Zero character or action cut-off. In-game characters, crosshairs, minimap, and world details remain 100% visible! Enhanced with Lanczos scaling, unsharp edge mask, and subtle OLED color vibrance.
+     - *Lower-Third Subtitle Zone (1546 – 1920px)*: Deep inky black zone. Kinetic Karaoke Subtitles (pop yellow `#FFE500`, heavy black stroke) placed at `y = 1680px` (`MarginV = 210`) so subtitles **NEVER collide with or obscure the gameplay or the game characters**!
+     - *Animated Outro Retention Card (Last 2.8s)*: In the final 2.8 seconds, a frosted glass HUD card overlays the bottom zone: topic discussion poll (`GTA 6 WORTH THE 12-YEAR WAIT? 👇`) + glowing follow button (`🔥 FOLLOW @viralpod.in FOR DAILY BANGERS`).
+     - *Footer (1840 – 1890px)*: Minimalist rounded attribution pill (`ORIGINAL: [CREATOR] • [TOPIC]`).
+  2. **Classic 3-Zone Letterbox (`--layout black`)**:
+     - *Top Zone (0 – 490px)*: Black header (White Creator + Neon Hook).
+     - *Center Zone*: Centered 16:9 gameplay footage.
+     - *Bottom Zone (1430 – 1920px)*: Dark matte footer with attribution pill and subtitles.
+  3. **Cinematic Blur (`--layout blur`)**:
+     - Blurred moving video background + sharpened 16:9 center video.
 
 ---
 

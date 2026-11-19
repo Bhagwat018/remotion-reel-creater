@@ -1,0 +1,72 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: KaraokeWord,Impact,58,&H00FFFFFF&,&H000000FF&,&H00000000&,&H80000000&,-1,0,0,0,100,100,2,0,1,6,3,2,60,60,210,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.01,0:00:00.40,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}OKAY,{\r} BASKETBALL GUYS, HE
+Dialogue: 0,0:00:00.59,0:00:01.58,KaraokeWord,,0,0,0,,OKAY, {\c&H0000FFFF&\fscx108\fscy108}BASKETBALL{\r} GUYS, HE
+Dialogue: 0,0:00:01.58,0:00:02.00,KaraokeWord,,0,0,0,,OKAY, BASKETBALL {\c&H0000FFFF&\fscx108\fscy108}GUYS,{\r} HE
+Dialogue: 0,0:00:02.14,0:00:02.28,KaraokeWord,,0,0,0,,OKAY, BASKETBALL GUYS, {\c&H0000FFFF&\fscx108\fscy108}HE{\r}
+Dialogue: 0,0:00:02.28,0:00:02.42,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}IS{\r} HIS HOUSE.
+Dialogue: 0,0:00:02.42,0:00:02.63,KaraokeWord,,0,0,0,,IS {\c&H0000FFFF&\fscx108\fscy108}HIS{\r} HOUSE.
+Dialogue: 0,0:00:02.63,0:00:02.99,KaraokeWord,,0,0,0,,IS HIS {\c&H0000FFFF&\fscx108\fscy108}HOUSE.{\r}
+Dialogue: 0,0:00:07.00,0:00:07.05,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}OKAY,{\r} J EMBER IS
+Dialogue: 0,0:00:07.00,0:00:07.05,KaraokeWord,,0,0,0,,OKAY, {\c&H0000FFFF&\fscx108\fscy108}J{\r} EMBER IS
+Dialogue: 0,0:00:07.00,0:00:07.05,KaraokeWord,,0,0,0,,OKAY, J {\c&H0000FFFF&\fscx108\fscy108}EMBER{\r} IS
+Dialogue: 0,0:00:07.01,0:00:07.25,KaraokeWord,,0,0,0,,OKAY, J EMBER {\c&H0000FFFF&\fscx108\fscy108}IS{\r}
+Dialogue: 0,0:00:07.30,0:00:08.50,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}HERE,{\r} LUCY.
+Dialogue: 0,0:00:08.61,0:00:08.83,KaraokeWord,,0,0,0,,HERE, {\c&H0000FFFF&\fscx108\fscy108}LUCY.{\r}
+Dialogue: 0,0:00:12.19,0:00:13.00,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}OKAY.{\r}
+Dialogue: 0,0:00:15.00,0:00:15.05,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}HE{\r} IS LOOKING AT
+Dialogue: 0,0:00:15.00,0:00:15.05,KaraokeWord,,0,0,0,,HE {\c&H0000FFFF&\fscx108\fscy108}IS{\r} LOOKING AT
+Dialogue: 0,0:00:15.01,0:00:15.31,KaraokeWord,,0,0,0,,HE IS {\c&H0000FFFF&\fscx108\fscy108}LOOKING{\r} AT
+Dialogue: 0,0:00:15.31,0:00:15.73,KaraokeWord,,0,0,0,,HE IS LOOKING {\c&H0000FFFF&\fscx108\fscy108}AT{\r}
+Dialogue: 0,0:00:15.73,0:00:16.15,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}BR-{\r} P ON.
+Dialogue: 0,0:00:16.35,0:00:16.55,KaraokeWord,,0,0,0,,BR- {\c&H0000FFFF&\fscx108\fscy108}P{\r} ON.
+Dialogue: 0,0:00:16.55,0:00:17.00,KaraokeWord,,0,0,0,,BR- P {\c&H0000FFFF&\fscx108\fscy108}ON.{\r}
+Dialogue: 0,0:00:20.00,0:00:20.05,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}ST{\r} RIP PL UM!
+Dialogue: 0,0:00:20.00,0:00:20.05,KaraokeWord,,0,0,0,,ST {\c&H0000FFFF&\fscx108\fscy108}RIP{\r} PL UM!
+Dialogue: 0,0:00:20.00,0:00:20.05,KaraokeWord,,0,0,0,,ST RIP {\c&H0000FFFF&\fscx108\fscy108}PL{\r} UM!
+Dialogue: 0,0:00:20.00,0:00:20.05,KaraokeWord,,0,0,0,,ST RIP PL {\c&H0000FFFF&\fscx108\fscy108}UM!{\r}
+Dialogue: 0,0:00:22.00,0:00:22.05,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}YES,{\r} SHOW IT!
+Dialogue: 0,0:00:22.01,0:00:22.27,KaraokeWord,,0,0,0,,YES, {\c&H0000FFFF&\fscx108\fscy108}SHOW{\r} IT!
+Dialogue: 0,0:00:22.30,0:00:22.54,KaraokeWord,,0,0,0,,YES, SHOW {\c&H0000FFFF&\fscx108\fscy108}IT!{\r}
+Dialogue: 0,0:00:23.00,0:00:23.22,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}NOW,{\r} LET 'S LISTEN
+Dialogue: 0,0:00:23.36,0:00:23.58,KaraokeWord,,0,0,0,,NOW, {\c&H0000FFFF&\fscx108\fscy108}LET{\r} 'S LISTEN
+Dialogue: 0,0:00:23.58,0:00:23.72,KaraokeWord,,0,0,0,,NOW, LET {\c&H0000FFFF&\fscx108\fscy108}'S{\r} LISTEN
+Dialogue: 0,0:00:23.72,0:00:24.16,KaraokeWord,,0,0,0,,NOW, LET 'S {\c&H0000FFFF&\fscx108\fscy108}LISTEN{\r}
+Dialogue: 0,0:00:24.16,0:00:24.29,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}TO{\r} ST RIP PL
+Dialogue: 0,0:00:24.30,0:00:24.44,KaraokeWord,,0,0,0,,TO {\c&H0000FFFF&\fscx108\fscy108}ST{\r} RIP PL
+Dialogue: 0,0:00:24.44,0:00:24.65,KaraokeWord,,0,0,0,,TO ST {\c&H0000FFFF&\fscx108\fscy108}RIP{\r} PL
+Dialogue: 0,0:00:24.66,0:00:24.80,KaraokeWord,,0,0,0,,TO ST RIP {\c&H0000FFFF&\fscx108\fscy108}PL{\r}
+Dialogue: 0,0:00:24.80,0:00:25.00,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}UM!{\r}
+Dialogue: 0,0:00:27.00,0:00:27.05,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}THIS{\r} IS WHAT HE
+Dialogue: 0,0:00:27.00,0:00:27.05,KaraokeWord,,0,0,0,,THIS {\c&H0000FFFF&\fscx108\fscy108}IS{\r} WHAT HE
+Dialogue: 0,0:00:27.00,0:00:27.05,KaraokeWord,,0,0,0,,THIS IS {\c&H0000FFFF&\fscx108\fscy108}WHAT{\r} HE
+Dialogue: 0,0:00:27.00,0:00:27.05,KaraokeWord,,0,0,0,,THIS IS WHAT {\c&H0000FFFF&\fscx108\fscy108}HE{\r}
+Dialogue: 0,0:00:27.00,0:00:27.05,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}IS{\r} GOING FOR!
+Dialogue: 0,0:00:27.07,0:00:27.55,KaraokeWord,,0,0,0,,IS {\c&H0000FFFF&\fscx108\fscy108}GOING{\r} FOR!
+Dialogue: 0,0:00:27.57,0:00:28.00,KaraokeWord,,0,0,0,,IS GOING {\c&H0000FFFF&\fscx108\fscy108}FOR!{\r}
+Dialogue: 0,0:00:30.00,0:00:30.15,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}THIS{\r} IS WHAT HE
+Dialogue: 0,0:00:30.15,0:00:30.22,KaraokeWord,,0,0,0,,THIS {\c&H0000FFFF&\fscx108\fscy108}IS{\r} WHAT HE
+Dialogue: 0,0:00:30.22,0:00:30.37,KaraokeWord,,0,0,0,,THIS IS {\c&H0000FFFF&\fscx108\fscy108}WHAT{\r} HE
+Dialogue: 0,0:00:30.37,0:00:30.44,KaraokeWord,,0,0,0,,THIS IS WHAT {\c&H0000FFFF&\fscx108\fscy108}HE{\r}
+Dialogue: 0,0:00:30.44,0:00:30.54,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}WAS{\r} GOING FOR!
+Dialogue: 0,0:00:30.57,0:00:30.74,KaraokeWord,,0,0,0,,WAS {\c&H0000FFFF&\fscx108\fscy108}GOING{\r} FOR!
+Dialogue: 0,0:00:30.74,0:00:30.85,KaraokeWord,,0,0,0,,WAS GOING {\c&H0000FFFF&\fscx108\fscy108}FOR!{\r}
+Dialogue: 0,0:00:42.00,0:00:42.05,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}OH,{\r} ONE MINUTE!
+Dialogue: 0,0:00:42.00,0:00:42.05,KaraokeWord,,0,0,0,,OH, {\c&H0000FFFF&\fscx108\fscy108}ONE{\r} MINUTE!
+Dialogue: 0,0:00:42.00,0:00:42.05,KaraokeWord,,0,0,0,,OH, ONE {\c&H0000FFFF&\fscx108\fscy108}MINUTE!{\r}
+Dialogue: 0,0:00:43.01,0:00:43.40,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}LUCY{\r} HAS WON HIS
+Dialogue: 0,0:00:43.40,0:00:43.70,KaraokeWord,,0,0,0,,LUCY {\c&H0000FFFF&\fscx108\fscy108}HAS{\r} WON HIS
+Dialogue: 0,0:00:43.70,0:00:44.00,KaraokeWord,,0,0,0,,LUCY HAS {\c&H0000FFFF&\fscx108\fscy108}WON{\r} HIS
+Dialogue: 0,0:00:44.00,0:00:44.30,KaraokeWord,,0,0,0,,LUCY HAS WON {\c&H0000FFFF&\fscx108\fscy108}HIS{\r}
+Dialogue: 0,0:00:44.30,0:00:44.40,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}T-{\r} SHIRT!
+Dialogue: 0,0:00:44.49,0:00:45.00,KaraokeWord,,0,0,0,,T- {\c&H0000FFFF&\fscx108\fscy108}SHIRT!{\r}

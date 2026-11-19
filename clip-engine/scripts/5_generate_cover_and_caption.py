@@ -11,6 +11,7 @@ Usage:
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -20,12 +21,16 @@ ROOT = Path(__file__).parent.parent
 OUTPUT_DIR = ROOT / "output"
 CAPTIONS_DIR = ROOT / "captions"
 
+FFMPEG_BIN = "/opt/homebrew/opt/ffmpeg-full/bin/ffmpeg"
+if not os.path.exists(FFMPEG_BIN):
+    FFMPEG_BIN = "ffmpeg"
+
 # ── Generate Cover Image ───────────────────────────────────────────────────────
 def extract_cover_thumbnail(video_path: Path, output_cover: Path, timestamp: float = 1.5) -> bool:
     """Extract a high-impact JPG cover from video at the specified timestamp."""
     print(f"📸 Generating cover thumbnail: {output_cover.name} (at {timestamp}s)...")
     cmd = [
-        "ffmpeg", "-y",
+        FFMPEG_BIN, "-y",
         "-ss", str(timestamp),
         "-i", str(video_path),
         "-vframes", "1",

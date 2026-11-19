@@ -1,0 +1,158 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: KaraokeWord,Impact,58,&H00FFFFFF&,&H000000FF&,&H00000000&,&H80000000&,-1,0,0,0,100,100,2,0,1,6,3,2,60,60,210,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.08,0:00:00.22,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}YO{\r} WHAT 'S UP
+Dialogue: 0,0:00:00.22,0:00:00.67,KaraokeWord,,0,0,0,,YO {\c&H0000FFFF&\fscx108\fscy108}WHAT{\r} 'S UP
+Dialogue: 0,0:00:00.67,0:00:00.81,KaraokeWord,,0,0,0,,YO WHAT {\c&H0000FFFF&\fscx108\fscy108}'S{\r} UP
+Dialogue: 0,0:00:00.90,0:00:01.11,KaraokeWord,,0,0,0,,YO WHAT 'S {\c&H0000FFFF&\fscx108\fscy108}UP{\r}
+Dialogue: 0,0:00:01.11,0:00:01.60,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}GUYS,{\r} HOW ARE YOU?
+Dialogue: 0,0:00:01.70,0:00:01.75,KaraokeWord,,0,0,0,,GUYS, {\c&H0000FFFF&\fscx108\fscy108}HOW{\r} ARE YOU?
+Dialogue: 0,0:00:01.73,0:00:01.81,KaraokeWord,,0,0,0,,GUYS, HOW {\c&H0000FFFF&\fscx108\fscy108}ARE{\r} YOU?
+Dialogue: 0,0:00:01.81,0:00:01.89,KaraokeWord,,0,0,0,,GUYS, HOW ARE {\c&H0000FFFF&\fscx108\fscy108}YOU?{\r}
+Dialogue: 0,0:00:02.00,0:00:02.48,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}WELCOME{\r} BACK TO ANOTHER
+Dialogue: 0,0:00:02.48,0:00:02.66,KaraokeWord,,0,0,0,,WELCOME {\c&H0000FFFF&\fscx108\fscy108}BACK{\r} TO ANOTHER
+Dialogue: 0,0:00:02.78,0:00:02.88,KaraokeWord,,0,0,0,,WELCOME BACK {\c&H0000FFFF&\fscx108\fscy108}TO{\r} ANOTHER
+Dialogue: 0,0:00:02.88,0:00:03.36,KaraokeWord,,0,0,0,,WELCOME BACK TO {\c&H0000FFFF&\fscx108\fscy108}ANOTHER{\r}
+Dialogue: 0,0:00:03.36,0:00:03.63,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}GAME{\r} VIDEO, SO TODAY
+Dialogue: 0,0:00:03.63,0:00:03.96,KaraokeWord,,0,0,0,,GAME {\c&H0000FFFF&\fscx108\fscy108}VIDEO,{\r} SO TODAY
+Dialogue: 0,0:00:04.04,0:00:04.09,KaraokeWord,,0,0,0,,GAME VIDEO, {\c&H0000FFFF&\fscx108\fscy108}SO{\r} TODAY
+Dialogue: 0,0:00:04.08,0:00:04.20,KaraokeWord,,0,0,0,,GAME VIDEO, SO {\c&H0000FFFF&\fscx108\fscy108}TODAY{\r}
+Dialogue: 0,0:00:04.20,0:00:04.36,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}WE{\r} ARE GOING FOR
+Dialogue: 0,0:00:04.37,0:00:04.63,KaraokeWord,,0,0,0,,WE {\c&H0000FFFF&\fscx108\fscy108}ARE{\r} GOING FOR
+Dialogue: 0,0:00:04.67,0:00:05.98,KaraokeWord,,0,0,0,,WE ARE {\c&H0000FFFF&\fscx108\fscy108}GOING{\r} FOR
+Dialogue: 0,0:00:06.06,0:00:06.27,KaraokeWord,,0,0,0,,WE ARE GOING {\c&H0000FFFF&\fscx108\fscy108}FOR{\r}
+Dialogue: 0,0:00:06.27,0:00:06.54,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}THE{\r} G D 5,
+Dialogue: 0,0:00:06.54,0:00:06.63,KaraokeWord,,0,0,0,,THE {\c&H0000FFFF&\fscx108\fscy108}G{\r} D 5,
+Dialogue: 0,0:00:06.63,0:00:06.70,KaraokeWord,,0,0,0,,THE G {\c&H0000FFFF&\fscx108\fscy108}D{\r} 5,
+Dialogue: 0,0:00:06.80,0:00:07.00,KaraokeWord,,0,0,0,,THE G D {\c&H0000FFFF&\fscx108\fscy108}5,{\r}
+Dialogue: 0,0:00:07.10,0:00:07.20,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}SO{\r} JUST SO THAT
+Dialogue: 0,0:00:07.20,0:00:07.37,KaraokeWord,,0,0,0,,SO {\c&H0000FFFF&\fscx108\fscy108}JUST{\r} SO THAT
+Dialogue: 0,0:00:07.44,0:00:07.50,KaraokeWord,,0,0,0,,SO JUST {\c&H0000FFFF&\fscx108\fscy108}SO{\r} THAT
+Dialogue: 0,0:00:07.50,0:00:07.70,KaraokeWord,,0,0,0,,SO JUST SO {\c&H0000FFFF&\fscx108\fscy108}THAT{\r}
+Dialogue: 0,0:00:07.70,0:00:07.85,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}YOU{\r} GUYS CAN REMEMBER
+Dialogue: 0,0:00:07.85,0:00:08.05,KaraokeWord,,0,0,0,,YOU {\c&H0000FFFF&\fscx108\fscy108}GUYS{\r} CAN REMEMBER
+Dialogue: 0,0:00:08.05,0:00:08.20,KaraokeWord,,0,0,0,,YOU GUYS {\c&H0000FFFF&\fscx108\fscy108}CAN{\r} REMEMBER
+Dialogue: 0,0:00:08.20,0:00:08.53,KaraokeWord,,0,0,0,,YOU GUYS CAN {\c&H0000FFFF&\fscx108\fscy108}REMEMBER{\r}
+Dialogue: 0,0:00:08.63,0:00:08.83,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}THAT{\r} IN THE LAST
+Dialogue: 0,0:00:08.84,0:00:08.98,KaraokeWord,,0,0,0,,THAT {\c&H0000FFFF&\fscx108\fscy108}IN{\r} THE LAST
+Dialogue: 0,0:00:08.98,0:00:09.19,KaraokeWord,,0,0,0,,THAT IN {\c&H0000FFFF&\fscx108\fscy108}THE{\r} LAST
+Dialogue: 0,0:00:09.19,0:00:09.48,KaraokeWord,,0,0,0,,THAT IN THE {\c&H0000FFFF&\fscx108\fscy108}LAST{\r}
+Dialogue: 0,0:00:09.48,0:00:10.00,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}EPISODE,{\r} WE PUT ALL
+Dialogue: 0,0:00:10.19,0:00:10.39,KaraokeWord,,0,0,0,,EPISODE, {\c&H0000FFFF&\fscx108\fscy108}WE{\r} PUT ALL
+Dialogue: 0,0:00:10.39,0:00:10.69,KaraokeWord,,0,0,0,,EPISODE, WE {\c&H0000FFFF&\fscx108\fscy108}PUT{\r} ALL
+Dialogue: 0,0:00:10.69,0:00:10.99,KaraokeWord,,0,0,0,,EPISODE, WE PUT {\c&H0000FFFF&\fscx108\fscy108}ALL{\r}
+Dialogue: 0,0:00:10.99,0:00:11.18,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}OF{\r} OUR MONEY IN
+Dialogue: 0,0:00:11.19,0:00:11.48,KaraokeWord,,0,0,0,,OF {\c&H0000FFFF&\fscx108\fscy108}OUR{\r} MONEY IN
+Dialogue: 0,0:00:11.49,0:00:11.99,KaraokeWord,,0,0,0,,OF OUR {\c&H0000FFFF&\fscx108\fscy108}MONEY{\r} IN
+Dialogue: 0,0:00:12.00,0:00:12.31,KaraokeWord,,0,0,0,,OF OUR MONEY {\c&H0000FFFF&\fscx108\fscy108}IN{\r}
+Dialogue: 0,0:00:12.32,0:00:12.49,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}THE{\r} LAST EPISODE OF
+Dialogue: 0,0:00:12.51,0:00:12.74,KaraokeWord,,0,0,0,,THE {\c&H0000FFFF&\fscx108\fscy108}LAST{\r} EPISODE OF
+Dialogue: 0,0:00:12.74,0:00:13.15,KaraokeWord,,0,0,0,,THE LAST {\c&H0000FFFF&\fscx108\fscy108}EPISODE{\r} OF
+Dialogue: 0,0:00:13.19,0:00:13.28,KaraokeWord,,0,0,0,,THE LAST EPISODE {\c&H0000FFFF&\fscx108\fscy108}OF{\r}
+Dialogue: 0,0:00:13.28,0:00:13.45,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}LOS{\r} SANTOS,
+Dialogue: 0,0:00:13.46,0:00:13.84,KaraokeWord,,0,0,0,,LOS {\c&H0000FFFF&\fscx108\fscy108}SANTOS,{\r}
+Dialogue: 0,0:00:14.36,0:00:14.47,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}THE{\r} MOST EXPENSIVE AND
+Dialogue: 0,0:00:14.48,0:00:14.64,KaraokeWord,,0,0,0,,THE {\c&H0000FFFF&\fscx108\fscy108}MOST{\r} EXPENSIVE AND
+Dialogue: 0,0:00:14.64,0:00:14.96,KaraokeWord,,0,0,0,,THE MOST {\c&H0000FFFF&\fscx108\fscy108}EXPENSIVE{\r} AND
+Dialogue: 0,0:00:15.03,0:00:15.23,KaraokeWord,,0,0,0,,THE MOST EXPENSIVE {\c&H0000FFFF&\fscx108\fscy108}AND{\r}
+Dialogue: 0,0:00:15.30,0:00:15.52,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}THE{\r} MOST EXPENSIVE CAR
+Dialogue: 0,0:00:15.52,0:00:15.87,KaraokeWord,,0,0,0,,THE {\c&H0000FFFF&\fscx108\fscy108}MOST{\r} EXPENSIVE CAR
+Dialogue: 0,0:00:15.87,0:00:16.59,KaraokeWord,,0,0,0,,THE MOST {\c&H0000FFFF&\fscx108\fscy108}EXPENSIVE{\r} CAR
+Dialogue: 0,0:00:16.66,0:00:16.92,KaraokeWord,,0,0,0,,THE MOST EXPENSIVE {\c&H0000FFFF&\fscx108\fscy108}CAR{\r}
+Dialogue: 0,0:00:16.93,0:00:17.28,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}SHOW{\r} ROOM,
+Dialogue: 0,0:00:17.28,0:00:17.57,KaraokeWord,,0,0,0,,SHOW {\c&H0000FFFF&\fscx108\fscy108}ROOM,{\r}
+Dialogue: 0,0:00:18.08,0:00:18.30,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}BUT{\r} THE PROBLEM IS
+Dialogue: 0,0:00:18.30,0:00:18.60,KaraokeWord,,0,0,0,,BUT {\c&H0000FFFF&\fscx108\fscy108}THE{\r} PROBLEM IS
+Dialogue: 0,0:00:18.60,0:00:19.31,KaraokeWord,,0,0,0,,BUT THE {\c&H0000FFFF&\fscx108\fscy108}PROBLEM{\r} IS
+Dialogue: 0,0:00:19.36,0:00:19.52,KaraokeWord,,0,0,0,,BUT THE PROBLEM {\c&H0000FFFF&\fscx108\fscy108}IS{\r}
+Dialogue: 0,0:00:19.52,0:00:19.93,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}THAT{\r} THE CUSTOMERS WILL
+Dialogue: 0,0:00:19.93,0:00:20.23,KaraokeWord,,0,0,0,,THAT {\c&H0000FFFF&\fscx108\fscy108}THE{\r} CUSTOMERS WILL
+Dialogue: 0,0:00:20.23,0:00:21.15,KaraokeWord,,0,0,0,,THAT THE {\c&H0000FFFF&\fscx108\fscy108}CUSTOMERS{\r} WILL
+Dialogue: 0,0:00:21.21,0:00:21.56,KaraokeWord,,0,0,0,,THAT THE CUSTOMERS {\c&H0000FFFF&\fscx108\fscy108}WILL{\r}
+Dialogue: 0,0:00:21.56,0:00:21.96,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}COME{\r} IN WHEN THEY
+Dialogue: 0,0:00:22.04,0:00:22.17,KaraokeWord,,0,0,0,,COME {\c&H0000FFFF&\fscx108\fscy108}IN{\r} WHEN THEY
+Dialogue: 0,0:00:22.17,0:00:22.58,KaraokeWord,,0,0,0,,COME IN {\c&H0000FFFF&\fscx108\fscy108}WHEN{\r} THEY
+Dialogue: 0,0:00:22.58,0:00:22.99,KaraokeWord,,0,0,0,,COME IN WHEN {\c&H0000FFFF&\fscx108\fscy108}THEY{\r}
+Dialogue: 0,0:00:22.99,0:00:23.39,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}WILL{\r} COME IN THE
+Dialogue: 0,0:00:23.42,0:00:23.81,KaraokeWord,,0,0,0,,WILL {\c&H0000FFFF&\fscx108\fscy108}COME{\r} IN THE
+Dialogue: 0,0:00:23.81,0:00:23.98,KaraokeWord,,0,0,0,,WILL COME {\c&H0000FFFF&\fscx108\fscy108}IN{\r} THE
+Dialogue: 0,0:00:24.06,0:00:24.31,KaraokeWord,,0,0,0,,WILL COME IN {\c&H0000FFFF&\fscx108\fscy108}THE{\r}
+Dialogue: 0,0:00:24.31,0:00:24.61,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}CAR,{\r} THAT MEANS WE
+Dialogue: 0,0:00:24.81,0:00:25.21,KaraokeWord,,0,0,0,,CAR, {\c&H0000FFFF&\fscx108\fscy108}THAT{\r} MEANS WE
+Dialogue: 0,0:00:25.22,0:00:25.73,KaraokeWord,,0,0,0,,CAR, THAT {\c&H0000FFFF&\fscx108\fscy108}MEANS{\r} WE
+Dialogue: 0,0:00:25.73,0:00:25.93,KaraokeWord,,0,0,0,,CAR, THAT MEANS {\c&H0000FFFF&\fscx108\fscy108}WE{\r}
+Dialogue: 0,0:00:25.93,0:00:26.23,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}HAD{\r} NO MONEY TO
+Dialogue: 0,0:00:26.23,0:00:26.43,KaraokeWord,,0,0,0,,HAD {\c&H0000FFFF&\fscx108\fscy108}NO{\r} MONEY TO
+Dialogue: 0,0:00:26.43,0:00:26.94,KaraokeWord,,0,0,0,,HAD NO {\c&H0000FFFF&\fscx108\fscy108}MONEY{\r} TO
+Dialogue: 0,0:00:26.94,0:00:27.14,KaraokeWord,,0,0,0,,HAD NO MONEY {\c&H0000FFFF&\fscx108\fscy108}TO{\r}
+Dialogue: 0,0:00:27.14,0:00:27.40,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}BUY{\r} A CAR, THE
+Dialogue: 0,0:00:27.44,0:00:27.53,KaraokeWord,,0,0,0,,BUY {\c&H0000FFFF&\fscx108\fscy108}A{\r} CAR, THE
+Dialogue: 0,0:00:27.56,0:00:28.00,KaraokeWord,,0,0,0,,BUY A {\c&H0000FFFF&\fscx108\fscy108}CAR,{\r} THE
+Dialogue: 0,0:00:28.07,0:00:28.18,KaraokeWord,,0,0,0,,BUY A CAR, {\c&H0000FFFF&\fscx108\fscy108}THE{\r}
+Dialogue: 0,0:00:28.18,0:00:28.36,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}WHOLE{\r} SHOW ROOM WAS
+Dialogue: 0,0:00:28.37,0:00:28.52,KaraokeWord,,0,0,0,,WHOLE {\c&H0000FFFF&\fscx108\fscy108}SHOW{\r} ROOM WAS
+Dialogue: 0,0:00:28.52,0:00:28.59,KaraokeWord,,0,0,0,,WHOLE SHOW {\c&H0000FFFF&\fscx108\fscy108}ROOM{\r} WAS
+Dialogue: 0,0:00:28.67,0:00:28.78,KaraokeWord,,0,0,0,,WHOLE SHOW ROOM {\c&H0000FFFF&\fscx108\fscy108}WAS{\r}
+Dialogue: 0,0:00:28.79,0:00:29.00,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}EMPTY,{\r} SO WE STARTED
+Dialogue: 0,0:00:29.11,0:00:29.20,KaraokeWord,,0,0,0,,EMPTY, {\c&H0000FFFF&\fscx108\fscy108}SO{\r} WE STARTED
+Dialogue: 0,0:00:29.28,0:00:29.33,KaraokeWord,,0,0,0,,EMPTY, SO {\c&H0000FFFF&\fscx108\fscy108}WE{\r} STARTED
+Dialogue: 0,0:00:29.33,0:00:29.72,KaraokeWord,,0,0,0,,EMPTY, SO WE {\c&H0000FFFF&\fscx108\fscy108}STARTED{\r}
+Dialogue: 0,0:00:29.72,0:00:30.20,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}REPAIRING{\r} THE BUSINESS, WE
+Dialogue: 0,0:00:30.22,0:00:30.40,KaraokeWord,,0,0,0,,REPAIRING {\c&H0000FFFF&\fscx108\fscy108}THE{\r} BUSINESS, WE
+Dialogue: 0,0:00:30.42,0:00:30.78,KaraokeWord,,0,0,0,,REPAIRING THE {\c&H0000FFFF&\fscx108\fscy108}BUSINESS,{\r} WE
+Dialogue: 0,0:00:31.08,0:00:31.17,KaraokeWord,,0,0,0,,REPAIRING THE BUSINESS, {\c&H0000FFFF&\fscx108\fscy108}WE{\r}
+Dialogue: 0,0:00:31.17,0:00:31.51,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}WENT{\r} TO THE HOUSE
+Dialogue: 0,0:00:31.51,0:00:31.67,KaraokeWord,,0,0,0,,WENT {\c&H0000FFFF&\fscx108\fscy108}TO{\r} THE HOUSE
+Dialogue: 0,0:00:31.67,0:00:31.93,KaraokeWord,,0,0,0,,WENT TO {\c&H0000FFFF&\fscx108\fscy108}THE{\r} HOUSE
+Dialogue: 0,0:00:31.93,0:00:32.35,KaraokeWord,,0,0,0,,WENT TO THE {\c&H0000FFFF&\fscx108\fscy108}HOUSE{\r}
+Dialogue: 0,0:00:32.36,0:00:32.53,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}TO{\r} BUY THE CAR,
+Dialogue: 0,0:00:32.53,0:00:32.77,KaraokeWord,,0,0,0,,TO {\c&H0000FFFF&\fscx108\fscy108}BUY{\r} THE CAR,
+Dialogue: 0,0:00:32.78,0:00:33.03,KaraokeWord,,0,0,0,,TO BUY {\c&H0000FFFF&\fscx108\fscy108}THE{\r} CAR,
+Dialogue: 0,0:00:33.03,0:00:33.28,KaraokeWord,,0,0,0,,TO BUY THE {\c&H0000FFFF&\fscx108\fscy108}CAR,{\r}
+Dialogue: 0,0:00:33.45,0:00:33.66,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}AND{\r} REPAIR THE CAR
+Dialogue: 0,0:00:33.78,0:00:34.16,KaraokeWord,,0,0,0,,AND {\c&H0000FFFF&\fscx108\fscy108}REPAIR{\r} THE CAR
+Dialogue: 0,0:00:34.21,0:00:34.46,KaraokeWord,,0,0,0,,AND REPAIR {\c&H0000FFFF&\fscx108\fscy108}THE{\r} CAR
+Dialogue: 0,0:00:34.46,0:00:34.71,KaraokeWord,,0,0,0,,AND REPAIR THE {\c&H0000FFFF&\fscx108\fscy108}CAR{\r}
+Dialogue: 0,0:00:34.71,0:00:35.05,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}WITH{\r} THE MONEY, BUT
+Dialogue: 0,0:00:35.05,0:00:35.30,KaraokeWord,,0,0,0,,WITH {\c&H0000FFFF&\fscx108\fscy108}THE{\r} MONEY, BUT
+Dialogue: 0,0:00:35.30,0:00:35.73,KaraokeWord,,0,0,0,,WITH THE {\c&H0000FFFF&\fscx108\fscy108}MONEY,{\r} BUT
+Dialogue: 0,0:00:36.00,0:00:36.14,KaraokeWord,,0,0,0,,WITH THE MONEY, {\c&H0000FFFF&\fscx108\fscy108}BUT{\r}
+Dialogue: 0,0:00:36.14,0:00:36.28,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}THE{\r} ONLY PROBLEM WAS
+Dialogue: 0,0:00:36.28,0:00:36.47,KaraokeWord,,0,0,0,,THE {\c&H0000FFFF&\fscx108\fscy108}ONLY{\r} PROBLEM WAS
+Dialogue: 0,0:00:36.47,0:00:36.81,KaraokeWord,,0,0,0,,THE ONLY {\c&H0000FFFF&\fscx108\fscy108}PROBLEM{\r} WAS
+Dialogue: 0,0:00:36.81,0:00:36.95,KaraokeWord,,0,0,0,,THE ONLY PROBLEM {\c&H0000FFFF&\fscx108\fscy108}WAS{\r}
+Dialogue: 0,0:00:36.95,0:00:37.14,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}THAT{\r} WE DIDN 'T
+Dialogue: 0,0:00:37.14,0:00:37.23,KaraokeWord,,0,0,0,,THAT {\c&H0000FFFF&\fscx108\fscy108}WE{\r} DIDN 'T
+Dialogue: 0,0:00:37.23,0:00:37.37,KaraokeWord,,0,0,0,,THAT WE {\c&H0000FFFF&\fscx108\fscy108}DIDN{\r} 'T
+Dialogue: 0,0:00:37.50,0:00:37.55,KaraokeWord,,0,0,0,,THAT WE DIDN {\c&H0000FFFF&\fscx108\fscy108}'T{\r}
+Dialogue: 0,0:00:37.51,0:00:37.69,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}HAVE{\r} THE CHANCE TO
+Dialogue: 0,0:00:37.70,0:00:37.84,KaraokeWord,,0,0,0,,HAVE {\c&H0000FFFF&\fscx108\fscy108}THE{\r} CHANCE TO
+Dialogue: 0,0:00:37.84,0:00:38.12,KaraokeWord,,0,0,0,,HAVE THE {\c&H0000FFFF&\fscx108\fscy108}CHANCE{\r} TO
+Dialogue: 0,0:00:38.14,0:00:38.21,KaraokeWord,,0,0,0,,HAVE THE CHANCE {\c&H0000FFFF&\fscx108\fscy108}TO{\r}
+Dialogue: 0,0:00:38.21,0:00:38.36,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}GET{\r} MORE MONEY, THAT
+Dialogue: 0,0:00:38.36,0:00:38.55,KaraokeWord,,0,0,0,,GET {\c&H0000FFFF&\fscx108\fscy108}MORE{\r} MONEY, THAT
+Dialogue: 0,0:00:38.55,0:00:38.77,KaraokeWord,,0,0,0,,GET MORE {\c&H0000FFFF&\fscx108\fscy108}MONEY,{\r} THAT
+Dialogue: 0,0:00:39.08,0:00:39.66,KaraokeWord,,0,0,0,,GET MORE MONEY, {\c&H0000FFFF&\fscx108\fscy108}THAT{\r}
+Dialogue: 0,0:00:39.66,0:00:39.98,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}'S{\r} WHY I WENT
+Dialogue: 0,0:00:39.99,0:00:40.48,KaraokeWord,,0,0,0,,'S {\c&H0000FFFF&\fscx108\fscy108}WHY{\r} I WENT
+Dialogue: 0,0:00:40.49,0:00:40.62,KaraokeWord,,0,0,0,,'S WHY {\c&H0000FFFF&\fscx108\fscy108}I{\r} WENT
+Dialogue: 0,0:00:40.71,0:00:41.31,KaraokeWord,,0,0,0,,'S WHY I {\c&H0000FFFF&\fscx108\fscy108}WENT{\r}
+Dialogue: 0,0:00:41.31,0:00:41.64,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}TO{\r} A CAR AUCTION
+Dialogue: 0,0:00:41.64,0:00:41.80,KaraokeWord,,0,0,0,,TO {\c&H0000FFFF&\fscx108\fscy108}A{\r} CAR AUCTION
+Dialogue: 0,0:00:41.80,0:00:42.30,KaraokeWord,,0,0,0,,TO A {\c&H0000FFFF&\fscx108\fscy108}CAR{\r} AUCTION
+Dialogue: 0,0:00:42.30,0:00:43.46,KaraokeWord,,0,0,0,,TO A CAR {\c&H0000FFFF&\fscx108\fscy108}AUCTION{\r}
+Dialogue: 0,0:00:43.46,0:00:43.79,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}TO{\r} BUY A RARE
+Dialogue: 0,0:00:43.79,0:00:44.29,KaraokeWord,,0,0,0,,TO {\c&H0000FFFF&\fscx108\fscy108}BUY{\r} A RARE
+Dialogue: 0,0:00:44.29,0:00:44.45,KaraokeWord,,0,0,0,,TO BUY {\c&H0000FFFF&\fscx108\fscy108}A{\r} RARE
+Dialogue: 0,0:00:44.45,0:00:45.11,KaraokeWord,,0,0,0,,TO BUY A {\c&H0000FFFF&\fscx108\fscy108}RARE{\r}
+Dialogue: 0,0:00:45.11,0:00:45.61,KaraokeWord,,0,0,0,,{\c&H0000FFFF&\fscx108\fscy108}CAR,{\r} WOW!
+Dialogue: 0,0:00:46.00,0:00:50.00,KaraokeWord,,0,0,0,,CAR, {\c&H0000FFFF&\fscx108\fscy108}WOW!{\r}

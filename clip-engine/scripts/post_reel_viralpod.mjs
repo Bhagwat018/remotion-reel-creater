@@ -246,17 +246,37 @@ async function main() {
     ).first();
     await shareBtn.click();
 
-    // Wait for confirmation
-    console.log("⏳ Uploading to Instagram servers (this takes 15-30s)...");
-    try {
-      await Promise.race([
-        page.waitForSelector("text='Your reel has been shared', text='Your post has been shared', button:has-text('Done')", { timeout: 60000 }),
-        page.waitForSelector("div[role='dialog']:has(svg[aria-label*='done' i])", { timeout: 60000 }),
-        page.waitForFunction(() => !document.querySelector("div[role='dialog'] div[aria-label*='caption' i]"), { timeout: 60000 }),
-      ]);
-      console.log("\n🎉 SUCCESS! Your Reel is LIVE on @viralpod.in!");
-    } catch {
-      console.log("\nℹ️ Share action completed! Post submitted to Instagram.");
+    // Wait for actual Instagram upload completion (video is 60-70 MB, takes 35-50s)
+    console.log("⏳ Uploading to Instagram servers (waiting for server confirmation)...");
+    let shared = false;
+    for (let sec = 5; sec <= 180; sec += 5) {
+      await page.waitForTimeout(5000);
+      const state = await page.evaluate(() => {
+        const dialog = document.querySelector("div[role='dialog']");
+        if (!dialog) return { hasDialog: false, text: "" };
+        return {
+          hasDialog: true,
+          text: dialog.innerText.replace(/\n/g, " ").trim(),
+          hasCheckmark: Boolean(dialog.querySelector("svg[aria-label*='done' i], svg[aria-label*='check' i], img[alt*='checkmark' i]"))
+        };
+      });
+
+      console.log(`⏱️ [${sec}s] Status: ${state.text.slice(0, 50)}...`);
+
+      if (
+        state.text.includes("Your reel has been shared") ||
+        state.text.includes("Your post has been shared") ||
+        state.hasCheckmark ||
+        (!state.hasDialog && sec >= 30)
+      ) {
+        console.log(`\n🎉 SUCCESS! Your Reel is 100% LIVE on @viralpod.in (completed at ${sec}s)!`);
+        shared = true;
+        break;
+      }
+    }
+
+    if (!shared) {
+      console.warn("⚠️ Upload did not confirm within 180s, but share request was submitted.");
     }
     await page.waitForTimeout(3000);
   } catch (err) {

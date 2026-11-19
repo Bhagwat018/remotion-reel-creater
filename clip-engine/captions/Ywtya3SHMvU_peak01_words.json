@@ -1,0 +1,462 @@
+{
+  "words": [
+    {
+      "word": "Okay",
+      "start": 0.01,
+      "end": 0.4
+    },
+    {
+      "word": ",",
+      "start": 0.4,
+      "end": 0.59
+    },
+    {
+      "word": "basketball",
+      "start": 0.59,
+      "end": 1.58
+    },
+    {
+      "word": "guys",
+      "start": 1.58,
+      "end": 2.0
+    },
+    {
+      "word": ",",
+      "start": 2.0,
+      "end": 2.14
+    },
+    {
+      "word": "he",
+      "start": 2.14,
+      "end": 2.28
+    },
+    {
+      "word": "is",
+      "start": 2.28,
+      "end": 2.42
+    },
+    {
+      "word": "his",
+      "start": 2.42,
+      "end": 2.63
+    },
+    {
+      "word": "house",
+      "start": 2.63,
+      "end": 2.99
+    },
+    {
+      "word": ".",
+      "start": 2.99,
+      "end": 3.0
+    },
+    {
+      "word": "Okay",
+      "start": 7.0,
+      "end": 7.0
+    },
+    {
+      "word": ",",
+      "start": 7.0,
+      "end": 7.0
+    },
+    {
+      "word": "J",
+      "start": 7.0,
+      "end": 7.0
+    },
+    {
+      "word": "ember",
+      "start": 7.0,
+      "end": 7.0
+    },
+    {
+      "word": "is",
+      "start": 7.01,
+      "end": 7.25
+    },
+    {
+      "word": "here",
+      "start": 7.3,
+      "end": 8.5
+    },
+    {
+      "word": ",",
+      "start": 8.5,
+      "end": 8.6
+    },
+    {
+      "word": "Lucy",
+      "start": 8.61,
+      "end": 8.83
+    },
+    {
+      "word": ".",
+      "start": 8.83,
+      "end": 9.0
+    },
+    {
+      "word": "Okay",
+      "start": 12.19,
+      "end": 13.0
+    },
+    {
+      "word": ".",
+      "start": 13.0,
+      "end": 13.0
+    },
+    {
+      "word": "He",
+      "start": 15.0,
+      "end": 15.0
+    },
+    {
+      "word": "is",
+      "start": 15.0,
+      "end": 15.0
+    },
+    {
+      "word": "looking",
+      "start": 15.01,
+      "end": 15.31
+    },
+    {
+      "word": "at",
+      "start": 15.31,
+      "end": 15.73
+    },
+    {
+      "word": "BR",
+      "start": 15.73,
+      "end": 16.15
+    },
+    {
+      "word": "-",
+      "start": 16.15,
+      "end": 16.35
+    },
+    {
+      "word": "P",
+      "start": 16.35,
+      "end": 16.55
+    },
+    {
+      "word": "ON",
+      "start": 16.55,
+      "end": 17.0
+    },
+    {
+      "word": ".",
+      "start": 17.0,
+      "end": 17.0
+    },
+    {
+      "word": "St",
+      "start": 20.0,
+      "end": 20.0
+    },
+    {
+      "word": "rip",
+      "start": 20.0,
+      "end": 20.0
+    },
+    {
+      "word": "Pl",
+      "start": 20.0,
+      "end": 20.0
+    },
+    {
+      "word": "um",
+      "start": 20.0,
+      "end": 20.0
+    },
+    {
+      "word": "!",
+      "start": 20.19,
+      "end": 21.0
+    },
+    {
+      "word": "Yes",
+      "start": 22.0,
+      "end": 22.0
+    },
+    {
+      "word": ",",
+      "start": 22.0,
+      "end": 22.0
+    },
+    {
+      "word": "show",
+      "start": 22.01,
+      "end": 22.27
+    },
+    {
+      "word": "it",
+      "start": 22.3,
+      "end": 22.54
+    },
+    {
+      "word": "!",
+      "start": 22.57,
+      "end": 23.0
+    },
+    {
+      "word": "Now",
+      "start": 23.0,
+      "end": 23.22
+    },
+    {
+      "word": ",",
+      "start": 23.22,
+      "end": 23.36
+    },
+    {
+      "word": "let",
+      "start": 23.36,
+      "end": 23.58
+    },
+    {
+      "word": "'s",
+      "start": 23.58,
+      "end": 23.72
+    },
+    {
+      "word": "listen",
+      "start": 23.72,
+      "end": 24.16
+    },
+    {
+      "word": "to",
+      "start": 24.16,
+      "end": 24.29
+    },
+    {
+      "word": "St",
+      "start": 24.3,
+      "end": 24.44
+    },
+    {
+      "word": "rip",
+      "start": 24.44,
+      "end": 24.65
+    },
+    {
+      "word": "Pl",
+      "start": 24.66,
+      "end": 24.8
+    },
+    {
+      "word": "um",
+      "start": 24.8,
+      "end": 25.0
+    },
+    {
+      "word": "!",
+      "start": 25.0,
+      "end": 25.0
+    },
+    {
+      "word": "This",
+      "start": 27.0,
+      "end": 27.0
+    },
+    {
+      "word": "is",
+      "start": 27.0,
+      "end": 27.0
+    },
+    {
+      "word": "what",
+      "start": 27.0,
+      "end": 27.0
+    },
+    {
+      "word": "he",
+      "start": 27.0,
+      "end": 27.0
+    },
+    {
+      "word": "is",
+      "start": 27.0,
+      "end": 27.0
+    },
+    {
+      "word": "going",
+      "start": 27.07,
+      "end": 27.55
+    },
+    {
+      "word": "for",
+      "start": 27.57,
+      "end": 28.0
+    },
+    {
+      "word": "!",
+      "start": 28.0,
+      "end": 28.0
+    },
+    {
+      "word": "This",
+      "start": 30.0,
+      "end": 30.15
+    },
+    {
+      "word": "is",
+      "start": 30.15,
+      "end": 30.22
+    },
+    {
+      "word": "what",
+      "start": 30.22,
+      "end": 30.37
+    },
+    {
+      "word": "he",
+      "start": 30.37,
+      "end": 30.44
+    },
+    {
+      "word": "was",
+      "start": 30.44,
+      "end": 30.54
+    },
+    {
+      "word": "going",
+      "start": 30.57,
+      "end": 30.74
+    },
+    {
+      "word": "for",
+      "start": 30.74,
+      "end": 30.85
+    },
+    {
+      "word": "!",
+      "start": 30.85,
+      "end": 31.0
+    },
+    {
+      "word": "Oh",
+      "start": 42.0,
+      "end": 42.0
+    },
+    {
+      "word": ",",
+      "start": 42.0,
+      "end": 42.0
+    },
+    {
+      "word": "one",
+      "start": 42.0,
+      "end": 42.0
+    },
+    {
+      "word": "minute",
+      "start": 42.0,
+      "end": 42.0
+    },
+    {
+      "word": "!",
+      "start": 42.19,
+      "end": 43.0
+    },
+    {
+      "word": "Lucy",
+      "start": 43.01,
+      "end": 43.4
+    },
+    {
+      "word": "has",
+      "start": 43.4,
+      "end": 43.7
+    },
+    {
+      "word": "won",
+      "start": 43.7,
+      "end": 44.0
+    },
+    {
+      "word": "his",
+      "start": 44.0,
+      "end": 44.3
+    },
+    {
+      "word": "T",
+      "start": 44.3,
+      "end": 44.4
+    },
+    {
+      "word": "-",
+      "start": 44.4,
+      "end": 44.49
+    },
+    {
+      "word": "shirt",
+      "start": 44.49,
+      "end": 45.0
+    },
+    {
+      "word": "!",
+      "start": 45.0,
+      "end": 45.0
+    }
+  ],
+  "segments": [
+    {
+      "text": "Okay, basketball guys, he is his house.",
+      "start": 0.0,
+      "end": 3.0
+    },
+    {
+      "text": "Okay, Jember is here, Lucy.",
+      "start": 7.0,
+      "end": 9.0
+    },
+    {
+      "text": "Okay.",
+      "start": 12.0,
+      "end": 13.0
+    },
+    {
+      "text": "He is looking at BR-PON.",
+      "start": 15.0,
+      "end": 17.0
+    },
+    {
+      "text": "Strip Plum!",
+      "start": 20.0,
+      "end": 21.0
+    },
+    {
+      "text": "Yes, show it!",
+      "start": 22.0,
+      "end": 23.0
+    },
+    {
+      "text": "Now, let's listen to Strip Plum!",
+      "start": 23.0,
+      "end": 25.0
+    },
+    {
+      "text": "This is what he is going for!",
+      "start": 27.0,
+      "end": 28.0
+    },
+    {
+      "text": "This is what he was going for!",
+      "start": 30.0,
+      "end": 31.0
+    },
+    {
+      "text": "Oh, one minute!",
+      "start": 42.0,
+      "end": 43.0
+    },
+    {
+      "text": "Lucy has won his T-shirt!",
+      "start": 43.0,
+      "end": 45.0
+    }
+  ],
+  "source": "whisper-cli"
+}

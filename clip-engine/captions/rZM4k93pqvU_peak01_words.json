@@ -1,0 +1,837 @@
+{
+  "words": [
+    {
+      "word": "Yo",
+      "start": 0.08,
+      "end": 0.22
+    },
+    {
+      "word": "what",
+      "start": 0.22,
+      "end": 0.67
+    },
+    {
+      "word": "'s",
+      "start": 0.67,
+      "end": 0.81
+    },
+    {
+      "word": "up",
+      "start": 0.9,
+      "end": 1.11
+    },
+    {
+      "word": "guys",
+      "start": 1.11,
+      "end": 1.6
+    },
+    {
+      "word": ",",
+      "start": 1.6,
+      "end": 1.62
+    },
+    {
+      "word": "how",
+      "start": 1.7,
+      "end": 1.73
+    },
+    {
+      "word": "are",
+      "start": 1.73,
+      "end": 1.81
+    },
+    {
+      "word": "you",
+      "start": 1.81,
+      "end": 1.89
+    },
+    {
+      "word": "?",
+      "start": 1.89,
+      "end": 2.0
+    },
+    {
+      "word": "Welcome",
+      "start": 2.0,
+      "end": 2.48
+    },
+    {
+      "word": "back",
+      "start": 2.48,
+      "end": 2.66
+    },
+    {
+      "word": "to",
+      "start": 2.78,
+      "end": 2.88
+    },
+    {
+      "word": "another",
+      "start": 2.88,
+      "end": 3.36
+    },
+    {
+      "word": "game",
+      "start": 3.36,
+      "end": 3.63
+    },
+    {
+      "word": "video",
+      "start": 3.63,
+      "end": 3.96
+    },
+    {
+      "word": ",",
+      "start": 4.04,
+      "end": 4.04
+    },
+    {
+      "word": "so",
+      "start": 4.04,
+      "end": 4.08
+    },
+    {
+      "word": "today",
+      "start": 4.08,
+      "end": 4.2
+    },
+    {
+      "word": "we",
+      "start": 4.2,
+      "end": 4.36
+    },
+    {
+      "word": "are",
+      "start": 4.37,
+      "end": 4.63
+    },
+    {
+      "word": "going",
+      "start": 4.67,
+      "end": 5.98
+    },
+    {
+      "word": "for",
+      "start": 6.06,
+      "end": 6.27
+    },
+    {
+      "word": "the",
+      "start": 6.27,
+      "end": 6.54
+    },
+    {
+      "word": "G",
+      "start": 6.54,
+      "end": 6.63
+    },
+    {
+      "word": "D",
+      "start": 6.63,
+      "end": 6.7
+    },
+    {
+      "word": "5",
+      "start": 6.8,
+      "end": 7.0
+    },
+    {
+      "word": ",",
+      "start": 7.0,
+      "end": 7.1
+    },
+    {
+      "word": "so",
+      "start": 7.1,
+      "end": 7.2
+    },
+    {
+      "word": "just",
+      "start": 7.2,
+      "end": 7.37
+    },
+    {
+      "word": "so",
+      "start": 7.44,
+      "end": 7.5
+    },
+    {
+      "word": "that",
+      "start": 7.5,
+      "end": 7.7
+    },
+    {
+      "word": "you",
+      "start": 7.7,
+      "end": 7.85
+    },
+    {
+      "word": "guys",
+      "start": 7.85,
+      "end": 8.05
+    },
+    {
+      "word": "can",
+      "start": 8.05,
+      "end": 8.2
+    },
+    {
+      "word": "remember",
+      "start": 8.2,
+      "end": 8.53
+    },
+    {
+      "word": "that",
+      "start": 8.63,
+      "end": 8.83
+    },
+    {
+      "word": "in",
+      "start": 8.84,
+      "end": 8.98
+    },
+    {
+      "word": "the",
+      "start": 8.98,
+      "end": 9.19
+    },
+    {
+      "word": "last",
+      "start": 9.19,
+      "end": 9.48
+    },
+    {
+      "word": "episode",
+      "start": 9.48,
+      "end": 10.0
+    },
+    {
+      "word": ",",
+      "start": 10.0,
+      "end": 10.19
+    },
+    {
+      "word": "we",
+      "start": 10.19,
+      "end": 10.39
+    },
+    {
+      "word": "put",
+      "start": 10.39,
+      "end": 10.69
+    },
+    {
+      "word": "all",
+      "start": 10.69,
+      "end": 10.99
+    },
+    {
+      "word": "of",
+      "start": 10.99,
+      "end": 11.18
+    },
+    {
+      "word": "our",
+      "start": 11.19,
+      "end": 11.48
+    },
+    {
+      "word": "money",
+      "start": 11.49,
+      "end": 11.99
+    },
+    {
+      "word": "in",
+      "start": 12.0,
+      "end": 12.31
+    },
+    {
+      "word": "the",
+      "start": 12.32,
+      "end": 12.49
+    },
+    {
+      "word": "last",
+      "start": 12.51,
+      "end": 12.74
+    },
+    {
+      "word": "episode",
+      "start": 12.74,
+      "end": 13.15
+    },
+    {
+      "word": "of",
+      "start": 13.19,
+      "end": 13.28
+    },
+    {
+      "word": "Los",
+      "start": 13.28,
+      "end": 13.45
+    },
+    {
+      "word": "Santos",
+      "start": 13.46,
+      "end": 13.84
+    },
+    {
+      "word": ",",
+      "start": 13.84,
+      "end": 14.28
+    },
+    {
+      "word": "the",
+      "start": 14.36,
+      "end": 14.47
+    },
+    {
+      "word": "most",
+      "start": 14.48,
+      "end": 14.64
+    },
+    {
+      "word": "expensive",
+      "start": 14.64,
+      "end": 14.96
+    },
+    {
+      "word": "and",
+      "start": 15.03,
+      "end": 15.23
+    },
+    {
+      "word": "the",
+      "start": 15.3,
+      "end": 15.52
+    },
+    {
+      "word": "most",
+      "start": 15.52,
+      "end": 15.87
+    },
+    {
+      "word": "expensive",
+      "start": 15.87,
+      "end": 16.59
+    },
+    {
+      "word": "car",
+      "start": 16.66,
+      "end": 16.92
+    },
+    {
+      "word": "show",
+      "start": 16.93,
+      "end": 17.28
+    },
+    {
+      "word": "room",
+      "start": 17.28,
+      "end": 17.57
+    },
+    {
+      "word": ",",
+      "start": 17.67,
+      "end": 18.0
+    },
+    {
+      "word": "but",
+      "start": 18.08,
+      "end": 18.3
+    },
+    {
+      "word": "the",
+      "start": 18.3,
+      "end": 18.6
+    },
+    {
+      "word": "problem",
+      "start": 18.6,
+      "end": 19.31
+    },
+    {
+      "word": "is",
+      "start": 19.36,
+      "end": 19.52
+    },
+    {
+      "word": "that",
+      "start": 19.52,
+      "end": 19.93
+    },
+    {
+      "word": "the",
+      "start": 19.93,
+      "end": 20.23
+    },
+    {
+      "word": "customers",
+      "start": 20.23,
+      "end": 21.15
+    },
+    {
+      "word": "will",
+      "start": 21.21,
+      "end": 21.56
+    },
+    {
+      "word": "come",
+      "start": 21.56,
+      "end": 21.96
+    },
+    {
+      "word": "in",
+      "start": 22.04,
+      "end": 22.17
+    },
+    {
+      "word": "when",
+      "start": 22.17,
+      "end": 22.58
+    },
+    {
+      "word": "they",
+      "start": 22.58,
+      "end": 22.99
+    },
+    {
+      "word": "will",
+      "start": 22.99,
+      "end": 23.39
+    },
+    {
+      "word": "come",
+      "start": 23.42,
+      "end": 23.81
+    },
+    {
+      "word": "in",
+      "start": 23.81,
+      "end": 23.98
+    },
+    {
+      "word": "the",
+      "start": 24.06,
+      "end": 24.31
+    },
+    {
+      "word": "car",
+      "start": 24.31,
+      "end": 24.61
+    },
+    {
+      "word": ",",
+      "start": 24.61,
+      "end": 24.81
+    },
+    {
+      "word": "that",
+      "start": 24.81,
+      "end": 25.21
+    },
+    {
+      "word": "means",
+      "start": 25.22,
+      "end": 25.73
+    },
+    {
+      "word": "we",
+      "start": 25.73,
+      "end": 25.93
+    },
+    {
+      "word": "had",
+      "start": 25.93,
+      "end": 26.23
+    },
+    {
+      "word": "no",
+      "start": 26.23,
+      "end": 26.43
+    },
+    {
+      "word": "money",
+      "start": 26.43,
+      "end": 26.94
+    },
+    {
+      "word": "to",
+      "start": 26.94,
+      "end": 27.14
+    },
+    {
+      "word": "buy",
+      "start": 27.14,
+      "end": 27.4
+    },
+    {
+      "word": "a",
+      "start": 27.44,
+      "end": 27.53
+    },
+    {
+      "word": "car",
+      "start": 27.56,
+      "end": 28.0
+    },
+    {
+      "word": ",",
+      "start": 28.0,
+      "end": 28.07
+    },
+    {
+      "word": "the",
+      "start": 28.07,
+      "end": 28.18
+    },
+    {
+      "word": "whole",
+      "start": 28.18,
+      "end": 28.36
+    },
+    {
+      "word": "show",
+      "start": 28.37,
+      "end": 28.52
+    },
+    {
+      "word": "room",
+      "start": 28.52,
+      "end": 28.59
+    },
+    {
+      "word": "was",
+      "start": 28.67,
+      "end": 28.78
+    },
+    {
+      "word": "empty",
+      "start": 28.79,
+      "end": 29.0
+    },
+    {
+      "word": ",",
+      "start": 29.0,
+      "end": 29.11
+    },
+    {
+      "word": "so",
+      "start": 29.11,
+      "end": 29.2
+    },
+    {
+      "word": "we",
+      "start": 29.28,
+      "end": 29.33
+    },
+    {
+      "word": "started",
+      "start": 29.33,
+      "end": 29.72
+    },
+    {
+      "word": "repairing",
+      "start": 29.72,
+      "end": 30.2
+    },
+    {
+      "word": "the",
+      "start": 30.22,
+      "end": 30.4
+    },
+    {
+      "word": "business",
+      "start": 30.42,
+      "end": 30.78
+    },
+    {
+      "word": ",",
+      "start": 30.85,
+      "end": 31.0
+    },
+    {
+      "word": "we",
+      "start": 31.08,
+      "end": 31.17
+    },
+    {
+      "word": "went",
+      "start": 31.17,
+      "end": 31.51
+    },
+    {
+      "word": "to",
+      "start": 31.51,
+      "end": 31.67
+    },
+    {
+      "word": "the",
+      "start": 31.67,
+      "end": 31.93
+    },
+    {
+      "word": "house",
+      "start": 31.93,
+      "end": 32.35
+    },
+    {
+      "word": "to",
+      "start": 32.36,
+      "end": 32.53
+    },
+    {
+      "word": "buy",
+      "start": 32.53,
+      "end": 32.77
+    },
+    {
+      "word": "the",
+      "start": 32.78,
+      "end": 33.03
+    },
+    {
+      "word": "car",
+      "start": 33.03,
+      "end": 33.28
+    },
+    {
+      "word": ",",
+      "start": 33.28,
+      "end": 33.45
+    },
+    {
+      "word": "and",
+      "start": 33.45,
+      "end": 33.66
+    },
+    {
+      "word": "repair",
+      "start": 33.78,
+      "end": 34.16
+    },
+    {
+      "word": "the",
+      "start": 34.21,
+      "end": 34.46
+    },
+    {
+      "word": "car",
+      "start": 34.46,
+      "end": 34.71
+    },
+    {
+      "word": "with",
+      "start": 34.71,
+      "end": 35.05
+    },
+    {
+      "word": "the",
+      "start": 35.05,
+      "end": 35.3
+    },
+    {
+      "word": "money",
+      "start": 35.3,
+      "end": 35.73
+    },
+    {
+      "word": ",",
+      "start": 35.73,
+      "end": 36.0
+    },
+    {
+      "word": "but",
+      "start": 36.0,
+      "end": 36.14
+    },
+    {
+      "word": "the",
+      "start": 36.14,
+      "end": 36.28
+    },
+    {
+      "word": "only",
+      "start": 36.28,
+      "end": 36.47
+    },
+    {
+      "word": "problem",
+      "start": 36.47,
+      "end": 36.81
+    },
+    {
+      "word": "was",
+      "start": 36.81,
+      "end": 36.95
+    },
+    {
+      "word": "that",
+      "start": 36.95,
+      "end": 37.14
+    },
+    {
+      "word": "we",
+      "start": 37.14,
+      "end": 37.23
+    },
+    {
+      "word": "didn",
+      "start": 37.23,
+      "end": 37.37
+    },
+    {
+      "word": "'t",
+      "start": 37.5,
+      "end": 37.51
+    },
+    {
+      "word": "have",
+      "start": 37.51,
+      "end": 37.69
+    },
+    {
+      "word": "the",
+      "start": 37.7,
+      "end": 37.84
+    },
+    {
+      "word": "chance",
+      "start": 37.84,
+      "end": 38.12
+    },
+    {
+      "word": "to",
+      "start": 38.14,
+      "end": 38.21
+    },
+    {
+      "word": "get",
+      "start": 38.21,
+      "end": 38.36
+    },
+    {
+      "word": "more",
+      "start": 38.36,
+      "end": 38.55
+    },
+    {
+      "word": "money",
+      "start": 38.55,
+      "end": 38.77
+    },
+    {
+      "word": ",",
+      "start": 38.79,
+      "end": 38.99
+    },
+    {
+      "word": "that",
+      "start": 39.08,
+      "end": 39.66
+    },
+    {
+      "word": "'s",
+      "start": 39.66,
+      "end": 39.98
+    },
+    {
+      "word": "why",
+      "start": 39.99,
+      "end": 40.48
+    },
+    {
+      "word": "I",
+      "start": 40.49,
+      "end": 40.62
+    },
+    {
+      "word": "went",
+      "start": 40.71,
+      "end": 41.31
+    },
+    {
+      "word": "to",
+      "start": 41.31,
+      "end": 41.64
+    },
+    {
+      "word": "a",
+      "start": 41.64,
+      "end": 41.8
+    },
+    {
+      "word": "car",
+      "start": 41.8,
+      "end": 42.3
+    },
+    {
+      "word": "auction",
+      "start": 42.3,
+      "end": 43.46
+    },
+    {
+      "word": "to",
+      "start": 43.46,
+      "end": 43.79
+    },
+    {
+      "word": "buy",
+      "start": 43.79,
+      "end": 44.29
+    },
+    {
+      "word": "a",
+      "start": 44.29,
+      "end": 44.45
+    },
+    {
+      "word": "rare",
+      "start": 44.45,
+      "end": 45.11
+    },
+    {
+      "word": "car",
+      "start": 45.11,
+      "end": 45.61
+    },
+    {
+      "word": ",",
+      "start": 45.61,
+      "end": 46.0
+    },
+    {
+      "word": "wow",
+      "start": 46.0,
+      "end": 50.0
+    },
+    {
+      "word": "!",
+      "start": 50.0,
+      "end": 53.96
+    }
+  ],
+  "segments": [
+    {
+      "text": "Yo what's up guys, how are you? Welcome back to another game video, so today we are going for the GD5, so just so that you guys can remember that in the last episode, we put all of our money in the last episode of Los Santos, the most expensive and the most expensive car showroom,",
+      "start": 0.0,
+      "end": 18.0
+    },
+    {
+      "text": "but the problem is that the customers will come in when they will come in the car, that means we had no money to buy a car, the whole showroom was empty, so we started repairing the business,",
+      "start": 18.0,
+      "end": 31.0
+    },
+    {
+      "text": "we went to the house to buy the car, and repair the car with the money, but the only problem was that we didn't have the chance to get more money,",
+      "start": 31.0,
+      "end": 39.0
+    },
+    {
+      "text": "that's why I went to a car auction to buy a rare car, wow!",
+      "start": 39.0,
+      "end": 54.0
+    }
+  ],
+  "source": "whisper-cli"
+}

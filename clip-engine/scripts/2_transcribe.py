@@ -85,7 +85,7 @@ def transcribe_whisper_cli(audio_path: Path, video_id: str, language: str = None
         WHISPER_CLI,
         "-m", str(model_path),
         "-f", str(audio_path),
-        "--output-json",
+        "--output-json-full",
         "--output-file", str(output_base),
         "--word-thold", "0.01",
     ]
@@ -108,11 +108,14 @@ def transcribe_whisper_cli(audio_path: Path, video_id: str, language: str = None
     for segment in raw.get("transcription", []):
         for token in segment.get("tokens", []):
             word = token.get("text", "").strip()
-            if word and not word.startswith("["):
+            # Clean whisper special tokens like [_BEG_], [_TT_100], etc.
+            if word and not word.startswith("[") and not word.startswith("<"):
+                start_ms = token.get("offsets", {}).get("from", 0)
+                end_ms = token.get("offsets", {}).get("to", start_ms + 250)
                 words.append({
                     "word": word,
-                    "start": round(token.get("timestamps", {}).get("from_ms", 0) / 1000, 3),
-                    "end": round(token.get("timestamps", {}).get("to_ms", 0) / 1000, 3),
+                    "start": round(start_ms / 1000.0, 3),
+                    "end": round(end_ms / 1000.0, 3),
                 })
 
     # Build segments too (for highlight detection)
@@ -120,11 +123,13 @@ def transcribe_whisper_cli(audio_path: Path, video_id: str, language: str = None
     for segment in raw.get("transcription", []):
         text = segment.get("text", "").strip()
         if text:
-            t = segment.get("timestamps", {})
+            offsets = segment.get("offsets", {})
+            start_ms = offsets.get("from", 0)
+            end_ms = offsets.get("to", start_ms + 1000)
             segments.append({
                 "text": text,
-                "start": round(t.get("from_ms", 0) / 1000, 3),
-                "end": round(t.get("to_ms", 0) / 1000, 3),
+                "start": round(start_ms / 1000.0, 3),
+                "end": round(end_ms / 1000.0, 3),
             })
 
     result_data = {"words": words, "segments": segments, "source": "whisper-cli"}
