@@ -56,11 +56,30 @@ export const CoverThumbnail: React.FC<CoverThumbnailProps> = ({
     }
   }
 
+  const isFinance =
+    /ipo|stock|market|share|gmp|rental|warehouse|power|coal|gain|nifty|bse|nse|crypto|invest|trade|money|crore|capital/i.test(
+      checkString
+    );
+
   const primaryBrand = detectedBrands[0] || "claude";
   const secondaryBrand = detectedBrands[1] || "python";
   const tertiaryBrand = detectedBrands[2] || "redis";
 
-  const bannerBadge = badgeText || (meta?.topic ? "🔥 VIRAL TECH REEL" : "⚡ PRO DEV GUIDE");
+  const bannerBadge =
+    badgeText ||
+    meta?.leadIn ||
+    (isFinance
+      ? "📈 SHARE MARKET & IPO X-RAY • 2026"
+      : meta?.topic
+        ? "🔥 VIRAL TECH REEL"
+        : "⚡ PRO DEV GUIDE");
+
+  const subBenefit =
+    scenes[0]?.sub ||
+    meta?.topic ||
+    (isFinance
+      ? "Full Financial Mechanism Breakdown & Reality Check"
+      : "Supercharge Your Coding Speed in 2026");
 
   return (
     <div
@@ -172,154 +191,235 @@ export const CoverThumbnail: React.FC<CoverThumbnailProps> = ({
           marginTop: -40,
         }}
       >
-        {/* Floating 3D Tech Logos Cluster */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: 28,
-            marginBottom: 36,
-          }}
-        >
-          {/* Secondary Left Brand */}
-          <div style={{ transform: "scale(0.85) translateY(12px)" }}>
-            <FloatingBadge icon={secondaryBrand} forceEntrance={true} size={76} />
-          </div>
-
-          {/* Hero Center Brand (Big) */}
-          <div style={{ transform: "scale(1.15) translateY(-8px)" }}>
-            <FloatingBadge icon={primaryBrand} forceEntrance={true} size={110} />
-          </div>
-
-          {/* Tertiary Right Brand */}
-          <div style={{ transform: "scale(0.85) translateY(12px)" }}>
-            <FloatingBadge icon={tertiaryBrand} forceEntrance={true} size={76} />
-          </div>
-        </div>
-
-        {/* Catchy Pill Hook */}
-        <div
-          style={{
-            backgroundColor: "#f59e0b",
-            color: "#0f172a",
-            padding: "8px 24px",
-            borderRadius: 8,
-            fontSize: 26,
-            fontWeight: 900,
-            letterSpacing: "0.08em",
-            marginBottom: 20,
-            boxShadow: "0 8px 30px rgba(245, 158, 11, 0.45)",
-            textTransform: "uppercase",
-          }}
-        >
-          ⚡ STOP SCROLLING ⚡
-        </div>
-
-        {/* Massive Hook Headline with Dual Glow */}
-        <h1
-          style={{
-            fontSize: 92,
-            lineHeight: 1.04,
-            fontWeight: 900,
-            letterSpacing: "-0.03em",
-            textTransform: "uppercase",
-            margin: 0,
-            padding: 0,
-            textShadow: "0 10px 40px rgba(0, 0, 0, 0.9)",
-            maxWidth: 960,
-          }}
-        >
-          {parts.map((p, i) => (
-            <span
-              key={i}
+          {/* Floating Badges Cluster: Financial or Tech */}
+          {isFinance ? (
+            <div
               style={{
-                color: p.isAccent ? "#38bdf8" : "#ffffff",
-                textShadow: p.isAccent
-                  ? "0 0 35px rgba(56, 189, 248, 0.6), 0 0 70px rgba(56, 189, 248, 0.3)"
-                  : "0 10px 30px rgba(0,0,0,0.8)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: 20,
+                marginBottom: 36,
               }}
             >
-              {p.text}
-            </span>
-          ))}
-        </h1>
+              {/* Left Financial Badge */}
+              <div
+                style={{
+                  background: "rgba(15, 23, 42, 0.92)",
+                  border: "2px solid rgba(56, 189, 248, 0.6)",
+                  borderRadius: 20,
+                  padding: "14px 24px",
+                  boxShadow: "0 10px 30px rgba(56, 189, 248, 0.25)",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  transform: "scale(0.92)",
+                }}
+              >
+                <span style={{ fontSize: 26 }}>📊</span>
+                <span style={{ fontSize: 20, fontWeight: 900, color: "#38bdf8", marginTop: 4 }}>
+                  ANALYSIS
+                </span>
+                <span style={{ fontSize: 12, color: "#94a3b8", fontWeight: 700, letterSpacing: "0.05em" }}>
+                  DEEP DIVE
+                </span>
+              </div>
 
-        {/* Sub-label benefit */}
-        <p
-          style={{
-            fontFamily: theme.typography.ui,
-            fontSize: 32,
-            fontWeight: 700,
-            color: "#cbd5e1",
-            marginTop: 24,
-            maxWidth: 820,
-            lineHeight: 1.3,
-            textShadow: "0 4px 15px rgba(0, 0, 0, 0.8)",
-          }}
-        >
-          {meta?.topic || "Supercharge Your Coding Speed in 2026"}
-        </p>
-      </div>
+                {/* Center Hero Badge (Big) */}
+                <div
+                  style={{
+                    background: "linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(15, 23, 42, 0.95))",
+                    border: "3px solid #f59e0b",
+                    borderRadius: 24,
+                    padding: "18px 32px",
+                    boxShadow: "0 14px 45px rgba(245, 158, 11, 0.45)",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    transform: "scale(1.1)",
+                  }}
+                >
+                  <span style={{ fontSize: 32 }}>⚠️</span>
+                  <span style={{ fontSize: 26, fontWeight: 900, color: "#fbbf24", marginTop: 4 }}>
+                    REALITY CHECK
+                  </span>
+                  <span style={{ fontSize: 13, color: "#fef08a", fontWeight: 800, letterSpacing: "0.08em" }}>
+                    CAPITAL TRAP?
+                  </span>
+                </div>
+
+                {/* Right Financial Badge */}
+                <div
+                  style={{
+                    background: "rgba(15, 23, 42, 0.92)",
+                    border: "2px solid rgba(239, 68, 68, 0.6)",
+                    borderRadius: 20,
+                    padding: "14px 24px",
+                    boxShadow: "0 10px 30px rgba(239, 68, 68, 0.25)",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    transform: "scale(0.92)",
+                  }}
+                >
+                  <span style={{ fontSize: 26 }}>🛡️</span>
+                  <span style={{ fontSize: 20, fontWeight: 900, color: "#ef4444", marginTop: 4 }}>
+                    SME RULE
+                  </span>
+                  <span style={{ fontSize: 12, color: "#fca5a5", fontWeight: 700, letterSpacing: "0.05em" }}>
+                    STRICT AVOID
+                  </span>
+                </div>
+              </div>
+              ) : (
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: 28,
+                  marginBottom: 36,
+                }}
+              >
+                {/* Secondary Left Brand */}
+                <div style={{ transform: "scale(0.85) translateY(12px)" }}>
+                  <FloatingBadge icon={secondaryBrand} forceEntrance={true} size={76} />
+                </div>
+
+                  {/* Hero Center Brand (Big) */}
+                  <div style={{ transform: "scale(1.15) translateY(-8px)" }}>
+                    <FloatingBadge icon={primaryBrand} forceEntrance={true} size={110} />
+                  </div>
+
+                  {/* Tertiary Right Brand */}
+                  <div style={{ transform: "scale(0.85) translateY(12px)" }}>
+                    <FloatingBadge icon={tertiaryBrand} forceEntrance={true} size={76} />
+                  </div>
+                </div>
+        )}
+
+              {/* Catchy Pill Hook */}
+              <div
+                style={{
+                  backgroundColor: "#f59e0b",
+                  color: "#0f172a",
+                  padding: "8px 24px",
+                  borderRadius: 8,
+                  fontSize: 26,
+                  fontWeight: 900,
+                  letterSpacing: "0.08em",
+                  marginBottom: 20,
+                  boxShadow: "0 8px 30px rgba(245, 158, 11, 0.45)",
+                  textTransform: "uppercase",
+                }}
+              >
+                ⚡ STOP SCROLLING ⚡
+              </div>
+
+              {/* Massive Hook Headline with Dual Glow */}
+              <h1
+                style={{
+                  fontSize: 92,
+                  lineHeight: 1.04,
+                  fontWeight: 900,
+                  letterSpacing: "-0.03em",
+                  textTransform: "uppercase",
+                  margin: 0,
+                  padding: 0,
+                  textShadow: "0 10px 40px rgba(0, 0, 0, 0.9)",
+                  maxWidth: 960,
+                }}
+              >
+                {parts.map((p, i) => (
+                  <span
+                    key={i}
+                    style={{
+                      color: p.isAccent ? "#38bdf8" : "#ffffff",
+                      textShadow: p.isAccent
+                        ? "0 0 35px rgba(56, 189, 248, 0.6), 0 0 70px rgba(56, 189, 248, 0.3)"
+                        : "0 10px 30px rgba(0,0,0,0.8)",
+                    }}
+                  >
+                    {p.text}
+                  </span>
+                ))}
+              </h1>
+
+              {/* Sub-label benefit */}
+              <p
+                style={{
+                  fontFamily: theme.typography.ui,
+                  fontSize: 32,
+                  fontWeight: 700,
+                  color: "#cbd5e1",
+                  marginTop: 24,
+                  maxWidth: 820,
+                  lineHeight: 1.3,
+                  textShadow: "0 4px 15px rgba(0, 0, 0, 0.8)",
+                }}
+              >
+                {subBenefit}
+              </p>
+            </div>
 
       {/* 4. Bottom Footer (Channel branding + Save reminder) */}
-      <div
-        style={{
-          paddingBottom: 160,
-          paddingLeft: 60,
-          paddingRight: 60,
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          zIndex: 10,
-        }}
-      >
-        {/* Creator Handle Pill */}
-        <div
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: 12,
-            background: "linear-gradient(135deg, #2563eb, #7c3aed)",
-            padding: "12px 28px",
-            borderRadius: 999,
-            boxShadow: "0 10px 30px rgba(37, 99, 235, 0.4)",
-          }}
-        >
-          <span style={{ fontSize: 24 }}>🚀</span>
-          <span
+          <div
             style={{
-              fontFamily: theme.typography.mono,
-              fontSize: 24,
-              fontWeight: 800,
-              color: "#ffffff",
-              letterSpacing: "0.04em",
+              paddingBottom: 160,
+              paddingLeft: 60,
+              paddingRight: 60,
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              zIndex: 10,
             }}
           >
-            {meta?.handle || "@_crackwithcode"}
-          </span>
-        </div>
+            {/* Creator Handle Pill */}
+            <div
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 12,
+                background: "linear-gradient(135deg, #2563eb, #7c3aed)",
+                padding: "12px 28px",
+                borderRadius: 999,
+                boxShadow: "0 10px 30px rgba(37, 99, 235, 0.4)",
+              }}
+            >
+              <span style={{ fontSize: 24 }}>🚀</span>
+              <span
+                style={{
+                  fontFamily: theme.typography.mono,
+                  fontSize: 24,
+                  fontWeight: 800,
+                  color: "#ffffff",
+                  letterSpacing: "0.04em",
+                }}
+              >
+                {meta?.handle || "@_crackwithcode"}
+              </span>
+            </div>
 
-        {/* Save / Bookmark CTA */}
-        <div
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: 10,
-            background: "rgba(255, 255, 255, 0.08)",
-            border: "1px solid rgba(255, 255, 255, 0.15)",
-            padding: "12px 24px",
-            borderRadius: 999,
-            fontSize: 20,
-            fontWeight: 800,
-            color: "#f8fafc",
-            letterSpacing: "0.05em",
-          }}
-        >
-          <span>🔖</span>
-          <span>SAVE FOR LATER</span>
+            {/* Save / Bookmark CTA */}
+            <div
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 10,
+                background: "rgba(255, 255, 255, 0.08)",
+                border: "1px solid rgba(255, 255, 255, 0.15)",
+                padding: "12px 24px",
+                borderRadius: 999,
+                fontSize: 20,
+                fontWeight: 800,
+                color: "#f8fafc",
+                letterSpacing: "0.05em",
+              }}
+            >
+              <span>🔖</span>
+              <span>SAVE FOR LATER</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  );
+        );
 };

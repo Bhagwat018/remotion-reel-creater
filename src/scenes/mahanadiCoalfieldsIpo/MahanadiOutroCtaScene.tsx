@@ -31,6 +31,14 @@ export const MahanadiOutroCtaScene: React.FC<MahanadiOutroCtaSceneProps> = ({
   const pulse = Math.sin(frame * 0.22) * 0.05 + 1;
   const glowPulse = (Math.sin(frame * 0.16) + 1) * 0.5;
 
+  // Animated voting bars
+  const yesProgress = interpolate(frame, [0, 40], [0, 68], {
+    extrapolateRight: "clamp",
+  });
+  const noProgress = interpolate(frame, [0, 40], [0, 32], {
+    extrapolateRight: "clamp",
+  });
+
   return (
     <SceneLayout
       id={id}
@@ -63,10 +71,10 @@ export const MahanadiOutroCtaScene: React.FC<MahanadiOutroCtaSceneProps> = ({
           {/* 1-DAY LISTING GAIN: AVOID */}
           <div
             style={{
-              backgroundColor: "rgba(15, 23, 42, 0.95)",
+              backgroundColor: "rgba(10, 15, 30, 0.96)",
               border: "3.5px solid #ef4444",
               borderRadius: 22,
-              padding: "20px 20px",
+              padding: "18px 20px",
               boxShadow: "0 14px 40px rgba(239, 68, 68, 0.35)",
               textAlign: "center",
               position: "relative",
@@ -81,12 +89,12 @@ export const MahanadiOutroCtaScene: React.FC<MahanadiOutroCtaSceneProps> = ({
                 letterSpacing: 1.5,
               }}
             >
-              1-DAY LISTING GAIN
+              1-DAY LISTING FLIP
             </div>
             <div
               style={{
                 color: "#ef4444",
-                fontSize: 34,
+                fontSize: 32,
                 fontWeight: 900,
                 marginTop: 6,
                 letterSpacing: 1,
@@ -109,10 +117,10 @@ export const MahanadiOutroCtaScene: React.FC<MahanadiOutroCtaSceneProps> = ({
           {/* LONG-TERM DIVIDEND: SOLID */}
           <div
             style={{
-              backgroundColor: "rgba(15, 23, 42, 0.95)",
+              backgroundColor: "rgba(10, 15, 30, 0.96)",
               border: "3.5px solid #10b981",
               borderRadius: 22,
-              padding: "20px 20px",
+              padding: "18px 20px",
               boxShadow: "0 14px 40px rgba(16, 185, 129, 0.35)",
               textAlign: "center",
               position: "relative",
@@ -127,12 +135,12 @@ export const MahanadiOutroCtaScene: React.FC<MahanadiOutroCtaSceneProps> = ({
                 letterSpacing: 1.5,
               }}
             >
-              LONG-TERM PLAY
+              LONG-TERM COMPOUNDER
             </div>
             <div
               style={{
                 color: "#10b981",
-                fontSize: 34,
+                fontSize: 32,
                 fontWeight: 900,
                 marginTop: 6,
                 letterSpacing: 1,
@@ -153,10 +161,10 @@ export const MahanadiOutroCtaScene: React.FC<MahanadiOutroCtaSceneProps> = ({
           </div>
         </div>
 
-        {/* AUDIENCE INTERACTIVE QUESTION */}
+        {/* AUDIENCE INTERACTIVE VOTE ENGINE */}
         <div
           style={{
-            backgroundColor: "rgba(15, 23, 42, 0.95)",
+            backgroundColor: "rgba(10, 15, 30, 0.96)",
             border: "3px solid #38bdf8",
             borderRadius: 22,
             padding: "20px 26px",
@@ -168,17 +176,17 @@ export const MahanadiOutroCtaScene: React.FC<MahanadiOutroCtaSceneProps> = ({
             style={{
               color: "#38bdf8",
               fontFamily: "monospace",
-              fontSize: 15,
+              fontSize: 14,
               fontWeight: 900,
               letterSpacing: 1.5,
             }}
           >
-            COMMENTS ME BATAO 👇
+            COMMUNITY POLL • COMMENTS ME BATAO 👇
           </div>
           <div
             style={{
               color: "#ffffff",
-              fontSize: 24,
+              fontSize: 22,
               fontWeight: 900,
               marginTop: 6,
             }}
@@ -188,37 +196,88 @@ export const MahanadiOutroCtaScene: React.FC<MahanadiOutroCtaSceneProps> = ({
 
           <div
             style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: 12,
+              display: "flex",
+              flexDirection: "column",
+              gap: 10,
               marginTop: 14,
             }}
           >
+            {/* OPTION A: YES (LONG TERM) */}
             <div
               style={{
-                backgroundColor: "rgba(16, 185, 129, 0.2)",
+                backgroundColor: "rgba(15, 23, 42, 0.8)",
                 border: "2px solid #10b981",
-                borderRadius: 14,
-                padding: "10px 14px",
-                color: "#ffffff",
-                fontSize: 16,
-                fontWeight: 800,
+                borderRadius: 12,
+                padding: "8px 14px",
+                position: "relative",
+                overflow: "hidden",
               }}
             >
-              👍 Yes (Long-Term)
+              <div
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  bottom: 0,
+                  width: `${yesProgress}%`,
+                  backgroundColor: "rgba(16, 185, 129, 0.25)",
+                }}
+              />
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  position: "relative",
+                  zIndex: 2,
+                }}
+              >
+                <span style={{ color: "#ffffff", fontSize: 16, fontWeight: 800 }}>
+                  👍 Yes (Long-Term Dividend Play)
+                </span>
+                <span style={{ color: "#10b981", fontFamily: "monospace", fontSize: 16, fontWeight: 900 }}>
+                  {Math.round(yesProgress)}%
+                </span>
+              </div>
             </div>
+
+            {/* OPTION B: NO (AVOID) */}
             <div
               style={{
-                backgroundColor: "rgba(239, 68, 68, 0.2)",
+                backgroundColor: "rgba(15, 23, 42, 0.8)",
                 border: "2px solid #ef4444",
-                borderRadius: 14,
-                padding: "10px 14px",
-                color: "#ffffff",
-                fontSize: 16,
-                fontWeight: 800,
+                borderRadius: 12,
+                padding: "8px 14px",
+                position: "relative",
+                overflow: "hidden",
               }}
             >
-              👎 No (Avoid Gain)
+              <div
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  bottom: 0,
+                  width: `${noProgress}%`,
+                  backgroundColor: "rgba(239, 68, 68, 0.25)",
+                }}
+              />
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  position: "relative",
+                  zIndex: 2,
+                }}
+              >
+                <span style={{ color: "#ffffff", fontSize: 16, fontWeight: 800 }}>
+                  👎 No (Avoid Poor Listing Gain)
+                </span>
+                <span style={{ color: "#ef4444", fontFamily: "monospace", fontSize: 16, fontWeight: 900 }}>
+                  {Math.round(noProgress)}%
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -226,10 +285,10 @@ export const MahanadiOutroCtaScene: React.FC<MahanadiOutroCtaSceneProps> = ({
         {/* GLOWING FOLLOW CTA POD */}
         <div
           style={{
-            backgroundColor: "rgba(15, 23, 42, 0.96)",
+            backgroundColor: "rgba(10, 15, 30, 0.98)",
             border: "3.5px solid #06b6d4",
             borderRadius: 24,
-            padding: "18px 28px",
+            padding: "16px 28px",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",

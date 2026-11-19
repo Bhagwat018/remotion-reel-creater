@@ -1,0 +1,51 @@
+{
+  "topics": [
+    {
+      "name": "GTA 6 Launch",
+      "keywords": [
+        "GTA 6 gameplay first look",
+        "GTA 6 launch day reaction",
+        "GTA 6 release day",
+        "Grand Theft Auto 6 reaction"
+      ],
+      "min_views": 100000,
+      "clip_count": 5,
+      "clip_duration_min": 30,
+      "clip_duration_max": 60,
+      "language": "en"
+    },
+    {
+      "name": "Apple Event",
+      "keywords": [
+        "Apple event reaction 2025",
+        "iPhone 17 unboxing reaction",
+        "Apple keynote highlights"
+      ],
+      "min_views": 50000,
+      "clip_count": 3,
+      "clip_duration_min": 25,
+      "clip_duration_max": 50,
+      "language": "en"
+    },
+    {
+      "name": "Trending Tech News",
+      "keywords": [
+        "tech news reaction today",
+        "big tech announcement reaction"
+      ],
+      "min_views": 20000,
+      "clip_count": 3,
+      "clip_duration_min": 30,
+      "clip_duration_max": 55,
+      "language": "en"
+    }
+  ],
+  "default_settings": {
+    "clip_count": 3,
+    "clip_duration_min": 30,
+    "clip_duration_max": 60,
+    "output_resolution": "1080x1920",
+    "caption_style": "bold_yellow_highlight",
+    "background_style": "blur"
+  }
+}

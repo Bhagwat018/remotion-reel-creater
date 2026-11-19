@@ -45,6 +45,8 @@
     "render:reel": "node scripts/render-reel.mjs",
     "post:reel": "node scripts/post-reel.mjs",
     "instagram:login": "node scripts/instagram-login.mjs",
+    "login:viralpod": "node clip-engine/scripts/login_viralpod.mjs",
+    "post:viralpod": "node clip-engine/scripts/post_reel_viralpod.mjs",
     "claude:login": "node scripts/claude-login.mjs",
     "post:reel:browser": "node scripts/post-reel-browser.mjs",
     "post:story": "node scripts/post-story.mjs",

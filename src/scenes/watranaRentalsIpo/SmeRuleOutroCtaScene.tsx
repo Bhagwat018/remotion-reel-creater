@@ -25,10 +25,19 @@ export const SmeRuleOutroCtaScene: React.FC<SmeRuleOutroCtaSceneProps> = ({
   const entrance = interpolate(
     spring({ frame, fps, config: { damping: 12, stiffness: 140 } }),
     [0, 1],
-    [0.92, 1]
+    [0.90, 1]
   );
 
-  const buttonPulse = Math.sin(frame * 0.18) * 0.05 + 1;
+  const pulse = Math.sin(frame * 0.22) * 0.05 + 1;
+  const glowPulse = (Math.sin(frame * 0.16) + 1) * 0.5;
+
+  // Animated voting bars
+  const yesProgress = interpolate(frame, [0, 40], [0, 18], {
+    extrapolateRight: "clamp",
+  });
+  const noProgress = interpolate(frame, [0, 40], [0, 82], {
+    extrapolateRight: "clamp",
+  });
 
   return (
     <SceneLayout
@@ -44,7 +53,7 @@ export const SmeRuleOutroCtaScene: React.FC<SmeRuleOutroCtaSceneProps> = ({
           maxWidth: 980,
           display: "flex",
           flexDirection: "column",
-          gap: 18,
+          gap: 16,
           alignItems: "stretch",
           marginTop: 6,
           zIndex: 10,
@@ -63,7 +72,7 @@ export const SmeRuleOutroCtaScene: React.FC<SmeRuleOutroCtaSceneProps> = ({
               fontSize: 24,
               fontWeight: 900,
               letterSpacing: 1.5,
-              boxShadow: "0 0 35px rgba(245, 158, 11, 0.5)",
+              boxShadow: `0 0 ${25 + glowPulse * 15}px rgba(245, 158, 11, 0.6)`,
               display: "flex",
               alignItems: "center",
               gap: 14,
@@ -77,88 +86,188 @@ export const SmeRuleOutroCtaScene: React.FC<SmeRuleOutroCtaSceneProps> = ({
         {/* AUDIENCE POLL CARD */}
         <div
           style={{
-            backgroundColor: "rgba(15, 23, 42, 0.94)",
+            backgroundColor: "rgba(10, 15, 30, 0.96)",
             border: "3px solid #38bdf8",
             borderRadius: 24,
-            padding: "22px 28px",
-            boxShadow: "0 16px 45px rgba(0,0,0,0.8)",
+            padding: "20px 28px",
+            boxShadow: "0 18px 50px rgba(0,0,0,0.8)",
           }}
         >
           <div
             style={{
               color: "#38bdf8",
-              fontSize: 16,
+              fontSize: 15,
               fontFamily: "monospace",
               fontWeight: 900,
               textAlign: "center",
-              marginBottom: 12,
+              marginBottom: 10,
+              letterSpacing: 1,
             }}
           >
-            KYA AAP WATRANA RENTALS ME APPLY KAROGE? 👇
+            COMMUNITY POLL • COMMENTS ME BATAO 👇
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
-            {/* AVOID OPTION */}
+          <div
+            style={{
+              color: "#ffffff",
+              fontSize: 22,
+              fontWeight: 900,
+              textAlign: "center",
+              marginBottom: 14,
+            }}
+          >
+            Kya aap Watrana Rentals me apply karoge?
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            {/* OPTION A: APPLY (RISKY) */}
             <div
               style={{
-                backgroundColor: "rgba(239, 68, 68, 0.22)",
-                border: "2.5px solid #ef4444",
-                borderRadius: 18,
-                padding: "14px",
-                textAlign: "center",
+                backgroundColor: "rgba(15, 23, 42, 0.8)",
+                border: "2px solid #ef4444",
+                borderRadius: 12,
+                padding: "8px 14px",
+                position: "relative",
+                overflow: "hidden",
               }}
             >
-              <div style={{ fontSize: 28 }}>🚫</div>
-              <div style={{ color: "#ffffff", fontWeight: 900, fontSize: 22, marginTop: 4 }}>
-                AVOID
-              </div>
-              <div style={{ color: "#fca5a5", fontSize: 13, marginTop: 2, fontWeight: 700 }}>
-                Capital Safe Rakho
+              <div
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  bottom: 0,
+                  width: `${yesProgress}%`,
+                  backgroundColor: "rgba(239, 68, 68, 0.25)",
+                }}
+              />
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  position: "relative",
+                  zIndex: 2,
+                }}
+              >
+                <span style={{ color: "#ffffff", fontSize: 16, fontWeight: 800 }}>
+                  ⚠️ Apply Karunga (Risk Seeker)
+                </span>
+                <span style={{ color: "#ef4444", fontFamily: "monospace", fontSize: 16, fontWeight: 900 }}>
+                  {Math.round(yesProgress)}%
+                </span>
               </div>
             </div>
 
-            {/* APPLY OPTION */}
+            {/* OPTION B: AVOID (SMART MONEY) */}
             <div
               style={{
-                backgroundColor: "rgba(251, 191, 36, 0.22)",
-                border: "2.5px solid #fbbf24",
-                borderRadius: 18,
-                padding: "14px",
-                textAlign: "center",
+                backgroundColor: "rgba(15, 23, 42, 0.8)",
+                border: "2px solid #10b981",
+                borderRadius: 12,
+                padding: "8px 14px",
+                position: "relative",
+                overflow: "hidden",
               }}
             >
-              <div style={{ fontSize: 28 }}>🎲</div>
-              <div style={{ color: "#ffffff", fontWeight: 900, fontSize: 22, marginTop: 4 }}>
-                APPLY
-              </div>
-              <div style={{ color: "#fde68a", fontSize: 13, marginTop: 2, fontWeight: 700 }}>
-                High SME Risk
+              <div
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  bottom: 0,
+                  width: `${noProgress}%`,
+                  backgroundColor: "rgba(16, 185, 129, 0.25)",
+                }}
+              />
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  position: "relative",
+                  zIndex: 2,
+                }}
+              >
+                <span style={{ color: "#ffffff", fontSize: 16, fontWeight: 800 }}>
+                  🛡️ Avoid (Capital Safe Rakho)
+                </span>
+                <span style={{ color: "#10b981", fontFamily: "monospace", fontSize: 16, fontWeight: 900 }}>
+                  {Math.round(noProgress)}%
+                </span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* GLOWING FOLLOW CTA BUTTON */}
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        {/* GLOWING FOLLOW CTA POD */}
+        <div
+          style={{
+            backgroundColor: "rgba(10, 15, 30, 0.98)",
+            border: "3.5px solid #06b6d4",
+            borderRadius: 24,
+            padding: "16px 28px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            boxShadow: `0 0 ${25 + glowPulse * 15}px rgba(6, 182, 212, 0.6)`,
+            transform: `scale(${pulse})`,
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+            <div
+              style={{
+                width: 48,
+                height: 48,
+                borderRadius: "50%",
+                backgroundColor: "#06b6d4",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: 24,
+                color: "#0f172a",
+                fontWeight: 900,
+              }}
+            >
+              ⚡
+            </div>
+            <div>
+              <div
+                style={{
+                  color: "#ffffff",
+                  fontSize: 24,
+                  fontWeight: 900,
+                  letterSpacing: 0.5,
+                }}
+              >
+                FOLLOW @TECHWITH.GENZ
+              </div>
+              <div
+                style={{
+                  color: "#38bdf8",
+                  fontSize: 14,
+                  fontFamily: "monospace",
+                  fontWeight: 800,
+                }}
+              >
+                DAILY UNBIASED SME IPO ANALYSIS
+              </div>
+            </div>
+          </div>
+
           <div
             style={{
-              padding: "16px 36px",
-              backgroundColor: "#10b981",
-              border: "3.5px solid #ffffff",
-              borderRadius: 999,
+              backgroundColor: "#06b6d4",
               color: "#0f172a",
+              padding: "10px 22px",
+              borderRadius: 999,
               fontWeight: 900,
-              fontSize: 22,
+              fontSize: 16,
+              fontFamily: "monospace",
               letterSpacing: 1,
-              boxShadow: "0 0 40px rgba(16, 185, 129, 0.8)",
-              display: "flex",
-              alignItems: "center",
-              gap: 12,
-              transform: `scale(${buttonPulse})`,
             }}
           >
-            <span>FOLLOW @techwith.genz</span>
-            <span style={{ fontSize: 26 }}>🔥</span>
+            FOLLOW
           </div>
         </div>
       </div>

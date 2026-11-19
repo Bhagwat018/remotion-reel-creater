@@ -17,6 +17,31 @@ interface HeadlineToken {
   annotation?: RoughAnnotationType;
 }
 
+const renderSafeText = (str: string) => {
+  if (!str.includes("%")) return str;
+  const parts = str.split(/(%)/g);
+  return parts.map((part, idx) =>
+    part === "%" ? (
+      <span
+        key={idx}
+        style={{
+          fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+          fontWeight: 900,
+          display: "inline-block",
+          fontSize: "0.9em",
+          transform: "translateY(-0.06em)",
+          paddingLeft: "1px",
+          paddingRight: "2px",
+        }}
+      >
+        %
+      </span>
+    ) : (
+      part
+    )
+  );
+};
+
 export const Headline: React.FC<HeadlineProps> = ({
   text: rawText,
   delayFrames = 2,
@@ -145,7 +170,7 @@ export const Headline: React.FC<HeadlineProps> = ({
                   textShadow: textShadow || (color ? "0 4px 20px rgba(0,0,0,0.95)" : undefined),
                 }}
               >
-                {token.text}
+                {renderSafeText(token.text)}
               </span>
             );
           }
@@ -168,7 +193,7 @@ export const Headline: React.FC<HeadlineProps> = ({
                     textShadow: color ? "0 4px 16px rgba(0,0,0,0.95)" : undefined,
                   }}
                 >
-                  {token.text}
+                  {renderSafeText(token.text)}
                 </span>
               </RoughHighlight>
             );
@@ -190,7 +215,7 @@ export const Headline: React.FC<HeadlineProps> = ({
                     textShadow: color ? "0 4px 16px rgba(0,0,0,0.95)" : undefined,
                   }}
                 >
-                  {token.text}
+                  {renderSafeText(token.text)}
                 </span>
               </RoughHighlight>
             );
@@ -207,7 +232,7 @@ export const Headline: React.FC<HeadlineProps> = ({
                 durationFrames={10}
               >
                 <span style={{ color: color ? "rgba(255,255,255,0.7)" : "#64748b" }}>
-                  {token.text}
+                  {renderSafeText(token.text)}
                 </span>
               </RoughHighlight>
             );
@@ -229,7 +254,7 @@ export const Headline: React.FC<HeadlineProps> = ({
                   textShadow: color ? "0 4px 16px rgba(0,0,0,0.95)" : undefined,
                 }}
               >
-                {token.text}
+                {renderSafeText(token.text)}
               </span>
             </RoughHighlight>
           );

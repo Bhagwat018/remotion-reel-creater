@@ -25,16 +25,17 @@ export const SmeLotSizeDebtScene: React.FC<SmeLotSizeDebtSceneProps> = ({
   const entrance = interpolate(
     spring({ frame, fps, config: { damping: 12, stiffness: 140 } }),
     [0, 1],
-    [0.92, 1]
+    [0.90, 1]
   );
 
   const cardEntrance = interpolate(
     spring({ frame: Math.max(0, frame - 5), fps, config: { damping: 12, stiffness: 130 } }),
     [0, 1],
-    [0.90, 1]
+    [0.88, 1]
   );
 
-  const pulse = Math.sin(frame * 0.22) * 0.04 + 1;
+  const pulse = Math.sin(frame * 0.22) * 0.05 + 1;
+  const glowPulse = (Math.sin(frame * 0.16) + 1) * 0.5;
 
   return (
     <SceneLayout
@@ -50,7 +51,7 @@ export const SmeLotSizeDebtScene: React.FC<SmeLotSizeDebtSceneProps> = ({
           maxWidth: 980,
           display: "flex",
           flexDirection: "column",
-          gap: 18,
+          gap: 16,
           alignItems: "stretch",
           marginTop: 6,
           zIndex: 10,
@@ -69,7 +70,7 @@ export const SmeLotSizeDebtScene: React.FC<SmeLotSizeDebtSceneProps> = ({
           {/* NORMAL MAINBOARD IPO */}
           <div
             style={{
-              backgroundColor: "rgba(15, 23, 42, 0.94)",
+              backgroundColor: "rgba(10, 15, 30, 0.96)",
               border: "2.5px solid #64748b",
               borderRadius: 22,
               padding: "22px 18px",
@@ -94,11 +95,11 @@ export const SmeLotSizeDebtScene: React.FC<SmeLotSizeDebtSceneProps> = ({
               backgroundColor: "#ef4444",
               color: "#ffffff",
               padding: "10px 14px",
-              borderRadius: 12,
+              borderRadius: 14,
               fontWeight: 900,
               fontSize: 16,
               fontFamily: "monospace",
-              boxShadow: "0 0 25px rgba(239, 68, 68, 0.8)",
+              boxShadow: `0 0 ${20 + glowPulse * 15}px rgba(239, 68, 68, 0.9)`,
               transform: `scale(${pulse})`,
               textAlign: "center",
             }}
@@ -111,12 +112,12 @@ export const SmeLotSizeDebtScene: React.FC<SmeLotSizeDebtSceneProps> = ({
           {/* SME IPO SHOCK LOT */}
           <div
             style={{
-              backgroundColor: "rgba(15, 23, 42, 0.95)",
+              backgroundColor: "rgba(10, 15, 30, 0.96)",
               border: "4px solid #ef4444",
               borderRadius: 24,
               padding: "24px 20px",
               textAlign: "center",
-              boxShadow: "0 18px 50px rgba(239, 68, 68, 0.5)",
+              boxShadow: `0 18px 50px rgba(239, 68, 68, 0.5)`,
               position: "relative",
               overflow: "hidden",
             }}
@@ -137,10 +138,11 @@ export const SmeLotSizeDebtScene: React.FC<SmeLotSizeDebtSceneProps> = ({
             <div
               style={{
                 color: "#ffffff",
-                fontSize: 44,
+                fontSize: 46,
                 fontWeight: 900,
                 marginTop: 6,
-                letterSpacing: "-0.02em",
+                fontFamily: "monospace",
+                textShadow: "0 0 15px rgba(239, 68, 68, 0.8)",
               }}
             >
               ₹1,47,000!
@@ -154,18 +156,33 @@ export const SmeLotSizeDebtScene: React.FC<SmeLotSizeDebtSceneProps> = ({
         {/* HEAVY DEBT & HIGH CAPEX WARNING POD */}
         <div
           style={{
-            backgroundColor: "rgba(15, 23, 42, 0.94)",
-            border: "3px solid #f97316",
+            backgroundColor: "rgba(10, 15, 30, 0.96)",
+            border: "3.5px solid #f97316",
             borderRadius: 24,
             padding: "22px 26px",
-            boxShadow: "0 16px 45px rgba(249, 115, 22, 0.25)",
+            boxShadow: "0 18px 50px rgba(249, 115, 22, 0.3)",
             transform: `scale(${cardEntrance})`,
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-            <span style={{ fontSize: 44 }}>💣</span>
+            {/* Debt Bomb Vector SVG */}
+            <div
+              style={{
+                width: 54,
+                height: 54,
+                borderRadius: 16,
+                backgroundColor: "rgba(249, 115, 22, 0.2)",
+                border: "2px solid #f97316",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: 28,
+              }}
+            >
+              💣
+            </div>
             <div style={{ flex: 1 }}>
-              <div style={{ color: "#f97316", fontSize: 15, fontFamily: "monospace", fontWeight: 900 }}>
+              <div style={{ color: "#f97316", fontSize: 14, fontFamily: "monospace", fontWeight: 900 }}>
                 CRITICAL BALANCE SHEET CONCERN
               </div>
               <div style={{ color: "#ffffff", fontSize: 24, fontWeight: 900, marginTop: 2 }}>

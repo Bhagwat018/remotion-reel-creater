@@ -13,4 +13,6 @@ out
 public/reels/
 scratch/
 .instagram-session/
+.instagram-session*/
+clip-engine/.instagram-session*/
 .claude-session/

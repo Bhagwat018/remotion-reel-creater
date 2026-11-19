@@ -26,17 +26,17 @@ export const WatranaHookScene: React.FC<WatranaHookSceneProps> = ({
   const entrance = interpolate(
     spring({ frame, fps, config: { damping: 12, stiffness: 140 } }),
     [0, 1],
-    [0.92, 1]
+    [0.90, 1]
   );
 
   const cardEntrance = interpolate(
     spring({ frame: Math.max(0, frame - 4), fps, config: { damping: 12, stiffness: 130 } }),
     [0, 1],
-    [0.90, 1]
+    [0.88, 1]
   );
 
-  const pulse = Math.sin(frame * 0.18) * 0.05 + 1;
-  const glowPulse = (Math.sin(frame * 0.15) + 1) * 0.5;
+  const pulse = Math.sin(frame * 0.2) * 0.05 + 1;
+  const glowPulse = (Math.sin(frame * 0.16) + 1) * 0.5;
 
   return (
     <SceneLayout
@@ -52,7 +52,7 @@ export const WatranaHookScene: React.FC<WatranaHookSceneProps> = ({
           maxWidth: 980,
           display: "flex",
           flexDirection: "column",
-          gap: 18,
+          gap: 16,
           alignItems: "stretch",
           marginTop: 6,
           zIndex: 10,
@@ -62,7 +62,7 @@ export const WatranaHookScene: React.FC<WatranaHookSceneProps> = ({
         <div style={{ display: "flex", justifyContent: "center" }}>
           <div
             style={{
-              padding: "12px 28px",
+              padding: "12px 30px",
               backgroundColor: "rgba(245, 158, 11, 0.22)",
               border: "3px solid #f59e0b",
               borderRadius: 999,
@@ -95,11 +95,11 @@ export const WatranaHookScene: React.FC<WatranaHookSceneProps> = ({
           {/* SAFE BET POD */}
           <div
             style={{
-              backgroundColor: "rgba(15, 23, 42, 0.94)",
+              backgroundColor: "rgba(10, 15, 30, 0.96)",
               border: "3.5px solid #10b981",
               borderRadius: 24,
-              padding: "26px 20px",
-              boxShadow: "0 16px 45px rgba(16, 185, 129, 0.35)",
+              padding: "24px 20px",
+              boxShadow: "0 18px 50px rgba(16, 185, 129, 0.35)",
               textAlign: "center",
               position: "relative",
               overflow: "hidden",
@@ -115,13 +115,22 @@ export const WatranaHookScene: React.FC<WatranaHookSceneProps> = ({
                 background: "linear-gradient(90deg, #10b981, #34d399)",
               }}
             />
-            <div style={{ fontSize: 48, marginBottom: 6 }}>🚀</div>
+
+            {/* Bespoke Rocket / Growth Vector SVG */}
+            <div style={{ display: "flex", justifyContent: "center", marginBottom: 6 }}>
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <circle cx="28" cy="28" r="24" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" strokeWidth="2"/>
+                <path d="M 28 12 L 36 26 L 30 26 L 30 40 L 26 40 L 26 26 L 20 26 Z" fill="#10b981"/>
+                <path d="M 22 42 L 28 48 L 34 42" stroke="#34d399" strokeWidth="2.5" strokeLinecap="round"/>
+              </svg>
+            </div>
+
             <div
               style={{
                 color: "#10b981",
                 fontFamily: "monospace",
-                fontSize: 16,
-                fontWeight: 800,
+                fontSize: 15,
+                fontWeight: 900,
                 letterSpacing: 1.5,
               }}
             >
@@ -130,7 +139,7 @@ export const WatranaHookScene: React.FC<WatranaHookSceneProps> = ({
             <div
               style={{
                 color: "#ffffff",
-                fontSize: 32,
+                fontSize: 30,
                 fontWeight: 900,
                 marginTop: 6,
                 lineHeight: 1.15,
@@ -141,7 +150,7 @@ export const WatranaHookScene: React.FC<WatranaHookSceneProps> = ({
             <div
               style={{
                 color: "#94a3b8",
-                fontSize: 15,
+                fontSize: 14,
                 marginTop: 6,
                 fontWeight: 600,
               }}
@@ -175,11 +184,11 @@ export const WatranaHookScene: React.FC<WatranaHookSceneProps> = ({
           {/* CAPITAL TRAP POD */}
           <div
             style={{
-              backgroundColor: "rgba(15, 23, 42, 0.94)",
+              backgroundColor: "rgba(10, 15, 30, 0.96)",
               border: "3.5px solid #ef4444",
               borderRadius: 24,
-              padding: "26px 20px",
-              boxShadow: "0 16px 45px rgba(239, 68, 68, 0.45)",
+              padding: "24px 20px",
+              boxShadow: "0 18px 50px rgba(239, 68, 68, 0.45)",
               textAlign: "center",
               position: "relative",
               overflow: "hidden",
@@ -195,13 +204,23 @@ export const WatranaHookScene: React.FC<WatranaHookSceneProps> = ({
                 background: "linear-gradient(90deg, #ef4444, #f87171)",
               }}
             />
-            <div style={{ fontSize: 48, marginBottom: 6 }}>🪤</div>
+
+            {/* Bespoke Trap Lock Vector SVG */}
+            <div style={{ display: "flex", justifyContent: "center", marginBottom: 6 }}>
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <circle cx="28" cy="28" r="24" fill="rgba(239, 68, 68, 0.15)" stroke="#ef4444" strokeWidth="2"/>
+                <rect x="18" y="24" width="20" height="18" rx="4" fill="#334155" stroke="#ef4444" strokeWidth="2"/>
+                <path d="M 22 24 V 18 C 22 14.7 24.7 12 28 12 C 31.3 12 34 14.7 34 18 V 24" stroke="#ef4444" strokeWidth="2.5" fill="none"/>
+                <circle cx="28" cy="33" r="2.5" fill="#f87171"/>
+              </svg>
+            </div>
+
             <div
               style={{
                 color: "#ef4444",
                 fontFamily: "monospace",
-                fontSize: 16,
-                fontWeight: 800,
+                fontSize: 15,
+                fontWeight: 900,
                 letterSpacing: 1.5,
               }}
             >
@@ -210,7 +229,7 @@ export const WatranaHookScene: React.FC<WatranaHookSceneProps> = ({
             <div
               style={{
                 color: "#ffffff",
-                fontSize: 32,
+                fontSize: 30,
                 fontWeight: 900,
                 marginTop: 6,
                 lineHeight: 1.15,
@@ -221,7 +240,7 @@ export const WatranaHookScene: React.FC<WatranaHookSceneProps> = ({
             <div
               style={{
                 color: "#94a3b8",
-                fontSize: 15,
+                fontSize: 14,
                 marginTop: 6,
                 fontWeight: 600,
               }}
@@ -234,7 +253,7 @@ export const WatranaHookScene: React.FC<WatranaHookSceneProps> = ({
         {/* BOTTOM HUD CLIENT LOGO BANNER */}
         <div
           style={{
-            backgroundColor: "rgba(15, 23, 42, 0.92)",
+            backgroundColor: "rgba(10, 15, 30, 0.94)",
             border: "2.5px solid #38bdf8",
             borderRadius: 20,
             padding: "16px 26px",
@@ -242,16 +261,31 @@ export const WatranaHookScene: React.FC<WatranaHookSceneProps> = ({
             alignItems: "center",
             justifyContent: "space-between",
             transform: `scale(${entrance})`,
-            boxShadow: "0 12px 35px rgba(0,0,0,0.8)",
+            boxShadow: "0 14px 40px rgba(0,0,0,0.8)",
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-            <span style={{ fontSize: 32 }}>📦</span>
+            {/* Vector Forklift Outline */}
+            <div
+              style={{
+                width: 44,
+                height: 44,
+                borderRadius: 12,
+                backgroundColor: "rgba(56, 189, 248, 0.2)",
+                border: "2px solid #38bdf8",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: 22,
+              }}
+            >
+              🚜
+            </div>
             <div>
               <div style={{ color: "#ffffff", fontSize: 22, fontWeight: 900 }}>
                 Watrana Rentals Ltd.
               </div>
-              <div style={{ color: "#38bdf8", fontSize: 15, fontFamily: "monospace", fontWeight: 700 }}>
+              <div style={{ color: "#38bdf8", fontSize: 14, fontFamily: "monospace", fontWeight: 700 }}>
                 WAREHOUSE FORKLIFTS & CRANES FLEET
               </div>
             </div>
